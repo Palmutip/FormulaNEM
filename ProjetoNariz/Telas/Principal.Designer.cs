@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlsuperior = new System.Windows.Forms.Panel();
             this.lblusuario = new System.Windows.Forms.Label();
             this.pbxusuario = new System.Windows.Forms.PictureBox();
@@ -166,13 +166,13 @@
             this.lblaminoacidos = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lbluntau = new System.Windows.Forms.Label();
-            this.lvlvaltau = new System.Windows.Forms.Label();
+            this.lblvaltau = new System.Windows.Forms.Label();
             this.lbltau = new System.Windows.Forms.Label();
             this.lblunval = new System.Windows.Forms.Label();
             this.lblvalval = new System.Windows.Forms.Label();
             this.lblval = new System.Windows.Forms.Label();
             this.lbluntri = new System.Windows.Forms.Label();
-            this.lvlvaltri = new System.Windows.Forms.Label();
+            this.lblvaltri = new System.Windows.Forms.Label();
             this.lbltri = new System.Windows.Forms.Label();
             this.lbluntreo = new System.Windows.Forms.Label();
             this.lblvaltreo = new System.Windows.Forms.Label();
@@ -189,7 +189,7 @@
             this.lblvalmet = new System.Windows.Forms.Label();
             this.lblmet = new System.Windows.Forms.Label();
             this.lblunlis = new System.Windows.Forms.Label();
-            this.lvlvallis = new System.Windows.Forms.Label();
+            this.lblvallis = new System.Windows.Forms.Label();
             this.lbllis = new System.Windows.Forms.Label();
             this.lblunleu = new System.Windows.Forms.Label();
             this.lblvalleu = new System.Windows.Forms.Label();
@@ -205,11 +205,11 @@
             this.lblvalarg = new System.Windows.Forms.Label();
             this.lblarg = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblunenn = new System.Windows.Forms.Label();
+            this.lblvalenn = new System.Windows.Forms.Label();
             this.lblenn = new System.Windows.Forms.Label();
             this.lblunmaterianatural = new System.Windows.Forms.Label();
-            this.lblvalmaterianatural = new System.Windows.Forms.Label();
+            this.lblvalmateriamineral = new System.Windows.Forms.Label();
             this.lblmateriamineral = new System.Windows.Forms.Label();
             this.lblunfibrabruta = new System.Windows.Forms.Label();
             this.lblvalfibrabruta = new System.Windows.Forms.Label();
@@ -228,7 +228,7 @@
             this.lblumidade = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblunenergia = new System.Windows.Forms.Label();
-            this.lvlvalenergia = new System.Windows.Forms.Label();
+            this.lblvalenergia = new System.Windows.Forms.Label();
             this.lblenergia = new System.Windows.Forms.Label();
             this.pbxhelpalimentomn = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -859,19 +859,20 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Controls.Add(this.lblvitaminas, 0, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(917, 113);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(876, 113);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(180, 25);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(220, 25);
             this.tableLayoutPanel7.TabIndex = 20;
             // 
             // lblvitaminas
             // 
+            this.lblvitaminas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblvitaminas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvitaminas.Location = new System.Drawing.Point(6, 3);
             this.lblvitaminas.Name = "lblvitaminas";
-            this.lblvitaminas.Size = new System.Drawing.Size(168, 19);
+            this.lblvitaminas.Size = new System.Drawing.Size(208, 19);
             this.lblvitaminas.TabIndex = 0;
             this.lblvitaminas.Text = "Vitaminas";
             this.lblvitaminas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -925,7 +926,7 @@
             this.tableLayoutPanel8.Controls.Add(this.lblunvita, 2, 0);
             this.tableLayoutPanel8.Controls.Add(this.lblvalvita, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.lblvita, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(916, 142);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(876, 142);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 14;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
@@ -942,14 +943,14 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(180, 340);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(220, 340);
             this.tableLayoutPanel8.TabIndex = 19;
             // 
             // lblunvitc
             // 
             this.lblunvitc.AutoSize = true;
             this.lblunvitc.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunvitc.Location = new System.Drawing.Point(138, 315);
+            this.lblunvitc.Location = new System.Drawing.Point(168, 315);
             this.lblunvitc.Name = "lblunvitc";
             this.lblunvitc.Size = new System.Drawing.Size(30, 17);
             this.lblunvitc.TabIndex = 21;
@@ -961,7 +962,7 @@
             this.lblvalvitc.AutoSize = true;
             this.lblvalvitc.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalvitc.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalvitc.Location = new System.Drawing.Point(100, 315);
+            this.lblvalvitc.Location = new System.Drawing.Point(130, 315);
             this.lblvalvitc.Name = "lblvalvitc";
             this.lblvalvitc.Size = new System.Drawing.Size(29, 22);
             this.lblvalvitc.TabIndex = 21;
@@ -983,7 +984,7 @@
             // 
             this.lblunvitk.AutoSize = true;
             this.lblunvitk.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunvitk.Location = new System.Drawing.Point(138, 291);
+            this.lblunvitk.Location = new System.Drawing.Point(168, 291);
             this.lblunvitk.Name = "lblunvitk";
             this.lblunvitk.Size = new System.Drawing.Size(27, 17);
             this.lblunvitk.TabIndex = 16;
@@ -995,7 +996,7 @@
             this.lblvalvitk.AutoSize = true;
             this.lblvalvitk.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalvitk.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalvitk.Location = new System.Drawing.Point(100, 291);
+            this.lblvalvitk.Location = new System.Drawing.Point(130, 291);
             this.lblvalvitk.Name = "lblvalvitk";
             this.lblvalvitk.Size = new System.Drawing.Size(29, 21);
             this.lblvalvitk.TabIndex = 16;
@@ -1017,7 +1018,7 @@
             // 
             this.lbluncolina.AutoSize = true;
             this.lbluncolina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbluncolina.Location = new System.Drawing.Point(138, 267);
+            this.lbluncolina.Location = new System.Drawing.Point(168, 267);
             this.lbluncolina.Name = "lbluncolina";
             this.lbluncolina.Size = new System.Drawing.Size(27, 17);
             this.lbluncolina.TabIndex = 16;
@@ -1029,7 +1030,7 @@
             this.lblvalcolina.AutoSize = true;
             this.lblvalcolina.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalcolina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalcolina.Location = new System.Drawing.Point(100, 267);
+            this.lblvalcolina.Location = new System.Drawing.Point(130, 267);
             this.lblvalcolina.Name = "lblvalcolina";
             this.lblvalcolina.Size = new System.Drawing.Size(29, 21);
             this.lblvalcolina.TabIndex = 16;
@@ -1051,7 +1052,7 @@
             // 
             this.lblunbiotina.AutoSize = true;
             this.lblunbiotina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunbiotina.Location = new System.Drawing.Point(138, 243);
+            this.lblunbiotina.Location = new System.Drawing.Point(168, 243);
             this.lblunbiotina.Name = "lblunbiotina";
             this.lblunbiotina.Size = new System.Drawing.Size(27, 17);
             this.lblunbiotina.TabIndex = 16;
@@ -1063,7 +1064,7 @@
             this.lblvalbiotina.AutoSize = true;
             this.lblvalbiotina.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalbiotina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalbiotina.Location = new System.Drawing.Point(100, 243);
+            this.lblvalbiotina.Location = new System.Drawing.Point(130, 243);
             this.lblvalbiotina.Name = "lblvalbiotina";
             this.lblvalbiotina.Size = new System.Drawing.Size(29, 21);
             this.lblvalbiotina.TabIndex = 16;
@@ -1085,7 +1086,7 @@
             // 
             this.lblunacfolico.AutoSize = true;
             this.lblunacfolico.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunacfolico.Location = new System.Drawing.Point(138, 219);
+            this.lblunacfolico.Location = new System.Drawing.Point(168, 219);
             this.lblunacfolico.Name = "lblunacfolico";
             this.lblunacfolico.Size = new System.Drawing.Size(33, 17);
             this.lblunacfolico.TabIndex = 16;
@@ -1097,7 +1098,7 @@
             this.lblvalacfolico.AutoSize = true;
             this.lblvalacfolico.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalacfolico.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalacfolico.Location = new System.Drawing.Point(100, 219);
+            this.lblvalacfolico.Location = new System.Drawing.Point(130, 219);
             this.lblvalacfolico.Name = "lblvalacfolico";
             this.lblvalacfolico.Size = new System.Drawing.Size(29, 21);
             this.lblvalacfolico.TabIndex = 16;
@@ -1119,7 +1120,7 @@
             // 
             this.lblunniacina.AutoSize = true;
             this.lblunniacina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunniacina.Location = new System.Drawing.Point(138, 195);
+            this.lblunniacina.Location = new System.Drawing.Point(168, 195);
             this.lblunniacina.Name = "lblunniacina";
             this.lblunniacina.Size = new System.Drawing.Size(27, 17);
             this.lblunniacina.TabIndex = 16;
@@ -1142,7 +1143,7 @@
             this.lblvalniacina.AutoSize = true;
             this.lblvalniacina.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalniacina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalniacina.Location = new System.Drawing.Point(100, 195);
+            this.lblvalniacina.Location = new System.Drawing.Point(130, 195);
             this.lblvalniacina.Name = "lblvalniacina";
             this.lblvalniacina.Size = new System.Drawing.Size(29, 21);
             this.lblvalniacina.TabIndex = 14;
@@ -1153,7 +1154,7 @@
             // 
             this.lblunvitb12.AutoSize = true;
             this.lblunvitb12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunvitb12.Location = new System.Drawing.Point(138, 171);
+            this.lblunvitb12.Location = new System.Drawing.Point(168, 171);
             this.lblunvitb12.Name = "lblunvitb12";
             this.lblunvitb12.Size = new System.Drawing.Size(33, 17);
             this.lblunvitb12.TabIndex = 14;
@@ -1165,7 +1166,7 @@
             this.lblvalvitb12.AutoSize = true;
             this.lblvalvitb12.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalvitb12.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblvalvitb12.Location = new System.Drawing.Point(100, 171);
+            this.lblvalvitb12.Location = new System.Drawing.Point(130, 171);
             this.lblvalvitb12.Name = "lblvalvitb12";
             this.lblvalvitb12.Size = new System.Drawing.Size(29, 21);
             this.lblvalvitb12.TabIndex = 14;
@@ -1186,7 +1187,7 @@
             // 
             this.lblunvitb6.AutoSize = true;
             this.lblunvitb6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunvitb6.Location = new System.Drawing.Point(138, 147);
+            this.lblunvitb6.Location = new System.Drawing.Point(168, 147);
             this.lblunvitb6.Name = "lblunvitb6";
             this.lblunvitb6.Size = new System.Drawing.Size(27, 17);
             this.lblunvitb6.TabIndex = 32;
@@ -1198,7 +1199,7 @@
             this.lblvalvitb6.AutoSize = true;
             this.lblvalvitb6.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalvitb6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalvitb6.Location = new System.Drawing.Point(100, 147);
+            this.lblvalvitb6.Location = new System.Drawing.Point(130, 147);
             this.lblvalvitb6.Name = "lblvalvitb6";
             this.lblvalvitb6.Size = new System.Drawing.Size(29, 21);
             this.lblvalvitb6.TabIndex = 31;
@@ -1209,7 +1210,7 @@
             // 
             this.lblunacpantotenico.AutoSize = true;
             this.lblunacpantotenico.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunacpantotenico.Location = new System.Drawing.Point(138, 123);
+            this.lblunacpantotenico.Location = new System.Drawing.Point(168, 123);
             this.lblunacpantotenico.Name = "lblunacpantotenico";
             this.lblunacpantotenico.Size = new System.Drawing.Size(27, 17);
             this.lblunacpantotenico.TabIndex = 29;
@@ -1221,7 +1222,7 @@
             this.lblvalacpantotenico.AutoSize = true;
             this.lblvalacpantotenico.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalacpantotenico.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalacpantotenico.Location = new System.Drawing.Point(100, 123);
+            this.lblvalacpantotenico.Location = new System.Drawing.Point(130, 123);
             this.lblvalacpantotenico.Name = "lblvalacpantotenico";
             this.lblvalacpantotenico.Size = new System.Drawing.Size(29, 21);
             this.lblvalacpantotenico.TabIndex = 28;
@@ -1234,7 +1235,7 @@
             this.lblacpantotenico.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblacpantotenico.Location = new System.Drawing.Point(6, 123);
             this.lblacpantotenico.Name = "lblacpantotenico";
-            this.lblacpantotenico.Size = new System.Drawing.Size(76, 21);
+            this.lblacpantotenico.Size = new System.Drawing.Size(97, 17);
             this.lblacpantotenico.TabIndex = 27;
             this.lblacpantotenico.Text = "Ac. Pantotênico";
             this.lblacpantotenico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1243,7 +1244,7 @@
             // 
             this.lblunriboflavina.AutoSize = true;
             this.lblunriboflavina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunriboflavina.Location = new System.Drawing.Point(138, 99);
+            this.lblunriboflavina.Location = new System.Drawing.Point(168, 99);
             this.lblunriboflavina.Name = "lblunriboflavina";
             this.lblunriboflavina.Size = new System.Drawing.Size(27, 17);
             this.lblunriboflavina.TabIndex = 26;
@@ -1255,7 +1256,7 @@
             this.lblvalriboflavina.AutoSize = true;
             this.lblvalriboflavina.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalriboflavina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalriboflavina.Location = new System.Drawing.Point(100, 99);
+            this.lblvalriboflavina.Location = new System.Drawing.Point(130, 99);
             this.lblvalriboflavina.Name = "lblvalriboflavina";
             this.lblvalriboflavina.Size = new System.Drawing.Size(29, 21);
             this.lblvalriboflavina.TabIndex = 25;
@@ -1277,7 +1278,7 @@
             // 
             this.lbluntiamina.AutoSize = true;
             this.lbluntiamina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbluntiamina.Location = new System.Drawing.Point(138, 75);
+            this.lbluntiamina.Location = new System.Drawing.Point(168, 75);
             this.lbluntiamina.Name = "lbluntiamina";
             this.lbluntiamina.Size = new System.Drawing.Size(27, 17);
             this.lbluntiamina.TabIndex = 23;
@@ -1289,7 +1290,7 @@
             this.lblvaltiamina.AutoSize = true;
             this.lblvaltiamina.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvaltiamina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvaltiamina.Location = new System.Drawing.Point(100, 75);
+            this.lblvaltiamina.Location = new System.Drawing.Point(130, 75);
             this.lblvaltiamina.Name = "lblvaltiamina";
             this.lblvaltiamina.Size = new System.Drawing.Size(29, 21);
             this.lblvaltiamina.TabIndex = 22;
@@ -1322,7 +1323,7 @@
             // 
             this.lblunvite.AutoSize = true;
             this.lblunvite.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunvite.Location = new System.Drawing.Point(138, 51);
+            this.lblunvite.Location = new System.Drawing.Point(168, 51);
             this.lblunvite.Name = "lblunvite";
             this.lblunvite.Size = new System.Drawing.Size(20, 17);
             this.lblunvite.TabIndex = 20;
@@ -1334,7 +1335,7 @@
             this.lblvalvite.AutoSize = true;
             this.lblvalvite.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalvite.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalvite.Location = new System.Drawing.Point(100, 51);
+            this.lblvalvite.Location = new System.Drawing.Point(130, 51);
             this.lblvalvite.Name = "lblvalvite";
             this.lblvalvite.Size = new System.Drawing.Size(29, 21);
             this.lblvalvite.TabIndex = 19;
@@ -1356,7 +1357,7 @@
             // 
             this.lblunvitd.AutoSize = true;
             this.lblunvitd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunvitd.Location = new System.Drawing.Point(138, 27);
+            this.lblunvitd.Location = new System.Drawing.Point(168, 27);
             this.lblunvitd.Name = "lblunvitd";
             this.lblunvitd.Size = new System.Drawing.Size(20, 17);
             this.lblunvitd.TabIndex = 17;
@@ -1368,7 +1369,7 @@
             this.lblvalvitd.AutoSize = true;
             this.lblvalvitd.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalvitd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalvitd.Location = new System.Drawing.Point(100, 27);
+            this.lblvalvitd.Location = new System.Drawing.Point(130, 27);
             this.lblvalvitd.Name = "lblvalvitd";
             this.lblvalvitd.Size = new System.Drawing.Size(29, 21);
             this.lblvalvitd.TabIndex = 16;
@@ -1390,7 +1391,7 @@
             // 
             this.lblunvita.AutoSize = true;
             this.lblunvita.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblunvita.Location = new System.Drawing.Point(138, 3);
+            this.lblunvita.Location = new System.Drawing.Point(168, 3);
             this.lblunvita.Name = "lblunvita";
             this.lblunvita.Size = new System.Drawing.Size(20, 17);
             this.lblunvita.TabIndex = 14;
@@ -1402,7 +1403,7 @@
             this.lblvalvita.AutoSize = true;
             this.lblvalvita.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblvalvita.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalvita.Location = new System.Drawing.Point(100, 3);
+            this.lblvalvita.Location = new System.Drawing.Point(130, 3);
             this.lblvalvita.Name = "lblvalvita";
             this.lblvalvita.Size = new System.Drawing.Size(29, 21);
             this.lblvalvita.TabIndex = 13;
@@ -1437,6 +1438,7 @@
             // 
             // lblminerais
             // 
+            this.lblminerais.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblminerais.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblminerais.Location = new System.Drawing.Point(6, 3);
             this.lblminerais.Name = "lblminerais";
@@ -1968,6 +1970,7 @@
             // 
             // lblaminoacidos
             // 
+            this.lblaminoacidos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblaminoacidos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblaminoacidos.Location = new System.Drawing.Point(6, 3);
             this.lblaminoacidos.Name = "lblaminoacidos";
@@ -1984,13 +1987,13 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel3.Controls.Add(this.lbluntau, 2, 12);
-            this.tableLayoutPanel3.Controls.Add(this.lvlvaltau, 1, 12);
+            this.tableLayoutPanel3.Controls.Add(this.lblvaltau, 1, 12);
             this.tableLayoutPanel3.Controls.Add(this.lbltau, 0, 12);
             this.tableLayoutPanel3.Controls.Add(this.lblunval, 2, 11);
             this.tableLayoutPanel3.Controls.Add(this.lblvalval, 1, 11);
             this.tableLayoutPanel3.Controls.Add(this.lblval, 0, 11);
             this.tableLayoutPanel3.Controls.Add(this.lbluntri, 2, 10);
-            this.tableLayoutPanel3.Controls.Add(this.lvlvaltri, 1, 10);
+            this.tableLayoutPanel3.Controls.Add(this.lblvaltri, 1, 10);
             this.tableLayoutPanel3.Controls.Add(this.lbltri, 0, 10);
             this.tableLayoutPanel3.Controls.Add(this.lbluntreo, 2, 9);
             this.tableLayoutPanel3.Controls.Add(this.lblvaltreo, 1, 9);
@@ -2007,7 +2010,7 @@
             this.tableLayoutPanel3.Controls.Add(this.lblvalmet, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.lblmet, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.lblunlis, 2, 4);
-            this.tableLayoutPanel3.Controls.Add(this.lvlvallis, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.lblvallis, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.lbllis, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.lblunleu, 2, 3);
             this.tableLayoutPanel3.Controls.Add(this.lblvalleu, 1, 3);
@@ -2052,17 +2055,17 @@
             this.lbluntau.Text = "%";
             this.lbluntau.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lvlvaltau
+            // lblvaltau
             // 
-            this.lvlvaltau.AutoSize = true;
-            this.lvlvaltau.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lvlvaltau.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvlvaltau.Location = new System.Drawing.Point(116, 279);
-            this.lvlvaltau.Name = "lvlvaltau";
-            this.lvlvaltau.Size = new System.Drawing.Size(29, 23);
-            this.lvlvaltau.TabIndex = 16;
-            this.lvlvaltau.Text = "100";
-            this.lvlvaltau.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblvaltau.AutoSize = true;
+            this.lblvaltau.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblvaltau.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvaltau.Location = new System.Drawing.Point(116, 279);
+            this.lblvaltau.Name = "lblvaltau";
+            this.lblvaltau.Size = new System.Drawing.Size(29, 23);
+            this.lblvaltau.TabIndex = 16;
+            this.lblvaltau.Text = "100";
+            this.lblvaltau.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbltau
             // 
@@ -2120,17 +2123,17 @@
             this.lbluntri.Text = "%";
             this.lbluntri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lvlvaltri
+            // lblvaltri
             // 
-            this.lvlvaltri.AutoSize = true;
-            this.lvlvaltri.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lvlvaltri.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvlvaltri.Location = new System.Drawing.Point(116, 233);
-            this.lvlvaltri.Name = "lvlvaltri";
-            this.lvlvaltri.Size = new System.Drawing.Size(29, 20);
-            this.lvlvaltri.TabIndex = 16;
-            this.lvlvaltri.Text = "100";
-            this.lvlvaltri.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblvaltri.AutoSize = true;
+            this.lblvaltri.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblvaltri.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvaltri.Location = new System.Drawing.Point(116, 233);
+            this.lblvaltri.Name = "lblvaltri";
+            this.lblvaltri.Size = new System.Drawing.Size(29, 20);
+            this.lblvaltri.TabIndex = 16;
+            this.lblvaltri.Text = "100";
+            this.lblvaltri.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbltri
             // 
@@ -2312,17 +2315,17 @@
             this.lblunlis.Text = "%";
             this.lblunlis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lvlvallis
+            // lblvallis
             // 
-            this.lvlvallis.AutoSize = true;
-            this.lvlvallis.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lvlvallis.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvlvallis.Location = new System.Drawing.Point(116, 95);
-            this.lvlvallis.Name = "lvlvallis";
-            this.lvlvallis.Size = new System.Drawing.Size(29, 20);
-            this.lvlvallis.TabIndex = 25;
-            this.lvlvallis.Text = "100";
-            this.lvlvallis.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblvallis.AutoSize = true;
+            this.lblvallis.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblvallis.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvallis.Location = new System.Drawing.Point(116, 95);
+            this.lblvallis.Name = "lblvallis";
+            this.lblvallis.Size = new System.Drawing.Size(29, 20);
+            this.lblvallis.TabIndex = 25;
+            this.lblvallis.Text = "100";
+            this.lblvallis.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbllis
             // 
@@ -2409,9 +2412,9 @@
             this.lblisso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblisso.Location = new System.Drawing.Point(6, 49);
             this.lblisso.Name = "lblisso";
-            this.lblisso.Size = new System.Drawing.Size(31, 17);
+            this.lblisso.Size = new System.Drawing.Size(25, 17);
             this.lblisso.TabIndex = 18;
-            this.lblisso.Text = "Isso";
+            this.lblisso.Text = "Iso";
             this.lblisso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblunhis
@@ -2489,11 +2492,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.Controls.Add(this.label18, 2, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label17, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.lblunenn, 2, 6);
+            this.tableLayoutPanel2.Controls.Add(this.lblvalenn, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.lblenn, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.lblunmaterianatural, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lblvalmaterianatural, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lblvalmateriamineral, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.lblmateriamineral, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.lblunfibrabruta, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.lblvalfibrabruta, 1, 4);
@@ -2523,28 +2526,28 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(325, 175);
             this.tableLayoutPanel2.TabIndex = 11;
             // 
-            // label18
+            // lblunenn
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(277, 147);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(19, 17);
-            this.label18.TabIndex = 32;
-            this.label18.Text = "%";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunenn.AutoSize = true;
+            this.lblunenn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunenn.Location = new System.Drawing.Point(277, 147);
+            this.lblunenn.Name = "lblunenn";
+            this.lblunenn.Size = new System.Drawing.Size(19, 17);
+            this.lblunenn.TabIndex = 32;
+            this.lblunenn.Text = "%";
+            this.lblunenn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label17
+            // lblvalenn
             // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(239, 147);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(29, 25);
-            this.label17.TabIndex = 31;
-            this.label17.Text = "100";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblvalenn.AutoSize = true;
+            this.lblvalenn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblvalenn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvalenn.Location = new System.Drawing.Point(239, 147);
+            this.lblvalenn.Name = "lblvalenn";
+            this.lblvalenn.Size = new System.Drawing.Size(29, 25);
+            this.lblvalenn.TabIndex = 31;
+            this.lblvalenn.Text = "100";
+            this.lblvalenn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblenn
             // 
@@ -2568,17 +2571,17 @@
             this.lblunmaterianatural.Text = "%";
             this.lblunmaterianatural.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblvalmaterianatural
+            // lblvalmateriamineral
             // 
-            this.lblvalmaterianatural.AutoSize = true;
-            this.lblvalmaterianatural.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblvalmaterianatural.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvalmaterianatural.Location = new System.Drawing.Point(239, 123);
-            this.lblvalmaterianatural.Name = "lblvalmaterianatural";
-            this.lblvalmaterianatural.Size = new System.Drawing.Size(29, 21);
-            this.lblvalmaterianatural.TabIndex = 28;
-            this.lblvalmaterianatural.Text = "100";
-            this.lblvalmaterianatural.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblvalmateriamineral.AutoSize = true;
+            this.lblvalmateriamineral.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblvalmateriamineral.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvalmateriamineral.Location = new System.Drawing.Point(239, 123);
+            this.lblvalmateriamineral.Name = "lblvalmateriamineral";
+            this.lblvalmateriamineral.Size = new System.Drawing.Size(29, 21);
+            this.lblvalmateriamineral.TabIndex = 28;
+            this.lblvalmateriamineral.Text = "100";
+            this.lblvalmateriamineral.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblmateriamineral
             // 
@@ -2769,7 +2772,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Controls.Add(this.lblunenergia, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lvlvalenergia, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblvalenergia, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblenergia, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(30, 113);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -2790,17 +2793,17 @@
             this.lblunenergia.Text = "kcal";
             this.lblunenergia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lvlvalenergia
+            // lblvalenergia
             // 
-            this.lvlvalenergia.AutoSize = true;
-            this.lvlvalenergia.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lvlvalenergia.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvlvalenergia.Location = new System.Drawing.Point(239, 3);
-            this.lvlvalenergia.Name = "lvlvalenergia";
-            this.lvlvalenergia.Size = new System.Drawing.Size(29, 19);
-            this.lvlvalenergia.TabIndex = 12;
-            this.lvlvalenergia.Text = "100";
-            this.lvlvalenergia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblvalenergia.AutoSize = true;
+            this.lblvalenergia.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblvalenergia.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvalenergia.Location = new System.Drawing.Point(239, 3);
+            this.lblvalenergia.Name = "lblvalenergia";
+            this.lblvalenergia.Size = new System.Drawing.Size(29, 19);
+            this.lblvalenergia.TabIndex = 12;
+            this.lblvalenergia.Text = "100";
+            this.lblvalenergia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblenergia
             // 
@@ -2875,6 +2878,7 @@
             this.btneditaalimentomn.Text = "Editar";
             this.btneditaalimentomn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btneditaalimentomn.UseVisualStyleBackColor = false;
+            this.btneditaalimentomn.Click += new System.EventHandler(this.btneditaalimentomn_Click);
             // 
             // lblnomealimentomn
             // 
@@ -2913,37 +2917,37 @@
             this.dgvalimentosmn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosmn.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosmn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvalimentosmn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvalimentosmn.GridColor = System.Drawing.Color.White;
             this.dgvalimentosmn.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosmn.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosmn.MultiSelect = false;
             this.dgvalimentosmn.Name = "dgvalimentosmn";
             this.dgvalimentosmn.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvalimentosmn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosmn.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosmn.RowTemplate.Height = 24;
@@ -3159,37 +3163,37 @@
             this.dgvalimentosms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosms.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvalimentosms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvalimentosms.GridColor = System.Drawing.Color.White;
             this.dgvalimentosms.Location = new System.Drawing.Point(11, 79);
             this.dgvalimentosms.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosms.MultiSelect = false;
             this.dgvalimentosms.Name = "dgvalimentosms";
             this.dgvalimentosms.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvalimentosms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosms.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosms.RowTemplate.Height = 24;
@@ -3404,11 +3408,11 @@
         private System.Windows.Forms.Label lblnomealimentomn;
         private System.Windows.Forms.Button btnvoltavisualizaalimentomn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblunenn;
+        private System.Windows.Forms.Label lblvalenn;
         private System.Windows.Forms.Label lblenn;
         private System.Windows.Forms.Label lblunmaterianatural;
-        private System.Windows.Forms.Label lblvalmaterianatural;
+        private System.Windows.Forms.Label lblvalmateriamineral;
         private System.Windows.Forms.Label lblmateriamineral;
         private System.Windows.Forms.Label lblunfibrabruta;
         private System.Windows.Forms.Label lblvalfibrabruta;
@@ -3426,7 +3430,7 @@
         private System.Windows.Forms.Label lblvalumidade;
         private System.Windows.Forms.Label lblumidade;
         private System.Windows.Forms.Label lblunenergia;
-        private System.Windows.Forms.Label lvlvalenergia;
+        private System.Windows.Forms.Label lblvalenergia;
         private System.Windows.Forms.Label lblenergia;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label lblaminoacidos;
@@ -3437,7 +3441,7 @@
         private System.Windows.Forms.Label lblvalmet;
         private System.Windows.Forms.Label lblmet;
         private System.Windows.Forms.Label lblunlis;
-        private System.Windows.Forms.Label lvlvallis;
+        private System.Windows.Forms.Label lblvallis;
         private System.Windows.Forms.Label lbllis;
         private System.Windows.Forms.Label lblunleu;
         private System.Windows.Forms.Label lblvalleu;
@@ -3455,13 +3459,13 @@
         private System.Windows.Forms.Label lblfen;
         private System.Windows.Forms.Label lblvalfen;
         private System.Windows.Forms.Label lbluntau;
-        private System.Windows.Forms.Label lvlvaltau;
+        private System.Windows.Forms.Label lblvaltau;
         private System.Windows.Forms.Label lbltau;
         private System.Windows.Forms.Label lblunval;
         private System.Windows.Forms.Label lblvalval;
         private System.Windows.Forms.Label lblval;
         private System.Windows.Forms.Label lbluntri;
-        private System.Windows.Forms.Label lvlvaltri;
+        private System.Windows.Forms.Label lblvaltri;
         private System.Windows.Forms.Label lbltri;
         private System.Windows.Forms.Label lbluntreo;
         private System.Windows.Forms.Label lblvaltreo;

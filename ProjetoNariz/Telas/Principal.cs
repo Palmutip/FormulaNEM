@@ -221,12 +221,69 @@ namespace ProjetoNariz.Telas
         }
         private void btnvisalimentomn_Click(object sender, EventArgs e)
         {
+            //asdasdadasdasad
             pnlvisualizaalimentosmn.Visible = true;
 
             f.id = dgvalimentosmn.CurrentRow.Cells[0].Value.ToString();
             f.SelecionaAlimentoMN();
-
+            //atribuição das variáveis
             lblnomealimentomn.Text = f.Alimento;
+            lblvalenergia.Text = f.Energia;
+            lblvalumidade.Text = f.Umidade;
+            lblvalmateriaseca.Text = f.MS;
+            lblvalproteinabruta.Text = f.PB;
+            lblvalextratoetereo.Text = f.EE;
+            lblvalfibrabruta.Text = f.FB;
+            lblvalmateriamineral.Text = f.MM;
+            lblvalenn.Text = f.ENN;
+            lblvalaclinoleicon3.Text = f.Ac_Linoleico3;
+            lblvalaclinoleicon6.Text = f.Ac_Linoleico6;
+            lblvalacaraquidonico.Text = "0"; //Nao possui no BD
+            lblvalepadha.Text = f.EPA_DHA;
+            lblvalcnf.Text = f.CNF;
+            lblvalfda.Text = f.FDA;
+            lblvalfdn.Text = f.FDN;
+            lblvalarg.Text = f.Arg;
+            lblvalhis.Text = f.His;
+            lblvalisso.Text = f.Iso;
+            lblvalleu.Text = f.Leu;
+            lblvallis.Text = f.Lis;
+            lblvalmet.Text = f.Met;
+            lblvalmetcis.Text = f.Met_Cis;
+            lblvalfen.Text = f.Fen;
+            lblvalfentir.Text = f.Fen_Tir;
+            lblvaltreo.Text = f.Treo;
+            lblvaltri.Text = f.Tri;
+            lblvalval.Text = f.Val;
+            lblvaltau.Text = f.Tau;
+            lblvalca.Text = f.Ca;
+            lblvalp.Text = f.P;
+            lblvalk.Text = f.K;
+            lblvalna.Text = f.Na;
+            lblvalcl.Text = f.Cl;
+            lblvalmg.Text = f.Mg;
+            lblvalcu.Text = f.Cu;
+            lblvali.Text = f.I;
+            lblvalfe.Text = f.Fe;
+            lblvalmn.Text = f.Mn;
+            lblvalse.Text = f.Se;
+            lblvalzn.Text = f.Zn;
+            lblvals.Text = f.S;
+            lblvalvita.Text = f.Vit_A;
+            lblvalvitd.Text = f.Vit_D;
+            lblvalvite.Text = f.Vit_E;
+            lblvaltiamina.Text = f.Tiamina;
+            lblvalriboflavina.Text = f.Riboflavina;
+            lblvalacpantotenico.Text = f.Ac_Pantotenico;
+            lblvalvitb6.Text = f.Vit_B6;
+            lblvalvitb12.Text = f.Vit_B12;
+            lblvalniacina.Text = f.Niacina;
+            lblvalacfolico.Text = f.Ac_Folico;
+            lblvalbiotina.Text = f.Biotina;
+            lblvalcolina.Text = f.Colina;
+            lblvalvitk.Text = f.Vit_K;
+            lblvalvitc.Text = f.Vit_C;
+            f.Desconstrutor();
         }
         private void btnvoltavisualizaalimentomn_Click(object sender, EventArgs e)
         {
@@ -253,5 +310,9 @@ namespace ProjetoNariz.Telas
             txtbuscaalimentoms.ForeColor = Color.Silver;
         }
 
+        private void btneditaalimentomn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
