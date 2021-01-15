@@ -16,7 +16,7 @@ namespace ProjetoNariz.Telas
         FuncoesBanco f = new FuncoesBanco();
         Tradutor t = new Tradutor();
         List<TextBox> ControleTxtMN = new List<TextBox>();
-        List<FuncoesBanco> ControleObjMN = new List<FuncoesBanco>();
+        List<String> ControleObjMN = new List<String>();
     public Principal()
         {
             InitializeComponent();
@@ -216,7 +216,7 @@ namespace ProjetoNariz.Telas
             ControleTxtMN.Add(txtvalenn);
             ControleTxtMN.Add(txtvalaclinoleicon3);
             ControleTxtMN.Add(txtvalaclinoleicon6);
-            ControleTxtMN.Add(txtvalacaraquidonico);
+            //ControleTxtMN.Add(txtvalacaraquidonico);
             ControleTxtMN.Add(txtvalepadha);
             ControleTxtMN.Add(txtvalcnf);
             ControleTxtMN.Add(txtvalfda);
@@ -264,120 +264,62 @@ namespace ProjetoNariz.Telas
         }
         private void Listaobjmn()
         {
-            /*ControleObjMN.Add(txtnomealimentomn);
-            ControleObjMN.Add(txtvalenergia);
-            ControleObjMN.Add(txtvalumidade);
-            ControleObjMN.Add(txtvalmateriaseca);
-            ControleObjMN.Add(txtvalproteinabruta);
-            ControleObjMN.Add(txtvalextratoetereo);
-            ControleObjMN.Add(txtvalfibrabruta);
-            ControleObjMN.Add(txtvalmateriamineral);
-            ControleObjMN.Add(txtvalenn);
-            ControleObjMN.Add(txtvalaclinoleicon3);
-            ControleObjMN.Add(txtvalaclinoleicon6);
-            ControleObjMN.Add(txtvalacaraquidonico);
-            ControleObjMN.Add(txtvalepadha);
-            ControleObjMN.Add(txtvalcnf);
-            ControleObjMN.Add(txtvalfda);
-            ControleObjMN.Add(txtvalfdn);
-            ControleObjMN.Add(txtvalarg);
-            ControleObjMN.Add(txtvalhis);
-            ControleObjMN.Add(txtvaliso);
-            ControleObjMN.Add(txtvalleu);
-            ControleObjMN.Add(txtvallis);
-            ControleObjMN.Add(txtvalmet);
-            ControleObjMN.Add(txtvalmetcis);
-            ControleObjMN.Add(txtvalfen);
-            ControleObjMN.Add(txtvalfentir);
-            ControleObjMN.Add(txtvaltreo);
-            ControleObjMN.Add(txtvaltri);
-            ControleObjMN.Add(txtvalval);
-            ControleObjMN.Add(txtvaltau);
-            ControleObjMN.Add(txtvalca);
-            ControleObjMN.Add(txtvalp);
-            ControleObjMN.Add(txtvalk);
-            ControleObjMN.Add(txtvalna);
-            ControleObjMN.Add(txtvalcl);
-            ControleObjMN.Add(txtvalmg);
-            ControleObjMN.Add(txtvalcu);
-            ControleObjMN.Add(txtvali);
-            ControleObjMN.Add(txtvalfe);
-            ControleObjMN.Add(txtvalmn);
-            ControleObjMN.Add(txtvalse);
-            ControleObjMN.Add(txtvalzn);
-            ControleObjMN.Add(txtvals);
-            ControleObjMN.Add(txtvalvita);
-            ControleObjMN.Add(txtvalvitd);
-            ControleObjMN.Add(txtvalvite);
-            ControleObjMN.Add(txtvaltiamina);
-            ControleObjMN.Add(txtvalriboflavina);
-            ControleObjMN.Add(txtvalacpantotenico);
-            ControleObjMN.Add(txtvalvitb6);
-            ControleObjMN.Add(txtvalvitb12);
-            ControleObjMN.Add(txtvalniacina);
-            ControleObjMN.Add(txtvalacfolico);
-            ControleObjMN.Add(txtvalbiotina);
-            ControleObjMN.Add(txtvalcolina);
-            ControleObjMN.Add(txtvalvitk);
-            ControleObjMN.Add(txtvalvitc);
-
-
-
-            txtvalenergia.Text = f.Energia;
-            txtvalumidade.Text = f.Umidade;
-            txtvalmateriaseca.Text = f.MS;
-            txtvalproteinabruta.Text = f.PB;
-            txtvalextratoetereo.Text = f.EE;
-            txtvalfibrabruta.Text = f.FB;
-            txtvalmateriamineral.Text = f.MM;
-            txtvalenn.Text = f.ENN;
-            txtvalaclinoleicon3.Text = f.Ac_Linoleico3;
-            txtvalaclinoleicon6.Text = f.Ac_Linoleico6;
-            txtvalacaraquidonico.Text = "0"; //Nao possui no BD
-            txtvalepadha.Text = f.EPA_DHA;
-            txtvalcnf.Text = f.CNF;
-            txtvalfda.Text = f.FDA;
-            txtvalfdn.Text = f.FDN;
-            txtvalarg.Text = f.Arg;
-            txtvalhis.Text = f.His;
-            txtvaliso.Text = f.Iso;
-            txtvalleu.Text = f.Leu;
-            txtvallis.Text = f.Lis;
-            txtvalmet.Text = f.Met;
-            txtvalmetcis.Text = f.Met_Cis;
-            txtvalfen.Text = f.Fen;
-            txtvalfentir.Text = f.Fen_Tir;
-            txtvaltreo.Text = f.Treo;
-            txtvaltri.Text = f.Tri;
-            txtvalval.Text = f.Val;
-            txtvaltau.Text = f.Tau;
-            txtvalca.Text = f.Ca;
-            txtvalp.Text = f.P;
-            txtvalk.Text = f.K;
-            txtvalna.Text = f.Na;
-            txtvalcl.Text = f.Cl;
-            txtvalmg.Text = f.Mg;
-            txtvalcu.Text = f.Cu;
-            txtvali.Text = f.I;
-            txtvalfe.Text = f.Fe;
-            txtvalmn.Text = f.Mn;
-            txtvalse.Text = f.Se;
-            txtvalzn.Text = f.Zn;
-            txtvals.Text = f.S;
-            txtvalvita.Text = f.Vit_A;
-            txtvalvitd.Text = f.Vit_D;
-            txtvalvite.Text = f.Vit_E;
-            txtvaltiamina.Text = f.Tiamina;
-            txtvalriboflavina.Text = f.Riboflavina;
-            txtvalacpantotenico.Text = f.Ac_Pantotenico;
-            txtvalvitb6.Text = f.Vit_B6;
-            txtvalvitb12.Text = f.Vit_B12;
-            txtvalniacina.Text = f.Niacina;
-            txtvalacfolico.Text = f.Ac_Folico;
-            txtvalbiotina.Text = f.Biotina;
-            txtvalcolina.Text = f.Colina;
-            txtvalvitk.Text = f.Vit_K;
-            txtvalvitc.Text = f.Vit_C;*/
+            ControleObjMN.Add(f.Alimento);
+            ControleObjMN.Add(f.Energia);
+            ControleObjMN.Add(f.Umidade);
+            ControleObjMN.Add(f.MS);
+            ControleObjMN.Add(f.PB);
+            ControleObjMN.Add(f.EE);
+            ControleObjMN.Add(f.FB);
+            ControleObjMN.Add(f.MM);
+            ControleObjMN.Add(f.ENN);
+            ControleObjMN.Add(f.Ac_Linoleico3);
+            ControleObjMN.Add(f.Ac_Linoleico6);
+            //ControleObjMN.Add(txtvalacaraquidonico);
+            ControleObjMN.Add(f.EPA_DHA);
+            ControleObjMN.Add(f.CNF);
+            ControleObjMN.Add(f.FDA);
+            ControleObjMN.Add(f.FDN);
+            ControleObjMN.Add(f.Arg);
+            ControleObjMN.Add(f.His);
+            ControleObjMN.Add(f.Iso);
+            ControleObjMN.Add(f.Leu);
+            ControleObjMN.Add(f.Lis);
+            ControleObjMN.Add(f.Met);
+            ControleObjMN.Add(f.Met_Cis);
+            ControleObjMN.Add(f.Fen);
+            ControleObjMN.Add(f.Fen_Tir);
+            ControleObjMN.Add(f.Treo);
+            ControleObjMN.Add(f.Tri);
+            ControleObjMN.Add(f.Val);
+            ControleObjMN.Add(f.Tau);
+            ControleObjMN.Add(f.Ca);
+            ControleObjMN.Add(f.P);
+            ControleObjMN.Add(f.K);
+            ControleObjMN.Add(f.Na);
+            ControleObjMN.Add(f.Cl);
+            ControleObjMN.Add(f.Mg);
+            ControleObjMN.Add(f.Cu);
+            ControleObjMN.Add(f.Lis);
+            ControleObjMN.Add(f.Fe);
+            ControleObjMN.Add(f.Mn);
+            ControleObjMN.Add(f.Se);
+            ControleObjMN.Add(f.Zn);
+            ControleObjMN.Add(f.S);
+            ControleObjMN.Add(f.Vit_A);
+            ControleObjMN.Add(f.Vit_D);
+            ControleObjMN.Add(f.Vit_E);
+            ControleObjMN.Add(f.Tiamina);
+            ControleObjMN.Add(f.Riboflavina);
+            ControleObjMN.Add(f.Ac_Pantotenico);
+            ControleObjMN.Add(f.Vit_B6);
+            ControleObjMN.Add(f.Vit_B12);
+            ControleObjMN.Add(f.Niacina);
+            ControleObjMN.Add(f.Ac_Folico);
+            ControleObjMN.Add(f.Biotina);
+            ControleObjMN.Add(f.Colina);
+            ControleObjMN.Add(f.Vit_K);
+            ControleObjMN.Add(f.Vit_C);
         }
         private void Controlatxtmn(bool interruptor)
         {
@@ -389,7 +331,9 @@ namespace ProjetoNariz.Telas
                     ControleTxtMN[i].BackColor = Color.White;
                     ControleTxtMN[i].Enabled = false;
                     if (ControleTxtMN[i] == txtnomealimentomn)
+                    {
                         ControleTxtMN[i].Visible = false;
+                    }
                     i++;
                 }
                 /*txtnomealimentomn.Enabled = false;
@@ -455,10 +399,17 @@ namespace ProjetoNariz.Telas
                 int i = 0, j = ControleTxtMN.Count;
                 while (i != j)
                 {
-                    ControleTxtMN[i].BackColor = Color.Beige;
                     ControleTxtMN[i].Enabled = true;
                     if (ControleTxtMN[i] == txtnomealimentomn)
+                    {
+                        ControleTxtMN[i].BackColor = Color.White;
                         ControleTxtMN[i].Visible = true;
+                    }
+                    else
+                    {
+                        ControleTxtMN[i].BackColor = Color.Beige;
+                    }
+                        
                     i++;
                 }
             }
