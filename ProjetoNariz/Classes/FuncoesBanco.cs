@@ -37,6 +37,7 @@ namespace ProjetoNariz
         public string EE { get; set; }
         public string Ac_Linoleico6 { get; set; }
         public string Ac_Linoleico3 { get; set; }
+        public string Ac_Araquidonico { get; set; }
         public string EPA_DHA { get; set; }
         public string MM { get; set; }
         public string Ca { get; set; }
@@ -139,6 +140,7 @@ namespace ProjetoNariz
             Tau = string.Empty;
             EE = string.Empty;
             Ac_Linoleico3 = string.Empty;
+            Ac_Araquidonico = string.Empty;
             Ac_Linoleico6 = string.Empty;
             EPA_DHA = string.Empty;
             MM = string.Empty;
@@ -218,6 +220,8 @@ namespace ProjetoNariz
             Pitada = string.Empty;
 
         }
+
+        //Controles Alimentos MN
         public DataTable AtualizaAlimentosMN()
         {
             MySqlCommand cmd = new MySqlCommand();
@@ -295,6 +299,7 @@ namespace ProjetoNariz
                 Tau = dados["Tau"].ToString();
                 EE = dados["EE"].ToString();
                 Ac_Linoleico3 = dados["Ac_Linoleico3"].ToString();
+                Ac_Araquidonico = dados["Ac_Araquidonico"].ToString();
                 Ac_Linoleico6 = dados["Ac_Linoleico6"].ToString();
                 EPA_DHA = dados["EPA_DHA"].ToString();
                 MM = dados["MM"].ToString();
@@ -375,7 +380,63 @@ namespace ProjetoNariz
             }
             conectaMySQL.FechaMySQL();
         }
+        public void InsereAlimentoMN()
+        {
+            //TODO: Implementar Função para inserir Alimento MN
+        }
+        public void DeletaAlimentoMN()
+        {
+            //TODO: Implementar Função para excluir Alimento MN
+        }
 
+        //Controles Alimentos MS
+        public DataTable AtualizaAlimentosMS()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conectaMySQL.AbreMySQL();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select id, Alimento, Energia AS 'Energia (kcal)', Umidade AS	'Umidade (%)'," +
+                "MS AS 'MS (%)', PB AS 'PB (%)', Arg AS 'Arg (%)', His AS 'His (%)', Iso AS 'Iso (%)'," +
+                "Leu AS 'Leu (%)', Lis AS 'Lis (%)', Met AS 'Met (%)', Met_Cis AS 'Met + Cis  (%)'," +
+                "Fen AS 'Fen  (%)', Fen_Tir AS 'Fen + Tir (%)', Treo AS 'Treo (%)', Tri AS 'Tri (%)'," +
+                "Val AS 'Val (%)', Tau AS 'Tau (%)', EE AS 'EE (%)', Ac_Linoleico6 AS 'Ac. Linoleico n-6 (%)'," +
+                "Ac_Araquidonico AS 'Ac. Araquidonico (mg)', Ac_Linoleico3 AS 'Ac. Linolenico n-3 (%)'," +
+                "EPA_DHA AS 'EPA + DHA (%)', MM AS 'MM (%)', Ca AS 'Ca (mg)', P AS 'P (mg)',K AS 'K (mg)'," +
+                "Na AS 'Na (mg)', Cl AS 'Cl (mg)', Mg AS 'Mg (mg)', Cu AS 'Cu (mg)', I AS 'I (mg)'," +
+                "Fe AS 'Fe (mg)', Mn AS 'Mn (mg)', Se AS 'Se (mg)', Zn AS 'Zn (mg)', S AS 'S (mg)'," +
+                "Carboidratos AS 'Carboidratos (%)', FB AS 'FB (%)', ENN AS 'ENN (%)',FDN AS 'FDN (%)'," +
+                "FDA AS 'FDA (%)', CNF AS 'CNF (%)', Vit_A AS 'Vit A (UI)', Vit_D AS 'Vit D (UI)'," +
+                "Vit_E AS 'Vit E (UI)', Tiamina AS 'Tiamina (mg)', Riboflavina AS 'Riboflavina (mg)'," +
+                "Ac_Pantotenico AS	'Ac. Pantotenico (mg)', Vit_B6 AS 'Vit. B6 (mg)', Vit_B12 AS 'Vit. B12 (mg)'," +
+                "Niacina AS 'Niacina (mg)', Ac_Folico AS 'Ac. Folico (mg)', Biotina AS 'Biotina (mg)'," +
+                "Colina AS 'Colina (mg)', Vit_K AS 'Vit. K (mg)', Vit_C AS 'Vit. C (mg)'," +
+                "Preco AS 'Preco/kg (R$)' from alimentosms";
+
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = cmd;
+
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            conectaMySQL.FechaMySQL();
+
+            return dt;
+        }
+        public DataTable PesquisaAlimentosMS(string TextoPesquisa, string coluna)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conectaMySQL.AbreMySQL();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * from alimentosms where " + coluna + " like '%" + TextoPesquisa + "%'";
+
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = cmd;
+
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            conectaMySQL.FechaMySQL();
+
+            return dt;
+        }
         //Testes
 
     }

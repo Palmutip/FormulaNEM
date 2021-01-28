@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProjetoNariz.Classes;
@@ -17,7 +18,8 @@ namespace ProjetoNariz.Telas
         Tradutor t = new Tradutor();
         List<TextBox> ControleTxtMN = new List<TextBox>();
         List<String> ControleObjMN = new List<String>();
-    public Principal()
+        private static bool Search = false, PrimeiraMetade = false;
+        public Principal()
         {
             InitializeComponent();
         }
@@ -27,6 +29,7 @@ namespace ProjetoNariz.Telas
             CarregaCombobox();
             CarregaTips();
             dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
+            dgvalimentosms.DataSource = f.AtualizaAlimentosMS();
         }
 
         //Funções
@@ -121,10 +124,26 @@ namespace ProjetoNariz.Telas
 
             //PaineisPrincipais(pnlali);
         }
+        private void PaineisPrincipais(Panel panel1, Panel panel2)
+        {
+            pnlalimentosmn.Visible = false;
+            pnlalimentosms.Visible = false;
+            pnlvisualizaalimentosmn.Visible = false;
+            pnlsuperioralimentosmn.Visible = false;
+            pnlsuperioralimentosms.Visible = false;
+            pnlselecionaalimento.Visible = false;
+
+            panel1.Visible = true;
+            panel2.Visible = true;
+        }
         private void PaineisPrincipais(Panel panel)
         {
             pnlalimentosmn.Visible = false;
             pnlalimentosms.Visible = false;
+            pnlvisualizaalimentosmn.Visible = false;
+            pnlsuperioralimentosmn.Visible = false;
+            pnlsuperioralimentosms.Visible = false;
+            pnlselecionaalimento.Visible = false;
 
             panel.Visible = true;
         }
@@ -153,7 +172,7 @@ namespace ProjetoNariz.Telas
             txtvalenn.Text = string.Empty;
             txtvalaclinoleicon3.Text = string.Empty;
             txtvalaclinoleicon6.Text = string.Empty;
-            txtvalacaraquidonico.Text = string.Empty;  //Nao possui no BD
+            txtvalacaraquidonico.Text = string.Empty; 
             txtvalepadha.Text = string.Empty;
             txtvalcnf.Text = string.Empty;
             txtvalfda.Text = string.Empty;
@@ -198,6 +217,17 @@ namespace ProjetoNariz.Telas
             txtvalcolina.Text = string.Empty;
             txtvalvitk.Text = string.Empty;
             txtvalvitc.Text = string.Empty;
+
+            btneditaalimentomn.Enabled = true;
+            btneditaalimentomn.Text = "Editar";
+            btneditaalimentomn.ForeColor = Color.White;
+            btneditaalimentomn.BackColor = Color.FromArgb(255, 179, 0);
+
+            btnsalvaalimentomn.Enabled = false;
+            btnsalvaalimentomn.Visible = false;
+
+            txtnomealimentomn.Visible = false;
+            txtnomealimentomn.Enabled = false;
         }
         private void CarregaTips()
         {
@@ -216,7 +246,7 @@ namespace ProjetoNariz.Telas
             ControleTxtMN.Add(txtvalenn);
             ControleTxtMN.Add(txtvalaclinoleicon3);
             ControleTxtMN.Add(txtvalaclinoleicon6);
-            //ControleTxtMN.Add(txtvalacaraquidonico);
+            ControleTxtMN.Add(txtvalacaraquidonico);
             ControleTxtMN.Add(txtvalepadha);
             ControleTxtMN.Add(txtvalcnf);
             ControleTxtMN.Add(txtvalfda);
@@ -275,7 +305,7 @@ namespace ProjetoNariz.Telas
             ControleObjMN.Add(f.ENN);
             ControleObjMN.Add(f.Ac_Linoleico3);
             ControleObjMN.Add(f.Ac_Linoleico6);
-            //ControleObjMN.Add(txtvalacaraquidonico);
+            ControleObjMN.Add(f.Ac_Araquidonico);
             ControleObjMN.Add(f.EPA_DHA);
             ControleObjMN.Add(f.CNF);
             ControleObjMN.Add(f.FDA);
@@ -336,63 +366,6 @@ namespace ProjetoNariz.Telas
                     }
                     i++;
                 }
-                /*txtnomealimentomn.Enabled = false;
-                txtnomealimentomn.Visible = false;
-                txtvalenergia.Enabled = false;
-                txtvalumidade.Enabled = false;
-                txtvalmateriaseca.Enabled = false;
-                txtvalproteinabruta.Enabled = false;
-                txtvalextratoetereo.Enabled = false;
-                txtvalfibrabruta.Enabled = false;
-                txtvalmateriamineral.Enabled = false;
-                txtvalenn.Enabled = false;
-                txtvalaclinoleicon3.Enabled = false;
-                txtvalaclinoleicon6.Enabled = false;
-                txtvalacaraquidonico.Enabled = false;//Nao possui no BD
-                txtvalepadha.Enabled = false;
-                txtvalcnf.Enabled = false;
-                txtvalfda.Enabled = false;
-                txtvalfdn.Enabled = false;
-                txtvalarg.Enabled = false;
-                txtvalhis.Enabled = false;
-                txtvaliso.Enabled = false;
-                txtvalleu.Enabled = false;
-                txtvallis.Enabled = false;
-                txtvalmet.Enabled = false;
-                txtvalmetcis.Enabled = false;
-                txtvalfen.Enabled = false;
-                txtvalfentir.Enabled = false;
-                txtvaltreo.Enabled = false;
-                txtvaltri.Enabled = false;
-                txtvalval.Enabled = false;
-                txtvaltau.Enabled = false;
-                txtvalca.Enabled = false;
-                txtvalp.Enabled = false;
-                txtvalk.Enabled = false;
-                txtvalna.Enabled = false;
-                txtvalcl.Enabled = false;
-                txtvalmg.Enabled = false;
-                txtvalcu.Enabled = false;
-                txtvali.Enabled = false;
-                txtvalfe.Enabled = false;
-                txtvalmn.Enabled = false;
-                txtvalse.Enabled = false;
-                txtvalzn.Enabled = false;
-                txtvals.Enabled = false;
-                txtvalvita.Enabled = false;
-                txtvalvitd.Enabled = false;
-                txtvalvite.Enabled = false;
-                txtvaltiamina.Enabled = false;
-                txtvalriboflavina.Enabled = false;
-                txtvalacpantotenico.Enabled = false;
-                txtvalvitb6.Enabled = false;
-                txtvalvitb12.Enabled = false;
-                txtvalniacina.Enabled = false;
-                txtvalacfolico.Enabled = false;
-                txtvalbiotina.Enabled = false;
-                txtvalcolina.Enabled = false;
-                txtvalvitk.Enabled = false;
-                txtvalvitc.Enabled = false;*/
             }
             else
             {
@@ -415,6 +388,143 @@ namespace ProjetoNariz.Telas
             }
             
         }
+        private void Atribuicoes(object parametros)
+        {
+            List<bool> param = (List<bool>)parametros;
+            bool search = param[0];
+            bool primeirametade = param[1];
+            //param.Add(false);
+            //param.Add(false);
+            if (!search)
+            {
+                if (!primeirametade)
+                {
+                     f.Ca = txtvalca.Text;
+                     f.P = txtvalp.Text ;
+                     f.K = txtvalk.Text;
+                     f.Na = txtvalna.Text;
+                     f.Cl = txtvalcl.Text;
+                     f.Mg = txtvalmg.Text;
+                     f.Cu = txtvalcu.Text;
+                     f.I = txtvali.Text;
+                     f.Fe = txtvalfe.Text;
+                     f.Mn = txtvalmn.Text;
+                     f.Se = txtvalse.Text;
+                     f.Zn = txtvalzn.Text;
+                     f.S = txtvals.Text;
+                     f.Vit_A = txtvalvita.Text;
+                     f.Vit_D = txtvalvitd.Text;
+                     f.Vit_E = txtvalvite.Text;
+                     f.Tiamina = txtvaltiamina.Text;
+                     f.Riboflavina = txtvalriboflavina.Text;
+                     f.Ac_Pantotenico = txtvalacpantotenico.Text;
+                     f.Vit_B6 = txtvalvitb6.Text;
+                     f.Vit_B12 = txtvalvitb12.Text;
+                     f.Niacina = txtvalniacina.Text;
+                     f.Ac_Folico = txtvalacfolico.Text;
+                     f.Biotina = txtvalbiotina.Text;
+                     f.Colina = txtvalcolina.Text;
+                     f.Vit_K = txtvalvitk.Text;
+                     f.Vit_C = txtvalvitc.Text;
+                }
+                else
+                {
+                    f.Energia = txtvalenergia.Text;
+                     f.Umidade = txtvalumidade.Text;
+                     f.MS = txtvalmateriaseca.Text;
+                     f.PB = txtvalproteinabruta.Text;
+                     f.EE = txtvalextratoetereo.Text;
+                     f.FB = txtvalfibrabruta.Text;
+                     f.MM = txtvalmateriamineral.Text;
+                     f.ENN = txtvalenn.Text;
+                     f.Ac_Linoleico3 = txtvalaclinoleicon3.Text;
+                     f.Ac_Linoleico6 = txtvalaclinoleicon6.Text;
+                     f.Ac_Araquidonico = txtvalacaraquidonico.Text;
+                     f.EPA_DHA = txtvalepadha.Text;
+                     f.CNF = txtvalcnf.Text;
+                     f.FDA = txtvalfda.Text;
+                     f.FDN = txtvalfdn.Text;
+                     f.Arg = txtvalarg.Text;
+                     f.His = txtvalhis.Text;
+                     f.Iso = txtvaliso.Text;
+                     f.Leu = txtvalleu.Text;
+                     f.Lis = txtvallis.Text;
+                     f.Met = txtvalmet.Text;
+                     f.Met_Cis = txtvalmetcis.Text;
+                     f.Fen = txtvalfen.Text;
+                     f.Fen_Tir = txtvalfentir.Text;
+                     f.Treo = txtvaltreo.Text;
+                     f.Tri = txtvaltri.Text;
+                     f.Val = txtvalval.Text;
+                     f.Tau = txtvaltau.Text;
+                }
+            }
+            else
+            {
+                if (!primeirametade)
+                {
+                    txtvalca.Text = f.Ca;
+                    txtvalp.Text = f.P;
+                    txtvalk.Text = f.K;
+                    txtvalna.Text = f.Na;
+                    txtvalcl.Text = f.Cl;
+                    txtvalmg.Text = f.Mg;
+                    txtvalcu.Text = f.Cu;
+                    txtvali.Text = f.I;
+                    txtvalfe.Text = f.Fe;
+                    txtvalmn.Text = f.Mn;
+                    txtvalse.Text = f.Se;
+                    txtvalzn.Text = f.Zn;
+                    txtvals.Text = f.S;
+                    txtvalvita.Text = f.Vit_A;
+                    txtvalvitd.Text = f.Vit_D;
+                    txtvalvite.Text = f.Vit_E;
+                    txtvaltiamina.Text = f.Tiamina;
+                    txtvalriboflavina.Text = f.Riboflavina;
+                    txtvalacpantotenico.Text = f.Ac_Pantotenico;
+                    txtvalvitb6.Text = f.Vit_B6;
+                    txtvalvitb12.Text = f.Vit_B12;
+                    txtvalniacina.Text = f.Niacina;
+                    txtvalacfolico.Text = f.Ac_Folico;
+                    txtvalbiotina.Text = f.Biotina;
+                    txtvalcolina.Text = f.Colina;
+                    txtvalvitk.Text = f.Vit_K;
+                    txtvalvitc.Text = f.Vit_C;
+                }
+                else
+                {
+                    lblnomealimentomn.Text = f.Alimento;
+                    txtvalenergia.Text = f.Energia;
+                    txtvalumidade.Text = f.Umidade;
+                    txtvalmateriaseca.Text = f.MS;
+                    txtvalproteinabruta.Text = f.PB;
+                    txtvalextratoetereo.Text = f.EE;
+                    txtvalfibrabruta.Text = f.FB;
+                    txtvalmateriamineral.Text = f.MM;
+                    txtvalenn.Text = f.ENN;
+                    txtvalaclinoleicon3.Text = f.Ac_Linoleico3;
+                    txtvalaclinoleicon6.Text = f.Ac_Linoleico6;
+                    txtvalacaraquidonico.Text = f.Ac_Araquidonico;
+                    txtvalepadha.Text = f.EPA_DHA;
+                    txtvalcnf.Text = f.CNF;
+                    txtvalfda.Text = f.FDA;
+                    txtvalfdn.Text = f.FDN;
+                    txtvalarg.Text = f.Arg;
+                    txtvalhis.Text = f.His;
+                    txtvaliso.Text = f.Iso;
+                    txtvalleu.Text = f.Leu;
+                    txtvallis.Text = f.Lis;
+                    txtvalmet.Text = f.Met;
+                    txtvalmetcis.Text = f.Met_Cis;
+                    txtvalfen.Text = f.Fen;
+                    txtvalfentir.Text = f.Fen_Tir;
+                    txtvaltreo.Text = f.Treo;
+                    txtvaltri.Text = f.Tri;
+                    txtvalval.Text = f.Val;
+                    txtvaltau.Text = f.Tau;
+                }
+            }
+        }
 
         //Botões Menu Lateral
         private void btnhome_Click(object sender, EventArgs e)
@@ -424,6 +534,7 @@ namespace ProjetoNariz.Telas
         private void btnalimentos_Click(object sender, EventArgs e)
         {
             ClicaAlimentos();
+            PaineisPrincipais(pnlselecionaalimento);
         }
         private void btnformular_Click(object sender, EventArgs e)
         {
@@ -444,6 +555,16 @@ namespace ProjetoNariz.Telas
         private void btnsair_Click(object sender, EventArgs e)
         {
             ClicaSair();
+        }
+
+        //Painel para escolher com qual seção de alimentos trabalhar
+        private void btnescolhealimentoms_Click(object sender, EventArgs e)
+        {
+            PaineisPrincipais(pnlsuperioralimentosms, pnlalimentosms);
+        }
+        private void btnescolhealimentomn_Click(object sender, EventArgs e)
+        {
+            PaineisPrincipais(pnlsuperioralimentosmn, pnlalimentosmn);
         }
 
         //Painel Alimentos Materia Natural
@@ -493,75 +614,88 @@ namespace ProjetoNariz.Telas
         }
         private void btnvisalimentomn_Click(object sender, EventArgs e)
         {
-            //asdasdadasdasad
-            pnlvisualizaalimentosmn.Visible = true;
+            PaineisPrincipais(pnlvisualizaalimentosmn);
             Controlatxtmn(false);
 
             f.id = dgvalimentosmn.CurrentRow.Cells[0].Value.ToString();
             f.SelecionaAlimentoMN();
+
             //atribuição das variáveis
-            lblnomealimentomn.Text = f.Alimento;
-            txtvalenergia.Text = f.Energia;
-            txtvalumidade.Text = f.Umidade;
-            txtvalmateriaseca.Text = f.MS;
-            txtvalproteinabruta.Text = f.PB;
-            txtvalextratoetereo.Text = f.EE;
-            txtvalfibrabruta.Text = f.FB;
-            txtvalmateriamineral.Text = f.MM;
-            txtvalenn.Text = f.ENN;
-            txtvalaclinoleicon3.Text = f.Ac_Linoleico3;
-            txtvalaclinoleicon6.Text = f.Ac_Linoleico6;
-            txtvalacaraquidonico.Text = "0"; //Nao possui no BD
-            txtvalepadha.Text = f.EPA_DHA;
-            txtvalcnf.Text = f.CNF;
-            txtvalfda.Text = f.FDA;
-            txtvalfdn.Text = f.FDN;
-            txtvalarg.Text = f.Arg;
-            txtvalhis.Text = f.His;
-            txtvaliso.Text = f.Iso;
-            txtvalleu.Text = f.Leu;
-            txtvallis.Text = f.Lis;
-            txtvalmet.Text = f.Met;
-            txtvalmetcis.Text = f.Met_Cis;
-            txtvalfen.Text = f.Fen;
-            txtvalfentir.Text = f.Fen_Tir;
-            txtvaltreo.Text = f.Treo;
-            txtvaltri.Text = f.Tri;
-            txtvalval.Text = f.Val;
-            txtvaltau.Text = f.Tau;
-            txtvalca.Text = f.Ca;
-            txtvalp.Text = f.P;
-            txtvalk.Text = f.K;
-            txtvalna.Text = f.Na;
-            txtvalcl.Text = f.Cl;
-            txtvalmg.Text = f.Mg;
-            txtvalcu.Text = f.Cu;
-            txtvali.Text = f.I;
-            txtvalfe.Text = f.Fe;
-            txtvalmn.Text = f.Mn;
-            txtvalse.Text = f.Se;
-            txtvalzn.Text = f.Zn;
-            txtvals.Text = f.S;
-            txtvalvita.Text = f.Vit_A;
-            txtvalvitd.Text = f.Vit_D;
-            txtvalvite.Text = f.Vit_E;
-            txtvaltiamina.Text = f.Tiamina;
-            txtvalriboflavina.Text = f.Riboflavina;
-            txtvalacpantotenico.Text = f.Ac_Pantotenico;
-            txtvalvitb6.Text = f.Vit_B6;
-            txtvalvitb12.Text = f.Vit_B12;
-            txtvalniacina.Text = f.Niacina;
-            txtvalacfolico.Text = f.Ac_Folico;
-            txtvalbiotina.Text = f.Biotina;
-            txtvalcolina.Text = f.Colina;
-            txtvalvitk.Text = f.Vit_K;
-            txtvalvitc.Text = f.Vit_C;
-            f.Desconstrutor();
+            Thread t = new Thread(new ParameterizedThreadStart(Atribuicoes));
+            List<bool> parametros = new List<bool>();
+            parametros.Add(true);
+            parametros.Add(false);
+            t.Start(parametros);
+            Thread t2 = new Thread(new ParameterizedThreadStart(Atribuicoes));
+            List<bool> parametros2 = new List<bool>();
+            parametros2.Add(true);
+            parametros2.Add(true);
+            t.Start(parametros);
+
+            //f.Desconstrutor();
+            t.Abort();
+            t2.Abort();
         }
         private void btnvoltavisualizaalimentomn_Click(object sender, EventArgs e)
         {
-            pnlvisualizaalimentosmn.Visible = false;
+            PaineisPrincipais(pnlalimentosmn);
             LimpaCampos();
+        }
+        private void btneditaalimentomn_Click(object sender, EventArgs e)
+        {
+            Controlatxtmn(true);
+            btneditaalimentomn.Enabled = false;
+            btneditaalimentomn.Text = "Editando";
+            btneditaalimentomn.ForeColor = Color.White;
+            btneditaalimentomn.BackColor = Color.Beige;
+
+            btnsalvaalimentomn.Enabled = true;
+            btnsalvaalimentomn.Visible = true;
+
+            txtnomealimentomn.Visible = true;
+            txtnomealimentomn.Enabled = true;
+        }
+        private void btnsalvaalimentomn_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja alterar os valores nutricionais do alimento?", "Atenção", MessageBoxButtons.YesNo);
+            if(resultado == DialogResult.Yes)
+            {
+                //atribuição dos valores
+                Thread t = new Thread(new ParameterizedThreadStart(Atribuicoes));
+                List<bool> parametros = new List<bool>();
+                parametros.Add(true);
+                parametros.Add(false);
+                t.Start(parametros);
+                Thread t2 = new Thread(new ParameterizedThreadStart(Atribuicoes));
+                List<bool> parametros2 = new List<bool>();
+                parametros2.Add(true);
+                parametros2.Add(true);
+                t.Start(parametros);
+
+                f.InsereAlimentoMN();
+
+                f.Desconstrutor();
+                LimpaCampos();
+
+                t.Abort();
+                t2.Abort();
+                Controlatxtmn(false);
+                dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
+                PaineisPrincipais(pnlalimentosmn);
+            }
+        }
+        private void btnexcluiralimentomn_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Tem certeza que deseja excluir o alimento?", "Atenção", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                f.DeletaAlimentoMN();
+                f.Desconstrutor();
+                LimpaCampos();
+                Controlatxtmn(false);
+                dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
+                PaineisPrincipais(pnlalimentosmn);
+            }
         }
 
         //Painel Alimentos Materia Seca
@@ -582,65 +716,58 @@ namespace ProjetoNariz.Telas
 
             txtbuscaalimentoms.ForeColor = Color.Silver;
         }
-
-        private void btneditaalimentomn_Click(object sender, EventArgs e)
+        private void txtbuscaalimentoms_KeyUp(object sender, KeyEventArgs e)
         {
-            txtvalenergia.Text = f.Energia;
-            txtvalumidade.Text = f.Umidade;
-            txtvalmateriaseca.Text = f.MS;
-            txtvalproteinabruta.Text = f.PB;
-            txtvalextratoetereo.Text = f.EE;
-            txtvalfibrabruta.Text = f.FB;
-            txtvalmateriamineral.Text = f.MM;
-            txtvalenn.Text = f.ENN;
-            txtvalaclinoleicon3.Text = f.Ac_Linoleico3;
-            txtvalaclinoleicon6.Text = f.Ac_Linoleico6;
-            txtvalacaraquidonico.Text = "0"; //Nao possui no BD
-            txtvalepadha.Text = f.EPA_DHA;
-            txtvalcnf.Text = f.CNF;
-            txtvalfda.Text = f.FDA;
-            txtvalfdn.Text = f.FDN;
-            txtvalarg.Text = f.Arg;
-            txtvalhis.Text = f.His;
-            txtvaliso.Text = f.Iso;
-            txtvalleu.Text = f.Leu;
-            txtvallis.Text = f.Lis;
-            txtvalmet.Text = f.Met;
-            txtvalmetcis.Text = f.Met_Cis;
-            txtvalfen.Text = f.Fen;
-            txtvalfentir.Text = f.Fen_Tir;
-            txtvaltreo.Text = f.Treo;
-            txtvaltri.Text = f.Tri;
-            txtvalval.Text = f.Val;
-            txtvaltau.Text = f.Tau;
-            txtvalca.Text = f.Ca;
-            txtvalp.Text = f.P;
-            txtvalk.Text = f.K;
-            txtvalna.Text = f.Na;
-            txtvalcl.Text = f.Cl;
-            txtvalmg.Text = f.Mg;
-            txtvalcu.Text = f.Cu;
-            txtvali.Text = f.I;
-            txtvalfe.Text = f.Fe;
-            txtvalmn.Text = f.Mn;
-            txtvalse.Text = f.Se;
-            txtvalzn.Text = f.Zn;
-            txtvals.Text = f.S;
-            txtvalvita.Text = f.Vit_A;
-            txtvalvitd.Text = f.Vit_D;
-            txtvalvite.Text = f.Vit_E;
-            txtvaltiamina.Text = f.Tiamina;
-            txtvalriboflavina.Text = f.Riboflavina;
-            txtvalacpantotenico.Text = f.Ac_Pantotenico;
-            txtvalvitb6.Text = f.Vit_B6;
-            txtvalvitb12.Text = f.Vit_B12;
-            txtvalniacina.Text = f.Niacina;
-            txtvalacfolico.Text = f.Ac_Folico;
-            txtvalbiotina.Text = f.Biotina;
-            txtvalcolina.Text = f.Colina;
-            txtvalvitk.Text = f.Vit_K;
-            txtvalvitc.Text = f.Vit_C;
-            Controlatxtmn(true);
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (cbxfiltroalimentoms.Text == "Filtro")
+                {
+                    dgvalimentosms.DataSource = f.AtualizaAlimentosMS();
+                }
+                else
+                {
+                    string aux = t.TraduzCombobox(cbxfiltroalimentoms.Text);
+                    dgvalimentosms.DataSource = f.PesquisaAlimentosMS(txtbuscaalimentoms.Text, aux);
+                }
+            }
         }
+        private void btnpesquisaalimentoms_Click(object sender, EventArgs e)
+        {
+            if (cbxfiltroalimentoms.Text == "Filtro")
+            {
+                dgvalimentosms.DataSource = f.AtualizaAlimentosMS();
+            }
+            else
+            {
+                string aux = t.TraduzCombobox(cbxfiltroalimentoms.Text);
+                dgvalimentosms.DataSource = f.PesquisaAlimentosMS(txtbuscaalimentoms.Text, aux);
+            }
+        }
+        private void btnvisalimentoms_Click(object sender, EventArgs e)
+        {
+            PaineisPrincipais(pnlvisualizaalimentosms);
+            /*Controlatxtmn(false);
+
+            f.id = dgvalimentosmn.CurrentRow.Cells[0].Value.ToString();
+            f.SelecionaAlimentoMN();
+
+            //atribuição das variáveis
+            Thread t = new Thread(new ParameterizedThreadStart(Atribuicoes));
+            List<bool> parametros = new List<bool>();
+            parametros.Add(true);
+            parametros.Add(false);
+            t.Start(parametros);
+            Thread t2 = new Thread(new ParameterizedThreadStart(Atribuicoes));
+            List<bool> parametros2 = new List<bool>();
+            parametros2.Add(true);
+            parametros2.Add(true);
+            t.Start(parametros);
+
+            //f.Desconstrutor();
+            t.Abort();
+            t2.Abort();*/
+        }
+
+
     }
 }
