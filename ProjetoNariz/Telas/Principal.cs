@@ -140,10 +140,10 @@ namespace ProjetoNariz.Telas
         {
             pnlalimentosmn.Visible = false;
             pnlalimentosms.Visible = false;
-            pnlvisualizaalimentosmn.Visible = false;
-            pnlsuperioralimentosmn.Visible = false;
-            pnlsuperioralimentosms.Visible = false;
-            pnlselecionaalimento.Visible = false;
+            //pnlvisualizaalimentosmn.Visible = false;
+            //pnlsuperioralimentosmn.Visible = false;
+            //pnlsuperioralimentosms.Visible = false;
+            //pnlselecionaalimento.Visible = false;
 
             panel.Visible = true;
         }
@@ -743,6 +743,7 @@ namespace ProjetoNariz.Telas
                 dgvalimentosms.DataSource = f.PesquisaAlimentosMS(txtbuscaalimentoms.Text, aux);
             }
         }
+
         private void btnvisalimentoms_Click(object sender, EventArgs e)
         {
             PaineisPrincipais(pnlvisualizaalimentosms);
