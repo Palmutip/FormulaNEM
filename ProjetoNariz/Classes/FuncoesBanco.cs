@@ -36,7 +36,7 @@ namespace ProjetoNariz
         public string Tau { get; set; }
         public string EE { get; set; }
         public string Ac_Linoleico6 { get; set; }
-        public string Ac_Linoleico3 { get; set; }
+        public string Ac_Linolenico3 { get; set; }
         public string Ac_Araquidonico { get; set; }
         public string EPA_DHA { get; set; }
         public string MM { get; set; }
@@ -139,7 +139,7 @@ namespace ProjetoNariz
             Val = string.Empty;
             Tau = string.Empty;
             EE = string.Empty;
-            Ac_Linoleico3 = string.Empty;
+            Ac_Linolenico3 = string.Empty;
             Ac_Araquidonico = string.Empty;
             Ac_Linoleico6 = string.Empty;
             EPA_DHA = string.Empty;
@@ -232,7 +232,7 @@ namespace ProjetoNariz
                 "Leu AS 'Leu (%)', Lis AS 'Lis (%)', Met AS 'Met (%)', Met_Cis AS 'Met + Cis  (%)'," +
                 "Fen AS 'Fen  (%)', Fen_Tir AS 'Fen + Tir (%)', Treo AS 'Treo (%)', Tri AS 'Tri (%)'," +
                 "Val AS 'Val (%)', Tau AS 'Tau (%)', EE AS 'EE (%)', Ac_Linoleico6 AS 'Ac. Linoleico n-6 (%)'," +
-                "Ac_Araquidonico AS 'Ac. Araquidonico (mg)', Ac_Linoleico3 AS 'Ac. Linolenico n-3 (%)'," +
+                "Ac_Araquidonico AS 'Ac. Araquidonico (mg)', Ac_Linolenico3 AS 'Ac. Linolenico n-3 (%)'," +
                 "EPA_DHA AS 'EPA + DHA (%)', MM AS 'MM (%)', Ca AS 'Ca (mg)', P AS 'P (mg)',K AS 'K (mg)'," +
                 "Na AS 'Na (mg)', Cl AS 'Cl (mg)', Mg AS 'Mg (mg)', Cu AS 'Cu (mg)', I AS 'I (mg)'," +
                 "Fe AS 'Fe (mg)', Mn AS 'Mn (mg)', Se AS 'Se (mg)', Zn AS 'Zn (mg)', S AS 'S (mg)'," +
@@ -298,7 +298,7 @@ namespace ProjetoNariz
                 Val = dados["Val"].ToString();
                 Tau = dados["Tau"].ToString();
                 EE = dados["EE"].ToString();
-                Ac_Linoleico3 = dados["Ac_Linoleico3"].ToString();
+                Ac_Linolenico3 = dados["Ac_Linolenico3"].ToString();
                 Ac_Araquidonico = dados["Ac_Araquidonico"].ToString();
                 Ac_Linoleico6 = dados["Ac_Linoleico6"].ToString();
                 EPA_DHA = dados["EPA_DHA"].ToString();
@@ -336,9 +336,9 @@ namespace ProjetoNariz
                 Colina = dados["Colina"].ToString();
                 Vit_K = dados["Vit_K"].ToString();
                 Vit_C = dados["Vit_C"].ToString();
-                Correcao_ENN = dados["Correcao_ENN"].ToString();
+                //Correcao_ENN = dados["Correcao_ENN"].ToString();
                 Preco = dados["Preco"].ToString();
-                Un_P = dados["Un_P"].ToString();
+                /*Un_P = dados["Un_P"].ToString();
                 Un_M = dados["Un_M"].ToString();
                 Un_G = dados["Un_G"].ToString();
                 Folha_P = dados["Folha_P"].ToString();
@@ -376,17 +376,59 @@ namespace ProjetoNariz
                 Copo = dados["Copo"].ToString();
                 Ramo = dados["Ramo"].ToString();
                 Maco = dados["Maco"].ToString();
-                Pitada = dados["Pitada"].ToString();
+                Pitada = dados["Pitada"].ToString();*/
             }
             conectaMySQL.FechaMySQL();
         }
         public void InsereAlimentoMN()
         {
-            //TODO: Implementar Função para inserir Alimento MN
+            string SQL;
+
+            SQL = "Insert into alimentosmn (Alimento, Energia, Umidade, MS, PB, Arg, His, Iso, Leu, " +
+            "Lis, Met, Met_Cis, Fen, Fen_Tir, Treo, Tri, " +
+            " Val, Tau, EE, Ac_Linoleico6, Ac_Araquidonico, Ac_Linolenico3, EPA_DHA, MM, Ca, P, K, Na, Cl, Mg, Cu, I, Fe, Mn" +
+            ", Se, Zn, S, Carboidratos, FB, ENN, FDN, FDA, CNF, Vit_A, Vit_D, Vit_E" +
+            ", Tiamina, Riboflavina, Ac_Pantotenico, Vit_B6, Vit_B12, Niacina, Ac_Folico, Biotina, Colina, Vit_K, Vit_C) " +
+            "values('" + Alimento + "','" + Energia + "','" + Umidade + "','" + MS + "','" + PB + "', " +
+            "'" + Arg + "','" + His + "','" + Iso + "','" + Leu + "','" + Lis + "','" + Met + "'," +
+            "'" + Met_Cis + "','" + Fen + "','" + Fen_Tir + "','" + Treo + "'," +
+            "'" + Tri + "','" + Val + "','" + Tau + "','" + EE + "','" + Ac_Linoleico6 + "','" + Ac_Araquidonico + "','" + Ac_Linolenico3 + "', " +
+            "'" + EPA_DHA + "','" + MM + "','" + Ca + "','" + P + "','" + K + "','" + Na + "','" + Cl + "','" + Mg + "', " +
+            "'" + Cu + "','" + I + "','" + Fe + "','" + Mn + "','" + Se + "','" + Zn + "','" + S + "'" +
+            ",'" + Carboidratos + "','" + FB + "','" + ENN + "','" + FDN + "','" + FDA + "','" + CNF + "'" +
+            ",'" + Vit_A + "','" + Vit_D + "','" + Vit_E + "','" + Tiamina + "','" + Riboflavina + "','" + Ac_Pantotenico + "'" +
+            ",'" + Vit_B6 + "','" + Vit_B12 + "','" + Niacina + "','" + Ac_Folico + "','" + Biotina + "','" + Colina + "'" +
+            ",'" + Vit_K + "','" + Vit_C + "',);";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void AlteraAlimentoMN()
+        {
+            string SQL;
+
+            SQL = "Update alimentosmn set Alimento ='" + Alimento + "', Energia ='" + Energia + "', Umidade ='" + Umidade + "', MS ='" + MS + "', PB ='" + PB + "'," +
+            " Arg ='" + Arg + "', His ='" + His + "', Iso ='" + Iso + "', Leu ='" + Leu + "'," +
+            " Lis ='" + Lis + "', Met ='" + Met + "', Met_Cis ='" + Met_Cis + "', Fen ='" + Fen + "', " +
+            " Fen_Tir ='" + Fen_Tir + "', Treo ='" + Treo + "', Tri ='" + Tri + "', " +
+            " Val ='" + Val + "', Tau ='" + Tau + "', EE='" + EE + "', Ac_Linoleico6 = '" + Ac_Linoleico6 + "', Ac_Araquidonico = '" + Ac_Araquidonico + "', " +
+            " Ac_Linolenico3 = '" + Ac_Linolenico3 + "', EPA_DHA ='" + EPA_DHA + "', MM ='" + MM + "', Ca ='" + Ca + "', P ='" + P + "', K ='" + K + "', " +
+            " Na ='" + Na + "', Cl ='" + Cl + "', Mg ='" + Mg + "', Cu ='" + Cu + "', I ='" + I + "', Fe ='" + Fe + "', Mn ='" + Mn + "'" +
+            ", Se ='" + Se + "', Zn ='" + Zn + "', S ='" + S + "', Carboidratos ='" + Carboidratos + "', FB ='" + FB + "', ENN ='" + ENN + "'" +
+            ", FDN ='" + FDN + "', FDA ='" + FDA + "', CNF ='" + CNF + "', Vit_A ='" + Vit_A + "', Vit_D ='" + Vit_D + "', Vit_E ='" + Vit_E + "'" +
+            ", Tiamina ='" + Tiamina + "', Riboflavina ='" + Riboflavina + "', Ac_Pantotenico ='" + Ac_Pantotenico + "', Vit_B6 ='" + Vit_B6 + "', Vit_B12 ='" + Vit_B12 + "', Niacina ='" + Niacina + "', Ac_Folico ='" + Ac_Folico + "'" +
+            ", Biotina ='" + Biotina + "', Colina ='" + Colina + "', Vit_K ='" + Vit_K + "', Vit_C ='" + Vit_C + "' where Id =" + Id + ";";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
         }
         public void DeletaAlimentoMN()
         {
-            //TODO: Implementar Função para excluir Alimento MN
+            string SQL;
+
+            SQL = "Delete from alimentosmn where Id=" + Id + ";";
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
         }
 
         //Controles Alimentos MS
@@ -400,7 +442,7 @@ namespace ProjetoNariz
                 "Leu AS 'Leu (%)', Lis AS 'Lis (%)', Met AS 'Met (%)', Met_Cis AS 'Met + Cis  (%)'," +
                 "Fen AS 'Fen  (%)', Fen_Tir AS 'Fen + Tir (%)', Treo AS 'Treo (%)', Tri AS 'Tri (%)'," +
                 "Val AS 'Val (%)', Tau AS 'Tau (%)', EE AS 'EE (%)', Ac_Linoleico6 AS 'Ac. Linoleico n-6 (%)'," +
-                "Ac_Araquidonico AS 'Ac. Araquidonico (mg)', Ac_Linoleico3 AS 'Ac. Linolenico n-3 (%)'," +
+                "Ac_Araquidonico AS 'Ac. Araquidonico (mg)', Ac_Linolenico3 AS 'Ac. Linolenico n-3 (%)'," +
                 "EPA_DHA AS 'EPA + DHA (%)', MM AS 'MM (%)', Ca AS 'Ca (mg)', P AS 'P (mg)',K AS 'K (mg)'," +
                 "Na AS 'Na (mg)', Cl AS 'Cl (mg)', Mg AS 'Mg (mg)', Cu AS 'Cu (mg)', I AS 'I (mg)'," +
                 "Fe AS 'Fe (mg)', Mn AS 'Mn (mg)', Se AS 'Se (mg)', Zn AS 'Zn (mg)', S AS 'S (mg)'," +
@@ -409,8 +451,8 @@ namespace ProjetoNariz
                 "Vit_E AS 'Vit E (UI)', Tiamina AS 'Tiamina (mg)', Riboflavina AS 'Riboflavina (mg)'," +
                 "Ac_Pantotenico AS	'Ac. Pantotenico (mg)', Vit_B6 AS 'Vit. B6 (mg)', Vit_B12 AS 'Vit. B12 (mg)'," +
                 "Niacina AS 'Niacina (mg)', Ac_Folico AS 'Ac. Folico (mg)', Biotina AS 'Biotina (mg)'," +
-                "Colina AS 'Colina (mg)', Vit_K AS 'Vit. K (mg)', Vit_C AS 'Vit. C (mg)'," +
-                "Preco AS 'Preco/kg (R$)' from alimentosms";
+                "Colina AS 'Colina (mg)', Vit_K AS 'Vit. K (mg)', Vit_C AS 'Vit. C (mg)'" +
+                " from alimentosms";
 
             MySqlDataAdapter adaptador = new MySqlDataAdapter();
             adaptador.SelectCommand = cmd;
@@ -437,6 +479,127 @@ namespace ProjetoNariz
 
             return dt;
         }
+        public void SelecionaAlimentoMS()
+        {
+            string SQL;
+            SQL = "Select * from alimentosms where id=" + id;
+
+            MySqlDataReader dados = conectaMySQL.ExecutaConsulta(SQL);
+
+            if (dados.Read())
+            {
+                Alimento = dados["Alimento"].ToString();
+                Energia = dados["Energia"].ToString();
+                Umidade = dados["Umidade"].ToString();
+                MS = dados["MS"].ToString();
+                Alimento = dados["Alimento"].ToString();
+                PB = dados["PB"].ToString();
+                Arg = dados["Arg"].ToString();
+                His = dados["His"].ToString();
+                Iso = dados["Iso"].ToString();
+                Leu = dados["Leu"].ToString();
+                Lis = dados["Lis"].ToString();
+                Met = dados["Met"].ToString();
+                Met_Cis = dados["Met_Cis"].ToString();
+                Fen = dados["Fen"].ToString();
+                Fen_Tir = dados["Fen_Tir"].ToString();
+                Treo = dados["Treo"].ToString();
+                Tri = dados["Tri"].ToString();
+                Val = dados["Val"].ToString();
+                Tau = dados["Tau"].ToString();
+                EE = dados["EE"].ToString();
+                Ac_Linolenico3 = dados["Ac_Linolenico3"].ToString();
+                Ac_Araquidonico = dados["Ac_Araquidonico"].ToString();
+                Ac_Linoleico6 = dados["Ac_Linoleico6"].ToString();
+                EPA_DHA = dados["EPA_DHA"].ToString();
+                MM = dados["MM"].ToString();
+                Ca = dados["Ca"].ToString();
+                P = dados["P"].ToString();
+                K = dados["K"].ToString();
+                Na = dados["Na"].ToString();
+                Cl = dados["Cl"].ToString();
+                Mg = dados["Mg"].ToString();
+                Cu = dados["Cu"].ToString();
+                I = dados["I"].ToString();
+                Fe = dados["Fe"].ToString();
+                Mn = dados["Mn"].ToString();
+                Se = dados["Se"].ToString();
+                Zn = dados["Zn"].ToString();
+                S = dados["S"].ToString();
+                Carboidratos = dados["Carboidratos"].ToString();
+                FB = dados["FB"].ToString();
+                ENN = dados["ENN"].ToString();
+                FDN = dados["FDN"].ToString();
+                FDA = dados["FDA"].ToString();
+                CNF = dados["CNF"].ToString();
+                Vit_A = dados["Vit_A"].ToString();
+                Vit_D = dados["Vit_D"].ToString();
+                Vit_E = dados["Vit_E"].ToString();
+                Tiamina = dados["Tiamina"].ToString();
+                Riboflavina = dados["Riboflavina"].ToString();
+                Ac_Pantotenico = dados["Ac_Pantotenico"].ToString();
+                Vit_B6 = dados["Vit_B6"].ToString();
+                Vit_B12 = dados["Vit_B12"].ToString();
+                Niacina = dados["Niacina"].ToString();
+                Ac_Folico = dados["Ac_Folico"].ToString();
+                Biotina = dados["Biotina"].ToString();
+                Colina = dados["Colina"].ToString();
+                Vit_K = dados["Vit_K"].ToString();
+                Vit_C = dados["Vit_C"].ToString();
+                Preco = dados["Preco"].ToString();
+            }
+            conectaMySQL.FechaMySQL();
+        }
+        public void InsereAlimentoMS()
+        {
+            string SQL;
+
+            SQL = "Insert into alimentosms (Alimento, Energia, Umidade, MS, PB, Arg, His, Iso, Leu, " +
+            "Lis, Met, Met_Cis, Fen, Fen_Tir, Treo, Tri, " +
+            " Val, Tau, EE, Ac_Linoleico6, Ac_Araquidonico, Ac_Linolenico3, EPA_DHA, MM, Ca, P, K, Na, Cl, Mg, Cu, I, Fe, Mn" +
+            ", Se, Zn, S, Carboidratos, FB, ENN, FDN, FDA, CNF, Vit_A, Vit_D, Vit_E" +
+            ", Tiamina, Riboflavina, Ac_Pantotenico, Vit_B6, Vit_B12, Niacina, Ac_Folico, Biotina, Colina, Vit_K, Vit_C) " +
+            "values('" + Alimento + "','" + Energia + "','" + Umidade + "','" + MS + "','" + PB + "', " +
+            "'" + Arg + "','" + His + "','" + Iso + "','" + Leu + "','" + Lis + "','" + Met + "'," +
+            "'" + Met_Cis + "','" + Fen + "','" + Fen_Tir + "','" + Treo + "'," +
+            "'" + Tri + "','" + Val + "','" + Tau + "','" + EE + "','" + Ac_Linoleico6 + "','" + Ac_Araquidonico + "','" + Ac_Linolenico3 + "', " +
+            "'" + EPA_DHA + "','" + MM + "','" + Ca + "','" + P + "','" + K + "','" + Na + "','" + Cl + "','" + Mg + "', " +
+            "'" + Cu + "','" + I + "','" + Fe + "','" + Mn + "','" + Se + "','" + Zn + "','" + S + "'" +
+            ",'" + Carboidratos + "','" + FB + "','" + ENN + "','" + FDN + "','" + FDA + "','" + CNF + "'" +
+            ",'" + Vit_A + "','" + Vit_D + "','" + Vit_E + "','" + Tiamina + "','" + Riboflavina + "','" + Ac_Pantotenico + "'" +
+            ",'" + Vit_B6 + "','" + Vit_B12 + "','" + Niacina + "','" + Ac_Folico + "','" + Biotina + "','" + Colina + "'" +
+            ",'" + Vit_K + "','" + Vit_C + "',);";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void AlteraAlimentoMS()
+        {
+            string SQL;
+
+            SQL = "Update alimentosms set Alimento ='" + Alimento + "', Energia ='" + Energia + "', Umidade ='" + Umidade + "', MS ='" + MS + "', PB ='" + PB + "'," +
+            " Arg ='" + Arg + "', His ='" + His + "', Iso ='" + Iso + "', Leu ='" + Leu + "'," +
+            " Lis ='" + Lis + "', Met ='" + Met + "', Met_Cis ='" + Met_Cis + "', Fen ='" + Fen + "', " +
+            " Fen_Tir ='" + Fen_Tir + "', Treo ='" + Treo + "', Tri ='" + Tri + "', " +
+            " Val ='" + Val + "', Tau ='" + Tau + "', EE='" + EE + "', Ac_Linoleico6 = '" + Ac_Linoleico6 + "', Ac_Araquidonico = '" + Ac_Araquidonico + "', " +
+            " Ac_Linolenico3 = '" + Ac_Linolenico3 + "', EPA_DHA ='" + EPA_DHA + "', MM ='" + MM + "', Ca ='" + Ca + "', P ='" + P + "', K ='" + K + "', " +
+            " Na ='" + Na + "', Cl ='" + Cl + "', Mg ='" + Mg + "', Cu ='" + Cu + "', I ='" + I + "', Fe ='" + Fe + "', Mn ='" + Mn + "'" +
+            ", Se ='" + Se + "', Zn ='" + Zn + "', S ='" + S + "', Carboidratos ='" + Carboidratos + "', FB ='" + FB + "', ENN ='" + ENN + "'" +
+            ", FDN ='" + FDN + "', FDA ='" + FDA + "', CNF ='" + CNF + "', Vit_A ='" + Vit_A + "', Vit_D ='" + Vit_D + "', Vit_E ='" + Vit_E + "'" +
+            ", Tiamina ='" + Tiamina + "', Riboflavina ='" + Riboflavina + "', Ac_Pantotenico ='" + Ac_Pantotenico + "', Vit_B6 ='" + Vit_B6 + "', Vit_B12 ='" + Vit_B12 + "', Niacina ='" + Niacina + "', Ac_Folico ='" + Ac_Folico + "'" +
+            ", Biotina ='" + Biotina + "', Colina ='" + Colina + "', Vit_K ='" + Vit_K + "', Vit_C ='" + Vit_C + "' where Id =" + Id + ";";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void DeletaAlimentoMS()
+        {
+            string SQL;
+
+            SQL = "Delete from alimentosms where Id=" + Id + ";";
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
         //Testes
 
     }
@@ -449,7 +612,7 @@ namespace ProjetoNariz
                 "Leu AS 'Leu (%)', Lis AS 'Lis (%)', Met AS 'Met (%)', Met_Cis AS 'Met + Cis  (%)'," +
                 "Fen AS 'Fen  (%)', Fen_Tir AS 'Fen + Tir (%)', Treo AS 'Treo (%)', Tri AS 'Tri (%)'," +
                 "Val AS 'Val (%)', Tau AS 'Tau (%)', EE AS 'EE (%)', Ac_Linoleico6 AS 'Ac. Linoleico n-6 (%)'," +
-                "Ac_Araquidonico AS 'Ac. Araquidonico (mg)', Ac_Linoleico3 AS 'Ac. Linolenico n-3 (%)'," +
+                "Ac_Araquidonico AS 'Ac. Araquidonico (mg)', Ac_Linolenico3 AS 'Ac. Linolenico n-3 (%)'," +
                 "EPA_DHA AS 'EPA + DHA (%)', MM AS 'MM (%)', Ca AS 'Ca (mg)', P AS 'P (mg)',K AS 'K (mg)'," +
                 "Na AS 'Na (mg)', Cl AS 'Cl (mg)', Mg AS 'Mg (mg)', Cu AS 'Cu (mg)', I AS 'I (mg)'," +
                 "Fe AS 'Fe (mg)', Mn AS 'Mn (mg)', Se AS 'Se (mg)', Zn AS 'Zn (mg)', S AS 'S (mg)'," +

@@ -124,11 +124,26 @@ namespace ProjetoNariz.Telas
 
             //PaineisPrincipais(pnlali);
         }
+        private void PaineisPrincipais(Panel panel1, Panel panel2, Panel panel3)
+        {
+            pnlalimentosmn.Visible = false;
+            pnlalimentosms.Visible = false;
+            pnlvisualizaalimentosmn.Visible = false;
+            pnlvisualizaalimentosms.Visible = false;
+            pnlsuperioralimentosmn.Visible = false;
+            pnlsuperioralimentosms.Visible = false;
+            pnlselecionaalimento.Visible = false;
+
+            panel1.Visible = true;
+            panel2.Visible = true;
+            panel3.Visible = true;
+        }
         private void PaineisPrincipais(Panel panel1, Panel panel2)
         {
             pnlalimentosmn.Visible = false;
             pnlalimentosms.Visible = false;
             pnlvisualizaalimentosmn.Visible = false;
+            pnlvisualizaalimentosms.Visible = false;
             pnlsuperioralimentosmn.Visible = false;
             pnlsuperioralimentosms.Visible = false;
             pnlselecionaalimento.Visible = false;
@@ -140,10 +155,11 @@ namespace ProjetoNariz.Telas
         {
             pnlalimentosmn.Visible = false;
             pnlalimentosms.Visible = false;
-            //pnlvisualizaalimentosmn.Visible = false;
-            //pnlsuperioralimentosmn.Visible = false;
-            //pnlsuperioralimentosms.Visible = false;
-            //pnlselecionaalimento.Visible = false;
+            pnlvisualizaalimentosmn.Visible = false;
+            pnlvisualizaalimentosms.Visible = false;
+            pnlsuperioralimentosmn.Visible = false;
+            pnlsuperioralimentosms.Visible = false;
+            pnlselecionaalimento.Visible = false;
 
             panel.Visible = true;
         }
@@ -303,7 +319,7 @@ namespace ProjetoNariz.Telas
             ControleObjMN.Add(f.FB);
             ControleObjMN.Add(f.MM);
             ControleObjMN.Add(f.ENN);
-            ControleObjMN.Add(f.Ac_Linoleico3);
+            ControleObjMN.Add(f.Ac_Linolenico3);
             ControleObjMN.Add(f.Ac_Linoleico6);
             ControleObjMN.Add(f.Ac_Araquidonico);
             ControleObjMN.Add(f.EPA_DHA);
@@ -393,8 +409,6 @@ namespace ProjetoNariz.Telas
             List<bool> param = (List<bool>)parametros;
             bool search = param[0];
             bool primeirametade = param[1];
-            //param.Add(false);
-            //param.Add(false);
             if (!search)
             {
                 if (!primeirametade)
@@ -437,7 +451,7 @@ namespace ProjetoNariz.Telas
                      f.FB = txtvalfibrabruta.Text;
                      f.MM = txtvalmateriamineral.Text;
                      f.ENN = txtvalenn.Text;
-                     f.Ac_Linoleico3 = txtvalaclinoleicon3.Text;
+                     f.Ac_Linolenico3 = txtvalaclinoleicon3.Text;
                      f.Ac_Linoleico6 = txtvalaclinoleicon6.Text;
                      f.Ac_Araquidonico = txtvalacaraquidonico.Text;
                      f.EPA_DHA = txtvalepadha.Text;
@@ -502,7 +516,7 @@ namespace ProjetoNariz.Telas
                     txtvalfibrabruta.Text = f.FB;
                     txtvalmateriamineral.Text = f.MM;
                     txtvalenn.Text = f.ENN;
-                    txtvalaclinoleicon3.Text = f.Ac_Linoleico3;
+                    txtvalaclinoleicon3.Text = f.Ac_Linolenico3;
                     txtvalaclinoleicon6.Text = f.Ac_Linoleico6;
                     txtvalacaraquidonico.Text = f.Ac_Araquidonico;
                     txtvalepadha.Text = f.EPA_DHA;
@@ -560,11 +574,11 @@ namespace ProjetoNariz.Telas
         //Painel para escolher com qual seção de alimentos trabalhar
         private void btnescolhealimentoms_Click(object sender, EventArgs e)
         {
-            PaineisPrincipais(pnlsuperioralimentosms, pnlalimentosms);
+            PaineisPrincipais(pnlalimentosms, pnlsuperioralimentosms);
         }
         private void btnescolhealimentomn_Click(object sender, EventArgs e)
         {
-            PaineisPrincipais(pnlsuperioralimentosmn, pnlalimentosmn);
+            PaineisPrincipais(pnlalimentosmn,pnlsuperioralimentosmn);
         }
 
         //Painel Alimentos Materia Natural
@@ -614,31 +628,42 @@ namespace ProjetoNariz.Telas
         }
         private void btnvisalimentomn_Click(object sender, EventArgs e)
         {
-            PaineisPrincipais(pnlvisualizaalimentosmn);
+            PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn, pnlvisualizaalimentosmn);
             Controlatxtmn(false);
-
+    
             f.id = dgvalimentosmn.CurrentRow.Cells[0].Value.ToString();
-            f.SelecionaAlimentoMN();
+            try
+            {
+                f.SelecionaAlimentoMN();
+                
+                //atribuição das variáveis
+                Thread t = new Thread(new ParameterizedThreadStart(Atribuicoes));
+                List<bool> parametros = new List<bool>();
+                parametros.Add(true);
+                parametros.Add(false);
+                Thread t2 = new Thread(new ParameterizedThreadStart(Atribuicoes));
+                List<bool> parametros2 = new List<bool>();
+                parametros2.Add(true);
+                parametros2.Add(true);
+                t.Start(parametros);
+                t2.Start(parametros2);
+            }
+            catch (Exception) { }
+            finally
+            {
+                f.Desconstrutor();
+                //t.Abort();
+                //t2.Abort();
+            }
+            
 
-            //atribuição das variáveis
-            Thread t = new Thread(new ParameterizedThreadStart(Atribuicoes));
-            List<bool> parametros = new List<bool>();
-            parametros.Add(true);
-            parametros.Add(false);
-            t.Start(parametros);
-            Thread t2 = new Thread(new ParameterizedThreadStart(Atribuicoes));
-            List<bool> parametros2 = new List<bool>();
-            parametros2.Add(true);
-            parametros2.Add(true);
-            t.Start(parametros);
 
-            //f.Desconstrutor();
-            t.Abort();
-            t2.Abort();
+
+
         }
         private void btnvoltavisualizaalimentomn_Click(object sender, EventArgs e)
         {
-            PaineisPrincipais(pnlalimentosmn);
+            PaineisPrincipais(pnlalimentosmn,pnlsuperioralimentosmn);
             LimpaCampos();
         }
         private void btneditaalimentomn_Click(object sender, EventArgs e)
