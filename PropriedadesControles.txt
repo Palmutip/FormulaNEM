@@ -1,0 +1,30 @@
+Formulario:
+ Size 1120; 630
+ Location 165; 80
+	Excluir:
+	 Size 80;45
+	 Location 1020; 30
+
+	Editar:
+	 Size 95;45
+	 Location 920; 30
+
+	Help: pbxhelpalimentomn
+	 Size 25;20
+	 Location 870; 42
+
+	Separador: pnlseparadoralimentomn
+	 Size 1080; 2
+	 Location 10; 100
+
+	Volta:
+	 Size 50, 45
+	 Location 10; 10
+	TableEnergia
+	 Location 30; 120
+	TableVitaminas
+	 Location 875; 120
+	Salvar
+	 Location 515; 490
+	Cancelar
+	 Location 630; 490

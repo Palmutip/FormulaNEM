@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlsuperior = new System.Windows.Forms.Panel();
             this.lblusuario = new System.Windows.Forms.Label();
             this.pbxusuario = new System.Windows.Forms.PictureBox();
@@ -61,163 +61,163 @@
             this.btnalimentos = new System.Windows.Forms.Button();
             this.pnlalimentosms = new System.Windows.Forms.Panel();
             this.pnlvisualizaalimentosms = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnsalvaalimentoms = new System.Windows.Forms.Button();
             this.txtnomealimentoms = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.tablecnfms = new System.Windows.Forms.TableLayoutPanel();
             this.txtvalfdnms = new System.Windows.Forms.TextBox();
             this.txtvalfdams = new System.Windows.Forms.TextBox();
             this.txtvalcnfms = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblunfdnms = new System.Windows.Forms.Label();
+            this.lblfdnms = new System.Windows.Forms.Label();
+            this.lblunfdams = new System.Windows.Forms.Label();
+            this.lblfdams = new System.Windows.Forms.Label();
+            this.lbluncnfms = new System.Windows.Forms.Label();
+            this.lblcnfms = new System.Windows.Forms.Label();
+            this.tabletituloacidosgraxoms = new System.Windows.Forms.TableLayoutPanel();
+            this.lblacidosgraxoms = new System.Windows.Forms.Label();
+            this.tableacidosgraxosms = new System.Windows.Forms.TableLayoutPanel();
             this.txtvalepadhams = new System.Windows.Forms.TextBox();
             this.txtvalacaraquidonicoms = new System.Windows.Forms.TextBox();
             this.txtvalaclinoleicon6ms = new System.Windows.Forms.TextBox();
             this.txtvalaclinoleicon3ms = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblunepadhams = new System.Windows.Forms.Label();
+            this.lblepadhams = new System.Windows.Forms.Label();
+            this.lblunacaraquidonicoms = new System.Windows.Forms.Label();
+            this.lblacaraquidonicoms = new System.Windows.Forms.Label();
+            this.lblunaclinoleico6ms = new System.Windows.Forms.Label();
+            this.lblaclinoleico6ms = new System.Windows.Forms.Label();
+            this.lblunaclinoleico3ms = new System.Windows.Forms.Label();
+            this.lblaclinoleicon3ms = new System.Windows.Forms.Label();
+            this.tabletitulovitaminasms = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.label47 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.label74 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label96 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
+            this.tablevitaminasms = new System.Windows.Forms.TableLayoutPanel();
+            this.txtvalvitcms = new System.Windows.Forms.TextBox();
+            this.txtvalvitkms = new System.Windows.Forms.TextBox();
+            this.txtvalcolinams = new System.Windows.Forms.TextBox();
+            this.txtvalbiotinams = new System.Windows.Forms.TextBox();
+            this.txtvalacfolicoms = new System.Windows.Forms.TextBox();
+            this.txtvalniacinams = new System.Windows.Forms.TextBox();
+            this.txtvalvitb12ms = new System.Windows.Forms.TextBox();
+            this.txtvalvitb6ms = new System.Windows.Forms.TextBox();
+            this.txtvalacpantotenicoms = new System.Windows.Forms.TextBox();
+            this.txtvalriboflavinams = new System.Windows.Forms.TextBox();
+            this.txtvaltiaminams = new System.Windows.Forms.TextBox();
+            this.txtvalvitems = new System.Windows.Forms.TextBox();
+            this.txtvalvitdms = new System.Windows.Forms.TextBox();
+            this.txtvalvitams = new System.Windows.Forms.TextBox();
+            this.lblunvitcms = new System.Windows.Forms.Label();
+            this.lblvitcms = new System.Windows.Forms.Label();
+            this.lblunvitkms = new System.Windows.Forms.Label();
+            this.lblvitkms = new System.Windows.Forms.Label();
+            this.lbluncolinams = new System.Windows.Forms.Label();
+            this.lblcolinams = new System.Windows.Forms.Label();
+            this.lblunbiotinams = new System.Windows.Forms.Label();
+            this.lblbiotinams = new System.Windows.Forms.Label();
+            this.lblunacfolicoms = new System.Windows.Forms.Label();
+            this.lblacfolicoms = new System.Windows.Forms.Label();
+            this.lblunniacinams = new System.Windows.Forms.Label();
+            this.lblniacinams = new System.Windows.Forms.Label();
+            this.lblunvitb12ms = new System.Windows.Forms.Label();
+            this.lblvitb12ms = new System.Windows.Forms.Label();
+            this.lblunvitb6ms = new System.Windows.Forms.Label();
+            this.lblunacpantotenicoms = new System.Windows.Forms.Label();
+            this.lblacpntotenicoms = new System.Windows.Forms.Label();
+            this.lblunriboflavinams = new System.Windows.Forms.Label();
+            this.lblriboflavinams = new System.Windows.Forms.Label();
+            this.lbluntiaminams = new System.Windows.Forms.Label();
+            this.lblvitb6ms = new System.Windows.Forms.Label();
+            this.lbltiaminams = new System.Windows.Forms.Label();
+            this.lblunvitems = new System.Windows.Forms.Label();
+            this.lblvitems = new System.Windows.Forms.Label();
+            this.lblunvitdms = new System.Windows.Forms.Label();
+            this.lblvitdms = new System.Windows.Forms.Label();
+            this.lblunvitams = new System.Windows.Forms.Label();
+            this.lblvitams = new System.Windows.Forms.Label();
+            this.tabletitulomineraisms = new System.Windows.Forms.TableLayoutPanel();
+            this.lblmineraisms = new System.Windows.Forms.Label();
+            this.tablemineirams = new System.Windows.Forms.TableLayoutPanel();
+            this.txtvalsms = new System.Windows.Forms.TextBox();
+            this.txtvalznms = new System.Windows.Forms.TextBox();
+            this.txtvalsems = new System.Windows.Forms.TextBox();
+            this.txtvalmnms = new System.Windows.Forms.TextBox();
+            this.txtvalfems = new System.Windows.Forms.TextBox();
+            this.txtvalims = new System.Windows.Forms.TextBox();
+            this.txtvalcums = new System.Windows.Forms.TextBox();
+            this.txtvalmgms = new System.Windows.Forms.TextBox();
+            this.txtvalclms = new System.Windows.Forms.TextBox();
+            this.txtvalnams = new System.Windows.Forms.TextBox();
+            this.txtvalkms = new System.Windows.Forms.TextBox();
+            this.txtvalpms = new System.Windows.Forms.TextBox();
+            this.txtvalcams = new System.Windows.Forms.TextBox();
+            this.lblunsms = new System.Windows.Forms.Label();
+            this.lblsms = new System.Windows.Forms.Label();
+            this.lblunznms = new System.Windows.Forms.Label();
+            this.lblznms = new System.Windows.Forms.Label();
+            this.lblunsems = new System.Windows.Forms.Label();
+            this.lblsems = new System.Windows.Forms.Label();
+            this.lblunmnms = new System.Windows.Forms.Label();
+            this.lblmnms = new System.Windows.Forms.Label();
+            this.lblunfems = new System.Windows.Forms.Label();
+            this.lblfems = new System.Windows.Forms.Label();
+            this.lblunims = new System.Windows.Forms.Label();
+            this.lblims = new System.Windows.Forms.Label();
+            this.lbluncums = new System.Windows.Forms.Label();
+            this.lblunmgms = new System.Windows.Forms.Label();
+            this.lblmgms = new System.Windows.Forms.Label();
+            this.lblunclms = new System.Windows.Forms.Label();
+            this.lblclms = new System.Windows.Forms.Label();
+            this.lblunnams = new System.Windows.Forms.Label();
+            this.lblcums = new System.Windows.Forms.Label();
+            this.lblnams = new System.Windows.Forms.Label();
+            this.lblunkms = new System.Windows.Forms.Label();
+            this.lblkms = new System.Windows.Forms.Label();
+            this.lblunpms = new System.Windows.Forms.Label();
+            this.lblpms = new System.Windows.Forms.Label();
+            this.lbluncams = new System.Windows.Forms.Label();
+            this.lblcams = new System.Windows.Forms.Label();
+            this.tabletituloaminoacidosms = new System.Windows.Forms.TableLayoutPanel();
+            this.lblaminoacidosms = new System.Windows.Forms.Label();
+            this.tableaminoacidosms = new System.Windows.Forms.TableLayoutPanel();
+            this.txtvaltaums = new System.Windows.Forms.TextBox();
+            this.txtvalvalms = new System.Windows.Forms.TextBox();
+            this.txtvaltrims = new System.Windows.Forms.TextBox();
+            this.txtvaltreoms = new System.Windows.Forms.TextBox();
+            this.txtvalfentirms = new System.Windows.Forms.TextBox();
+            this.txtvalfenms = new System.Windows.Forms.TextBox();
+            this.txtvalmetcisms = new System.Windows.Forms.TextBox();
+            this.txtvalmetms = new System.Windows.Forms.TextBox();
+            this.txtvallisms = new System.Windows.Forms.TextBox();
+            this.txtvalleums = new System.Windows.Forms.TextBox();
+            this.txtvalisoms = new System.Windows.Forms.TextBox();
+            this.txtvalhisms = new System.Windows.Forms.TextBox();
+            this.txtvalargms = new System.Windows.Forms.TextBox();
+            this.lbluntaums = new System.Windows.Forms.Label();
+            this.lbltaums = new System.Windows.Forms.Label();
+            this.lblunvalms = new System.Windows.Forms.Label();
+            this.lblvalms = new System.Windows.Forms.Label();
+            this.lbluntrims = new System.Windows.Forms.Label();
+            this.lbltrims = new System.Windows.Forms.Label();
+            this.lbluntreoms = new System.Windows.Forms.Label();
+            this.lbltreoms = new System.Windows.Forms.Label();
+            this.lblunfertirms = new System.Windows.Forms.Label();
+            this.lblfentirms = new System.Windows.Forms.Label();
+            this.lblunfenms = new System.Windows.Forms.Label();
+            this.lblfenms = new System.Windows.Forms.Label();
+            this.lblunmetcisms = new System.Windows.Forms.Label();
+            this.lblunmetms = new System.Windows.Forms.Label();
+            this.lblmetms = new System.Windows.Forms.Label();
+            this.lblunlisms = new System.Windows.Forms.Label();
+            this.lbllisms = new System.Windows.Forms.Label();
+            this.lblunleums = new System.Windows.Forms.Label();
+            this.lblmetcisms = new System.Windows.Forms.Label();
+            this.lblleums = new System.Windows.Forms.Label();
+            this.lblunisoms = new System.Windows.Forms.Label();
+            this.lblisoms = new System.Windows.Forms.Label();
+            this.lblunhisms = new System.Windows.Forms.Label();
+            this.lblhisms = new System.Windows.Forms.Label();
+            this.lblunargms = new System.Windows.Forms.Label();
+            this.lblargms = new System.Windows.Forms.Label();
+            this.tableumidadems = new System.Windows.Forms.TableLayoutPanel();
             this.txtvalennms = new System.Windows.Forms.TextBox();
             this.txtvalmateriamineralms = new System.Windows.Forms.TextBox();
             this.txtvalfibrabrutams = new System.Windows.Forms.TextBox();
@@ -225,30 +225,30 @@
             this.txtvalproteinabrutams = new System.Windows.Forms.TextBox();
             this.txtvalmateriasecams = new System.Windows.Forms.TextBox();
             this.txtvalumidadems = new System.Windows.Forms.TextBox();
-            this.label101 = new System.Windows.Forms.Label();
-            this.label102 = new System.Windows.Forms.Label();
-            this.label103 = new System.Windows.Forms.Label();
-            this.label104 = new System.Windows.Forms.Label();
-            this.label105 = new System.Windows.Forms.Label();
-            this.label106 = new System.Windows.Forms.Label();
-            this.label107 = new System.Windows.Forms.Label();
-            this.label108 = new System.Windows.Forms.Label();
-            this.label109 = new System.Windows.Forms.Label();
-            this.label110 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
-            this.label113 = new System.Windows.Forms.Label();
-            this.label114 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblunennms = new System.Windows.Forms.Label();
+            this.lblennms = new System.Windows.Forms.Label();
+            this.lblunmateriamineralms = new System.Windows.Forms.Label();
+            this.lblmateriamineralms = new System.Windows.Forms.Label();
+            this.lblunfibrabrutams = new System.Windows.Forms.Label();
+            this.lblfibrabrutams = new System.Windows.Forms.Label();
+            this.lblunextratoetereoms = new System.Windows.Forms.Label();
+            this.lblextratoetereoms = new System.Windows.Forms.Label();
+            this.lblunproteinabrutams = new System.Windows.Forms.Label();
+            this.lblproteinabrutams = new System.Windows.Forms.Label();
+            this.lblunmateriasecams = new System.Windows.Forms.Label();
+            this.lblmateriasecams = new System.Windows.Forms.Label();
+            this.lblunumidadems = new System.Windows.Forms.Label();
+            this.lblumidadems = new System.Windows.Forms.Label();
+            this.tableenergiams = new System.Windows.Forms.TableLayoutPanel();
             this.txtvalenergiams = new System.Windows.Forms.TextBox();
-            this.label115 = new System.Windows.Forms.Label();
-            this.label116 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblunenergiams = new System.Windows.Forms.Label();
+            this.lblenergiams = new System.Windows.Forms.Label();
+            this.pbxtooltipalimentoms = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnexcluiralimentoms = new System.Windows.Forms.Button();
+            this.btneditaalimentoms = new System.Windows.Forms.Button();
             this.lblnomealimentoms = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnvoltavisualimentoms = new System.Windows.Forms.Button();
             this.cbxfiltroalimentoms = new System.Windows.Forms.ComboBox();
             this.dgvalimentosms = new System.Windows.Forms.DataGridView();
             this.txtbuscaalimentoms = new System.Windows.Forms.TextBox();
@@ -256,9 +256,9 @@
             this.btnnovoalimentoms = new System.Windows.Forms.Button();
             this.btnvisalimentoms = new System.Windows.Forms.Button();
             this.pnlvisualizaalimentosmn = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabletitulovitaminas = new System.Windows.Forms.TableLayoutPanel();
             this.lblvitaminas = new System.Windows.Forms.Label();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.tablevitaminas = new System.Windows.Forms.TableLayoutPanel();
             this.txtvalvitc = new System.Windows.Forms.TextBox();
             this.txtvalvitk = new System.Windows.Forms.TextBox();
             this.txtvalcolina = new System.Windows.Forms.TextBox();
@@ -301,9 +301,9 @@
             this.lblvitd = new System.Windows.Forms.Label();
             this.lblunvita = new System.Windows.Forms.Label();
             this.lblvita = new System.Windows.Forms.Label();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabletitulomineirais = new System.Windows.Forms.TableLayoutPanel();
             this.lblminerais = new System.Windows.Forms.Label();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.tablemineirais = new System.Windows.Forms.TableLayoutPanel();
             this.txtvals = new System.Windows.Forms.TextBox();
             this.txtvalzn = new System.Windows.Forms.TextBox();
             this.txtvalse = new System.Windows.Forms.TextBox();
@@ -343,9 +343,9 @@
             this.lblp = new System.Windows.Forms.Label();
             this.lblunca = new System.Windows.Forms.Label();
             this.lblca = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabletituloaminoacidos = new System.Windows.Forms.TableLayoutPanel();
             this.lblaminoacidos = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableaminoacidos = new System.Windows.Forms.TableLayoutPanel();
             this.txtvaltau = new System.Windows.Forms.TextBox();
             this.txtvalval = new System.Windows.Forms.TextBox();
             this.txtvaltri = new System.Windows.Forms.TextBox();
@@ -385,7 +385,7 @@
             this.lblhis = new System.Windows.Forms.Label();
             this.lblunarg = new System.Windows.Forms.Label();
             this.lblarg = new System.Windows.Forms.Label();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.tablecnf = new System.Windows.Forms.TableLayoutPanel();
             this.txtvalfdn = new System.Windows.Forms.TextBox();
             this.txtvalfda = new System.Windows.Forms.TextBox();
             this.txtvalcnf = new System.Windows.Forms.TextBox();
@@ -395,9 +395,9 @@
             this.lblfda = new System.Windows.Forms.Label();
             this.lbluncnf = new System.Windows.Forms.Label();
             this.lblcnf = new System.Windows.Forms.Label();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.tabletituloacidosgraxos = new System.Windows.Forms.TableLayoutPanel();
             this.lblacidosgraxos = new System.Windows.Forms.Label();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableacidosgraxos = new System.Windows.Forms.TableLayoutPanel();
             this.txtvalepadha = new System.Windows.Forms.TextBox();
             this.txtvalacaraquidonico = new System.Windows.Forms.TextBox();
             this.txtvalaclinoleicon6 = new System.Windows.Forms.TextBox();
@@ -410,7 +410,7 @@
             this.lblaclinoleicon6 = new System.Windows.Forms.Label();
             this.lblunaclinoleicon3 = new System.Windows.Forms.Label();
             this.lblaclinoleicon3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableumidade = new System.Windows.Forms.TableLayoutPanel();
             this.txtvalenn = new System.Windows.Forms.TextBox();
             this.txtvalmateriamineral = new System.Windows.Forms.TextBox();
             this.txtvalfibrabruta = new System.Windows.Forms.TextBox();
@@ -432,7 +432,7 @@
             this.lblmateriaseca = new System.Windows.Forms.Label();
             this.lblunumidade = new System.Windows.Forms.Label();
             this.lblumidade = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableenergia = new System.Windows.Forms.TableLayoutPanel();
             this.txtvalenergia = new System.Windows.Forms.TextBox();
             this.lblunenergia = new System.Windows.Forms.Label();
             this.lblenergia = new System.Windows.Forms.Label();
@@ -452,6 +452,8 @@
             this.btnnovoalimentomn = new System.Windows.Forms.Button();
             this.btnvisalimentomn = new System.Windows.Forms.Button();
             this.tipalimentosmn = new System.Windows.Forms.ToolTip(this.components);
+            this.btncancelareditaoalimentomn = new System.Windows.Forms.Button();
+            this.btncancelaalimentoms = new System.Windows.Forms.Button();
             this.pnlsuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).BeginInit();
@@ -463,31 +465,31 @@
             this.pnllateral.SuspendLayout();
             this.pnlalimentosms.SuspendLayout();
             this.pnlvisualizaalimentosms.SuspendLayout();
-            this.tableLayoutPanel12.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
-            this.tableLayoutPanel14.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
-            this.tableLayoutPanel17.SuspendLayout();
-            this.tableLayoutPanel18.SuspendLayout();
-            this.tableLayoutPanel19.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
-            this.tableLayoutPanel21.SuspendLayout();
-            this.tableLayoutPanel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tablecnfms.SuspendLayout();
+            this.tabletituloacidosgraxoms.SuspendLayout();
+            this.tableacidosgraxosms.SuspendLayout();
+            this.tabletitulovitaminasms.SuspendLayout();
+            this.tablevitaminasms.SuspendLayout();
+            this.tabletitulomineraisms.SuspendLayout();
+            this.tablemineirams.SuspendLayout();
+            this.tabletituloaminoacidosms.SuspendLayout();
+            this.tableaminoacidosms.SuspendLayout();
+            this.tableumidadems.SuspendLayout();
+            this.tableenergiams.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxtooltipalimentoms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosms)).BeginInit();
             this.pnlvisualizaalimentosmn.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
-            this.tableLayoutPanel10.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tabletitulovitaminas.SuspendLayout();
+            this.tablevitaminas.SuspendLayout();
+            this.tabletitulomineirais.SuspendLayout();
+            this.tablemineirais.SuspendLayout();
+            this.tabletituloaminoacidos.SuspendLayout();
+            this.tableaminoacidos.SuspendLayout();
+            this.tablecnf.SuspendLayout();
+            this.tabletituloacidosgraxos.SuspendLayout();
+            this.tableacidosgraxos.SuspendLayout();
+            this.tableumidade.SuspendLayout();
+            this.tableenergia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxhelpalimentomn)).BeginInit();
             this.pnlalimentosmn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosmn)).BeginInit();
@@ -498,6 +500,7 @@
             this.pnlsuperior.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlsuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            this.pnlsuperior.Controls.Add(this.pnlselecionaalimento);
             this.pnlsuperior.Controls.Add(this.lblusuario);
             this.pnlsuperior.Controls.Add(this.pbxusuario);
             this.pnlsuperior.Controls.Add(this.pbxlogo);
@@ -505,7 +508,7 @@
             this.pnlsuperior.Margin = new System.Windows.Forms.Padding(2);
             this.pnlsuperior.Name = "pnlsuperior";
             this.pnlsuperior.Size = new System.Drawing.Size(1318, 62);
-            this.pnlsuperior.TabIndex = 0;
+            this.pnlsuperior.TabIndex = 1;
             // 
             // lblusuario
             // 
@@ -516,7 +519,7 @@
             this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(410, 30);
-            this.lblusuario.TabIndex = 3;
+            this.lblusuario.TabIndex = 0;
             this.lblusuario.Text = "Murilo José Marques Maia";
             this.lblusuario.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -556,7 +559,7 @@
             this.pnlselecionaalimento.Controls.Add(this.lblescolhealimentomn);
             this.pnlselecionaalimento.Controls.Add(this.btnescolhealimentoms);
             this.pnlselecionaalimento.Controls.Add(this.btnescolhealimentomn);
-            this.pnlselecionaalimento.Location = new System.Drawing.Point(165, 80);
+            this.pnlselecionaalimento.Location = new System.Drawing.Point(1283, 41);
             this.pnlselecionaalimento.Name = "pnlselecionaalimento";
             this.pnlselecionaalimento.Size = new System.Drawing.Size(1132, 629);
             this.pnlselecionaalimento.TabIndex = 9;
@@ -565,7 +568,7 @@
             // 
             this.lblescolhealimentoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblescolhealimentoms.AutoSize = true;
-            this.lblescolhealimentoms.BackColor = System.Drawing.Color.Transparent;
+            this.lblescolhealimentoms.BackColor = System.Drawing.Color.PeachPuff;
             this.lblescolhealimentoms.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblescolhealimentoms.Location = new System.Drawing.Point(752, 23);
             this.lblescolhealimentoms.Name = "lblescolhealimentoms";
@@ -577,7 +580,7 @@
             // 
             this.lblescolhealimentomn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblescolhealimentomn.AutoSize = true;
-            this.lblescolhealimentomn.BackColor = System.Drawing.Color.Transparent;
+            this.lblescolhealimentomn.BackColor = System.Drawing.Color.SandyBrown;
             this.lblescolhealimentomn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblescolhealimentomn.Location = new System.Drawing.Point(176, 23);
             this.lblescolhealimentomn.Name = "lblescolhealimentomn";
@@ -587,8 +590,7 @@
             // 
             // btnescolhealimentoms
             // 
-            this.btnescolhealimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnescolhealimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnescolhealimentoms.BackColor = System.Drawing.Color.PeachPuff;
             this.btnescolhealimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.wheat;
@@ -604,18 +606,17 @@
             // 
             // btnescolhealimentomn
             // 
-            this.btnescolhealimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnescolhealimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.btnescolhealimentomn.BackColor = System.Drawing.Color.SandyBrown;
             this.btnescolhealimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
             this.btnescolhealimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnescolhealimentomn.FlatAppearance.BorderSize = 0;
             this.btnescolhealimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnescolhealimentomn.Location = new System.Drawing.Point(12, 13);
+            this.btnescolhealimentomn.Location = new System.Drawing.Point(8, 7);
             this.btnescolhealimentomn.Name = "btnescolhealimentomn";
             this.btnescolhealimentomn.Size = new System.Drawing.Size(566, 629);
-            this.btnescolhealimentomn.TabIndex = 0;
+            this.btnescolhealimentomn.TabIndex = 3;
             this.btnescolhealimentomn.UseVisualStyleBackColor = false;
             this.btnescolhealimentomn.Click += new System.EventHandler(this.btnescolhealimentomn_Click);
             // 
@@ -665,7 +666,7 @@
             this.pnlsuperioralimentosmn.Margin = new System.Windows.Forms.Padding(2);
             this.pnlsuperioralimentosmn.Name = "pnlsuperioralimentosmn";
             this.pnlsuperioralimentosmn.Size = new System.Drawing.Size(1119, 50);
-            this.pnlsuperioralimentosmn.TabIndex = 7;
+            this.pnlsuperioralimentosmn.TabIndex = 0;
             // 
             // lblalimentosmn
             // 
@@ -675,7 +676,7 @@
             this.lblalimentosmn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblalimentosmn.Name = "lblalimentosmn";
             this.lblalimentosmn.Size = new System.Drawing.Size(214, 21);
-            this.lblalimentosmn.TabIndex = 1;
+            this.lblalimentosmn.TabIndex = 0;
             this.lblalimentosmn.Text = "Alimentos na Matéria Natural";
             // 
             // pbxalimentosmn
@@ -705,7 +706,7 @@
             this.pnllateral.Margin = new System.Windows.Forms.Padding(2);
             this.pnllateral.Name = "pnllateral";
             this.pnllateral.Size = new System.Drawing.Size(160, 659);
-            this.pnllateral.TabIndex = 1;
+            this.pnllateral.TabIndex = 2;
             // 
             // btnhome
             // 
@@ -722,7 +723,7 @@
             this.btnhome.Margin = new System.Windows.Forms.Padding(2);
             this.btnhome.Name = "btnhome";
             this.btnhome.Size = new System.Drawing.Size(336, 37);
-            this.btnhome.TabIndex = 6;
+            this.btnhome.TabIndex = 0;
             this.btnhome.Text = "                         Inicio";
             this.btnhome.UseVisualStyleBackColor = false;
             this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
@@ -779,7 +780,7 @@
             this.btndietas.Margin = new System.Windows.Forms.Padding(2);
             this.btndietas.Name = "btndietas";
             this.btndietas.Size = new System.Drawing.Size(266, 37);
-            this.btndietas.TabIndex = 3;
+            this.btndietas.TabIndex = 4;
             this.btndietas.Text = "                         Dietas";
             this.btndietas.UseVisualStyleBackColor = true;
             this.btndietas.Click += new System.EventHandler(this.btndietas_Click);
@@ -798,7 +799,7 @@
             this.btnavaliar.Margin = new System.Windows.Forms.Padding(2);
             this.btnavaliar.Name = "btnavaliar";
             this.btnavaliar.Size = new System.Drawing.Size(270, 37);
-            this.btnavaliar.TabIndex = 2;
+            this.btnavaliar.TabIndex = 3;
             this.btnavaliar.Text = "                            Avaliar";
             this.btnavaliar.UseVisualStyleBackColor = true;
             this.btnavaliar.Click += new System.EventHandler(this.btnavaliar_Click);
@@ -817,7 +818,7 @@
             this.btnformular.Margin = new System.Windows.Forms.Padding(2);
             this.btnformular.Name = "btnformular";
             this.btnformular.Size = new System.Drawing.Size(280, 37);
-            this.btnformular.TabIndex = 1;
+            this.btnformular.TabIndex = 2;
             this.btnformular.Text = "                                Formular";
             this.btnformular.UseVisualStyleBackColor = true;
             this.btnformular.Click += new System.EventHandler(this.btnformular_Click);
@@ -836,7 +837,7 @@
             this.btnalimentos.Margin = new System.Windows.Forms.Padding(2);
             this.btnalimentos.Name = "btnalimentos";
             this.btnalimentos.Size = new System.Drawing.Size(270, 37);
-            this.btnalimentos.TabIndex = 0;
+            this.btnalimentos.TabIndex = 1;
             this.btnalimentos.Text = "                                Alimentos";
             this.btnalimentos.UseVisualStyleBackColor = true;
             this.btnalimentos.Click += new System.EventHandler(this.btnalimentos_Click);
@@ -868,90 +869,90 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlvisualizaalimentosms.AutoScroll = true;
             this.pnlvisualizaalimentosms.BackColor = System.Drawing.Color.White;
-            this.pnlvisualizaalimentosms.Controls.Add(this.button3);
+            this.pnlvisualizaalimentosms.Controls.Add(this.btncancelaalimentoms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.btnsalvaalimentoms);
             this.pnlvisualizaalimentosms.Controls.Add(this.txtnomealimentoms);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel12);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel13);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel14);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel15);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel16);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel17);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel18);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel19);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel20);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel21);
-            this.pnlvisualizaalimentosms.Controls.Add(this.tableLayoutPanel22);
-            this.pnlvisualizaalimentosms.Controls.Add(this.pictureBox1);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tablecnfms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tabletituloacidosgraxoms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tableacidosgraxosms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tabletitulovitaminasms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tablevitaminasms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tabletitulomineraisms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tablemineirams);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tabletituloaminoacidosms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tableaminoacidosms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tableumidadems);
+            this.pnlvisualizaalimentosms.Controls.Add(this.tableenergiams);
+            this.pnlvisualizaalimentosms.Controls.Add(this.pbxtooltipalimentoms);
             this.pnlvisualizaalimentosms.Controls.Add(this.panel4);
-            this.pnlvisualizaalimentosms.Controls.Add(this.button4);
-            this.pnlvisualizaalimentosms.Controls.Add(this.button5);
+            this.pnlvisualizaalimentosms.Controls.Add(this.btnexcluiralimentoms);
+            this.pnlvisualizaalimentosms.Controls.Add(this.btneditaalimentoms);
             this.pnlvisualizaalimentosms.Controls.Add(this.lblnomealimentoms);
-            this.pnlvisualizaalimentosms.Controls.Add(this.button6);
+            this.pnlvisualizaalimentosms.Controls.Add(this.btnvoltavisualimentoms);
             this.pnlvisualizaalimentosms.Location = new System.Drawing.Point(1, 52);
             this.pnlvisualizaalimentosms.Margin = new System.Windows.Forms.Padding(2);
             this.pnlvisualizaalimentosms.Name = "pnlvisualizaalimentosms";
             this.pnlvisualizaalimentosms.Size = new System.Drawing.Size(1119, 576);
-            this.pnlvisualizaalimentosms.TabIndex = 7;
+            this.pnlvisualizaalimentosms.TabIndex = 0;
             this.pnlvisualizaalimentosms.Visible = false;
             // 
-            // button3
+            // btnsalvaalimentoms
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Enabled = false;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::ProjetoNariz.Properties.Resources.save_temp;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(458, 462);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 45);
-            this.button3.TabIndex = 55;
-            this.button3.Text = "Salvar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
+            this.btnsalvaalimentoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnsalvaalimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btnsalvaalimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsalvaalimentoms.Enabled = false;
+            this.btnsalvaalimentoms.FlatAppearance.BorderSize = 0;
+            this.btnsalvaalimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsalvaalimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnsalvaalimentoms.ForeColor = System.Drawing.Color.White;
+            this.btnsalvaalimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsalvaalimentoms.Location = new System.Drawing.Point(490, 476);
+            this.btnsalvaalimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btnsalvaalimentoms.Name = "btnsalvaalimentoms";
+            this.btnsalvaalimentoms.Size = new System.Drawing.Size(90, 40);
+            this.btnsalvaalimentoms.TabIndex = 12;
+            this.btnsalvaalimentoms.Text = "Salvar";
+            this.btnsalvaalimentoms.UseVisualStyleBackColor = false;
+            this.btnsalvaalimentoms.Visible = false;
+            this.btnsalvaalimentoms.Click += new System.EventHandler(this.btnsalvaalimentoms_Click);
             // 
             // txtnomealimentoms
             // 
             this.txtnomealimentoms.Enabled = false;
-            this.txtnomealimentoms.Location = new System.Drawing.Point(64, 10);
+            this.txtnomealimentoms.Location = new System.Drawing.Point(68, 10);
             this.txtnomealimentoms.Multiline = true;
             this.txtnomealimentoms.Name = "txtnomealimentoms";
             this.txtnomealimentoms.Size = new System.Drawing.Size(758, 81);
-            this.txtnomealimentoms.TabIndex = 58;
+            this.txtnomealimentoms.TabIndex = 1;
             this.txtnomealimentoms.Visible = false;
             // 
-            // tableLayoutPanel12
+            // tablecnfms
             // 
-            this.tableLayoutPanel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel12.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel12.ColumnCount = 3;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel12.Controls.Add(this.txtvalfdnms, 1, 2);
-            this.tableLayoutPanel12.Controls.Add(this.txtvalfdams, 1, 1);
-            this.tableLayoutPanel12.Controls.Add(this.txtvalcnfms, 1, 0);
-            this.tableLayoutPanel12.Controls.Add(this.label3, 2, 2);
-            this.tableLayoutPanel12.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel12.Controls.Add(this.label5, 2, 1);
-            this.tableLayoutPanel12.Controls.Add(this.label6, 0, 1);
-            this.tableLayoutPanel12.Controls.Add(this.label7, 2, 0);
-            this.tableLayoutPanel12.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(38, 489);
-            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 3;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(325, 75);
-            this.tableLayoutPanel12.TabIndex = 23;
+            this.tablecnfms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tablecnfms.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tablecnfms.ColumnCount = 3;
+            this.tablecnfms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tablecnfms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablecnfms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tablecnfms.Controls.Add(this.txtvalfdnms, 1, 2);
+            this.tablecnfms.Controls.Add(this.txtvalfdams, 1, 1);
+            this.tablecnfms.Controls.Add(this.txtvalcnfms, 1, 0);
+            this.tablecnfms.Controls.Add(this.lblunfdnms, 2, 2);
+            this.tablecnfms.Controls.Add(this.lblfdnms, 0, 2);
+            this.tablecnfms.Controls.Add(this.lblunfdams, 2, 1);
+            this.tablecnfms.Controls.Add(this.lblfdams, 0, 1);
+            this.tablecnfms.Controls.Add(this.lbluncnfms, 2, 0);
+            this.tablecnfms.Controls.Add(this.lblcnfms, 0, 0);
+            this.tablecnfms.Location = new System.Drawing.Point(30, 489);
+            this.tablecnfms.Name = "tablecnfms";
+            this.tablecnfms.RowCount = 3;
+            this.tablecnfms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tablecnfms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tablecnfms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tablecnfms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tablecnfms.Size = new System.Drawing.Size(325, 75);
+            this.tablecnfms.TabIndex = 7;
             // 
             // txtvalfdnms
             // 
@@ -998,128 +999,128 @@
             this.txtvalcnfms.Text = "100";
             this.txtvalcnfms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label3
+            // lblunfdnms
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(278, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 17);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "%";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunfdnms.AutoSize = true;
+            this.lblunfdnms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunfdnms.Location = new System.Drawing.Point(278, 50);
+            this.lblunfdnms.Name = "lblunfdnms";
+            this.lblunfdnms.Size = new System.Drawing.Size(19, 17);
+            this.lblunfdnms.TabIndex = 27;
+            this.lblunfdnms.Text = "%";
+            this.lblunfdnms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // lblfdnms
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(5, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 17);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "FDN";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblfdnms.AutoSize = true;
+            this.lblfdnms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfdnms.Location = new System.Drawing.Point(5, 50);
+            this.lblfdnms.Name = "lblfdnms";
+            this.lblfdnms.Size = new System.Drawing.Size(33, 17);
+            this.lblfdnms.TabIndex = 28;
+            this.lblfdnms.Text = "FDN";
+            this.lblfdnms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
+            // lblunfdams
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(278, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 17);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "%";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunfdams.AutoSize = true;
+            this.lblunfdams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunfdams.Location = new System.Drawing.Point(278, 26);
+            this.lblunfdams.Name = "lblunfdams";
+            this.lblunfdams.Size = new System.Drawing.Size(19, 17);
+            this.lblunfdams.TabIndex = 26;
+            this.lblunfdams.Text = "%";
+            this.lblunfdams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // lblfdams
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(5, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 17);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "FDA";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblfdams.AutoSize = true;
+            this.lblfdams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfdams.Location = new System.Drawing.Point(5, 26);
+            this.lblfdams.Name = "lblfdams";
+            this.lblfdams.Size = new System.Drawing.Size(31, 17);
+            this.lblfdams.TabIndex = 27;
+            this.lblfdams.Text = "FDA";
+            this.lblfdams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label7
+            // lbluncnfms
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(278, 2);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 17);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "%";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbluncnfms.AutoSize = true;
+            this.lbluncnfms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluncnfms.Location = new System.Drawing.Point(278, 2);
+            this.lbluncnfms.Name = "lbluncnfms";
+            this.lbluncnfms.Size = new System.Drawing.Size(19, 17);
+            this.lbluncnfms.TabIndex = 12;
+            this.lbluncnfms.Text = "%";
+            this.lbluncnfms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // lblcnfms
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 2);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 17);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "CNF";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblcnfms.AutoSize = true;
+            this.lblcnfms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcnfms.Location = new System.Drawing.Point(5, 2);
+            this.lblcnfms.Name = "lblcnfms";
+            this.lblcnfms.Size = new System.Drawing.Size(32, 17);
+            this.lblcnfms.TabIndex = 0;
+            this.lblcnfms.Text = "CNF";
+            this.lblcnfms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel13
+            // tabletituloacidosgraxoms
             // 
-            this.tableLayoutPanel13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel13.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel13.ColumnCount = 1;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel13.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(38, 339);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 1;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(325, 25);
-            this.tableLayoutPanel13.TabIndex = 22;
+            this.tabletituloacidosgraxoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tabletituloacidosgraxoms.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tabletituloacidosgraxoms.ColumnCount = 1;
+            this.tabletituloacidosgraxoms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabletituloacidosgraxoms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletituloacidosgraxoms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletituloacidosgraxoms.Controls.Add(this.lblacidosgraxoms, 0, 0);
+            this.tabletituloacidosgraxoms.Location = new System.Drawing.Point(30, 339);
+            this.tabletituloacidosgraxoms.Name = "tabletituloacidosgraxoms";
+            this.tabletituloacidosgraxoms.RowCount = 1;
+            this.tabletituloacidosgraxoms.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tabletituloacidosgraxoms.Size = new System.Drawing.Size(325, 25);
+            this.tabletituloacidosgraxoms.TabIndex = 22;
             // 
-            // label9
+            // lblacidosgraxoms
             // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(5, 2);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(315, 21);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Ácidos Graxos";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblacidosgraxoms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblacidosgraxoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblacidosgraxoms.Location = new System.Drawing.Point(5, 2);
+            this.lblacidosgraxoms.Name = "lblacidosgraxoms";
+            this.lblacidosgraxoms.Size = new System.Drawing.Size(315, 21);
+            this.lblacidosgraxoms.TabIndex = 0;
+            this.lblacidosgraxoms.Text = "Ácidos Graxos";
+            this.lblacidosgraxoms.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel14
+            // tableacidosgraxosms
             // 
-            this.tableLayoutPanel14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel14.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel14.ColumnCount = 3;
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel14.Controls.Add(this.txtvalepadhams, 1, 3);
-            this.tableLayoutPanel14.Controls.Add(this.txtvalacaraquidonicoms, 1, 2);
-            this.tableLayoutPanel14.Controls.Add(this.txtvalaclinoleicon6ms, 1, 1);
-            this.tableLayoutPanel14.Controls.Add(this.txtvalaclinoleicon3ms, 1, 0);
-            this.tableLayoutPanel14.Controls.Add(this.label10, 2, 3);
-            this.tableLayoutPanel14.Controls.Add(this.label11, 0, 3);
-            this.tableLayoutPanel14.Controls.Add(this.label12, 2, 2);
-            this.tableLayoutPanel14.Controls.Add(this.label13, 0, 2);
-            this.tableLayoutPanel14.Controls.Add(this.label14, 2, 1);
-            this.tableLayoutPanel14.Controls.Add(this.label15, 0, 1);
-            this.tableLayoutPanel14.Controls.Add(this.label16, 2, 0);
-            this.tableLayoutPanel14.Controls.Add(this.label17, 0, 0);
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(38, 367);
-            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
-            this.tableLayoutPanel14.RowCount = 4;
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(325, 100);
-            this.tableLayoutPanel14.TabIndex = 21;
+            this.tableacidosgraxosms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableacidosgraxosms.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableacidosgraxosms.ColumnCount = 3;
+            this.tableacidosgraxosms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableacidosgraxosms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxosms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableacidosgraxosms.Controls.Add(this.txtvalepadhams, 1, 3);
+            this.tableacidosgraxosms.Controls.Add(this.txtvalacaraquidonicoms, 1, 2);
+            this.tableacidosgraxosms.Controls.Add(this.txtvalaclinoleicon6ms, 1, 1);
+            this.tableacidosgraxosms.Controls.Add(this.txtvalaclinoleicon3ms, 1, 0);
+            this.tableacidosgraxosms.Controls.Add(this.lblunepadhams, 2, 3);
+            this.tableacidosgraxosms.Controls.Add(this.lblepadhams, 0, 3);
+            this.tableacidosgraxosms.Controls.Add(this.lblunacaraquidonicoms, 2, 2);
+            this.tableacidosgraxosms.Controls.Add(this.lblacaraquidonicoms, 0, 2);
+            this.tableacidosgraxosms.Controls.Add(this.lblunaclinoleico6ms, 2, 1);
+            this.tableacidosgraxosms.Controls.Add(this.lblaclinoleico6ms, 0, 1);
+            this.tableacidosgraxosms.Controls.Add(this.lblunaclinoleico3ms, 2, 0);
+            this.tableacidosgraxosms.Controls.Add(this.lblaclinoleicon3ms, 0, 0);
+            this.tableacidosgraxosms.Location = new System.Drawing.Point(30, 367);
+            this.tableacidosgraxosms.Name = "tableacidosgraxosms";
+            this.tableacidosgraxosms.RowCount = 4;
+            this.tableacidosgraxosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxosms.Size = new System.Drawing.Size(325, 100);
+            this.tableacidosgraxosms.TabIndex = 6;
             // 
             // txtvalepadhams
             // 
@@ -1181,109 +1182,109 @@
             this.txtvalaclinoleicon3ms.Text = "100";
             this.txtvalaclinoleicon3ms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label10
+            // lblunepadhams
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(278, 74);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 17);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "%";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunepadhams.AutoSize = true;
+            this.lblunepadhams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunepadhams.Location = new System.Drawing.Point(278, 74);
+            this.lblunepadhams.Name = "lblunepadhams";
+            this.lblunepadhams.Size = new System.Drawing.Size(19, 17);
+            this.lblunepadhams.TabIndex = 27;
+            this.lblunepadhams.Text = "%";
+            this.lblunepadhams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label11
+            // lblepadhams
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(5, 74);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 17);
-            this.label11.TabIndex = 26;
-            this.label11.Text = "EPA + DHA";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblepadhams.AutoSize = true;
+            this.lblepadhams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblepadhams.Location = new System.Drawing.Point(5, 74);
+            this.lblepadhams.Name = "lblepadhams";
+            this.lblepadhams.Size = new System.Drawing.Size(72, 17);
+            this.lblepadhams.TabIndex = 26;
+            this.lblepadhams.Text = "EPA + DHA";
+            this.lblepadhams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label12
+            // lblunacaraquidonicoms
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(278, 50);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(27, 17);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "mg";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunacaraquidonicoms.AutoSize = true;
+            this.lblunacaraquidonicoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunacaraquidonicoms.Location = new System.Drawing.Point(278, 50);
+            this.lblunacaraquidonicoms.Name = "lblunacaraquidonicoms";
+            this.lblunacaraquidonicoms.Size = new System.Drawing.Size(27, 17);
+            this.lblunacaraquidonicoms.TabIndex = 26;
+            this.lblunacaraquidonicoms.Text = "mg";
+            this.lblunacaraquidonicoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label13
+            // lblacaraquidonicoms
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(5, 50);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(107, 17);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Ac. Araquidonico";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblacaraquidonicoms.AutoSize = true;
+            this.lblacaraquidonicoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblacaraquidonicoms.Location = new System.Drawing.Point(5, 50);
+            this.lblacaraquidonicoms.Name = "lblacaraquidonicoms";
+            this.lblacaraquidonicoms.Size = new System.Drawing.Size(107, 17);
+            this.lblacaraquidonicoms.TabIndex = 25;
+            this.lblacaraquidonicoms.Text = "Ac. Araquidonico";
+            this.lblacaraquidonicoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label14
+            // lblunaclinoleico6ms
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(278, 26);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(19, 17);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "%";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunaclinoleico6ms.AutoSize = true;
+            this.lblunaclinoleico6ms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunaclinoleico6ms.Location = new System.Drawing.Point(278, 26);
+            this.lblunaclinoleico6ms.Name = "lblunaclinoleico6ms";
+            this.lblunaclinoleico6ms.Size = new System.Drawing.Size(19, 17);
+            this.lblunaclinoleico6ms.TabIndex = 24;
+            this.lblunaclinoleico6ms.Text = "%";
+            this.lblunaclinoleico6ms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label15
+            // lblaclinoleico6ms
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(5, 26);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(103, 17);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "Ac. Linoleico n-6";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblaclinoleico6ms.AutoSize = true;
+            this.lblaclinoleico6ms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblaclinoleico6ms.Location = new System.Drawing.Point(5, 26);
+            this.lblaclinoleico6ms.Name = "lblaclinoleico6ms";
+            this.lblaclinoleico6ms.Size = new System.Drawing.Size(103, 17);
+            this.lblaclinoleico6ms.TabIndex = 24;
+            this.lblaclinoleico6ms.Text = "Ac. Linoleico n-6";
+            this.lblaclinoleico6ms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label16
+            // lblunaclinoleico3ms
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(278, 2);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(19, 17);
-            this.label16.TabIndex = 12;
-            this.label16.Text = "%";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunaclinoleico3ms.AutoSize = true;
+            this.lblunaclinoleico3ms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunaclinoleico3ms.Location = new System.Drawing.Point(278, 2);
+            this.lblunaclinoleico3ms.Name = "lblunaclinoleico3ms";
+            this.lblunaclinoleico3ms.Size = new System.Drawing.Size(19, 17);
+            this.lblunaclinoleico3ms.TabIndex = 12;
+            this.lblunaclinoleico3ms.Text = "%";
+            this.lblunaclinoleico3ms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label17
+            // lblaclinoleicon3ms
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(5, 2);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(103, 17);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Ac. Linoleico n-3";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblaclinoleicon3ms.AutoSize = true;
+            this.lblaclinoleicon3ms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblaclinoleicon3ms.Location = new System.Drawing.Point(5, 2);
+            this.lblaclinoleicon3ms.Name = "lblaclinoleicon3ms";
+            this.lblaclinoleicon3ms.Size = new System.Drawing.Size(103, 17);
+            this.lblaclinoleicon3ms.TabIndex = 0;
+            this.lblaclinoleicon3ms.Text = "Ac. Linoleico n-3";
+            this.lblaclinoleicon3ms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel15
+            // tabletitulovitaminasms
             // 
-            this.tableLayoutPanel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel15.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel15.ColumnCount = 1;
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.Controls.Add(this.label18, 0, 0);
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(831, 114);
-            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
-            this.tableLayoutPanel15.RowCount = 1;
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(220, 25);
-            this.tableLayoutPanel15.TabIndex = 20;
+            this.tabletitulovitaminasms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tabletitulovitaminasms.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tabletitulovitaminasms.ColumnCount = 1;
+            this.tabletitulovitaminasms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabletitulovitaminasms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletitulovitaminasms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletitulovitaminasms.Controls.Add(this.label18, 0, 0);
+            this.tabletitulovitaminasms.Location = new System.Drawing.Point(875, 120);
+            this.tabletitulovitaminasms.Name = "tabletitulovitaminasms";
+            this.tabletitulovitaminasms.RowCount = 1;
+            this.tabletitulovitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tabletitulovitaminasms.Size = new System.Drawing.Size(220, 25);
+            this.tabletitulovitaminasms.TabIndex = 10;
             // 
             // label18
             // 
@@ -1296,1784 +1297,1784 @@
             this.label18.Text = "Vitaminas";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel16
-            // 
-            this.tableLayoutPanel16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel16.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel16.ColumnCount = 3;
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel16.Controls.Add(this.textBox9, 1, 13);
-            this.tableLayoutPanel16.Controls.Add(this.textBox10, 1, 12);
-            this.tableLayoutPanel16.Controls.Add(this.textBox11, 1, 11);
-            this.tableLayoutPanel16.Controls.Add(this.textBox12, 1, 10);
-            this.tableLayoutPanel16.Controls.Add(this.textBox13, 1, 9);
-            this.tableLayoutPanel16.Controls.Add(this.textBox14, 1, 8);
-            this.tableLayoutPanel16.Controls.Add(this.textBox15, 1, 7);
-            this.tableLayoutPanel16.Controls.Add(this.textBox16, 1, 6);
-            this.tableLayoutPanel16.Controls.Add(this.textBox17, 1, 5);
-            this.tableLayoutPanel16.Controls.Add(this.textBox18, 1, 4);
-            this.tableLayoutPanel16.Controls.Add(this.textBox19, 1, 3);
-            this.tableLayoutPanel16.Controls.Add(this.textBox20, 1, 2);
-            this.tableLayoutPanel16.Controls.Add(this.textBox21, 1, 1);
-            this.tableLayoutPanel16.Controls.Add(this.textBox22, 1, 0);
-            this.tableLayoutPanel16.Controls.Add(this.label19, 2, 13);
-            this.tableLayoutPanel16.Controls.Add(this.label20, 0, 13);
-            this.tableLayoutPanel16.Controls.Add(this.label21, 2, 12);
-            this.tableLayoutPanel16.Controls.Add(this.label22, 0, 12);
-            this.tableLayoutPanel16.Controls.Add(this.label23, 2, 11);
-            this.tableLayoutPanel16.Controls.Add(this.label24, 0, 11);
-            this.tableLayoutPanel16.Controls.Add(this.label25, 2, 10);
-            this.tableLayoutPanel16.Controls.Add(this.label26, 0, 10);
-            this.tableLayoutPanel16.Controls.Add(this.label27, 2, 9);
-            this.tableLayoutPanel16.Controls.Add(this.label28, 0, 9);
-            this.tableLayoutPanel16.Controls.Add(this.label29, 2, 8);
-            this.tableLayoutPanel16.Controls.Add(this.label30, 0, 8);
-            this.tableLayoutPanel16.Controls.Add(this.label31, 2, 7);
-            this.tableLayoutPanel16.Controls.Add(this.label32, 0, 7);
-            this.tableLayoutPanel16.Controls.Add(this.label33, 2, 6);
-            this.tableLayoutPanel16.Controls.Add(this.label34, 2, 5);
-            this.tableLayoutPanel16.Controls.Add(this.label35, 0, 5);
-            this.tableLayoutPanel16.Controls.Add(this.label36, 2, 4);
-            this.tableLayoutPanel16.Controls.Add(this.label37, 0, 4);
-            this.tableLayoutPanel16.Controls.Add(this.label38, 2, 3);
-            this.tableLayoutPanel16.Controls.Add(this.label39, 0, 6);
-            this.tableLayoutPanel16.Controls.Add(this.label40, 0, 3);
-            this.tableLayoutPanel16.Controls.Add(this.label41, 2, 2);
-            this.tableLayoutPanel16.Controls.Add(this.label42, 0, 2);
-            this.tableLayoutPanel16.Controls.Add(this.label43, 2, 1);
-            this.tableLayoutPanel16.Controls.Add(this.label44, 0, 1);
-            this.tableLayoutPanel16.Controls.Add(this.label45, 2, 0);
-            this.tableLayoutPanel16.Controls.Add(this.label46, 0, 0);
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(831, 142);
-            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 14;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(220, 340);
-            this.tableLayoutPanel16.TabIndex = 19;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox9.Location = new System.Drawing.Point(110, 314);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(53, 24);
-            this.textBox9.TabIndex = 45;
-            this.textBox9.Text = "54";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox10.Location = new System.Drawing.Point(110, 290);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(53, 22);
-            this.textBox10.TabIndex = 44;
-            this.textBox10.Text = "53";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox11.Location = new System.Drawing.Point(110, 266);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(53, 22);
-            this.textBox11.TabIndex = 52;
-            this.textBox11.Text = "100";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox12
-            // 
-            this.textBox12.BackColor = System.Drawing.Color.White;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox12.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox12.Location = new System.Drawing.Point(110, 242);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(53, 22);
-            this.textBox12.TabIndex = 51;
-            this.textBox12.Text = "100";
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox13.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox13.Location = new System.Drawing.Point(110, 218);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(53, 22);
-            this.textBox13.TabIndex = 50;
-            this.textBox13.Text = "100";
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox14
-            // 
-            this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox14.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox14.Location = new System.Drawing.Point(110, 194);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(53, 22);
-            this.textBox14.TabIndex = 49;
-            this.textBox14.Text = "100";
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox15
-            // 
-            this.textBox15.BackColor = System.Drawing.Color.White;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox15.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox15.Location = new System.Drawing.Point(110, 170);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(53, 22);
-            this.textBox15.TabIndex = 48;
-            this.textBox15.Text = "100";
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox16
-            // 
-            this.textBox16.BackColor = System.Drawing.Color.White;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox16.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox16.Location = new System.Drawing.Point(110, 146);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(53, 22);
-            this.textBox16.TabIndex = 47;
-            this.textBox16.Text = "100";
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.Color.White;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox17.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox17.Location = new System.Drawing.Point(110, 122);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(53, 22);
-            this.textBox17.TabIndex = 46;
-            this.textBox17.Text = "100";
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.Color.White;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox18.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox18.Location = new System.Drawing.Point(110, 98);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(53, 22);
-            this.textBox18.TabIndex = 36;
-            this.textBox18.Text = "45";
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox19
-            // 
-            this.textBox19.BackColor = System.Drawing.Color.White;
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox19.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox19.Location = new System.Drawing.Point(110, 74);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(53, 22);
-            this.textBox19.TabIndex = 44;
-            this.textBox19.Text = "100";
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox20
-            // 
-            this.textBox20.BackColor = System.Drawing.Color.White;
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox20.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox20.Location = new System.Drawing.Point(110, 50);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(53, 22);
-            this.textBox20.TabIndex = 43;
-            this.textBox20.Text = "100";
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox21
-            // 
-            this.textBox21.BackColor = System.Drawing.Color.White;
-            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox21.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox21.Location = new System.Drawing.Point(110, 26);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(53, 22);
-            this.textBox21.TabIndex = 42;
-            this.textBox21.Text = "100";
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox22
-            // 
-            this.textBox22.BackColor = System.Drawing.Color.White;
-            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox22.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox22.Location = new System.Drawing.Point(110, 2);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(53, 22);
-            this.textBox22.TabIndex = 41;
-            this.textBox22.Text = "100";
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(168, 314);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(30, 17);
-            this.label19.TabIndex = 21;
-            this.label19.Text = "kcal";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(5, 314);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(38, 17);
-            this.label20.TabIndex = 21;
-            this.label20.Text = "Vit. C";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(168, 290);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(27, 17);
-            this.label21.TabIndex = 16;
-            this.label21.Text = "mg";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(5, 290);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(38, 17);
-            this.label22.TabIndex = 16;
-            this.label22.Text = "Vit. K";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(168, 266);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(27, 17);
-            this.label23.TabIndex = 16;
-            this.label23.Text = "mg";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(5, 266);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 17);
-            this.label24.TabIndex = 16;
-            this.label24.Text = "Colina";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(168, 242);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(27, 17);
-            this.label25.TabIndex = 16;
-            this.label25.Text = "mg";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(5, 242);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(47, 17);
-            this.label26.TabIndex = 16;
-            this.label26.Text = "Biotina";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(168, 218);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(33, 17);
-            this.label27.TabIndex = 16;
-            this.label27.Text = "mcg";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(5, 218);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(63, 17);
-            this.label28.TabIndex = 16;
-            this.label28.Text = "Ac. Fólico";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(168, 194);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(27, 17);
-            this.label29.TabIndex = 16;
-            this.label29.Text = "mg";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(5, 194);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(51, 17);
-            this.label30.TabIndex = 14;
-            this.label30.Text = "Niacina";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(168, 170);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(33, 17);
-            this.label31.TabIndex = 14;
-            this.label31.Text = "mcg";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(5, 170);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(48, 17);
-            this.label32.TabIndex = 31;
-            this.label32.Text = "Vit B12";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(168, 146);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(27, 17);
-            this.label33.TabIndex = 32;
-            this.label33.Text = "mg";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(168, 122);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(27, 17);
-            this.label34.TabIndex = 29;
-            this.label34.Text = "mg";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(5, 122);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(97, 17);
-            this.label35.TabIndex = 27;
-            this.label35.Text = "Ac. Pantotênico";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(168, 98);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(27, 17);
-            this.label36.TabIndex = 26;
-            this.label36.Text = "mg";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(5, 98);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(72, 17);
-            this.label37.TabIndex = 24;
-            this.label37.Text = "Riboflavina";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(168, 74);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(27, 17);
-            this.label38.TabIndex = 23;
-            this.label38.Text = "mg";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(5, 146);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(41, 17);
-            this.label39.TabIndex = 30;
-            this.label39.Text = "Vit B6";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(5, 74);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(53, 17);
-            this.label40.TabIndex = 21;
-            this.label40.Text = "Tiamina";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(168, 50);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(20, 17);
-            this.label41.TabIndex = 20;
-            this.label41.Text = "UI";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(5, 50);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(34, 17);
-            this.label42.TabIndex = 18;
-            this.label42.Text = "Vit E";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(168, 26);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(20, 17);
-            this.label43.TabIndex = 17;
-            this.label43.Text = "UI";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(5, 26);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(36, 17);
-            this.label44.TabIndex = 15;
-            this.label44.Text = "Vit D";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(168, 2);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(20, 17);
-            this.label45.TabIndex = 14;
-            this.label45.Text = "UI";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(5, 2);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(35, 17);
-            this.label46.TabIndex = 12;
-            this.label46.Text = "Vit A";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel17
-            // 
-            this.tableLayoutPanel17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel17.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel17.ColumnCount = 1;
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel17.Controls.Add(this.label47, 0, 0);
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(601, 115);
-            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
-            this.tableLayoutPanel17.RowCount = 1;
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(180, 25);
-            this.tableLayoutPanel17.TabIndex = 18;
-            // 
-            // label47
-            // 
-            this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label47.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(5, 2);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(170, 21);
-            this.label47.TabIndex = 0;
-            this.label47.Text = "Minerais";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel18
-            // 
-            this.tableLayoutPanel18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel18.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel18.ColumnCount = 3;
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.Controls.Add(this.textBox23, 1, 12);
-            this.tableLayoutPanel18.Controls.Add(this.textBox24, 1, 11);
-            this.tableLayoutPanel18.Controls.Add(this.textBox25, 1, 10);
-            this.tableLayoutPanel18.Controls.Add(this.textBox26, 1, 9);
-            this.tableLayoutPanel18.Controls.Add(this.textBox27, 1, 8);
-            this.tableLayoutPanel18.Controls.Add(this.textBox28, 1, 7);
-            this.tableLayoutPanel18.Controls.Add(this.textBox29, 1, 6);
-            this.tableLayoutPanel18.Controls.Add(this.textBox30, 1, 5);
-            this.tableLayoutPanel18.Controls.Add(this.textBox31, 1, 4);
-            this.tableLayoutPanel18.Controls.Add(this.textBox32, 1, 3);
-            this.tableLayoutPanel18.Controls.Add(this.textBox33, 1, 2);
-            this.tableLayoutPanel18.Controls.Add(this.textBox34, 1, 1);
-            this.tableLayoutPanel18.Controls.Add(this.textBox35, 1, 0);
-            this.tableLayoutPanel18.Controls.Add(this.label48, 2, 12);
-            this.tableLayoutPanel18.Controls.Add(this.label49, 0, 12);
-            this.tableLayoutPanel18.Controls.Add(this.label50, 2, 11);
-            this.tableLayoutPanel18.Controls.Add(this.label51, 0, 11);
-            this.tableLayoutPanel18.Controls.Add(this.label52, 2, 10);
-            this.tableLayoutPanel18.Controls.Add(this.label53, 0, 10);
-            this.tableLayoutPanel18.Controls.Add(this.label54, 2, 9);
-            this.tableLayoutPanel18.Controls.Add(this.label55, 0, 9);
-            this.tableLayoutPanel18.Controls.Add(this.label56, 2, 8);
-            this.tableLayoutPanel18.Controls.Add(this.label57, 0, 8);
-            this.tableLayoutPanel18.Controls.Add(this.label58, 2, 7);
-            this.tableLayoutPanel18.Controls.Add(this.label59, 0, 7);
-            this.tableLayoutPanel18.Controls.Add(this.label60, 2, 6);
-            this.tableLayoutPanel18.Controls.Add(this.label61, 2, 5);
-            this.tableLayoutPanel18.Controls.Add(this.label62, 0, 5);
-            this.tableLayoutPanel18.Controls.Add(this.label63, 2, 4);
-            this.tableLayoutPanel18.Controls.Add(this.label64, 0, 4);
-            this.tableLayoutPanel18.Controls.Add(this.label65, 2, 3);
-            this.tableLayoutPanel18.Controls.Add(this.label66, 0, 6);
-            this.tableLayoutPanel18.Controls.Add(this.label67, 0, 3);
-            this.tableLayoutPanel18.Controls.Add(this.label68, 2, 2);
-            this.tableLayoutPanel18.Controls.Add(this.label69, 0, 2);
-            this.tableLayoutPanel18.Controls.Add(this.label70, 2, 1);
-            this.tableLayoutPanel18.Controls.Add(this.label71, 0, 1);
-            this.tableLayoutPanel18.Controls.Add(this.label72, 2, 0);
-            this.tableLayoutPanel18.Controls.Add(this.label73, 0, 0);
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(601, 146);
-            this.tableLayoutPanel18.Name = "tableLayoutPanel18";
-            this.tableLayoutPanel18.RowCount = 13;
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(180, 305);
-            this.tableLayoutPanel18.TabIndex = 17;
-            // 
-            // textBox23
-            // 
-            this.textBox23.BackColor = System.Drawing.Color.White;
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox23.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox23.Location = new System.Drawing.Point(90, 278);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(43, 25);
-            this.textBox23.TabIndex = 40;
-            this.textBox23.Text = "100";
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox24
-            // 
-            this.textBox24.BackColor = System.Drawing.Color.White;
-            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox24.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox24.Location = new System.Drawing.Point(90, 255);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(43, 21);
-            this.textBox24.TabIndex = 39;
-            this.textBox24.Text = "100";
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox25
-            // 
-            this.textBox25.BackColor = System.Drawing.Color.White;
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox25.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox25.Location = new System.Drawing.Point(90, 232);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(43, 21);
-            this.textBox25.TabIndex = 38;
-            this.textBox25.Text = "100";
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox26
-            // 
-            this.textBox26.BackColor = System.Drawing.Color.White;
-            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox26.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox26.Location = new System.Drawing.Point(90, 209);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox26.Multiline = true;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(43, 21);
-            this.textBox26.TabIndex = 37;
-            this.textBox26.Text = "100";
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox27
-            // 
-            this.textBox27.BackColor = System.Drawing.Color.White;
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox27.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox27.Location = new System.Drawing.Point(90, 186);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(43, 21);
-            this.textBox27.TabIndex = 36;
-            this.textBox27.Text = "100";
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox28
-            // 
-            this.textBox28.BackColor = System.Drawing.Color.White;
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox28.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox28.Location = new System.Drawing.Point(90, 163);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(43, 21);
-            this.textBox28.TabIndex = 35;
-            this.textBox28.Text = "100";
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox29
-            // 
-            this.textBox29.BackColor = System.Drawing.Color.White;
-            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox29.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox29.Location = new System.Drawing.Point(90, 140);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(43, 21);
-            this.textBox29.TabIndex = 34;
-            this.textBox29.Text = "100";
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox30
-            // 
-            this.textBox30.BackColor = System.Drawing.Color.White;
-            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox30.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox30.Location = new System.Drawing.Point(90, 117);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(43, 21);
-            this.textBox30.TabIndex = 33;
-            this.textBox30.Text = "100";
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox31
-            // 
-            this.textBox31.BackColor = System.Drawing.Color.White;
-            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox31.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox31.Location = new System.Drawing.Point(90, 94);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(43, 21);
-            this.textBox31.TabIndex = 32;
-            this.textBox31.Text = "100";
-            this.textBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox32
-            // 
-            this.textBox32.BackColor = System.Drawing.Color.White;
-            this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox32.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox32.Location = new System.Drawing.Point(90, 71);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox32.Multiline = true;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(43, 21);
-            this.textBox32.TabIndex = 31;
-            this.textBox32.Text = "100";
-            this.textBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox33
-            // 
-            this.textBox33.BackColor = System.Drawing.Color.White;
-            this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox33.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox33.Location = new System.Drawing.Point(90, 48);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(43, 21);
-            this.textBox33.TabIndex = 30;
-            this.textBox33.Text = "100";
-            this.textBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox34
-            // 
-            this.textBox34.BackColor = System.Drawing.Color.White;
-            this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox34.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox34.Location = new System.Drawing.Point(90, 25);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(43, 21);
-            this.textBox34.TabIndex = 29;
-            this.textBox34.Text = "100";
-            this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox35
-            // 
-            this.textBox35.BackColor = System.Drawing.Color.White;
-            this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox35.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox35.Location = new System.Drawing.Point(90, 2);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(43, 21);
-            this.textBox35.TabIndex = 28;
-            this.textBox35.Text = "100";
-            this.textBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(138, 278);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(27, 17);
-            this.label48.TabIndex = 16;
-            this.label48.Text = "mg";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(5, 278);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(15, 17);
-            this.label49.TabIndex = 16;
-            this.label49.Text = "S";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(138, 255);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(27, 17);
-            this.label50.TabIndex = 16;
-            this.label50.Text = "mg";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(5, 255);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(22, 17);
-            this.label51.TabIndex = 16;
-            this.label51.Text = "Zn";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(138, 232);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(27, 17);
-            this.label52.TabIndex = 16;
-            this.label52.Text = "mg";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(5, 232);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(22, 17);
-            this.label53.TabIndex = 16;
-            this.label53.Text = "Se";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(138, 209);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(27, 17);
-            this.label54.TabIndex = 16;
-            this.label54.Text = "mg";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(5, 209);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(27, 17);
-            this.label55.TabIndex = 16;
-            this.label55.Text = "Mn";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(138, 186);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(27, 17);
-            this.label56.TabIndex = 16;
-            this.label56.Text = "mg";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(5, 186);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(21, 17);
-            this.label57.TabIndex = 14;
-            this.label57.Text = "Fe";
-            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(138, 163);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(27, 17);
-            this.label58.TabIndex = 14;
-            this.label58.Text = "mg";
-            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(5, 163);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(11, 17);
-            this.label59.TabIndex = 31;
-            this.label59.Text = "I";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(138, 140);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(27, 17);
-            this.label60.TabIndex = 32;
-            this.label60.Text = "mg";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(138, 117);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(27, 17);
-            this.label61.TabIndex = 29;
-            this.label61.Text = "mg";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(5, 117);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(28, 17);
-            this.label62.TabIndex = 27;
-            this.label62.Text = "Mg";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(138, 94);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(27, 17);
-            this.label63.TabIndex = 26;
-            this.label63.Text = "mg";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(5, 94);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(19, 17);
-            this.label64.TabIndex = 24;
-            this.label64.Text = "Cl";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(138, 71);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(27, 17);
-            this.label65.TabIndex = 23;
-            this.label65.Text = "mg";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(5, 140);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(23, 17);
-            this.label66.TabIndex = 30;
-            this.label66.Text = "Cu";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(5, 71);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(25, 17);
-            this.label67.TabIndex = 21;
-            this.label67.Text = "Na";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(138, 48);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(27, 17);
-            this.label68.TabIndex = 20;
-            this.label68.Text = "mg";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(5, 48);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(16, 17);
-            this.label69.TabIndex = 18;
-            this.label69.Text = "K";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(138, 25);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(27, 17);
-            this.label70.TabIndex = 17;
-            this.label70.Text = "mg";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(5, 25);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(15, 17);
-            this.label71.TabIndex = 15;
-            this.label71.Text = "P";
-            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(138, 2);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(27, 17);
-            this.label72.TabIndex = 14;
-            this.label72.Text = "mg";
-            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(5, 2);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(23, 17);
-            this.label73.TabIndex = 12;
-            this.label73.Text = "Ca";
-            this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel19
-            // 
-            this.tableLayoutPanel19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel19.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel19.ColumnCount = 1;
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel19.Controls.Add(this.label74, 0, 0);
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(402, 119);
-            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
-            this.tableLayoutPanel19.RowCount = 1;
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(180, 25);
-            this.tableLayoutPanel19.TabIndex = 13;
-            // 
-            // label74
-            // 
-            this.label74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label74.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.Location = new System.Drawing.Point(5, 2);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(170, 21);
-            this.label74.TabIndex = 0;
-            this.label74.Text = "Aminoácidos";
-            this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel20
-            // 
-            this.tableLayoutPanel20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel20.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel20.ColumnCount = 3;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel20.Controls.Add(this.textBox36, 1, 12);
-            this.tableLayoutPanel20.Controls.Add(this.textBox37, 1, 11);
-            this.tableLayoutPanel20.Controls.Add(this.textBox38, 1, 10);
-            this.tableLayoutPanel20.Controls.Add(this.textBox39, 1, 9);
-            this.tableLayoutPanel20.Controls.Add(this.textBox40, 1, 8);
-            this.tableLayoutPanel20.Controls.Add(this.textBox41, 1, 7);
-            this.tableLayoutPanel20.Controls.Add(this.textBox42, 1, 6);
-            this.tableLayoutPanel20.Controls.Add(this.textBox43, 1, 5);
-            this.tableLayoutPanel20.Controls.Add(this.textBox44, 1, 4);
-            this.tableLayoutPanel20.Controls.Add(this.textBox45, 1, 3);
-            this.tableLayoutPanel20.Controls.Add(this.textBox46, 1, 2);
-            this.tableLayoutPanel20.Controls.Add(this.textBox47, 1, 1);
-            this.tableLayoutPanel20.Controls.Add(this.textBox48, 1, 0);
-            this.tableLayoutPanel20.Controls.Add(this.label75, 2, 12);
-            this.tableLayoutPanel20.Controls.Add(this.label76, 0, 12);
-            this.tableLayoutPanel20.Controls.Add(this.label77, 2, 11);
-            this.tableLayoutPanel20.Controls.Add(this.label78, 0, 11);
-            this.tableLayoutPanel20.Controls.Add(this.label79, 2, 10);
-            this.tableLayoutPanel20.Controls.Add(this.label80, 0, 10);
-            this.tableLayoutPanel20.Controls.Add(this.label81, 2, 9);
-            this.tableLayoutPanel20.Controls.Add(this.label82, 0, 9);
-            this.tableLayoutPanel20.Controls.Add(this.label83, 2, 8);
-            this.tableLayoutPanel20.Controls.Add(this.label84, 0, 8);
-            this.tableLayoutPanel20.Controls.Add(this.label85, 2, 7);
-            this.tableLayoutPanel20.Controls.Add(this.label86, 0, 7);
-            this.tableLayoutPanel20.Controls.Add(this.label87, 2, 6);
-            this.tableLayoutPanel20.Controls.Add(this.label88, 2, 5);
-            this.tableLayoutPanel20.Controls.Add(this.label89, 0, 5);
-            this.tableLayoutPanel20.Controls.Add(this.label90, 2, 4);
-            this.tableLayoutPanel20.Controls.Add(this.label91, 0, 4);
-            this.tableLayoutPanel20.Controls.Add(this.label92, 2, 3);
-            this.tableLayoutPanel20.Controls.Add(this.label93, 0, 6);
-            this.tableLayoutPanel20.Controls.Add(this.label94, 0, 3);
-            this.tableLayoutPanel20.Controls.Add(this.label95, 2, 2);
-            this.tableLayoutPanel20.Controls.Add(this.label96, 0, 2);
-            this.tableLayoutPanel20.Controls.Add(this.label97, 2, 1);
-            this.tableLayoutPanel20.Controls.Add(this.label98, 0, 1);
-            this.tableLayoutPanel20.Controls.Add(this.label99, 2, 0);
-            this.tableLayoutPanel20.Controls.Add(this.label100, 0, 0);
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(402, 148);
-            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.RowCount = 13;
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(180, 305);
-            this.tableLayoutPanel20.TabIndex = 12;
-            // 
-            // textBox36
-            // 
-            this.textBox36.BackColor = System.Drawing.Color.White;
-            this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox36.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox36.Location = new System.Drawing.Point(107, 278);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox36.Multiline = true;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(43, 25);
-            this.textBox36.TabIndex = 27;
-            this.textBox36.Text = "100";
-            this.textBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox37
-            // 
-            this.textBox37.BackColor = System.Drawing.Color.White;
-            this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox37.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox37.Location = new System.Drawing.Point(107, 255);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(43, 21);
-            this.textBox37.TabIndex = 26;
-            this.textBox37.Text = "100";
-            this.textBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox38
-            // 
-            this.textBox38.BackColor = System.Drawing.Color.White;
-            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox38.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox38.Location = new System.Drawing.Point(107, 232);
-            this.textBox38.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(43, 21);
-            this.textBox38.TabIndex = 25;
-            this.textBox38.Text = "100";
-            this.textBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox39
-            // 
-            this.textBox39.BackColor = System.Drawing.Color.White;
-            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox39.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox39.Location = new System.Drawing.Point(107, 209);
-            this.textBox39.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(43, 21);
-            this.textBox39.TabIndex = 24;
-            this.textBox39.Text = "100";
-            this.textBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox40
-            // 
-            this.textBox40.BackColor = System.Drawing.Color.White;
-            this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox40.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox40.Location = new System.Drawing.Point(107, 186);
-            this.textBox40.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox40.Multiline = true;
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(43, 21);
-            this.textBox40.TabIndex = 23;
-            this.textBox40.Text = "100";
-            this.textBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox41
-            // 
-            this.textBox41.BackColor = System.Drawing.Color.White;
-            this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox41.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox41.Location = new System.Drawing.Point(107, 163);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(43, 21);
-            this.textBox41.TabIndex = 22;
-            this.textBox41.Text = "100";
-            this.textBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox42
-            // 
-            this.textBox42.BackColor = System.Drawing.Color.White;
-            this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox42.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox42.Location = new System.Drawing.Point(107, 140);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox42.Multiline = true;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(43, 21);
-            this.textBox42.TabIndex = 21;
-            this.textBox42.Text = "100";
-            this.textBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox43
-            // 
-            this.textBox43.BackColor = System.Drawing.Color.White;
-            this.textBox43.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox43.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox43.Location = new System.Drawing.Point(107, 117);
-            this.textBox43.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox43.Multiline = true;
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(43, 21);
-            this.textBox43.TabIndex = 20;
-            this.textBox43.Text = "100";
-            this.textBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox44
-            // 
-            this.textBox44.BackColor = System.Drawing.Color.White;
-            this.textBox44.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox44.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox44.Location = new System.Drawing.Point(107, 94);
-            this.textBox44.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox44.Multiline = true;
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(43, 21);
-            this.textBox44.TabIndex = 19;
-            this.textBox44.Text = "100";
-            this.textBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox45
-            // 
-            this.textBox45.BackColor = System.Drawing.Color.White;
-            this.textBox45.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox45.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox45.Location = new System.Drawing.Point(107, 71);
-            this.textBox45.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox45.Multiline = true;
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(43, 21);
-            this.textBox45.TabIndex = 18;
-            this.textBox45.Text = "100";
-            this.textBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox46
-            // 
-            this.textBox46.BackColor = System.Drawing.Color.White;
-            this.textBox46.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox46.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox46.Location = new System.Drawing.Point(107, 48);
-            this.textBox46.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox46.Multiline = true;
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(43, 21);
-            this.textBox46.TabIndex = 17;
-            this.textBox46.Text = "100";
-            this.textBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox47
-            // 
-            this.textBox47.BackColor = System.Drawing.Color.White;
-            this.textBox47.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox47.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox47.Location = new System.Drawing.Point(107, 25);
-            this.textBox47.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox47.Multiline = true;
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(43, 21);
-            this.textBox47.TabIndex = 33;
-            this.textBox47.Text = "16";
-            this.textBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox48
-            // 
-            this.textBox48.BackColor = System.Drawing.Color.White;
-            this.textBox48.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox48.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.textBox48.Location = new System.Drawing.Point(107, 2);
-            this.textBox48.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox48.Multiline = true;
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(43, 21);
-            this.textBox48.TabIndex = 26;
-            this.textBox48.Text = "15";
-            this.textBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(155, 278);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(19, 17);
-            this.label75.TabIndex = 16;
-            this.label75.Text = "%";
-            this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(5, 278);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(28, 17);
-            this.label76.TabIndex = 16;
-            this.label76.Text = "Tau";
-            this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.Location = new System.Drawing.Point(155, 255);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(19, 17);
-            this.label77.TabIndex = 16;
-            this.label77.Text = "%";
-            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(5, 255);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(25, 17);
-            this.label78.TabIndex = 16;
-            this.label78.Text = "Val";
-            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(155, 232);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(19, 17);
-            this.label79.TabIndex = 16;
-            this.label79.Text = "%";
-            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(5, 232);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(22, 17);
-            this.label80.TabIndex = 16;
-            this.label80.Text = "Tri";
-            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.Location = new System.Drawing.Point(155, 209);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(19, 17);
-            this.label81.TabIndex = 16;
-            this.label81.Text = "%";
-            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(5, 209);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(34, 17);
-            this.label82.TabIndex = 16;
-            this.label82.Text = "Treo";
-            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.Location = new System.Drawing.Point(155, 186);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(19, 17);
-            this.label83.TabIndex = 16;
-            this.label83.Text = "%";
-            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.Location = new System.Drawing.Point(5, 186);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(60, 17);
-            this.label84.TabIndex = 14;
-            this.label84.Text = "Fen + Tir";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.Location = new System.Drawing.Point(155, 163);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(19, 17);
-            this.label85.TabIndex = 14;
-            this.label85.Text = "%";
-            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.Location = new System.Drawing.Point(5, 163);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(28, 17);
-            this.label86.TabIndex = 31;
-            this.label86.Text = "Fen";
-            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.Location = new System.Drawing.Point(155, 140);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(19, 17);
-            this.label87.TabIndex = 32;
-            this.label87.Text = "%";
-            this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.Location = new System.Drawing.Point(155, 117);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(19, 17);
-            this.label88.TabIndex = 29;
-            this.label88.Text = "%";
-            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.Location = new System.Drawing.Point(5, 117);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(31, 17);
-            this.label89.TabIndex = 27;
-            this.label89.Text = "Met";
-            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.Location = new System.Drawing.Point(155, 94);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(19, 17);
-            this.label90.TabIndex = 26;
-            this.label90.Text = "%";
-            this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.Location = new System.Drawing.Point(5, 94);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(23, 17);
-            this.label91.TabIndex = 24;
-            this.label91.Text = "Lis";
-            this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.Location = new System.Drawing.Point(155, 71);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(19, 17);
-            this.label92.TabIndex = 23;
-            this.label92.Text = "%";
-            this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.Location = new System.Drawing.Point(5, 140);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(65, 17);
-            this.label93.TabIndex = 30;
-            this.label93.Text = "Met + Cis";
-            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.Location = new System.Drawing.Point(5, 71);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(28, 17);
-            this.label94.TabIndex = 21;
-            this.label94.Text = "Leu";
-            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.Location = new System.Drawing.Point(155, 48);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(19, 17);
-            this.label95.TabIndex = 20;
-            this.label95.Text = "%";
-            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.Location = new System.Drawing.Point(5, 48);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(25, 17);
-            this.label96.TabIndex = 18;
-            this.label96.Text = "Iso";
-            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label97.Location = new System.Drawing.Point(155, 25);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(19, 17);
-            this.label97.TabIndex = 17;
-            this.label97.Text = "%";
-            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label98.Location = new System.Drawing.Point(5, 25);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(26, 17);
-            this.label98.TabIndex = 15;
-            this.label98.Text = "His";
-            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label99.Location = new System.Drawing.Point(155, 2);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(19, 17);
-            this.label99.TabIndex = 14;
-            this.label99.Text = "%";
-            this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.Location = new System.Drawing.Point(5, 2);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(29, 17);
-            this.label100.TabIndex = 12;
-            this.label100.Text = "Arg";
-            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel21
-            // 
-            this.tableLayoutPanel21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel21.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel21.ColumnCount = 3;
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel21.Controls.Add(this.txtvalennms, 1, 6);
-            this.tableLayoutPanel21.Controls.Add(this.txtvalmateriamineralms, 1, 5);
-            this.tableLayoutPanel21.Controls.Add(this.txtvalfibrabrutams, 1, 4);
-            this.tableLayoutPanel21.Controls.Add(this.txtvalextratoetereoms, 1, 3);
-            this.tableLayoutPanel21.Controls.Add(this.txtvalproteinabrutams, 1, 2);
-            this.tableLayoutPanel21.Controls.Add(this.txtvalmateriasecams, 1, 1);
-            this.tableLayoutPanel21.Controls.Add(this.txtvalumidadems, 1, 0);
-            this.tableLayoutPanel21.Controls.Add(this.label101, 2, 6);
-            this.tableLayoutPanel21.Controls.Add(this.label102, 0, 6);
-            this.tableLayoutPanel21.Controls.Add(this.label103, 2, 5);
-            this.tableLayoutPanel21.Controls.Add(this.label104, 0, 5);
-            this.tableLayoutPanel21.Controls.Add(this.label105, 2, 4);
-            this.tableLayoutPanel21.Controls.Add(this.label106, 0, 4);
-            this.tableLayoutPanel21.Controls.Add(this.label107, 2, 3);
-            this.tableLayoutPanel21.Controls.Add(this.label108, 0, 3);
-            this.tableLayoutPanel21.Controls.Add(this.label109, 2, 2);
-            this.tableLayoutPanel21.Controls.Add(this.label110, 0, 2);
-            this.tableLayoutPanel21.Controls.Add(this.label111, 2, 1);
-            this.tableLayoutPanel21.Controls.Add(this.label112, 0, 1);
-            this.tableLayoutPanel21.Controls.Add(this.label113, 2, 0);
-            this.tableLayoutPanel21.Controls.Add(this.label114, 0, 0);
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(38, 148);
-            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
-            this.tableLayoutPanel21.RowCount = 7;
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(325, 175);
-            this.tableLayoutPanel21.TabIndex = 11;
+            // tablevitaminasms
+            // 
+            this.tablevitaminasms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tablevitaminasms.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tablevitaminasms.ColumnCount = 3;
+            this.tablevitaminasms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablevitaminasms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablevitaminasms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablevitaminasms.Controls.Add(this.txtvalvitcms, 1, 13);
+            this.tablevitaminasms.Controls.Add(this.txtvalvitkms, 1, 12);
+            this.tablevitaminasms.Controls.Add(this.txtvalcolinams, 1, 11);
+            this.tablevitaminasms.Controls.Add(this.txtvalbiotinams, 1, 10);
+            this.tablevitaminasms.Controls.Add(this.txtvalacfolicoms, 1, 9);
+            this.tablevitaminasms.Controls.Add(this.txtvalniacinams, 1, 8);
+            this.tablevitaminasms.Controls.Add(this.txtvalvitb12ms, 1, 7);
+            this.tablevitaminasms.Controls.Add(this.txtvalvitb6ms, 1, 6);
+            this.tablevitaminasms.Controls.Add(this.txtvalacpantotenicoms, 1, 5);
+            this.tablevitaminasms.Controls.Add(this.txtvalriboflavinams, 1, 4);
+            this.tablevitaminasms.Controls.Add(this.txtvaltiaminams, 1, 3);
+            this.tablevitaminasms.Controls.Add(this.txtvalvitems, 1, 2);
+            this.tablevitaminasms.Controls.Add(this.txtvalvitdms, 1, 1);
+            this.tablevitaminasms.Controls.Add(this.txtvalvitams, 1, 0);
+            this.tablevitaminasms.Controls.Add(this.lblunvitcms, 2, 13);
+            this.tablevitaminasms.Controls.Add(this.lblvitcms, 0, 13);
+            this.tablevitaminasms.Controls.Add(this.lblunvitkms, 2, 12);
+            this.tablevitaminasms.Controls.Add(this.lblvitkms, 0, 12);
+            this.tablevitaminasms.Controls.Add(this.lbluncolinams, 2, 11);
+            this.tablevitaminasms.Controls.Add(this.lblcolinams, 0, 11);
+            this.tablevitaminasms.Controls.Add(this.lblunbiotinams, 2, 10);
+            this.tablevitaminasms.Controls.Add(this.lblbiotinams, 0, 10);
+            this.tablevitaminasms.Controls.Add(this.lblunacfolicoms, 2, 9);
+            this.tablevitaminasms.Controls.Add(this.lblacfolicoms, 0, 9);
+            this.tablevitaminasms.Controls.Add(this.lblunniacinams, 2, 8);
+            this.tablevitaminasms.Controls.Add(this.lblniacinams, 0, 8);
+            this.tablevitaminasms.Controls.Add(this.lblunvitb12ms, 2, 7);
+            this.tablevitaminasms.Controls.Add(this.lblvitb12ms, 0, 7);
+            this.tablevitaminasms.Controls.Add(this.lblunvitb6ms, 2, 6);
+            this.tablevitaminasms.Controls.Add(this.lblunacpantotenicoms, 2, 5);
+            this.tablevitaminasms.Controls.Add(this.lblacpntotenicoms, 0, 5);
+            this.tablevitaminasms.Controls.Add(this.lblunriboflavinams, 2, 4);
+            this.tablevitaminasms.Controls.Add(this.lblriboflavinams, 0, 4);
+            this.tablevitaminasms.Controls.Add(this.lbluntiaminams, 2, 3);
+            this.tablevitaminasms.Controls.Add(this.lblvitb6ms, 0, 6);
+            this.tablevitaminasms.Controls.Add(this.lbltiaminams, 0, 3);
+            this.tablevitaminasms.Controls.Add(this.lblunvitems, 2, 2);
+            this.tablevitaminasms.Controls.Add(this.lblvitems, 0, 2);
+            this.tablevitaminasms.Controls.Add(this.lblunvitdms, 2, 1);
+            this.tablevitaminasms.Controls.Add(this.lblvitdms, 0, 1);
+            this.tablevitaminasms.Controls.Add(this.lblunvitams, 2, 0);
+            this.tablevitaminasms.Controls.Add(this.lblvitams, 0, 0);
+            this.tablevitaminasms.Location = new System.Drawing.Point(874, 147);
+            this.tablevitaminasms.Name = "tablevitaminasms";
+            this.tablevitaminasms.RowCount = 14;
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminasms.Size = new System.Drawing.Size(220, 340);
+            this.tablevitaminasms.TabIndex = 11;
+            // 
+            // txtvalvitcms
+            // 
+            this.txtvalvitcms.BackColor = System.Drawing.Color.White;
+            this.txtvalvitcms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalvitcms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalvitcms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalvitcms.Location = new System.Drawing.Point(110, 314);
+            this.txtvalvitcms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalvitcms.Multiline = true;
+            this.txtvalvitcms.Name = "txtvalvitcms";
+            this.txtvalvitcms.Size = new System.Drawing.Size(53, 24);
+            this.txtvalvitcms.TabIndex = 45;
+            this.txtvalvitcms.Text = "100";
+            this.txtvalvitcms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalvitkms
+            // 
+            this.txtvalvitkms.BackColor = System.Drawing.Color.White;
+            this.txtvalvitkms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalvitkms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalvitkms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalvitkms.Location = new System.Drawing.Point(110, 290);
+            this.txtvalvitkms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalvitkms.Multiline = true;
+            this.txtvalvitkms.Name = "txtvalvitkms";
+            this.txtvalvitkms.Size = new System.Drawing.Size(53, 22);
+            this.txtvalvitkms.TabIndex = 44;
+            this.txtvalvitkms.Text = "100";
+            this.txtvalvitkms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalcolinams
+            // 
+            this.txtvalcolinams.BackColor = System.Drawing.Color.White;
+            this.txtvalcolinams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalcolinams.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalcolinams.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalcolinams.Location = new System.Drawing.Point(110, 266);
+            this.txtvalcolinams.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalcolinams.Multiline = true;
+            this.txtvalcolinams.Name = "txtvalcolinams";
+            this.txtvalcolinams.Size = new System.Drawing.Size(53, 22);
+            this.txtvalcolinams.TabIndex = 52;
+            this.txtvalcolinams.Text = "100";
+            this.txtvalcolinams.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalbiotinams
+            // 
+            this.txtvalbiotinams.BackColor = System.Drawing.Color.White;
+            this.txtvalbiotinams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalbiotinams.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalbiotinams.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalbiotinams.Location = new System.Drawing.Point(110, 242);
+            this.txtvalbiotinams.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalbiotinams.Multiline = true;
+            this.txtvalbiotinams.Name = "txtvalbiotinams";
+            this.txtvalbiotinams.Size = new System.Drawing.Size(53, 22);
+            this.txtvalbiotinams.TabIndex = 51;
+            this.txtvalbiotinams.Text = "100";
+            this.txtvalbiotinams.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalacfolicoms
+            // 
+            this.txtvalacfolicoms.BackColor = System.Drawing.Color.White;
+            this.txtvalacfolicoms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalacfolicoms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalacfolicoms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalacfolicoms.Location = new System.Drawing.Point(110, 218);
+            this.txtvalacfolicoms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalacfolicoms.Multiline = true;
+            this.txtvalacfolicoms.Name = "txtvalacfolicoms";
+            this.txtvalacfolicoms.Size = new System.Drawing.Size(53, 22);
+            this.txtvalacfolicoms.TabIndex = 50;
+            this.txtvalacfolicoms.Text = "100";
+            this.txtvalacfolicoms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalniacinams
+            // 
+            this.txtvalniacinams.BackColor = System.Drawing.Color.White;
+            this.txtvalniacinams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalniacinams.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalniacinams.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalniacinams.Location = new System.Drawing.Point(110, 194);
+            this.txtvalniacinams.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalniacinams.Multiline = true;
+            this.txtvalniacinams.Name = "txtvalniacinams";
+            this.txtvalniacinams.Size = new System.Drawing.Size(53, 22);
+            this.txtvalniacinams.TabIndex = 49;
+            this.txtvalniacinams.Text = "100";
+            this.txtvalniacinams.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalvitb12ms
+            // 
+            this.txtvalvitb12ms.BackColor = System.Drawing.Color.White;
+            this.txtvalvitb12ms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalvitb12ms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalvitb12ms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalvitb12ms.Location = new System.Drawing.Point(110, 170);
+            this.txtvalvitb12ms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalvitb12ms.Multiline = true;
+            this.txtvalvitb12ms.Name = "txtvalvitb12ms";
+            this.txtvalvitb12ms.Size = new System.Drawing.Size(53, 22);
+            this.txtvalvitb12ms.TabIndex = 48;
+            this.txtvalvitb12ms.Text = "100";
+            this.txtvalvitb12ms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalvitb6ms
+            // 
+            this.txtvalvitb6ms.BackColor = System.Drawing.Color.White;
+            this.txtvalvitb6ms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalvitb6ms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalvitb6ms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalvitb6ms.Location = new System.Drawing.Point(110, 146);
+            this.txtvalvitb6ms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalvitb6ms.Multiline = true;
+            this.txtvalvitb6ms.Name = "txtvalvitb6ms";
+            this.txtvalvitb6ms.Size = new System.Drawing.Size(53, 22);
+            this.txtvalvitb6ms.TabIndex = 47;
+            this.txtvalvitb6ms.Text = "100";
+            this.txtvalvitb6ms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalacpantotenicoms
+            // 
+            this.txtvalacpantotenicoms.BackColor = System.Drawing.Color.White;
+            this.txtvalacpantotenicoms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalacpantotenicoms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalacpantotenicoms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalacpantotenicoms.Location = new System.Drawing.Point(110, 122);
+            this.txtvalacpantotenicoms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalacpantotenicoms.Multiline = true;
+            this.txtvalacpantotenicoms.Name = "txtvalacpantotenicoms";
+            this.txtvalacpantotenicoms.Size = new System.Drawing.Size(53, 22);
+            this.txtvalacpantotenicoms.TabIndex = 46;
+            this.txtvalacpantotenicoms.Text = "100";
+            this.txtvalacpantotenicoms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalriboflavinams
+            // 
+            this.txtvalriboflavinams.BackColor = System.Drawing.Color.White;
+            this.txtvalriboflavinams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalriboflavinams.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalriboflavinams.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalriboflavinams.Location = new System.Drawing.Point(110, 98);
+            this.txtvalriboflavinams.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalriboflavinams.Multiline = true;
+            this.txtvalriboflavinams.Name = "txtvalriboflavinams";
+            this.txtvalriboflavinams.Size = new System.Drawing.Size(53, 22);
+            this.txtvalriboflavinams.TabIndex = 36;
+            this.txtvalriboflavinams.Text = "100";
+            this.txtvalriboflavinams.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvaltiaminams
+            // 
+            this.txtvaltiaminams.BackColor = System.Drawing.Color.White;
+            this.txtvaltiaminams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvaltiaminams.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvaltiaminams.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvaltiaminams.Location = new System.Drawing.Point(110, 74);
+            this.txtvaltiaminams.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvaltiaminams.Multiline = true;
+            this.txtvaltiaminams.Name = "txtvaltiaminams";
+            this.txtvaltiaminams.Size = new System.Drawing.Size(53, 22);
+            this.txtvaltiaminams.TabIndex = 44;
+            this.txtvaltiaminams.Text = "100";
+            this.txtvaltiaminams.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalvitems
+            // 
+            this.txtvalvitems.BackColor = System.Drawing.Color.White;
+            this.txtvalvitems.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalvitems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalvitems.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalvitems.Location = new System.Drawing.Point(110, 50);
+            this.txtvalvitems.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalvitems.Multiline = true;
+            this.txtvalvitems.Name = "txtvalvitems";
+            this.txtvalvitems.Size = new System.Drawing.Size(53, 22);
+            this.txtvalvitems.TabIndex = 43;
+            this.txtvalvitems.Text = "100";
+            this.txtvalvitems.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalvitdms
+            // 
+            this.txtvalvitdms.BackColor = System.Drawing.Color.White;
+            this.txtvalvitdms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalvitdms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalvitdms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalvitdms.Location = new System.Drawing.Point(110, 26);
+            this.txtvalvitdms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalvitdms.Multiline = true;
+            this.txtvalvitdms.Name = "txtvalvitdms";
+            this.txtvalvitdms.Size = new System.Drawing.Size(53, 22);
+            this.txtvalvitdms.TabIndex = 42;
+            this.txtvalvitdms.Text = "100";
+            this.txtvalvitdms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalvitams
+            // 
+            this.txtvalvitams.BackColor = System.Drawing.Color.White;
+            this.txtvalvitams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalvitams.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalvitams.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalvitams.Location = new System.Drawing.Point(110, 2);
+            this.txtvalvitams.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalvitams.Multiline = true;
+            this.txtvalvitams.Name = "txtvalvitams";
+            this.txtvalvitams.Size = new System.Drawing.Size(53, 22);
+            this.txtvalvitams.TabIndex = 41;
+            this.txtvalvitams.Text = "100";
+            this.txtvalvitams.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblunvitcms
+            // 
+            this.lblunvitcms.AutoSize = true;
+            this.lblunvitcms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunvitcms.Location = new System.Drawing.Point(168, 314);
+            this.lblunvitcms.Name = "lblunvitcms";
+            this.lblunvitcms.Size = new System.Drawing.Size(30, 17);
+            this.lblunvitcms.TabIndex = 21;
+            this.lblunvitcms.Text = "kcal";
+            this.lblunvitcms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblvitcms
+            // 
+            this.lblvitcms.AutoSize = true;
+            this.lblvitcms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvitcms.Location = new System.Drawing.Point(5, 314);
+            this.lblvitcms.Name = "lblvitcms";
+            this.lblvitcms.Size = new System.Drawing.Size(38, 17);
+            this.lblvitcms.TabIndex = 21;
+            this.lblvitcms.Text = "Vit. C";
+            this.lblvitcms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunvitkms
+            // 
+            this.lblunvitkms.AutoSize = true;
+            this.lblunvitkms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunvitkms.Location = new System.Drawing.Point(168, 290);
+            this.lblunvitkms.Name = "lblunvitkms";
+            this.lblunvitkms.Size = new System.Drawing.Size(27, 17);
+            this.lblunvitkms.TabIndex = 16;
+            this.lblunvitkms.Text = "mg";
+            this.lblunvitkms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblvitkms
+            // 
+            this.lblvitkms.AutoSize = true;
+            this.lblvitkms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvitkms.Location = new System.Drawing.Point(5, 290);
+            this.lblvitkms.Name = "lblvitkms";
+            this.lblvitkms.Size = new System.Drawing.Size(38, 17);
+            this.lblvitkms.TabIndex = 16;
+            this.lblvitkms.Text = "Vit. K";
+            this.lblvitkms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbluncolinams
+            // 
+            this.lbluncolinams.AutoSize = true;
+            this.lbluncolinams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluncolinams.Location = new System.Drawing.Point(168, 266);
+            this.lbluncolinams.Name = "lbluncolinams";
+            this.lbluncolinams.Size = new System.Drawing.Size(27, 17);
+            this.lbluncolinams.TabIndex = 16;
+            this.lbluncolinams.Text = "mg";
+            this.lbluncolinams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblcolinams
+            // 
+            this.lblcolinams.AutoSize = true;
+            this.lblcolinams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcolinams.Location = new System.Drawing.Point(5, 266);
+            this.lblcolinams.Name = "lblcolinams";
+            this.lblcolinams.Size = new System.Drawing.Size(44, 17);
+            this.lblcolinams.TabIndex = 16;
+            this.lblcolinams.Text = "Colina";
+            this.lblcolinams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunbiotinams
+            // 
+            this.lblunbiotinams.AutoSize = true;
+            this.lblunbiotinams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunbiotinams.Location = new System.Drawing.Point(168, 242);
+            this.lblunbiotinams.Name = "lblunbiotinams";
+            this.lblunbiotinams.Size = new System.Drawing.Size(27, 17);
+            this.lblunbiotinams.TabIndex = 16;
+            this.lblunbiotinams.Text = "mg";
+            this.lblunbiotinams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblbiotinams
+            // 
+            this.lblbiotinams.AutoSize = true;
+            this.lblbiotinams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbiotinams.Location = new System.Drawing.Point(5, 242);
+            this.lblbiotinams.Name = "lblbiotinams";
+            this.lblbiotinams.Size = new System.Drawing.Size(47, 17);
+            this.lblbiotinams.TabIndex = 16;
+            this.lblbiotinams.Text = "Biotina";
+            this.lblbiotinams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunacfolicoms
+            // 
+            this.lblunacfolicoms.AutoSize = true;
+            this.lblunacfolicoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunacfolicoms.Location = new System.Drawing.Point(168, 218);
+            this.lblunacfolicoms.Name = "lblunacfolicoms";
+            this.lblunacfolicoms.Size = new System.Drawing.Size(33, 17);
+            this.lblunacfolicoms.TabIndex = 16;
+            this.lblunacfolicoms.Text = "mcg";
+            this.lblunacfolicoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblacfolicoms
+            // 
+            this.lblacfolicoms.AutoSize = true;
+            this.lblacfolicoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblacfolicoms.Location = new System.Drawing.Point(5, 218);
+            this.lblacfolicoms.Name = "lblacfolicoms";
+            this.lblacfolicoms.Size = new System.Drawing.Size(63, 17);
+            this.lblacfolicoms.TabIndex = 16;
+            this.lblacfolicoms.Text = "Ac. Fólico";
+            this.lblacfolicoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunniacinams
+            // 
+            this.lblunniacinams.AutoSize = true;
+            this.lblunniacinams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunniacinams.Location = new System.Drawing.Point(168, 194);
+            this.lblunniacinams.Name = "lblunniacinams";
+            this.lblunniacinams.Size = new System.Drawing.Size(27, 17);
+            this.lblunniacinams.TabIndex = 16;
+            this.lblunniacinams.Text = "mg";
+            this.lblunniacinams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblniacinams
+            // 
+            this.lblniacinams.AutoSize = true;
+            this.lblniacinams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblniacinams.Location = new System.Drawing.Point(5, 194);
+            this.lblniacinams.Name = "lblniacinams";
+            this.lblniacinams.Size = new System.Drawing.Size(51, 17);
+            this.lblniacinams.TabIndex = 14;
+            this.lblniacinams.Text = "Niacina";
+            this.lblniacinams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunvitb12ms
+            // 
+            this.lblunvitb12ms.AutoSize = true;
+            this.lblunvitb12ms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunvitb12ms.Location = new System.Drawing.Point(168, 170);
+            this.lblunvitb12ms.Name = "lblunvitb12ms";
+            this.lblunvitb12ms.Size = new System.Drawing.Size(33, 17);
+            this.lblunvitb12ms.TabIndex = 14;
+            this.lblunvitb12ms.Text = "mcg";
+            this.lblunvitb12ms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblvitb12ms
+            // 
+            this.lblvitb12ms.AutoSize = true;
+            this.lblvitb12ms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvitb12ms.Location = new System.Drawing.Point(5, 170);
+            this.lblvitb12ms.Name = "lblvitb12ms";
+            this.lblvitb12ms.Size = new System.Drawing.Size(48, 17);
+            this.lblvitb12ms.TabIndex = 31;
+            this.lblvitb12ms.Text = "Vit B12";
+            this.lblvitb12ms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunvitb6ms
+            // 
+            this.lblunvitb6ms.AutoSize = true;
+            this.lblunvitb6ms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunvitb6ms.Location = new System.Drawing.Point(168, 146);
+            this.lblunvitb6ms.Name = "lblunvitb6ms";
+            this.lblunvitb6ms.Size = new System.Drawing.Size(27, 17);
+            this.lblunvitb6ms.TabIndex = 32;
+            this.lblunvitb6ms.Text = "mg";
+            this.lblunvitb6ms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunacpantotenicoms
+            // 
+            this.lblunacpantotenicoms.AutoSize = true;
+            this.lblunacpantotenicoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunacpantotenicoms.Location = new System.Drawing.Point(168, 122);
+            this.lblunacpantotenicoms.Name = "lblunacpantotenicoms";
+            this.lblunacpantotenicoms.Size = new System.Drawing.Size(27, 17);
+            this.lblunacpantotenicoms.TabIndex = 29;
+            this.lblunacpantotenicoms.Text = "mg";
+            this.lblunacpantotenicoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblacpntotenicoms
+            // 
+            this.lblacpntotenicoms.AutoSize = true;
+            this.lblacpntotenicoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblacpntotenicoms.Location = new System.Drawing.Point(5, 122);
+            this.lblacpntotenicoms.Name = "lblacpntotenicoms";
+            this.lblacpntotenicoms.Size = new System.Drawing.Size(97, 17);
+            this.lblacpntotenicoms.TabIndex = 27;
+            this.lblacpntotenicoms.Text = "Ac. Pantotênico";
+            this.lblacpntotenicoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunriboflavinams
+            // 
+            this.lblunriboflavinams.AutoSize = true;
+            this.lblunriboflavinams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunriboflavinams.Location = new System.Drawing.Point(168, 98);
+            this.lblunriboflavinams.Name = "lblunriboflavinams";
+            this.lblunriboflavinams.Size = new System.Drawing.Size(27, 17);
+            this.lblunriboflavinams.TabIndex = 26;
+            this.lblunriboflavinams.Text = "mg";
+            this.lblunriboflavinams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblriboflavinams
+            // 
+            this.lblriboflavinams.AutoSize = true;
+            this.lblriboflavinams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblriboflavinams.Location = new System.Drawing.Point(5, 98);
+            this.lblriboflavinams.Name = "lblriboflavinams";
+            this.lblriboflavinams.Size = new System.Drawing.Size(72, 17);
+            this.lblriboflavinams.TabIndex = 24;
+            this.lblriboflavinams.Text = "Riboflavina";
+            this.lblriboflavinams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbluntiaminams
+            // 
+            this.lbluntiaminams.AutoSize = true;
+            this.lbluntiaminams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluntiaminams.Location = new System.Drawing.Point(168, 74);
+            this.lbluntiaminams.Name = "lbluntiaminams";
+            this.lbluntiaminams.Size = new System.Drawing.Size(27, 17);
+            this.lbluntiaminams.TabIndex = 23;
+            this.lbluntiaminams.Text = "mg";
+            this.lbluntiaminams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblvitb6ms
+            // 
+            this.lblvitb6ms.AutoSize = true;
+            this.lblvitb6ms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvitb6ms.Location = new System.Drawing.Point(5, 146);
+            this.lblvitb6ms.Name = "lblvitb6ms";
+            this.lblvitb6ms.Size = new System.Drawing.Size(41, 17);
+            this.lblvitb6ms.TabIndex = 30;
+            this.lblvitb6ms.Text = "Vit B6";
+            this.lblvitb6ms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbltiaminams
+            // 
+            this.lbltiaminams.AutoSize = true;
+            this.lbltiaminams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltiaminams.Location = new System.Drawing.Point(5, 74);
+            this.lbltiaminams.Name = "lbltiaminams";
+            this.lbltiaminams.Size = new System.Drawing.Size(53, 17);
+            this.lbltiaminams.TabIndex = 21;
+            this.lbltiaminams.Text = "Tiamina";
+            this.lbltiaminams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunvitems
+            // 
+            this.lblunvitems.AutoSize = true;
+            this.lblunvitems.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunvitems.Location = new System.Drawing.Point(168, 50);
+            this.lblunvitems.Name = "lblunvitems";
+            this.lblunvitems.Size = new System.Drawing.Size(20, 17);
+            this.lblunvitems.TabIndex = 20;
+            this.lblunvitems.Text = "UI";
+            this.lblunvitems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblvitems
+            // 
+            this.lblvitems.AutoSize = true;
+            this.lblvitems.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvitems.Location = new System.Drawing.Point(5, 50);
+            this.lblvitems.Name = "lblvitems";
+            this.lblvitems.Size = new System.Drawing.Size(34, 17);
+            this.lblvitems.TabIndex = 18;
+            this.lblvitems.Text = "Vit E";
+            this.lblvitems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunvitdms
+            // 
+            this.lblunvitdms.AutoSize = true;
+            this.lblunvitdms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunvitdms.Location = new System.Drawing.Point(168, 26);
+            this.lblunvitdms.Name = "lblunvitdms";
+            this.lblunvitdms.Size = new System.Drawing.Size(20, 17);
+            this.lblunvitdms.TabIndex = 17;
+            this.lblunvitdms.Text = "UI";
+            this.lblunvitdms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblvitdms
+            // 
+            this.lblvitdms.AutoSize = true;
+            this.lblvitdms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvitdms.Location = new System.Drawing.Point(5, 26);
+            this.lblvitdms.Name = "lblvitdms";
+            this.lblvitdms.Size = new System.Drawing.Size(36, 17);
+            this.lblvitdms.TabIndex = 15;
+            this.lblvitdms.Text = "Vit D";
+            this.lblvitdms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunvitams
+            // 
+            this.lblunvitams.AutoSize = true;
+            this.lblunvitams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunvitams.Location = new System.Drawing.Point(168, 2);
+            this.lblunvitams.Name = "lblunvitams";
+            this.lblunvitams.Size = new System.Drawing.Size(20, 17);
+            this.lblunvitams.TabIndex = 14;
+            this.lblunvitams.Text = "UI";
+            this.lblunvitams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblvitams
+            // 
+            this.lblvitams.AutoSize = true;
+            this.lblvitams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvitams.Location = new System.Drawing.Point(5, 2);
+            this.lblvitams.Name = "lblvitams";
+            this.lblvitams.Size = new System.Drawing.Size(35, 17);
+            this.lblvitams.TabIndex = 12;
+            this.lblvitams.Text = "Vit A";
+            this.lblvitams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tabletitulomineraisms
+            // 
+            this.tabletitulomineraisms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tabletitulomineraisms.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tabletitulomineraisms.ColumnCount = 1;
+            this.tabletitulomineraisms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabletitulomineraisms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletitulomineraisms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletitulomineraisms.Controls.Add(this.lblmineraisms, 0, 0);
+            this.tabletitulomineraisms.Location = new System.Drawing.Point(641, 115);
+            this.tabletitulomineraisms.Name = "tabletitulomineraisms";
+            this.tabletitulomineraisms.RowCount = 1;
+            this.tabletitulomineraisms.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tabletitulomineraisms.Size = new System.Drawing.Size(180, 25);
+            this.tabletitulomineraisms.TabIndex = 18;
+            // 
+            // lblmineraisms
+            // 
+            this.lblmineraisms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblmineraisms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmineraisms.Location = new System.Drawing.Point(5, 2);
+            this.lblmineraisms.Name = "lblmineraisms";
+            this.lblmineraisms.Size = new System.Drawing.Size(170, 21);
+            this.lblmineraisms.TabIndex = 0;
+            this.lblmineraisms.Text = "Minerais";
+            this.lblmineraisms.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tablemineirams
+            // 
+            this.tablemineirams.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tablemineirams.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tablemineirams.ColumnCount = 3;
+            this.tablemineirams.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablemineirams.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablemineirams.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablemineirams.Controls.Add(this.txtvalsms, 1, 12);
+            this.tablemineirams.Controls.Add(this.txtvalznms, 1, 11);
+            this.tablemineirams.Controls.Add(this.txtvalsems, 1, 10);
+            this.tablemineirams.Controls.Add(this.txtvalmnms, 1, 9);
+            this.tablemineirams.Controls.Add(this.txtvalfems, 1, 8);
+            this.tablemineirams.Controls.Add(this.txtvalims, 1, 7);
+            this.tablemineirams.Controls.Add(this.txtvalcums, 1, 6);
+            this.tablemineirams.Controls.Add(this.txtvalmgms, 1, 5);
+            this.tablemineirams.Controls.Add(this.txtvalclms, 1, 4);
+            this.tablemineirams.Controls.Add(this.txtvalnams, 1, 3);
+            this.tablemineirams.Controls.Add(this.txtvalkms, 1, 2);
+            this.tablemineirams.Controls.Add(this.txtvalpms, 1, 1);
+            this.tablemineirams.Controls.Add(this.txtvalcams, 1, 0);
+            this.tablemineirams.Controls.Add(this.lblunsms, 2, 12);
+            this.tablemineirams.Controls.Add(this.lblsms, 0, 12);
+            this.tablemineirams.Controls.Add(this.lblunznms, 2, 11);
+            this.tablemineirams.Controls.Add(this.lblznms, 0, 11);
+            this.tablemineirams.Controls.Add(this.lblunsems, 2, 10);
+            this.tablemineirams.Controls.Add(this.lblsems, 0, 10);
+            this.tablemineirams.Controls.Add(this.lblunmnms, 2, 9);
+            this.tablemineirams.Controls.Add(this.lblmnms, 0, 9);
+            this.tablemineirams.Controls.Add(this.lblunfems, 2, 8);
+            this.tablemineirams.Controls.Add(this.lblfems, 0, 8);
+            this.tablemineirams.Controls.Add(this.lblunims, 2, 7);
+            this.tablemineirams.Controls.Add(this.lblims, 0, 7);
+            this.tablemineirams.Controls.Add(this.lbluncums, 2, 6);
+            this.tablemineirams.Controls.Add(this.lblunmgms, 2, 5);
+            this.tablemineirams.Controls.Add(this.lblmgms, 0, 5);
+            this.tablemineirams.Controls.Add(this.lblunclms, 2, 4);
+            this.tablemineirams.Controls.Add(this.lblclms, 0, 4);
+            this.tablemineirams.Controls.Add(this.lblunnams, 2, 3);
+            this.tablemineirams.Controls.Add(this.lblcums, 0, 6);
+            this.tablemineirams.Controls.Add(this.lblnams, 0, 3);
+            this.tablemineirams.Controls.Add(this.lblunkms, 2, 2);
+            this.tablemineirams.Controls.Add(this.lblkms, 0, 2);
+            this.tablemineirams.Controls.Add(this.lblunpms, 2, 1);
+            this.tablemineirams.Controls.Add(this.lblpms, 0, 1);
+            this.tablemineirams.Controls.Add(this.lbluncams, 2, 0);
+            this.tablemineirams.Controls.Add(this.lblcams, 0, 0);
+            this.tablemineirams.Location = new System.Drawing.Point(641, 146);
+            this.tablemineirams.Name = "tablemineirams";
+            this.tablemineirams.RowCount = 13;
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirams.Size = new System.Drawing.Size(180, 305);
+            this.tablemineirams.TabIndex = 9;
+            // 
+            // txtvalsms
+            // 
+            this.txtvalsms.BackColor = System.Drawing.Color.White;
+            this.txtvalsms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalsms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalsms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalsms.Location = new System.Drawing.Point(90, 278);
+            this.txtvalsms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalsms.Multiline = true;
+            this.txtvalsms.Name = "txtvalsms";
+            this.txtvalsms.Size = new System.Drawing.Size(43, 25);
+            this.txtvalsms.TabIndex = 40;
+            this.txtvalsms.Text = "100";
+            this.txtvalsms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalznms
+            // 
+            this.txtvalznms.BackColor = System.Drawing.Color.White;
+            this.txtvalznms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalznms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalznms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalznms.Location = new System.Drawing.Point(90, 255);
+            this.txtvalznms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalznms.Multiline = true;
+            this.txtvalznms.Name = "txtvalznms";
+            this.txtvalznms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalznms.TabIndex = 39;
+            this.txtvalznms.Text = "100";
+            this.txtvalznms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalsems
+            // 
+            this.txtvalsems.BackColor = System.Drawing.Color.White;
+            this.txtvalsems.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalsems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalsems.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalsems.Location = new System.Drawing.Point(90, 232);
+            this.txtvalsems.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalsems.Multiline = true;
+            this.txtvalsems.Name = "txtvalsems";
+            this.txtvalsems.Size = new System.Drawing.Size(43, 21);
+            this.txtvalsems.TabIndex = 38;
+            this.txtvalsems.Text = "100";
+            this.txtvalsems.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalmnms
+            // 
+            this.txtvalmnms.BackColor = System.Drawing.Color.White;
+            this.txtvalmnms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalmnms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalmnms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalmnms.Location = new System.Drawing.Point(90, 209);
+            this.txtvalmnms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalmnms.Multiline = true;
+            this.txtvalmnms.Name = "txtvalmnms";
+            this.txtvalmnms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalmnms.TabIndex = 37;
+            this.txtvalmnms.Text = "100";
+            this.txtvalmnms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalfems
+            // 
+            this.txtvalfems.BackColor = System.Drawing.Color.White;
+            this.txtvalfems.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalfems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalfems.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalfems.Location = new System.Drawing.Point(90, 186);
+            this.txtvalfems.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalfems.Multiline = true;
+            this.txtvalfems.Name = "txtvalfems";
+            this.txtvalfems.Size = new System.Drawing.Size(43, 21);
+            this.txtvalfems.TabIndex = 36;
+            this.txtvalfems.Text = "100";
+            this.txtvalfems.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalims
+            // 
+            this.txtvalims.BackColor = System.Drawing.Color.White;
+            this.txtvalims.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalims.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalims.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalims.Location = new System.Drawing.Point(90, 163);
+            this.txtvalims.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalims.Multiline = true;
+            this.txtvalims.Name = "txtvalims";
+            this.txtvalims.Size = new System.Drawing.Size(43, 21);
+            this.txtvalims.TabIndex = 35;
+            this.txtvalims.Text = "100";
+            this.txtvalims.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalcums
+            // 
+            this.txtvalcums.BackColor = System.Drawing.Color.White;
+            this.txtvalcums.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalcums.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalcums.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalcums.Location = new System.Drawing.Point(90, 140);
+            this.txtvalcums.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalcums.Multiline = true;
+            this.txtvalcums.Name = "txtvalcums";
+            this.txtvalcums.Size = new System.Drawing.Size(43, 21);
+            this.txtvalcums.TabIndex = 34;
+            this.txtvalcums.Text = "100";
+            this.txtvalcums.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalmgms
+            // 
+            this.txtvalmgms.BackColor = System.Drawing.Color.White;
+            this.txtvalmgms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalmgms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalmgms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalmgms.Location = new System.Drawing.Point(90, 117);
+            this.txtvalmgms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalmgms.Multiline = true;
+            this.txtvalmgms.Name = "txtvalmgms";
+            this.txtvalmgms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalmgms.TabIndex = 33;
+            this.txtvalmgms.Text = "100";
+            this.txtvalmgms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalclms
+            // 
+            this.txtvalclms.BackColor = System.Drawing.Color.White;
+            this.txtvalclms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalclms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalclms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalclms.Location = new System.Drawing.Point(90, 94);
+            this.txtvalclms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalclms.Multiline = true;
+            this.txtvalclms.Name = "txtvalclms";
+            this.txtvalclms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalclms.TabIndex = 32;
+            this.txtvalclms.Text = "100";
+            this.txtvalclms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalnams
+            // 
+            this.txtvalnams.BackColor = System.Drawing.Color.White;
+            this.txtvalnams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalnams.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalnams.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalnams.Location = new System.Drawing.Point(90, 71);
+            this.txtvalnams.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalnams.Multiline = true;
+            this.txtvalnams.Name = "txtvalnams";
+            this.txtvalnams.Size = new System.Drawing.Size(43, 21);
+            this.txtvalnams.TabIndex = 31;
+            this.txtvalnams.Text = "100";
+            this.txtvalnams.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalkms
+            // 
+            this.txtvalkms.BackColor = System.Drawing.Color.White;
+            this.txtvalkms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalkms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalkms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalkms.Location = new System.Drawing.Point(90, 48);
+            this.txtvalkms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalkms.Multiline = true;
+            this.txtvalkms.Name = "txtvalkms";
+            this.txtvalkms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalkms.TabIndex = 30;
+            this.txtvalkms.Text = "100";
+            this.txtvalkms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalpms
+            // 
+            this.txtvalpms.BackColor = System.Drawing.Color.White;
+            this.txtvalpms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalpms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalpms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalpms.Location = new System.Drawing.Point(90, 25);
+            this.txtvalpms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalpms.Multiline = true;
+            this.txtvalpms.Name = "txtvalpms";
+            this.txtvalpms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalpms.TabIndex = 29;
+            this.txtvalpms.Text = "100";
+            this.txtvalpms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalcams
+            // 
+            this.txtvalcams.BackColor = System.Drawing.Color.White;
+            this.txtvalcams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalcams.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalcams.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalcams.Location = new System.Drawing.Point(90, 2);
+            this.txtvalcams.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalcams.Multiline = true;
+            this.txtvalcams.Name = "txtvalcams";
+            this.txtvalcams.Size = new System.Drawing.Size(43, 21);
+            this.txtvalcams.TabIndex = 28;
+            this.txtvalcams.Text = "100";
+            this.txtvalcams.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblunsms
+            // 
+            this.lblunsms.AutoSize = true;
+            this.lblunsms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunsms.Location = new System.Drawing.Point(138, 278);
+            this.lblunsms.Name = "lblunsms";
+            this.lblunsms.Size = new System.Drawing.Size(27, 17);
+            this.lblunsms.TabIndex = 16;
+            this.lblunsms.Text = "mg";
+            this.lblunsms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblsms
+            // 
+            this.lblsms.AutoSize = true;
+            this.lblsms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsms.Location = new System.Drawing.Point(5, 278);
+            this.lblsms.Name = "lblsms";
+            this.lblsms.Size = new System.Drawing.Size(15, 17);
+            this.lblsms.TabIndex = 16;
+            this.lblsms.Text = "S";
+            this.lblsms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunznms
+            // 
+            this.lblunznms.AutoSize = true;
+            this.lblunznms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunznms.Location = new System.Drawing.Point(138, 255);
+            this.lblunznms.Name = "lblunznms";
+            this.lblunznms.Size = new System.Drawing.Size(27, 17);
+            this.lblunznms.TabIndex = 16;
+            this.lblunznms.Text = "mg";
+            this.lblunznms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblznms
+            // 
+            this.lblznms.AutoSize = true;
+            this.lblznms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblznms.Location = new System.Drawing.Point(5, 255);
+            this.lblznms.Name = "lblznms";
+            this.lblznms.Size = new System.Drawing.Size(22, 17);
+            this.lblznms.TabIndex = 16;
+            this.lblznms.Text = "Zn";
+            this.lblznms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunsems
+            // 
+            this.lblunsems.AutoSize = true;
+            this.lblunsems.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunsems.Location = new System.Drawing.Point(138, 232);
+            this.lblunsems.Name = "lblunsems";
+            this.lblunsems.Size = new System.Drawing.Size(27, 17);
+            this.lblunsems.TabIndex = 16;
+            this.lblunsems.Text = "mg";
+            this.lblunsems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblsems
+            // 
+            this.lblsems.AutoSize = true;
+            this.lblsems.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsems.Location = new System.Drawing.Point(5, 232);
+            this.lblsems.Name = "lblsems";
+            this.lblsems.Size = new System.Drawing.Size(22, 17);
+            this.lblsems.TabIndex = 16;
+            this.lblsems.Text = "Se";
+            this.lblsems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunmnms
+            // 
+            this.lblunmnms.AutoSize = true;
+            this.lblunmnms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunmnms.Location = new System.Drawing.Point(138, 209);
+            this.lblunmnms.Name = "lblunmnms";
+            this.lblunmnms.Size = new System.Drawing.Size(27, 17);
+            this.lblunmnms.TabIndex = 16;
+            this.lblunmnms.Text = "mg";
+            this.lblunmnms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblmnms
+            // 
+            this.lblmnms.AutoSize = true;
+            this.lblmnms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmnms.Location = new System.Drawing.Point(5, 209);
+            this.lblmnms.Name = "lblmnms";
+            this.lblmnms.Size = new System.Drawing.Size(27, 17);
+            this.lblmnms.TabIndex = 16;
+            this.lblmnms.Text = "Mn";
+            this.lblmnms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunfems
+            // 
+            this.lblunfems.AutoSize = true;
+            this.lblunfems.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunfems.Location = new System.Drawing.Point(138, 186);
+            this.lblunfems.Name = "lblunfems";
+            this.lblunfems.Size = new System.Drawing.Size(27, 17);
+            this.lblunfems.TabIndex = 16;
+            this.lblunfems.Text = "mg";
+            this.lblunfems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblfems
+            // 
+            this.lblfems.AutoSize = true;
+            this.lblfems.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfems.Location = new System.Drawing.Point(5, 186);
+            this.lblfems.Name = "lblfems";
+            this.lblfems.Size = new System.Drawing.Size(21, 17);
+            this.lblfems.TabIndex = 14;
+            this.lblfems.Text = "Fe";
+            this.lblfems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunims
+            // 
+            this.lblunims.AutoSize = true;
+            this.lblunims.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunims.Location = new System.Drawing.Point(138, 163);
+            this.lblunims.Name = "lblunims";
+            this.lblunims.Size = new System.Drawing.Size(27, 17);
+            this.lblunims.TabIndex = 14;
+            this.lblunims.Text = "mg";
+            this.lblunims.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblims
+            // 
+            this.lblims.AutoSize = true;
+            this.lblims.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblims.Location = new System.Drawing.Point(5, 163);
+            this.lblims.Name = "lblims";
+            this.lblims.Size = new System.Drawing.Size(11, 17);
+            this.lblims.TabIndex = 31;
+            this.lblims.Text = "I";
+            this.lblims.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbluncums
+            // 
+            this.lbluncums.AutoSize = true;
+            this.lbluncums.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluncums.Location = new System.Drawing.Point(138, 140);
+            this.lbluncums.Name = "lbluncums";
+            this.lbluncums.Size = new System.Drawing.Size(27, 17);
+            this.lbluncums.TabIndex = 32;
+            this.lbluncums.Text = "mg";
+            this.lbluncums.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunmgms
+            // 
+            this.lblunmgms.AutoSize = true;
+            this.lblunmgms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunmgms.Location = new System.Drawing.Point(138, 117);
+            this.lblunmgms.Name = "lblunmgms";
+            this.lblunmgms.Size = new System.Drawing.Size(27, 17);
+            this.lblunmgms.TabIndex = 29;
+            this.lblunmgms.Text = "mg";
+            this.lblunmgms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblmgms
+            // 
+            this.lblmgms.AutoSize = true;
+            this.lblmgms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmgms.Location = new System.Drawing.Point(5, 117);
+            this.lblmgms.Name = "lblmgms";
+            this.lblmgms.Size = new System.Drawing.Size(28, 17);
+            this.lblmgms.TabIndex = 27;
+            this.lblmgms.Text = "Mg";
+            this.lblmgms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunclms
+            // 
+            this.lblunclms.AutoSize = true;
+            this.lblunclms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunclms.Location = new System.Drawing.Point(138, 94);
+            this.lblunclms.Name = "lblunclms";
+            this.lblunclms.Size = new System.Drawing.Size(27, 17);
+            this.lblunclms.TabIndex = 26;
+            this.lblunclms.Text = "mg";
+            this.lblunclms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblclms
+            // 
+            this.lblclms.AutoSize = true;
+            this.lblclms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblclms.Location = new System.Drawing.Point(5, 94);
+            this.lblclms.Name = "lblclms";
+            this.lblclms.Size = new System.Drawing.Size(19, 17);
+            this.lblclms.TabIndex = 24;
+            this.lblclms.Text = "Cl";
+            this.lblclms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunnams
+            // 
+            this.lblunnams.AutoSize = true;
+            this.lblunnams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunnams.Location = new System.Drawing.Point(138, 71);
+            this.lblunnams.Name = "lblunnams";
+            this.lblunnams.Size = new System.Drawing.Size(27, 17);
+            this.lblunnams.TabIndex = 23;
+            this.lblunnams.Text = "mg";
+            this.lblunnams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblcums
+            // 
+            this.lblcums.AutoSize = true;
+            this.lblcums.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcums.Location = new System.Drawing.Point(5, 140);
+            this.lblcums.Name = "lblcums";
+            this.lblcums.Size = new System.Drawing.Size(23, 17);
+            this.lblcums.TabIndex = 30;
+            this.lblcums.Text = "Cu";
+            this.lblcums.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblnams
+            // 
+            this.lblnams.AutoSize = true;
+            this.lblnams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnams.Location = new System.Drawing.Point(5, 71);
+            this.lblnams.Name = "lblnams";
+            this.lblnams.Size = new System.Drawing.Size(25, 17);
+            this.lblnams.TabIndex = 21;
+            this.lblnams.Text = "Na";
+            this.lblnams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunkms
+            // 
+            this.lblunkms.AutoSize = true;
+            this.lblunkms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunkms.Location = new System.Drawing.Point(138, 48);
+            this.lblunkms.Name = "lblunkms";
+            this.lblunkms.Size = new System.Drawing.Size(27, 17);
+            this.lblunkms.TabIndex = 20;
+            this.lblunkms.Text = "mg";
+            this.lblunkms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblkms
+            // 
+            this.lblkms.AutoSize = true;
+            this.lblkms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblkms.Location = new System.Drawing.Point(5, 48);
+            this.lblkms.Name = "lblkms";
+            this.lblkms.Size = new System.Drawing.Size(16, 17);
+            this.lblkms.TabIndex = 18;
+            this.lblkms.Text = "K";
+            this.lblkms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunpms
+            // 
+            this.lblunpms.AutoSize = true;
+            this.lblunpms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunpms.Location = new System.Drawing.Point(138, 25);
+            this.lblunpms.Name = "lblunpms";
+            this.lblunpms.Size = new System.Drawing.Size(27, 17);
+            this.lblunpms.TabIndex = 17;
+            this.lblunpms.Text = "mg";
+            this.lblunpms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblpms
+            // 
+            this.lblpms.AutoSize = true;
+            this.lblpms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpms.Location = new System.Drawing.Point(5, 25);
+            this.lblpms.Name = "lblpms";
+            this.lblpms.Size = new System.Drawing.Size(15, 17);
+            this.lblpms.TabIndex = 15;
+            this.lblpms.Text = "P";
+            this.lblpms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbluncams
+            // 
+            this.lbluncams.AutoSize = true;
+            this.lbluncams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluncams.Location = new System.Drawing.Point(138, 2);
+            this.lbluncams.Name = "lbluncams";
+            this.lbluncams.Size = new System.Drawing.Size(27, 17);
+            this.lbluncams.TabIndex = 14;
+            this.lbluncams.Text = "mg";
+            this.lbluncams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblcams
+            // 
+            this.lblcams.AutoSize = true;
+            this.lblcams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcams.Location = new System.Drawing.Point(5, 2);
+            this.lblcams.Name = "lblcams";
+            this.lblcams.Size = new System.Drawing.Size(23, 17);
+            this.lblcams.TabIndex = 12;
+            this.lblcams.Text = "Ca";
+            this.lblcams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tabletituloaminoacidosms
+            // 
+            this.tabletituloaminoacidosms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tabletituloaminoacidosms.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tabletituloaminoacidosms.ColumnCount = 1;
+            this.tabletituloaminoacidosms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabletituloaminoacidosms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletituloaminoacidosms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletituloaminoacidosms.Controls.Add(this.lblaminoacidosms, 0, 0);
+            this.tabletituloaminoacidosms.Location = new System.Drawing.Point(408, 119);
+            this.tabletituloaminoacidosms.Name = "tabletituloaminoacidosms";
+            this.tabletituloaminoacidosms.RowCount = 1;
+            this.tabletituloaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tabletituloaminoacidosms.Size = new System.Drawing.Size(180, 25);
+            this.tabletituloaminoacidosms.TabIndex = 13;
+            // 
+            // lblaminoacidosms
+            // 
+            this.lblaminoacidosms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblaminoacidosms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblaminoacidosms.Location = new System.Drawing.Point(5, 2);
+            this.lblaminoacidosms.Name = "lblaminoacidosms";
+            this.lblaminoacidosms.Size = new System.Drawing.Size(170, 21);
+            this.lblaminoacidosms.TabIndex = 0;
+            this.lblaminoacidosms.Text = "Aminoácidos";
+            this.lblaminoacidosms.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableaminoacidosms
+            // 
+            this.tableaminoacidosms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableaminoacidosms.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableaminoacidosms.ColumnCount = 3;
+            this.tableaminoacidosms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableaminoacidosms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableaminoacidosms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableaminoacidosms.Controls.Add(this.txtvaltaums, 1, 12);
+            this.tableaminoacidosms.Controls.Add(this.txtvalvalms, 1, 11);
+            this.tableaminoacidosms.Controls.Add(this.txtvaltrims, 1, 10);
+            this.tableaminoacidosms.Controls.Add(this.txtvaltreoms, 1, 9);
+            this.tableaminoacidosms.Controls.Add(this.txtvalfentirms, 1, 8);
+            this.tableaminoacidosms.Controls.Add(this.txtvalfenms, 1, 7);
+            this.tableaminoacidosms.Controls.Add(this.txtvalmetcisms, 1, 6);
+            this.tableaminoacidosms.Controls.Add(this.txtvalmetms, 1, 5);
+            this.tableaminoacidosms.Controls.Add(this.txtvallisms, 1, 4);
+            this.tableaminoacidosms.Controls.Add(this.txtvalleums, 1, 3);
+            this.tableaminoacidosms.Controls.Add(this.txtvalisoms, 1, 2);
+            this.tableaminoacidosms.Controls.Add(this.txtvalhisms, 1, 1);
+            this.tableaminoacidosms.Controls.Add(this.txtvalargms, 1, 0);
+            this.tableaminoacidosms.Controls.Add(this.lbluntaums, 2, 12);
+            this.tableaminoacidosms.Controls.Add(this.lbltaums, 0, 12);
+            this.tableaminoacidosms.Controls.Add(this.lblunvalms, 2, 11);
+            this.tableaminoacidosms.Controls.Add(this.lblvalms, 0, 11);
+            this.tableaminoacidosms.Controls.Add(this.lbluntrims, 2, 10);
+            this.tableaminoacidosms.Controls.Add(this.lbltrims, 0, 10);
+            this.tableaminoacidosms.Controls.Add(this.lbluntreoms, 2, 9);
+            this.tableaminoacidosms.Controls.Add(this.lbltreoms, 0, 9);
+            this.tableaminoacidosms.Controls.Add(this.lblunfertirms, 2, 8);
+            this.tableaminoacidosms.Controls.Add(this.lblfentirms, 0, 8);
+            this.tableaminoacidosms.Controls.Add(this.lblunfenms, 2, 7);
+            this.tableaminoacidosms.Controls.Add(this.lblfenms, 0, 7);
+            this.tableaminoacidosms.Controls.Add(this.lblunmetcisms, 2, 6);
+            this.tableaminoacidosms.Controls.Add(this.lblunmetms, 2, 5);
+            this.tableaminoacidosms.Controls.Add(this.lblmetms, 0, 5);
+            this.tableaminoacidosms.Controls.Add(this.lblunlisms, 2, 4);
+            this.tableaminoacidosms.Controls.Add(this.lbllisms, 0, 4);
+            this.tableaminoacidosms.Controls.Add(this.lblunleums, 2, 3);
+            this.tableaminoacidosms.Controls.Add(this.lblmetcisms, 0, 6);
+            this.tableaminoacidosms.Controls.Add(this.lblleums, 0, 3);
+            this.tableaminoacidosms.Controls.Add(this.lblunisoms, 2, 2);
+            this.tableaminoacidosms.Controls.Add(this.lblisoms, 0, 2);
+            this.tableaminoacidosms.Controls.Add(this.lblunhisms, 2, 1);
+            this.tableaminoacidosms.Controls.Add(this.lblhisms, 0, 1);
+            this.tableaminoacidosms.Controls.Add(this.lblunargms, 2, 0);
+            this.tableaminoacidosms.Controls.Add(this.lblargms, 0, 0);
+            this.tableaminoacidosms.Location = new System.Drawing.Point(408, 148);
+            this.tableaminoacidosms.Name = "tableaminoacidosms";
+            this.tableaminoacidosms.RowCount = 13;
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
+            this.tableaminoacidosms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
+            this.tableaminoacidosms.Size = new System.Drawing.Size(180, 305);
+            this.tableaminoacidosms.TabIndex = 8;
+            // 
+            // txtvaltaums
+            // 
+            this.txtvaltaums.BackColor = System.Drawing.Color.White;
+            this.txtvaltaums.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvaltaums.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvaltaums.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvaltaums.Location = new System.Drawing.Point(107, 278);
+            this.txtvaltaums.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvaltaums.Multiline = true;
+            this.txtvaltaums.Name = "txtvaltaums";
+            this.txtvaltaums.Size = new System.Drawing.Size(43, 25);
+            this.txtvaltaums.TabIndex = 27;
+            this.txtvaltaums.Text = "100";
+            this.txtvaltaums.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalvalms
+            // 
+            this.txtvalvalms.BackColor = System.Drawing.Color.White;
+            this.txtvalvalms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalvalms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalvalms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalvalms.Location = new System.Drawing.Point(107, 255);
+            this.txtvalvalms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalvalms.Multiline = true;
+            this.txtvalvalms.Name = "txtvalvalms";
+            this.txtvalvalms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalvalms.TabIndex = 26;
+            this.txtvalvalms.Text = "100";
+            this.txtvalvalms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvaltrims
+            // 
+            this.txtvaltrims.BackColor = System.Drawing.Color.White;
+            this.txtvaltrims.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvaltrims.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvaltrims.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvaltrims.Location = new System.Drawing.Point(107, 232);
+            this.txtvaltrims.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvaltrims.Multiline = true;
+            this.txtvaltrims.Name = "txtvaltrims";
+            this.txtvaltrims.Size = new System.Drawing.Size(43, 21);
+            this.txtvaltrims.TabIndex = 25;
+            this.txtvaltrims.Text = "100";
+            this.txtvaltrims.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvaltreoms
+            // 
+            this.txtvaltreoms.BackColor = System.Drawing.Color.White;
+            this.txtvaltreoms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvaltreoms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvaltreoms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvaltreoms.Location = new System.Drawing.Point(107, 209);
+            this.txtvaltreoms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvaltreoms.Multiline = true;
+            this.txtvaltreoms.Name = "txtvaltreoms";
+            this.txtvaltreoms.Size = new System.Drawing.Size(43, 21);
+            this.txtvaltreoms.TabIndex = 24;
+            this.txtvaltreoms.Text = "100";
+            this.txtvaltreoms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalfentirms
+            // 
+            this.txtvalfentirms.BackColor = System.Drawing.Color.White;
+            this.txtvalfentirms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalfentirms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalfentirms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalfentirms.Location = new System.Drawing.Point(107, 186);
+            this.txtvalfentirms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalfentirms.Multiline = true;
+            this.txtvalfentirms.Name = "txtvalfentirms";
+            this.txtvalfentirms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalfentirms.TabIndex = 23;
+            this.txtvalfentirms.Text = "100";
+            this.txtvalfentirms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalfenms
+            // 
+            this.txtvalfenms.BackColor = System.Drawing.Color.White;
+            this.txtvalfenms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalfenms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalfenms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalfenms.Location = new System.Drawing.Point(107, 163);
+            this.txtvalfenms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalfenms.Multiline = true;
+            this.txtvalfenms.Name = "txtvalfenms";
+            this.txtvalfenms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalfenms.TabIndex = 22;
+            this.txtvalfenms.Text = "100";
+            this.txtvalfenms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalmetcisms
+            // 
+            this.txtvalmetcisms.BackColor = System.Drawing.Color.White;
+            this.txtvalmetcisms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalmetcisms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalmetcisms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalmetcisms.Location = new System.Drawing.Point(107, 140);
+            this.txtvalmetcisms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalmetcisms.Multiline = true;
+            this.txtvalmetcisms.Name = "txtvalmetcisms";
+            this.txtvalmetcisms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalmetcisms.TabIndex = 21;
+            this.txtvalmetcisms.Text = "100";
+            this.txtvalmetcisms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalmetms
+            // 
+            this.txtvalmetms.BackColor = System.Drawing.Color.White;
+            this.txtvalmetms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalmetms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalmetms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalmetms.Location = new System.Drawing.Point(107, 117);
+            this.txtvalmetms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalmetms.Multiline = true;
+            this.txtvalmetms.Name = "txtvalmetms";
+            this.txtvalmetms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalmetms.TabIndex = 20;
+            this.txtvalmetms.Text = "100";
+            this.txtvalmetms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvallisms
+            // 
+            this.txtvallisms.BackColor = System.Drawing.Color.White;
+            this.txtvallisms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvallisms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvallisms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvallisms.Location = new System.Drawing.Point(107, 94);
+            this.txtvallisms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvallisms.Multiline = true;
+            this.txtvallisms.Name = "txtvallisms";
+            this.txtvallisms.Size = new System.Drawing.Size(43, 21);
+            this.txtvallisms.TabIndex = 19;
+            this.txtvallisms.Text = "100";
+            this.txtvallisms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalleums
+            // 
+            this.txtvalleums.BackColor = System.Drawing.Color.White;
+            this.txtvalleums.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalleums.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalleums.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalleums.Location = new System.Drawing.Point(107, 71);
+            this.txtvalleums.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalleums.Multiline = true;
+            this.txtvalleums.Name = "txtvalleums";
+            this.txtvalleums.Size = new System.Drawing.Size(43, 21);
+            this.txtvalleums.TabIndex = 18;
+            this.txtvalleums.Text = "100";
+            this.txtvalleums.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalisoms
+            // 
+            this.txtvalisoms.BackColor = System.Drawing.Color.White;
+            this.txtvalisoms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalisoms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalisoms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalisoms.Location = new System.Drawing.Point(107, 48);
+            this.txtvalisoms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalisoms.Multiline = true;
+            this.txtvalisoms.Name = "txtvalisoms";
+            this.txtvalisoms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalisoms.TabIndex = 17;
+            this.txtvalisoms.Text = "100";
+            this.txtvalisoms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalhisms
+            // 
+            this.txtvalhisms.BackColor = System.Drawing.Color.White;
+            this.txtvalhisms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalhisms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalhisms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalhisms.Location = new System.Drawing.Point(107, 25);
+            this.txtvalhisms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalhisms.Multiline = true;
+            this.txtvalhisms.Name = "txtvalhisms";
+            this.txtvalhisms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalhisms.TabIndex = 33;
+            this.txtvalhisms.Text = "100";
+            this.txtvalhisms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtvalargms
+            // 
+            this.txtvalargms.BackColor = System.Drawing.Color.White;
+            this.txtvalargms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtvalargms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtvalargms.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtvalargms.Location = new System.Drawing.Point(107, 2);
+            this.txtvalargms.Margin = new System.Windows.Forms.Padding(0);
+            this.txtvalargms.Multiline = true;
+            this.txtvalargms.Name = "txtvalargms";
+            this.txtvalargms.Size = new System.Drawing.Size(43, 21);
+            this.txtvalargms.TabIndex = 26;
+            this.txtvalargms.Text = "100";
+            this.txtvalargms.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lbluntaums
+            // 
+            this.lbluntaums.AutoSize = true;
+            this.lbluntaums.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluntaums.Location = new System.Drawing.Point(155, 278);
+            this.lbluntaums.Name = "lbluntaums";
+            this.lbluntaums.Size = new System.Drawing.Size(19, 17);
+            this.lbluntaums.TabIndex = 16;
+            this.lbluntaums.Text = "%";
+            this.lbluntaums.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbltaums
+            // 
+            this.lbltaums.AutoSize = true;
+            this.lbltaums.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltaums.Location = new System.Drawing.Point(5, 278);
+            this.lbltaums.Name = "lbltaums";
+            this.lbltaums.Size = new System.Drawing.Size(28, 17);
+            this.lbltaums.TabIndex = 16;
+            this.lbltaums.Text = "Tau";
+            this.lbltaums.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunvalms
+            // 
+            this.lblunvalms.AutoSize = true;
+            this.lblunvalms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunvalms.Location = new System.Drawing.Point(155, 255);
+            this.lblunvalms.Name = "lblunvalms";
+            this.lblunvalms.Size = new System.Drawing.Size(19, 17);
+            this.lblunvalms.TabIndex = 16;
+            this.lblunvalms.Text = "%";
+            this.lblunvalms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblvalms
+            // 
+            this.lblvalms.AutoSize = true;
+            this.lblvalms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvalms.Location = new System.Drawing.Point(5, 255);
+            this.lblvalms.Name = "lblvalms";
+            this.lblvalms.Size = new System.Drawing.Size(25, 17);
+            this.lblvalms.TabIndex = 16;
+            this.lblvalms.Text = "Val";
+            this.lblvalms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbluntrims
+            // 
+            this.lbluntrims.AutoSize = true;
+            this.lbluntrims.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluntrims.Location = new System.Drawing.Point(155, 232);
+            this.lbluntrims.Name = "lbluntrims";
+            this.lbluntrims.Size = new System.Drawing.Size(19, 17);
+            this.lbluntrims.TabIndex = 16;
+            this.lbluntrims.Text = "%";
+            this.lbluntrims.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbltrims
+            // 
+            this.lbltrims.AutoSize = true;
+            this.lbltrims.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltrims.Location = new System.Drawing.Point(5, 232);
+            this.lbltrims.Name = "lbltrims";
+            this.lbltrims.Size = new System.Drawing.Size(22, 17);
+            this.lbltrims.TabIndex = 16;
+            this.lbltrims.Text = "Tri";
+            this.lbltrims.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbluntreoms
+            // 
+            this.lbluntreoms.AutoSize = true;
+            this.lbluntreoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluntreoms.Location = new System.Drawing.Point(155, 209);
+            this.lbluntreoms.Name = "lbluntreoms";
+            this.lbluntreoms.Size = new System.Drawing.Size(19, 17);
+            this.lbluntreoms.TabIndex = 16;
+            this.lbluntreoms.Text = "%";
+            this.lbluntreoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbltreoms
+            // 
+            this.lbltreoms.AutoSize = true;
+            this.lbltreoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltreoms.Location = new System.Drawing.Point(5, 209);
+            this.lbltreoms.Name = "lbltreoms";
+            this.lbltreoms.Size = new System.Drawing.Size(34, 17);
+            this.lbltreoms.TabIndex = 16;
+            this.lbltreoms.Text = "Treo";
+            this.lbltreoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunfertirms
+            // 
+            this.lblunfertirms.AutoSize = true;
+            this.lblunfertirms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunfertirms.Location = new System.Drawing.Point(155, 186);
+            this.lblunfertirms.Name = "lblunfertirms";
+            this.lblunfertirms.Size = new System.Drawing.Size(19, 17);
+            this.lblunfertirms.TabIndex = 16;
+            this.lblunfertirms.Text = "%";
+            this.lblunfertirms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblfentirms
+            // 
+            this.lblfentirms.AutoSize = true;
+            this.lblfentirms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfentirms.Location = new System.Drawing.Point(5, 186);
+            this.lblfentirms.Name = "lblfentirms";
+            this.lblfentirms.Size = new System.Drawing.Size(60, 17);
+            this.lblfentirms.TabIndex = 14;
+            this.lblfentirms.Text = "Fen + Tir";
+            this.lblfentirms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunfenms
+            // 
+            this.lblunfenms.AutoSize = true;
+            this.lblunfenms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunfenms.Location = new System.Drawing.Point(155, 163);
+            this.lblunfenms.Name = "lblunfenms";
+            this.lblunfenms.Size = new System.Drawing.Size(19, 17);
+            this.lblunfenms.TabIndex = 14;
+            this.lblunfenms.Text = "%";
+            this.lblunfenms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblfenms
+            // 
+            this.lblfenms.AutoSize = true;
+            this.lblfenms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfenms.Location = new System.Drawing.Point(5, 163);
+            this.lblfenms.Name = "lblfenms";
+            this.lblfenms.Size = new System.Drawing.Size(28, 17);
+            this.lblfenms.TabIndex = 31;
+            this.lblfenms.Text = "Fen";
+            this.lblfenms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunmetcisms
+            // 
+            this.lblunmetcisms.AutoSize = true;
+            this.lblunmetcisms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunmetcisms.Location = new System.Drawing.Point(155, 140);
+            this.lblunmetcisms.Name = "lblunmetcisms";
+            this.lblunmetcisms.Size = new System.Drawing.Size(19, 17);
+            this.lblunmetcisms.TabIndex = 32;
+            this.lblunmetcisms.Text = "%";
+            this.lblunmetcisms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunmetms
+            // 
+            this.lblunmetms.AutoSize = true;
+            this.lblunmetms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunmetms.Location = new System.Drawing.Point(155, 117);
+            this.lblunmetms.Name = "lblunmetms";
+            this.lblunmetms.Size = new System.Drawing.Size(19, 17);
+            this.lblunmetms.TabIndex = 29;
+            this.lblunmetms.Text = "%";
+            this.lblunmetms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblmetms
+            // 
+            this.lblmetms.AutoSize = true;
+            this.lblmetms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmetms.Location = new System.Drawing.Point(5, 117);
+            this.lblmetms.Name = "lblmetms";
+            this.lblmetms.Size = new System.Drawing.Size(31, 17);
+            this.lblmetms.TabIndex = 27;
+            this.lblmetms.Text = "Met";
+            this.lblmetms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunlisms
+            // 
+            this.lblunlisms.AutoSize = true;
+            this.lblunlisms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunlisms.Location = new System.Drawing.Point(155, 94);
+            this.lblunlisms.Name = "lblunlisms";
+            this.lblunlisms.Size = new System.Drawing.Size(19, 17);
+            this.lblunlisms.TabIndex = 26;
+            this.lblunlisms.Text = "%";
+            this.lblunlisms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbllisms
+            // 
+            this.lbllisms.AutoSize = true;
+            this.lbllisms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllisms.Location = new System.Drawing.Point(5, 94);
+            this.lbllisms.Name = "lbllisms";
+            this.lbllisms.Size = new System.Drawing.Size(23, 17);
+            this.lbllisms.TabIndex = 24;
+            this.lbllisms.Text = "Lis";
+            this.lbllisms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunleums
+            // 
+            this.lblunleums.AutoSize = true;
+            this.lblunleums.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunleums.Location = new System.Drawing.Point(155, 71);
+            this.lblunleums.Name = "lblunleums";
+            this.lblunleums.Size = new System.Drawing.Size(19, 17);
+            this.lblunleums.TabIndex = 23;
+            this.lblunleums.Text = "%";
+            this.lblunleums.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblmetcisms
+            // 
+            this.lblmetcisms.AutoSize = true;
+            this.lblmetcisms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmetcisms.Location = new System.Drawing.Point(5, 140);
+            this.lblmetcisms.Name = "lblmetcisms";
+            this.lblmetcisms.Size = new System.Drawing.Size(65, 17);
+            this.lblmetcisms.TabIndex = 30;
+            this.lblmetcisms.Text = "Met + Cis";
+            this.lblmetcisms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblleums
+            // 
+            this.lblleums.AutoSize = true;
+            this.lblleums.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblleums.Location = new System.Drawing.Point(5, 71);
+            this.lblleums.Name = "lblleums";
+            this.lblleums.Size = new System.Drawing.Size(28, 17);
+            this.lblleums.TabIndex = 21;
+            this.lblleums.Text = "Leu";
+            this.lblleums.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunisoms
+            // 
+            this.lblunisoms.AutoSize = true;
+            this.lblunisoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunisoms.Location = new System.Drawing.Point(155, 48);
+            this.lblunisoms.Name = "lblunisoms";
+            this.lblunisoms.Size = new System.Drawing.Size(19, 17);
+            this.lblunisoms.TabIndex = 20;
+            this.lblunisoms.Text = "%";
+            this.lblunisoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblisoms
+            // 
+            this.lblisoms.AutoSize = true;
+            this.lblisoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblisoms.Location = new System.Drawing.Point(5, 48);
+            this.lblisoms.Name = "lblisoms";
+            this.lblisoms.Size = new System.Drawing.Size(25, 17);
+            this.lblisoms.TabIndex = 18;
+            this.lblisoms.Text = "Iso";
+            this.lblisoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunhisms
+            // 
+            this.lblunhisms.AutoSize = true;
+            this.lblunhisms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunhisms.Location = new System.Drawing.Point(155, 25);
+            this.lblunhisms.Name = "lblunhisms";
+            this.lblunhisms.Size = new System.Drawing.Size(19, 17);
+            this.lblunhisms.TabIndex = 17;
+            this.lblunhisms.Text = "%";
+            this.lblunhisms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblhisms
+            // 
+            this.lblhisms.AutoSize = true;
+            this.lblhisms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhisms.Location = new System.Drawing.Point(5, 25);
+            this.lblhisms.Name = "lblhisms";
+            this.lblhisms.Size = new System.Drawing.Size(26, 17);
+            this.lblhisms.TabIndex = 15;
+            this.lblhisms.Text = "His";
+            this.lblhisms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblunargms
+            // 
+            this.lblunargms.AutoSize = true;
+            this.lblunargms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunargms.Location = new System.Drawing.Point(155, 2);
+            this.lblunargms.Name = "lblunargms";
+            this.lblunargms.Size = new System.Drawing.Size(19, 17);
+            this.lblunargms.TabIndex = 14;
+            this.lblunargms.Text = "%";
+            this.lblunargms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblargms
+            // 
+            this.lblargms.AutoSize = true;
+            this.lblargms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblargms.Location = new System.Drawing.Point(5, 2);
+            this.lblargms.Name = "lblargms";
+            this.lblargms.Size = new System.Drawing.Size(29, 17);
+            this.lblargms.TabIndex = 12;
+            this.lblargms.Text = "Arg";
+            this.lblargms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableumidadems
+            // 
+            this.tableumidadems.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableumidadems.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableumidadems.ColumnCount = 3;
+            this.tableumidadems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableumidadems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableumidadems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableumidadems.Controls.Add(this.txtvalennms, 1, 6);
+            this.tableumidadems.Controls.Add(this.txtvalmateriamineralms, 1, 5);
+            this.tableumidadems.Controls.Add(this.txtvalfibrabrutams, 1, 4);
+            this.tableumidadems.Controls.Add(this.txtvalextratoetereoms, 1, 3);
+            this.tableumidadems.Controls.Add(this.txtvalproteinabrutams, 1, 2);
+            this.tableumidadems.Controls.Add(this.txtvalmateriasecams, 1, 1);
+            this.tableumidadems.Controls.Add(this.txtvalumidadems, 1, 0);
+            this.tableumidadems.Controls.Add(this.lblunennms, 2, 6);
+            this.tableumidadems.Controls.Add(this.lblennms, 0, 6);
+            this.tableumidadems.Controls.Add(this.lblunmateriamineralms, 2, 5);
+            this.tableumidadems.Controls.Add(this.lblmateriamineralms, 0, 5);
+            this.tableumidadems.Controls.Add(this.lblunfibrabrutams, 2, 4);
+            this.tableumidadems.Controls.Add(this.lblfibrabrutams, 0, 4);
+            this.tableumidadems.Controls.Add(this.lblunextratoetereoms, 2, 3);
+            this.tableumidadems.Controls.Add(this.lblextratoetereoms, 0, 3);
+            this.tableumidadems.Controls.Add(this.lblunproteinabrutams, 2, 2);
+            this.tableumidadems.Controls.Add(this.lblproteinabrutams, 0, 2);
+            this.tableumidadems.Controls.Add(this.lblunmateriasecams, 2, 1);
+            this.tableumidadems.Controls.Add(this.lblmateriasecams, 0, 1);
+            this.tableumidadems.Controls.Add(this.lblunumidadems, 2, 0);
+            this.tableumidadems.Controls.Add(this.lblumidadems, 0, 0);
+            this.tableumidadems.Location = new System.Drawing.Point(30, 150);
+            this.tableumidadems.Name = "tableumidadems";
+            this.tableumidadems.RowCount = 7;
+            this.tableumidadems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidadems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidadems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidadems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidadems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidadems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidadems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidadems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableumidadems.Size = new System.Drawing.Size(325, 175);
+            this.tableumidadems.TabIndex = 5;
             // 
             // txtvalennms
             // 
@@ -3180,178 +3181,178 @@
             this.txtvalumidadems.Text = "100";
             this.txtvalumidadems.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label101
+            // lblunennms
             // 
-            this.label101.AutoSize = true;
-            this.label101.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.Location = new System.Drawing.Point(278, 146);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(19, 17);
-            this.label101.TabIndex = 32;
-            this.label101.Text = "%";
-            this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunennms.AutoSize = true;
+            this.lblunennms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunennms.Location = new System.Drawing.Point(278, 146);
+            this.lblunennms.Name = "lblunennms";
+            this.lblunennms.Size = new System.Drawing.Size(19, 17);
+            this.lblunennms.TabIndex = 32;
+            this.lblunennms.Text = "%";
+            this.lblunennms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label102
+            // lblennms
             // 
-            this.label102.AutoSize = true;
-            this.label102.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label102.Location = new System.Drawing.Point(5, 146);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(160, 17);
-            this.label102.TabIndex = 30;
-            this.label102.Text = "Extrativo não nitrogenado";
-            this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblennms.AutoSize = true;
+            this.lblennms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblennms.Location = new System.Drawing.Point(5, 146);
+            this.lblennms.Name = "lblennms";
+            this.lblennms.Size = new System.Drawing.Size(160, 17);
+            this.lblennms.TabIndex = 30;
+            this.lblennms.Text = "Extrativo não nitrogenado";
+            this.lblennms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label103
+            // lblunmateriamineralms
             // 
-            this.label103.AutoSize = true;
-            this.label103.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label103.Location = new System.Drawing.Point(278, 122);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(19, 17);
-            this.label103.TabIndex = 29;
-            this.label103.Text = "%";
-            this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunmateriamineralms.AutoSize = true;
+            this.lblunmateriamineralms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunmateriamineralms.Location = new System.Drawing.Point(278, 122);
+            this.lblunmateriamineralms.Name = "lblunmateriamineralms";
+            this.lblunmateriamineralms.Size = new System.Drawing.Size(19, 17);
+            this.lblunmateriamineralms.TabIndex = 29;
+            this.lblunmateriamineralms.Text = "%";
+            this.lblunmateriamineralms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label104
+            // lblmateriamineralms
             // 
-            this.label104.AutoSize = true;
-            this.label104.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label104.Location = new System.Drawing.Point(5, 122);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(101, 17);
-            this.label104.TabIndex = 27;
-            this.label104.Text = "Matéria Mineral";
-            this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblmateriamineralms.AutoSize = true;
+            this.lblmateriamineralms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmateriamineralms.Location = new System.Drawing.Point(5, 122);
+            this.lblmateriamineralms.Name = "lblmateriamineralms";
+            this.lblmateriamineralms.Size = new System.Drawing.Size(101, 17);
+            this.lblmateriamineralms.TabIndex = 27;
+            this.lblmateriamineralms.Text = "Matéria Mineral";
+            this.lblmateriamineralms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label105
+            // lblunfibrabrutams
             // 
-            this.label105.AutoSize = true;
-            this.label105.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label105.Location = new System.Drawing.Point(278, 98);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(19, 17);
-            this.label105.TabIndex = 26;
-            this.label105.Text = "%";
-            this.label105.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunfibrabrutams.AutoSize = true;
+            this.lblunfibrabrutams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunfibrabrutams.Location = new System.Drawing.Point(278, 98);
+            this.lblunfibrabrutams.Name = "lblunfibrabrutams";
+            this.lblunfibrabrutams.Size = new System.Drawing.Size(19, 17);
+            this.lblunfibrabrutams.TabIndex = 26;
+            this.lblunfibrabrutams.Text = "%";
+            this.lblunfibrabrutams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label106
+            // lblfibrabrutams
             // 
-            this.label106.AutoSize = true;
-            this.label106.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label106.Location = new System.Drawing.Point(5, 98);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(71, 17);
-            this.label106.TabIndex = 24;
-            this.label106.Text = "Friba Bruta";
-            this.label106.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblfibrabrutams.AutoSize = true;
+            this.lblfibrabrutams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfibrabrutams.Location = new System.Drawing.Point(5, 98);
+            this.lblfibrabrutams.Name = "lblfibrabrutams";
+            this.lblfibrabrutams.Size = new System.Drawing.Size(71, 17);
+            this.lblfibrabrutams.TabIndex = 24;
+            this.lblfibrabrutams.Text = "Friba Bruta";
+            this.lblfibrabrutams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label107
+            // lblunextratoetereoms
             // 
-            this.label107.AutoSize = true;
-            this.label107.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label107.Location = new System.Drawing.Point(278, 74);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(19, 17);
-            this.label107.TabIndex = 23;
-            this.label107.Text = "%";
-            this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunextratoetereoms.AutoSize = true;
+            this.lblunextratoetereoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunextratoetereoms.Location = new System.Drawing.Point(278, 74);
+            this.lblunextratoetereoms.Name = "lblunextratoetereoms";
+            this.lblunextratoetereoms.Size = new System.Drawing.Size(19, 17);
+            this.lblunextratoetereoms.TabIndex = 23;
+            this.lblunextratoetereoms.Text = "%";
+            this.lblunextratoetereoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label108
+            // lblextratoetereoms
             // 
-            this.label108.AutoSize = true;
-            this.label108.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label108.Location = new System.Drawing.Point(5, 74);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(91, 17);
-            this.label108.TabIndex = 21;
-            this.label108.Text = "Extrato Etéreo";
-            this.label108.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblextratoetereoms.AutoSize = true;
+            this.lblextratoetereoms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblextratoetereoms.Location = new System.Drawing.Point(5, 74);
+            this.lblextratoetereoms.Name = "lblextratoetereoms";
+            this.lblextratoetereoms.Size = new System.Drawing.Size(91, 17);
+            this.lblextratoetereoms.TabIndex = 21;
+            this.lblextratoetereoms.Text = "Extrato Etéreo";
+            this.lblextratoetereoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label109
+            // lblunproteinabrutams
             // 
-            this.label109.AutoSize = true;
-            this.label109.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label109.Location = new System.Drawing.Point(278, 50);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(19, 17);
-            this.label109.TabIndex = 20;
-            this.label109.Text = "%";
-            this.label109.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunproteinabrutams.AutoSize = true;
+            this.lblunproteinabrutams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunproteinabrutams.Location = new System.Drawing.Point(278, 50);
+            this.lblunproteinabrutams.Name = "lblunproteinabrutams";
+            this.lblunproteinabrutams.Size = new System.Drawing.Size(19, 17);
+            this.lblunproteinabrutams.TabIndex = 20;
+            this.lblunproteinabrutams.Text = "%";
+            this.lblunproteinabrutams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label110
+            // lblproteinabrutams
             // 
-            this.label110.AutoSize = true;
-            this.label110.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label110.Location = new System.Drawing.Point(5, 50);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(90, 17);
-            this.label110.TabIndex = 18;
-            this.label110.Text = "Proteína Bruta";
-            this.label110.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblproteinabrutams.AutoSize = true;
+            this.lblproteinabrutams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblproteinabrutams.Location = new System.Drawing.Point(5, 50);
+            this.lblproteinabrutams.Name = "lblproteinabrutams";
+            this.lblproteinabrutams.Size = new System.Drawing.Size(90, 17);
+            this.lblproteinabrutams.TabIndex = 18;
+            this.lblproteinabrutams.Text = "Proteína Bruta";
+            this.lblproteinabrutams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label111
+            // lblunmateriasecams
             // 
-            this.label111.AutoSize = true;
-            this.label111.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label111.Location = new System.Drawing.Point(278, 26);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(19, 17);
-            this.label111.TabIndex = 17;
-            this.label111.Text = "%";
-            this.label111.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunmateriasecams.AutoSize = true;
+            this.lblunmateriasecams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunmateriasecams.Location = new System.Drawing.Point(278, 26);
+            this.lblunmateriasecams.Name = "lblunmateriasecams";
+            this.lblunmateriasecams.Size = new System.Drawing.Size(19, 17);
+            this.lblunmateriasecams.TabIndex = 17;
+            this.lblunmateriasecams.Text = "%";
+            this.lblunmateriasecams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label112
+            // lblmateriasecams
             // 
-            this.label112.AutoSize = true;
-            this.label112.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label112.Location = new System.Drawing.Point(5, 26);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(84, 17);
-            this.label112.TabIndex = 15;
-            this.label112.Text = "Materia Seca";
-            this.label112.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblmateriasecams.AutoSize = true;
+            this.lblmateriasecams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmateriasecams.Location = new System.Drawing.Point(5, 26);
+            this.lblmateriasecams.Name = "lblmateriasecams";
+            this.lblmateriasecams.Size = new System.Drawing.Size(84, 17);
+            this.lblmateriasecams.TabIndex = 15;
+            this.lblmateriasecams.Text = "Materia Seca";
+            this.lblmateriasecams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label113
+            // lblunumidadems
             // 
-            this.label113.AutoSize = true;
-            this.label113.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label113.Location = new System.Drawing.Point(278, 2);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(19, 17);
-            this.label113.TabIndex = 14;
-            this.label113.Text = "%";
-            this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunumidadems.AutoSize = true;
+            this.lblunumidadems.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunumidadems.Location = new System.Drawing.Point(278, 2);
+            this.lblunumidadems.Name = "lblunumidadems";
+            this.lblunumidadems.Size = new System.Drawing.Size(19, 17);
+            this.lblunumidadems.TabIndex = 14;
+            this.lblunumidadems.Text = "%";
+            this.lblunumidadems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label114
+            // lblumidadems
             // 
-            this.label114.AutoSize = true;
-            this.label114.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label114.Location = new System.Drawing.Point(5, 2);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(61, 17);
-            this.label114.TabIndex = 12;
-            this.label114.Text = "Umidade";
-            this.label114.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblumidadems.AutoSize = true;
+            this.lblumidadems.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblumidadems.Location = new System.Drawing.Point(5, 2);
+            this.lblumidadems.Name = "lblumidadems";
+            this.lblumidadems.Size = new System.Drawing.Size(61, 17);
+            this.lblumidadems.TabIndex = 12;
+            this.lblumidadems.Text = "Umidade";
+            this.lblumidadems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel22
+            // tableenergiams
             // 
-            this.tableLayoutPanel22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel22.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel22.ColumnCount = 3;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel22.Controls.Add(this.txtvalenergiams, 1, 0);
-            this.tableLayoutPanel22.Controls.Add(this.label115, 2, 0);
-            this.tableLayoutPanel22.Controls.Add(this.label116, 0, 0);
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(38, 115);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 1;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(325, 25);
-            this.tableLayoutPanel22.TabIndex = 1;
+            this.tableenergiams.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableenergiams.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableenergiams.ColumnCount = 3;
+            this.tableenergiams.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableenergiams.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableenergiams.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableenergiams.Controls.Add(this.txtvalenergiams, 1, 0);
+            this.tableenergiams.Controls.Add(this.lblunenergiams, 2, 0);
+            this.tableenergiams.Controls.Add(this.lblenergiams, 0, 0);
+            this.tableenergiams.Location = new System.Drawing.Point(30, 120);
+            this.tableenergiams.Name = "tableenergiams";
+            this.tableenergiams.RowCount = 1;
+            this.tableenergiams.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableenergiams.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableenergiams.Size = new System.Drawing.Size(325, 25);
+            this.tableenergiams.TabIndex = 4;
             // 
             // txtvalenergiams
             // 
@@ -3368,90 +3369,92 @@
             this.txtvalenergiams.Text = "100";
             this.txtvalenergiams.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label115
+            // lblunenergiams
             // 
-            this.label115.AutoSize = true;
-            this.label115.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label115.Location = new System.Drawing.Point(278, 2);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(30, 17);
-            this.label115.TabIndex = 1;
-            this.label115.Text = "kcal";
-            this.label115.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblunenergiams.AutoSize = true;
+            this.lblunenergiams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblunenergiams.Location = new System.Drawing.Point(278, 2);
+            this.lblunenergiams.Name = "lblunenergiams";
+            this.lblunenergiams.Size = new System.Drawing.Size(30, 17);
+            this.lblunenergiams.TabIndex = 1;
+            this.lblunenergiams.Text = "kcal";
+            this.lblunenergiams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label116
+            // lblenergiams
             // 
-            this.label116.AutoSize = true;
-            this.label116.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label116.Location = new System.Drawing.Point(5, 2);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(52, 17);
-            this.label116.TabIndex = 0;
-            this.label116.Text = "Energia";
-            this.label116.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblenergiams.AutoSize = true;
+            this.lblenergiams.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblenergiams.Location = new System.Drawing.Point(5, 2);
+            this.lblenergiams.Name = "lblenergiams";
+            this.lblenergiams.Size = new System.Drawing.Size(52, 17);
+            this.lblenergiams.TabIndex = 0;
+            this.lblenergiams.Text = "Energia";
+            this.lblenergiams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
+            // pbxtooltipalimentoms
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackgroundImage = global::ProjetoNariz.Properties.Resources.help;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(839, 48);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 20);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.pbxtooltipalimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbxtooltipalimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.help;
+            this.pbxtooltipalimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxtooltipalimentoms.Location = new System.Drawing.Point(870, 42);
+            this.pbxtooltipalimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxtooltipalimentoms.Name = "pbxtooltipalimentoms";
+            this.pbxtooltipalimentoms.Size = new System.Drawing.Size(25, 20);
+            this.pbxtooltipalimentoms.TabIndex = 9;
+            this.pbxtooltipalimentoms.TabStop = false;
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.Gray;
-            this.panel4.Location = new System.Drawing.Point(11, 99);
+            this.panel4.Location = new System.Drawing.Point(10, 100);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1037, 2);
+            this.panel4.Size = new System.Drawing.Size(1080, 2);
             this.panel4.TabIndex = 4;
             // 
-            // button4
+            // btnexcluiralimentoms
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Image = global::ProjetoNariz.Properties.Resources.close_cross;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(1034, 31);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(79, 45);
-            this.button4.TabIndex = 57;
-            this.button4.Text = "Excluir";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnexcluiralimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnexcluiralimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btnexcluiralimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnexcluiralimentoms.FlatAppearance.BorderSize = 0;
+            this.btnexcluiralimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexcluiralimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnexcluiralimentoms.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnexcluiralimentoms.Image = global::ProjetoNariz.Properties.Resources.close_cross;
+            this.btnexcluiralimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnexcluiralimentoms.Location = new System.Drawing.Point(1020, 30);
+            this.btnexcluiralimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btnexcluiralimentoms.Name = "btnexcluiralimentoms";
+            this.btnexcluiralimentoms.Size = new System.Drawing.Size(80, 45);
+            this.btnexcluiralimentoms.TabIndex = 3;
+            this.btnexcluiralimentoms.Text = "Excluir";
+            this.btnexcluiralimentoms.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnexcluiralimentoms.UseVisualStyleBackColor = false;
+            this.btnexcluiralimentoms.Click += new System.EventHandler(this.btnexcluiralimentoms_Click);
             // 
-            // button5
+            // btneditaalimentoms
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::ProjetoNariz.Properties.Resources.edit_6;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(900, 33);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 45);
-            this.button5.TabIndex = 56;
-            this.button5.Text = "Editar";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btneditaalimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btneditaalimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btneditaalimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btneditaalimentoms.FlatAppearance.BorderSize = 0;
+            this.btneditaalimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btneditaalimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btneditaalimentoms.ForeColor = System.Drawing.Color.White;
+            this.btneditaalimentoms.Image = global::ProjetoNariz.Properties.Resources.edit_6;
+            this.btneditaalimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btneditaalimentoms.Location = new System.Drawing.Point(920, 30);
+            this.btneditaalimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btneditaalimentoms.Name = "btneditaalimentoms";
+            this.btneditaalimentoms.Size = new System.Drawing.Size(95, 45);
+            this.btneditaalimentoms.TabIndex = 2;
+            this.btneditaalimentoms.Text = "Editar";
+            this.btneditaalimentoms.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btneditaalimentoms.UseVisualStyleBackColor = false;
+            this.btneditaalimentoms.Click += new System.EventHandler(this.btneditaralimentoms_Click);
             // 
             // lblnomealimentoms
             // 
@@ -3465,19 +3468,20 @@
             this.lblnomealimentoms.TabIndex = 1;
             this.lblnomealimentoms.Text = "Nome do alimento na matéria natural";
             // 
-            // button6
+            // btnvoltavisualimentoms
             // 
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(10, 11);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(49, 45);
-            this.button6.TabIndex = 0;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnvoltavisualimentoms.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvoltavisualimentoms.BackgroundImage")));
+            this.btnvoltavisualimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnvoltavisualimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnvoltavisualimentoms.FlatAppearance.BorderSize = 0;
+            this.btnvoltavisualimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnvoltavisualimentoms.Location = new System.Drawing.Point(10, 10);
+            this.btnvoltavisualimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btnvoltavisualimentoms.Name = "btnvoltavisualimentoms";
+            this.btnvoltavisualimentoms.Size = new System.Drawing.Size(50, 45);
+            this.btnvoltavisualimentoms.TabIndex = 0;
+            this.btnvoltavisualimentoms.UseVisualStyleBackColor = true;
+            this.btnvoltavisualimentoms.Click += new System.EventHandler(this.btnvoltavisualimentoms_Click);
             // 
             // cbxfiltroalimentoms
             // 
@@ -3602,37 +3606,37 @@
             this.dgvalimentosms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosms.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvalimentosms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvalimentosms.GridColor = System.Drawing.Color.White;
             this.dgvalimentosms.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosms.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosms.MultiSelect = false;
             this.dgvalimentosms.Name = "dgvalimentosms";
             this.dgvalimentosms.ReadOnly = true;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvalimentosms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosms.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosms.RowTemplate.Height = 24;
@@ -3714,17 +3718,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlvisualizaalimentosmn.AutoScroll = true;
             this.pnlvisualizaalimentosmn.BackColor = System.Drawing.Color.White;
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel7);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel8);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel6);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel5);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel4);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel3);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel11);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel10);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel9);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel2);
-            this.pnlvisualizaalimentosmn.Controls.Add(this.tableLayoutPanel1);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.btncancelareditaoalimentomn);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tabletitulovitaminas);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tablevitaminas);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tabletitulomineirais);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tablemineirais);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tabletituloaminoacidos);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tableaminoacidos);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tablecnf);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tabletituloacidosgraxos);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tableacidosgraxos);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tableumidade);
+            this.pnlvisualizaalimentosmn.Controls.Add(this.tableenergia);
             this.pnlvisualizaalimentosmn.Controls.Add(this.btnsalvaalimentomn);
             this.pnlvisualizaalimentosmn.Controls.Add(this.txtnomealimentomn);
             this.pnlvisualizaalimentosmn.Controls.Add(this.pbxhelpalimentomn);
@@ -3737,24 +3742,24 @@
             this.pnlvisualizaalimentosmn.Margin = new System.Windows.Forms.Padding(2);
             this.pnlvisualizaalimentosmn.Name = "pnlvisualizaalimentosmn";
             this.pnlvisualizaalimentosmn.Size = new System.Drawing.Size(1119, 578);
-            this.pnlvisualizaalimentosmn.TabIndex = 7;
+            this.pnlvisualizaalimentosmn.TabIndex = 1;
             this.pnlvisualizaalimentosmn.Visible = false;
             // 
-            // tableLayoutPanel7
+            // tabletitulovitaminas
             // 
-            this.tableLayoutPanel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel7.ColumnCount = 1;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.Controls.Add(this.lblvitaminas, 0, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(876, 120);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 1;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(220, 25);
-            this.tableLayoutPanel7.TabIndex = 20;
+            this.tabletitulovitaminas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tabletitulovitaminas.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tabletitulovitaminas.ColumnCount = 1;
+            this.tabletitulovitaminas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabletitulovitaminas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletitulovitaminas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletitulovitaminas.Controls.Add(this.lblvitaminas, 0, 0);
+            this.tabletitulovitaminas.Location = new System.Drawing.Point(875, 120);
+            this.tabletitulovitaminas.Name = "tabletitulovitaminas";
+            this.tabletitulovitaminas.RowCount = 1;
+            this.tabletitulovitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tabletitulovitaminas.Size = new System.Drawing.Size(220, 25);
+            this.tabletitulovitaminas.TabIndex = 13;
             // 
             // lblvitaminas
             // 
@@ -3767,75 +3772,75 @@
             this.lblvitaminas.Text = "Vitaminas";
             this.lblvitaminas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel8
+            // tablevitaminas
             // 
-            this.tableLayoutPanel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel8.ColumnCount = 3;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.Controls.Add(this.txtvalvitc, 1, 13);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalvitk, 1, 12);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalcolina, 1, 11);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalbiotina, 1, 10);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalacfolico, 1, 9);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalniacina, 1, 8);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalvitb12, 1, 7);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalvitb6, 1, 6);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalacpantotenico, 1, 5);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalriboflavina, 1, 4);
-            this.tableLayoutPanel8.Controls.Add(this.txtvaltiamina, 1, 3);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalvite, 1, 2);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalvitd, 1, 1);
-            this.tableLayoutPanel8.Controls.Add(this.txtvalvita, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.lblunvitc, 2, 13);
-            this.tableLayoutPanel8.Controls.Add(this.lblvitc, 0, 13);
-            this.tableLayoutPanel8.Controls.Add(this.lblunvitk, 2, 12);
-            this.tableLayoutPanel8.Controls.Add(this.lblvitk, 0, 12);
-            this.tableLayoutPanel8.Controls.Add(this.lbluncolina, 2, 11);
-            this.tableLayoutPanel8.Controls.Add(this.lblcolina, 0, 11);
-            this.tableLayoutPanel8.Controls.Add(this.lblunbiotina, 2, 10);
-            this.tableLayoutPanel8.Controls.Add(this.lblbiotina, 0, 10);
-            this.tableLayoutPanel8.Controls.Add(this.lblunacfolico, 2, 9);
-            this.tableLayoutPanel8.Controls.Add(this.lbacfolico, 0, 9);
-            this.tableLayoutPanel8.Controls.Add(this.lblunniacina, 2, 8);
-            this.tableLayoutPanel8.Controls.Add(this.lblniacina, 0, 8);
-            this.tableLayoutPanel8.Controls.Add(this.lblunvitb12, 2, 7);
-            this.tableLayoutPanel8.Controls.Add(this.lblvitb12, 0, 7);
-            this.tableLayoutPanel8.Controls.Add(this.lblunvitb6, 2, 6);
-            this.tableLayoutPanel8.Controls.Add(this.lblunacpantotenico, 2, 5);
-            this.tableLayoutPanel8.Controls.Add(this.lblacpantotenico, 0, 5);
-            this.tableLayoutPanel8.Controls.Add(this.lblunriboflavina, 2, 4);
-            this.tableLayoutPanel8.Controls.Add(this.lblriboflavina, 0, 4);
-            this.tableLayoutPanel8.Controls.Add(this.lbluntiamina, 2, 3);
-            this.tableLayoutPanel8.Controls.Add(this.lblvitb6, 0, 6);
-            this.tableLayoutPanel8.Controls.Add(this.lbltiamina, 0, 3);
-            this.tableLayoutPanel8.Controls.Add(this.lblunvite, 2, 2);
-            this.tableLayoutPanel8.Controls.Add(this.lblvite, 0, 2);
-            this.tableLayoutPanel8.Controls.Add(this.lblunvitd, 2, 1);
-            this.tableLayoutPanel8.Controls.Add(this.lblvitd, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.lblunvita, 2, 0);
-            this.tableLayoutPanel8.Controls.Add(this.lblvita, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(878, 149);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 14;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(220, 340);
-            this.tableLayoutPanel8.TabIndex = 19;
+            this.tablevitaminas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tablevitaminas.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tablevitaminas.ColumnCount = 3;
+            this.tablevitaminas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablevitaminas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablevitaminas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablevitaminas.Controls.Add(this.txtvalvitc, 1, 13);
+            this.tablevitaminas.Controls.Add(this.txtvalvitk, 1, 12);
+            this.tablevitaminas.Controls.Add(this.txtvalcolina, 1, 11);
+            this.tablevitaminas.Controls.Add(this.txtvalbiotina, 1, 10);
+            this.tablevitaminas.Controls.Add(this.txtvalacfolico, 1, 9);
+            this.tablevitaminas.Controls.Add(this.txtvalniacina, 1, 8);
+            this.tablevitaminas.Controls.Add(this.txtvalvitb12, 1, 7);
+            this.tablevitaminas.Controls.Add(this.txtvalvitb6, 1, 6);
+            this.tablevitaminas.Controls.Add(this.txtvalacpantotenico, 1, 5);
+            this.tablevitaminas.Controls.Add(this.txtvalriboflavina, 1, 4);
+            this.tablevitaminas.Controls.Add(this.txtvaltiamina, 1, 3);
+            this.tablevitaminas.Controls.Add(this.txtvalvite, 1, 2);
+            this.tablevitaminas.Controls.Add(this.txtvalvitd, 1, 1);
+            this.tablevitaminas.Controls.Add(this.txtvalvita, 1, 0);
+            this.tablevitaminas.Controls.Add(this.lblunvitc, 2, 13);
+            this.tablevitaminas.Controls.Add(this.lblvitc, 0, 13);
+            this.tablevitaminas.Controls.Add(this.lblunvitk, 2, 12);
+            this.tablevitaminas.Controls.Add(this.lblvitk, 0, 12);
+            this.tablevitaminas.Controls.Add(this.lbluncolina, 2, 11);
+            this.tablevitaminas.Controls.Add(this.lblcolina, 0, 11);
+            this.tablevitaminas.Controls.Add(this.lblunbiotina, 2, 10);
+            this.tablevitaminas.Controls.Add(this.lblbiotina, 0, 10);
+            this.tablevitaminas.Controls.Add(this.lblunacfolico, 2, 9);
+            this.tablevitaminas.Controls.Add(this.lbacfolico, 0, 9);
+            this.tablevitaminas.Controls.Add(this.lblunniacina, 2, 8);
+            this.tablevitaminas.Controls.Add(this.lblniacina, 0, 8);
+            this.tablevitaminas.Controls.Add(this.lblunvitb12, 2, 7);
+            this.tablevitaminas.Controls.Add(this.lblvitb12, 0, 7);
+            this.tablevitaminas.Controls.Add(this.lblunvitb6, 2, 6);
+            this.tablevitaminas.Controls.Add(this.lblunacpantotenico, 2, 5);
+            this.tablevitaminas.Controls.Add(this.lblacpantotenico, 0, 5);
+            this.tablevitaminas.Controls.Add(this.lblunriboflavina, 2, 4);
+            this.tablevitaminas.Controls.Add(this.lblriboflavina, 0, 4);
+            this.tablevitaminas.Controls.Add(this.lbluntiamina, 2, 3);
+            this.tablevitaminas.Controls.Add(this.lblvitb6, 0, 6);
+            this.tablevitaminas.Controls.Add(this.lbltiamina, 0, 3);
+            this.tablevitaminas.Controls.Add(this.lblunvite, 2, 2);
+            this.tablevitaminas.Controls.Add(this.lblvite, 0, 2);
+            this.tablevitaminas.Controls.Add(this.lblunvitd, 2, 1);
+            this.tablevitaminas.Controls.Add(this.lblvitd, 0, 1);
+            this.tablevitaminas.Controls.Add(this.lblunvita, 2, 0);
+            this.tablevitaminas.Controls.Add(this.lblvita, 0, 0);
+            this.tablevitaminas.Location = new System.Drawing.Point(875, 149);
+            this.tablevitaminas.Name = "tablevitaminas";
+            this.tablevitaminas.RowCount = 14;
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857F));
+            this.tablevitaminas.Size = new System.Drawing.Size(220, 340);
+            this.tablevitaminas.TabIndex = 14;
             // 
             // txtvalvitc
             // 
@@ -3848,8 +3853,8 @@
             this.txtvalvitc.Multiline = true;
             this.txtvalvitc.Name = "txtvalvitc";
             this.txtvalvitc.Size = new System.Drawing.Size(53, 24);
-            this.txtvalvitc.TabIndex = 45;
-            this.txtvalvitc.Text = "54";
+            this.txtvalvitc.TabIndex = 100;
+            this.txtvalvitc.Text = "100";
             this.txtvalvitc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtvalvitk
@@ -3864,7 +3869,7 @@
             this.txtvalvitk.Name = "txtvalvitk";
             this.txtvalvitk.Size = new System.Drawing.Size(53, 22);
             this.txtvalvitk.TabIndex = 44;
-            this.txtvalvitk.Text = "53";
+            this.txtvalvitk.Text = "100";
             this.txtvalvitk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtvalcolina
@@ -3984,7 +3989,7 @@
             this.txtvalriboflavina.Name = "txtvalriboflavina";
             this.txtvalriboflavina.Size = new System.Drawing.Size(53, 22);
             this.txtvalriboflavina.TabIndex = 36;
-            this.txtvalriboflavina.Text = "45";
+            this.txtvalriboflavina.Text = "100";
             this.txtvalriboflavina.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtvaltiamina
@@ -4355,21 +4360,21 @@
             this.lblvita.Text = "Vit A";
             this.lblvita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel6
+            // tabletitulomineirais
             // 
-            this.tableLayoutPanel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Controls.Add(this.lblminerais, 0, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(642, 120);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 1;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(180, 25);
-            this.tableLayoutPanel6.TabIndex = 18;
+            this.tabletitulomineirais.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tabletitulomineirais.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tabletitulomineirais.ColumnCount = 1;
+            this.tabletitulomineirais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabletitulomineirais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletitulomineirais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletitulomineirais.Controls.Add(this.lblminerais, 0, 0);
+            this.tabletitulomineirais.Location = new System.Drawing.Point(642, 120);
+            this.tabletitulomineirais.Name = "tabletitulomineirais";
+            this.tabletitulomineirais.RowCount = 1;
+            this.tabletitulomineirais.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tabletitulomineirais.Size = new System.Drawing.Size(180, 25);
+            this.tabletitulomineirais.TabIndex = 11;
             // 
             // lblminerais
             // 
@@ -4382,71 +4387,71 @@
             this.lblminerais.Text = "Minerais";
             this.lblminerais.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel5
+            // tablemineirais
             // 
-            this.tableLayoutPanel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.Controls.Add(this.txtvals, 1, 12);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalzn, 1, 11);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalse, 1, 10);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalmn, 1, 9);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalfe, 1, 8);
-            this.tableLayoutPanel5.Controls.Add(this.txtvali, 1, 7);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalcu, 1, 6);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalmg, 1, 5);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalcl, 1, 4);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalna, 1, 3);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalk, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalp, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.txtvalca, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lvluns, 2, 12);
-            this.tableLayoutPanel5.Controls.Add(this.lbls, 0, 12);
-            this.tableLayoutPanel5.Controls.Add(this.lblunzn, 2, 11);
-            this.tableLayoutPanel5.Controls.Add(this.lblzn, 0, 11);
-            this.tableLayoutPanel5.Controls.Add(this.lblunse, 2, 10);
-            this.tableLayoutPanel5.Controls.Add(this.lblse, 0, 10);
-            this.tableLayoutPanel5.Controls.Add(this.lblunmn, 2, 9);
-            this.tableLayoutPanel5.Controls.Add(this.lblmn, 0, 9);
-            this.tableLayoutPanel5.Controls.Add(this.lblunfe, 2, 8);
-            this.tableLayoutPanel5.Controls.Add(this.lblfe, 0, 8);
-            this.tableLayoutPanel5.Controls.Add(this.lbluni, 2, 7);
-            this.tableLayoutPanel5.Controls.Add(this.lbli, 0, 7);
-            this.tableLayoutPanel5.Controls.Add(this.lbluncu, 2, 6);
-            this.tableLayoutPanel5.Controls.Add(this.lblunmg, 2, 5);
-            this.tableLayoutPanel5.Controls.Add(this.lblmg, 0, 5);
-            this.tableLayoutPanel5.Controls.Add(this.lbluncl, 2, 4);
-            this.tableLayoutPanel5.Controls.Add(this.lblcl, 0, 4);
-            this.tableLayoutPanel5.Controls.Add(this.lblunna, 2, 3);
-            this.tableLayoutPanel5.Controls.Add(this.lblcu, 0, 6);
-            this.tableLayoutPanel5.Controls.Add(this.lblna, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.lblunk, 2, 2);
-            this.tableLayoutPanel5.Controls.Add(this.lblk, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.lblunp, 2, 1);
-            this.tableLayoutPanel5.Controls.Add(this.lblp, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.lblunca, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lblca, 0, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(642, 149);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 13;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(180, 305);
-            this.tableLayoutPanel5.TabIndex = 17;
+            this.tablemineirais.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tablemineirais.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tablemineirais.ColumnCount = 3;
+            this.tablemineirais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablemineirais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablemineirais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablemineirais.Controls.Add(this.txtvals, 1, 12);
+            this.tablemineirais.Controls.Add(this.txtvalzn, 1, 11);
+            this.tablemineirais.Controls.Add(this.txtvalse, 1, 10);
+            this.tablemineirais.Controls.Add(this.txtvalmn, 1, 9);
+            this.tablemineirais.Controls.Add(this.txtvalfe, 1, 8);
+            this.tablemineirais.Controls.Add(this.txtvali, 1, 7);
+            this.tablemineirais.Controls.Add(this.txtvalcu, 1, 6);
+            this.tablemineirais.Controls.Add(this.txtvalmg, 1, 5);
+            this.tablemineirais.Controls.Add(this.txtvalcl, 1, 4);
+            this.tablemineirais.Controls.Add(this.txtvalna, 1, 3);
+            this.tablemineirais.Controls.Add(this.txtvalk, 1, 2);
+            this.tablemineirais.Controls.Add(this.txtvalp, 1, 1);
+            this.tablemineirais.Controls.Add(this.txtvalca, 1, 0);
+            this.tablemineirais.Controls.Add(this.lvluns, 2, 12);
+            this.tablemineirais.Controls.Add(this.lbls, 0, 12);
+            this.tablemineirais.Controls.Add(this.lblunzn, 2, 11);
+            this.tablemineirais.Controls.Add(this.lblzn, 0, 11);
+            this.tablemineirais.Controls.Add(this.lblunse, 2, 10);
+            this.tablemineirais.Controls.Add(this.lblse, 0, 10);
+            this.tablemineirais.Controls.Add(this.lblunmn, 2, 9);
+            this.tablemineirais.Controls.Add(this.lblmn, 0, 9);
+            this.tablemineirais.Controls.Add(this.lblunfe, 2, 8);
+            this.tablemineirais.Controls.Add(this.lblfe, 0, 8);
+            this.tablemineirais.Controls.Add(this.lbluni, 2, 7);
+            this.tablemineirais.Controls.Add(this.lbli, 0, 7);
+            this.tablemineirais.Controls.Add(this.lbluncu, 2, 6);
+            this.tablemineirais.Controls.Add(this.lblunmg, 2, 5);
+            this.tablemineirais.Controls.Add(this.lblmg, 0, 5);
+            this.tablemineirais.Controls.Add(this.lbluncl, 2, 4);
+            this.tablemineirais.Controls.Add(this.lblcl, 0, 4);
+            this.tablemineirais.Controls.Add(this.lblunna, 2, 3);
+            this.tablemineirais.Controls.Add(this.lblcu, 0, 6);
+            this.tablemineirais.Controls.Add(this.lblna, 0, 3);
+            this.tablemineirais.Controls.Add(this.lblunk, 2, 2);
+            this.tablemineirais.Controls.Add(this.lblk, 0, 2);
+            this.tablemineirais.Controls.Add(this.lblunp, 2, 1);
+            this.tablemineirais.Controls.Add(this.lblp, 0, 1);
+            this.tablemineirais.Controls.Add(this.lblunca, 2, 0);
+            this.tablemineirais.Controls.Add(this.lblca, 0, 0);
+            this.tablemineirais.Location = new System.Drawing.Point(642, 149);
+            this.tablemineirais.Name = "tablemineirais";
+            this.tablemineirais.RowCount = 13;
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tablemineirais.Size = new System.Drawing.Size(180, 305);
+            this.tablemineirais.TabIndex = 12;
             // 
             // txtvals
             // 
@@ -4929,21 +4934,21 @@
             this.lblca.Text = "Ca";
             this.lblca.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel4
+            // tabletituloaminoacidos
             // 
-            this.tableLayoutPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.lblaminoacidos, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(408, 122);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(180, 25);
-            this.tableLayoutPanel4.TabIndex = 13;
+            this.tabletituloaminoacidos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tabletituloaminoacidos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tabletituloaminoacidos.ColumnCount = 1;
+            this.tabletituloaminoacidos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabletituloaminoacidos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletituloaminoacidos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletituloaminoacidos.Controls.Add(this.lblaminoacidos, 0, 0);
+            this.tabletituloaminoacidos.Location = new System.Drawing.Point(408, 120);
+            this.tabletituloaminoacidos.Name = "tabletituloaminoacidos";
+            this.tabletituloaminoacidos.RowCount = 1;
+            this.tabletituloaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tabletituloaminoacidos.Size = new System.Drawing.Size(180, 25);
+            this.tabletituloaminoacidos.TabIndex = 9;
             // 
             // lblaminoacidos
             // 
@@ -4956,71 +4961,71 @@
             this.lblaminoacidos.Text = "Aminoácidos";
             this.lblaminoacidos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel3
+            // tableaminoacidos
             // 
-            this.tableLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel3.Controls.Add(this.txtvaltau, 1, 12);
-            this.tableLayoutPanel3.Controls.Add(this.txtvalval, 1, 11);
-            this.tableLayoutPanel3.Controls.Add(this.txtvaltri, 1, 10);
-            this.tableLayoutPanel3.Controls.Add(this.txtvaltreo, 1, 9);
-            this.tableLayoutPanel3.Controls.Add(this.txtvalfentir, 1, 8);
-            this.tableLayoutPanel3.Controls.Add(this.txtvalfen, 1, 7);
-            this.tableLayoutPanel3.Controls.Add(this.txtvalmetcis, 1, 6);
-            this.tableLayoutPanel3.Controls.Add(this.txtvalmet, 1, 5);
-            this.tableLayoutPanel3.Controls.Add(this.txtvallis, 1, 4);
-            this.tableLayoutPanel3.Controls.Add(this.txtvalleu, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.txtvaliso, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.txtvalhis, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.txtvalarg, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lbluntau, 2, 12);
-            this.tableLayoutPanel3.Controls.Add(this.lbltau, 0, 12);
-            this.tableLayoutPanel3.Controls.Add(this.lblunval, 2, 11);
-            this.tableLayoutPanel3.Controls.Add(this.lblval, 0, 11);
-            this.tableLayoutPanel3.Controls.Add(this.lbluntri, 2, 10);
-            this.tableLayoutPanel3.Controls.Add(this.lbltri, 0, 10);
-            this.tableLayoutPanel3.Controls.Add(this.lbluntreo, 2, 9);
-            this.tableLayoutPanel3.Controls.Add(this.lbltreo, 0, 9);
-            this.tableLayoutPanel3.Controls.Add(this.lblunfentir, 2, 8);
-            this.tableLayoutPanel3.Controls.Add(this.lblfentir, 0, 8);
-            this.tableLayoutPanel3.Controls.Add(this.lblunfen, 2, 7);
-            this.tableLayoutPanel3.Controls.Add(this.lblfen, 0, 7);
-            this.tableLayoutPanel3.Controls.Add(this.lblunmetcis, 2, 6);
-            this.tableLayoutPanel3.Controls.Add(this.lblunmet, 2, 5);
-            this.tableLayoutPanel3.Controls.Add(this.lblmet, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.lblunlis, 2, 4);
-            this.tableLayoutPanel3.Controls.Add(this.lbllis, 0, 4);
-            this.tableLayoutPanel3.Controls.Add(this.lblunleu, 2, 3);
-            this.tableLayoutPanel3.Controls.Add(this.lblmetcis, 0, 6);
-            this.tableLayoutPanel3.Controls.Add(this.lblleu, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.lblunisso, 2, 2);
-            this.tableLayoutPanel3.Controls.Add(this.lblisso, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.lblunhis, 2, 1);
-            this.tableLayoutPanel3.Controls.Add(this.lblhis, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.lblunarg, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.lblarg, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(408, 151);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 13;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(180, 305);
-            this.tableLayoutPanel3.TabIndex = 12;
+            this.tableaminoacidos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableaminoacidos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableaminoacidos.ColumnCount = 3;
+            this.tableaminoacidos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableaminoacidos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableaminoacidos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableaminoacidos.Controls.Add(this.txtvaltau, 1, 12);
+            this.tableaminoacidos.Controls.Add(this.txtvalval, 1, 11);
+            this.tableaminoacidos.Controls.Add(this.txtvaltri, 1, 10);
+            this.tableaminoacidos.Controls.Add(this.txtvaltreo, 1, 9);
+            this.tableaminoacidos.Controls.Add(this.txtvalfentir, 1, 8);
+            this.tableaminoacidos.Controls.Add(this.txtvalfen, 1, 7);
+            this.tableaminoacidos.Controls.Add(this.txtvalmetcis, 1, 6);
+            this.tableaminoacidos.Controls.Add(this.txtvalmet, 1, 5);
+            this.tableaminoacidos.Controls.Add(this.txtvallis, 1, 4);
+            this.tableaminoacidos.Controls.Add(this.txtvalleu, 1, 3);
+            this.tableaminoacidos.Controls.Add(this.txtvaliso, 1, 2);
+            this.tableaminoacidos.Controls.Add(this.txtvalhis, 1, 1);
+            this.tableaminoacidos.Controls.Add(this.txtvalarg, 1, 0);
+            this.tableaminoacidos.Controls.Add(this.lbluntau, 2, 12);
+            this.tableaminoacidos.Controls.Add(this.lbltau, 0, 12);
+            this.tableaminoacidos.Controls.Add(this.lblunval, 2, 11);
+            this.tableaminoacidos.Controls.Add(this.lblval, 0, 11);
+            this.tableaminoacidos.Controls.Add(this.lbluntri, 2, 10);
+            this.tableaminoacidos.Controls.Add(this.lbltri, 0, 10);
+            this.tableaminoacidos.Controls.Add(this.lbluntreo, 2, 9);
+            this.tableaminoacidos.Controls.Add(this.lbltreo, 0, 9);
+            this.tableaminoacidos.Controls.Add(this.lblunfentir, 2, 8);
+            this.tableaminoacidos.Controls.Add(this.lblfentir, 0, 8);
+            this.tableaminoacidos.Controls.Add(this.lblunfen, 2, 7);
+            this.tableaminoacidos.Controls.Add(this.lblfen, 0, 7);
+            this.tableaminoacidos.Controls.Add(this.lblunmetcis, 2, 6);
+            this.tableaminoacidos.Controls.Add(this.lblunmet, 2, 5);
+            this.tableaminoacidos.Controls.Add(this.lblmet, 0, 5);
+            this.tableaminoacidos.Controls.Add(this.lblunlis, 2, 4);
+            this.tableaminoacidos.Controls.Add(this.lbllis, 0, 4);
+            this.tableaminoacidos.Controls.Add(this.lblunleu, 2, 3);
+            this.tableaminoacidos.Controls.Add(this.lblmetcis, 0, 6);
+            this.tableaminoacidos.Controls.Add(this.lblleu, 0, 3);
+            this.tableaminoacidos.Controls.Add(this.lblunisso, 2, 2);
+            this.tableaminoacidos.Controls.Add(this.lblisso, 0, 2);
+            this.tableaminoacidos.Controls.Add(this.lblunhis, 2, 1);
+            this.tableaminoacidos.Controls.Add(this.lblhis, 0, 1);
+            this.tableaminoacidos.Controls.Add(this.lblunarg, 2, 0);
+            this.tableaminoacidos.Controls.Add(this.lblarg, 0, 0);
+            this.tableaminoacidos.Location = new System.Drawing.Point(408, 151);
+            this.tableaminoacidos.Name = "tableaminoacidos";
+            this.tableaminoacidos.RowCount = 13;
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
+            this.tableaminoacidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
+            this.tableaminoacidos.Size = new System.Drawing.Size(180, 305);
+            this.tableaminoacidos.TabIndex = 10;
             // 
             // txtvaltau
             // 
@@ -5199,7 +5204,7 @@
             this.txtvalhis.Name = "txtvalhis";
             this.txtvalhis.Size = new System.Drawing.Size(43, 21);
             this.txtvalhis.TabIndex = 33;
-            this.txtvalhis.Text = "16";
+            this.txtvalhis.Text = "100";
             this.txtvalhis.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtvalarg
@@ -5214,7 +5219,7 @@
             this.txtvalarg.Name = "txtvalarg";
             this.txtvalarg.Size = new System.Drawing.Size(43, 21);
             this.txtvalarg.TabIndex = 26;
-            this.txtvalarg.Text = "15";
+            this.txtvalarg.Text = "100";
             this.txtvalarg.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbluntau
@@ -5503,32 +5508,32 @@
             this.lblarg.Text = "Arg";
             this.lblarg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel11
+            // tablecnf
             // 
-            this.tableLayoutPanel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel11.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel11.ColumnCount = 3;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel11.Controls.Add(this.txtvalfdn, 1, 2);
-            this.tableLayoutPanel11.Controls.Add(this.txtvalfda, 1, 1);
-            this.tableLayoutPanel11.Controls.Add(this.txtvalcnf, 1, 0);
-            this.tableLayoutPanel11.Controls.Add(this.lblunfdn, 2, 2);
-            this.tableLayoutPanel11.Controls.Add(this.lblfdn, 0, 2);
-            this.tableLayoutPanel11.Controls.Add(this.lblunfda, 2, 1);
-            this.tableLayoutPanel11.Controls.Add(this.lblfda, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.lbluncnf, 2, 0);
-            this.tableLayoutPanel11.Controls.Add(this.lblcnf, 0, 0);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(29, 488);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 3;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(325, 75);
-            this.tableLayoutPanel11.TabIndex = 23;
+            this.tablecnf.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tablecnf.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tablecnf.ColumnCount = 3;
+            this.tablecnf.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tablecnf.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablecnf.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tablecnf.Controls.Add(this.txtvalfdn, 1, 2);
+            this.tablecnf.Controls.Add(this.txtvalfda, 1, 1);
+            this.tablecnf.Controls.Add(this.txtvalcnf, 1, 0);
+            this.tablecnf.Controls.Add(this.lblunfdn, 2, 2);
+            this.tablecnf.Controls.Add(this.lblfdn, 0, 2);
+            this.tablecnf.Controls.Add(this.lblunfda, 2, 1);
+            this.tablecnf.Controls.Add(this.lblfda, 0, 1);
+            this.tablecnf.Controls.Add(this.lbluncnf, 2, 0);
+            this.tablecnf.Controls.Add(this.lblcnf, 0, 0);
+            this.tablecnf.Location = new System.Drawing.Point(30, 488);
+            this.tablecnf.Name = "tablecnf";
+            this.tablecnf.RowCount = 3;
+            this.tablecnf.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tablecnf.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tablecnf.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tablecnf.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tablecnf.Size = new System.Drawing.Size(325, 75);
+            this.tablecnf.TabIndex = 8;
             // 
             // txtvalfdn
             // 
@@ -5641,21 +5646,21 @@
             this.lblcnf.Text = "CNF";
             this.lblcnf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel10
+            // tabletituloacidosgraxos
             // 
-            this.tableLayoutPanel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel10.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel10.ColumnCount = 1;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.Controls.Add(this.lblacidosgraxos, 0, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(29, 333);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 1;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(325, 25);
-            this.tableLayoutPanel10.TabIndex = 22;
+            this.tabletituloacidosgraxos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tabletituloacidosgraxos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tabletituloacidosgraxos.ColumnCount = 1;
+            this.tabletituloacidosgraxos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tabletituloacidosgraxos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletituloacidosgraxos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tabletituloacidosgraxos.Controls.Add(this.lblacidosgraxos, 0, 0);
+            this.tabletituloacidosgraxos.Location = new System.Drawing.Point(30, 333);
+            this.tabletituloacidosgraxos.Name = "tabletituloacidosgraxos";
+            this.tabletituloacidosgraxos.RowCount = 1;
+            this.tabletituloacidosgraxos.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tabletituloacidosgraxos.Size = new System.Drawing.Size(325, 25);
+            this.tabletituloacidosgraxos.TabIndex = 6;
             // 
             // lblacidosgraxos
             // 
@@ -5668,35 +5673,35 @@
             this.lblacidosgraxos.Text = "Ácidos Graxos";
             this.lblacidosgraxos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel9
+            // tableacidosgraxos
             // 
-            this.tableLayoutPanel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel9.ColumnCount = 3;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel9.Controls.Add(this.txtvalepadha, 1, 3);
-            this.tableLayoutPanel9.Controls.Add(this.txtvalacaraquidonico, 1, 2);
-            this.tableLayoutPanel9.Controls.Add(this.txtvalaclinoleicon6, 1, 1);
-            this.tableLayoutPanel9.Controls.Add(this.txtvalaclinoleicon3, 1, 0);
-            this.tableLayoutPanel9.Controls.Add(this.lblunepadha, 2, 3);
-            this.tableLayoutPanel9.Controls.Add(this.lblepadha, 0, 3);
-            this.tableLayoutPanel9.Controls.Add(this.lblunacaraquidonico, 2, 2);
-            this.tableLayoutPanel9.Controls.Add(this.lblacaraquidonico, 0, 2);
-            this.tableLayoutPanel9.Controls.Add(this.lblunaclinoleicon6, 2, 1);
-            this.tableLayoutPanel9.Controls.Add(this.lblaclinoleicon6, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.lblunaclinoleicon3, 2, 0);
-            this.tableLayoutPanel9.Controls.Add(this.lblaclinoleicon3, 0, 0);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(29, 366);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 4;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(325, 100);
-            this.tableLayoutPanel9.TabIndex = 21;
+            this.tableacidosgraxos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableacidosgraxos.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableacidosgraxos.ColumnCount = 3;
+            this.tableacidosgraxos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableacidosgraxos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableacidosgraxos.Controls.Add(this.txtvalepadha, 1, 3);
+            this.tableacidosgraxos.Controls.Add(this.txtvalacaraquidonico, 1, 2);
+            this.tableacidosgraxos.Controls.Add(this.txtvalaclinoleicon6, 1, 1);
+            this.tableacidosgraxos.Controls.Add(this.txtvalaclinoleicon3, 1, 0);
+            this.tableacidosgraxos.Controls.Add(this.lblunepadha, 2, 3);
+            this.tableacidosgraxos.Controls.Add(this.lblepadha, 0, 3);
+            this.tableacidosgraxos.Controls.Add(this.lblunacaraquidonico, 2, 2);
+            this.tableacidosgraxos.Controls.Add(this.lblacaraquidonico, 0, 2);
+            this.tableacidosgraxos.Controls.Add(this.lblunaclinoleicon6, 2, 1);
+            this.tableacidosgraxos.Controls.Add(this.lblaclinoleicon6, 0, 1);
+            this.tableacidosgraxos.Controls.Add(this.lblunaclinoleicon3, 2, 0);
+            this.tableacidosgraxos.Controls.Add(this.lblaclinoleicon3, 0, 0);
+            this.tableacidosgraxos.Location = new System.Drawing.Point(30, 366);
+            this.tableacidosgraxos.Name = "tableacidosgraxos";
+            this.tableacidosgraxos.RowCount = 4;
+            this.tableacidosgraxos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableacidosgraxos.Size = new System.Drawing.Size(325, 100);
+            this.tableacidosgraxos.TabIndex = 7;
             // 
             // txtvalepadha
             // 
@@ -5846,48 +5851,48 @@
             this.lblaclinoleicon3.Text = "Ac. Linoleico n-3";
             this.lblaclinoleicon3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel2
+            // tableumidade
             // 
-            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.Controls.Add(this.txtvalenn, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.txtvalmateriamineral, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.txtvalfibrabruta, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.txtvalextratoetereo, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.txtvalproteinabruta, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txtvalmateriaseca, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtvalumidade, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblunenn, 2, 6);
-            this.tableLayoutPanel2.Controls.Add(this.lblenn, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.lblunmaterianatural, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lblmateriamineral, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lblunfibrabruta, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.lblfibrabruta, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.lvlunextratoetereo, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.lblextratoetereo, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.lblunproteinabruta, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblproteinabruta, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblunmateriaseca, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblmateriaseca, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblunumidade, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblumidade, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(29, 147);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 7;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(325, 175);
-            this.tableLayoutPanel2.TabIndex = 11;
+            this.tableumidade.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableumidade.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableumidade.ColumnCount = 3;
+            this.tableumidade.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableumidade.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableumidade.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableumidade.Controls.Add(this.txtvalenn, 1, 6);
+            this.tableumidade.Controls.Add(this.txtvalmateriamineral, 1, 5);
+            this.tableumidade.Controls.Add(this.txtvalfibrabruta, 1, 4);
+            this.tableumidade.Controls.Add(this.txtvalextratoetereo, 1, 3);
+            this.tableumidade.Controls.Add(this.txtvalproteinabruta, 1, 2);
+            this.tableumidade.Controls.Add(this.txtvalmateriaseca, 1, 1);
+            this.tableumidade.Controls.Add(this.txtvalumidade, 1, 0);
+            this.tableumidade.Controls.Add(this.lblunenn, 2, 6);
+            this.tableumidade.Controls.Add(this.lblenn, 0, 6);
+            this.tableumidade.Controls.Add(this.lblunmaterianatural, 2, 5);
+            this.tableumidade.Controls.Add(this.lblmateriamineral, 0, 5);
+            this.tableumidade.Controls.Add(this.lblunfibrabruta, 2, 4);
+            this.tableumidade.Controls.Add(this.lblfibrabruta, 0, 4);
+            this.tableumidade.Controls.Add(this.lvlunextratoetereo, 2, 3);
+            this.tableumidade.Controls.Add(this.lblextratoetereo, 0, 3);
+            this.tableumidade.Controls.Add(this.lblunproteinabruta, 2, 2);
+            this.tableumidade.Controls.Add(this.lblproteinabruta, 0, 2);
+            this.tableumidade.Controls.Add(this.lblunmateriaseca, 2, 1);
+            this.tableumidade.Controls.Add(this.lblmateriaseca, 0, 1);
+            this.tableumidade.Controls.Add(this.lblunumidade, 2, 0);
+            this.tableumidade.Controls.Add(this.lblumidade, 0, 0);
+            this.tableumidade.Location = new System.Drawing.Point(30, 150);
+            this.tableumidade.Name = "tableumidade";
+            this.tableumidade.RowCount = 7;
+            this.tableumidade.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidade.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidade.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidade.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidade.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidade.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidade.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableumidade.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableumidade.Size = new System.Drawing.Size(325, 175);
+            this.tableumidade.TabIndex = 5;
             // 
             // txtvalenn
             // 
@@ -6148,24 +6153,24 @@
             this.lblumidade.Text = "Umidade";
             this.lblumidade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel1
+            // tableenergia
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Controls.Add(this.txtvalenergia, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblunenergia, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblenergia, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(29, 112);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(325, 25);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.tableenergia.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableenergia.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableenergia.ColumnCount = 3;
+            this.tableenergia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableenergia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableenergia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableenergia.Controls.Add(this.txtvalenergia, 1, 0);
+            this.tableenergia.Controls.Add(this.lblunenergia, 2, 0);
+            this.tableenergia.Controls.Add(this.lblenergia, 0, 0);
+            this.tableenergia.Location = new System.Drawing.Point(30, 120);
+            this.tableenergia.Name = "tableenergia";
+            this.tableenergia.RowCount = 1;
+            this.tableenergia.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableenergia.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableenergia.Size = new System.Drawing.Size(325, 25);
+            this.tableenergia.TabIndex = 4;
             // 
             // txtvalenergia
             // 
@@ -6214,15 +6219,13 @@
             this.btnsalvaalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalvaalimentomn.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnsalvaalimentomn.ForeColor = System.Drawing.Color.White;
-            this.btnsalvaalimentomn.Image = global::ProjetoNariz.Properties.Resources.save_temp;
             this.btnsalvaalimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsalvaalimentomn.Location = new System.Drawing.Point(495, 488);
+            this.btnsalvaalimentomn.Location = new System.Drawing.Point(515, 490);
             this.btnsalvaalimentomn.Margin = new System.Windows.Forms.Padding(2);
             this.btnsalvaalimentomn.Name = "btnsalvaalimentomn";
-            this.btnsalvaalimentomn.Size = new System.Drawing.Size(94, 45);
-            this.btnsalvaalimentomn.TabIndex = 55;
+            this.btnsalvaalimentomn.Size = new System.Drawing.Size(90, 40);
+            this.btnsalvaalimentomn.TabIndex = 15;
             this.btnsalvaalimentomn.Text = "Salvar";
-            this.btnsalvaalimentomn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsalvaalimentomn.UseVisualStyleBackColor = false;
             this.btnsalvaalimentomn.Visible = false;
             this.btnsalvaalimentomn.Click += new System.EventHandler(this.btnsalvaalimentomn_Click);
@@ -6234,7 +6237,7 @@
             this.txtnomealimentomn.Multiline = true;
             this.txtnomealimentomn.Name = "txtnomealimentomn";
             this.txtnomealimentomn.Size = new System.Drawing.Size(758, 81);
-            this.txtnomealimentomn.TabIndex = 58;
+            this.txtnomealimentomn.TabIndex = 3;
             this.txtnomealimentomn.Visible = false;
             // 
             // pbxhelpalimentomn
@@ -6242,10 +6245,10 @@
             this.pbxhelpalimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbxhelpalimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.help;
             this.pbxhelpalimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxhelpalimentomn.Location = new System.Drawing.Point(863, 36);
+            this.pbxhelpalimentomn.Location = new System.Drawing.Point(870, 42);
             this.pbxhelpalimentomn.Margin = new System.Windows.Forms.Padding(2);
             this.pbxhelpalimentomn.Name = "pbxhelpalimentomn";
-            this.pbxhelpalimentomn.Size = new System.Drawing.Size(26, 20);
+            this.pbxhelpalimentomn.Size = new System.Drawing.Size(25, 20);
             this.pbxhelpalimentomn.TabIndex = 9;
             this.pbxhelpalimentomn.TabStop = false;
             // 
@@ -6254,7 +6257,7 @@
             this.pnlseparadoralimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlseparadoralimentomn.BackColor = System.Drawing.Color.Gray;
-            this.pnlseparadoralimentomn.Location = new System.Drawing.Point(11, 99);
+            this.pnlseparadoralimentomn.Location = new System.Drawing.Point(10, 100);
             this.pnlseparadoralimentomn.Margin = new System.Windows.Forms.Padding(2);
             this.pnlseparadoralimentomn.Name = "pnlseparadoralimentomn";
             this.pnlseparadoralimentomn.Size = new System.Drawing.Size(1080, 2);
@@ -6271,11 +6274,11 @@
             this.btnexcluiralimentomn.ForeColor = System.Drawing.SystemColors.Control;
             this.btnexcluiralimentomn.Image = global::ProjetoNariz.Properties.Resources.close_cross;
             this.btnexcluiralimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexcluiralimentomn.Location = new System.Drawing.Point(1019, 31);
+            this.btnexcluiralimentomn.Location = new System.Drawing.Point(1020, 30);
             this.btnexcluiralimentomn.Margin = new System.Windows.Forms.Padding(2);
             this.btnexcluiralimentomn.Name = "btnexcluiralimentomn";
-            this.btnexcluiralimentomn.Size = new System.Drawing.Size(79, 45);
-            this.btnexcluiralimentomn.TabIndex = 57;
+            this.btnexcluiralimentomn.Size = new System.Drawing.Size(80, 45);
+            this.btnexcluiralimentomn.TabIndex = 2;
             this.btnexcluiralimentomn.Text = "Excluir";
             this.btnexcluiralimentomn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnexcluiralimentomn.UseVisualStyleBackColor = false;
@@ -6292,11 +6295,11 @@
             this.btneditaalimentomn.ForeColor = System.Drawing.Color.White;
             this.btneditaalimentomn.Image = global::ProjetoNariz.Properties.Resources.edit_6;
             this.btneditaalimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btneditaalimentomn.Location = new System.Drawing.Point(921, 31);
+            this.btneditaalimentomn.Location = new System.Drawing.Point(920, 30);
             this.btneditaalimentomn.Margin = new System.Windows.Forms.Padding(2);
             this.btneditaalimentomn.Name = "btneditaalimentomn";
             this.btneditaalimentomn.Size = new System.Drawing.Size(94, 45);
-            this.btneditaalimentomn.TabIndex = 56;
+            this.btneditaalimentomn.TabIndex = 1;
             this.btneditaalimentomn.Text = "Editar";
             this.btneditaalimentomn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btneditaalimentomn.UseVisualStyleBackColor = false;
@@ -6321,10 +6324,10 @@
             this.btnvoltavisualizaalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvoltavisualizaalimentomn.FlatAppearance.BorderSize = 0;
             this.btnvoltavisualizaalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnvoltavisualizaalimentomn.Location = new System.Drawing.Point(10, 11);
+            this.btnvoltavisualizaalimentomn.Location = new System.Drawing.Point(10, 10);
             this.btnvoltavisualizaalimentomn.Margin = new System.Windows.Forms.Padding(2);
             this.btnvoltavisualizaalimentomn.Name = "btnvoltavisualizaalimentomn";
-            this.btnvoltavisualizaalimentomn.Size = new System.Drawing.Size(49, 45);
+            this.btnvoltavisualizaalimentomn.Size = new System.Drawing.Size(50, 45);
             this.btnvoltavisualizaalimentomn.TabIndex = 0;
             this.btnvoltavisualizaalimentomn.UseVisualStyleBackColor = true;
             this.btnvoltavisualizaalimentomn.Click += new System.EventHandler(this.btnvoltavisualizaalimentomn_Click);
@@ -6359,37 +6362,37 @@
             this.dgvalimentosmn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosmn.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosmn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvalimentosmn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvalimentosmn.GridColor = System.Drawing.Color.White;
             this.dgvalimentosmn.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosmn.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosmn.MultiSelect = false;
             this.dgvalimentosmn.Name = "dgvalimentosmn";
             this.dgvalimentosmn.ReadOnly = true;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvalimentosmn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosmn.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosmn.RowTemplate.Height = 24;
@@ -6577,17 +6580,58 @@
             this.btnvisalimentomn.UseVisualStyleBackColor = false;
             this.btnvisalimentomn.Click += new System.EventHandler(this.btnvisalimentomn_Click);
             // 
+            // btncancelareditaoalimentomn
+            // 
+            this.btncancelareditaoalimentomn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btncancelareditaoalimentomn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btncancelareditaoalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncancelareditaoalimentomn.Enabled = false;
+            this.btncancelareditaoalimentomn.FlatAppearance.BorderSize = 0;
+            this.btncancelareditaoalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelareditaoalimentomn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btncancelareditaoalimentomn.ForeColor = System.Drawing.Color.White;
+            this.btncancelareditaoalimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncancelareditaoalimentomn.Location = new System.Drawing.Point(630, 490);
+            this.btncancelareditaoalimentomn.Margin = new System.Windows.Forms.Padding(2);
+            this.btncancelareditaoalimentomn.Name = "btncancelareditaoalimentomn";
+            this.btncancelareditaoalimentomn.Size = new System.Drawing.Size(90, 40);
+            this.btncancelareditaoalimentomn.TabIndex = 16;
+            this.btncancelareditaoalimentomn.Text = "Cancelar";
+            this.btncancelareditaoalimentomn.UseVisualStyleBackColor = false;
+            this.btncancelareditaoalimentomn.Visible = false;
+            this.btncancelareditaoalimentomn.Click += new System.EventHandler(this.btncancelareditaoalimentomn_Click);
+            // 
+            // btncancelaalimentoms
+            // 
+            this.btncancelaalimentoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btncancelaalimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btncancelaalimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncancelaalimentoms.Enabled = false;
+            this.btncancelaalimentoms.FlatAppearance.BorderSize = 0;
+            this.btncancelaalimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelaalimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btncancelaalimentoms.ForeColor = System.Drawing.Color.White;
+            this.btncancelaalimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncancelaalimentoms.Location = new System.Drawing.Point(608, 478);
+            this.btncancelaalimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btncancelaalimentoms.Name = "btncancelaalimentoms";
+            this.btncancelaalimentoms.Size = new System.Drawing.Size(90, 40);
+            this.btncancelaalimentoms.TabIndex = 13;
+            this.btncancelaalimentoms.Text = "Cancelar";
+            this.btncancelaalimentoms.UseVisualStyleBackColor = false;
+            this.btncancelaalimentoms.Visible = false;
+            this.btncancelaalimentoms.Click += new System.EventHandler(this.btncancelaalimentoms_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(177)))));
             this.ClientSize = new System.Drawing.Size(1305, 715);
-            this.Controls.Add(this.pnlselecionaalimento);
+            this.Controls.Add(this.pnlalimentosmn);
             this.Controls.Add(this.pnlalimentosms);
             this.Controls.Add(this.pnlsuperior);
             this.Controls.Add(this.pnllateral);
-            this.Controls.Add(this.pnlalimentosmn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Principal";
@@ -6611,46 +6655,46 @@
             this.pnlalimentosms.PerformLayout();
             this.pnlvisualizaalimentosms.ResumeLayout(false);
             this.pnlvisualizaalimentosms.PerformLayout();
-            this.tableLayoutPanel12.ResumeLayout(false);
-            this.tableLayoutPanel12.PerformLayout();
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel14.ResumeLayout(false);
-            this.tableLayoutPanel14.PerformLayout();
-            this.tableLayoutPanel15.ResumeLayout(false);
-            this.tableLayoutPanel16.ResumeLayout(false);
-            this.tableLayoutPanel16.PerformLayout();
-            this.tableLayoutPanel17.ResumeLayout(false);
-            this.tableLayoutPanel18.ResumeLayout(false);
-            this.tableLayoutPanel18.PerformLayout();
-            this.tableLayoutPanel19.ResumeLayout(false);
-            this.tableLayoutPanel20.ResumeLayout(false);
-            this.tableLayoutPanel20.PerformLayout();
-            this.tableLayoutPanel21.ResumeLayout(false);
-            this.tableLayoutPanel21.PerformLayout();
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tablecnfms.ResumeLayout(false);
+            this.tablecnfms.PerformLayout();
+            this.tabletituloacidosgraxoms.ResumeLayout(false);
+            this.tableacidosgraxosms.ResumeLayout(false);
+            this.tableacidosgraxosms.PerformLayout();
+            this.tabletitulovitaminasms.ResumeLayout(false);
+            this.tablevitaminasms.ResumeLayout(false);
+            this.tablevitaminasms.PerformLayout();
+            this.tabletitulomineraisms.ResumeLayout(false);
+            this.tablemineirams.ResumeLayout(false);
+            this.tablemineirams.PerformLayout();
+            this.tabletituloaminoacidosms.ResumeLayout(false);
+            this.tableaminoacidosms.ResumeLayout(false);
+            this.tableaminoacidosms.PerformLayout();
+            this.tableumidadems.ResumeLayout(false);
+            this.tableumidadems.PerformLayout();
+            this.tableenergiams.ResumeLayout(false);
+            this.tableenergiams.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxtooltipalimentoms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosms)).EndInit();
             this.pnlvisualizaalimentosmn.ResumeLayout(false);
             this.pnlvisualizaalimentosmn.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
-            this.tableLayoutPanel10.ResumeLayout(false);
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.tabletitulovitaminas.ResumeLayout(false);
+            this.tablevitaminas.ResumeLayout(false);
+            this.tablevitaminas.PerformLayout();
+            this.tabletitulomineirais.ResumeLayout(false);
+            this.tablemineirais.ResumeLayout(false);
+            this.tablemineirais.PerformLayout();
+            this.tabletituloaminoacidos.ResumeLayout(false);
+            this.tableaminoacidos.ResumeLayout(false);
+            this.tableaminoacidos.PerformLayout();
+            this.tablecnf.ResumeLayout(false);
+            this.tablecnf.PerformLayout();
+            this.tabletituloacidosgraxos.ResumeLayout(false);
+            this.tableacidosgraxos.ResumeLayout(false);
+            this.tableacidosgraxos.PerformLayout();
+            this.tableumidade.ResumeLayout(false);
+            this.tableumidade.PerformLayout();
+            this.tableenergia.ResumeLayout(false);
+            this.tableenergia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxhelpalimentomn)).EndInit();
             this.pnlalimentosmn.ResumeLayout(false);
             this.pnlalimentosmn.PerformLayout();
@@ -6684,14 +6728,14 @@
         private System.Windows.Forms.PictureBox pbxalimentosmn;
         private System.Windows.Forms.ToolTip tipalimentosmn;
         private System.Windows.Forms.Panel pnlvisualizaalimentosmn;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableenergia;
         private System.Windows.Forms.PictureBox pbxhelpalimentomn;
         private System.Windows.Forms.Panel pnlseparadoralimentomn;
         private System.Windows.Forms.Button btnexcluiralimentomn;
         private System.Windows.Forms.Button btneditaalimentomn;
         private System.Windows.Forms.Label lblnomealimentomn;
         private System.Windows.Forms.Button btnvoltavisualizaalimentomn;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableumidade;
         private System.Windows.Forms.Label lblunenn;
         private System.Windows.Forms.Label lblenn;
         private System.Windows.Forms.Label lblunmaterianatural;
@@ -6708,9 +6752,9 @@
         private System.Windows.Forms.Label lblumidade;
         private System.Windows.Forms.Label lblunenergia;
         private System.Windows.Forms.Label lblenergia;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel tabletituloaminoacidos;
         private System.Windows.Forms.Label lblaminoacidos;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableaminoacidos;
         private System.Windows.Forms.Label lblunmetcis;
         private System.Windows.Forms.Label lblunmet;
         private System.Windows.Forms.Label lblmet;
@@ -6737,9 +6781,9 @@
         private System.Windows.Forms.Label lblunfentir;
         private System.Windows.Forms.Label lblfentir;
         private System.Windows.Forms.Label lblunfen;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.TableLayoutPanel tabletitulovitaminas;
         private System.Windows.Forms.Label lblvitaminas;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.TableLayoutPanel tablevitaminas;
         private System.Windows.Forms.Label lblunvitc;
         private System.Windows.Forms.Label lblvitc;
         private System.Windows.Forms.Label lblunvitk;
@@ -6768,9 +6812,9 @@
         private System.Windows.Forms.Label lblvitd;
         private System.Windows.Forms.Label lblunvita;
         private System.Windows.Forms.Label lblvita;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tabletitulomineirais;
         private System.Windows.Forms.Label lblminerais;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TableLayoutPanel tablemineirais;
         private System.Windows.Forms.Label lvluns;
         private System.Windows.Forms.Label lbls;
         private System.Windows.Forms.Label lblunzn;
@@ -6797,12 +6841,12 @@
         private System.Windows.Forms.Label lblp;
         private System.Windows.Forms.Label lblunca;
         private System.Windows.Forms.Label lblca;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.TableLayoutPanel tablecnf;
         private System.Windows.Forms.Label lbluncnf;
         private System.Windows.Forms.Label lblcnf;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.TableLayoutPanel tabletituloacidosgraxos;
         private System.Windows.Forms.Label lblacidosgraxos;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.TableLayoutPanel tableacidosgraxos;
         private System.Windows.Forms.Label lblunaclinoleicon3;
         private System.Windows.Forms.Label lblaclinoleicon3;
         private System.Windows.Forms.Label lblunfdn;
@@ -6881,163 +6925,163 @@
         private System.Windows.Forms.Button btnescolhealimentoms;
         private System.Windows.Forms.Button btnescolhealimentomn;
         private System.Windows.Forms.Panel pnlvisualizaalimentosms;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnsalvaalimentoms;
         private System.Windows.Forms.TextBox txtnomealimentoms;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
+        private System.Windows.Forms.TableLayoutPanel tablecnfms;
         private System.Windows.Forms.TextBox txtvalfdnms;
         private System.Windows.Forms.TextBox txtvalfdams;
         private System.Windows.Forms.TextBox txtvalcnfms;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
+        private System.Windows.Forms.Label lblunfdnms;
+        private System.Windows.Forms.Label lblfdnms;
+        private System.Windows.Forms.Label lblunfdams;
+        private System.Windows.Forms.Label lblfdams;
+        private System.Windows.Forms.Label lbluncnfms;
+        private System.Windows.Forms.Label lblcnfms;
+        private System.Windows.Forms.TableLayoutPanel tabletituloacidosgraxoms;
+        private System.Windows.Forms.Label lblacidosgraxoms;
+        private System.Windows.Forms.TableLayoutPanel tableacidosgraxosms;
         private System.Windows.Forms.TextBox txtvalepadhams;
         private System.Windows.Forms.TextBox txtvalacaraquidonicoms;
         private System.Windows.Forms.TextBox txtvalaclinoleicon6ms;
         private System.Windows.Forms.TextBox txtvalaclinoleicon3ms;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
+        private System.Windows.Forms.Label lblunepadhams;
+        private System.Windows.Forms.Label lblepadhams;
+        private System.Windows.Forms.Label lblunacaraquidonicoms;
+        private System.Windows.Forms.Label lblacaraquidonicoms;
+        private System.Windows.Forms.Label lblunaclinoleico6ms;
+        private System.Windows.Forms.Label lblaclinoleico6ms;
+        private System.Windows.Forms.Label lblunaclinoleico3ms;
+        private System.Windows.Forms.Label lblaclinoleicon3ms;
+        private System.Windows.Forms.TableLayoutPanel tabletitulovitaminasms;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.TextBox textBox47;
-        private System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
+        private System.Windows.Forms.TableLayoutPanel tablevitaminasms;
+        private System.Windows.Forms.TextBox txtvalvitcms;
+        private System.Windows.Forms.TextBox txtvalvitkms;
+        private System.Windows.Forms.TextBox txtvalcolinams;
+        private System.Windows.Forms.TextBox txtvalbiotinams;
+        private System.Windows.Forms.TextBox txtvalacfolicoms;
+        private System.Windows.Forms.TextBox txtvalniacinams;
+        private System.Windows.Forms.TextBox txtvalvitb12ms;
+        private System.Windows.Forms.TextBox txtvalvitb6ms;
+        private System.Windows.Forms.TextBox txtvalacpantotenicoms;
+        private System.Windows.Forms.TextBox txtvalriboflavinams;
+        private System.Windows.Forms.TextBox txtvaltiaminams;
+        private System.Windows.Forms.TextBox txtvalvitems;
+        private System.Windows.Forms.TextBox txtvalvitdms;
+        private System.Windows.Forms.TextBox txtvalvitams;
+        private System.Windows.Forms.Label lblunvitcms;
+        private System.Windows.Forms.Label lblvitcms;
+        private System.Windows.Forms.Label lblunvitkms;
+        private System.Windows.Forms.Label lblvitkms;
+        private System.Windows.Forms.Label lbluncolinams;
+        private System.Windows.Forms.Label lblcolinams;
+        private System.Windows.Forms.Label lblunbiotinams;
+        private System.Windows.Forms.Label lblbiotinams;
+        private System.Windows.Forms.Label lblunacfolicoms;
+        private System.Windows.Forms.Label lblacfolicoms;
+        private System.Windows.Forms.Label lblunniacinams;
+        private System.Windows.Forms.Label lblniacinams;
+        private System.Windows.Forms.Label lblunvitb12ms;
+        private System.Windows.Forms.Label lblvitb12ms;
+        private System.Windows.Forms.Label lblunvitb6ms;
+        private System.Windows.Forms.Label lblunacpantotenicoms;
+        private System.Windows.Forms.Label lblacpntotenicoms;
+        private System.Windows.Forms.Label lblunriboflavinams;
+        private System.Windows.Forms.Label lblriboflavinams;
+        private System.Windows.Forms.Label lbluntiaminams;
+        private System.Windows.Forms.Label lblvitb6ms;
+        private System.Windows.Forms.Label lbltiaminams;
+        private System.Windows.Forms.Label lblunvitems;
+        private System.Windows.Forms.Label lblvitems;
+        private System.Windows.Forms.Label lblunvitdms;
+        private System.Windows.Forms.Label lblvitdms;
+        private System.Windows.Forms.Label lblunvitams;
+        private System.Windows.Forms.Label lblvitams;
+        private System.Windows.Forms.TableLayoutPanel tabletitulomineraisms;
+        private System.Windows.Forms.Label lblmineraisms;
+        private System.Windows.Forms.TableLayoutPanel tablemineirams;
+        private System.Windows.Forms.TextBox txtvalsms;
+        private System.Windows.Forms.TextBox txtvalznms;
+        private System.Windows.Forms.TextBox txtvalsems;
+        private System.Windows.Forms.TextBox txtvalmnms;
+        private System.Windows.Forms.TextBox txtvalfems;
+        private System.Windows.Forms.TextBox txtvalims;
+        private System.Windows.Forms.TextBox txtvalcums;
+        private System.Windows.Forms.TextBox txtvalmgms;
+        private System.Windows.Forms.TextBox txtvalclms;
+        private System.Windows.Forms.TextBox txtvalnams;
+        private System.Windows.Forms.TextBox txtvalkms;
+        private System.Windows.Forms.TextBox txtvalpms;
+        private System.Windows.Forms.TextBox txtvalcams;
+        private System.Windows.Forms.Label lblunsms;
+        private System.Windows.Forms.Label lblsms;
+        private System.Windows.Forms.Label lblunznms;
+        private System.Windows.Forms.Label lblznms;
+        private System.Windows.Forms.Label lblunsems;
+        private System.Windows.Forms.Label lblsems;
+        private System.Windows.Forms.Label lblunmnms;
+        private System.Windows.Forms.Label lblmnms;
+        private System.Windows.Forms.Label lblunfems;
+        private System.Windows.Forms.Label lblfems;
+        private System.Windows.Forms.Label lblunims;
+        private System.Windows.Forms.Label lblims;
+        private System.Windows.Forms.Label lbluncums;
+        private System.Windows.Forms.Label lblunmgms;
+        private System.Windows.Forms.Label lblmgms;
+        private System.Windows.Forms.Label lblunclms;
+        private System.Windows.Forms.Label lblclms;
+        private System.Windows.Forms.Label lblunnams;
+        private System.Windows.Forms.Label lblcums;
+        private System.Windows.Forms.Label lblnams;
+        private System.Windows.Forms.Label lblunkms;
+        private System.Windows.Forms.Label lblkms;
+        private System.Windows.Forms.Label lblunpms;
+        private System.Windows.Forms.Label lblpms;
+        private System.Windows.Forms.Label lbluncams;
+        private System.Windows.Forms.Label lblcams;
+        private System.Windows.Forms.TableLayoutPanel tabletituloaminoacidosms;
+        private System.Windows.Forms.Label lblaminoacidosms;
+        private System.Windows.Forms.TableLayoutPanel tableaminoacidosms;
+        private System.Windows.Forms.TextBox txtvaltaums;
+        private System.Windows.Forms.TextBox txtvalvalms;
+        private System.Windows.Forms.TextBox txtvaltrims;
+        private System.Windows.Forms.TextBox txtvaltreoms;
+        private System.Windows.Forms.TextBox txtvalfentirms;
+        private System.Windows.Forms.TextBox txtvalfenms;
+        private System.Windows.Forms.TextBox txtvalmetcisms;
+        private System.Windows.Forms.TextBox txtvalmetms;
+        private System.Windows.Forms.TextBox txtvallisms;
+        private System.Windows.Forms.TextBox txtvalleums;
+        private System.Windows.Forms.TextBox txtvalisoms;
+        private System.Windows.Forms.TextBox txtvalhisms;
+        private System.Windows.Forms.TextBox txtvalargms;
+        private System.Windows.Forms.Label lbluntaums;
+        private System.Windows.Forms.Label lbltaums;
+        private System.Windows.Forms.Label lblunvalms;
+        private System.Windows.Forms.Label lblvalms;
+        private System.Windows.Forms.Label lbluntrims;
+        private System.Windows.Forms.Label lbltrims;
+        private System.Windows.Forms.Label lbluntreoms;
+        private System.Windows.Forms.Label lbltreoms;
+        private System.Windows.Forms.Label lblunfertirms;
+        private System.Windows.Forms.Label lblfentirms;
+        private System.Windows.Forms.Label lblunfenms;
+        private System.Windows.Forms.Label lblfenms;
+        private System.Windows.Forms.Label lblunmetcisms;
+        private System.Windows.Forms.Label lblunmetms;
+        private System.Windows.Forms.Label lblmetms;
+        private System.Windows.Forms.Label lblunlisms;
+        private System.Windows.Forms.Label lbllisms;
+        private System.Windows.Forms.Label lblunleums;
+        private System.Windows.Forms.Label lblmetcisms;
+        private System.Windows.Forms.Label lblleums;
+        private System.Windows.Forms.Label lblunisoms;
+        private System.Windows.Forms.Label lblisoms;
+        private System.Windows.Forms.Label lblunhisms;
+        private System.Windows.Forms.Label lblhisms;
+        private System.Windows.Forms.Label lblunargms;
+        private System.Windows.Forms.Label lblargms;
+        private System.Windows.Forms.TableLayoutPanel tableumidadems;
         private System.Windows.Forms.TextBox txtvalennms;
         private System.Windows.Forms.TextBox txtvalmateriamineralms;
         private System.Windows.Forms.TextBox txtvalfibrabrutams;
@@ -7045,29 +7089,29 @@
         private System.Windows.Forms.TextBox txtvalproteinabrutams;
         private System.Windows.Forms.TextBox txtvalmateriasecams;
         private System.Windows.Forms.TextBox txtvalumidadems;
-        private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.Label label103;
-        private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.Label label105;
-        private System.Windows.Forms.Label label106;
-        private System.Windows.Forms.Label label107;
-        private System.Windows.Forms.Label label108;
-        private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.Label label110;
-        private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.Label label113;
-        private System.Windows.Forms.Label label114;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
+        private System.Windows.Forms.Label lblunennms;
+        private System.Windows.Forms.Label lblennms;
+        private System.Windows.Forms.Label lblunmateriamineralms;
+        private System.Windows.Forms.Label lblmateriamineralms;
+        private System.Windows.Forms.Label lblunfibrabrutams;
+        private System.Windows.Forms.Label lblfibrabrutams;
+        private System.Windows.Forms.Label lblunextratoetereoms;
+        private System.Windows.Forms.Label lblextratoetereoms;
+        private System.Windows.Forms.Label lblunproteinabrutams;
+        private System.Windows.Forms.Label lblproteinabrutams;
+        private System.Windows.Forms.Label lblunmateriasecams;
+        private System.Windows.Forms.Label lblmateriasecams;
+        private System.Windows.Forms.Label lblunumidadems;
+        private System.Windows.Forms.Label lblumidadems;
+        private System.Windows.Forms.TableLayoutPanel tableenergiams;
         private System.Windows.Forms.TextBox txtvalenergiams;
-        private System.Windows.Forms.Label label115;
-        private System.Windows.Forms.Label label116;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblunenergiams;
+        private System.Windows.Forms.Label lblenergiams;
+        private System.Windows.Forms.PictureBox pbxtooltipalimentoms;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnexcluiralimentoms;
+        private System.Windows.Forms.Button btneditaalimentoms;
+        private System.Windows.Forms.Button btnvoltavisualimentoms;
         private System.Windows.Forms.Panel pnlalimentosmn;
         private System.Windows.Forms.DataGridView dgvalimentosmn;
         private System.Windows.Forms.ComboBox cbxfiltroalimentomn;
@@ -7077,5 +7121,7 @@
         private System.Windows.Forms.Button btnvisalimentomn;
         private System.Windows.Forms.ComboBox cbxfiltroalimentoms;
         private System.Windows.Forms.Label lblnomealimentoms;
+        private System.Windows.Forms.Button btncancelareditaoalimentomn;
+        private System.Windows.Forms.Button btncancelaalimentoms;
     }
 }
