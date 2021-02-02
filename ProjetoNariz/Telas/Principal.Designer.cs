@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlsuperior = new System.Windows.Forms.Panel();
-            this.lblusuario = new System.Windows.Forms.Label();
-            this.pbxusuario = new System.Windows.Forms.PictureBox();
-            this.pbxlogo = new System.Windows.Forms.PictureBox();
             this.pnlselecionaalimento = new System.Windows.Forms.Panel();
             this.lblescolhealimentoms = new System.Windows.Forms.Label();
             this.lblescolhealimentomn = new System.Windows.Forms.Label();
             this.btnescolhealimentoms = new System.Windows.Forms.Button();
             this.btnescolhealimentomn = new System.Windows.Forms.Button();
+            this.lblusuario = new System.Windows.Forms.Label();
+            this.pbxusuario = new System.Windows.Forms.PictureBox();
+            this.pbxlogo = new System.Windows.Forms.PictureBox();
             this.pnlsuperioralimentosms = new System.Windows.Forms.Panel();
             this.lblalimentosms = new System.Windows.Forms.Label();
             this.pbxalimentosms = new System.Windows.Forms.PictureBox();
@@ -61,6 +61,7 @@
             this.btnalimentos = new System.Windows.Forms.Button();
             this.pnlalimentosms = new System.Windows.Forms.Panel();
             this.pnlvisualizaalimentosms = new System.Windows.Forms.Panel();
+            this.btncancelaalimentoms = new System.Windows.Forms.Button();
             this.btnsalvaalimentoms = new System.Windows.Forms.Button();
             this.txtnomealimentoms = new System.Windows.Forms.TextBox();
             this.tablecnfms = new System.Windows.Forms.TableLayoutPanel();
@@ -256,6 +257,7 @@
             this.btnnovoalimentoms = new System.Windows.Forms.Button();
             this.btnvisalimentoms = new System.Windows.Forms.Button();
             this.pnlvisualizaalimentosmn = new System.Windows.Forms.Panel();
+            this.btncancelareditaoalimentomn = new System.Windows.Forms.Button();
             this.tabletitulovitaminas = new System.Windows.Forms.TableLayoutPanel();
             this.lblvitaminas = new System.Windows.Forms.Label();
             this.tablevitaminas = new System.Windows.Forms.TableLayoutPanel();
@@ -452,12 +454,10 @@
             this.btnnovoalimentomn = new System.Windows.Forms.Button();
             this.btnvisalimentomn = new System.Windows.Forms.Button();
             this.tipalimentosmn = new System.Windows.Forms.ToolTip(this.components);
-            this.btncancelareditaoalimentomn = new System.Windows.Forms.Button();
-            this.btncancelaalimentoms = new System.Windows.Forms.Button();
             this.pnlsuperior.SuspendLayout();
+            this.pnlselecionaalimento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).BeginInit();
-            this.pnlselecionaalimento.SuspendLayout();
             this.pnlsuperioralimentosms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).BeginInit();
             this.pnlsuperioralimentosmn.SuspendLayout();
@@ -500,7 +500,6 @@
             this.pnlsuperior.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlsuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            this.pnlsuperior.Controls.Add(this.pnlselecionaalimento);
             this.pnlsuperior.Controls.Add(this.lblusuario);
             this.pnlsuperior.Controls.Add(this.pbxusuario);
             this.pnlsuperior.Controls.Add(this.pbxlogo);
@@ -509,45 +508,6 @@
             this.pnlsuperior.Name = "pnlsuperior";
             this.pnlsuperior.Size = new System.Drawing.Size(1318, 62);
             this.pnlsuperior.TabIndex = 1;
-            // 
-            // lblusuario
-            // 
-            this.lblusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblusuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblusuario.ForeColor = System.Drawing.Color.White;
-            this.lblusuario.Location = new System.Drawing.Point(808, 17);
-            this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(410, 30);
-            this.lblusuario.TabIndex = 0;
-            this.lblusuario.Text = "Murilo José Marques Maia";
-            this.lblusuario.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // pbxusuario
-            // 
-            this.pbxusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxusuario.BackColor = System.Drawing.Color.Transparent;
-            this.pbxusuario.BackgroundImage = global::ProjetoNariz.Properties.Resources.male_user_shadow_48;
-            this.pbxusuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbxusuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxusuario.Location = new System.Drawing.Point(1222, 10);
-            this.pbxusuario.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxusuario.Name = "pbxusuario";
-            this.pbxusuario.Size = new System.Drawing.Size(56, 41);
-            this.pbxusuario.TabIndex = 2;
-            this.pbxusuario.TabStop = false;
-            // 
-            // pbxlogo
-            // 
-            this.pbxlogo.BackColor = System.Drawing.Color.White;
-            this.pbxlogo.BackgroundImage = global::ProjetoNariz.Properties.Resources.Logo;
-            this.pbxlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxlogo.Location = new System.Drawing.Point(32, 10);
-            this.pbxlogo.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxlogo.Name = "pbxlogo";
-            this.pbxlogo.Size = new System.Drawing.Size(190, 41);
-            this.pbxlogo.TabIndex = 1;
-            this.pbxlogo.TabStop = false;
             // 
             // pnlselecionaalimento
             // 
@@ -559,7 +519,7 @@
             this.pnlselecionaalimento.Controls.Add(this.lblescolhealimentomn);
             this.pnlselecionaalimento.Controls.Add(this.btnescolhealimentoms);
             this.pnlselecionaalimento.Controls.Add(this.btnescolhealimentomn);
-            this.pnlselecionaalimento.Location = new System.Drawing.Point(1283, 41);
+            this.pnlselecionaalimento.Location = new System.Drawing.Point(165, 80);
             this.pnlselecionaalimento.Name = "pnlselecionaalimento";
             this.pnlselecionaalimento.Size = new System.Drawing.Size(1132, 629);
             this.pnlselecionaalimento.TabIndex = 9;
@@ -613,12 +573,51 @@
             this.btnescolhealimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnescolhealimentomn.FlatAppearance.BorderSize = 0;
             this.btnescolhealimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnescolhealimentomn.Location = new System.Drawing.Point(8, 7);
+            this.btnescolhealimentomn.Location = new System.Drawing.Point(6, 7);
             this.btnescolhealimentomn.Name = "btnescolhealimentomn";
             this.btnescolhealimentomn.Size = new System.Drawing.Size(566, 629);
             this.btnescolhealimentomn.TabIndex = 3;
             this.btnescolhealimentomn.UseVisualStyleBackColor = false;
             this.btnescolhealimentomn.Click += new System.EventHandler(this.btnescolhealimentomn_Click);
+            // 
+            // lblusuario
+            // 
+            this.lblusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblusuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusuario.ForeColor = System.Drawing.Color.White;
+            this.lblusuario.Location = new System.Drawing.Point(808, 17);
+            this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblusuario.Name = "lblusuario";
+            this.lblusuario.Size = new System.Drawing.Size(410, 30);
+            this.lblusuario.TabIndex = 0;
+            this.lblusuario.Text = "Murilo José Marques Maia";
+            this.lblusuario.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pbxusuario
+            // 
+            this.pbxusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbxusuario.BackColor = System.Drawing.Color.Transparent;
+            this.pbxusuario.BackgroundImage = global::ProjetoNariz.Properties.Resources.male_user_shadow_48;
+            this.pbxusuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbxusuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxusuario.Location = new System.Drawing.Point(1222, 10);
+            this.pbxusuario.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxusuario.Name = "pbxusuario";
+            this.pbxusuario.Size = new System.Drawing.Size(56, 41);
+            this.pbxusuario.TabIndex = 2;
+            this.pbxusuario.TabStop = false;
+            // 
+            // pbxlogo
+            // 
+            this.pbxlogo.BackColor = System.Drawing.Color.White;
+            this.pbxlogo.BackgroundImage = global::ProjetoNariz.Properties.Resources.Logo;
+            this.pbxlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxlogo.Location = new System.Drawing.Point(32, 10);
+            this.pbxlogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxlogo.Name = "pbxlogo";
+            this.pbxlogo.Size = new System.Drawing.Size(190, 41);
+            this.pbxlogo.TabIndex = 1;
+            this.pbxlogo.TabStop = false;
             // 
             // pnlsuperioralimentosms
             // 
@@ -895,6 +894,27 @@
             this.pnlvisualizaalimentosms.Size = new System.Drawing.Size(1119, 576);
             this.pnlvisualizaalimentosms.TabIndex = 0;
             this.pnlvisualizaalimentosms.Visible = false;
+            // 
+            // btncancelaalimentoms
+            // 
+            this.btncancelaalimentoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btncancelaalimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btncancelaalimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncancelaalimentoms.Enabled = false;
+            this.btncancelaalimentoms.FlatAppearance.BorderSize = 0;
+            this.btncancelaalimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelaalimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btncancelaalimentoms.ForeColor = System.Drawing.Color.White;
+            this.btncancelaalimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncancelaalimentoms.Location = new System.Drawing.Point(608, 478);
+            this.btncancelaalimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btncancelaalimentoms.Name = "btncancelaalimentoms";
+            this.btncancelaalimentoms.Size = new System.Drawing.Size(90, 40);
+            this.btncancelaalimentoms.TabIndex = 13;
+            this.btncancelaalimentoms.Text = "Cancelar";
+            this.btncancelaalimentoms.UseVisualStyleBackColor = false;
+            this.btncancelaalimentoms.Visible = false;
+            this.btncancelaalimentoms.Click += new System.EventHandler(this.btncancelaalimentoms_Click);
             // 
             // btnsalvaalimentoms
             // 
@@ -3606,37 +3626,37 @@
             this.dgvalimentosms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosms.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dgvalimentosms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle32;
             this.dgvalimentosms.GridColor = System.Drawing.Color.White;
             this.dgvalimentosms.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosms.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosms.MultiSelect = false;
             this.dgvalimentosms.Name = "dgvalimentosms";
             this.dgvalimentosms.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this.dgvalimentosms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosms.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosms.RowTemplate.Height = 24;
@@ -3692,6 +3712,7 @@
             this.btnnovoalimentoms.TabIndex = 2;
             this.btnnovoalimentoms.Text = "Adicionar Alimento";
             this.btnnovoalimentoms.UseVisualStyleBackColor = false;
+            this.btnnovoalimentoms.Click += new System.EventHandler(this.btnnovoalimentoms_Click);
             // 
             // btnvisalimentoms
             // 
@@ -3744,6 +3765,27 @@
             this.pnlvisualizaalimentosmn.Size = new System.Drawing.Size(1119, 578);
             this.pnlvisualizaalimentosmn.TabIndex = 1;
             this.pnlvisualizaalimentosmn.Visible = false;
+            // 
+            // btncancelareditaoalimentomn
+            // 
+            this.btncancelareditaoalimentomn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btncancelareditaoalimentomn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btncancelareditaoalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncancelareditaoalimentomn.Enabled = false;
+            this.btncancelareditaoalimentomn.FlatAppearance.BorderSize = 0;
+            this.btncancelareditaoalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelareditaoalimentomn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btncancelareditaoalimentomn.ForeColor = System.Drawing.Color.White;
+            this.btncancelareditaoalimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncancelareditaoalimentomn.Location = new System.Drawing.Point(630, 490);
+            this.btncancelareditaoalimentomn.Margin = new System.Windows.Forms.Padding(2);
+            this.btncancelareditaoalimentomn.Name = "btncancelareditaoalimentomn";
+            this.btncancelareditaoalimentomn.Size = new System.Drawing.Size(90, 40);
+            this.btncancelareditaoalimentomn.TabIndex = 16;
+            this.btncancelareditaoalimentomn.Text = "Cancelar";
+            this.btncancelareditaoalimentomn.UseVisualStyleBackColor = false;
+            this.btncancelareditaoalimentomn.Visible = false;
+            this.btncancelareditaoalimentomn.Click += new System.EventHandler(this.btncancelareditaoalimentomn_Click);
             // 
             // tabletitulovitaminas
             // 
@@ -6362,37 +6404,37 @@
             this.dgvalimentosmn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosmn.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosmn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.dgvalimentosmn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle35;
             this.dgvalimentosmn.GridColor = System.Drawing.Color.White;
             this.dgvalimentosmn.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosmn.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosmn.MultiSelect = false;
             this.dgvalimentosmn.Name = "dgvalimentosmn";
             this.dgvalimentosmn.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.dgvalimentosmn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosmn.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosmn.RowTemplate.Height = 24;
@@ -6561,6 +6603,7 @@
             this.btnnovoalimentomn.TabIndex = 2;
             this.btnnovoalimentomn.Text = "Adicionar Alimento";
             this.btnnovoalimentomn.UseVisualStyleBackColor = false;
+            this.btnnovoalimentomn.Click += new System.EventHandler(this.btnnovoalimentomn_Click);
             // 
             // btnvisalimentomn
             // 
@@ -6580,54 +6623,13 @@
             this.btnvisalimentomn.UseVisualStyleBackColor = false;
             this.btnvisalimentomn.Click += new System.EventHandler(this.btnvisalimentomn_Click);
             // 
-            // btncancelareditaoalimentomn
-            // 
-            this.btncancelareditaoalimentomn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btncancelareditaoalimentomn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
-            this.btncancelareditaoalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncancelareditaoalimentomn.Enabled = false;
-            this.btncancelareditaoalimentomn.FlatAppearance.BorderSize = 0;
-            this.btncancelareditaoalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancelareditaoalimentomn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btncancelareditaoalimentomn.ForeColor = System.Drawing.Color.White;
-            this.btncancelareditaoalimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncancelareditaoalimentomn.Location = new System.Drawing.Point(630, 490);
-            this.btncancelareditaoalimentomn.Margin = new System.Windows.Forms.Padding(2);
-            this.btncancelareditaoalimentomn.Name = "btncancelareditaoalimentomn";
-            this.btncancelareditaoalimentomn.Size = new System.Drawing.Size(90, 40);
-            this.btncancelareditaoalimentomn.TabIndex = 16;
-            this.btncancelareditaoalimentomn.Text = "Cancelar";
-            this.btncancelareditaoalimentomn.UseVisualStyleBackColor = false;
-            this.btncancelareditaoalimentomn.Visible = false;
-            this.btncancelareditaoalimentomn.Click += new System.EventHandler(this.btncancelareditaoalimentomn_Click);
-            // 
-            // btncancelaalimentoms
-            // 
-            this.btncancelaalimentoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btncancelaalimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
-            this.btncancelaalimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncancelaalimentoms.Enabled = false;
-            this.btncancelaalimentoms.FlatAppearance.BorderSize = 0;
-            this.btncancelaalimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancelaalimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btncancelaalimentoms.ForeColor = System.Drawing.Color.White;
-            this.btncancelaalimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncancelaalimentoms.Location = new System.Drawing.Point(608, 478);
-            this.btncancelaalimentoms.Margin = new System.Windows.Forms.Padding(2);
-            this.btncancelaalimentoms.Name = "btncancelaalimentoms";
-            this.btncancelaalimentoms.Size = new System.Drawing.Size(90, 40);
-            this.btncancelaalimentoms.TabIndex = 13;
-            this.btncancelaalimentoms.Text = "Cancelar";
-            this.btncancelaalimentoms.UseVisualStyleBackColor = false;
-            this.btncancelaalimentoms.Visible = false;
-            this.btncancelaalimentoms.Click += new System.EventHandler(this.btncancelaalimentoms_Click);
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(177)))));
             this.ClientSize = new System.Drawing.Size(1305, 715);
+            this.Controls.Add(this.pnlselecionaalimento);
             this.Controls.Add(this.pnlalimentosmn);
             this.Controls.Add(this.pnlalimentosms);
             this.Controls.Add(this.pnlsuperior);
@@ -6640,10 +6642,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Principal_Load);
             this.pnlsuperior.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).EndInit();
             this.pnlselecionaalimento.ResumeLayout(false);
             this.pnlselecionaalimento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).EndInit();
             this.pnlsuperioralimentosms.ResumeLayout(false);
             this.pnlsuperioralimentosms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).EndInit();

@@ -398,7 +398,7 @@ namespace ProjetoNariz
             ",'" + Carboidratos + "','" + FB + "','" + ENN + "','" + FDN + "','" + FDA + "','" + CNF + "'" +
             ",'" + Vit_A + "','" + Vit_D + "','" + Vit_E + "','" + Tiamina + "','" + Riboflavina + "','" + Ac_Pantotenico + "'" +
             ",'" + Vit_B6 + "','" + Vit_B12 + "','" + Niacina + "','" + Ac_Folico + "','" + Biotina + "','" + Colina + "'" +
-            ",'" + Vit_K + "','" + Vit_C + "',);";
+            ",'" + Vit_K + "','" + Vit_C + "');";
 
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();
@@ -417,7 +417,7 @@ namespace ProjetoNariz
             ", Se ='" + Se + "', Zn ='" + Zn + "', S ='" + S + "', Carboidratos ='" + Carboidratos + "', FB ='" + FB + "', ENN ='" + ENN + "'" +
             ", FDN ='" + FDN + "', FDA ='" + FDA + "', CNF ='" + CNF + "', Vit_A ='" + Vit_A + "', Vit_D ='" + Vit_D + "', Vit_E ='" + Vit_E + "'" +
             ", Tiamina ='" + Tiamina + "', Riboflavina ='" + Riboflavina + "', Ac_Pantotenico ='" + Ac_Pantotenico + "', Vit_B6 ='" + Vit_B6 + "', Vit_B12 ='" + Vit_B12 + "', Niacina ='" + Niacina + "', Ac_Folico ='" + Ac_Folico + "'" +
-            ", Biotina ='" + Biotina + "', Colina ='" + Colina + "', Vit_K ='" + Vit_K + "', Vit_C ='" + Vit_C + "' where Id =" + Id + ";";
+            ", Biotina ='" + Biotina + "', Colina ='" + Colina + "', Vit_K ='" + Vit_K + "', Vit_C ='" + Vit_C + "' where Id =" +id + ";";
 
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();
@@ -426,7 +426,7 @@ namespace ProjetoNariz
         {
             string SQL;
 
-            SQL = "Delete from alimentosmn where Id=" + Id + ";";
+            SQL = "Delete from alimentosmn where Id=" + id + ";";
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();
         }
@@ -568,7 +568,7 @@ namespace ProjetoNariz
             ",'" + Carboidratos + "','" + FB + "','" + ENN + "','" + FDN + "','" + FDA + "','" + CNF + "'" +
             ",'" + Vit_A + "','" + Vit_D + "','" + Vit_E + "','" + Tiamina + "','" + Riboflavina + "','" + Ac_Pantotenico + "'" +
             ",'" + Vit_B6 + "','" + Vit_B12 + "','" + Niacina + "','" + Ac_Folico + "','" + Biotina + "','" + Colina + "'" +
-            ",'" + Vit_K + "','" + Vit_C + "',);";
+            ",'" + Vit_K + "','" + Vit_C + "');";
 
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();
@@ -587,7 +587,7 @@ namespace ProjetoNariz
             ", Se ='" + Se + "', Zn ='" + Zn + "', S ='" + S + "', Carboidratos ='" + Carboidratos + "', FB ='" + FB + "', ENN ='" + ENN + "'" +
             ", FDN ='" + FDN + "', FDA ='" + FDA + "', CNF ='" + CNF + "', Vit_A ='" + Vit_A + "', Vit_D ='" + Vit_D + "', Vit_E ='" + Vit_E + "'" +
             ", Tiamina ='" + Tiamina + "', Riboflavina ='" + Riboflavina + "', Ac_Pantotenico ='" + Ac_Pantotenico + "', Vit_B6 ='" + Vit_B6 + "', Vit_B12 ='" + Vit_B12 + "', Niacina ='" + Niacina + "', Ac_Folico ='" + Ac_Folico + "'" +
-            ", Biotina ='" + Biotina + "', Colina ='" + Colina + "', Vit_K ='" + Vit_K + "', Vit_C ='" + Vit_C + "' where Id =" + Id + ";";
+            ", Biotina ='" + Biotina + "', Colina ='" + Colina + "', Vit_K ='" + Vit_K + "', Vit_C ='" + Vit_C + "' where Id =" + id + ";";
 
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();
@@ -596,7 +596,7 @@ namespace ProjetoNariz
         {
             string SQL;
 
-            SQL = "Delete from alimentosms where Id=" + Id + ";";
+            SQL = "Delete from alimentosms where Id=" + id + ";";
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();
         }
