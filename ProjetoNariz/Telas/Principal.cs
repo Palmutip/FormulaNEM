@@ -14,11 +14,7 @@ namespace ProjetoNariz.Telas
 {
     public partial class Principal : Form
     {
-        FuncoesBanco f = new FuncoesBanco();
-        Tradutor t = new Tradutor();
-        List<TextBox> ControleTxtMN = new List<TextBox>();
-        List<String> ControleObjMN = new List<String>();
-        private static bool Salva = false;
+        #region Inicializadores do programa
         public Principal()
         {
             InitializeComponent();
@@ -26,13 +22,19 @@ namespace ProjetoNariz.Telas
 
         private void Principal_Load(object sender, EventArgs e)
         {
-            CarregaCombobox();
-            CarregaTips();
-            dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
-            dgvalimentosms.DataSource = f.AtualizaAlimentosMS();
-        }
 
-        //Funções
+        }
+        #endregion
+
+        #region Variáveis utilizadas para manipulação dos dados
+        FuncoesBanco f = new FuncoesBanco();
+        Tradutor t = new Tradutor();
+        List<TextBox> ControleTxtMN = new List<TextBox>();
+        List<String> ControleObjMN = new List<String>();
+        private static bool Salva = false;
+        #endregion
+
+        #region Funções
         private void ClicaInicio()
         {
             this.btnalimentos.BackColor = Color.FromArgb(174, 214, 129);
@@ -40,6 +42,7 @@ namespace ProjetoNariz.Telas
             this.btndietas.BackColor = Color.FromArgb(174, 214, 129);
             this.btnformular.BackColor = Color.FromArgb(174, 214, 129);
             this.btnhome.BackColor = Color.FromArgb(125, 164, 83);
+            this.btnespecies.BackColor = Color.FromArgb(174, 214, 129);
 
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
@@ -53,11 +56,15 @@ namespace ProjetoNariz.Telas
             this.btndietas.BackColor = Color.FromArgb(174, 214, 129);
             this.btnformular.BackColor = Color.FromArgb(174, 214, 129);
             this.btnhome.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnespecies.BackColor = Color.FromArgb(174, 214, 129);
 
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
 
-            //PaineisPrincipais(pnlali);
+            CarregaCombobox();
+            CarregaTips();
+
+            PaineisPrincipais(pnlselecionaalimento);
         }
         private void ClicaSair()
         {
@@ -66,6 +73,7 @@ namespace ProjetoNariz.Telas
             this.btndietas.BackColor = Color.FromArgb(174, 214, 129);
             this.btnformular.BackColor = Color.FromArgb(174, 214, 129);
             this.btnhome.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnespecies.BackColor = Color.FromArgb(174, 214, 129);
 
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(125, 164, 83);
@@ -79,6 +87,7 @@ namespace ProjetoNariz.Telas
             this.btndietas.BackColor = Color.FromArgb(174, 214, 129);
             this.btnformular.BackColor = Color.FromArgb(174, 214, 129);
             this.btnhome.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnespecies.BackColor = Color.FromArgb(174, 214, 129);
 
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
@@ -92,6 +101,7 @@ namespace ProjetoNariz.Telas
             this.btndietas.BackColor = Color.FromArgb(125, 164, 83);
             this.btnformular.BackColor = Color.FromArgb(174, 214, 129);
             this.btnhome.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnespecies.BackColor = Color.FromArgb(174, 214, 129);
 
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
@@ -105,11 +115,12 @@ namespace ProjetoNariz.Telas
             this.btndietas.BackColor = Color.FromArgb(174, 214, 129);
             this.btnformular.BackColor = Color.FromArgb(125, 164, 83);
             this.btnhome.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnespecies.BackColor = Color.FromArgb(174, 214, 129);
 
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
 
-            //PaineisPrincipais(pnlali);
+            PaineisPrincipais(pnlformulacao);
         }
         private void ClicaConfiguracoes()
         {
@@ -118,11 +129,28 @@ namespace ProjetoNariz.Telas
             this.btndietas.BackColor = Color.FromArgb(174, 214, 129);
             this.btnformular.BackColor = Color.FromArgb(174, 214, 129);
             this.btnhome.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnespecies.BackColor = Color.FromArgb(174, 214, 129);
 
             this.btnconfig.BackColor = Color.FromArgb(125, 164, 83);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
 
             //PaineisPrincipais(pnlali);
+        }
+        private void ClicaEspecie()
+        {
+            this.btnalimentos.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnavaliar.BackColor = Color.FromArgb(174, 214, 129);
+            this.btndietas.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnformular.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnhome.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnespecies.BackColor = Color.FromArgb(125, 164, 83);
+
+            this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
+            this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
+
+            LimpaCampos(3);
+
+            PaineisPrincipais(pnlespecies);
         }
         private void PaineisPrincipais(Panel panel1, Panel panel2, Panel panel3)
         {
@@ -160,6 +188,8 @@ namespace ProjetoNariz.Telas
             pnlsuperioralimentosmn.Visible = false;
             pnlsuperioralimentosms.Visible = false;
             pnlselecionaalimento.Visible = false;
+            pnlformulacao.Visible = false;
+            pnlespecies.Visible = false;
 
             panel.Visible = true;
         }
@@ -168,164 +198,196 @@ namespace ProjetoNariz.Telas
             cbxfiltroalimentomn.Text = "Filtro";
             cbxfiltroalimentoms.Text = "Filtro";
         }
-        private void LimpaCampos()
+        private void LimpaCampos(int modulo)
         {
-            cbxfiltroalimentomn.Text = "Filtro";
-            cbxfiltroalimentoms.Text = "Filtro";
-            txtbuscaalimentomn.Text = "O que você procura?";
-            txtbuscaalimentoms.Text = "O que você procura?";
+            #region Modulo  1 é Alimentos MN
+            if (modulo == 1)
+            {
+                cbxfiltroalimentomn.Text = "Filtro";
+                txtbuscaalimentomn.Text = "O que você procura?";
 
-            txtnomealimentomn.Visible = false;
-            txtnomealimentomn.Text = string.Empty;
-            lblnomealimentomn.Text = string.Empty;
-            txtvalenergia.Text = string.Empty;
-            txtvalumidade.Text = string.Empty;
-            txtvalmateriaseca.Text = string.Empty;
-            txtvalproteinabruta.Text = string.Empty;
-            txtvalextratoetereo.Text = string.Empty;
-            txtvalfibrabruta.Text = string.Empty;
-            txtvalmateriamineral.Text = string.Empty;
-            txtvalenn.Text = string.Empty;
-            txtvalaclinoleicon3.Text = string.Empty;
-            txtvalaclinoleicon6.Text = string.Empty;
-            txtvalacaraquidonico.Text = string.Empty; 
-            txtvalepadha.Text = string.Empty;
-            txtvalcnf.Text = string.Empty;
-            txtvalfda.Text = string.Empty;
-            txtvalfdn.Text = string.Empty;
-            txtvalarg.Text = string.Empty;
-            txtvalhis.Text = string.Empty;
-            txtvaliso.Text = string.Empty;
-            txtvalleu.Text = string.Empty;
-            txtvallis.Text = string.Empty;
-            txtvalmet.Text = string.Empty;
-            txtvalmetcis.Text = string.Empty;
-            txtvalfen.Text = string.Empty;
-            txtvalfentir.Text = string.Empty;
-            txtvaltreo.Text = string.Empty;
-            txtvaltri.Text = string.Empty;
-            txtvalval.Text = string.Empty;
-            txtvaltau.Text = string.Empty;
-            txtvalca.Text = string.Empty;
-            txtvalp.Text = string.Empty;
-            txtvalk.Text = string.Empty;
-            txtvalna.Text = string.Empty;
-            txtvalcl.Text = string.Empty;
-            txtvalmg.Text = string.Empty;
-            txtvalcu.Text = string.Empty;
-            txtvali.Text = string.Empty;
-            txtvalfe.Text = string.Empty;
-            txtvalmn.Text = string.Empty;
-            txtvalse.Text = string.Empty;
-            txtvalzn.Text = string.Empty;
-            txtvals.Text = string.Empty;
-            txtvalvita.Text = string.Empty;
-            txtvalvitd.Text = string.Empty;
-            txtvalvite.Text = string.Empty;
-            txtvaltiamina.Text = string.Empty;
-            txtvalriboflavina.Text = string.Empty;
-            txtvalacpantotenico.Text = string.Empty;
-            txtvalvitb6.Text = string.Empty;
-            txtvalvitb12.Text = string.Empty;
-            txtvalniacina.Text = string.Empty;
-            txtvalacfolico.Text = string.Empty;
-            txtvalbiotina.Text = string.Empty;
-            txtvalcolina.Text = string.Empty;
-            txtvalvitk.Text = string.Empty;
-            txtvalvitc.Text = string.Empty;
+                txtnomealimentomn.Visible = false;
+                txtnomealimentomn.Text = string.Empty;
+                lblnomealimentomn.Text = string.Empty;
+                txtvalenergia.Text = string.Empty;
+                txtvalumidade.Text = string.Empty;
+                txtvalmateriaseca.Text = string.Empty;
+                txtvalproteinabruta.Text = string.Empty;
+                txtvalextratoetereo.Text = string.Empty;
+                txtvalfibrabruta.Text = string.Empty;
+                txtvalmateriamineral.Text = string.Empty;
+                txtvalenn.Text = string.Empty;
+                txtvalaclinoleicon3.Text = string.Empty;
+                txtvalaclinoleicon6.Text = string.Empty;
+                txtvalacaraquidonico.Text = string.Empty;
+                txtvalepadha.Text = string.Empty;
+                txtvalcnf.Text = string.Empty;
+                txtvalfda.Text = string.Empty;
+                txtvalfdn.Text = string.Empty;
+                txtvalarg.Text = string.Empty;
+                txtvalhis.Text = string.Empty;
+                txtvaliso.Text = string.Empty;
+                txtvalleu.Text = string.Empty;
+                txtvallis.Text = string.Empty;
+                txtvalmet.Text = string.Empty;
+                txtvalmetcis.Text = string.Empty;
+                txtvalfen.Text = string.Empty;
+                txtvalfentir.Text = string.Empty;
+                txtvaltreo.Text = string.Empty;
+                txtvaltri.Text = string.Empty;
+                txtvalval.Text = string.Empty;
+                txtvaltau.Text = string.Empty;
+                txtvalca.Text = string.Empty;
+                txtvalp.Text = string.Empty;
+                txtvalk.Text = string.Empty;
+                txtvalna.Text = string.Empty;
+                txtvalcl.Text = string.Empty;
+                txtvalmg.Text = string.Empty;
+                txtvalcu.Text = string.Empty;
+                txtvali.Text = string.Empty;
+                txtvalfe.Text = string.Empty;
+                txtvalmn.Text = string.Empty;
+                txtvalse.Text = string.Empty;
+                txtvalzn.Text = string.Empty;
+                txtvals.Text = string.Empty;
+                txtvalvita.Text = string.Empty;
+                txtvalvitd.Text = string.Empty;
+                txtvalvite.Text = string.Empty;
+                txtvaltiamina.Text = string.Empty;
+                txtvalriboflavina.Text = string.Empty;
+                txtvalacpantotenico.Text = string.Empty;
+                txtvalvitb6.Text = string.Empty;
+                txtvalvitb12.Text = string.Empty;
+                txtvalniacina.Text = string.Empty;
+                txtvalacfolico.Text = string.Empty;
+                txtvalbiotina.Text = string.Empty;
+                txtvalcolina.Text = string.Empty;
+                txtvalvitk.Text = string.Empty;
+                txtvalvitc.Text = string.Empty;
 
-            lblnomealimentoms.Text = string.Empty;
-            txtvalenergiams.Text = string.Empty;
-            txtvalumidadems.Text = string.Empty;
-            txtvalmateriasecams.Text = string.Empty;
-            txtvalproteinabrutams.Text = string.Empty;
-            txtvalextratoetereoms.Text = string.Empty;
-            txtvalfibrabrutams.Text = string.Empty;
-            txtvalmateriamineralms.Text = string.Empty;
-            txtvalennms.Text = string.Empty;
-            txtvalaclinoleicon3ms.Text = string.Empty;
-            txtvalaclinoleicon6ms.Text = string.Empty;
-            txtvalacaraquidonicoms.Text = string.Empty;
-            txtvalepadhams.Text = string.Empty;
-            txtvalcnfms.Text = string.Empty;
-            txtvalfdams.Text = string.Empty;
-            txtvalfdnms.Text = string.Empty;
-            txtvalargms.Text = string.Empty;
-            txtvalhisms.Text = string.Empty;
-            txtvalisoms.Text = string.Empty;
-            txtvalleums.Text = string.Empty;
-            txtvallisms.Text = string.Empty;
-            txtvalmetms.Text = string.Empty;
-            txtvalmetcisms.Text = string.Empty;
-            txtvalfenms.Text = string.Empty;
-            txtvalfentirms.Text = string.Empty;
-            txtvaltreoms.Text = string.Empty;
-            txtvaltrims.Text = string.Empty;
-            txtvalvalms.Text = string.Empty;
-            txtvaltaums.Text = string.Empty;
-            txtvalcams.Text = string.Empty;
-            txtvalp.Text = string.Empty;
-            txtvalkms.Text = string.Empty;
-            txtvalnams.Text = string.Empty;
-            txtvalclms.Text = string.Empty;
-            txtvalmgms.Text = string.Empty;
-            txtvalcums.Text = string.Empty;
-            txtvalims.Text = string.Empty;
-            txtvalfems.Text = string.Empty;
-            txtvalmnms.Text = string.Empty;
-            txtvalsems.Text = string.Empty;
-            txtvalznms.Text = string.Empty;
-            txtvalsms.Text = string.Empty;
-            txtvalvitams.Text = string.Empty;
-            txtvalvitdms.Text = string.Empty;
-            txtvalvitems.Text = string.Empty;
-            txtvaltiaminams.Text = string.Empty;
-            txtvalriboflavinams.Text = string.Empty;
-            txtvalacpantotenicoms.Text = string.Empty;
-            txtvalvitb6ms.Text = string.Empty;
-            txtvalvitb12ms.Text = string.Empty;
-            txtvalniacinams.Text = string.Empty;
-            txtvalacfolicoms.Text = string.Empty;
-            txtvalbiotinams.Text = string.Empty;
-            txtvalcolinams.Text = string.Empty;
-            txtvalvitkms.Text = string.Empty;
-            txtvalvitcms.Text = string.Empty;
+                btneditaalimentomn.Visible = true;
+                btneditaalimentomn.Enabled = true;
+                btneditaalimentomn.Text = "Editar";
+                btneditaalimentomn.ForeColor = Color.White;
+                btneditaalimentomn.BackColor = Color.FromArgb(255, 179, 0);
+                btnexcluiralimentomn.Visible = true;
+                btnexcluiralimentomn.Enabled = true;
 
-            btneditaalimentomn.Visible = true;
-            btneditaalimentomn.Enabled = true;
-            btneditaalimentomn.Text = "Editar";
-            btneditaalimentomn.ForeColor = Color.White;
-            btneditaalimentomn.BackColor = Color.FromArgb(255, 179, 0);
-            btnexcluiralimentomn.Visible = true;
-            btnexcluiralimentomn.Enabled = true;
+                btnsalvaalimentomn.Enabled = false;
+                btnsalvaalimentomn.Visible = false;
+                btncancelareditaoalimentomn.Visible = false;
+                btncancelareditaoalimentomn.Enabled = false;
 
-            btnsalvaalimentomn.Enabled = false;
-            btnsalvaalimentomn.Visible = false;
-            btncancelareditaoalimentomn.Visible = false;
-            btncancelareditaoalimentomn.Enabled = false;
+                txtnomealimentomn.Visible = false;
+                txtnomealimentomn.Enabled = false;
+            }
+            #endregion
 
-            txtnomealimentomn.Visible = false;
-            txtnomealimentomn.Enabled = false;
+            #region Módulo 2 é Alimentos MS
+            else if (modulo == 2)
+            {
+                cbxfiltroalimentoms.Text = "Filtro";
 
-            btneditaalimentoms.Visible = true;
-            btneditaalimentoms.Enabled = true;
-            btneditaalimentoms.Text = "Editar";
-            btneditaalimentoms.ForeColor = Color.White;
-            btneditaalimentoms.BackColor = Color.FromArgb(255, 179, 0);
-            btnexcluiralimentoms.Visible = true;
-            btnexcluiralimentoms.Enabled = true;
+                txtbuscaalimentoms.Text = "O que você procura?";
 
-            btnsalvaalimentoms.Enabled = false;
-            btnsalvaalimentoms.Visible = false;
-            btncancelaalimentoms.Visible = false;
-            btncancelaalimentoms.Enabled = false;
+                lblnomealimentoms.Text = string.Empty;
+                txtvalenergiams.Text = string.Empty;
+                txtvalumidadems.Text = string.Empty;
+                txtvalmateriasecams.Text = string.Empty;
+                txtvalproteinabrutams.Text = string.Empty;
+                txtvalextratoetereoms.Text = string.Empty;
+                txtvalfibrabrutams.Text = string.Empty;
+                txtvalmateriamineralms.Text = string.Empty;
+                txtvalennms.Text = string.Empty;
+                txtvalaclinoleicon3ms.Text = string.Empty;
+                txtvalaclinoleicon6ms.Text = string.Empty;
+                txtvalacaraquidonicoms.Text = string.Empty;
+                txtvalepadhams.Text = string.Empty;
+                txtvalcnfms.Text = string.Empty;
+                txtvalfdams.Text = string.Empty;
+                txtvalfdnms.Text = string.Empty;
+                txtvalargms.Text = string.Empty;
+                txtvalhisms.Text = string.Empty;
+                txtvalisoms.Text = string.Empty;
+                txtvalleums.Text = string.Empty;
+                txtvallisms.Text = string.Empty;
+                txtvalmetms.Text = string.Empty;
+                txtvalmetcisms.Text = string.Empty;
+                txtvalfenms.Text = string.Empty;
+                txtvalfentirms.Text = string.Empty;
+                txtvaltreoms.Text = string.Empty;
+                txtvaltrims.Text = string.Empty;
+                txtvalvalms.Text = string.Empty;
+                txtvaltaums.Text = string.Empty;
+                txtvalcams.Text = string.Empty;
+                txtvalp.Text = string.Empty;
+                txtvalkms.Text = string.Empty;
+                txtvalnams.Text = string.Empty;
+                txtvalclms.Text = string.Empty;
+                txtvalmgms.Text = string.Empty;
+                txtvalcums.Text = string.Empty;
+                txtvalims.Text = string.Empty;
+                txtvalfems.Text = string.Empty;
+                txtvalmnms.Text = string.Empty;
+                txtvalsems.Text = string.Empty;
+                txtvalznms.Text = string.Empty;
+                txtvalsms.Text = string.Empty;
+                txtvalvitams.Text = string.Empty;
+                txtvalvitdms.Text = string.Empty;
+                txtvalvitems.Text = string.Empty;
+                txtvaltiaminams.Text = string.Empty;
+                txtvalriboflavinams.Text = string.Empty;
+                txtvalacpantotenicoms.Text = string.Empty;
+                txtvalvitb6ms.Text = string.Empty;
+                txtvalvitb12ms.Text = string.Empty;
+                txtvalniacinams.Text = string.Empty;
+                txtvalacfolicoms.Text = string.Empty;
+                txtvalbiotinams.Text = string.Empty;
+                txtvalcolinams.Text = string.Empty;
+                txtvalvitkms.Text = string.Empty;
+                txtvalvitcms.Text = string.Empty;
 
-            txtnomealimentoms.Visible = false;
-            txtnomealimentoms.Enabled = false;
+                btneditaalimentoms.Visible = true;
+                btneditaalimentoms.Enabled = true;
+                btneditaalimentoms.Text = "Editar";
+                btneditaalimentoms.ForeColor = Color.White;
+                btneditaalimentoms.BackColor = Color.FromArgb(255, 179, 0);
+                btnexcluiralimentoms.Visible = true;
+                btnexcluiralimentoms.Enabled = true;
+
+                btnsalvaalimentoms.Enabled = false;
+                btnsalvaalimentoms.Visible = false;
+                btncancelaalimentoms.Visible = false;
+                btncancelaalimentoms.Enabled = false;
+
+                txtnomealimentoms.Visible = false;
+                txtnomealimentoms.Enabled = false;
+            }
+            #endregion
+
+            #region Módulo 3 é Espécies
+            else if (modulo == 3)
+            {
+                txtnomeespecie.Text = "Nome";
+                txtcadastronomeespecie.Text = string.Empty;
+                txtcadastronomeespecie.Enabled = false;
+                txtcadastronem.Text = string.Empty;
+                txtcadastronem.Enabled = false;
+                txtformulanem.Text = string.Empty;
+
+                btnsalvacadastroespecie.Visible = false;
+                btnsalvacadastroespecie.Enabled = false;
+                btncancelacadastroespecie.Visible = false;
+                btncancelacadastroespecie.Enabled = false;
+
+                pnlcalcnem.Visible = false;
+            }
+            #endregion
         }
         private void CarregaTips()
         {
             tipalimentosmn.SetToolTip(pbxhelpalimentomn, "Composição de alimento por 100 gramas de parte comestível.");
+            tipalimentosmn.SetToolTip(pbxtooltipalimentoms, "Composição de alimento por 100 gramas de parte comestível.");
         }
         private void Listacontroletxt(bool MateriaNatural)
         {
@@ -728,8 +790,9 @@ namespace ProjetoNariz.Telas
                 }
             }
         }
+        #endregion
 
-        //Botões Menu Lateral
+        #region Botões Menu Lateral
         private void btnhome_Click(object sender, EventArgs e)
         {
             ClicaInicio();
@@ -737,7 +800,6 @@ namespace ProjetoNariz.Telas
         private void btnalimentos_Click(object sender, EventArgs e)
         {
             ClicaAlimentos();
-            PaineisPrincipais(pnlselecionaalimento);
         }
         private void btnformular_Click(object sender, EventArgs e)
         {
@@ -759,18 +821,26 @@ namespace ProjetoNariz.Telas
         {
             ClicaSair();
         }
+        private void btnespecies_Click(object sender, EventArgs e)
+        {
+            ClicaEspecie();
+        }
+        #endregion
 
-        //Painel para escolher com qual seção de alimentos trabalhar
+        #region Painel para escolher com qual seção de alimentos trabalhar
         private void btnescolhealimentoms_Click(object sender, EventArgs e)
         {
             PaineisPrincipais(pnlalimentosms, pnlsuperioralimentosms);
+            dgvalimentosms.DataSource = f.AtualizaAlimentosMS();
         }
         private void btnescolhealimentomn_Click(object sender, EventArgs e)
         {
             PaineisPrincipais(pnlalimentosmn,pnlsuperioralimentosmn);
+            dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
         }
+        #endregion
 
-        //Painel Alimentos Materia Natural
+        #region Painel Alimentos MN
         private void txtbuscaalimentomn_Enter(object sender, EventArgs e)
         {
             if (txtbuscaalimentomn.Text == "O que você procura?")
@@ -963,7 +1033,7 @@ namespace ProjetoNariz.Telas
         private void btnvoltavisualizaalimentomn_Click(object sender, EventArgs e)
         {
             PaineisPrincipais(pnlalimentosmn,pnlsuperioralimentosmn);
-            LimpaCampos();
+            LimpaCampos(1);
         }
         private void btneditaalimentomn_Click(object sender, EventArgs e)
         {
@@ -1049,7 +1119,7 @@ namespace ProjetoNariz.Telas
 
                     f.InsereAlimentoMN();
                     f.Desconstrutor();
-                    LimpaCampos();
+                    LimpaCampos(1);
 
                     //t.Abort();
                     //t2.Abort();
@@ -1133,7 +1203,7 @@ namespace ProjetoNariz.Telas
 
                     f.AlteraAlimentoMN();
                     f.Desconstrutor();
-                    LimpaCampos();
+                    LimpaCampos(1);
 
                     //t.Abort();
                     //t2.Abort();
@@ -1151,7 +1221,7 @@ namespace ProjetoNariz.Telas
             {
                 f.DeletaAlimentoMN();
                 f.Desconstrutor();
-                LimpaCampos();
+                LimpaCampos(1);
                 Controlatxt(false,true);
                 dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
                 PaineisPrincipais(pnlalimentosmn,pnlsuperioralimentosmn);
@@ -1176,7 +1246,7 @@ namespace ProjetoNariz.Telas
         private void btnnovoalimentomn_Click(object sender, EventArgs e)
         {
             PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn, pnlvisualizaalimentosmn);
-            LimpaCampos();
+            LimpaCampos(1);
             Controlatxt(true, true);
 
             btneditaalimentomn.Visible = false;
@@ -1195,8 +1265,9 @@ namespace ProjetoNariz.Telas
             Salva = true;
 
         }
+        #endregion
 
-        //Painel Alimentos Materia Seca
+        #region Painel Alimentos MS
         private void txtbuscaalimentoms_Enter(object sender, EventArgs e)
         {
             if (txtbuscaalimentoms.Text == "O que você procura?")
@@ -1313,7 +1384,7 @@ namespace ProjetoNariz.Telas
         private void btnvoltavisualimentoms_Click(object sender, EventArgs e)
         {
             PaineisPrincipais(pnlalimentosms, pnlsuperioralimentosms);
-            LimpaCampos();
+            LimpaCampos(2);
         }
         private void btneditaralimentoms_Click(object sender, EventArgs e)
         {
@@ -1399,7 +1470,7 @@ namespace ProjetoNariz.Telas
 
                     f.InsereAlimentoMS();
                     f.Desconstrutor();
-                    LimpaCampos();
+                    LimpaCampos(2);
 
                     //t.Abort();
                     //t2.Abort();
@@ -1483,7 +1554,7 @@ namespace ProjetoNariz.Telas
 
                     f.AlteraAlimentoMS();
                     f.Desconstrutor();
-                    LimpaCampos();
+                    LimpaCampos(2);
 
                     //t.Abort();
                     //t2.Abort();
@@ -1501,7 +1572,7 @@ namespace ProjetoNariz.Telas
             {
                 f.DeletaAlimentoMS();
                 f.Desconstrutor();
-                LimpaCampos();
+                LimpaCampos(2);
                 Controlatxt(false, false);
                 dgvalimentosms.DataSource = f.AtualizaAlimentosMS();
                 PaineisPrincipais(pnlalimentosms, pnlvisualizaalimentosms, pnlsuperioralimentosms);
@@ -1526,7 +1597,7 @@ namespace ProjetoNariz.Telas
         private void btnnovoalimentoms_Click(object sender, EventArgs e)
         {
             PaineisPrincipais(pnlalimentosms, pnlsuperioralimentosms, pnlvisualizaalimentosms);
-            LimpaCampos();
+            LimpaCampos(2);
             Controlatxt(true, false);
 
             btneditaalimentoms.Visible = false;
@@ -1544,9 +1615,26 @@ namespace ProjetoNariz.Telas
 
             Salva = true;
         }
+        #endregion
 
+        #region Painel Formulacao
 
+        #endregion
 
-
+        #region Painel Especies
+        private void btnvisualizarespecie_Click(object sender, EventArgs e)
+        {
+            txtcadastronomeespecie.Enabled = true;
+            txtcadastronem.Enabled = true;
+        }
+        private void btnadicionarespecie_Click(object sender, EventArgs e)
+        {
+            pnlcalcnem.Visible = true;
+        }
+        private void btncancelacadastroespecie_Click(object sender, EventArgs e)
+        {
+            LimpaCampos(3);
+        }
+        #endregion
     }
 }

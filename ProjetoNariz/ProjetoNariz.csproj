@@ -128,5 +128,11 @@
   <ItemGroup>
     <None Include="Resources\save-temp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backspace.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
