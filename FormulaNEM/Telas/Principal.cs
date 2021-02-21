@@ -19,7 +19,6 @@ namespace ProjetoNariz.Telas
         {
             InitializeComponent();
         }
-
         private void Principal_Load(object sender, EventArgs e)
         {
 
@@ -32,6 +31,7 @@ namespace ProjetoNariz.Telas
         List<TextBox> ControleTxtMN = new List<TextBox>();
         List<String> ControleObjMN = new List<String>();
         private static bool Salva = false;
+        private int contaparenteses = 0;
         #endregion
 
         #region Funções
@@ -383,6 +383,7 @@ namespace ProjetoNariz.Telas
                 pnlcalcnem.Visible = false;
             }
             #endregion
+
         }
         private void CarregaTips()
         {
@@ -569,7 +570,7 @@ namespace ProjetoNariz.Telas
             ControleObjMN.Add(f.Vit_K);
             ControleObjMN.Add(f.Vit_C);
         }
-        private void Controlatxt(bool Digitar,bool MateriaNatural)
+        private void Controlatxt(bool Digitar, bool MateriaNatural)
         {
             try
             {
@@ -663,65 +664,65 @@ namespace ProjetoNariz.Telas
             {
                 if (!primeirametade)
                 {
-                     f.Ca = txtvalca.Text;
-                     f.P = txtvalp.Text ;
-                     f.K = txtvalk.Text;
-                     f.Na = txtvalna.Text;
-                     f.Cl = txtvalcl.Text;
-                     f.Mg = txtvalmg.Text;
-                     f.Cu = txtvalcu.Text;
-                     f.I = txtvali.Text;
-                     f.Fe = txtvalfe.Text;
-                     f.Mn = txtvalmn.Text;
-                     f.Se = txtvalse.Text;
-                     f.Zn = txtvalzn.Text;
-                     f.S = txtvals.Text;
-                     f.Vit_A = txtvalvita.Text;
-                     f.Vit_D = txtvalvitd.Text;
-                     f.Vit_E = txtvalvite.Text;
-                     f.Tiamina = txtvaltiamina.Text;
-                     f.Riboflavina = txtvalriboflavina.Text;
-                     f.Ac_Pantotenico = txtvalacpantotenico.Text;
-                     f.Vit_B6 = txtvalvitb6.Text;
-                     f.Vit_B12 = txtvalvitb12.Text;
-                     f.Niacina = txtvalniacina.Text;
-                     f.Ac_Folico = txtvalacfolico.Text;
-                     f.Biotina = txtvalbiotina.Text;
-                     f.Colina = txtvalcolina.Text;
-                     f.Vit_K = txtvalvitk.Text;
-                     f.Vit_C = txtvalvitc.Text;
+                    f.Ca = txtvalca.Text;
+                    f.P = txtvalp.Text;
+                    f.K = txtvalk.Text;
+                    f.Na = txtvalna.Text;
+                    f.Cl = txtvalcl.Text;
+                    f.Mg = txtvalmg.Text;
+                    f.Cu = txtvalcu.Text;
+                    f.I = txtvali.Text;
+                    f.Fe = txtvalfe.Text;
+                    f.Mn = txtvalmn.Text;
+                    f.Se = txtvalse.Text;
+                    f.Zn = txtvalzn.Text;
+                    f.S = txtvals.Text;
+                    f.Vit_A = txtvalvita.Text;
+                    f.Vit_D = txtvalvitd.Text;
+                    f.Vit_E = txtvalvite.Text;
+                    f.Tiamina = txtvaltiamina.Text;
+                    f.Riboflavina = txtvalriboflavina.Text;
+                    f.Ac_Pantotenico = txtvalacpantotenico.Text;
+                    f.Vit_B6 = txtvalvitb6.Text;
+                    f.Vit_B12 = txtvalvitb12.Text;
+                    f.Niacina = txtvalniacina.Text;
+                    f.Ac_Folico = txtvalacfolico.Text;
+                    f.Biotina = txtvalbiotina.Text;
+                    f.Colina = txtvalcolina.Text;
+                    f.Vit_K = txtvalvitk.Text;
+                    f.Vit_C = txtvalvitc.Text;
                 }
                 else
                 {
                     f.Alimento = txtnomealimentomn.Text;
                     f.Energia = txtvalenergia.Text;
-                     f.Umidade = txtvalumidade.Text;
-                     f.MS = txtvalmateriaseca.Text;
-                     f.PB = txtvalproteinabruta.Text;
-                     f.EE = txtvalextratoetereo.Text;
-                     f.FB = txtvalfibrabruta.Text;
-                     f.MM = txtvalmateriamineral.Text;
-                     f.ENN = txtvalenn.Text;
-                     f.Ac_Linolenico3 = txtvalaclinoleicon3.Text;
-                     f.Ac_Linoleico6 = txtvalaclinoleicon6.Text;
-                     f.Ac_Araquidonico = txtvalacaraquidonico.Text;
-                     f.EPA_DHA = txtvalepadha.Text;
-                     f.CNF = txtvalcnf.Text;
-                     f.FDA = txtvalfda.Text;
-                     f.FDN = txtvalfdn.Text;
-                     f.Arg = txtvalarg.Text;
-                     f.His = txtvalhis.Text;
-                     f.Iso = txtvaliso.Text;
-                     f.Leu = txtvalleu.Text;
-                     f.Lis = txtvallis.Text;
-                     f.Met = txtvalmet.Text;
-                     f.Met_Cis = txtvalmetcis.Text;
-                     f.Fen = txtvalfen.Text;
-                     f.Fen_Tir = txtvalfentir.Text;
-                     f.Treo = txtvaltreo.Text;
-                     f.Tri = txtvaltri.Text;
-                     f.Val = txtvalval.Text;
-                     f.Tau = txtvaltau.Text;
+                    f.Umidade = txtvalumidade.Text;
+                    f.MS = txtvalmateriaseca.Text;
+                    f.PB = txtvalproteinabruta.Text;
+                    f.EE = txtvalextratoetereo.Text;
+                    f.FB = txtvalfibrabruta.Text;
+                    f.MM = txtvalmateriamineral.Text;
+                    f.ENN = txtvalenn.Text;
+                    f.Ac_Linolenico3 = txtvalaclinoleicon3.Text;
+                    f.Ac_Linoleico6 = txtvalaclinoleicon6.Text;
+                    f.Ac_Araquidonico = txtvalacaraquidonico.Text;
+                    f.EPA_DHA = txtvalepadha.Text;
+                    f.CNF = txtvalcnf.Text;
+                    f.FDA = txtvalfda.Text;
+                    f.FDN = txtvalfdn.Text;
+                    f.Arg = txtvalarg.Text;
+                    f.His = txtvalhis.Text;
+                    f.Iso = txtvaliso.Text;
+                    f.Leu = txtvalleu.Text;
+                    f.Lis = txtvallis.Text;
+                    f.Met = txtvalmet.Text;
+                    f.Met_Cis = txtvalmetcis.Text;
+                    f.Fen = txtvalfen.Text;
+                    f.Fen_Tir = txtvalfentir.Text;
+                    f.Treo = txtvaltreo.Text;
+                    f.Tri = txtvaltri.Text;
+                    f.Val = txtvalval.Text;
+                    f.Tau = txtvaltau.Text;
                 }
             }
             else
@@ -835,7 +836,7 @@ namespace ProjetoNariz.Telas
         }
         private void btnescolhealimentomn_Click(object sender, EventArgs e)
         {
-            PaineisPrincipais(pnlalimentosmn,pnlsuperioralimentosmn);
+            PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn);
             dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
         }
         #endregion
@@ -862,14 +863,14 @@ namespace ProjetoNariz.Telas
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if(cbxfiltroalimentomn.Text == "Filtro")
+                if (cbxfiltroalimentomn.Text == "Filtro")
                 {
                     dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
                 }
                 else
                 {
                     string aux = t.TraduzCombobox(cbxfiltroalimentomn.Text);
-                    dgvalimentosmn.DataSource = f.PesquisaAlimentosMN(txtbuscaalimentomn.Text,aux);
+                    dgvalimentosmn.DataSource = f.PesquisaAlimentosMN(txtbuscaalimentomn.Text, aux);
                 }
             }
         }
@@ -888,8 +889,8 @@ namespace ProjetoNariz.Telas
         private void btnvisalimentomn_Click(object sender, EventArgs e)
         {
             PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn, pnlvisualizaalimentosmn);
-            Controlatxt(false,true);
-    
+            Controlatxt(false, true);
+
             f.id = dgvalimentosmn.CurrentRow.Cells[0].Value.ToString();
             try
             {
@@ -1032,12 +1033,12 @@ namespace ProjetoNariz.Telas
         }
         private void btnvoltavisualizaalimentomn_Click(object sender, EventArgs e)
         {
-            PaineisPrincipais(pnlalimentosmn,pnlsuperioralimentosmn);
+            PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn);
             LimpaCampos(1);
         }
         private void btneditaalimentomn_Click(object sender, EventArgs e)
         {
-            Controlatxt(true,true);
+            Controlatxt(true, true);
             btneditaalimentomn.Enabled = false;
             btneditaalimentomn.Text = "Editando";
             btneditaalimentomn.ForeColor = Color.White;
@@ -1125,7 +1126,7 @@ namespace ProjetoNariz.Telas
                     //t2.Abort();
                     Controlatxt(false, true);
                     dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
-                    PaineisPrincipais(pnlalimentosmn,pnlsuperioralimentosmn);
+                    PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn);
                 }
             }
             else
@@ -1212,7 +1213,7 @@ namespace ProjetoNariz.Telas
                     PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn);
                 }
             }
-            
+
         }
         private void btnexcluiralimentomn_Click(object sender, EventArgs e)
         {
@@ -1222,14 +1223,14 @@ namespace ProjetoNariz.Telas
                 f.DeletaAlimentoMN();
                 f.Desconstrutor();
                 LimpaCampos(1);
-                Controlatxt(false,true);
+                Controlatxt(false, true);
                 dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
-                PaineisPrincipais(pnlalimentosmn,pnlsuperioralimentosmn);
+                PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn);
             }
         }
         private void btncancelareditaoalimentomn_Click(object sender, EventArgs e)
         {
-            Controlatxt(false,true);
+            Controlatxt(false, true);
             btneditaalimentomn.Enabled = true;
             btneditaalimentomn.Text = "Editar";
             btneditaalimentomn.ForeColor = Color.White;
@@ -1314,8 +1315,8 @@ namespace ProjetoNariz.Telas
         }
         private void btnvisalimentoms_Click(object sender, EventArgs e)
         {
-            PaineisPrincipais(pnlalimentosms,pnlsuperioralimentosms,pnlvisualizaalimentosms);
-            Controlatxt(false,false);
+            PaineisPrincipais(pnlalimentosms, pnlsuperioralimentosms, pnlvisualizaalimentosms);
+            Controlatxt(false, false);
             f.id = dgvalimentosms.CurrentRow.Cells[0].Value.ToString();
             try
             {
@@ -1379,7 +1380,7 @@ namespace ProjetoNariz.Telas
                 txtvalvitcms.Text = f.Vit_C;
             }
             catch (Exception) { }
-            
+
         }
         private void btnvoltavisualimentoms_Click(object sender, EventArgs e)
         {
@@ -1388,7 +1389,7 @@ namespace ProjetoNariz.Telas
         }
         private void btneditaralimentoms_Click(object sender, EventArgs e)
         {
-            Controlatxt(true,false);
+            Controlatxt(true, false);
             btneditaalimentoms.Enabled = false;
             btneditaalimentoms.Text = "Editando";
             btneditaalimentoms.ForeColor = Color.White;
@@ -1406,7 +1407,7 @@ namespace ProjetoNariz.Telas
         }
         private void btnsalvaalimentoms_Click(object sender, EventArgs e)
         {
-            if (Salva) 
+            if (Salva)
             {
                 DialogResult resultado = MessageBox.Show("Deseja inserir o novo alimento?", "Atenção", MessageBoxButtons.YesNo);
                 if (resultado == DialogResult.Yes)
@@ -1563,7 +1564,7 @@ namespace ProjetoNariz.Telas
                     PaineisPrincipais(pnlalimentosms, pnlsuperioralimentosms);
                 }
             }
-            
+
         }
         private void btnexcluiralimentoms_Click(object sender, EventArgs e)
         {
@@ -1635,6 +1636,159 @@ namespace ProjetoNariz.Telas
         {
             LimpaCampos(3);
         }
+        private void btncalcnem1_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "1";
+        }
+        private void btncalcnem2_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "2";
+        }
+        private void btncalcnem3_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "3";
+        }
+        private void btncalcnem4_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "4";
+        }
+        private void btncalcnem5_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "5";
+        }
+        private void btncalcnem6_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "6";
+        }
+        private void btncalcnem7_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "7";
+        }
+        private void btncalcnem8_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "8";
+        }
+        private void btncalcnem9_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "9";
+        }
+        private void btncalcnemparentesesd_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "(";
+        }
+        private void btncalcnemparentesese_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += ")";
+        }
+        private void btncalcnemdivisao_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += @"/";
+        }
+        private void btncalcnemmultiplicacao_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "*";
+        }
+        private void btncalcnempeso_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "PESO";
+        }
+        private void btncalcnemraiz_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "√(";
+        }
+        private void btncalcnempotencia_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "^(";
+        }
+        private void btncalcnemapagar_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text = string.Empty;
+        }
+        private void btncalcnemsubtracao_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "-";
+        }
+        private void btncalcnemadicao_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "+";
+        }
+        private void btncalcnemvirugla_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += ",";
+        }
+        private void btncalcnemsalvaformula_Click(object sender, EventArgs e)
+        {
+            foreach(char c in txtformulanem.Text)
+            {
+                if (txtformulanem.Text.Contains("("))
+                {
+                    contaparenteses++;
+                }
+                else if (txtformulanem.Text.Contains(")"))
+                {
+                    contaparenteses--;
+                }
+            }
+            if (contaparenteses > 0)
+            {
+                MessageBox.Show("Você se esqueceu de fechar o parenteses em algum lugar. Por favor verifique a função");
+            }
+            else if(contaparenteses < 0)
+            {
+                MessageBox.Show("Você colocou mais parenteses que o necessário. Por favor verifique a função");
+            }
+            else
+            {
+                List<string> entreparenteses = new List<string>();
+                string funcao = string.Empty;
+                bool montando = false;
+                foreach (char c in txtformulanem.Text)
+                {
+                    if (montando)
+                    {
+                        funcao += c.ToString();
+                    }
+                    if (txtformulanem.Text.Contains("("))
+                    {
+                        contaparenteses++;
+                    }
+                    else if (txtformulanem.Text.Contains(")"))
+                    {
+                        contaparenteses--;
+                    }
+                    if (contaparenteses == 0)
+                    {
+                        if (funcao == "ok")
+                        {
+                            funcao = funcao.Substring(2);
+                            entreparenteses.Add(funcao);
+                        }
+                        
+                    }
+                    else if(contaparenteses>0)
+                    {
+                        funcao = "ok";
+                        montando = true;
+                    }
+                    if (c == '√')
+                    {
+                        
+                        string aux;
+                        //aux = txtformulanem.Text.Substring()
+                    }
+                }
+                if (txtformulanem.Text.Contains("√"))
+                {
+                    string aux;
+                    //aux = txtformulanem.Text.Substring()
+                }
+            }
+        }
         #endregion
+
+
+
+
     }
 }
+

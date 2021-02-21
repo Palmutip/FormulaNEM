@@ -29,23 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle121 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle124 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle125 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle126 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlsuperior = new System.Windows.Forms.Panel();
             this.lblusuario = new System.Windows.Forms.Label();
+            this.pbxusuario = new System.Windows.Forms.PictureBox();
+            this.pbxlogo = new System.Windows.Forms.PictureBox();
             this.pnlselecionaalimento = new System.Windows.Forms.Panel();
             this.lblescolhealimentoms = new System.Windows.Forms.Label();
             this.lblescolhealimentomn = new System.Windows.Forms.Label();
+            this.btnescolhealimentoms = new System.Windows.Forms.Button();
+            this.btnescolhealimentomn = new System.Windows.Forms.Button();
             this.pnlsuperioralimentosms = new System.Windows.Forms.Panel();
             this.lblalimentosms = new System.Windows.Forms.Label();
+            this.pbxalimentosms = new System.Windows.Forms.PictureBox();
             this.pnlsuperioralimentosmn = new System.Windows.Forms.Panel();
             this.lblalimentosmn = new System.Windows.Forms.Label();
+            this.pbxalimentosmn = new System.Windows.Forms.PictureBox();
             this.pnllateral = new System.Windows.Forms.Panel();
+            this.btnespecies = new System.Windows.Forms.Button();
+            this.btnhome = new System.Windows.Forms.Button();
+            this.btnconfig = new System.Windows.Forms.Button();
+            this.btnsair = new System.Windows.Forms.Button();
+            this.btndietas = new System.Windows.Forms.Button();
+            this.btnavaliar = new System.Windows.Forms.Button();
+            this.btnformular = new System.Windows.Forms.Button();
+            this.btnalimentos = new System.Windows.Forms.Button();
             this.pnlalimentosms = new System.Windows.Forms.Panel();
             this.pnlvisualizaalimentosms = new System.Windows.Forms.Panel();
             this.btncancelaalimentoms = new System.Windows.Forms.Button();
@@ -231,11 +245,16 @@
             this.txtvalenergiams = new System.Windows.Forms.TextBox();
             this.lblunenergiams = new System.Windows.Forms.Label();
             this.lblenergiams = new System.Windows.Forms.Label();
+            this.pbxtooltipalimentoms = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnexcluiralimentoms = new System.Windows.Forms.Button();
+            this.btneditaalimentoms = new System.Windows.Forms.Button();
             this.lblnomealimentoms = new System.Windows.Forms.Label();
+            this.btnvoltavisualimentoms = new System.Windows.Forms.Button();
             this.cbxfiltroalimentoms = new System.Windows.Forms.ComboBox();
             this.dgvalimentosms = new System.Windows.Forms.DataGridView();
             this.txtbuscaalimentoms = new System.Windows.Forms.TextBox();
+            this.btnpesquisaalimentoms = new System.Windows.Forms.Button();
             this.btnnovoalimentoms = new System.Windows.Forms.Button();
             this.btnvisalimentoms = new System.Windows.Forms.Button();
             this.pnlvisualizaalimentosmn = new System.Windows.Forms.Panel();
@@ -422,96 +441,81 @@
             this.lblenergia = new System.Windows.Forms.Label();
             this.btnsalvaalimentomn = new System.Windows.Forms.Button();
             this.txtnomealimentomn = new System.Windows.Forms.TextBox();
+            this.pbxhelpalimentomn = new System.Windows.Forms.PictureBox();
             this.pnlseparadoralimentomn = new System.Windows.Forms.Panel();
+            this.btnexcluiralimentomn = new System.Windows.Forms.Button();
+            this.btneditaalimentomn = new System.Windows.Forms.Button();
             this.lblnomealimentomn = new System.Windows.Forms.Label();
+            this.btnvoltavisualizaalimentomn = new System.Windows.Forms.Button();
             this.pnlalimentosmn = new System.Windows.Forms.Panel();
             this.dgvalimentosmn = new System.Windows.Forms.DataGridView();
             this.cbxfiltroalimentomn = new System.Windows.Forms.ComboBox();
             this.txtbuscaalimentomn = new System.Windows.Forms.TextBox();
+            this.btnpesquisaalimentomn = new System.Windows.Forms.Button();
             this.btnnovoalimentomn = new System.Windows.Forms.Button();
             this.btnvisalimentomn = new System.Windows.Forms.Button();
             this.tipalimentosmn = new System.Windows.Forms.ToolTip(this.components);
             this.pnlformulacao = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblnometutor = new System.Windows.Forms.Label();
-            this.txtnometutor = new System.Windows.Forms.TextBox();
-            this.txtnomedoanimal = new System.Windows.Forms.TextBox();
-            this.lblnomedoanimal = new System.Windows.Forms.Label();
-            this.lblespecie = new System.Windows.Forms.Label();
-            this.cbxespecie = new System.Windows.Forms.ComboBox();
-            this.lblpeso = new System.Windows.Forms.Label();
-            this.txtnumpeso = new System.Windows.Forms.NumericUpDown();
-            this.txtnumescore = new System.Windows.Forms.NumericUpDown();
-            this.lblescore = new System.Windows.Forms.Label();
-            this.txtnumidade = new System.Windows.Forms.NumericUpDown();
-            this.lblidade = new System.Windows.Forms.Label();
             this.cbxsexo = new System.Windows.Forms.ComboBox();
             this.lblsexo = new System.Windows.Forms.Label();
+            this.txtnumidade = new System.Windows.Forms.NumericUpDown();
+            this.lblidade = new System.Windows.Forms.Label();
+            this.txtnumescore = new System.Windows.Forms.NumericUpDown();
+            this.lblescore = new System.Windows.Forms.Label();
+            this.txtnumpeso = new System.Windows.Forms.NumericUpDown();
+            this.lblpeso = new System.Windows.Forms.Label();
+            this.cbxespecie = new System.Windows.Forms.ComboBox();
+            this.lblespecie = new System.Windows.Forms.Label();
+            this.txtnomedoanimal = new System.Windows.Forms.TextBox();
+            this.lblnomedoanimal = new System.Windows.Forms.Label();
+            this.txtnometutor = new System.Windows.Forms.TextBox();
+            this.lblnometutor = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlespecies = new System.Windows.Forms.Panel();
-            this.txtnomeespecie = new System.Windows.Forms.TextBox();
-            this.btnadicionarespecie = new System.Windows.Forms.Button();
-            this.btnvisualizarespecie = new System.Windows.Forms.Button();
-            this.dgvespecie = new System.Windows.Forms.DataGridView();
-            this.lblnomeespecie = new System.Windows.Forms.Label();
-            this.txtcadastronomeespecie = new System.Windows.Forms.TextBox();
-            this.txtcadastronem = new System.Windows.Forms.TextBox();
-            this.lblnem = new System.Windows.Forms.Label();
+            this.btncancelacadastroespecie = new System.Windows.Forms.Button();
+            this.btnsalvacadastroespecie = new System.Windows.Forms.Button();
             this.pnlcalcnem = new System.Windows.Forms.Panel();
-            this.txtformulanem = new System.Windows.Forms.TextBox();
-            this.btncalcnem1 = new System.Windows.Forms.Button();
-            this.btncalcnem2 = new System.Windows.Forms.Button();
-            this.btncalcnem3 = new System.Windows.Forms.Button();
-            this.btncalcnemsalvaformula = new System.Windows.Forms.Button();
-            this.btncalcnemraiz = new System.Windows.Forms.Button();
-            this.btncalcnem6 = new System.Windows.Forms.Button();
-            this.btncalcnem5 = new System.Windows.Forms.Button();
-            this.btncalcnem4 = new System.Windows.Forms.Button();
+            this.btncalcnemvirugla = new System.Windows.Forms.Button();
+            this.lbltextoformulacao = new System.Windows.Forms.Label();
+            this.btncalcnemapagar = new System.Windows.Forms.Button();
+            this.btncalcnempotencia = new System.Windows.Forms.Button();
+            this.btncalcnemparentesesd = new System.Windows.Forms.Button();
+            this.btncalcnemparentesese = new System.Windows.Forms.Button();
             this.btncalcnemdivisao = new System.Windows.Forms.Button();
             this.btncalcnemmultiplicacao = new System.Windows.Forms.Button();
             this.btncalcnemsubtracao = new System.Windows.Forms.Button();
-            this.btncalcnemadicao = new System.Windows.Forms.Button();
             this.btncalcnempeso = new System.Windows.Forms.Button();
+            this.btncalcnemadicao = new System.Windows.Forms.Button();
             this.btncalcnem9 = new System.Windows.Forms.Button();
             this.btncalcnem8 = new System.Windows.Forms.Button();
+            this.btncalcnemraiz = new System.Windows.Forms.Button();
             this.btncalcnem7 = new System.Windows.Forms.Button();
-            this.btncalcnemparentesesd = new System.Windows.Forms.Button();
-            this.btncalcnemparentesese = new System.Windows.Forms.Button();
-            this.btncalcnempotencia = new System.Windows.Forms.Button();
-            this.btncalcnemapagar = new System.Windows.Forms.Button();
+            this.btncalcnem6 = new System.Windows.Forms.Button();
+            this.btncalcnem5 = new System.Windows.Forms.Button();
+            this.btncalcnem4 = new System.Windows.Forms.Button();
+            this.btncalcnemsalvaformula = new System.Windows.Forms.Button();
+            this.btncalcnem3 = new System.Windows.Forms.Button();
+            this.btncalcnem2 = new System.Windows.Forms.Button();
+            this.btncalcnem1 = new System.Windows.Forms.Button();
+            this.txtformulanem = new System.Windows.Forms.TextBox();
+            this.txtcadastronem = new System.Windows.Forms.TextBox();
+            this.lblnem = new System.Windows.Forms.Label();
+            this.txtcadastronomeespecie = new System.Windows.Forms.TextBox();
+            this.lblnomeespecie = new System.Windows.Forms.Label();
+            this.dgvespecie = new System.Windows.Forms.DataGridView();
+            this.txtnomeespecie = new System.Windows.Forms.TextBox();
             this.btnbuscanomeespecie = new System.Windows.Forms.Button();
-            this.btnescolhealimentoms = new System.Windows.Forms.Button();
-            this.btnescolhealimentomn = new System.Windows.Forms.Button();
-            this.pbxhelpalimentomn = new System.Windows.Forms.PictureBox();
-            this.btnexcluiralimentomn = new System.Windows.Forms.Button();
-            this.btneditaalimentomn = new System.Windows.Forms.Button();
-            this.btnvoltavisualizaalimentomn = new System.Windows.Forms.Button();
-            this.pbxalimentosmn = new System.Windows.Forms.PictureBox();
-            this.btnpesquisaalimentomn = new System.Windows.Forms.Button();
-            this.pbxtooltipalimentoms = new System.Windows.Forms.PictureBox();
-            this.btnexcluiralimentoms = new System.Windows.Forms.Button();
-            this.btneditaalimentoms = new System.Windows.Forms.Button();
-            this.btnvoltavisualimentoms = new System.Windows.Forms.Button();
-            this.pbxalimentosms = new System.Windows.Forms.PictureBox();
-            this.btnpesquisaalimentoms = new System.Windows.Forms.Button();
-            this.pbxusuario = new System.Windows.Forms.PictureBox();
-            this.pbxlogo = new System.Windows.Forms.PictureBox();
-            this.btnespecies = new System.Windows.Forms.Button();
-            this.btnhome = new System.Windows.Forms.Button();
-            this.btnconfig = new System.Windows.Forms.Button();
-            this.btnsair = new System.Windows.Forms.Button();
-            this.btndietas = new System.Windows.Forms.Button();
-            this.btnavaliar = new System.Windows.Forms.Button();
-            this.btnformular = new System.Windows.Forms.Button();
-            this.btnalimentos = new System.Windows.Forms.Button();
+            this.btnadicionarespecie = new System.Windows.Forms.Button();
+            this.btnvisualizarespecie = new System.Windows.Forms.Button();
             this.tipalimentosms = new System.Windows.Forms.ToolTip(this.components);
-            this.btnsalvacadastroespecie = new System.Windows.Forms.Button();
-            this.btncancelacadastroespecie = new System.Windows.Forms.Button();
-            this.lbltextoformulacao = new System.Windows.Forms.Label();
-            this.btncalcnemvirugla = new System.Windows.Forms.Button();
             this.pnlsuperior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).BeginInit();
             this.pnlselecionaalimento.SuspendLayout();
             this.pnlsuperioralimentosms.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).BeginInit();
             this.pnlsuperioralimentosmn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosmn)).BeginInit();
             this.pnllateral.SuspendLayout();
             this.pnlalimentosms.SuspendLayout();
             this.pnlvisualizaalimentosms.SuspendLayout();
@@ -526,6 +530,7 @@
             this.tableaminoacidosms.SuspendLayout();
             this.tableumidadems.SuspendLayout();
             this.tableenergiams.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxtooltipalimentoms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosms)).BeginInit();
             this.pnlvisualizaalimentosmn.SuspendLayout();
             this.tabletitulovitaminas.SuspendLayout();
@@ -539,21 +544,16 @@
             this.tableacidosgraxos.SuspendLayout();
             this.tableumidade.SuspendLayout();
             this.tableenergia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxhelpalimentomn)).BeginInit();
             this.pnlalimentosmn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosmn)).BeginInit();
             this.pnlformulacao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumpeso)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumescore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtnumidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumescore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumpeso)).BeginInit();
             this.pnlespecies.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvespecie)).BeginInit();
             this.pnlcalcnem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxhelpalimentomn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosmn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxtooltipalimentoms)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvespecie)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlsuperior
@@ -582,6 +582,32 @@
             this.lblusuario.TabIndex = 0;
             this.lblusuario.Text = "Murilo José Marques Maia";
             this.lblusuario.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pbxusuario
+            // 
+            this.pbxusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbxusuario.BackColor = System.Drawing.Color.Transparent;
+            this.pbxusuario.BackgroundImage = global::ProjetoNariz.Properties.Resources.male_user_shadow_48;
+            this.pbxusuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbxusuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxusuario.Location = new System.Drawing.Point(1222, 10);
+            this.pbxusuario.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxusuario.Name = "pbxusuario";
+            this.pbxusuario.Size = new System.Drawing.Size(56, 41);
+            this.pbxusuario.TabIndex = 2;
+            this.pbxusuario.TabStop = false;
+            // 
+            // pbxlogo
+            // 
+            this.pbxlogo.BackColor = System.Drawing.Color.White;
+            this.pbxlogo.BackgroundImage = global::ProjetoNariz.Properties.Resources.Logo;
+            this.pbxlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxlogo.Location = new System.Drawing.Point(32, 10);
+            this.pbxlogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxlogo.Name = "pbxlogo";
+            this.pbxlogo.Size = new System.Drawing.Size(190, 41);
+            this.pbxlogo.TabIndex = 1;
+            this.pbxlogo.TabStop = false;
             // 
             // pnlselecionaalimento
             // 
@@ -622,6 +648,36 @@
             this.lblescolhealimentomn.TabIndex = 2;
             this.lblescolhealimentomn.Text = "Alimentos na Matéria Natural";
             // 
+            // btnescolhealimentoms
+            // 
+            this.btnescolhealimentoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnescolhealimentoms.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnescolhealimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.wheat;
+            this.btnescolhealimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnescolhealimentoms.FlatAppearance.BorderSize = 0;
+            this.btnescolhealimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnescolhealimentoms.Location = new System.Drawing.Point(559, 114);
+            this.btnescolhealimentoms.Name = "btnescolhealimentoms";
+            this.btnescolhealimentoms.Size = new System.Drawing.Size(400, 400);
+            this.btnescolhealimentoms.TabIndex = 1;
+            this.btnescolhealimentoms.UseVisualStyleBackColor = false;
+            this.btnescolhealimentoms.Click += new System.EventHandler(this.btnescolhealimentoms_Click);
+            // 
+            // btnescolhealimentomn
+            // 
+            this.btnescolhealimentomn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnescolhealimentomn.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnescolhealimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
+            this.btnescolhealimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnescolhealimentomn.FlatAppearance.BorderSize = 0;
+            this.btnescolhealimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnescolhealimentomn.Location = new System.Drawing.Point(87, 114);
+            this.btnescolhealimentomn.Name = "btnescolhealimentomn";
+            this.btnescolhealimentomn.Size = new System.Drawing.Size(400, 400);
+            this.btnescolhealimentomn.TabIndex = 3;
+            this.btnescolhealimentomn.UseVisualStyleBackColor = false;
+            this.btnescolhealimentomn.Click += new System.EventHandler(this.btnescolhealimentomn_Click);
+            // 
             // pnlsuperioralimentosms
             // 
             this.pnlsuperioralimentosms.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -645,6 +701,17 @@
             this.lblalimentosms.Size = new System.Drawing.Size(194, 21);
             this.lblalimentosms.TabIndex = 1;
             this.lblalimentosms.Text = "Alimentos na Matéria Seca";
+            // 
+            // pbxalimentosms
+            // 
+            this.pbxalimentosms.BackgroundImage = global::ProjetoNariz.Properties.Resources.wheat;
+            this.pbxalimentosms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxalimentosms.Location = new System.Drawing.Point(11, 5);
+            this.pbxalimentosms.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxalimentosms.Name = "pbxalimentosms";
+            this.pbxalimentosms.Size = new System.Drawing.Size(45, 41);
+            this.pbxalimentosms.TabIndex = 0;
+            this.pbxalimentosms.TabStop = false;
             // 
             // pnlsuperioralimentosmn
             // 
@@ -670,6 +737,17 @@
             this.lblalimentosmn.TabIndex = 0;
             this.lblalimentosmn.Text = "Alimentos na Matéria Natural";
             // 
+            // pbxalimentosmn
+            // 
+            this.pbxalimentosmn.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
+            this.pbxalimentosmn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxalimentosmn.Location = new System.Drawing.Point(11, 5);
+            this.pbxalimentosmn.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxalimentosmn.Name = "pbxalimentosmn";
+            this.pbxalimentosmn.Size = new System.Drawing.Size(45, 41);
+            this.pbxalimentosmn.TabIndex = 0;
+            this.pbxalimentosmn.TabStop = false;
+            // 
             // pnllateral
             // 
             this.pnllateral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -688,6 +766,159 @@
             this.pnllateral.Name = "pnllateral";
             this.pnllateral.Size = new System.Drawing.Size(160, 659);
             this.pnllateral.TabIndex = 2;
+            // 
+            // btnespecies
+            // 
+            this.btnespecies.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnespecies.BackgroundImage = global::ProjetoNariz.Properties.Resources.horse;
+            this.btnespecies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnespecies.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnespecies.FlatAppearance.BorderSize = 0;
+            this.btnespecies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnespecies.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnespecies.Location = new System.Drawing.Point(-100, 234);
+            this.btnespecies.Margin = new System.Windows.Forms.Padding(2);
+            this.btnespecies.Name = "btnespecies";
+            this.btnespecies.Size = new System.Drawing.Size(266, 37);
+            this.btnespecies.TabIndex = 6;
+            this.btnespecies.Text = "                           Espécies";
+            this.btnespecies.UseVisualStyleBackColor = true;
+            this.btnespecies.Click += new System.EventHandler(this.btnespecies_Click);
+            // 
+            // btnhome
+            // 
+            this.btnhome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnhome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            this.btnhome.BackgroundImage = global::ProjetoNariz.Properties.Resources.home;
+            this.btnhome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnhome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnhome.FlatAppearance.BorderSize = 0;
+            this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhome.Location = new System.Drawing.Point(-136, 25);
+            this.btnhome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Size = new System.Drawing.Size(336, 37);
+            this.btnhome.TabIndex = 0;
+            this.btnhome.Text = "                         Inicio";
+            this.btnhome.UseVisualStyleBackColor = false;
+            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
+            // 
+            // btnconfig
+            // 
+            this.btnconfig.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnconfig.BackgroundImage = global::ProjetoNariz.Properties.Resources.engrenagem;
+            this.btnconfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnconfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnconfig.FlatAppearance.BorderSize = 0;
+            this.btnconfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnconfig.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnconfig.Location = new System.Drawing.Point(-136, 576);
+            this.btnconfig.Margin = new System.Windows.Forms.Padding(2);
+            this.btnconfig.Name = "btnconfig";
+            this.btnconfig.Size = new System.Drawing.Size(336, 37);
+            this.btnconfig.TabIndex = 5;
+            this.btnconfig.Text = "                                        Configurações";
+            this.btnconfig.UseVisualStyleBackColor = false;
+            this.btnconfig.Click += new System.EventHandler(this.btnconfig_Click);
+            // 
+            // btnsair
+            // 
+            this.btnsair.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnsair.BackgroundImage = global::ProjetoNariz.Properties.Resources.exit;
+            this.btnsair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnsair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsair.FlatAppearance.BorderSize = 0;
+            this.btnsair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsair.Location = new System.Drawing.Point(-109, 617);
+            this.btnsair.Margin = new System.Windows.Forms.Padding(2);
+            this.btnsair.Name = "btnsair";
+            this.btnsair.Size = new System.Drawing.Size(280, 37);
+            this.btnsair.TabIndex = 4;
+            this.btnsair.Text = "                       Sair";
+            this.btnsair.UseVisualStyleBackColor = true;
+            this.btnsair.Click += new System.EventHandler(this.btnsair_Click);
+            // 
+            // btndietas
+            // 
+            this.btndietas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btndietas.BackgroundImage = global::ProjetoNariz.Properties.Resources.calendar;
+            this.btndietas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btndietas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndietas.FlatAppearance.BorderSize = 0;
+            this.btndietas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndietas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndietas.Location = new System.Drawing.Point(-100, 188);
+            this.btndietas.Margin = new System.Windows.Forms.Padding(2);
+            this.btndietas.Name = "btndietas";
+            this.btndietas.Size = new System.Drawing.Size(266, 37);
+            this.btndietas.TabIndex = 4;
+            this.btndietas.Text = "                         Dietas";
+            this.btndietas.UseVisualStyleBackColor = true;
+            this.btndietas.Click += new System.EventHandler(this.btndietas_Click);
+            // 
+            // btnavaliar
+            // 
+            this.btnavaliar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnavaliar.BackgroundImage = global::ProjetoNariz.Properties.Resources.Prancheta;
+            this.btnavaliar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnavaliar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnavaliar.FlatAppearance.BorderSize = 0;
+            this.btnavaliar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnavaliar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnavaliar.Location = new System.Drawing.Point(-106, 147);
+            this.btnavaliar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnavaliar.Name = "btnavaliar";
+            this.btnavaliar.Size = new System.Drawing.Size(270, 37);
+            this.btnavaliar.TabIndex = 3;
+            this.btnavaliar.Text = "                            Avaliar";
+            this.btnavaliar.UseVisualStyleBackColor = true;
+            this.btnavaliar.Click += new System.EventHandler(this.btnavaliar_Click);
+            // 
+            // btnformular
+            // 
+            this.btnformular.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnformular.BackgroundImage = global::ProjetoNariz.Properties.Resources.calculator;
+            this.btnformular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnformular.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnformular.FlatAppearance.BorderSize = 0;
+            this.btnformular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnformular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnformular.Location = new System.Drawing.Point(-111, 106);
+            this.btnformular.Margin = new System.Windows.Forms.Padding(2);
+            this.btnformular.Name = "btnformular";
+            this.btnformular.Size = new System.Drawing.Size(280, 37);
+            this.btnformular.TabIndex = 2;
+            this.btnformular.Text = "                                Formular";
+            this.btnformular.UseVisualStyleBackColor = true;
+            this.btnformular.Click += new System.EventHandler(this.btnformular_Click);
+            // 
+            // btnalimentos
+            // 
+            this.btnalimentos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnalimentos.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
+            this.btnalimentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnalimentos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnalimentos.FlatAppearance.BorderSize = 0;
+            this.btnalimentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnalimentos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnalimentos.Location = new System.Drawing.Point(-103, 66);
+            this.btnalimentos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnalimentos.Name = "btnalimentos";
+            this.btnalimentos.Size = new System.Drawing.Size(270, 37);
+            this.btnalimentos.TabIndex = 1;
+            this.btnalimentos.Text = "                                Alimentos";
+            this.btnalimentos.UseVisualStyleBackColor = true;
+            this.btnalimentos.Click += new System.EventHandler(this.btnalimentos_Click);
             // 
             // pnlalimentosms
             // 
@@ -3259,6 +3490,18 @@
             this.lblenergiams.Text = "Energia";
             this.lblenergiams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // pbxtooltipalimentoms
+            // 
+            this.pbxtooltipalimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbxtooltipalimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.help;
+            this.pbxtooltipalimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxtooltipalimentoms.Location = new System.Drawing.Point(870, 42);
+            this.pbxtooltipalimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxtooltipalimentoms.Name = "pbxtooltipalimentoms";
+            this.pbxtooltipalimentoms.Size = new System.Drawing.Size(25, 20);
+            this.pbxtooltipalimentoms.TabIndex = 9;
+            this.pbxtooltipalimentoms.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -3269,6 +3512,48 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1080, 2);
             this.panel4.TabIndex = 4;
+            // 
+            // btnexcluiralimentoms
+            // 
+            this.btnexcluiralimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnexcluiralimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btnexcluiralimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnexcluiralimentoms.FlatAppearance.BorderSize = 0;
+            this.btnexcluiralimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexcluiralimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnexcluiralimentoms.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnexcluiralimentoms.Image = global::ProjetoNariz.Properties.Resources.close_cross;
+            this.btnexcluiralimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnexcluiralimentoms.Location = new System.Drawing.Point(1020, 30);
+            this.btnexcluiralimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btnexcluiralimentoms.Name = "btnexcluiralimentoms";
+            this.btnexcluiralimentoms.Size = new System.Drawing.Size(80, 45);
+            this.btnexcluiralimentoms.TabIndex = 3;
+            this.btnexcluiralimentoms.Text = "Excluir";
+            this.btnexcluiralimentoms.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnexcluiralimentoms.UseVisualStyleBackColor = false;
+            this.btnexcluiralimentoms.Click += new System.EventHandler(this.btnexcluiralimentoms_Click);
+            // 
+            // btneditaalimentoms
+            // 
+            this.btneditaalimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btneditaalimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btneditaalimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btneditaalimentoms.FlatAppearance.BorderSize = 0;
+            this.btneditaalimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btneditaalimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btneditaalimentoms.ForeColor = System.Drawing.Color.White;
+            this.btneditaalimentoms.Image = global::ProjetoNariz.Properties.Resources.edit_6;
+            this.btneditaalimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btneditaalimentoms.Location = new System.Drawing.Point(920, 30);
+            this.btneditaalimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btneditaalimentoms.Name = "btneditaalimentoms";
+            this.btneditaalimentoms.Size = new System.Drawing.Size(95, 45);
+            this.btneditaalimentoms.TabIndex = 2;
+            this.btneditaalimentoms.Text = "Editar";
+            this.btneditaalimentoms.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btneditaalimentoms.UseVisualStyleBackColor = false;
+            this.btneditaalimentoms.Click += new System.EventHandler(this.btneditaralimentoms_Click);
             // 
             // lblnomealimentoms
             // 
@@ -3281,6 +3566,21 @@
             this.lblnomealimentoms.Size = new System.Drawing.Size(258, 21);
             this.lblnomealimentoms.TabIndex = 1;
             this.lblnomealimentoms.Text = "Nome do alimento na matéria natural";
+            // 
+            // btnvoltavisualimentoms
+            // 
+            this.btnvoltavisualimentoms.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvoltavisualimentoms.BackgroundImage")));
+            this.btnvoltavisualimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnvoltavisualimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnvoltavisualimentoms.FlatAppearance.BorderSize = 0;
+            this.btnvoltavisualimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnvoltavisualimentoms.Location = new System.Drawing.Point(10, 10);
+            this.btnvoltavisualimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btnvoltavisualimentoms.Name = "btnvoltavisualimentoms";
+            this.btnvoltavisualimentoms.Size = new System.Drawing.Size(50, 45);
+            this.btnvoltavisualimentoms.TabIndex = 0;
+            this.btnvoltavisualimentoms.UseVisualStyleBackColor = true;
+            this.btnvoltavisualimentoms.Click += new System.EventHandler(this.btnvoltavisualimentoms_Click);
             // 
             // cbxfiltroalimentoms
             // 
@@ -3405,37 +3705,37 @@
             this.dgvalimentosms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosms.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle121.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle121.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle121.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle121.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle121.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle121.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle121.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle121;
             this.dgvalimentosms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle122.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle122.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle122.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle122.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle122.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle122.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle122.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle122;
             this.dgvalimentosms.GridColor = System.Drawing.Color.White;
             this.dgvalimentosms.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosms.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosms.MultiSelect = false;
             this.dgvalimentosms.Name = "dgvalimentosms";
             this.dgvalimentosms.ReadOnly = true;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle123.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle123.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle123.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle123.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle123.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle123.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle123.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle123;
             this.dgvalimentosms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosms.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosms.RowTemplate.Height = 24;
@@ -3458,6 +3758,22 @@
             this.txtbuscaalimentoms.Enter += new System.EventHandler(this.txtbuscaalimentoms_Enter);
             this.txtbuscaalimentoms.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscaalimentoms_KeyUp);
             this.txtbuscaalimentoms.Leave += new System.EventHandler(this.txtbuscaalimentoms_Leave);
+            // 
+            // btnpesquisaalimentoms
+            // 
+            this.btnpesquisaalimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnpesquisaalimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.loupe;
+            this.btnpesquisaalimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnpesquisaalimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnpesquisaalimentoms.FlatAppearance.BorderSize = 0;
+            this.btnpesquisaalimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpesquisaalimentoms.Location = new System.Drawing.Point(736, 60);
+            this.btnpesquisaalimentoms.Margin = new System.Windows.Forms.Padding(2);
+            this.btnpesquisaalimentoms.Name = "btnpesquisaalimentoms";
+            this.btnpesquisaalimentoms.Size = new System.Drawing.Size(36, 37);
+            this.btnpesquisaalimentoms.TabIndex = 3;
+            this.btnpesquisaalimentoms.UseVisualStyleBackColor = true;
+            this.btnpesquisaalimentoms.Click += new System.EventHandler(this.btnpesquisaalimentoms_Click);
             // 
             // btnnovoalimentoms
             // 
@@ -6045,6 +6361,18 @@
             this.txtnomealimentomn.TabIndex = 3;
             this.txtnomealimentomn.Visible = false;
             // 
+            // pbxhelpalimentomn
+            // 
+            this.pbxhelpalimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbxhelpalimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.help;
+            this.pbxhelpalimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxhelpalimentomn.Location = new System.Drawing.Point(870, 42);
+            this.pbxhelpalimentomn.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxhelpalimentomn.Name = "pbxhelpalimentomn";
+            this.pbxhelpalimentomn.Size = new System.Drawing.Size(25, 20);
+            this.pbxhelpalimentomn.TabIndex = 9;
+            this.pbxhelpalimentomn.TabStop = false;
+            // 
             // pnlseparadoralimentomn
             // 
             this.pnlseparadoralimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -6055,6 +6383,48 @@
             this.pnlseparadoralimentomn.Name = "pnlseparadoralimentomn";
             this.pnlseparadoralimentomn.Size = new System.Drawing.Size(1080, 2);
             this.pnlseparadoralimentomn.TabIndex = 4;
+            // 
+            // btnexcluiralimentomn
+            // 
+            this.btnexcluiralimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnexcluiralimentomn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btnexcluiralimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnexcluiralimentomn.FlatAppearance.BorderSize = 0;
+            this.btnexcluiralimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexcluiralimentomn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnexcluiralimentomn.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnexcluiralimentomn.Image = global::ProjetoNariz.Properties.Resources.close_cross;
+            this.btnexcluiralimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnexcluiralimentomn.Location = new System.Drawing.Point(1020, 30);
+            this.btnexcluiralimentomn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnexcluiralimentomn.Name = "btnexcluiralimentomn";
+            this.btnexcluiralimentomn.Size = new System.Drawing.Size(80, 45);
+            this.btnexcluiralimentomn.TabIndex = 2;
+            this.btnexcluiralimentomn.Text = "Excluir";
+            this.btnexcluiralimentomn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnexcluiralimentomn.UseVisualStyleBackColor = false;
+            this.btnexcluiralimentomn.Click += new System.EventHandler(this.btnexcluiralimentomn_Click);
+            // 
+            // btneditaalimentomn
+            // 
+            this.btneditaalimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btneditaalimentomn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btneditaalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btneditaalimentomn.FlatAppearance.BorderSize = 0;
+            this.btneditaalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btneditaalimentomn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btneditaalimentomn.ForeColor = System.Drawing.Color.White;
+            this.btneditaalimentomn.Image = global::ProjetoNariz.Properties.Resources.edit_6;
+            this.btneditaalimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btneditaalimentomn.Location = new System.Drawing.Point(920, 30);
+            this.btneditaalimentomn.Margin = new System.Windows.Forms.Padding(2);
+            this.btneditaalimentomn.Name = "btneditaalimentomn";
+            this.btneditaalimentomn.Size = new System.Drawing.Size(94, 45);
+            this.btneditaalimentomn.TabIndex = 1;
+            this.btneditaalimentomn.Text = "Editar";
+            this.btneditaalimentomn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btneditaalimentomn.UseVisualStyleBackColor = false;
+            this.btneditaalimentomn.Click += new System.EventHandler(this.btneditaalimentomn_Click);
             // 
             // lblnomealimentomn
             // 
@@ -6067,6 +6437,21 @@
             this.lblnomealimentomn.Size = new System.Drawing.Size(749, 74);
             this.lblnomealimentomn.TabIndex = 1;
             this.lblnomealimentomn.Text = "Nome do alimento na matéria natural";
+            // 
+            // btnvoltavisualizaalimentomn
+            // 
+            this.btnvoltavisualizaalimentomn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvoltavisualizaalimentomn.BackgroundImage")));
+            this.btnvoltavisualizaalimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnvoltavisualizaalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnvoltavisualizaalimentomn.FlatAppearance.BorderSize = 0;
+            this.btnvoltavisualizaalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnvoltavisualizaalimentomn.Location = new System.Drawing.Point(10, 10);
+            this.btnvoltavisualizaalimentomn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnvoltavisualizaalimentomn.Name = "btnvoltavisualizaalimentomn";
+            this.btnvoltavisualizaalimentomn.Size = new System.Drawing.Size(50, 45);
+            this.btnvoltavisualizaalimentomn.TabIndex = 0;
+            this.btnvoltavisualizaalimentomn.UseVisualStyleBackColor = true;
+            this.btnvoltavisualizaalimentomn.Click += new System.EventHandler(this.btnvoltavisualizaalimentomn_Click);
             // 
             // pnlalimentosmn
             // 
@@ -6098,37 +6483,37 @@
             this.dgvalimentosmn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosmn.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosmn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle124.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle124.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle124.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle124.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle124.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle124.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle124.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle124;
             this.dgvalimentosmn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle125.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle125.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle125.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle125.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle125.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle125.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle125.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle125;
             this.dgvalimentosmn.GridColor = System.Drawing.Color.White;
             this.dgvalimentosmn.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosmn.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosmn.MultiSelect = false;
             this.dgvalimentosmn.Name = "dgvalimentosmn";
             this.dgvalimentosmn.ReadOnly = true;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle126.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle126.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle126.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle126.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle126.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle126.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle126.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle126;
             this.dgvalimentosmn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosmn.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosmn.RowTemplate.Height = 24;
@@ -6265,6 +6650,22 @@
             this.txtbuscaalimentomn.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscaalimentomn_KeyUp);
             this.txtbuscaalimentomn.Leave += new System.EventHandler(this.txtbuscaalimentomn_Leave);
             // 
+            // btnpesquisaalimentomn
+            // 
+            this.btnpesquisaalimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnpesquisaalimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.loupe;
+            this.btnpesquisaalimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnpesquisaalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnpesquisaalimentomn.FlatAppearance.BorderSize = 0;
+            this.btnpesquisaalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpesquisaalimentomn.Location = new System.Drawing.Point(743, 63);
+            this.btnpesquisaalimentomn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnpesquisaalimentomn.Name = "btnpesquisaalimentomn";
+            this.btnpesquisaalimentomn.Size = new System.Drawing.Size(36, 37);
+            this.btnpesquisaalimentomn.TabIndex = 3;
+            this.btnpesquisaalimentomn.UseVisualStyleBackColor = true;
+            this.btnpesquisaalimentomn.Click += new System.EventHandler(this.btnpesquisaalimentomn_Click);
+            // 
             // btnnovoalimentomn
             // 
             this.btnnovoalimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -6327,110 +6728,24 @@
             this.pnlformulacao.Size = new System.Drawing.Size(1119, 630);
             this.pnlformulacao.TabIndex = 10;
             // 
-            // tableLayoutPanel1
+            // cbxsexo
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(978, 535);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(85, 59);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.cbxsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxsexo.FormattingEnabled = true;
+            this.cbxsexo.Location = new System.Drawing.Point(113, 300);
+            this.cbxsexo.Name = "cbxsexo";
+            this.cbxsexo.Size = new System.Drawing.Size(487, 25);
+            this.cbxsexo.TabIndex = 14;
             // 
-            // lblnometutor
+            // lblsexo
             // 
-            this.lblnometutor.AutoSize = true;
-            this.lblnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnometutor.Location = new System.Drawing.Point(31, 30);
-            this.lblnometutor.Name = "lblnometutor";
-            this.lblnometutor.Size = new System.Drawing.Size(165, 17);
-            this.lblnometutor.TabIndex = 1;
-            this.lblnometutor.Text = "Nome do Tutor/Instituição:";
-            // 
-            // txtnometutor
-            // 
-            this.txtnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnometutor.Location = new System.Drawing.Point(202, 27);
-            this.txtnometutor.Name = "txtnometutor";
-            this.txtnometutor.Size = new System.Drawing.Size(379, 25);
-            this.txtnometutor.TabIndex = 2;
-            // 
-            // txtnomedoanimal
-            // 
-            this.txtnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnomedoanimal.Location = new System.Drawing.Point(202, 62);
-            this.txtnomedoanimal.Name = "txtnomedoanimal";
-            this.txtnomedoanimal.Size = new System.Drawing.Size(379, 25);
-            this.txtnomedoanimal.TabIndex = 4;
-            // 
-            // lblnomedoanimal
-            // 
-            this.lblnomedoanimal.AutoSize = true;
-            this.lblnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnomedoanimal.Location = new System.Drawing.Point(31, 65);
-            this.lblnomedoanimal.Name = "lblnomedoanimal";
-            this.lblnomedoanimal.Size = new System.Drawing.Size(110, 17);
-            this.lblnomedoanimal.TabIndex = 3;
-            this.lblnomedoanimal.Text = "Nome do Animal:";
-            // 
-            // lblespecie
-            // 
-            this.lblespecie.AutoSize = true;
-            this.lblespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblespecie.Location = new System.Drawing.Point(31, 109);
-            this.lblespecie.Name = "lblespecie";
-            this.lblespecie.Size = new System.Drawing.Size(55, 17);
-            this.lblespecie.TabIndex = 5;
-            this.lblespecie.Text = "Espécie:";
-            // 
-            // cbxespecie
-            // 
-            this.cbxespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxespecie.FormattingEnabled = true;
-            this.cbxespecie.Location = new System.Drawing.Point(94, 105);
-            this.cbxespecie.Name = "cbxespecie";
-            this.cbxespecie.Size = new System.Drawing.Size(487, 25);
-            this.cbxespecie.TabIndex = 6;
-            // 
-            // lblpeso
-            // 
-            this.lblpeso.AutoSize = true;
-            this.lblpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpeso.Location = new System.Drawing.Point(31, 156);
-            this.lblpeso.Name = "lblpeso";
-            this.lblpeso.Size = new System.Drawing.Size(65, 17);
-            this.lblpeso.TabIndex = 7;
-            this.lblpeso.Text = "Peso (kg):";
-            // 
-            // txtnumpeso
-            // 
-            this.txtnumpeso.DecimalPlaces = 3;
-            this.txtnumpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumpeso.Location = new System.Drawing.Point(141, 157);
-            this.txtnumpeso.Name = "txtnumpeso";
-            this.txtnumpeso.Size = new System.Drawing.Size(120, 25);
-            this.txtnumpeso.TabIndex = 8;
-            // 
-            // txtnumescore
-            // 
-            this.txtnumescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumescore.Location = new System.Drawing.Point(141, 195);
-            this.txtnumescore.Name = "txtnumescore";
-            this.txtnumescore.Size = new System.Drawing.Size(120, 25);
-            this.txtnumescore.TabIndex = 10;
-            // 
-            // lblescore
-            // 
-            this.lblescore.AutoSize = true;
-            this.lblescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblescore.Location = new System.Drawing.Point(31, 194);
-            this.lblescore.Name = "lblescore";
-            this.lblescore.Size = new System.Drawing.Size(106, 17);
-            this.lblescore.TabIndex = 9;
-            this.lblescore.Text = "Escore Corporal:";
+            this.lblsexo.AutoSize = true;
+            this.lblsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsexo.Location = new System.Drawing.Point(50, 304);
+            this.lblsexo.Name = "lblsexo";
+            this.lblsexo.Size = new System.Drawing.Size(39, 17);
+            this.lblsexo.TabIndex = 13;
+            this.lblsexo.Text = "Sexo:";
             // 
             // txtnumidade
             // 
@@ -6450,24 +6765,110 @@
             this.lblidade.TabIndex = 11;
             this.lblidade.Text = "Idade:";
             // 
-            // cbxsexo
+            // txtnumescore
             // 
-            this.cbxsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxsexo.FormattingEnabled = true;
-            this.cbxsexo.Location = new System.Drawing.Point(113, 300);
-            this.cbxsexo.Name = "cbxsexo";
-            this.cbxsexo.Size = new System.Drawing.Size(487, 25);
-            this.cbxsexo.TabIndex = 14;
+            this.txtnumescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnumescore.Location = new System.Drawing.Point(141, 195);
+            this.txtnumescore.Name = "txtnumescore";
+            this.txtnumescore.Size = new System.Drawing.Size(120, 25);
+            this.txtnumescore.TabIndex = 10;
             // 
-            // lblsexo
+            // lblescore
             // 
-            this.lblsexo.AutoSize = true;
-            this.lblsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsexo.Location = new System.Drawing.Point(50, 304);
-            this.lblsexo.Name = "lblsexo";
-            this.lblsexo.Size = new System.Drawing.Size(39, 17);
-            this.lblsexo.TabIndex = 13;
-            this.lblsexo.Text = "Sexo:";
+            this.lblescore.AutoSize = true;
+            this.lblescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblescore.Location = new System.Drawing.Point(31, 194);
+            this.lblescore.Name = "lblescore";
+            this.lblescore.Size = new System.Drawing.Size(106, 17);
+            this.lblescore.TabIndex = 9;
+            this.lblescore.Text = "Escore Corporal:";
+            // 
+            // txtnumpeso
+            // 
+            this.txtnumpeso.DecimalPlaces = 3;
+            this.txtnumpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnumpeso.Location = new System.Drawing.Point(141, 157);
+            this.txtnumpeso.Name = "txtnumpeso";
+            this.txtnumpeso.Size = new System.Drawing.Size(120, 25);
+            this.txtnumpeso.TabIndex = 8;
+            // 
+            // lblpeso
+            // 
+            this.lblpeso.AutoSize = true;
+            this.lblpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpeso.Location = new System.Drawing.Point(31, 156);
+            this.lblpeso.Name = "lblpeso";
+            this.lblpeso.Size = new System.Drawing.Size(65, 17);
+            this.lblpeso.TabIndex = 7;
+            this.lblpeso.Text = "Peso (kg):";
+            // 
+            // cbxespecie
+            // 
+            this.cbxespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxespecie.FormattingEnabled = true;
+            this.cbxespecie.Location = new System.Drawing.Point(94, 105);
+            this.cbxespecie.Name = "cbxespecie";
+            this.cbxespecie.Size = new System.Drawing.Size(487, 25);
+            this.cbxespecie.TabIndex = 6;
+            // 
+            // lblespecie
+            // 
+            this.lblespecie.AutoSize = true;
+            this.lblespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblespecie.Location = new System.Drawing.Point(31, 109);
+            this.lblespecie.Name = "lblespecie";
+            this.lblespecie.Size = new System.Drawing.Size(55, 17);
+            this.lblespecie.TabIndex = 5;
+            this.lblespecie.Text = "Espécie:";
+            // 
+            // txtnomedoanimal
+            // 
+            this.txtnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnomedoanimal.Location = new System.Drawing.Point(202, 62);
+            this.txtnomedoanimal.Name = "txtnomedoanimal";
+            this.txtnomedoanimal.Size = new System.Drawing.Size(379, 25);
+            this.txtnomedoanimal.TabIndex = 4;
+            // 
+            // lblnomedoanimal
+            // 
+            this.lblnomedoanimal.AutoSize = true;
+            this.lblnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnomedoanimal.Location = new System.Drawing.Point(31, 65);
+            this.lblnomedoanimal.Name = "lblnomedoanimal";
+            this.lblnomedoanimal.Size = new System.Drawing.Size(110, 17);
+            this.lblnomedoanimal.TabIndex = 3;
+            this.lblnomedoanimal.Text = "Nome do Animal:";
+            // 
+            // txtnometutor
+            // 
+            this.txtnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnometutor.Location = new System.Drawing.Point(202, 27);
+            this.txtnometutor.Name = "txtnometutor";
+            this.txtnometutor.Size = new System.Drawing.Size(379, 25);
+            this.txtnometutor.TabIndex = 2;
+            // 
+            // lblnometutor
+            // 
+            this.lblnometutor.AutoSize = true;
+            this.lblnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnometutor.Location = new System.Drawing.Point(31, 30);
+            this.lblnometutor.Name = "lblnometutor";
+            this.lblnometutor.Size = new System.Drawing.Size(165, 17);
+            this.lblnometutor.TabIndex = 1;
+            this.lblnometutor.Text = "Nome do Tutor/Instituição:";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(978, 535);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(85, 59);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pnlespecies
             // 
@@ -6492,6 +6893,408 @@
             this.pnlespecies.Size = new System.Drawing.Size(1119, 630);
             this.pnlespecies.TabIndex = 11;
             // 
+            // btncancelacadastroespecie
+            // 
+            this.btncancelacadastroespecie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btncancelacadastroespecie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncancelacadastroespecie.FlatAppearance.BorderSize = 0;
+            this.btncancelacadastroespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelacadastroespecie.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancelacadastroespecie.ForeColor = System.Drawing.Color.White;
+            this.btncancelacadastroespecie.Location = new System.Drawing.Point(876, 549);
+            this.btncancelacadastroespecie.Margin = new System.Windows.Forms.Padding(2);
+            this.btncancelacadastroespecie.Name = "btncancelacadastroespecie";
+            this.btncancelacadastroespecie.Size = new System.Drawing.Size(90, 40);
+            this.btncancelacadastroespecie.TabIndex = 16;
+            this.btncancelacadastroespecie.Text = "Cancelar";
+            this.btncancelacadastroespecie.UseVisualStyleBackColor = false;
+            this.btncancelacadastroespecie.Visible = false;
+            this.btncancelacadastroespecie.Click += new System.EventHandler(this.btncancelacadastroespecie_Click);
+            // 
+            // btnsalvacadastroespecie
+            // 
+            this.btnsalvacadastroespecie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btnsalvacadastroespecie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsalvacadastroespecie.Enabled = false;
+            this.btnsalvacadastroespecie.FlatAppearance.BorderSize = 0;
+            this.btnsalvacadastroespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsalvacadastroespecie.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnsalvacadastroespecie.ForeColor = System.Drawing.Color.White;
+            this.btnsalvacadastroespecie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsalvacadastroespecie.Location = new System.Drawing.Point(767, 549);
+            this.btnsalvacadastroespecie.Margin = new System.Windows.Forms.Padding(2);
+            this.btnsalvacadastroespecie.Name = "btnsalvacadastroespecie";
+            this.btnsalvacadastroespecie.Size = new System.Drawing.Size(90, 40);
+            this.btnsalvacadastroespecie.TabIndex = 13;
+            this.btnsalvacadastroespecie.Text = "Salvar";
+            this.btnsalvacadastroespecie.UseVisualStyleBackColor = false;
+            this.btnsalvacadastroespecie.Visible = false;
+            // 
+            // pnlcalcnem
+            // 
+            this.pnlcalcnem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlcalcnem.Controls.Add(this.btncalcnemvirugla);
+            this.pnlcalcnem.Controls.Add(this.lbltextoformulacao);
+            this.pnlcalcnem.Controls.Add(this.btncalcnemapagar);
+            this.pnlcalcnem.Controls.Add(this.btncalcnempotencia);
+            this.pnlcalcnem.Controls.Add(this.btncalcnemparentesesd);
+            this.pnlcalcnem.Controls.Add(this.btncalcnemparentesese);
+            this.pnlcalcnem.Controls.Add(this.btncalcnemdivisao);
+            this.pnlcalcnem.Controls.Add(this.btncalcnemmultiplicacao);
+            this.pnlcalcnem.Controls.Add(this.btncalcnemsubtracao);
+            this.pnlcalcnem.Controls.Add(this.btncalcnempeso);
+            this.pnlcalcnem.Controls.Add(this.btncalcnemadicao);
+            this.pnlcalcnem.Controls.Add(this.btncalcnem9);
+            this.pnlcalcnem.Controls.Add(this.btncalcnem8);
+            this.pnlcalcnem.Controls.Add(this.btncalcnemraiz);
+            this.pnlcalcnem.Controls.Add(this.btncalcnem7);
+            this.pnlcalcnem.Controls.Add(this.btncalcnem6);
+            this.pnlcalcnem.Controls.Add(this.btncalcnem5);
+            this.pnlcalcnem.Controls.Add(this.btncalcnem4);
+            this.pnlcalcnem.Controls.Add(this.btncalcnemsalvaformula);
+            this.pnlcalcnem.Controls.Add(this.btncalcnem3);
+            this.pnlcalcnem.Controls.Add(this.btncalcnem2);
+            this.pnlcalcnem.Controls.Add(this.btncalcnem1);
+            this.pnlcalcnem.Controls.Add(this.txtformulanem);
+            this.pnlcalcnem.Location = new System.Drawing.Point(722, 185);
+            this.pnlcalcnem.Name = "pnlcalcnem";
+            this.pnlcalcnem.Size = new System.Drawing.Size(278, 347);
+            this.pnlcalcnem.TabIndex = 15;
+            this.pnlcalcnem.Visible = false;
+            // 
+            // btncalcnemvirugla
+            // 
+            this.btncalcnemvirugla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemvirugla.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemvirugla.Location = new System.Drawing.Point(208, 298);
+            this.btncalcnemvirugla.Name = "btncalcnemvirugla";
+            this.btncalcnemvirugla.Size = new System.Drawing.Size(50, 21);
+            this.btncalcnemvirugla.TabIndex = 38;
+            this.btncalcnemvirugla.Text = ".";
+            this.btncalcnemvirugla.UseVisualStyleBackColor = true;
+            this.btncalcnemvirugla.Click += new System.EventHandler(this.btncalcnemvirugla_Click);
+            // 
+            // lbltextoformulacao
+            // 
+            this.lbltextoformulacao.AutoSize = true;
+            this.lbltextoformulacao.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltextoformulacao.Location = new System.Drawing.Point(40, 15);
+            this.lbltextoformulacao.Name = "lbltextoformulacao";
+            this.lbltextoformulacao.Size = new System.Drawing.Size(197, 25);
+            this.lbltextoformulacao.TabIndex = 37;
+            this.lbltextoformulacao.Text = "Crie sua formula NEM";
+            // 
+            // btncalcnemapagar
+            // 
+            this.btncalcnemapagar.BackgroundImage = global::ProjetoNariz.Properties.Resources.backspace;
+            this.btncalcnemapagar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btncalcnemapagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemapagar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemapagar.Location = new System.Drawing.Point(208, 84);
+            this.btncalcnemapagar.Name = "btncalcnemapagar";
+            this.btncalcnemapagar.Size = new System.Drawing.Size(50, 25);
+            this.btncalcnemapagar.TabIndex = 36;
+            this.btncalcnemapagar.UseVisualStyleBackColor = true;
+            this.btncalcnemapagar.Click += new System.EventHandler(this.btncalcnemapagar_Click);
+            // 
+            // btncalcnempotencia
+            // 
+            this.btncalcnempotencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnempotencia.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnempotencia.Location = new System.Drawing.Point(143, 84);
+            this.btncalcnempotencia.Name = "btncalcnempotencia";
+            this.btncalcnempotencia.Size = new System.Drawing.Size(50, 25);
+            this.btncalcnempotencia.TabIndex = 35;
+            this.btncalcnempotencia.Text = "^";
+            this.btncalcnempotencia.UseVisualStyleBackColor = true;
+            this.btncalcnempotencia.Click += new System.EventHandler(this.btncalcnempotencia_Click);
+            // 
+            // btncalcnemparentesesd
+            // 
+            this.btncalcnemparentesesd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemparentesesd.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemparentesesd.Location = new System.Drawing.Point(13, 118);
+            this.btncalcnemparentesesd.Name = "btncalcnemparentesesd";
+            this.btncalcnemparentesesd.Size = new System.Drawing.Size(50, 25);
+            this.btncalcnemparentesesd.TabIndex = 34;
+            this.btncalcnemparentesesd.Text = "(";
+            this.btncalcnemparentesesd.UseVisualStyleBackColor = true;
+            this.btncalcnemparentesesd.Click += new System.EventHandler(this.btncalcnemparentesesd_Click);
+            // 
+            // btncalcnemparentesese
+            // 
+            this.btncalcnemparentesese.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemparentesese.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemparentesese.Location = new System.Drawing.Point(78, 118);
+            this.btncalcnemparentesese.Name = "btncalcnemparentesese";
+            this.btncalcnemparentesese.Size = new System.Drawing.Size(50, 25);
+            this.btncalcnemparentesese.TabIndex = 33;
+            this.btncalcnemparentesese.Text = ")";
+            this.btncalcnemparentesese.UseVisualStyleBackColor = true;
+            this.btncalcnemparentesese.Click += new System.EventHandler(this.btncalcnemparentesese_Click);
+            // 
+            // btncalcnemdivisao
+            // 
+            this.btncalcnemdivisao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemdivisao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemdivisao.Location = new System.Drawing.Point(143, 118);
+            this.btncalcnemdivisao.Margin = new System.Windows.Forms.Padding(0);
+            this.btncalcnemdivisao.Name = "btncalcnemdivisao";
+            this.btncalcnemdivisao.Size = new System.Drawing.Size(50, 25);
+            this.btncalcnemdivisao.TabIndex = 32;
+            this.btncalcnemdivisao.Text = "÷";
+            this.btncalcnemdivisao.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btncalcnemdivisao.UseVisualStyleBackColor = true;
+            this.btncalcnemdivisao.Click += new System.EventHandler(this.btncalcnemdivisao_Click);
+            // 
+            // btncalcnemmultiplicacao
+            // 
+            this.btncalcnemmultiplicacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemmultiplicacao.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemmultiplicacao.Location = new System.Drawing.Point(208, 118);
+            this.btncalcnemmultiplicacao.Name = "btncalcnemmultiplicacao";
+            this.btncalcnemmultiplicacao.Size = new System.Drawing.Size(50, 25);
+            this.btncalcnemmultiplicacao.TabIndex = 31;
+            this.btncalcnemmultiplicacao.Text = "X";
+            this.btncalcnemmultiplicacao.UseVisualStyleBackColor = true;
+            this.btncalcnemmultiplicacao.Click += new System.EventHandler(this.btncalcnemmultiplicacao_Click);
+            // 
+            // btncalcnemsubtracao
+            // 
+            this.btncalcnemsubtracao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemsubtracao.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemsubtracao.Location = new System.Drawing.Point(208, 152);
+            this.btncalcnemsubtracao.Name = "btncalcnemsubtracao";
+            this.btncalcnemsubtracao.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnemsubtracao.TabIndex = 30;
+            this.btncalcnemsubtracao.Text = "-";
+            this.btncalcnemsubtracao.UseVisualStyleBackColor = true;
+            this.btncalcnemsubtracao.Click += new System.EventHandler(this.btncalcnemsubtracao_Click);
+            // 
+            // btncalcnempeso
+            // 
+            this.btncalcnempeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnempeso.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnempeso.Location = new System.Drawing.Point(13, 84);
+            this.btncalcnempeso.Name = "btncalcnempeso";
+            this.btncalcnempeso.Size = new System.Drawing.Size(50, 25);
+            this.btncalcnempeso.TabIndex = 28;
+            this.btncalcnempeso.Text = "Peso";
+            this.btncalcnempeso.UseVisualStyleBackColor = true;
+            this.btncalcnempeso.Click += new System.EventHandler(this.btncalcnempeso_Click);
+            // 
+            // btncalcnemadicao
+            // 
+            this.btncalcnemadicao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemadicao.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemadicao.Location = new System.Drawing.Point(208, 211);
+            this.btncalcnemadicao.Margin = new System.Windows.Forms.Padding(0);
+            this.btncalcnemadicao.Name = "btncalcnemadicao";
+            this.btncalcnemadicao.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnemadicao.TabIndex = 29;
+            this.btncalcnemadicao.Text = "+";
+            this.btncalcnemadicao.UseVisualStyleBackColor = true;
+            this.btncalcnemadicao.Click += new System.EventHandler(this.btncalcnemadicao_Click);
+            // 
+            // btncalcnem9
+            // 
+            this.btncalcnem9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnem9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnem9.Location = new System.Drawing.Point(143, 152);
+            this.btncalcnem9.Name = "btncalcnem9";
+            this.btncalcnem9.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnem9.TabIndex = 27;
+            this.btncalcnem9.Text = "9";
+            this.btncalcnem9.UseVisualStyleBackColor = true;
+            this.btncalcnem9.Click += new System.EventHandler(this.btncalcnem9_Click);
+            // 
+            // btncalcnem8
+            // 
+            this.btncalcnem8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnem8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnem8.Location = new System.Drawing.Point(78, 152);
+            this.btncalcnem8.Name = "btncalcnem8";
+            this.btncalcnem8.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnem8.TabIndex = 26;
+            this.btncalcnem8.Text = "8";
+            this.btncalcnem8.UseVisualStyleBackColor = true;
+            this.btncalcnem8.Click += new System.EventHandler(this.btncalcnem8_Click);
+            // 
+            // btncalcnemraiz
+            // 
+            this.btncalcnemraiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemraiz.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemraiz.Location = new System.Drawing.Point(78, 84);
+            this.btncalcnemraiz.Name = "btncalcnemraiz";
+            this.btncalcnemraiz.Size = new System.Drawing.Size(50, 25);
+            this.btncalcnemraiz.TabIndex = 24;
+            this.btncalcnemraiz.Text = "√";
+            this.btncalcnemraiz.UseVisualStyleBackColor = true;
+            this.btncalcnemraiz.Click += new System.EventHandler(this.btncalcnemraiz_Click);
+            // 
+            // btncalcnem7
+            // 
+            this.btncalcnem7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnem7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnem7.Location = new System.Drawing.Point(13, 152);
+            this.btncalcnem7.Name = "btncalcnem7";
+            this.btncalcnem7.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnem7.TabIndex = 25;
+            this.btncalcnem7.Text = "7";
+            this.btncalcnem7.UseVisualStyleBackColor = true;
+            this.btncalcnem7.Click += new System.EventHandler(this.btncalcnem7_Click);
+            // 
+            // btncalcnem6
+            // 
+            this.btncalcnem6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnem6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnem6.Location = new System.Drawing.Point(143, 211);
+            this.btncalcnem6.Name = "btncalcnem6";
+            this.btncalcnem6.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnem6.TabIndex = 23;
+            this.btncalcnem6.Text = "6";
+            this.btncalcnem6.UseVisualStyleBackColor = true;
+            this.btncalcnem6.Click += new System.EventHandler(this.btncalcnem6_Click);
+            // 
+            // btncalcnem5
+            // 
+            this.btncalcnem5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnem5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnem5.Location = new System.Drawing.Point(78, 211);
+            this.btncalcnem5.Name = "btncalcnem5";
+            this.btncalcnem5.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnem5.TabIndex = 22;
+            this.btncalcnem5.Text = "5";
+            this.btncalcnem5.UseVisualStyleBackColor = true;
+            this.btncalcnem5.Click += new System.EventHandler(this.btncalcnem5_Click);
+            // 
+            // btncalcnem4
+            // 
+            this.btncalcnem4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnem4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnem4.Location = new System.Drawing.Point(13, 211);
+            this.btncalcnem4.Name = "btncalcnem4";
+            this.btncalcnem4.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnem4.TabIndex = 21;
+            this.btncalcnem4.Text = "4";
+            this.btncalcnem4.UseVisualStyleBackColor = true;
+            this.btncalcnem4.Click += new System.EventHandler(this.btncalcnem4_Click);
+            // 
+            // btncalcnemsalvaformula
+            // 
+            this.btncalcnemsalvaformula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnemsalvaformula.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnemsalvaformula.Location = new System.Drawing.Point(208, 270);
+            this.btncalcnemsalvaformula.Name = "btncalcnemsalvaformula";
+            this.btncalcnemsalvaformula.Size = new System.Drawing.Size(50, 25);
+            this.btncalcnemsalvaformula.TabIndex = 20;
+            this.btncalcnemsalvaformula.Text = "salvar";
+            this.btncalcnemsalvaformula.UseVisualStyleBackColor = true;
+            this.btncalcnemsalvaformula.Click += new System.EventHandler(this.btncalcnemsalvaformula_Click);
+            // 
+            // btncalcnem3
+            // 
+            this.btncalcnem3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnem3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnem3.Location = new System.Drawing.Point(143, 270);
+            this.btncalcnem3.Name = "btncalcnem3";
+            this.btncalcnem3.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnem3.TabIndex = 19;
+            this.btncalcnem3.Text = "3";
+            this.btncalcnem3.UseVisualStyleBackColor = true;
+            this.btncalcnem3.Click += new System.EventHandler(this.btncalcnem3_Click);
+            // 
+            // btncalcnem2
+            // 
+            this.btncalcnem2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnem2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnem2.Location = new System.Drawing.Point(78, 270);
+            this.btncalcnem2.Name = "btncalcnem2";
+            this.btncalcnem2.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnem2.TabIndex = 18;
+            this.btncalcnem2.Text = "2";
+            this.btncalcnem2.UseVisualStyleBackColor = true;
+            this.btncalcnem2.Click += new System.EventHandler(this.btncalcnem2_Click);
+            // 
+            // btncalcnem1
+            // 
+            this.btncalcnem1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcnem1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncalcnem1.Location = new System.Drawing.Point(13, 270);
+            this.btncalcnem1.Name = "btncalcnem1";
+            this.btncalcnem1.Size = new System.Drawing.Size(50, 50);
+            this.btncalcnem1.TabIndex = 17;
+            this.btncalcnem1.Text = "1";
+            this.btncalcnem1.UseVisualStyleBackColor = true;
+            this.btncalcnem1.Click += new System.EventHandler(this.btncalcnem1_Click);
+            // 
+            // txtformulanem
+            // 
+            this.txtformulanem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtformulanem.Enabled = false;
+            this.txtformulanem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtformulanem.ForeColor = System.Drawing.Color.Black;
+            this.txtformulanem.Location = new System.Drawing.Point(13, 47);
+            this.txtformulanem.Margin = new System.Windows.Forms.Padding(2);
+            this.txtformulanem.Name = "txtformulanem";
+            this.txtformulanem.Size = new System.Drawing.Size(246, 29);
+            this.txtformulanem.TabIndex = 16;
+            this.txtformulanem.Text = "140*(PESO)^0,75";
+            this.txtformulanem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtcadastronem
+            // 
+            this.txtcadastronem.Enabled = false;
+            this.txtcadastronem.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcadastronem.ForeColor = System.Drawing.Color.Black;
+            this.txtcadastronem.Location = new System.Drawing.Point(899, 154);
+            this.txtcadastronem.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcadastronem.Name = "txtcadastronem";
+            this.txtcadastronem.Size = new System.Drawing.Size(163, 21);
+            this.txtcadastronem.TabIndex = 14;
+            // 
+            // lblnem
+            // 
+            this.lblnem.AutoSize = true;
+            this.lblnem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnem.Location = new System.Drawing.Point(591, 153);
+            this.lblnem.Name = "lblnem";
+            this.lblnem.Size = new System.Drawing.Size(303, 17);
+            this.lblnem.TabIndex = 13;
+            this.lblnem.Text = "Necessidade Energética de Manutenção (kcal/dia):";
+            // 
+            // txtcadastronomeespecie
+            // 
+            this.txtcadastronomeespecie.Enabled = false;
+            this.txtcadastronomeespecie.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcadastronomeespecie.ForeColor = System.Drawing.Color.Black;
+            this.txtcadastronomeespecie.Location = new System.Drawing.Point(643, 116);
+            this.txtcadastronomeespecie.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcadastronomeespecie.Name = "txtcadastronomeespecie";
+            this.txtcadastronomeespecie.Size = new System.Drawing.Size(419, 21);
+            this.txtcadastronomeespecie.TabIndex = 12;
+            // 
+            // lblnomeespecie
+            // 
+            this.lblnomeespecie.AutoSize = true;
+            this.lblnomeespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnomeespecie.Location = new System.Drawing.Point(591, 118);
+            this.lblnomeespecie.Name = "lblnomeespecie";
+            this.lblnomeespecie.Size = new System.Drawing.Size(47, 17);
+            this.lblnomeespecie.TabIndex = 11;
+            this.lblnomeespecie.Text = "Nome:";
+            // 
+            // dgvespecie
+            // 
+            this.dgvespecie.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dgvespecie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvespecie.Location = new System.Drawing.Point(21, 68);
+            this.dgvespecie.Name = "dgvespecie";
+            this.dgvespecie.Size = new System.Drawing.Size(532, 540);
+            this.dgvespecie.TabIndex = 10;
+            // 
             // txtnomeespecie
             // 
             this.txtnomeespecie.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -6502,6 +7305,20 @@
             this.txtnomeespecie.Size = new System.Drawing.Size(491, 21);
             this.txtnomeespecie.TabIndex = 9;
             this.txtnomeespecie.Text = "Nome";
+            // 
+            // btnbuscanomeespecie
+            // 
+            this.btnbuscanomeespecie.BackgroundImage = global::ProjetoNariz.Properties.Resources.loupe;
+            this.btnbuscanomeespecie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnbuscanomeespecie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscanomeespecie.FlatAppearance.BorderSize = 0;
+            this.btnbuscanomeespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbuscanomeespecie.Location = new System.Drawing.Point(516, 27);
+            this.btnbuscanomeespecie.Margin = new System.Windows.Forms.Padding(2);
+            this.btnbuscanomeespecie.Name = "btnbuscanomeespecie";
+            this.btnbuscanomeespecie.Size = new System.Drawing.Size(36, 37);
+            this.btnbuscanomeespecie.TabIndex = 8;
+            this.btnbuscanomeespecie.UseVisualStyleBackColor = true;
             // 
             // btnadicionarespecie
             // 
@@ -6537,802 +7354,6 @@
             this.btnvisualizarespecie.UseVisualStyleBackColor = false;
             this.btnvisualizarespecie.Click += new System.EventHandler(this.btnvisualizarespecie_Click);
             // 
-            // dgvespecie
-            // 
-            this.dgvespecie.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgvespecie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvespecie.Location = new System.Drawing.Point(21, 68);
-            this.dgvespecie.Name = "dgvespecie";
-            this.dgvespecie.Size = new System.Drawing.Size(532, 540);
-            this.dgvespecie.TabIndex = 10;
-            // 
-            // lblnomeespecie
-            // 
-            this.lblnomeespecie.AutoSize = true;
-            this.lblnomeespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnomeespecie.Location = new System.Drawing.Point(591, 118);
-            this.lblnomeespecie.Name = "lblnomeespecie";
-            this.lblnomeespecie.Size = new System.Drawing.Size(47, 17);
-            this.lblnomeespecie.TabIndex = 11;
-            this.lblnomeespecie.Text = "Nome:";
-            // 
-            // txtcadastronomeespecie
-            // 
-            this.txtcadastronomeespecie.Enabled = false;
-            this.txtcadastronomeespecie.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcadastronomeespecie.ForeColor = System.Drawing.Color.Black;
-            this.txtcadastronomeespecie.Location = new System.Drawing.Point(643, 116);
-            this.txtcadastronomeespecie.Margin = new System.Windows.Forms.Padding(2);
-            this.txtcadastronomeespecie.Name = "txtcadastronomeespecie";
-            this.txtcadastronomeespecie.Size = new System.Drawing.Size(419, 21);
-            this.txtcadastronomeespecie.TabIndex = 12;
-            // 
-            // txtcadastronem
-            // 
-            this.txtcadastronem.Enabled = false;
-            this.txtcadastronem.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcadastronem.ForeColor = System.Drawing.Color.Black;
-            this.txtcadastronem.Location = new System.Drawing.Point(899, 154);
-            this.txtcadastronem.Margin = new System.Windows.Forms.Padding(2);
-            this.txtcadastronem.Name = "txtcadastronem";
-            this.txtcadastronem.Size = new System.Drawing.Size(163, 21);
-            this.txtcadastronem.TabIndex = 14;
-            // 
-            // lblnem
-            // 
-            this.lblnem.AutoSize = true;
-            this.lblnem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnem.Location = new System.Drawing.Point(591, 153);
-            this.lblnem.Name = "lblnem";
-            this.lblnem.Size = new System.Drawing.Size(303, 17);
-            this.lblnem.TabIndex = 13;
-            this.lblnem.Text = "Necessidade Energética de Manutenção (kcal/dia):";
-            // 
-            // pnlcalcnem
-            // 
-            this.pnlcalcnem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlcalcnem.Controls.Add(this.btncalcnemvirugla);
-            this.pnlcalcnem.Controls.Add(this.lbltextoformulacao);
-            this.pnlcalcnem.Controls.Add(this.btncalcnemapagar);
-            this.pnlcalcnem.Controls.Add(this.btncalcnempotencia);
-            this.pnlcalcnem.Controls.Add(this.btncalcnemparentesesd);
-            this.pnlcalcnem.Controls.Add(this.btncalcnemparentesese);
-            this.pnlcalcnem.Controls.Add(this.btncalcnemdivisao);
-            this.pnlcalcnem.Controls.Add(this.btncalcnemmultiplicacao);
-            this.pnlcalcnem.Controls.Add(this.btncalcnemsubtracao);
-            this.pnlcalcnem.Controls.Add(this.btncalcnempeso);
-            this.pnlcalcnem.Controls.Add(this.btncalcnemadicao);
-            this.pnlcalcnem.Controls.Add(this.btncalcnem9);
-            this.pnlcalcnem.Controls.Add(this.btncalcnem8);
-            this.pnlcalcnem.Controls.Add(this.btncalcnemraiz);
-            this.pnlcalcnem.Controls.Add(this.btncalcnem7);
-            this.pnlcalcnem.Controls.Add(this.btncalcnem6);
-            this.pnlcalcnem.Controls.Add(this.btncalcnem5);
-            this.pnlcalcnem.Controls.Add(this.btncalcnem4);
-            this.pnlcalcnem.Controls.Add(this.btncalcnemsalvaformula);
-            this.pnlcalcnem.Controls.Add(this.btncalcnem3);
-            this.pnlcalcnem.Controls.Add(this.btncalcnem2);
-            this.pnlcalcnem.Controls.Add(this.btncalcnem1);
-            this.pnlcalcnem.Controls.Add(this.txtformulanem);
-            this.pnlcalcnem.Location = new System.Drawing.Point(722, 185);
-            this.pnlcalcnem.Name = "pnlcalcnem";
-            this.pnlcalcnem.Size = new System.Drawing.Size(278, 347);
-            this.pnlcalcnem.TabIndex = 15;
-            this.pnlcalcnem.Visible = false;
-            // 
-            // txtformulanem
-            // 
-            this.txtformulanem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtformulanem.Enabled = false;
-            this.txtformulanem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtformulanem.ForeColor = System.Drawing.Color.Black;
-            this.txtformulanem.Location = new System.Drawing.Point(13, 47);
-            this.txtformulanem.Margin = new System.Windows.Forms.Padding(2);
-            this.txtformulanem.Name = "txtformulanem";
-            this.txtformulanem.Size = new System.Drawing.Size(246, 29);
-            this.txtformulanem.TabIndex = 16;
-            this.txtformulanem.Text = "140*(PESO)^0,75";
-            this.txtformulanem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // btncalcnem1
-            // 
-            this.btncalcnem1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnem1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnem1.Location = new System.Drawing.Point(13, 270);
-            this.btncalcnem1.Name = "btncalcnem1";
-            this.btncalcnem1.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnem1.TabIndex = 17;
-            this.btncalcnem1.Text = "1";
-            this.btncalcnem1.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnem2
-            // 
-            this.btncalcnem2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnem2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnem2.Location = new System.Drawing.Point(78, 270);
-            this.btncalcnem2.Name = "btncalcnem2";
-            this.btncalcnem2.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnem2.TabIndex = 18;
-            this.btncalcnem2.Text = "2";
-            this.btncalcnem2.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnem3
-            // 
-            this.btncalcnem3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnem3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnem3.Location = new System.Drawing.Point(143, 270);
-            this.btncalcnem3.Name = "btncalcnem3";
-            this.btncalcnem3.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnem3.TabIndex = 19;
-            this.btncalcnem3.Text = "3";
-            this.btncalcnem3.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnemsalvaformula
-            // 
-            this.btncalcnemsalvaformula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemsalvaformula.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemsalvaformula.Location = new System.Drawing.Point(208, 270);
-            this.btncalcnemsalvaformula.Name = "btncalcnemsalvaformula";
-            this.btncalcnemsalvaformula.Size = new System.Drawing.Size(50, 25);
-            this.btncalcnemsalvaformula.TabIndex = 20;
-            this.btncalcnemsalvaformula.Text = "salvar";
-            this.btncalcnemsalvaformula.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnemraiz
-            // 
-            this.btncalcnemraiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemraiz.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemraiz.Location = new System.Drawing.Point(78, 84);
-            this.btncalcnemraiz.Name = "btncalcnemraiz";
-            this.btncalcnemraiz.Size = new System.Drawing.Size(50, 25);
-            this.btncalcnemraiz.TabIndex = 24;
-            this.btncalcnemraiz.Text = "√";
-            this.btncalcnemraiz.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnem6
-            // 
-            this.btncalcnem6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnem6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnem6.Location = new System.Drawing.Point(143, 211);
-            this.btncalcnem6.Name = "btncalcnem6";
-            this.btncalcnem6.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnem6.TabIndex = 23;
-            this.btncalcnem6.Text = "6";
-            this.btncalcnem6.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnem5
-            // 
-            this.btncalcnem5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnem5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnem5.Location = new System.Drawing.Point(78, 211);
-            this.btncalcnem5.Name = "btncalcnem5";
-            this.btncalcnem5.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnem5.TabIndex = 22;
-            this.btncalcnem5.Text = "5";
-            this.btncalcnem5.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnem4
-            // 
-            this.btncalcnem4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnem4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnem4.Location = new System.Drawing.Point(13, 211);
-            this.btncalcnem4.Name = "btncalcnem4";
-            this.btncalcnem4.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnem4.TabIndex = 21;
-            this.btncalcnem4.Text = "4";
-            this.btncalcnem4.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnemdivisao
-            // 
-            this.btncalcnemdivisao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemdivisao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemdivisao.Location = new System.Drawing.Point(143, 118);
-            this.btncalcnemdivisao.Margin = new System.Windows.Forms.Padding(0);
-            this.btncalcnemdivisao.Name = "btncalcnemdivisao";
-            this.btncalcnemdivisao.Size = new System.Drawing.Size(50, 25);
-            this.btncalcnemdivisao.TabIndex = 32;
-            this.btncalcnemdivisao.Text = "÷";
-            this.btncalcnemdivisao.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btncalcnemdivisao.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnemmultiplicacao
-            // 
-            this.btncalcnemmultiplicacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemmultiplicacao.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemmultiplicacao.Location = new System.Drawing.Point(208, 118);
-            this.btncalcnemmultiplicacao.Name = "btncalcnemmultiplicacao";
-            this.btncalcnemmultiplicacao.Size = new System.Drawing.Size(50, 25);
-            this.btncalcnemmultiplicacao.TabIndex = 31;
-            this.btncalcnemmultiplicacao.Text = "X";
-            this.btncalcnemmultiplicacao.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnemsubtracao
-            // 
-            this.btncalcnemsubtracao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemsubtracao.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemsubtracao.Location = new System.Drawing.Point(208, 152);
-            this.btncalcnemsubtracao.Name = "btncalcnemsubtracao";
-            this.btncalcnemsubtracao.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnemsubtracao.TabIndex = 30;
-            this.btncalcnemsubtracao.Text = "-";
-            this.btncalcnemsubtracao.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnemadicao
-            // 
-            this.btncalcnemadicao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemadicao.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemadicao.Location = new System.Drawing.Point(208, 211);
-            this.btncalcnemadicao.Margin = new System.Windows.Forms.Padding(0);
-            this.btncalcnemadicao.Name = "btncalcnemadicao";
-            this.btncalcnemadicao.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnemadicao.TabIndex = 29;
-            this.btncalcnemadicao.Text = "+";
-            this.btncalcnemadicao.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnempeso
-            // 
-            this.btncalcnempeso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnempeso.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnempeso.Location = new System.Drawing.Point(13, 84);
-            this.btncalcnempeso.Name = "btncalcnempeso";
-            this.btncalcnempeso.Size = new System.Drawing.Size(50, 25);
-            this.btncalcnempeso.TabIndex = 28;
-            this.btncalcnempeso.Text = "Peso";
-            this.btncalcnempeso.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnem9
-            // 
-            this.btncalcnem9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnem9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnem9.Location = new System.Drawing.Point(143, 152);
-            this.btncalcnem9.Name = "btncalcnem9";
-            this.btncalcnem9.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnem9.TabIndex = 27;
-            this.btncalcnem9.Text = "9";
-            this.btncalcnem9.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnem8
-            // 
-            this.btncalcnem8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnem8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnem8.Location = new System.Drawing.Point(78, 152);
-            this.btncalcnem8.Name = "btncalcnem8";
-            this.btncalcnem8.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnem8.TabIndex = 26;
-            this.btncalcnem8.Text = "8";
-            this.btncalcnem8.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnem7
-            // 
-            this.btncalcnem7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnem7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnem7.Location = new System.Drawing.Point(13, 152);
-            this.btncalcnem7.Name = "btncalcnem7";
-            this.btncalcnem7.Size = new System.Drawing.Size(50, 50);
-            this.btncalcnem7.TabIndex = 25;
-            this.btncalcnem7.Text = "7";
-            this.btncalcnem7.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnemparentesesd
-            // 
-            this.btncalcnemparentesesd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemparentesesd.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemparentesesd.Location = new System.Drawing.Point(13, 118);
-            this.btncalcnemparentesesd.Name = "btncalcnemparentesesd";
-            this.btncalcnemparentesesd.Size = new System.Drawing.Size(50, 25);
-            this.btncalcnemparentesesd.TabIndex = 34;
-            this.btncalcnemparentesesd.Text = "(";
-            this.btncalcnemparentesesd.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnemparentesese
-            // 
-            this.btncalcnemparentesese.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemparentesese.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemparentesese.Location = new System.Drawing.Point(78, 118);
-            this.btncalcnemparentesese.Name = "btncalcnemparentesese";
-            this.btncalcnemparentesese.Size = new System.Drawing.Size(50, 25);
-            this.btncalcnemparentesese.TabIndex = 33;
-            this.btncalcnemparentesese.Text = ")";
-            this.btncalcnemparentesese.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnempotencia
-            // 
-            this.btncalcnempotencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnempotencia.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnempotencia.Location = new System.Drawing.Point(143, 84);
-            this.btncalcnempotencia.Name = "btncalcnempotencia";
-            this.btncalcnempotencia.Size = new System.Drawing.Size(50, 25);
-            this.btncalcnempotencia.TabIndex = 35;
-            this.btncalcnempotencia.Text = "^";
-            this.btncalcnempotencia.UseVisualStyleBackColor = true;
-            // 
-            // btncalcnemapagar
-            // 
-            this.btncalcnemapagar.BackgroundImage = global::ProjetoNariz.Properties.Resources.backspace;
-            this.btncalcnemapagar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btncalcnemapagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemapagar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemapagar.Location = new System.Drawing.Point(208, 84);
-            this.btncalcnemapagar.Name = "btncalcnemapagar";
-            this.btncalcnemapagar.Size = new System.Drawing.Size(50, 25);
-            this.btncalcnemapagar.TabIndex = 36;
-            this.btncalcnemapagar.UseVisualStyleBackColor = true;
-            // 
-            // btnbuscanomeespecie
-            // 
-            this.btnbuscanomeespecie.BackgroundImage = global::ProjetoNariz.Properties.Resources.loupe;
-            this.btnbuscanomeespecie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnbuscanomeespecie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnbuscanomeespecie.FlatAppearance.BorderSize = 0;
-            this.btnbuscanomeespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbuscanomeespecie.Location = new System.Drawing.Point(516, 27);
-            this.btnbuscanomeespecie.Margin = new System.Windows.Forms.Padding(2);
-            this.btnbuscanomeespecie.Name = "btnbuscanomeespecie";
-            this.btnbuscanomeespecie.Size = new System.Drawing.Size(36, 37);
-            this.btnbuscanomeespecie.TabIndex = 8;
-            this.btnbuscanomeespecie.UseVisualStyleBackColor = true;
-            // 
-            // btnescolhealimentoms
-            // 
-            this.btnescolhealimentoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnescolhealimentoms.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnescolhealimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.wheat;
-            this.btnescolhealimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnescolhealimentoms.FlatAppearance.BorderSize = 0;
-            this.btnescolhealimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnescolhealimentoms.Location = new System.Drawing.Point(559, 114);
-            this.btnescolhealimentoms.Name = "btnescolhealimentoms";
-            this.btnescolhealimentoms.Size = new System.Drawing.Size(400, 400);
-            this.btnescolhealimentoms.TabIndex = 1;
-            this.btnescolhealimentoms.UseVisualStyleBackColor = false;
-            this.btnescolhealimentoms.Click += new System.EventHandler(this.btnescolhealimentoms_Click);
-            // 
-            // btnescolhealimentomn
-            // 
-            this.btnescolhealimentomn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnescolhealimentomn.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnescolhealimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
-            this.btnescolhealimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnescolhealimentomn.FlatAppearance.BorderSize = 0;
-            this.btnescolhealimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnescolhealimentomn.Location = new System.Drawing.Point(87, 114);
-            this.btnescolhealimentomn.Name = "btnescolhealimentomn";
-            this.btnescolhealimentomn.Size = new System.Drawing.Size(400, 400);
-            this.btnescolhealimentomn.TabIndex = 3;
-            this.btnescolhealimentomn.UseVisualStyleBackColor = false;
-            this.btnescolhealimentomn.Click += new System.EventHandler(this.btnescolhealimentomn_Click);
-            // 
-            // pbxhelpalimentomn
-            // 
-            this.pbxhelpalimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxhelpalimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.help;
-            this.pbxhelpalimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxhelpalimentomn.Location = new System.Drawing.Point(870, 42);
-            this.pbxhelpalimentomn.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxhelpalimentomn.Name = "pbxhelpalimentomn";
-            this.pbxhelpalimentomn.Size = new System.Drawing.Size(25, 20);
-            this.pbxhelpalimentomn.TabIndex = 9;
-            this.pbxhelpalimentomn.TabStop = false;
-            // 
-            // btnexcluiralimentomn
-            // 
-            this.btnexcluiralimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnexcluiralimentomn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
-            this.btnexcluiralimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnexcluiralimentomn.FlatAppearance.BorderSize = 0;
-            this.btnexcluiralimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexcluiralimentomn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnexcluiralimentomn.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnexcluiralimentomn.Image = global::ProjetoNariz.Properties.Resources.close_cross;
-            this.btnexcluiralimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexcluiralimentomn.Location = new System.Drawing.Point(1020, 30);
-            this.btnexcluiralimentomn.Margin = new System.Windows.Forms.Padding(2);
-            this.btnexcluiralimentomn.Name = "btnexcluiralimentomn";
-            this.btnexcluiralimentomn.Size = new System.Drawing.Size(80, 45);
-            this.btnexcluiralimentomn.TabIndex = 2;
-            this.btnexcluiralimentomn.Text = "Excluir";
-            this.btnexcluiralimentomn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnexcluiralimentomn.UseVisualStyleBackColor = false;
-            this.btnexcluiralimentomn.Click += new System.EventHandler(this.btnexcluiralimentomn_Click);
-            // 
-            // btneditaalimentomn
-            // 
-            this.btneditaalimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btneditaalimentomn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.btneditaalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btneditaalimentomn.FlatAppearance.BorderSize = 0;
-            this.btneditaalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btneditaalimentomn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btneditaalimentomn.ForeColor = System.Drawing.Color.White;
-            this.btneditaalimentomn.Image = global::ProjetoNariz.Properties.Resources.edit_6;
-            this.btneditaalimentomn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btneditaalimentomn.Location = new System.Drawing.Point(920, 30);
-            this.btneditaalimentomn.Margin = new System.Windows.Forms.Padding(2);
-            this.btneditaalimentomn.Name = "btneditaalimentomn";
-            this.btneditaalimentomn.Size = new System.Drawing.Size(94, 45);
-            this.btneditaalimentomn.TabIndex = 1;
-            this.btneditaalimentomn.Text = "Editar";
-            this.btneditaalimentomn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btneditaalimentomn.UseVisualStyleBackColor = false;
-            this.btneditaalimentomn.Click += new System.EventHandler(this.btneditaalimentomn_Click);
-            // 
-            // btnvoltavisualizaalimentomn
-            // 
-            this.btnvoltavisualizaalimentomn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvoltavisualizaalimentomn.BackgroundImage")));
-            this.btnvoltavisualizaalimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnvoltavisualizaalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnvoltavisualizaalimentomn.FlatAppearance.BorderSize = 0;
-            this.btnvoltavisualizaalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnvoltavisualizaalimentomn.Location = new System.Drawing.Point(10, 10);
-            this.btnvoltavisualizaalimentomn.Margin = new System.Windows.Forms.Padding(2);
-            this.btnvoltavisualizaalimentomn.Name = "btnvoltavisualizaalimentomn";
-            this.btnvoltavisualizaalimentomn.Size = new System.Drawing.Size(50, 45);
-            this.btnvoltavisualizaalimentomn.TabIndex = 0;
-            this.btnvoltavisualizaalimentomn.UseVisualStyleBackColor = true;
-            this.btnvoltavisualizaalimentomn.Click += new System.EventHandler(this.btnvoltavisualizaalimentomn_Click);
-            // 
-            // pbxalimentosmn
-            // 
-            this.pbxalimentosmn.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
-            this.pbxalimentosmn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxalimentosmn.Location = new System.Drawing.Point(11, 5);
-            this.pbxalimentosmn.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxalimentosmn.Name = "pbxalimentosmn";
-            this.pbxalimentosmn.Size = new System.Drawing.Size(45, 41);
-            this.pbxalimentosmn.TabIndex = 0;
-            this.pbxalimentosmn.TabStop = false;
-            // 
-            // btnpesquisaalimentomn
-            // 
-            this.btnpesquisaalimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnpesquisaalimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.loupe;
-            this.btnpesquisaalimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnpesquisaalimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnpesquisaalimentomn.FlatAppearance.BorderSize = 0;
-            this.btnpesquisaalimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpesquisaalimentomn.Location = new System.Drawing.Point(743, 63);
-            this.btnpesquisaalimentomn.Margin = new System.Windows.Forms.Padding(2);
-            this.btnpesquisaalimentomn.Name = "btnpesquisaalimentomn";
-            this.btnpesquisaalimentomn.Size = new System.Drawing.Size(36, 37);
-            this.btnpesquisaalimentomn.TabIndex = 3;
-            this.btnpesquisaalimentomn.UseVisualStyleBackColor = true;
-            this.btnpesquisaalimentomn.Click += new System.EventHandler(this.btnpesquisaalimentomn_Click);
-            // 
-            // pbxtooltipalimentoms
-            // 
-            this.pbxtooltipalimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxtooltipalimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.help;
-            this.pbxtooltipalimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxtooltipalimentoms.Location = new System.Drawing.Point(870, 42);
-            this.pbxtooltipalimentoms.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxtooltipalimentoms.Name = "pbxtooltipalimentoms";
-            this.pbxtooltipalimentoms.Size = new System.Drawing.Size(25, 20);
-            this.pbxtooltipalimentoms.TabIndex = 9;
-            this.pbxtooltipalimentoms.TabStop = false;
-            // 
-            // btnexcluiralimentoms
-            // 
-            this.btnexcluiralimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnexcluiralimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
-            this.btnexcluiralimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnexcluiralimentoms.FlatAppearance.BorderSize = 0;
-            this.btnexcluiralimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexcluiralimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnexcluiralimentoms.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnexcluiralimentoms.Image = global::ProjetoNariz.Properties.Resources.close_cross;
-            this.btnexcluiralimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexcluiralimentoms.Location = new System.Drawing.Point(1020, 30);
-            this.btnexcluiralimentoms.Margin = new System.Windows.Forms.Padding(2);
-            this.btnexcluiralimentoms.Name = "btnexcluiralimentoms";
-            this.btnexcluiralimentoms.Size = new System.Drawing.Size(80, 45);
-            this.btnexcluiralimentoms.TabIndex = 3;
-            this.btnexcluiralimentoms.Text = "Excluir";
-            this.btnexcluiralimentoms.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnexcluiralimentoms.UseVisualStyleBackColor = false;
-            this.btnexcluiralimentoms.Click += new System.EventHandler(this.btnexcluiralimentoms_Click);
-            // 
-            // btneditaalimentoms
-            // 
-            this.btneditaalimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btneditaalimentoms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.btneditaalimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btneditaalimentoms.FlatAppearance.BorderSize = 0;
-            this.btneditaalimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btneditaalimentoms.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btneditaalimentoms.ForeColor = System.Drawing.Color.White;
-            this.btneditaalimentoms.Image = global::ProjetoNariz.Properties.Resources.edit_6;
-            this.btneditaalimentoms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btneditaalimentoms.Location = new System.Drawing.Point(920, 30);
-            this.btneditaalimentoms.Margin = new System.Windows.Forms.Padding(2);
-            this.btneditaalimentoms.Name = "btneditaalimentoms";
-            this.btneditaalimentoms.Size = new System.Drawing.Size(95, 45);
-            this.btneditaalimentoms.TabIndex = 2;
-            this.btneditaalimentoms.Text = "Editar";
-            this.btneditaalimentoms.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btneditaalimentoms.UseVisualStyleBackColor = false;
-            this.btneditaalimentoms.Click += new System.EventHandler(this.btneditaralimentoms_Click);
-            // 
-            // btnvoltavisualimentoms
-            // 
-            this.btnvoltavisualimentoms.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvoltavisualimentoms.BackgroundImage")));
-            this.btnvoltavisualimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnvoltavisualimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnvoltavisualimentoms.FlatAppearance.BorderSize = 0;
-            this.btnvoltavisualimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnvoltavisualimentoms.Location = new System.Drawing.Point(10, 10);
-            this.btnvoltavisualimentoms.Margin = new System.Windows.Forms.Padding(2);
-            this.btnvoltavisualimentoms.Name = "btnvoltavisualimentoms";
-            this.btnvoltavisualimentoms.Size = new System.Drawing.Size(50, 45);
-            this.btnvoltavisualimentoms.TabIndex = 0;
-            this.btnvoltavisualimentoms.UseVisualStyleBackColor = true;
-            this.btnvoltavisualimentoms.Click += new System.EventHandler(this.btnvoltavisualimentoms_Click);
-            // 
-            // pbxalimentosms
-            // 
-            this.pbxalimentosms.BackgroundImage = global::ProjetoNariz.Properties.Resources.wheat;
-            this.pbxalimentosms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxalimentosms.Location = new System.Drawing.Point(11, 5);
-            this.pbxalimentosms.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxalimentosms.Name = "pbxalimentosms";
-            this.pbxalimentosms.Size = new System.Drawing.Size(45, 41);
-            this.pbxalimentosms.TabIndex = 0;
-            this.pbxalimentosms.TabStop = false;
-            // 
-            // btnpesquisaalimentoms
-            // 
-            this.btnpesquisaalimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnpesquisaalimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.loupe;
-            this.btnpesquisaalimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnpesquisaalimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnpesquisaalimentoms.FlatAppearance.BorderSize = 0;
-            this.btnpesquisaalimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpesquisaalimentoms.Location = new System.Drawing.Point(736, 60);
-            this.btnpesquisaalimentoms.Margin = new System.Windows.Forms.Padding(2);
-            this.btnpesquisaalimentoms.Name = "btnpesquisaalimentoms";
-            this.btnpesquisaalimentoms.Size = new System.Drawing.Size(36, 37);
-            this.btnpesquisaalimentoms.TabIndex = 3;
-            this.btnpesquisaalimentoms.UseVisualStyleBackColor = true;
-            this.btnpesquisaalimentoms.Click += new System.EventHandler(this.btnpesquisaalimentoms_Click);
-            // 
-            // pbxusuario
-            // 
-            this.pbxusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxusuario.BackColor = System.Drawing.Color.Transparent;
-            this.pbxusuario.BackgroundImage = global::ProjetoNariz.Properties.Resources.male_user_shadow_48;
-            this.pbxusuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbxusuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxusuario.Location = new System.Drawing.Point(1222, 10);
-            this.pbxusuario.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxusuario.Name = "pbxusuario";
-            this.pbxusuario.Size = new System.Drawing.Size(56, 41);
-            this.pbxusuario.TabIndex = 2;
-            this.pbxusuario.TabStop = false;
-            // 
-            // pbxlogo
-            // 
-            this.pbxlogo.BackColor = System.Drawing.Color.White;
-            this.pbxlogo.BackgroundImage = global::ProjetoNariz.Properties.Resources.Logo;
-            this.pbxlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxlogo.Location = new System.Drawing.Point(32, 10);
-            this.pbxlogo.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxlogo.Name = "pbxlogo";
-            this.pbxlogo.Size = new System.Drawing.Size(190, 41);
-            this.pbxlogo.TabIndex = 1;
-            this.pbxlogo.TabStop = false;
-            // 
-            // btnespecies
-            // 
-            this.btnespecies.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnespecies.BackgroundImage = global::ProjetoNariz.Properties.Resources.horse;
-            this.btnespecies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnespecies.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnespecies.FlatAppearance.BorderSize = 0;
-            this.btnespecies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnespecies.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnespecies.Location = new System.Drawing.Point(-100, 234);
-            this.btnespecies.Margin = new System.Windows.Forms.Padding(2);
-            this.btnespecies.Name = "btnespecies";
-            this.btnespecies.Size = new System.Drawing.Size(266, 37);
-            this.btnespecies.TabIndex = 6;
-            this.btnespecies.Text = "                           Espécies";
-            this.btnespecies.UseVisualStyleBackColor = true;
-            this.btnespecies.Click += new System.EventHandler(this.btnespecies_Click);
-            // 
-            // btnhome
-            // 
-            this.btnhome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnhome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            this.btnhome.BackgroundImage = global::ProjetoNariz.Properties.Resources.home;
-            this.btnhome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnhome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnhome.FlatAppearance.BorderSize = 0;
-            this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnhome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhome.Location = new System.Drawing.Point(-136, 25);
-            this.btnhome.Margin = new System.Windows.Forms.Padding(2);
-            this.btnhome.Name = "btnhome";
-            this.btnhome.Size = new System.Drawing.Size(336, 37);
-            this.btnhome.TabIndex = 0;
-            this.btnhome.Text = "                         Inicio";
-            this.btnhome.UseVisualStyleBackColor = false;
-            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
-            // 
-            // btnconfig
-            // 
-            this.btnconfig.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnconfig.BackgroundImage = global::ProjetoNariz.Properties.Resources.engrenagem;
-            this.btnconfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnconfig.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnconfig.FlatAppearance.BorderSize = 0;
-            this.btnconfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnconfig.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnconfig.Location = new System.Drawing.Point(-136, 576);
-            this.btnconfig.Margin = new System.Windows.Forms.Padding(2);
-            this.btnconfig.Name = "btnconfig";
-            this.btnconfig.Size = new System.Drawing.Size(336, 37);
-            this.btnconfig.TabIndex = 5;
-            this.btnconfig.Text = "                                        Configurações";
-            this.btnconfig.UseVisualStyleBackColor = false;
-            this.btnconfig.Click += new System.EventHandler(this.btnconfig_Click);
-            // 
-            // btnsair
-            // 
-            this.btnsair.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnsair.BackgroundImage = global::ProjetoNariz.Properties.Resources.exit;
-            this.btnsair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnsair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsair.FlatAppearance.BorderSize = 0;
-            this.btnsair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsair.Location = new System.Drawing.Point(-109, 617);
-            this.btnsair.Margin = new System.Windows.Forms.Padding(2);
-            this.btnsair.Name = "btnsair";
-            this.btnsair.Size = new System.Drawing.Size(280, 37);
-            this.btnsair.TabIndex = 4;
-            this.btnsair.Text = "                       Sair";
-            this.btnsair.UseVisualStyleBackColor = true;
-            this.btnsair.Click += new System.EventHandler(this.btnsair_Click);
-            // 
-            // btndietas
-            // 
-            this.btndietas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btndietas.BackgroundImage = global::ProjetoNariz.Properties.Resources.calendar;
-            this.btndietas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btndietas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndietas.FlatAppearance.BorderSize = 0;
-            this.btndietas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndietas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndietas.Location = new System.Drawing.Point(-100, 188);
-            this.btndietas.Margin = new System.Windows.Forms.Padding(2);
-            this.btndietas.Name = "btndietas";
-            this.btndietas.Size = new System.Drawing.Size(266, 37);
-            this.btndietas.TabIndex = 4;
-            this.btndietas.Text = "                         Dietas";
-            this.btndietas.UseVisualStyleBackColor = true;
-            this.btndietas.Click += new System.EventHandler(this.btndietas_Click);
-            // 
-            // btnavaliar
-            // 
-            this.btnavaliar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnavaliar.BackgroundImage = global::ProjetoNariz.Properties.Resources.Prancheta;
-            this.btnavaliar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnavaliar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnavaliar.FlatAppearance.BorderSize = 0;
-            this.btnavaliar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnavaliar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnavaliar.Location = new System.Drawing.Point(-106, 147);
-            this.btnavaliar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnavaliar.Name = "btnavaliar";
-            this.btnavaliar.Size = new System.Drawing.Size(270, 37);
-            this.btnavaliar.TabIndex = 3;
-            this.btnavaliar.Text = "                            Avaliar";
-            this.btnavaliar.UseVisualStyleBackColor = true;
-            this.btnavaliar.Click += new System.EventHandler(this.btnavaliar_Click);
-            // 
-            // btnformular
-            // 
-            this.btnformular.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnformular.BackgroundImage = global::ProjetoNariz.Properties.Resources.calculator;
-            this.btnformular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnformular.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnformular.FlatAppearance.BorderSize = 0;
-            this.btnformular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnformular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnformular.Location = new System.Drawing.Point(-111, 106);
-            this.btnformular.Margin = new System.Windows.Forms.Padding(2);
-            this.btnformular.Name = "btnformular";
-            this.btnformular.Size = new System.Drawing.Size(280, 37);
-            this.btnformular.TabIndex = 2;
-            this.btnformular.Text = "                                Formular";
-            this.btnformular.UseVisualStyleBackColor = true;
-            this.btnformular.Click += new System.EventHandler(this.btnformular_Click);
-            // 
-            // btnalimentos
-            // 
-            this.btnalimentos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnalimentos.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
-            this.btnalimentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnalimentos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnalimentos.FlatAppearance.BorderSize = 0;
-            this.btnalimentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnalimentos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnalimentos.Location = new System.Drawing.Point(-103, 66);
-            this.btnalimentos.Margin = new System.Windows.Forms.Padding(2);
-            this.btnalimentos.Name = "btnalimentos";
-            this.btnalimentos.Size = new System.Drawing.Size(270, 37);
-            this.btnalimentos.TabIndex = 1;
-            this.btnalimentos.Text = "                                Alimentos";
-            this.btnalimentos.UseVisualStyleBackColor = true;
-            this.btnalimentos.Click += new System.EventHandler(this.btnalimentos_Click);
-            // 
-            // btnsalvacadastroespecie
-            // 
-            this.btnsalvacadastroespecie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.btnsalvacadastroespecie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsalvacadastroespecie.Enabled = false;
-            this.btnsalvacadastroespecie.FlatAppearance.BorderSize = 0;
-            this.btnsalvacadastroespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsalvacadastroespecie.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnsalvacadastroespecie.ForeColor = System.Drawing.Color.White;
-            this.btnsalvacadastroespecie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsalvacadastroespecie.Location = new System.Drawing.Point(767, 549);
-            this.btnsalvacadastroespecie.Margin = new System.Windows.Forms.Padding(2);
-            this.btnsalvacadastroespecie.Name = "btnsalvacadastroespecie";
-            this.btnsalvacadastroespecie.Size = new System.Drawing.Size(90, 40);
-            this.btnsalvacadastroespecie.TabIndex = 13;
-            this.btnsalvacadastroespecie.Text = "Salvar";
-            this.btnsalvacadastroespecie.UseVisualStyleBackColor = false;
-            this.btnsalvacadastroespecie.Visible = false;
-            // 
-            // btncancelacadastroespecie
-            // 
-            this.btncancelacadastroespecie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
-            this.btncancelacadastroespecie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncancelacadastroespecie.FlatAppearance.BorderSize = 0;
-            this.btncancelacadastroespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancelacadastroespecie.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancelacadastroespecie.ForeColor = System.Drawing.Color.White;
-            this.btncancelacadastroespecie.Location = new System.Drawing.Point(876, 549);
-            this.btncancelacadastroespecie.Margin = new System.Windows.Forms.Padding(2);
-            this.btncancelacadastroespecie.Name = "btncancelacadastroespecie";
-            this.btncancelacadastroespecie.Size = new System.Drawing.Size(90, 40);
-            this.btncancelacadastroespecie.TabIndex = 16;
-            this.btncancelacadastroespecie.Text = "Cancelar";
-            this.btncancelacadastroespecie.UseVisualStyleBackColor = false;
-            this.btncancelacadastroespecie.Visible = false;
-            this.btncancelacadastroespecie.Click += new System.EventHandler(this.btncancelacadastroespecie_Click);
-            // 
-            // lbltextoformulacao
-            // 
-            this.lbltextoformulacao.AutoSize = true;
-            this.lbltextoformulacao.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltextoformulacao.Location = new System.Drawing.Point(40, 15);
-            this.lbltextoformulacao.Name = "lbltextoformulacao";
-            this.lbltextoformulacao.Size = new System.Drawing.Size(197, 25);
-            this.lbltextoformulacao.TabIndex = 37;
-            this.lbltextoformulacao.Text = "Crie sua formula NEM";
-            // 
-            // btncalcnemvirugla
-            // 
-            this.btncalcnemvirugla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcnemvirugla.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncalcnemvirugla.Location = new System.Drawing.Point(208, 298);
-            this.btncalcnemvirugla.Name = "btncalcnemvirugla";
-            this.btncalcnemvirugla.Size = new System.Drawing.Size(50, 21);
-            this.btncalcnemvirugla.TabIndex = 38;
-            this.btncalcnemvirugla.Text = ".";
-            this.btncalcnemvirugla.UseVisualStyleBackColor = true;
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7354,12 +7375,16 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Principal_Load);
             this.pnlsuperior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).EndInit();
             this.pnlselecionaalimento.ResumeLayout(false);
             this.pnlselecionaalimento.PerformLayout();
             this.pnlsuperioralimentosms.ResumeLayout(false);
             this.pnlsuperioralimentosms.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).EndInit();
             this.pnlsuperioralimentosmn.ResumeLayout(false);
             this.pnlsuperioralimentosmn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosmn)).EndInit();
             this.pnllateral.ResumeLayout(false);
             this.pnlalimentosms.ResumeLayout(false);
             this.pnlalimentosms.PerformLayout();
@@ -7383,6 +7408,7 @@
             this.tableumidadems.PerformLayout();
             this.tableenergiams.ResumeLayout(false);
             this.tableenergiams.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxtooltipalimentoms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosms)).EndInit();
             this.pnlvisualizaalimentosmn.ResumeLayout(false);
             this.pnlvisualizaalimentosmn.PerformLayout();
@@ -7404,25 +7430,20 @@
             this.tableumidade.PerformLayout();
             this.tableenergia.ResumeLayout(false);
             this.tableenergia.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxhelpalimentomn)).EndInit();
             this.pnlalimentosmn.ResumeLayout(false);
             this.pnlalimentosmn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosmn)).EndInit();
             this.pnlformulacao.ResumeLayout(false);
             this.pnlformulacao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumpeso)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumescore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtnumidade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumescore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumpeso)).EndInit();
             this.pnlespecies.ResumeLayout(false);
             this.pnlespecies.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvespecie)).EndInit();
             this.pnlcalcnem.ResumeLayout(false);
             this.pnlcalcnem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxhelpalimentomn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosmn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxtooltipalimentoms)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvespecie)).EndInit();
             this.ResumeLayout(false);
 
         }
