@@ -1738,7 +1738,7 @@ namespace ProjetoNariz.Telas
                 MessageBox.Show("Você colocou mais parenteses que o necessário. Por favor verifique a função");
             }
             else
-            {
+            {/*
                 List<string> entreparenteses = new List<string>();
                 string funcao = string.Empty;
                 bool montando = false;
@@ -1763,7 +1763,7 @@ namespace ProjetoNariz.Telas
                             funcao = funcao.Substring(2);
                             entreparenteses.Add(funcao);
                         }
-                        
+                       Math.Sqrt(123);
                     }
                     else if(contaparenteses>0)
                     {
@@ -1781,12 +1781,16 @@ namespace ProjetoNariz.Telas
                 {
                     string aux;
                     //aux = txtformulanem.Text.Substring()
-                }
+                }*/
             }
         }
+        private void btnsalvacadastroespecie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
         #endregion
-
-
 
 
     }
