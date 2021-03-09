@@ -668,7 +668,7 @@ namespace ProjetoNariz
         {
             string SQL;
 
-            SQL = "Insert into especies (Nome, Formula) values ('" + Alimento + "','" + Energia + "');";
+            SQL = "Insert into especies (Nome, Formula) values ('" + Nome + "','" + Formula + "');";
 
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();

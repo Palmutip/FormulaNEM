@@ -1697,6 +1697,10 @@ namespace ProjetoNariz.Telas
         #region Painel Especies
 
         #region Calculadora para Formulação
+        private void btncalcnem0_Click(object sender, EventArgs e)
+        {
+            txtformulanem.Text += "0";
+        }
         private void btncalcnem1_Click(object sender, EventArgs e)
         {
             txtformulanem.Text += "1";
@@ -1781,11 +1785,11 @@ namespace ProjetoNariz.Telas
         {
             foreach (char c in txtformulanem.Text)
             {
-                if (txtformulanem.Text.Contains("("))
+                if (c == '(')
                 {
                     contaparenteses++;
                 }
-                else if (txtformulanem.Text.Contains(")"))
+                else if (c == ')')
                 {
                     contaparenteses--;
                 }
@@ -1800,8 +1804,10 @@ namespace ProjetoNariz.Telas
             }
             else
             {
+
                 txtcadastronem.Text = txtformulanem.Text;
-                LimpaCampos(3);
+                txtformulanem.Text = string.Empty;
+                //LimpaCampos(3);
                 /*
                 List<string> entreparenteses = new List<string>();
                 string funcao = string.Empty;
@@ -1853,37 +1859,50 @@ namespace ProjetoNariz.Telas
         private void btnvisualizarespecie_Click(object sender, EventArgs e)
         {
             LimpaCampos(3);
+            try
+            {
+                f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
+                f.SelecionaEspecie();
 
-            f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
-            f.SelecionaEspecie();
+                txtcadastronomeespecie.Enabled = false;
+                txtcadastronem.Enabled = false;
+                txtcadastronomeespecie.Visible = true;
+                txtcadastronem.Visible = true;
 
-            txtcadastronomeespecie.Enabled = false;
+                lblnomeespecie.Visible = true;
+                lblnem.Visible = true;
+
+                txtcadastronomeespecie.Text = f.Nome;
+                txtcadastronem.Text = f.Formula;
+
+                btnexcluirespecie.Visible = true;
+                btnexcluirespecie.Enabled = true;
+                btneditarespecie.Visible = true;
+                btneditarespecie.Enabled = true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Favor Selecionar uma espécie na tabela ao lado", "Atenção");
+            }
+           
+        }
+        private void btnadicionarespecie_Click(object sender, EventArgs e)
+        {
+            txtcadastronomeespecie.Enabled = true;
             txtcadastronem.Enabled = false;
+            pnlcalcnem.Visible = true;
             txtcadastronomeespecie.Visible = true;
             txtcadastronem.Visible = true;
 
             lblnomeespecie.Visible = true;
             lblnem.Visible = true;
 
-            txtcadastronomeespecie.Text = f.Nome;
-            txtcadastronem.Text = f.Formula;
-
-            btnexcluirespecie.Visible = true;
-            btnexcluirespecie.Enabled = true;
-            btneditarespecie.Visible = true;
-            btneditarespecie.Enabled = true;
-        }
-        private void btnadicionarespecie_Click(object sender, EventArgs e)
-        {
-            txtcadastronomeespecie.Enabled = true;
-            txtcadastronem.Enabled = true;
-            pnlcalcnem.Visible = true;
-
             btnexcluirespecie.Visible = true;
             btnexcluirespecie.Enabled = false;
             btneditarespecie.Visible = true;
             btneditarespecie.Enabled = false;
             btneditarespecie.Text = "Criando...";
+            btneditarespecie.ForeColor = Color.White;
 
             btnsalvacadastroespecie.Visible = true;
             btncancelacadastroespecie.Visible = true;
@@ -1921,9 +1940,10 @@ namespace ProjetoNariz.Telas
         {
             btnadicionarespecie.Enabled = false;
             btnadicionarespecie.Text = "Editando...";
+            btnadicionarespecie.ForeColor = Color.White;
 
             txtcadastronomeespecie.Enabled = true;
-            txtcadastronem.Enabled = true;
+            txtcadastronem.Enabled = false;
 
             btnsalvacadastroespecie.Visible = true;
             btncancelacadastroespecie.Visible = true;
@@ -1993,6 +2013,7 @@ namespace ProjetoNariz.Telas
         }
 
         #endregion
+
 
     }
 }
