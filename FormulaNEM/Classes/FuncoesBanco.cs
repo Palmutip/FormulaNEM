@@ -12,10 +12,16 @@ namespace ProjetoNariz
 {
     class FuncoesBanco
     {
+        #region Variaveis de inicialização
+
+        #region Variaveis do Banco
         ConectaBanco conectabanco = new ConectaBanco();
         ConectaMySQL conectaMySQL = new ConectaMySQL();
-        public int Id { get; set; }
+        #endregion
+
         public string id { get; set; }
+
+        #region Variaveis das tabelas de Alimento
         public string Alimento { get; set; }
         public string Energia { get; set; }
         public string Umidade { get; set; }
@@ -75,6 +81,9 @@ namespace ProjetoNariz
         public string Vit_C { get; set; }
         public string Correcao_ENN { get; set; }
         public string Preco { get; set; }
+        #endregion
+
+        #region Variaveis da Medida Caseira
         public string Un_P { get; set; }
         public string Un_M { get; set; }
         public string Un_G { get; set; }
@@ -114,9 +123,15 @@ namespace ProjetoNariz
         public string Ramo { get; set; }
         public string Maco { get; set; }
         public string Pitada { get; set; }
-        //Vit_D
+        #endregion
 
-        //Painel Alimentos Materia Natural
+        #region Variaveis das Especies
+        public string Nome { get; set; }
+        public string Formula { get; set; }
+        #endregion
+        //Vit_D
+        #endregion
+
         public void Desconstrutor()
         {
             Alimento = string.Empty;
@@ -218,10 +233,12 @@ namespace ProjetoNariz
             Ramo = string.Empty;
             Maco = string.Empty;
             Pitada = string.Empty;
-
+            Nome = string.Empty;
+            Formula = string.Empty;
         }
 
         //Controles Alimentos MN
+        #region Alimentos_MN
         public DataTable AtualizaAlimentosMN()
         {
             MySqlCommand cmd = new MySqlCommand();
@@ -430,8 +447,10 @@ namespace ProjetoNariz
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();
         }
+        #endregion
 
         //Controles Alimentos MS
+        #region Alimentos_MS
         public DataTable AtualizaAlimentosMS()
         {
             MySqlCommand cmd = new MySqlCommand();
@@ -600,6 +619,84 @@ namespace ProjetoNariz
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();
         }
+        #endregion
+
+        //Controles Especies
+        #region Especies
+        public DataTable AtualizaEspecie()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conectaMySQL.AbreMySQL();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select id, Nome, Formula from especies";
+
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = cmd;
+
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            conectaMySQL.FechaMySQL();
+
+            return dt;
+        }
+        public DataTable PesquisaEspecie(string TextoPesquisa)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conectaMySQL.AbreMySQL();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * from especies where nome like '%" + TextoPesquisa + "%'";
+
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = cmd;
+
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            conectaMySQL.FechaMySQL();
+
+            return dt;
+        }
+        public void InsereEspecie()
+        {
+            string SQL;
+
+            SQL = "Insert into especies (Nome, Formula) values ('" + Alimento + "','" + Energia + "');";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void AlteraEspecie()
+        {
+            string SQL;
+
+            SQL = "Update especies set Nome ='" + Nome + "', Formula ='" + Formula + "' where Id =" + id + ";";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void DeletaEspecie()
+        {
+            string SQL;
+
+            SQL = "Delete from especies where Id=" + id + ";";
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void SelecionaEspecie()
+        {
+            string SQL;
+            SQL = "Select * from especies where id=" + id;
+
+            MySqlDataReader dados = conectaMySQL.ExecutaConsulta(SQL);
+
+            if (dados.Read())
+            {
+                Nome = dados["Nome"].ToString();
+                Formula = dados["Formula"].ToString();
+            }
+            conectaMySQL.FechaMySQL();
+        }
+        #endregion
+
         //Testes
 
     }

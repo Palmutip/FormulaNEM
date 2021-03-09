@@ -150,6 +150,8 @@ namespace ProjetoNariz.Telas
 
             LimpaCampos(3);
 
+            dgvespecie.DataSource = f.AtualizaEspecie();
+
             PaineisPrincipais(pnlespecies);
         }
         private void PaineisPrincipais(Panel panel1, Panel panel2, Panel panel3)
@@ -368,17 +370,29 @@ namespace ProjetoNariz.Telas
             #region Módulo 3 é Espécies
             else if (modulo == 3)
             {
-                txtnomeespecie.Text = "Nome";
+                txtbuscanomeespecie.Text = "Nome";
                 txtcadastronomeespecie.Text = string.Empty;
                 txtcadastronomeespecie.Enabled = false;
+                txtcadastronomeespecie.Visible = false;
                 txtcadastronem.Text = string.Empty;
                 txtcadastronem.Enabled = false;
+                txtcadastronem.Visible = false;
                 txtformulanem.Text = string.Empty;
 
                 btnsalvacadastroespecie.Visible = false;
                 btnsalvacadastroespecie.Enabled = false;
                 btncancelacadastroespecie.Visible = false;
                 btncancelacadastroespecie.Enabled = false;
+
+                btneditarespecie.Visible = false;
+                btneditarespecie.Enabled = false;
+                btneditarespecie.Text = "Editar";
+                btnexcluirespecie.Visible = false;
+                btnexcluirespecie.Enabled = false;
+
+                btnadicionarespecie.Enabled = true;
+                btnadicionarespecie.Text = "Adicionar Espécie";
+                btnvisualizarespecie.Enabled = true;
 
                 pnlcalcnem.Visible = false;
             }
@@ -788,6 +802,30 @@ namespace ProjetoNariz.Telas
                     txtvaltri.Text = f.Tri;
                     txtvalval.Text = f.Val;
                     txtvaltau.Text = f.Tau;
+                }
+            }
+        }
+        private void TraduzNEM(string Formula, double peso)
+        {
+            StringBuilder formula = new StringBuilder();
+            if (Formula.Contains("PESO"))
+            {
+                Formula.Replace("PESO", peso.ToString());
+            }
+            if (Formula.Contains("√"))
+            {
+                Formula.Replace("√", " Math.Sqrt");
+            }
+            if (Formula.Contains("^"))
+            {
+                Formula.Replace("^", " Math.Sqrt");
+                foreach (char c in Formula)
+                {
+                    if (c == '√') { formula.Append(string.Concat("")); }
+                    if (c == '^') { formula.Append(string.Concat("")); }
+                    formula.Append(string.Concat(c));
+                    Math.Sqrt(1);
+                    Math.Pow(2, 2);
                 }
             }
         }
@@ -1623,19 +1661,8 @@ namespace ProjetoNariz.Telas
         #endregion
 
         #region Painel Especies
-        private void btnvisualizarespecie_Click(object sender, EventArgs e)
-        {
-            txtcadastronomeespecie.Enabled = true;
-            txtcadastronem.Enabled = true;
-        }
-        private void btnadicionarespecie_Click(object sender, EventArgs e)
-        {
-            pnlcalcnem.Visible = true;
-        }
-        private void btncancelacadastroespecie_Click(object sender, EventArgs e)
-        {
-            LimpaCampos(3);
-        }
+
+        #region Calculadora para Formulação
         private void btncalcnem1_Click(object sender, EventArgs e)
         {
             txtformulanem.Text += "1";
@@ -1718,7 +1745,7 @@ namespace ProjetoNariz.Telas
         }
         private void btncalcnemsalvaformula_Click(object sender, EventArgs e)
         {
-            foreach(char c in txtformulanem.Text)
+            foreach (char c in txtformulanem.Text)
             {
                 if (txtformulanem.Text.Contains("("))
                 {
@@ -1733,12 +1760,15 @@ namespace ProjetoNariz.Telas
             {
                 MessageBox.Show("Você se esqueceu de fechar o parenteses em algum lugar. Por favor verifique a função");
             }
-            else if(contaparenteses < 0)
+            else if (contaparenteses < 0)
             {
                 MessageBox.Show("Você colocou mais parenteses que o necessário. Por favor verifique a função");
             }
             else
-            {/*
+            {
+                txtcadastronem.Text = txtformulanem.Text;
+                LimpaCampos(3);
+                /*
                 List<string> entreparenteses = new List<string>();
                 string funcao = string.Empty;
                 bool montando = false;
@@ -1784,11 +1814,128 @@ namespace ProjetoNariz.Telas
                 }*/
             }
         }
+        #endregion
+
+        private void btnvisualizarespecie_Click(object sender, EventArgs e)
+        {
+            f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
+            f.SelecionaEspecie();
+
+            txtcadastronomeespecie.Enabled = false;
+            txtcadastronem.Enabled = false;
+            txtcadastronomeespecie.Text = f.Nome;
+            txtcadastronem.Text = f.Formula;
+
+            btnexcluirespecie.Visible = true;
+            btnexcluirespecie.Enabled = true;
+            btneditarespecie.Visible = true;
+            btneditarespecie.Enabled = true;
+        }
+        private void btnadicionarespecie_Click(object sender, EventArgs e)
+        {
+            txtcadastronomeespecie.Enabled = true;
+            txtcadastronem.Enabled = true;
+            pnlcalcnem.Visible = true;
+
+            btnexcluirespecie.Visible = true;
+            btnexcluirespecie.Enabled = false;
+            btneditarespecie.Visible = true;
+            btneditarespecie.Enabled = false;
+            btneditarespecie.Text = "Criando...";
+
+            Salva = true;
+        }
+        private void btncancelacadastroespecie_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja interromper o processo?", "Atenção", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                LimpaCampos(3);
+            }
+        }
         private void btnsalvacadastroespecie_Click(object sender, EventArgs e)
         {
+            f.Nome = txtcadastronomeespecie.Text;
+            f.Formula = txtcadastronem.Text;
+            if (Salva)
+            {
+                f.InsereEspecie();
+            }
+            else
+            {
+                f.AlteraEspecie();
+            }
 
+            LimpaCampos(3);
+
+            dgvespecie.DataSource = f.AtualizaEspecie();
         }
+        private void btneditarespecie_Click(object sender, EventArgs e)
+        {
+            btnadicionarespecie.Enabled = false;
+            btnadicionarespecie.Text = "Editando...";
 
+            txtcadastronomeespecie.Enabled = true;
+            txtcadastronem.Enabled = true;
+
+            pnlcalcnem.Visible = true;
+
+            Salva = false;
+        }
+        private void btnexcluirespecie_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Tem certeza que deseja excluir a especie?", "Atenção", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                f.DeletaEspecie();
+                f.Desconstrutor();
+                LimpaCampos(3);
+                dgvespecie.DataSource = f.AtualizaEspecie();
+            }
+        }
+        private void btnbuscanomeespecie_Click(object sender, EventArgs e)
+        {
+            dgvespecie.DataSource = f.PesquisaEspecie(txtbuscanomeespecie.Text);
+        }
+        private void txtbuscanomeespecie_Enter(object sender, EventArgs e)
+        {
+            if (txtbuscanomeespecie.Text == "Nome")
+            {
+                txtbuscanomeespecie.Text = "";
+            }
+            txtbuscanomeespecie.ForeColor = Color.Black;
+        }
+        private void txtbuscanomeespecie_Leave(object sender, EventArgs e)
+        {
+            if (txtbuscanomeespecie.Text == "")
+            {
+                txtbuscanomeespecie.Text = "Nome";
+            }
+
+            txtbuscanomeespecie.ForeColor = Color.Silver;
+        }
+        private void txtbuscanomeespecie_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                dgvespecie.DataSource = f.PesquisaEspecie(txtbuscanomeespecie.Text);
+            }
+        }
+        private void dgvespecie_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
+            f.SelecionaEspecie();
+
+            txtcadastronomeespecie.Enabled = false;
+            txtcadastronem.Enabled = false;
+            txtcadastronomeespecie.Text = f.Nome;
+            txtcadastronem.Text = f.Formula;
+
+            btnexcluirespecie.Visible = true;
+            btnexcluirespecie.Enabled = true;
+            btneditarespecie.Visible = true;
+            btneditarespecie.Enabled = true;
+        }
 
         #endregion
 
