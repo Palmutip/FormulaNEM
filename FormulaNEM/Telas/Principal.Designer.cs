@@ -30,12 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlsuperior = new System.Windows.Forms.Panel();
             this.lblusuario = new System.Windows.Forms.Label();
             this.pbxusuario = new System.Windows.Forms.PictureBox();
@@ -470,8 +476,9 @@
             this.lblnomedoanimal = new System.Windows.Forms.Label();
             this.txtnometutor = new System.Windows.Forms.TextBox();
             this.lblnometutor = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlespecies = new System.Windows.Forms.Panel();
+            this.btnexcluirespecie = new System.Windows.Forms.Button();
+            this.btneditarespecie = new System.Windows.Forms.Button();
             this.btncancelacadastroespecie = new System.Windows.Forms.Button();
             this.btnsalvacadastroespecie = new System.Windows.Forms.Button();
             this.pnlcalcnem = new System.Windows.Forms.Panel();
@@ -502,14 +509,17 @@
             this.lblnem = new System.Windows.Forms.Label();
             this.txtcadastronomeespecie = new System.Windows.Forms.TextBox();
             this.lblnomeespecie = new System.Windows.Forms.Label();
-            this.dgvespecie = new System.Windows.Forms.DataGridView();
             this.txtbuscanomeespecie = new System.Windows.Forms.TextBox();
             this.btnbuscanomeespecie = new System.Windows.Forms.Button();
             this.btnadicionarespecie = new System.Windows.Forms.Button();
             this.btnvisualizarespecie = new System.Windows.Forms.Button();
             this.tipalimentosms = new System.Windows.Forms.ToolTip(this.components);
-            this.btnexcluirespecie = new System.Windows.Forms.Button();
-            this.btneditarespecie = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblcabecalhoformular = new System.Windows.Forms.Label();
+            this.pbxcabecalhoformular = new System.Windows.Forms.PictureBox();
+            this.dgvdietas = new System.Windows.Forms.DataGridView();
+            this.dgvespecie = new System.Windows.Forms.DataGridView();
+            this.btnp2formulacao = new System.Windows.Forms.Button();
             this.pnlsuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).BeginInit();
@@ -555,6 +565,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtnumpeso)).BeginInit();
             this.pnlespecies.SuspendLayout();
             this.pnlcalcnem.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxcabecalhoformular)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdietas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvespecie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -563,6 +576,7 @@
             this.pnlsuperior.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlsuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            this.pnlsuperior.Controls.Add(this.pnlespecies);
             this.pnlsuperior.Controls.Add(this.lblusuario);
             this.pnlsuperior.Controls.Add(this.pbxusuario);
             this.pnlsuperior.Controls.Add(this.pbxlogo);
@@ -3707,37 +3721,37 @@
             this.dgvalimentosms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosms.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvalimentosms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvalimentosms.GridColor = System.Drawing.Color.White;
             this.dgvalimentosms.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosms.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosms.MultiSelect = false;
             this.dgvalimentosms.Name = "dgvalimentosms";
             this.dgvalimentosms.ReadOnly = true;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvalimentosms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosms.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosms.RowTemplate.Height = 24;
@@ -6485,37 +6499,37 @@
             this.dgvalimentosmn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosmn.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosmn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvalimentosmn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvalimentosmn.GridColor = System.Drawing.Color.White;
             this.dgvalimentosmn.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosmn.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosmn.MultiSelect = false;
             this.dgvalimentosmn.Name = "dgvalimentosmn";
             this.dgvalimentosmn.ReadOnly = true;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvalimentosmn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosmn.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosmn.RowTemplate.Height = 24;
@@ -6710,6 +6724,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlformulacao.BackColor = System.Drawing.Color.White;
+            this.pnlformulacao.Controls.Add(this.btnp2formulacao);
+            this.pnlformulacao.Controls.Add(this.dgvdietas);
+            this.pnlformulacao.Controls.Add(this.panel1);
             this.pnlformulacao.Controls.Add(this.cbxsexo);
             this.pnlformulacao.Controls.Add(this.lblsexo);
             this.pnlformulacao.Controls.Add(this.txtnumidade);
@@ -6724,7 +6741,6 @@
             this.pnlformulacao.Controls.Add(this.lblnomedoanimal);
             this.pnlformulacao.Controls.Add(this.txtnometutor);
             this.pnlformulacao.Controls.Add(this.lblnometutor);
-            this.pnlformulacao.Controls.Add(this.tableLayoutPanel1);
             this.pnlformulacao.Location = new System.Drawing.Point(165, 80);
             this.pnlformulacao.Name = "pnlformulacao";
             this.pnlformulacao.Size = new System.Drawing.Size(1119, 630);
@@ -6734,16 +6750,16 @@
             // 
             this.cbxsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxsexo.FormattingEnabled = true;
-            this.cbxsexo.Location = new System.Drawing.Point(113, 300);
+            this.cbxsexo.Location = new System.Drawing.Point(443, 198);
             this.cbxsexo.Name = "cbxsexo";
-            this.cbxsexo.Size = new System.Drawing.Size(487, 25);
+            this.cbxsexo.Size = new System.Drawing.Size(120, 25);
             this.cbxsexo.TabIndex = 14;
             // 
             // lblsexo
             // 
             this.lblsexo.AutoSize = true;
             this.lblsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsexo.Location = new System.Drawing.Point(50, 304);
+            this.lblsexo.Location = new System.Drawing.Point(397, 203);
             this.lblsexo.Name = "lblsexo";
             this.lblsexo.Size = new System.Drawing.Size(39, 17);
             this.lblsexo.TabIndex = 13;
@@ -6752,7 +6768,7 @@
             // txtnumidade
             // 
             this.txtnumidade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumidade.Location = new System.Drawing.Point(167, 253);
+            this.txtnumidade.Location = new System.Drawing.Point(443, 164);
             this.txtnumidade.Name = "txtnumidade";
             this.txtnumidade.Size = new System.Drawing.Size(120, 25);
             this.txtnumidade.TabIndex = 12;
@@ -6761,7 +6777,7 @@
             // 
             this.lblidade.AutoSize = true;
             this.lblidade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblidade.Location = new System.Drawing.Point(57, 252);
+            this.lblidade.Location = new System.Drawing.Point(392, 168);
             this.lblidade.Name = "lblidade";
             this.lblidade.Size = new System.Drawing.Size(44, 17);
             this.lblidade.TabIndex = 11;
@@ -6770,7 +6786,7 @@
             // txtnumescore
             // 
             this.txtnumescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumescore.Location = new System.Drawing.Point(141, 195);
+            this.txtnumescore.Location = new System.Drawing.Point(184, 198);
             this.txtnumescore.Name = "txtnumescore";
             this.txtnumescore.Size = new System.Drawing.Size(120, 25);
             this.txtnumescore.TabIndex = 10;
@@ -6779,7 +6795,7 @@
             // 
             this.lblescore.AutoSize = true;
             this.lblescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblescore.Location = new System.Drawing.Point(31, 194);
+            this.lblescore.Location = new System.Drawing.Point(72, 202);
             this.lblescore.Name = "lblescore";
             this.lblescore.Size = new System.Drawing.Size(106, 17);
             this.lblescore.TabIndex = 9;
@@ -6789,7 +6805,7 @@
             // 
             this.txtnumpeso.DecimalPlaces = 3;
             this.txtnumpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumpeso.Location = new System.Drawing.Point(141, 157);
+            this.txtnumpeso.Location = new System.Drawing.Point(184, 164);
             this.txtnumpeso.Name = "txtnumpeso";
             this.txtnumpeso.Size = new System.Drawing.Size(120, 25);
             this.txtnumpeso.TabIndex = 8;
@@ -6798,7 +6814,7 @@
             // 
             this.lblpeso.AutoSize = true;
             this.lblpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpeso.Location = new System.Drawing.Point(31, 156);
+            this.lblpeso.Location = new System.Drawing.Point(113, 168);
             this.lblpeso.Name = "lblpeso";
             this.lblpeso.Size = new System.Drawing.Size(65, 17);
             this.lblpeso.TabIndex = 7;
@@ -6808,16 +6824,16 @@
             // 
             this.cbxespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxespecie.FormattingEnabled = true;
-            this.cbxespecie.Location = new System.Drawing.Point(94, 105);
+            this.cbxespecie.Location = new System.Drawing.Point(184, 130);
             this.cbxespecie.Name = "cbxespecie";
-            this.cbxespecie.Size = new System.Drawing.Size(487, 25);
+            this.cbxespecie.Size = new System.Drawing.Size(379, 25);
             this.cbxespecie.TabIndex = 6;
             // 
             // lblespecie
             // 
             this.lblespecie.AutoSize = true;
             this.lblespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblespecie.Location = new System.Drawing.Point(31, 109);
+            this.lblespecie.Location = new System.Drawing.Point(123, 134);
             this.lblespecie.Name = "lblespecie";
             this.lblespecie.Size = new System.Drawing.Size(55, 17);
             this.lblespecie.TabIndex = 5;
@@ -6826,7 +6842,7 @@
             // txtnomedoanimal
             // 
             this.txtnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnomedoanimal.Location = new System.Drawing.Point(202, 62);
+            this.txtnomedoanimal.Location = new System.Drawing.Point(184, 96);
             this.txtnomedoanimal.Name = "txtnomedoanimal";
             this.txtnomedoanimal.Size = new System.Drawing.Size(379, 25);
             this.txtnomedoanimal.TabIndex = 4;
@@ -6835,7 +6851,7 @@
             // 
             this.lblnomedoanimal.AutoSize = true;
             this.lblnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnomedoanimal.Location = new System.Drawing.Point(31, 65);
+            this.lblnomedoanimal.Location = new System.Drawing.Point(68, 100);
             this.lblnomedoanimal.Name = "lblnomedoanimal";
             this.lblnomedoanimal.Size = new System.Drawing.Size(110, 17);
             this.lblnomedoanimal.TabIndex = 3;
@@ -6844,7 +6860,7 @@
             // txtnometutor
             // 
             this.txtnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnometutor.Location = new System.Drawing.Point(202, 27);
+            this.txtnometutor.Location = new System.Drawing.Point(184, 62);
             this.txtnometutor.Name = "txtnometutor";
             this.txtnometutor.Size = new System.Drawing.Size(379, 25);
             this.txtnometutor.TabIndex = 2;
@@ -6853,24 +6869,11 @@
             // 
             this.lblnometutor.AutoSize = true;
             this.lblnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnometutor.Location = new System.Drawing.Point(31, 30);
+            this.lblnometutor.Location = new System.Drawing.Point(13, 66);
             this.lblnometutor.Name = "lblnometutor";
             this.lblnometutor.Size = new System.Drawing.Size(165, 17);
             this.lblnometutor.TabIndex = 1;
             this.lblnometutor.Text = "Nome do Tutor/Instituição:";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(978, 535);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(85, 59);
-            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pnlespecies
             // 
@@ -6878,6 +6881,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlespecies.BackColor = System.Drawing.Color.White;
+            this.pnlespecies.Controls.Add(this.dgvespecie);
             this.pnlespecies.Controls.Add(this.btnexcluirespecie);
             this.pnlespecies.Controls.Add(this.btneditarespecie);
             this.pnlespecies.Controls.Add(this.btncancelacadastroespecie);
@@ -6887,15 +6891,52 @@
             this.pnlespecies.Controls.Add(this.lblnem);
             this.pnlespecies.Controls.Add(this.txtcadastronomeespecie);
             this.pnlespecies.Controls.Add(this.lblnomeespecie);
-            this.pnlespecies.Controls.Add(this.dgvespecie);
             this.pnlespecies.Controls.Add(this.txtbuscanomeespecie);
             this.pnlespecies.Controls.Add(this.btnbuscanomeespecie);
             this.pnlespecies.Controls.Add(this.btnadicionarespecie);
             this.pnlespecies.Controls.Add(this.btnvisualizarespecie);
-            this.pnlespecies.Location = new System.Drawing.Point(165, 80);
+            this.pnlespecies.Location = new System.Drawing.Point(1285, 38);
             this.pnlespecies.Name = "pnlespecies";
             this.pnlespecies.Size = new System.Drawing.Size(1119, 630);
             this.pnlespecies.TabIndex = 11;
+            // 
+            // btnexcluirespecie
+            // 
+            this.btnexcluirespecie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btnexcluirespecie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnexcluirespecie.FlatAppearance.BorderSize = 0;
+            this.btnexcluirespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexcluirespecie.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexcluirespecie.ForeColor = System.Drawing.Color.White;
+            this.btnexcluirespecie.Location = new System.Drawing.Point(862, 166);
+            this.btnexcluirespecie.Margin = new System.Windows.Forms.Padding(2);
+            this.btnexcluirespecie.Name = "btnexcluirespecie";
+            this.btnexcluirespecie.Size = new System.Drawing.Size(90, 30);
+            this.btnexcluirespecie.TabIndex = 18;
+            this.btnexcluirespecie.Text = "Excluir";
+            this.btnexcluirespecie.UseVisualStyleBackColor = false;
+            this.btnexcluirespecie.Visible = false;
+            this.btnexcluirespecie.Click += new System.EventHandler(this.btnexcluirespecie_Click);
+            // 
+            // btneditarespecie
+            // 
+            this.btneditarespecie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btneditarespecie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btneditarespecie.Enabled = false;
+            this.btneditarespecie.FlatAppearance.BorderSize = 0;
+            this.btneditarespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btneditarespecie.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btneditarespecie.ForeColor = System.Drawing.Color.White;
+            this.btneditarespecie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btneditarespecie.Location = new System.Drawing.Point(753, 166);
+            this.btneditarespecie.Margin = new System.Windows.Forms.Padding(2);
+            this.btneditarespecie.Name = "btneditarespecie";
+            this.btneditarespecie.Size = new System.Drawing.Size(90, 30);
+            this.btneditarespecie.TabIndex = 17;
+            this.btneditarespecie.Text = "Editar";
+            this.btneditarespecie.UseVisualStyleBackColor = false;
+            this.btneditarespecie.Visible = false;
+            this.btneditarespecie.Click += new System.EventHandler(this.btneditarespecie_Click);
             // 
             // btncancelacadastroespecie
             // 
@@ -7290,17 +7331,6 @@
             this.lblnomeespecie.TabIndex = 11;
             this.lblnomeespecie.Text = "Nome:";
             // 
-            // dgvespecie
-            // 
-            this.dgvespecie.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgvespecie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvespecie.Location = new System.Drawing.Point(21, 68);
-            this.dgvespecie.Name = "dgvespecie";
-            this.dgvespecie.Size = new System.Drawing.Size(532, 540);
-            this.dgvespecie.TabIndex = 10;
-            this.dgvespecie.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvespecie_CellContentDoubleClick);
-            // 
             // txtbuscanomeespecie
             // 
             this.txtbuscanomeespecie.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -7364,43 +7394,152 @@
             this.btnvisualizarespecie.UseVisualStyleBackColor = false;
             this.btnvisualizarespecie.Click += new System.EventHandler(this.btnvisualizarespecie_Click);
             // 
-            // btnexcluirespecie
+            // panel1
             // 
-            this.btnexcluirespecie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
-            this.btnexcluirespecie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnexcluirespecie.FlatAppearance.BorderSize = 0;
-            this.btnexcluirespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexcluirespecie.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexcluirespecie.ForeColor = System.Drawing.Color.White;
-            this.btnexcluirespecie.Location = new System.Drawing.Point(862, 166);
-            this.btnexcluirespecie.Margin = new System.Windows.Forms.Padding(2);
-            this.btnexcluirespecie.Name = "btnexcluirespecie";
-            this.btnexcluirespecie.Size = new System.Drawing.Size(90, 30);
-            this.btnexcluirespecie.TabIndex = 18;
-            this.btnexcluirespecie.Text = "Excluir";
-            this.btnexcluirespecie.UseVisualStyleBackColor = false;
-            this.btnexcluirespecie.Visible = false;
-            this.btnexcluirespecie.Click += new System.EventHandler(this.btnexcluirespecie_Click);
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.lblcabecalhoformular);
+            this.panel1.Controls.Add(this.pbxcabecalhoformular);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1119, 50);
+            this.panel1.TabIndex = 15;
             // 
-            // btneditarespecie
+            // lblcabecalhoformular
             // 
-            this.btneditarespecie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.btneditarespecie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btneditarespecie.Enabled = false;
-            this.btneditarespecie.FlatAppearance.BorderSize = 0;
-            this.btneditarespecie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btneditarespecie.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btneditarespecie.ForeColor = System.Drawing.Color.White;
-            this.btneditarespecie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btneditarespecie.Location = new System.Drawing.Point(753, 166);
-            this.btneditarespecie.Margin = new System.Windows.Forms.Padding(2);
-            this.btneditarespecie.Name = "btneditarespecie";
-            this.btneditarespecie.Size = new System.Drawing.Size(90, 30);
-            this.btneditarespecie.TabIndex = 17;
-            this.btneditarespecie.Text = "Editar";
-            this.btneditarespecie.UseVisualStyleBackColor = false;
-            this.btneditarespecie.Visible = false;
-            this.btneditarespecie.Click += new System.EventHandler(this.btneditarespecie_Click);
+            this.lblcabecalhoformular.AutoSize = true;
+            this.lblcabecalhoformular.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblcabecalhoformular.Location = new System.Drawing.Point(72, 14);
+            this.lblcabecalhoformular.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblcabecalhoformular.Name = "lblcabecalhoformular";
+            this.lblcabecalhoformular.Size = new System.Drawing.Size(204, 21);
+            this.lblcabecalhoformular.TabIndex = 0;
+            this.lblcabecalhoformular.Text = "Formulação e Fornecimento";
+            // 
+            // pbxcabecalhoformular
+            // 
+            this.pbxcabecalhoformular.BackgroundImage = global::ProjetoNariz.Properties.Resources.calculator;
+            this.pbxcabecalhoformular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxcabecalhoformular.Location = new System.Drawing.Point(11, 5);
+            this.pbxcabecalhoformular.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxcabecalhoformular.Name = "pbxcabecalhoformular";
+            this.pbxcabecalhoformular.Size = new System.Drawing.Size(45, 41);
+            this.pbxcabecalhoformular.TabIndex = 0;
+            this.pbxcabecalhoformular.TabStop = false;
+            // 
+            // dgvdietas
+            // 
+            this.dgvdietas.AllowUserToAddRows = false;
+            this.dgvdietas.AllowUserToDeleteRows = false;
+            this.dgvdietas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dgvdietas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvdietas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvdietas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdietas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvdietas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdietas.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvdietas.GridColor = System.Drawing.Color.White;
+            this.dgvdietas.Location = new System.Drawing.Point(31, 244);
+            this.dgvdietas.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvdietas.MultiSelect = false;
+            this.dgvdietas.Name = "dgvdietas";
+            this.dgvdietas.ReadOnly = true;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdietas.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvdietas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvdietas.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dgvdietas.RowTemplate.Height = 24;
+            this.dgvdietas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvdietas.Size = new System.Drawing.Size(532, 380);
+            this.dgvdietas.TabIndex = 16;
+            // 
+            // dgvespecie
+            // 
+            this.dgvespecie.AllowUserToAddRows = false;
+            this.dgvespecie.AllowUserToDeleteRows = false;
+            this.dgvespecie.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dgvespecie.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvespecie.BackgroundColor = System.Drawing.Color.White;
+            this.dgvespecie.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvespecie.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvespecie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvespecie.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvespecie.GridColor = System.Drawing.Color.White;
+            this.dgvespecie.Location = new System.Drawing.Point(21, 74);
+            this.dgvespecie.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvespecie.MultiSelect = false;
+            this.dgvespecie.Name = "dgvespecie";
+            this.dgvespecie.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvespecie.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvespecie.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvespecie.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dgvespecie.RowTemplate.Height = 24;
+            this.dgvespecie.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvespecie.Size = new System.Drawing.Size(531, 546);
+            this.dgvespecie.TabIndex = 19;
+            // 
+            // btnp2formulacao
+            // 
+            this.btnp2formulacao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnp2formulacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btnp2formulacao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnp2formulacao.FlatAppearance.BorderSize = 0;
+            this.btnp2formulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnp2formulacao.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnp2formulacao.ForeColor = System.Drawing.Color.White;
+            this.btnp2formulacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnp2formulacao.Location = new System.Drawing.Point(983, 566);
+            this.btnp2formulacao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnp2formulacao.Name = "btnp2formulacao";
+            this.btnp2formulacao.Size = new System.Drawing.Size(90, 35);
+            this.btnp2formulacao.TabIndex = 17;
+            this.btnp2formulacao.Text = "Próximo";
+            this.btnp2formulacao.UseVisualStyleBackColor = false;
             // 
             // Principal
             // 
@@ -7408,7 +7547,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(177)))));
             this.ClientSize = new System.Drawing.Size(1305, 715);
-            this.Controls.Add(this.pnlespecies);
             this.Controls.Add(this.pnlformulacao);
             this.Controls.Add(this.pnlselecionaalimento);
             this.Controls.Add(this.pnlalimentosmn);
@@ -7491,6 +7629,10 @@
             this.pnlespecies.PerformLayout();
             this.pnlcalcnem.ResumeLayout(false);
             this.pnlcalcnem.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxcabecalhoformular)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdietas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvespecie)).EndInit();
             this.ResumeLayout(false);
 
@@ -7932,9 +8074,7 @@
         private System.Windows.Forms.Label lblnomedoanimal;
         private System.Windows.Forms.TextBox txtnometutor;
         private System.Windows.Forms.Label lblnometutor;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel pnlespecies;
-        private System.Windows.Forms.DataGridView dgvespecie;
         private System.Windows.Forms.TextBox txtbuscanomeespecie;
         private System.Windows.Forms.Button btnbuscanomeespecie;
         private System.Windows.Forms.Button btnadicionarespecie;
@@ -7972,5 +8112,11 @@
         private System.Windows.Forms.Label lbltextoformulacao;
         private System.Windows.Forms.Button btnexcluirespecie;
         private System.Windows.Forms.Button btneditarespecie;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblcabecalhoformular;
+        private System.Windows.Forms.PictureBox pbxcabecalhoformular;
+        private System.Windows.Forms.DataGridView dgvespecie;
+        private System.Windows.Forms.DataGridView dgvdietas;
+        private System.Windows.Forms.Button btnp2formulacao;
     }
 }

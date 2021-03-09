@@ -377,6 +377,9 @@ namespace ProjetoNariz.Telas
                 txtcadastronem.Text = string.Empty;
                 txtcadastronem.Enabled = false;
                 txtcadastronem.Visible = false;
+                lblnomeespecie.Visible = false;
+                lblnem.Visible = false;
+
                 txtformulanem.Text = string.Empty;
 
                 btnsalvacadastroespecie.Visible = false;
@@ -818,7 +821,38 @@ namespace ProjetoNariz.Telas
             }
             if (Formula.Contains("^"))
             {
-                Formula.Replace("^", " Math.Sqrt");
+                Formula.Replace("^", " Math.Pow");
+                char[] ch = new char[Formula.Length];
+                int x = 0;
+                string aux = string.Empty;
+                bool segundametade = false;
+                foreach (char c in Formula)
+                {
+                    ch[x] = c;
+                    x++;
+                }
+                for (int i=0; i < Formula.Length; i++)
+                {
+                    if(ch[i] != '+' || ch[i] != '-' || ch[i] != '*' || ch[i] != '/' || ch[i] != '√' || ch[i] != '(' || ch[i] != ')' || ch[i] != ',')
+                    {
+                        formula.Append(string.Concat(ch[i]));
+                    }
+                    else
+                    {
+                        formula.Clear();
+                    }
+                    if(ch[i] == '^')
+                    {
+                        aux = formula.ToString();
+                        formula.Clear();
+                        segundametade = true;
+                        Formula.Replace("^", " Math.Pow(" + formula.ToString() + ",)");
+                    }
+                    if (segundametade)
+                    {
+                        Formula.Replace("^", " Math.Pow(" + aux + "," + formula.ToString() + ",)");
+                    }
+                }
                 foreach (char c in Formula)
                 {
                     if (c == '√') { formula.Append(string.Concat("")); }
@@ -1818,11 +1852,19 @@ namespace ProjetoNariz.Telas
 
         private void btnvisualizarespecie_Click(object sender, EventArgs e)
         {
+            LimpaCampos(3);
+
             f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
             f.SelecionaEspecie();
 
             txtcadastronomeespecie.Enabled = false;
             txtcadastronem.Enabled = false;
+            txtcadastronomeespecie.Visible = true;
+            txtcadastronem.Visible = true;
+
+            lblnomeespecie.Visible = true;
+            lblnem.Visible = true;
+
             txtcadastronomeespecie.Text = f.Nome;
             txtcadastronem.Text = f.Formula;
 
@@ -1842,6 +1884,11 @@ namespace ProjetoNariz.Telas
             btneditarespecie.Visible = true;
             btneditarespecie.Enabled = false;
             btneditarespecie.Text = "Criando...";
+
+            btnsalvacadastroespecie.Visible = true;
+            btncancelacadastroespecie.Visible = true;
+            btnsalvacadastroespecie.Enabled = true;
+            btncancelacadastroespecie.Enabled = true;
 
             Salva = true;
         }
@@ -1878,6 +1925,11 @@ namespace ProjetoNariz.Telas
             txtcadastronomeespecie.Enabled = true;
             txtcadastronem.Enabled = true;
 
+            btnsalvacadastroespecie.Visible = true;
+            btncancelacadastroespecie.Visible = true;
+            btnsalvacadastroespecie.Enabled = true;
+            btncancelacadastroespecie.Enabled = true;
+
             pnlcalcnem.Visible = true;
 
             Salva = false;
@@ -1895,7 +1947,10 @@ namespace ProjetoNariz.Telas
         }
         private void btnbuscanomeespecie_Click(object sender, EventArgs e)
         {
-            dgvespecie.DataSource = f.PesquisaEspecie(txtbuscanomeespecie.Text);
+            if (txtbuscanomeespecie.Text != "Nome")
+            {
+                dgvespecie.DataSource = f.PesquisaEspecie(txtbuscanomeespecie.Text);
+            }
         }
         private void txtbuscanomeespecie_Enter(object sender, EventArgs e)
         {
@@ -1938,7 +1993,6 @@ namespace ProjetoNariz.Telas
         }
 
         #endregion
-
 
     }
 }

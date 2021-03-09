@@ -129,6 +129,12 @@ namespace ProjetoNariz
         public string Nome { get; set; }
         public string Formula { get; set; }
         #endregion
+
+        #region Variaveis da criação de Dietas
+        public double Percentagem { get; set; }
+        public double Maximo { get; set; }
+        public double Minimo { get; set; }
+        #endregion
         //Vit_D
         #endregion
 
@@ -235,6 +241,9 @@ namespace ProjetoNariz
             Pitada = string.Empty;
             Nome = string.Empty;
             Formula = string.Empty;
+            Percentagem = 0.00;
+            Maximo = 0.00;
+            Minimo = 0.00;
         }
 
         //Controles Alimentos MN
@@ -692,6 +701,90 @@ namespace ProjetoNariz
             {
                 Nome = dados["Nome"].ToString();
                 Formula = dados["Formula"].ToString();
+            }
+            conectaMySQL.FechaMySQL();
+        }
+        #endregion
+
+        //Controles Formulação de Fornecimento
+        #region Dietas
+        public void CriaDieta()
+        {
+            string SQL;
+
+            SQL = "CREATE TABLE Dieta (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY," +
+                "Alimento VARCHAR(250) NOT NULL, Percentagem DOUBLE(3,2),Minimo DOUBLE(3,2)," +
+                "Maximo DOUBLE(3,2));";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void ExcluiDieta()
+        {
+            string SQL;
+
+            SQL = "DROP TABLE Dieta;";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public DataTable AtualizaDieta()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conectaMySQL.AbreMySQL();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select id, Alimento, Percentagem AS '%', Minimo AS 'MIN', Maximo AS 'MAX' from Dieta";
+
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = cmd;
+
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            conectaMySQL.FechaMySQL();
+
+            return dt;
+        }
+        public void InsereDieta()
+        {
+            string SQL;
+
+            SQL = "Insert into Dieta (Alimento, Percentagem, Minimo, Maximo) values ('" + Alimento + "','" + Percentagem +
+                "','" + Minimo + "','" + Maximo + "');";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void AlteraDieta()
+        {
+            string SQL;
+
+            SQL = "Update Dieta set Alimento ='" + Alimento + "', Percentagem ='" + Percentagem + "',Minimo =" +
+                "'" + Minimo + "',Maximo ='" + Maximo + "', where id =" + id + ";";
+
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void DeletaDieta()
+        {
+            string SQL;
+
+            SQL = "Delete from Dieta where id=" + id + ";";
+            conectaMySQL.ExecutaComando(SQL);
+            conectaMySQL.FechaMySQL();
+        }
+        public void SelecionaDieta()
+        {
+            string SQL;
+            SQL = "Select * from Dieta where id=" + id;
+
+            MySqlDataReader dados = conectaMySQL.ExecutaConsulta(SQL);
+
+            if (dados.Read())
+            {
+                Alimento = dados["Alimento"].ToString();
+                Percentagem = Convert.ToDouble(dados["Percentagem"].ToString());
+                Minimo = Convert.ToDouble(dados["Minimo"].ToString());
+                Maximo = Convert.ToDouble(dados["Maximo"].ToString());
             }
             conectaMySQL.FechaMySQL();
         }
