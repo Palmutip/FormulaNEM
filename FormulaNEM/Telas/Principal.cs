@@ -1996,20 +1996,31 @@ namespace ProjetoNariz.Telas
                 dgvespecie.DataSource = f.PesquisaEspecie(txtbuscanomeespecie.Text);
             }
         }
-        private void dgvespecie_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvespecie_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
-            f.SelecionaEspecie();
+            LimpaCampos(3);
+            try
+            {
+                f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
+                f.SelecionaEspecie();
 
-            txtcadastronomeespecie.Enabled = false;
-            txtcadastronem.Enabled = false;
-            txtcadastronomeespecie.Text = f.Nome;
-            txtcadastronem.Text = f.Formula;
+                txtcadastronomeespecie.Enabled = false;
+                txtcadastronem.Enabled = false;
+                txtcadastronomeespecie.Visible = true;
+                txtcadastronem.Visible = true;
 
-            btnexcluirespecie.Visible = true;
-            btnexcluirespecie.Enabled = true;
-            btneditarespecie.Visible = true;
-            btneditarespecie.Enabled = true;
+                lblnomeespecie.Visible = true;
+                lblnem.Visible = true;
+
+                txtcadastronomeespecie.Text = f.Nome;
+                txtcadastronem.Text = f.Formula;
+
+                btnexcluirespecie.Visible = true;
+                btnexcluirespecie.Enabled = true;
+                btneditarespecie.Visible = true;
+                btneditarespecie.Enabled = true;
+            }
+            catch (Exception) { }
         }
 
         #endregion
