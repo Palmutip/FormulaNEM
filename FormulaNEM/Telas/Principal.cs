@@ -30,7 +30,7 @@ namespace ProjetoNariz.Telas
         Tradutor t = new Tradutor();
         List<TextBox> ControleTxtMN = new List<TextBox>();
         List<String> ControleObjMN = new List<String>();
-        private static bool Salva = false;
+        private static bool Salva = false, Cancela=false;
         private int contaparenteses = 0;
         #endregion
 
@@ -61,7 +61,7 @@ namespace ProjetoNariz.Telas
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
 
-            CarregaCombobox();
+            CarregaComboboxAlimentos();
             CarregaTips();
 
             PaineisPrincipais(pnlselecionaalimento);
@@ -106,6 +106,8 @@ namespace ProjetoNariz.Telas
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
 
+            cbxnemformulacao.DataSource = f.AtualizaComboEspecie();
+
             //PaineisPrincipais(pnlali);
         }
         private void ClicaFormular()
@@ -119,6 +121,8 @@ namespace ProjetoNariz.Telas
 
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
+
+            cbxnemformulacao.DataSource = f.AtualizaComboEspecie();
 
             PaineisPrincipais(pnlformulacao);
         }
@@ -195,7 +199,7 @@ namespace ProjetoNariz.Telas
 
             panel.Visible = true;
         }
-        private void CarregaCombobox()
+        private void CarregaComboboxAlimentos()
         {
             cbxfiltroalimentomn.Text = "Filtro";
             cbxfiltroalimentoms.Text = "Filtro";
@@ -401,6 +405,33 @@ namespace ProjetoNariz.Telas
             }
             #endregion
 
+            #region Modulo 4 é Dietas
+            else if (modulo == 4)
+            {
+                btninserealimento.Enabled = false;
+                btninserealimento.Visible = false;
+                btnremovealimento.Enabled = false;
+                btnremovealimento.Visible = false;
+                btnreiniciardieta.Enabled = false;
+                btnreiniciardieta.Visible = false;
+                btnformulardieta.Enabled = true;
+                btnformulardieta.Visible = true;
+                pnladdalimentoformulacao.Visible = false;
+
+                btnetapa1formulacao.BackColor = Color.FromArgb(255, 179, 0);
+                btnetapa2formulacao.BackColor = Color.White;
+
+                txtnometutor.Text = string.Empty;
+                txtnomedoanimal.Text = string.Empty;
+                txtespecie.Text = string.Empty;
+                txtalimentoselecionado.Text = string.Empty;
+                txtnumescore.Value = 0;
+                txtnumidade.Value = 0;
+                txtnumpeso.Value = 0;
+                cbxnemformulacao.Text = string.Empty;
+                cbxnemformulacao.SelectedIndex = -1;
+            }
+            #endregion
         }
         private void CarregaTips()
         {
@@ -1691,7 +1722,108 @@ namespace ProjetoNariz.Telas
         #endregion
 
         #region Painel Formulacao
+        private void btnformulardieta_Click(object sender, EventArgs e)
+        {
+            if (!Cancela)
+            {
+                btninserealimento.Enabled = true;
+                btninserealimento.Visible = true;
+                btnremovealimento.Enabled = true;
+                btnremovealimento.Visible = true;
+                btnreiniciardieta.Enabled = true;
+                btnreiniciardieta.Visible = true;
+                //btnformulardieta.Enabled = false;
+                //btnformulardieta.Visible = false;
+                pnladdalimentoformulacao.Visible = true;
+                btnformulardieta.BackColor = Color.FromArgb(181, 61, 0);
+                btnformulardieta.Text = "Cancelar";
+                btnformulardieta.ForeColor = Color.White;
 
+                f.CriaDieta();
+                dgvaddalimentosms.DataSource = f.AtualizaAlimentosMS();
+                dgvformuladieta.DataSource = f.AtualizaDieta();
+                Cancela = true;
+            }
+            else
+            {
+                btninserealimento.Enabled = false;
+                btninserealimento.Visible = false;
+                btnremovealimento.Enabled = false;
+                btnremovealimento.Visible = false;
+                btnreiniciardieta.Enabled = false;
+                btnreiniciardieta.Visible = false;
+                pnladdalimentoformulacao.Visible = false;
+
+                btnformulardieta.BackColor = Color.FromArgb(255, 179, 0);
+                btnformulardieta.Text = "Formular Nova Dieta";
+                btnformulardieta.ForeColor = Color.White;
+
+                f.ExcluiDieta();
+                dgvformuladieta.DataSource = null;
+                f.Desconstrutor();
+
+                Cancela = false;
+            }
+
+        }
+        private void btninserealimento_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtpercentagemteste.Text != string.Empty  && txtalimentoselecionado.Text != string.Empty)
+                {
+                    f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
+                    f.Percentagem = Convert.ToDouble(txtpercentagemteste.Text);
+                    f.InsereDieta();
+                    f.AtualizaDieta();
+                    txtalimentoselecionado.Text = string.Empty;
+                }
+                else
+                {
+                    MessageBox.Show("Informe um valor de Percentagem de inclusão", "Atenção");
+                }
+            }
+            catch (Exception) { }
+        }
+        private void btnremovealimento_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtalimentoselecionado.Text != string.Empty)
+                {
+                    f.id = dgvformuladieta.CurrentRow.Cells[0].Value.ToString();
+                    f.DeletaDieta();
+                    f.AtualizaDieta();
+                    txtalimentoselecionado.Text = string.Empty;
+                }
+                
+            }
+            catch (Exception) { }
+        }
+        private void btnreiniciardieta_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Tem certeza que deseja abortar a formulação?", "Atenção", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                f.ExcluiDieta();
+                dgvformuladieta.DataSource = null;
+                f.Desconstrutor();
+                LimpaCampos(4);
+            }
+        }
+        private void dgvaddalimentosms_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
+            f.SelecionaDieta();
+            txtalimentoselecionado.Text = f.Alimento;
+        }
+        private void dgvformuladieta_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
+            f.SelecionaDieta();
+            txtalimentoselecionado.Text = f.Alimento;
+            txtpercentagemteste.Text = f.Percentagem.ToString();
+        }
         #endregion
 
         #region Painel Especies
@@ -2022,6 +2154,9 @@ namespace ProjetoNariz.Telas
             }
             catch (Exception) { }
         }
+
+
+
 
         #endregion
 

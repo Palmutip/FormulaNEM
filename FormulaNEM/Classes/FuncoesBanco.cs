@@ -664,6 +664,22 @@ namespace ProjetoNariz
 
             return dt;
         }
+        public DataTable AtualizaComboEspecie()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conectaMySQL.AbreMySQL();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select Nome from especies";
+
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = cmd;
+
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            conectaMySQL.FechaMySQL();
+
+            return dt;
+        }
         public void InsereEspecie()
         {
             string SQL;
@@ -733,7 +749,7 @@ namespace ProjetoNariz
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conectaMySQL.AbreMySQL();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select id, Alimento, Percentagem AS '%', Minimo AS 'MIN', Maximo AS 'MAX' from Dieta";
+            cmd.CommandText = "Select id, Alimento, Percentagem AS '%'"+/*", Minimo AS 'MIN', Maximo AS 'MAX'"+*/" from Dieta";
 
             MySqlDataAdapter adaptador = new MySqlDataAdapter();
             adaptador.SelectCommand = cmd;
@@ -748,8 +764,8 @@ namespace ProjetoNariz
         {
             string SQL;
 
-            SQL = "Insert into Dieta (Alimento, Percentagem, Minimo, Maximo) values ('" + Alimento + "','" + Percentagem +
-                "','" + Minimo + "','" + Maximo + "');";
+            SQL = "Insert into Dieta (Alimento, Percentagem"+/*", Minimo, Maximo"+*/") values ('" + Alimento + "','" + Percentagem +
+                "'"/*+",'" + Minimo + "','" + Maximo + "'*/+");";
 
             conectaMySQL.ExecutaComando(SQL);
             conectaMySQL.FechaMySQL();
