@@ -32,20 +32,32 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlsuperior = new System.Windows.Forms.Panel();
+            this.lblusuario = new System.Windows.Forms.Label();
+            this.pnlselecionaalimento = new System.Windows.Forms.Panel();
+            this.tblselecionaaliento = new System.Windows.Forms.TableLayoutPanel();
+            this.btnescolhealimentomn = new System.Windows.Forms.Button();
+            this.lblescolhealimentomn = new System.Windows.Forms.Label();
+            this.lblescolhealimentoms = new System.Windows.Forms.Label();
+            this.btnescolhealimentoms = new System.Windows.Forms.Button();
+            this.pbxusuario = new System.Windows.Forms.PictureBox();
+            this.pbxlogo = new System.Windows.Forms.PictureBox();
             this.pnlespecies = new System.Windows.Forms.Panel();
             this.dgvespecie = new System.Windows.Forms.DataGridView();
             this.btnexcluirespecie = new System.Windows.Forms.Button();
@@ -85,29 +97,251 @@
             this.btnbuscanomeespecie = new System.Windows.Forms.Button();
             this.btnadicionarespecie = new System.Windows.Forms.Button();
             this.btnvisualizarespecie = new System.Windows.Forms.Button();
-            this.lblusuario = new System.Windows.Forms.Label();
-            this.pbxusuario = new System.Windows.Forms.PictureBox();
-            this.pbxlogo = new System.Windows.Forms.PictureBox();
-            this.pnlselecionaalimento = new System.Windows.Forms.Panel();
-            this.lblescolhealimentoms = new System.Windows.Forms.Label();
-            this.lblescolhealimentomn = new System.Windows.Forms.Label();
-            this.btnescolhealimentoms = new System.Windows.Forms.Button();
-            this.btnescolhealimentomn = new System.Windows.Forms.Button();
-            this.pnlsuperioralimentosms = new System.Windows.Forms.Panel();
-            this.lblalimentosms = new System.Windows.Forms.Label();
-            this.pbxalimentosms = new System.Windows.Forms.PictureBox();
-            this.pnlsuperioralimentosmn = new System.Windows.Forms.Panel();
-            this.lblalimentosmn = new System.Windows.Forms.Label();
-            this.pbxalimentosmn = new System.Windows.Forms.PictureBox();
-            this.pnllateral = new System.Windows.Forms.Panel();
-            this.btnespecies = new System.Windows.Forms.Button();
-            this.btnhome = new System.Windows.Forms.Button();
-            this.btnconfig = new System.Windows.Forms.Button();
-            this.btnsair = new System.Windows.Forms.Button();
-            this.btndietas = new System.Windows.Forms.Button();
-            this.btnavaliar = new System.Windows.Forms.Button();
-            this.btnformular = new System.Windows.Forms.Button();
-            this.btnalimentos = new System.Windows.Forms.Button();
+            this.pnlescondido = new System.Windows.Forms.Panel();
+            this.pnlutilitarioescondido = new System.Windows.Forms.Panel();
+            this.pnlespeciesescondido = new System.Windows.Forms.Panel();
+            this.lblpaineisespeciesescondido = new System.Windows.Forms.Label();
+            this.pnldietasescondido = new System.Windows.Forms.Panel();
+            this.lbldietasescondido = new System.Windows.Forms.Label();
+            this.pnldietasescondidointerr = new System.Windows.Forms.Panel();
+            this.pnldietas = new System.Windows.Forms.Panel();
+            this.dgvdietas = new System.Windows.Forms.DataGridView();
+            this.cbxfiltropesquisadietas = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lbldietassuperior = new System.Windows.Forms.Label();
+            this.pbxdietassuperior = new System.Windows.Forms.PictureBox();
+            this.txtpesquisadietas = new System.Windows.Forms.TextBox();
+            this.btnpesquisadietas = new System.Windows.Forms.Button();
+            this.btnadicionardieta = new System.Windows.Forms.Button();
+            this.btnvisualizadieta = new System.Windows.Forms.Button();
+            this.pnlformlacaoescodid = new System.Windows.Forms.Panel();
+            this.pnlformulacao = new System.Windows.Forms.Panel();
+            this.pnlresultadosformulacao = new System.Windows.Forms.Panel();
+            this.btnvoltaformulacao = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblrequerimentodietarecomendado = new System.Windows.Forms.Label();
+            this.lbldietaatualrequerimento = new System.Windows.Forms.Label();
+            this.lblalimentodietarequerimento = new System.Windows.Forms.Label();
+            this.cbxrequerimentodieta = new System.Windows.Forms.ComboBox();
+            this.lblrequerimentodieta = new System.Windows.Forms.Label();
+            this.pnldadoscomparacaodieta = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtreqennmin = new System.Windows.Forms.TextBox();
+            this.txtreqmmmin = new System.Windows.Forms.TextBox();
+            this.txtreqfbmin = new System.Windows.Forms.TextBox();
+            this.txtreqeemin = new System.Windows.Forms.TextBox();
+            this.txtreqpbmin = new System.Windows.Forms.TextBox();
+            this.txtreqmsmin = new System.Windows.Forms.TextBox();
+            this.txtrequumidademin = new System.Windows.Forms.TextBox();
+            this.txtreqennatual = new System.Windows.Forms.TextBox();
+            this.txtreqmmatual = new System.Windows.Forms.TextBox();
+            this.txtreqfbatual = new System.Windows.Forms.TextBox();
+            this.txtreqeeatual = new System.Windows.Forms.TextBox();
+            this.txtreqpbatual = new System.Windows.Forms.TextBox();
+            this.txtreqmsatual = new System.Windows.Forms.TextBox();
+            this.txtrequmidadeatual = new System.Windows.Forms.TextBox();
+            this.lblreqenn = new System.Windows.Forms.Label();
+            this.lblreqmm = new System.Windows.Forms.Label();
+            this.lblreqfb = new System.Windows.Forms.Label();
+            this.lblreqee = new System.Windows.Forms.Label();
+            this.lblreqpb = new System.Windows.Forms.Label();
+            this.lblreqms = new System.Windows.Forms.Label();
+            this.lblrequmidade = new System.Windows.Forms.Label();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtreqenergiaatual = new System.Windows.Forms.TextBox();
+            this.txtreqenergiamin = new System.Windows.Forms.TextBox();
+            this.lblreqenergia = new System.Windows.Forms.Label();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtreqepadhamin = new System.Windows.Forms.TextBox();
+            this.txtreqacaraqmin = new System.Windows.Forms.TextBox();
+            this.txtreqaclinon6min = new System.Windows.Forms.TextBox();
+            this.txtreqepadhaatual = new System.Windows.Forms.TextBox();
+            this.txtreqaclinon3min = new System.Windows.Forms.TextBox();
+            this.txtreqacaraqatual = new System.Windows.Forms.TextBox();
+            this.txtreqaclinon6atual = new System.Windows.Forms.TextBox();
+            this.txtreqaclinon3atual = new System.Windows.Forms.TextBox();
+            this.lblreqepadha = new System.Windows.Forms.Label();
+            this.lblreqacaraq = new System.Windows.Forms.Label();
+            this.lblreqaclinon6 = new System.Windows.Forms.Label();
+            this.lblreqaclinon3 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtreqfdnmin = new System.Windows.Forms.TextBox();
+            this.txtreqfdamin = new System.Windows.Forms.TextBox();
+            this.txtreqcnfmin = new System.Windows.Forms.TextBox();
+            this.txtreqfdnatual = new System.Windows.Forms.TextBox();
+            this.txtreqfdaatual = new System.Windows.Forms.TextBox();
+            this.txtreqcnfatual = new System.Windows.Forms.TextBox();
+            this.lblreqfdn = new System.Windows.Forms.Label();
+            this.lblreqfda = new System.Windows.Forms.Label();
+            this.lblreqcnf = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtreqsmin = new System.Windows.Forms.TextBox();
+            this.txtreqznmin = new System.Windows.Forms.TextBox();
+            this.txtreqsemin = new System.Windows.Forms.TextBox();
+            this.txtreqmnmin = new System.Windows.Forms.TextBox();
+            this.txtreqfemin = new System.Windows.Forms.TextBox();
+            this.txtreqimin = new System.Windows.Forms.TextBox();
+            this.txtreqcumin = new System.Windows.Forms.TextBox();
+            this.txtreqmgmin = new System.Windows.Forms.TextBox();
+            this.txtreqclmin = new System.Windows.Forms.TextBox();
+            this.txtreqnamin = new System.Windows.Forms.TextBox();
+            this.txtreqkmin = new System.Windows.Forms.TextBox();
+            this.txtreqpmin = new System.Windows.Forms.TextBox();
+            this.txtreqcamin = new System.Windows.Forms.TextBox();
+            this.txtreqsatual = new System.Windows.Forms.TextBox();
+            this.txtreqznatual = new System.Windows.Forms.TextBox();
+            this.txtreqseatual = new System.Windows.Forms.TextBox();
+            this.txtreqmnatual = new System.Windows.Forms.TextBox();
+            this.txtreqfeatual = new System.Windows.Forms.TextBox();
+            this.txtreqiatual = new System.Windows.Forms.TextBox();
+            this.txtreqcuatual = new System.Windows.Forms.TextBox();
+            this.txtreqmgatual = new System.Windows.Forms.TextBox();
+            this.txtreqclatual = new System.Windows.Forms.TextBox();
+            this.txtreqnaatual = new System.Windows.Forms.TextBox();
+            this.txtreqkatual = new System.Windows.Forms.TextBox();
+            this.txtreqpatual = new System.Windows.Forms.TextBox();
+            this.txtreqcaatual = new System.Windows.Forms.TextBox();
+            this.lblreqs = new System.Windows.Forms.Label();
+            this.lblreqzn = new System.Windows.Forms.Label();
+            this.lblreqse = new System.Windows.Forms.Label();
+            this.lblreqmn = new System.Windows.Forms.Label();
+            this.lblreqfe = new System.Windows.Forms.Label();
+            this.lblreqi = new System.Windows.Forms.Label();
+            this.lblreqmg = new System.Windows.Forms.Label();
+            this.lblreqcl = new System.Windows.Forms.Label();
+            this.lblreqcu = new System.Windows.Forms.Label();
+            this.lblreqna = new System.Windows.Forms.Label();
+            this.lblreqk = new System.Windows.Forms.Label();
+            this.lblreqp = new System.Windows.Forms.Label();
+            this.lblreqca = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtreqvitcmin = new System.Windows.Forms.TextBox();
+            this.txtreqvitkmin = new System.Windows.Forms.TextBox();
+            this.txtreqcolinamin = new System.Windows.Forms.TextBox();
+            this.txtreqbiotinamin = new System.Windows.Forms.TextBox();
+            this.txtreqacfolicomin = new System.Windows.Forms.TextBox();
+            this.txtreqniacinamin = new System.Windows.Forms.TextBox();
+            this.txtreqvitb12min = new System.Windows.Forms.TextBox();
+            this.txtreqvitb6min = new System.Windows.Forms.TextBox();
+            this.txtreqacpantomin = new System.Windows.Forms.TextBox();
+            this.txtreqribomin = new System.Windows.Forms.TextBox();
+            this.txtreqtiaminamin = new System.Windows.Forms.TextBox();
+            this.txtreqvitemin = new System.Windows.Forms.TextBox();
+            this.txtreqvitdmin = new System.Windows.Forms.TextBox();
+            this.txtreqvitamin = new System.Windows.Forms.TextBox();
+            this.txtreqvitcatual = new System.Windows.Forms.TextBox();
+            this.txtreqvitkatual = new System.Windows.Forms.TextBox();
+            this.txtreqcolinaatual = new System.Windows.Forms.TextBox();
+            this.txtreqbiotinaatual = new System.Windows.Forms.TextBox();
+            this.txtreqacfolicoatual = new System.Windows.Forms.TextBox();
+            this.txtreqniacinaatual = new System.Windows.Forms.TextBox();
+            this.txtreqvitb12atual = new System.Windows.Forms.TextBox();
+            this.txtreqvitb6atual = new System.Windows.Forms.TextBox();
+            this.txtreqacpantoatual = new System.Windows.Forms.TextBox();
+            this.txtreqriboatual = new System.Windows.Forms.TextBox();
+            this.txtreqtiaminaatual = new System.Windows.Forms.TextBox();
+            this.txtreqviteatual = new System.Windows.Forms.TextBox();
+            this.txtreqvitdatual = new System.Windows.Forms.TextBox();
+            this.txtreqvitaatual = new System.Windows.Forms.TextBox();
+            this.lblreqvitc = new System.Windows.Forms.Label();
+            this.lblreqvitk = new System.Windows.Forms.Label();
+            this.lblreqcolina = new System.Windows.Forms.Label();
+            this.lblreqbiotina = new System.Windows.Forms.Label();
+            this.lblreqacfolico = new System.Windows.Forms.Label();
+            this.lblreqniacina = new System.Windows.Forms.Label();
+            this.lblreqvitb12 = new System.Windows.Forms.Label();
+            this.lblreqacpanto = new System.Windows.Forms.Label();
+            this.lblreqribo = new System.Windows.Forms.Label();
+            this.lblreqvitb6 = new System.Windows.Forms.Label();
+            this.lblreqtiamina = new System.Windows.Forms.Label();
+            this.lblreqvite = new System.Windows.Forms.Label();
+            this.lblreqvitd = new System.Windows.Forms.Label();
+            this.lblreqvita = new System.Windows.Forms.Label();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtreqtaumin = new System.Windows.Forms.TextBox();
+            this.txtreqvalmin = new System.Windows.Forms.TextBox();
+            this.txtreqtrimin = new System.Windows.Forms.TextBox();
+            this.txtreqtreomin = new System.Windows.Forms.TextBox();
+            this.txtreqfentirmin = new System.Windows.Forms.TextBox();
+            this.txtreqfenmin = new System.Windows.Forms.TextBox();
+            this.txtreqmetcismin = new System.Windows.Forms.TextBox();
+            this.txtreqmetmin = new System.Windows.Forms.TextBox();
+            this.txtreqlismin = new System.Windows.Forms.TextBox();
+            this.txtreqleumin = new System.Windows.Forms.TextBox();
+            this.txtreqisomin = new System.Windows.Forms.TextBox();
+            this.txtreqhismin = new System.Windows.Forms.TextBox();
+            this.txtreqargmin = new System.Windows.Forms.TextBox();
+            this.txtreqtauatual = new System.Windows.Forms.TextBox();
+            this.txtreqvalatual = new System.Windows.Forms.TextBox();
+            this.txtreqtriatual = new System.Windows.Forms.TextBox();
+            this.txtreqtreoatual = new System.Windows.Forms.TextBox();
+            this.txtreqfentiratual = new System.Windows.Forms.TextBox();
+            this.txtreqfenatual = new System.Windows.Forms.TextBox();
+            this.txtreqmetcisatual = new System.Windows.Forms.TextBox();
+            this.txtreqmetatual = new System.Windows.Forms.TextBox();
+            this.txtreqlisatual = new System.Windows.Forms.TextBox();
+            this.txtreqleuatual = new System.Windows.Forms.TextBox();
+            this.txtreqisoatual = new System.Windows.Forms.TextBox();
+            this.txtreqhisatual = new System.Windows.Forms.TextBox();
+            this.txtreqargatual = new System.Windows.Forms.TextBox();
+            this.lblreqtau = new System.Windows.Forms.Label();
+            this.lblreqval = new System.Windows.Forms.Label();
+            this.lblreqtri = new System.Windows.Forms.Label();
+            this.lblreqtreo = new System.Windows.Forms.Label();
+            this.lblreqfentir = new System.Windows.Forms.Label();
+            this.lblreqfen = new System.Windows.Forms.Label();
+            this.lblreqmet = new System.Windows.Forms.Label();
+            this.lblreqlis = new System.Windows.Forms.Label();
+            this.lblreqmetcis = new System.Windows.Forms.Label();
+            this.lblreqleu = new System.Windows.Forms.Label();
+            this.lblreqiso = new System.Windows.Forms.Label();
+            this.lblreqhis = new System.Windows.Forms.Label();
+            this.lblreqarg = new System.Windows.Forms.Label();
+            this.pnladdalimentoformulacao = new System.Windows.Forms.Panel();
+            this.txttotalinclusao = new System.Windows.Forms.TextBox();
+            this.lbltotal = new System.Windows.Forms.Label();
+            this.lblalimentodieta = new System.Windows.Forms.Label();
+            this.btnpesquisaalimentosdieta = new System.Windows.Forms.Button();
+            this.btnpesquisadietadieta = new System.Windows.Forms.Button();
+            this.dgvformuladieta = new System.Windows.Forms.DataGridView();
+            this.txtpesquisadietadieta = new System.Windows.Forms.TextBox();
+            this.txtpesquisaalimentodieta = new System.Windows.Forms.TextBox();
+            this.dgvaddalimentosms = new System.Windows.Forms.DataGridView();
+            this.txtalimentoselecionado = new System.Windows.Forms.TextBox();
+            this.txtpercentagemteste = new System.Windows.Forms.TextBox();
+            this.lblpercentagemdeinclusao = new System.Windows.Forms.Label();
+            this.btninserealimento = new System.Windows.Forms.Button();
+            this.btnreiniciardieta = new System.Windows.Forms.Button();
+            this.btnremovealimento = new System.Windows.Forms.Button();
+            this.barraformulacao = new System.Windows.Forms.Button();
+            this.btnetapa2formulacao = new System.Windows.Forms.Button();
+            this.btnetapa1formulacao = new System.Windows.Forms.Button();
+            this.btnformulardieta = new System.Windows.Forms.Button();
+            this.txtespecie = new System.Windows.Forms.TextBox();
+            this.lblespecie = new System.Windows.Forms.Label();
+            this.btnp2formulacao = new System.Windows.Forms.Button();
+            this.pnlsuperiorformulacao = new System.Windows.Forms.Panel();
+            this.lblcabecalhoformular = new System.Windows.Forms.Label();
+            this.pbxcabecalhoformular = new System.Windows.Forms.PictureBox();
+            this.cbxsexo = new System.Windows.Forms.ComboBox();
+            this.lblsexo = new System.Windows.Forms.Label();
+            this.txtnumidade = new System.Windows.Forms.NumericUpDown();
+            this.lblidade = new System.Windows.Forms.Label();
+            this.txtnumescore = new System.Windows.Forms.NumericUpDown();
+            this.lblescore = new System.Windows.Forms.Label();
+            this.txtnumpeso = new System.Windows.Forms.NumericUpDown();
+            this.lblpeso = new System.Windows.Forms.Label();
+            this.cbxnemformulacao = new System.Windows.Forms.ComboBox();
+            this.lblnemformulacao = new System.Windows.Forms.Label();
+            this.txtnomedoanimal = new System.Windows.Forms.TextBox();
+            this.lblnomedoanimal = new System.Windows.Forms.Label();
+            this.txtnometutor = new System.Windows.Forms.TextBox();
+            this.lblnometutor = new System.Windows.Forms.Label();
+            this.lblformulacaoescondido = new System.Windows.Forms.Label();
+            this.lblpaineisdietasescondido = new System.Windows.Forms.Label();
+            this.pnlescondidoalimentos = new System.Windows.Forms.Panel();
+            this.lblalimentomnescondido = new System.Windows.Forms.Label();
+            this.pnlescondidoalimentomn = new System.Windows.Forms.Panel();
             this.pnlalimentosms = new System.Windows.Forms.Panel();
             this.pnlvisualizaalimentosms = new System.Windows.Forms.Panel();
             this.btncancelaalimentoms = new System.Windows.Forms.Button();
@@ -299,12 +533,18 @@
             this.btneditaalimentoms = new System.Windows.Forms.Button();
             this.lblnomealimentoms = new System.Windows.Forms.Label();
             this.btnvoltavisualimentoms = new System.Windows.Forms.Button();
+            this.pnlsuperioralimentosms = new System.Windows.Forms.Panel();
+            this.lblalimentosms = new System.Windows.Forms.Label();
+            this.pbxalimentosms = new System.Windows.Forms.PictureBox();
             this.cbxfiltroalimentoms = new System.Windows.Forms.ComboBox();
             this.dgvalimentosms = new System.Windows.Forms.DataGridView();
             this.txtbuscaalimentoms = new System.Windows.Forms.TextBox();
             this.btnpesquisaalimentoms = new System.Windows.Forms.Button();
             this.btnnovoalimentoms = new System.Windows.Forms.Button();
             this.btnvisalimentoms = new System.Windows.Forms.Button();
+            this.lblalimentomsescondido = new System.Windows.Forms.Label();
+            this.pnlalimentoescondidoms = new System.Windows.Forms.Panel();
+            this.pnlalimentosmn = new System.Windows.Forms.Panel();
             this.pnlvisualizaalimentosmn = new System.Windows.Forms.Panel();
             this.btncancelareditaoalimentomn = new System.Windows.Forms.Button();
             this.tabletitulovitaminas = new System.Windows.Forms.TableLayoutPanel();
@@ -495,61 +735,82 @@
             this.btneditaalimentomn = new System.Windows.Forms.Button();
             this.lblnomealimentomn = new System.Windows.Forms.Label();
             this.btnvoltavisualizaalimentomn = new System.Windows.Forms.Button();
-            this.pnlalimentosmn = new System.Windows.Forms.Panel();
             this.dgvalimentosmn = new System.Windows.Forms.DataGridView();
             this.cbxfiltroalimentomn = new System.Windows.Forms.ComboBox();
+            this.pnlsuperioralimentosmn = new System.Windows.Forms.Panel();
+            this.lblalimentosmn = new System.Windows.Forms.Label();
+            this.pbxalimentosmn = new System.Windows.Forms.PictureBox();
             this.txtbuscaalimentomn = new System.Windows.Forms.TextBox();
             this.btnpesquisaalimentomn = new System.Windows.Forms.Button();
             this.btnnovoalimentomn = new System.Windows.Forms.Button();
             this.btnvisalimentomn = new System.Windows.Forms.Button();
+            this.lblescolhealimentoescondido = new System.Windows.Forms.Label();
+            this.pnlescolhepainelescondido = new System.Windows.Forms.Panel();
+            this.lblpaineisalimentos = new System.Windows.Forms.Label();
+            this.pnlescondidoinicio = new System.Windows.Forms.Panel();
+            this.pnlinicio = new System.Windows.Forms.Panel();
+            this.lblpaineisinicio = new System.Windows.Forms.Label();
+            this.pnllateral = new System.Windows.Forms.Panel();
+            this.btnespecies = new System.Windows.Forms.Button();
+            this.btnhome = new System.Windows.Forms.Button();
+            this.btnconfig = new System.Windows.Forms.Button();
+            this.btnsair = new System.Windows.Forms.Button();
+            this.btndietas = new System.Windows.Forms.Button();
+            this.btnavaliar = new System.Windows.Forms.Button();
+            this.btnformular = new System.Windows.Forms.Button();
+            this.btnalimentos = new System.Windows.Forms.Button();
             this.tipalimentosmn = new System.Windows.Forms.ToolTip(this.components);
-            this.pnlformulacao = new System.Windows.Forms.Panel();
-            this.txtespecie = new System.Windows.Forms.TextBox();
-            this.lblespecie = new System.Windows.Forms.Label();
-            this.btnp2formulacao = new System.Windows.Forms.Button();
-            this.dgvformuladieta = new System.Windows.Forms.DataGridView();
-            this.pnlsuperiorformulacao = new System.Windows.Forms.Panel();
-            this.lblcabecalhoformular = new System.Windows.Forms.Label();
-            this.pbxcabecalhoformular = new System.Windows.Forms.PictureBox();
-            this.cbxsexo = new System.Windows.Forms.ComboBox();
-            this.lblsexo = new System.Windows.Forms.Label();
-            this.txtnumidade = new System.Windows.Forms.NumericUpDown();
-            this.lblidade = new System.Windows.Forms.Label();
-            this.txtnumescore = new System.Windows.Forms.NumericUpDown();
-            this.lblescore = new System.Windows.Forms.Label();
-            this.txtnumpeso = new System.Windows.Forms.NumericUpDown();
-            this.lblpeso = new System.Windows.Forms.Label();
-            this.cbxnemformulacao = new System.Windows.Forms.ComboBox();
-            this.lblnemformulacao = new System.Windows.Forms.Label();
-            this.txtnomedoanimal = new System.Windows.Forms.TextBox();
-            this.lblnomedoanimal = new System.Windows.Forms.Label();
-            this.txtnometutor = new System.Windows.Forms.TextBox();
-            this.lblnometutor = new System.Windows.Forms.Label();
             this.tipalimentosms = new System.Windows.Forms.ToolTip(this.components);
-            this.btnformulardieta = new System.Windows.Forms.Button();
-            this.btnetapa1formulacao = new System.Windows.Forms.Button();
-            this.btnetapa2formulacao = new System.Windows.Forms.Button();
-            this.barraformulacao = new System.Windows.Forms.Button();
-            this.btninserealimento = new System.Windows.Forms.Button();
-            this.btnremovealimento = new System.Windows.Forms.Button();
-            this.btnreiniciardieta = new System.Windows.Forms.Button();
-            this.pnladdalimentoformulacao = new System.Windows.Forms.Panel();
-            this.dgvaddalimentosms = new System.Windows.Forms.DataGridView();
-            this.txtpercentagemteste = new System.Windows.Forms.TextBox();
-            this.lblpercentagemdeinclusao = new System.Windows.Forms.Label();
-            this.txtalimentoselecionado = new System.Windows.Forms.TextBox();
+            this.pnlselecionemoureq = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnnecessidadenergeticamanutencao = new System.Windows.Forms.Button();
+            this.lblnecessidadenergeticamanutencao = new System.Windows.Forms.Label();
+            this.lblrequerimentoenergetico = new System.Windows.Forms.Label();
+            this.btnrequerimentoenergetico = new System.Windows.Forms.Button();
+            this.pnlselecionanemoureq = new System.Windows.Forms.Panel();
+            this.lblselecionanemoureq = new System.Windows.Forms.Label();
+            this.lblespecies = new System.Windows.Forms.Label();
+            this.pnlnemescondido = new System.Windows.Forms.Panel();
+            this.lblrequerimentoescondido = new System.Windows.Forms.Label();
+            this.pnlrequerimentoescondid = new System.Windows.Forms.Panel();
             this.pnlsuperior.SuspendLayout();
+            this.pnlselecionaalimento.SuspendLayout();
+            this.tblselecionaaliento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).BeginInit();
             this.pnlespecies.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvespecie)).BeginInit();
             this.pnlcalcnem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).BeginInit();
-            this.pnlselecionaalimento.SuspendLayout();
-            this.pnlsuperioralimentosms.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).BeginInit();
-            this.pnlsuperioralimentosmn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosmn)).BeginInit();
-            this.pnllateral.SuspendLayout();
+            this.pnlescondido.SuspendLayout();
+            this.pnlespeciesescondido.SuspendLayout();
+            this.pnldietasescondido.SuspendLayout();
+            this.pnldietasescondidointerr.SuspendLayout();
+            this.pnldietas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdietas)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxdietassuperior)).BeginInit();
+            this.pnlformlacaoescodid.SuspendLayout();
+            this.pnlformulacao.SuspendLayout();
+            this.pnlresultadosformulacao.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.pnldadoscomparacaodieta.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.pnladdalimentoformulacao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvformuladieta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvaddalimentosms)).BeginInit();
+            this.pnlsuperiorformulacao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxcabecalhoformular)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumescore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumpeso)).BeginInit();
+            this.pnlescondidoalimentos.SuspendLayout();
+            this.pnlescondidoalimentomn.SuspendLayout();
             this.pnlalimentosms.SuspendLayout();
             this.pnlvisualizaalimentosms.SuspendLayout();
             this.tablecnfms.SuspendLayout();
@@ -564,7 +825,11 @@
             this.tableumidadems.SuspendLayout();
             this.tableenergiams.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxtooltipalimentoms)).BeginInit();
+            this.pnlsuperioralimentosms.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosms)).BeginInit();
+            this.pnlalimentoescondidoms.SuspendLayout();
+            this.pnlalimentosmn.SuspendLayout();
             this.pnlvisualizaalimentosmn.SuspendLayout();
             this.tabletitulovitaminas.SuspendLayout();
             this.tablevitaminas.SuspendLayout();
@@ -578,17 +843,15 @@
             this.tableumidade.SuspendLayout();
             this.tableenergia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxhelpalimentomn)).BeginInit();
-            this.pnlalimentosmn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosmn)).BeginInit();
-            this.pnlformulacao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvformuladieta)).BeginInit();
-            this.pnlsuperiorformulacao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxcabecalhoformular)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumidade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumescore)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumpeso)).BeginInit();
-            this.pnladdalimentoformulacao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvaddalimentosms)).BeginInit();
+            this.pnlsuperioralimentosmn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosmn)).BeginInit();
+            this.pnlescolhepainelescondido.SuspendLayout();
+            this.pnlescondidoinicio.SuspendLayout();
+            this.pnllateral.SuspendLayout();
+            this.pnlselecionemoureq.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.pnlnemescondido.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlsuperior
@@ -596,7 +859,6 @@
             this.pnlsuperior.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlsuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            this.pnlsuperior.Controls.Add(this.pnlespecies);
             this.pnlsuperior.Controls.Add(this.lblusuario);
             this.pnlsuperior.Controls.Add(this.pbxusuario);
             this.pnlsuperior.Controls.Add(this.pbxlogo);
@@ -605,6 +867,135 @@
             this.pnlsuperior.Name = "pnlsuperior";
             this.pnlsuperior.Size = new System.Drawing.Size(1318, 62);
             this.pnlsuperior.TabIndex = 1;
+            // 
+            // lblusuario
+            // 
+            this.lblusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblusuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusuario.ForeColor = System.Drawing.Color.White;
+            this.lblusuario.Location = new System.Drawing.Point(808, 17);
+            this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblusuario.Name = "lblusuario";
+            this.lblusuario.Size = new System.Drawing.Size(410, 30);
+            this.lblusuario.TabIndex = 0;
+            this.lblusuario.Text = "Murilo José Marques Maia";
+            this.lblusuario.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnlselecionaalimento
+            // 
+            this.pnlselecionaalimento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlselecionaalimento.BackColor = System.Drawing.Color.White;
+            this.pnlselecionaalimento.Controls.Add(this.tblselecionaaliento);
+            this.pnlselecionaalimento.Location = new System.Drawing.Point(31, 14);
+            this.pnlselecionaalimento.Name = "pnlselecionaalimento";
+            this.pnlselecionaalimento.Size = new System.Drawing.Size(1119, 620);
+            this.pnlselecionaalimento.TabIndex = 9;
+            // 
+            // tblselecionaaliento
+            // 
+            this.tblselecionaaliento.ColumnCount = 2;
+            this.tblselecionaaliento.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblselecionaaliento.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblselecionaaliento.Controls.Add(this.btnescolhealimentomn, 0, 1);
+            this.tblselecionaaliento.Controls.Add(this.lblescolhealimentomn, 0, 0);
+            this.tblselecionaaliento.Controls.Add(this.lblescolhealimentoms, 1, 0);
+            this.tblselecionaaliento.Controls.Add(this.btnescolhealimentoms, 1, 1);
+            this.tblselecionaaliento.Location = new System.Drawing.Point(3, 39);
+            this.tblselecionaaliento.Name = "tblselecionaaliento";
+            this.tblselecionaaliento.RowCount = 2;
+            this.tblselecionaaliento.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tblselecionaaliento.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95F));
+            this.tblselecionaaliento.Size = new System.Drawing.Size(1116, 591);
+            this.tblselecionaaliento.TabIndex = 4;
+            // 
+            // btnescolhealimentomn
+            // 
+            this.btnescolhealimentomn.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnescolhealimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
+            this.btnescolhealimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnescolhealimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnescolhealimentomn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnescolhealimentomn.FlatAppearance.BorderSize = 0;
+            this.btnescolhealimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnescolhealimentomn.Location = new System.Drawing.Point(3, 32);
+            this.btnescolhealimentomn.Name = "btnescolhealimentomn";
+            this.btnescolhealimentomn.Size = new System.Drawing.Size(552, 556);
+            this.btnescolhealimentomn.TabIndex = 3;
+            this.btnescolhealimentomn.UseVisualStyleBackColor = false;
+            this.btnescolhealimentomn.Click += new System.EventHandler(this.btnescolhealimentomn_Click);
+            // 
+            // lblescolhealimentomn
+            // 
+            this.lblescolhealimentomn.AutoSize = true;
+            this.lblescolhealimentomn.BackColor = System.Drawing.Color.SandyBrown;
+            this.lblescolhealimentomn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblescolhealimentomn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblescolhealimentomn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblescolhealimentomn.Location = new System.Drawing.Point(3, 0);
+            this.lblescolhealimentomn.Name = "lblescolhealimentomn";
+            this.lblescolhealimentomn.Size = new System.Drawing.Size(552, 29);
+            this.lblescolhealimentomn.TabIndex = 2;
+            this.lblescolhealimentomn.Text = "Alimentos na Matéria Natural";
+            this.lblescolhealimentomn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblescolhealimentomn.Click += new System.EventHandler(this.lblescolhealimentomn_Click);
+            // 
+            // lblescolhealimentoms
+            // 
+            this.lblescolhealimentoms.AutoSize = true;
+            this.lblescolhealimentoms.BackColor = System.Drawing.Color.PeachPuff;
+            this.lblescolhealimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblescolhealimentoms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblescolhealimentoms.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblescolhealimentoms.Location = new System.Drawing.Point(561, 0);
+            this.lblescolhealimentoms.Name = "lblescolhealimentoms";
+            this.lblescolhealimentoms.Size = new System.Drawing.Size(552, 29);
+            this.lblescolhealimentoms.TabIndex = 3;
+            this.lblescolhealimentoms.Text = "Alimentos na Matéria Seca";
+            this.lblescolhealimentoms.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblescolhealimentoms.Click += new System.EventHandler(this.lblescolhealimentoms_Click);
+            // 
+            // btnescolhealimentoms
+            // 
+            this.btnescolhealimentoms.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnescolhealimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.wheat;
+            this.btnescolhealimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnescolhealimentoms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnescolhealimentoms.FlatAppearance.BorderSize = 0;
+            this.btnescolhealimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnescolhealimentoms.Location = new System.Drawing.Point(561, 32);
+            this.btnescolhealimentoms.Name = "btnescolhealimentoms";
+            this.btnescolhealimentoms.Size = new System.Drawing.Size(493, 542);
+            this.btnescolhealimentoms.TabIndex = 1;
+            this.btnescolhealimentoms.UseVisualStyleBackColor = false;
+            this.btnescolhealimentoms.Click += new System.EventHandler(this.btnescolhealimentoms_Click);
+            // 
+            // pbxusuario
+            // 
+            this.pbxusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbxusuario.BackColor = System.Drawing.Color.Transparent;
+            this.pbxusuario.BackgroundImage = global::ProjetoNariz.Properties.Resources.male_user_shadow_48;
+            this.pbxusuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbxusuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxusuario.Location = new System.Drawing.Point(1222, 10);
+            this.pbxusuario.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxusuario.Name = "pbxusuario";
+            this.pbxusuario.Size = new System.Drawing.Size(56, 41);
+            this.pbxusuario.TabIndex = 2;
+            this.pbxusuario.TabStop = false;
+            // 
+            // pbxlogo
+            // 
+            this.pbxlogo.BackColor = System.Drawing.Color.White;
+            this.pbxlogo.BackgroundImage = global::ProjetoNariz.Properties.Resources.Logo;
+            this.pbxlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxlogo.Location = new System.Drawing.Point(32, 10);
+            this.pbxlogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxlogo.Name = "pbxlogo";
+            this.pbxlogo.Size = new System.Drawing.Size(190, 41);
+            this.pbxlogo.TabIndex = 1;
+            this.pbxlogo.TabStop = false;
             // 
             // pnlespecies
             // 
@@ -626,7 +1017,7 @@
             this.pnlespecies.Controls.Add(this.btnbuscanomeespecie);
             this.pnlespecies.Controls.Add(this.btnadicionarespecie);
             this.pnlespecies.Controls.Add(this.btnvisualizarespecie);
-            this.pnlespecies.Location = new System.Drawing.Point(1149, 50);
+            this.pnlespecies.Location = new System.Drawing.Point(50, 10);
             this.pnlespecies.Name = "pnlespecies";
             this.pnlespecies.Size = new System.Drawing.Size(1119, 630);
             this.pnlespecies.TabIndex = 11;
@@ -637,7 +1028,7 @@
             this.dgvespecie.AllowUserToDeleteRows = false;
             this.dgvespecie.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgvespecie.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvespecie.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
             this.dgvespecie.BackgroundColor = System.Drawing.Color.White;
             this.dgvespecie.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -1189,355 +1580,3851 @@
             this.btnvisualizarespecie.UseVisualStyleBackColor = false;
             this.btnvisualizarespecie.Click += new System.EventHandler(this.btnvisualizarespecie_Click);
             // 
-            // lblusuario
+            // pnlescondido
             // 
-            this.lblusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblusuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblusuario.ForeColor = System.Drawing.Color.White;
-            this.lblusuario.Location = new System.Drawing.Point(808, 17);
-            this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(410, 30);
-            this.lblusuario.TabIndex = 0;
-            this.lblusuario.Text = "Murilo José Marques Maia";
-            this.lblusuario.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.pnlescondido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlescondido.BackColor = System.Drawing.Color.White;
+            this.pnlescondido.Controls.Add(this.pnlutilitarioescondido);
+            this.pnlescondido.Controls.Add(this.pnlespeciesescondido);
+            this.pnlescondido.Controls.Add(this.lblpaineisespeciesescondido);
+            this.pnlescondido.Controls.Add(this.pnldietasescondido);
+            this.pnlescondido.Controls.Add(this.lblpaineisdietasescondido);
+            this.pnlescondido.Controls.Add(this.pnlescondidoalimentos);
+            this.pnlescondido.Controls.Add(this.lblpaineisalimentos);
+            this.pnlescondido.Controls.Add(this.pnlescondidoinicio);
+            this.pnlescondido.Controls.Add(this.lblpaineisinicio);
+            this.pnlescondido.Location = new System.Drawing.Point(424, 68);
+            this.pnlescondido.Name = "pnlescondido";
+            this.pnlescondido.Size = new System.Drawing.Size(1045, 419);
+            this.pnlescondido.TabIndex = 34;
             // 
-            // pbxusuario
+            // pnlutilitarioescondido
             // 
-            this.pbxusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxusuario.BackColor = System.Drawing.Color.Transparent;
-            this.pbxusuario.BackgroundImage = global::ProjetoNariz.Properties.Resources.male_user_shadow_48;
-            this.pbxusuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbxusuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxusuario.Location = new System.Drawing.Point(1222, 10);
-            this.pbxusuario.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxusuario.Name = "pbxusuario";
-            this.pbxusuario.Size = new System.Drawing.Size(56, 41);
-            this.pbxusuario.TabIndex = 2;
-            this.pbxusuario.TabStop = false;
+            this.pnlutilitarioescondido.Location = new System.Drawing.Point(772, 12);
+            this.pnlutilitarioescondido.Name = "pnlutilitarioescondido";
+            this.pnlutilitarioescondido.Size = new System.Drawing.Size(141, 74);
+            this.pnlutilitarioescondido.TabIndex = 8;
             // 
-            // pbxlogo
+            // pnlespeciesescondido
             // 
-            this.pbxlogo.BackColor = System.Drawing.Color.White;
-            this.pbxlogo.BackgroundImage = global::ProjetoNariz.Properties.Resources.Logo;
-            this.pbxlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxlogo.Location = new System.Drawing.Point(32, 10);
-            this.pbxlogo.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxlogo.Name = "pbxlogo";
-            this.pbxlogo.Size = new System.Drawing.Size(190, 41);
-            this.pbxlogo.TabIndex = 1;
-            this.pbxlogo.TabStop = false;
+            this.pnlespeciesescondido.Controls.Add(this.lblrequerimentoescondido);
+            this.pnlespeciesescondido.Controls.Add(this.pnlrequerimentoescondid);
+            this.pnlespeciesescondido.Controls.Add(this.lblespecies);
+            this.pnlespeciesescondido.Controls.Add(this.pnlnemescondido);
+            this.pnlespeciesescondido.Controls.Add(this.lblselecionanemoureq);
+            this.pnlespeciesescondido.Controls.Add(this.pnlselecionanemoureq);
+            this.pnlespeciesescondido.Location = new System.Drawing.Point(558, 69);
+            this.pnlespeciesescondido.Name = "pnlespeciesescondido";
+            this.pnlespeciesescondido.Size = new System.Drawing.Size(157, 322);
+            this.pnlespeciesescondido.TabIndex = 7;
             // 
-            // pnlselecionaalimento
+            // lblpaineisespeciesescondido
             // 
-            this.pnlselecionaalimento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblpaineisespeciesescondido.AutoSize = true;
+            this.lblpaineisespeciesescondido.Location = new System.Drawing.Point(609, 53);
+            this.lblpaineisespeciesescondido.Name = "lblpaineisespeciesescondido";
+            this.lblpaineisespeciesescondido.Size = new System.Drawing.Size(50, 13);
+            this.lblpaineisespeciesescondido.TabIndex = 6;
+            this.lblpaineisespeciesescondido.Text = "Especies";
+            this.lblpaineisespeciesescondido.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnldietasescondido
+            // 
+            this.pnldietasescondido.Controls.Add(this.lbldietasescondido);
+            this.pnldietasescondido.Controls.Add(this.pnldietasescondidointerr);
+            this.pnldietasescondido.Controls.Add(this.pnlformlacaoescodid);
+            this.pnldietasescondido.Controls.Add(this.lblformulacaoescondido);
+            this.pnldietasescondido.Location = new System.Drawing.Point(377, 68);
+            this.pnldietasescondido.Name = "pnldietasescondido";
+            this.pnldietasescondido.Size = new System.Drawing.Size(157, 322);
+            this.pnldietasescondido.TabIndex = 5;
+            // 
+            // lbldietasescondido
+            // 
+            this.lbldietasescondido.AutoSize = true;
+            this.lbldietasescondido.Location = new System.Drawing.Point(69, 123);
+            this.lbldietasescondido.Name = "lbldietasescondido";
+            this.lbldietasescondido.Size = new System.Drawing.Size(37, 13);
+            this.lbldietasescondido.TabIndex = 9;
+            this.lbldietasescondido.Text = "Dietas";
+            this.lbldietasescondido.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnldietasescondidointerr
+            // 
+            this.pnldietasescondidointerr.Controls.Add(this.pnldietas);
+            this.pnldietasescondidointerr.Location = new System.Drawing.Point(22, 144);
+            this.pnldietasescondidointerr.Name = "pnldietasescondidointerr";
+            this.pnldietasescondidointerr.Size = new System.Drawing.Size(113, 74);
+            this.pnldietasescondidointerr.TabIndex = 9;
+            // 
+            // pnldietas
+            // 
+            this.pnldietas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlselecionaalimento.BackColor = System.Drawing.Color.White;
-            this.pnlselecionaalimento.Controls.Add(this.lblescolhealimentoms);
-            this.pnlselecionaalimento.Controls.Add(this.lblescolhealimentomn);
-            this.pnlselecionaalimento.Controls.Add(this.btnescolhealimentoms);
-            this.pnlselecionaalimento.Controls.Add(this.btnescolhealimentomn);
-            this.pnlselecionaalimento.Location = new System.Drawing.Point(165, 80);
-            this.pnlselecionaalimento.Name = "pnlselecionaalimento";
-            this.pnlselecionaalimento.Size = new System.Drawing.Size(1119, 630);
-            this.pnlselecionaalimento.TabIndex = 9;
+            this.pnldietas.BackColor = System.Drawing.Color.White;
+            this.pnldietas.Controls.Add(this.dgvdietas);
+            this.pnldietas.Controls.Add(this.cbxfiltropesquisadietas);
+            this.pnldietas.Controls.Add(this.panel5);
+            this.pnldietas.Controls.Add(this.txtpesquisadietas);
+            this.pnldietas.Controls.Add(this.btnpesquisadietas);
+            this.pnldietas.Controls.Add(this.btnadicionardieta);
+            this.pnldietas.Controls.Add(this.btnvisualizadieta);
+            this.pnldietas.Location = new System.Drawing.Point(50, 6);
+            this.pnldietas.Margin = new System.Windows.Forms.Padding(2);
+            this.pnldietas.Name = "pnldietas";
+            this.pnldietas.Size = new System.Drawing.Size(1120, 630);
+            this.pnldietas.TabIndex = 36;
             // 
-            // lblescolhealimentoms
+            // dgvdietas
             // 
-            this.lblescolhealimentoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblescolhealimentoms.AutoSize = true;
-            this.lblescolhealimentoms.BackColor = System.Drawing.Color.PeachPuff;
-            this.lblescolhealimentoms.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblescolhealimentoms.Location = new System.Drawing.Point(662, 147);
-            this.lblescolhealimentoms.Name = "lblescolhealimentoms";
-            this.lblescolhealimentoms.Size = new System.Drawing.Size(194, 21);
-            this.lblescolhealimentoms.TabIndex = 3;
-            this.lblescolhealimentoms.Text = "Alimentos na Matéria Seca";
-            // 
-            // lblescolhealimentomn
-            // 
-            this.lblescolhealimentomn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblescolhealimentomn.AutoSize = true;
-            this.lblescolhealimentomn.BackColor = System.Drawing.Color.SandyBrown;
-            this.lblescolhealimentomn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblescolhealimentomn.Location = new System.Drawing.Point(180, 129);
-            this.lblescolhealimentomn.Name = "lblescolhealimentomn";
-            this.lblescolhealimentomn.Size = new System.Drawing.Size(214, 21);
-            this.lblescolhealimentomn.TabIndex = 2;
-            this.lblescolhealimentomn.Text = "Alimentos na Matéria Natural";
-            // 
-            // btnescolhealimentoms
-            // 
-            this.btnescolhealimentoms.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnescolhealimentoms.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnescolhealimentoms.BackgroundImage = global::ProjetoNariz.Properties.Resources.wheat;
-            this.btnescolhealimentoms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnescolhealimentoms.FlatAppearance.BorderSize = 0;
-            this.btnescolhealimentoms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnescolhealimentoms.Location = new System.Drawing.Point(559, 114);
-            this.btnescolhealimentoms.Name = "btnescolhealimentoms";
-            this.btnescolhealimentoms.Size = new System.Drawing.Size(400, 400);
-            this.btnescolhealimentoms.TabIndex = 1;
-            this.btnescolhealimentoms.UseVisualStyleBackColor = false;
-            this.btnescolhealimentoms.Click += new System.EventHandler(this.btnescolhealimentoms_Click);
-            // 
-            // btnescolhealimentomn
-            // 
-            this.btnescolhealimentomn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnescolhealimentomn.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnescolhealimentomn.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
-            this.btnescolhealimentomn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnescolhealimentomn.FlatAppearance.BorderSize = 0;
-            this.btnescolhealimentomn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnescolhealimentomn.Location = new System.Drawing.Point(87, 114);
-            this.btnescolhealimentomn.Name = "btnescolhealimentomn";
-            this.btnescolhealimentomn.Size = new System.Drawing.Size(400, 400);
-            this.btnescolhealimentomn.TabIndex = 3;
-            this.btnescolhealimentomn.UseVisualStyleBackColor = false;
-            this.btnescolhealimentomn.Click += new System.EventHandler(this.btnescolhealimentomn_Click);
-            // 
-            // pnlsuperioralimentosms
-            // 
-            this.pnlsuperioralimentosms.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvdietas.AllowUserToAddRows = false;
+            this.dgvdietas.AllowUserToDeleteRows = false;
+            this.dgvdietas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlsuperioralimentosms.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnlsuperioralimentosms.Controls.Add(this.lblalimentosms);
-            this.pnlsuperioralimentosms.Controls.Add(this.pbxalimentosms);
-            this.pnlsuperioralimentosms.Location = new System.Drawing.Point(1, 1);
-            this.pnlsuperioralimentosms.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlsuperioralimentosms.Name = "pnlsuperioralimentosms";
-            this.pnlsuperioralimentosms.Size = new System.Drawing.Size(1119, 50);
-            this.pnlsuperioralimentosms.TabIndex = 8;
+            this.dgvdietas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            this.dgvdietas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvdietas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdietas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvdietas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdietas.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvdietas.GridColor = System.Drawing.Color.White;
+            this.dgvdietas.Location = new System.Drawing.Point(11, 115);
+            this.dgvdietas.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvdietas.MultiSelect = false;
+            this.dgvdietas.Name = "dgvdietas";
+            this.dgvdietas.ReadOnly = true;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdietas.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvdietas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvdietas.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dgvdietas.RowTemplate.Height = 24;
+            this.dgvdietas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvdietas.Size = new System.Drawing.Size(1106, 513);
+            this.dgvdietas.TabIndex = 6;
             // 
-            // lblalimentosms
+            // cbxfiltropesquisadietas
             // 
-            this.lblalimentosms.AutoSize = true;
-            this.lblalimentosms.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblalimentosms.Location = new System.Drawing.Point(72, 14);
-            this.lblalimentosms.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblalimentosms.Name = "lblalimentosms";
-            this.lblalimentosms.Size = new System.Drawing.Size(194, 21);
-            this.lblalimentosms.TabIndex = 1;
-            this.lblalimentosms.Text = "Alimentos na Matéria Seca";
+            this.cbxfiltropesquisadietas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxfiltropesquisadietas.BackColor = System.Drawing.Color.White;
+            this.cbxfiltropesquisadietas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxfiltropesquisadietas.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxfiltropesquisadietas.FormattingEnabled = true;
+            this.cbxfiltropesquisadietas.Items.AddRange(new object[] {
+            "Filtro",
+            "Alimento",
+            "Energia (kcal)",
+            "Umidade (%)",
+            "MS (%)",
+            "PB (%)",
+            "Arg (%)",
+            "His (%)",
+            "Iso (%)",
+            "Leu (%)",
+            "Lis (%)",
+            "Met (%)",
+            "Met + Cis (%)",
+            "Fen (%)",
+            "Fen + Tir (%)",
+            "Treo (%)",
+            "Tri (%)",
+            "Val (%)",
+            "Tau (%)",
+            "EE (%)",
+            "Ac. Linoleico n-6 (%)",
+            "Ac. Araquidonico (mg)",
+            "Ac. Linoleico n-3 (%)",
+            "EPA + DHA (%)",
+            "MM (%)",
+            "Ca (mg)",
+            "P (mg)",
+            "K (mg)",
+            "Na (mg)",
+            "Cl (mg)",
+            "Mg (mg)",
+            "Cu (mg)",
+            "I (mg)",
+            "Fe (mg)",
+            "Mn (mg)",
+            "Se (mg)",
+            "Zn (mg)",
+            "S (mg)",
+            "Carboidratos (%)",
+            "FB (%)",
+            "ENN (%)",
+            "FDN (%)",
+            "FDA (%)",
+            "CNF (%)",
+            "Vit A (UI)",
+            "Vit D (UI)",
+            "Vit E (UI)",
+            "Tiamina (mg)",
+            "Riboflavina (mg)",
+            "Ac. Pantotenico (mg)",
+            "Vit. B6 (mg)",
+            "Vit. B12 (mg)",
+            "Niacina (mg)",
+            "Ac. Folico (mg)",
+            "Biotina (mg)",
+            "Colina (mg)",
+            "Vit. K (mg)",
+            "Vit. C (mg)",
+            "Correcao ENN",
+            "Preco/kg (R$)",
+            "Unidade pequena (g)",
+            "Unidade media (g)",
+            "Unidade grande (g)",
+            "Folha pequena (g)",
+            "Folha media (g)",
+            "Folha grande (g)",
+            "Colher de sopa rasa (g)",
+            "Colher de sopa media (g)",
+            "Colher de sopa cheia (g)",
+            "Colher de arroz cheia (g)",
+            "Escumadeira media cheia (g)",
+            "Escumadeira media (g)",
+            "Escumadeira media rasa (g)",
+            "Fatia pequena (g)",
+            "Fatia media (g)",
+            "Fatia grande (g)",
+            "Pedaco pequeno (g)",
+            "Pedaco medio (g)",
+            "Pedaco grande (g)",
+            "Prato pires raso (g)",
+            "Colher de servir (g)",
+            "Xicara de cha (g)",
+            "Copo de requeijao (g)",
+            "Prato fundo (g)",
+            "Prato raso (g)",
+            "Colher de sobremesa (g)",
+            "Bago (g)",
+            "Cacho grande (g)",
+            "Cacho medio (g)",
+            "Cacho pequeno (g)",
+            "Colher de cafe (g)",
+            "Colher de cha (g)",
+            "File (g)",
+            "Bife (g)",
+            "Lata (g)",
+            "Copo (g)",
+            "Ramo (g)",
+            "Maco (g)",
+            "Pitada (g)"});
+            this.cbxfiltropesquisadietas.Location = new System.Drawing.Point(629, 71);
+            this.cbxfiltropesquisadietas.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxfiltropesquisadietas.Name = "cbxfiltropesquisadietas";
+            this.cbxfiltropesquisadietas.Size = new System.Drawing.Size(110, 20);
+            this.cbxfiltropesquisadietas.TabIndex = 5;
             // 
-            // pbxalimentosms
+            // panel5
             // 
-            this.pbxalimentosms.BackgroundImage = global::ProjetoNariz.Properties.Resources.wheat;
-            this.pbxalimentosms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxalimentosms.Location = new System.Drawing.Point(11, 5);
-            this.pbxalimentosms.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxalimentosms.Name = "pbxalimentosms";
-            this.pbxalimentosms.Size = new System.Drawing.Size(45, 41);
-            this.pbxalimentosms.TabIndex = 0;
-            this.pbxalimentosms.TabStop = false;
-            // 
-            // pnlsuperioralimentosmn
-            // 
-            this.pnlsuperioralimentosmn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlsuperioralimentosmn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnlsuperioralimentosmn.Controls.Add(this.lblalimentosmn);
-            this.pnlsuperioralimentosmn.Controls.Add(this.pbxalimentosmn);
-            this.pnlsuperioralimentosmn.Location = new System.Drawing.Point(1, 1);
-            this.pnlsuperioralimentosmn.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlsuperioralimentosmn.Name = "pnlsuperioralimentosmn";
-            this.pnlsuperioralimentosmn.Size = new System.Drawing.Size(1119, 50);
-            this.pnlsuperioralimentosmn.TabIndex = 0;
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel5.Controls.Add(this.lbldietassuperior);
+            this.panel5.Controls.Add(this.pbxdietassuperior);
+            this.panel5.Location = new System.Drawing.Point(1, 1);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1119, 50);
+            this.panel5.TabIndex = 0;
             // 
-            // lblalimentosmn
+            // lbldietassuperior
             // 
-            this.lblalimentosmn.AutoSize = true;
-            this.lblalimentosmn.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblalimentosmn.Location = new System.Drawing.Point(72, 14);
-            this.lblalimentosmn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblalimentosmn.Name = "lblalimentosmn";
-            this.lblalimentosmn.Size = new System.Drawing.Size(214, 21);
-            this.lblalimentosmn.TabIndex = 0;
-            this.lblalimentosmn.Text = "Alimentos na Matéria Natural";
+            this.lbldietassuperior.AutoSize = true;
+            this.lbldietassuperior.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lbldietassuperior.Location = new System.Drawing.Point(72, 14);
+            this.lbldietassuperior.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbldietassuperior.Name = "lbldietassuperior";
+            this.lbldietassuperior.Size = new System.Drawing.Size(53, 21);
+            this.lbldietassuperior.TabIndex = 0;
+            this.lbldietassuperior.Text = "Dietas";
             // 
-            // pbxalimentosmn
+            // pbxdietassuperior
             // 
-            this.pbxalimentosmn.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
-            this.pbxalimentosmn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxalimentosmn.Location = new System.Drawing.Point(11, 5);
-            this.pbxalimentosmn.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxalimentosmn.Name = "pbxalimentosmn";
-            this.pbxalimentosmn.Size = new System.Drawing.Size(45, 41);
-            this.pbxalimentosmn.TabIndex = 0;
-            this.pbxalimentosmn.TabStop = false;
+            this.pbxdietassuperior.BackgroundImage = global::ProjetoNariz.Properties.Resources.calendar;
+            this.pbxdietassuperior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxdietassuperior.Location = new System.Drawing.Point(11, 5);
+            this.pbxdietassuperior.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxdietassuperior.Name = "pbxdietassuperior";
+            this.pbxdietassuperior.Size = new System.Drawing.Size(45, 41);
+            this.pbxdietassuperior.TabIndex = 0;
+            this.pbxdietassuperior.TabStop = false;
             // 
-            // pnllateral
+            // txtpesquisadietas
             // 
-            this.pnllateral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pnllateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(214)))), ((int)(((byte)(129)))));
-            this.pnllateral.Controls.Add(this.btnespecies);
-            this.pnllateral.Controls.Add(this.btnhome);
-            this.pnllateral.Controls.Add(this.btnconfig);
-            this.pnllateral.Controls.Add(this.btnsair);
-            this.pnllateral.Controls.Add(this.btndietas);
-            this.pnllateral.Controls.Add(this.btnavaliar);
-            this.pnllateral.Controls.Add(this.btnformular);
-            this.pnllateral.Controls.Add(this.btnalimentos);
-            this.pnllateral.Location = new System.Drawing.Point(-1, 57);
-            this.pnllateral.Margin = new System.Windows.Forms.Padding(2);
-            this.pnllateral.Name = "pnllateral";
-            this.pnllateral.Size = new System.Drawing.Size(160, 659);
-            this.pnllateral.TabIndex = 2;
-            // 
-            // btnespecies
-            // 
-            this.btnespecies.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtpesquisadietas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnespecies.BackgroundImage = global::ProjetoNariz.Properties.Resources.horse;
-            this.btnespecies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnespecies.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnespecies.FlatAppearance.BorderSize = 0;
-            this.btnespecies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnespecies.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnespecies.Location = new System.Drawing.Point(-100, 234);
-            this.btnespecies.Margin = new System.Windows.Forms.Padding(2);
-            this.btnespecies.Name = "btnespecies";
-            this.btnespecies.Size = new System.Drawing.Size(266, 37);
-            this.btnespecies.TabIndex = 6;
-            this.btnespecies.Text = "                           Espécies";
-            this.btnespecies.UseVisualStyleBackColor = true;
-            this.btnespecies.Click += new System.EventHandler(this.btnespecies_Click);
+            this.txtpesquisadietas.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpesquisadietas.ForeColor = System.Drawing.Color.Silver;
+            this.txtpesquisadietas.Location = new System.Drawing.Point(11, 72);
+            this.txtpesquisadietas.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpesquisadietas.Name = "txtpesquisadietas";
+            this.txtpesquisadietas.Size = new System.Drawing.Size(614, 21);
+            this.txtpesquisadietas.TabIndex = 4;
+            this.txtpesquisadietas.Text = "O que você procura?";
+            this.txtpesquisadietas.Enter += new System.EventHandler(this.txtpesquisadietas_Enter);
+            this.txtpesquisadietas.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtpesquisadietas_KeyUp);
+            this.txtpesquisadietas.Leave += new System.EventHandler(this.txtpesquisadietas_Leave);
             // 
-            // btnhome
+            // btnpesquisadietas
             // 
-            this.btnhome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnpesquisadietas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnpesquisadietas.BackgroundImage = global::ProjetoNariz.Properties.Resources.loupe;
+            this.btnpesquisadietas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnpesquisadietas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnpesquisadietas.FlatAppearance.BorderSize = 0;
+            this.btnpesquisadietas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpesquisadietas.Location = new System.Drawing.Point(743, 63);
+            this.btnpesquisadietas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnpesquisadietas.Name = "btnpesquisadietas";
+            this.btnpesquisadietas.Size = new System.Drawing.Size(36, 37);
+            this.btnpesquisadietas.TabIndex = 3;
+            this.btnpesquisadietas.UseVisualStyleBackColor = true;
+            this.btnpesquisadietas.Click += new System.EventHandler(this.btnpesquisadietas_Click);
+            // 
+            // btnadicionardieta
+            // 
+            this.btnadicionardieta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnadicionardieta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btnadicionardieta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnadicionardieta.FlatAppearance.BorderSize = 0;
+            this.btnadicionardieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnadicionardieta.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadicionardieta.ForeColor = System.Drawing.Color.White;
+            this.btnadicionardieta.Location = new System.Drawing.Point(956, 60);
+            this.btnadicionardieta.Margin = new System.Windows.Forms.Padding(2);
+            this.btnadicionardieta.Name = "btnadicionardieta";
+            this.btnadicionardieta.Size = new System.Drawing.Size(158, 41);
+            this.btnadicionardieta.TabIndex = 2;
+            this.btnadicionardieta.Text = "Nova Dieta";
+            this.btnadicionardieta.UseVisualStyleBackColor = false;
+            this.btnadicionardieta.Click += new System.EventHandler(this.btnadicionardieta_Click);
+            // 
+            // btnvisualizadieta
+            // 
+            this.btnvisualizadieta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnvisualizadieta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btnvisualizadieta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnvisualizadieta.FlatAppearance.BorderSize = 0;
+            this.btnvisualizadieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnvisualizadieta.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnvisualizadieta.ForeColor = System.Drawing.Color.White;
+            this.btnvisualizadieta.Location = new System.Drawing.Point(786, 60);
+            this.btnvisualizadieta.Margin = new System.Windows.Forms.Padding(2);
+            this.btnvisualizadieta.Name = "btnvisualizadieta";
+            this.btnvisualizadieta.Size = new System.Drawing.Size(158, 41);
+            this.btnvisualizadieta.TabIndex = 1;
+            this.btnvisualizadieta.Text = "Visualizar Dieta";
+            this.btnvisualizadieta.UseVisualStyleBackColor = false;
+            this.btnvisualizadieta.Click += new System.EventHandler(this.btnvisualizadieta_Click);
+            // 
+            // pnlformlacaoescodid
+            // 
+            this.pnlformlacaoescodid.Controls.Add(this.pnlformulacao);
+            this.pnlformlacaoescodid.Location = new System.Drawing.Point(22, 40);
+            this.pnlformlacaoescodid.Name = "pnlformlacaoescodid";
+            this.pnlformlacaoescodid.Size = new System.Drawing.Size(113, 74);
+            this.pnlformlacaoescodid.TabIndex = 9;
+            // 
+            // pnlformulacao
+            // 
+            this.pnlformulacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnhome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            this.btnhome.BackgroundImage = global::ProjetoNariz.Properties.Resources.home;
-            this.btnhome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnhome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnhome.FlatAppearance.BorderSize = 0;
-            this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnhome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhome.Location = new System.Drawing.Point(-136, 25);
-            this.btnhome.Margin = new System.Windows.Forms.Padding(2);
-            this.btnhome.Name = "btnhome";
-            this.btnhome.Size = new System.Drawing.Size(336, 37);
-            this.btnhome.TabIndex = 0;
-            this.btnhome.Text = "                         Inicio";
-            this.btnhome.UseVisualStyleBackColor = false;
-            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
+            this.pnlformulacao.BackColor = System.Drawing.Color.White;
+            this.pnlformulacao.Controls.Add(this.pnlresultadosformulacao);
+            this.pnlformulacao.Controls.Add(this.tableLayoutPanel1);
+            this.pnlformulacao.Controls.Add(this.cbxrequerimentodieta);
+            this.pnlformulacao.Controls.Add(this.lblrequerimentodieta);
+            this.pnlformulacao.Controls.Add(this.pnldadoscomparacaodieta);
+            this.pnlformulacao.Controls.Add(this.pnladdalimentoformulacao);
+            this.pnlformulacao.Controls.Add(this.barraformulacao);
+            this.pnlformulacao.Controls.Add(this.btnetapa2formulacao);
+            this.pnlformulacao.Controls.Add(this.btnetapa1formulacao);
+            this.pnlformulacao.Controls.Add(this.btnformulardieta);
+            this.pnlformulacao.Controls.Add(this.txtespecie);
+            this.pnlformulacao.Controls.Add(this.lblespecie);
+            this.pnlformulacao.Controls.Add(this.btnp2formulacao);
+            this.pnlformulacao.Controls.Add(this.pnlsuperiorformulacao);
+            this.pnlformulacao.Controls.Add(this.cbxsexo);
+            this.pnlformulacao.Controls.Add(this.lblsexo);
+            this.pnlformulacao.Controls.Add(this.txtnumidade);
+            this.pnlformulacao.Controls.Add(this.lblidade);
+            this.pnlformulacao.Controls.Add(this.txtnumescore);
+            this.pnlformulacao.Controls.Add(this.lblescore);
+            this.pnlformulacao.Controls.Add(this.txtnumpeso);
+            this.pnlformulacao.Controls.Add(this.lblpeso);
+            this.pnlformulacao.Controls.Add(this.cbxnemformulacao);
+            this.pnlformulacao.Controls.Add(this.lblnemformulacao);
+            this.pnlformulacao.Controls.Add(this.txtnomedoanimal);
+            this.pnlformulacao.Controls.Add(this.lblnomedoanimal);
+            this.pnlformulacao.Controls.Add(this.txtnometutor);
+            this.pnlformulacao.Controls.Add(this.lblnometutor);
+            this.pnlformulacao.Location = new System.Drawing.Point(36, 18);
+            this.pnlformulacao.Name = "pnlformulacao";
+            this.pnlformulacao.Size = new System.Drawing.Size(1119, 630);
+            this.pnlformulacao.TabIndex = 10;
             // 
-            // btnconfig
+            // pnlresultadosformulacao
             // 
-            this.btnconfig.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlresultadosformulacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnconfig.BackgroundImage = global::ProjetoNariz.Properties.Resources.engrenagem;
-            this.btnconfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnconfig.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnconfig.FlatAppearance.BorderSize = 0;
-            this.btnconfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnconfig.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnconfig.Location = new System.Drawing.Point(-136, 576);
-            this.btnconfig.Margin = new System.Windows.Forms.Padding(2);
-            this.btnconfig.Name = "btnconfig";
-            this.btnconfig.Size = new System.Drawing.Size(336, 37);
-            this.btnconfig.TabIndex = 5;
-            this.btnconfig.Text = "                                        Configurações";
-            this.btnconfig.UseVisualStyleBackColor = false;
-            this.btnconfig.Click += new System.EventHandler(this.btnconfig_Click);
+            this.pnlresultadosformulacao.Controls.Add(this.btnvoltaformulacao);
+            this.pnlresultadosformulacao.Location = new System.Drawing.Point(1, 52);
+            this.pnlresultadosformulacao.Name = "pnlresultadosformulacao";
+            this.pnlresultadosformulacao.Size = new System.Drawing.Size(100, 97);
+            this.pnlresultadosformulacao.TabIndex = 34;
             // 
-            // btnsair
+            // btnvoltaformulacao
             // 
-            this.btnsair.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnvoltaformulacao.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvoltaformulacao.BackgroundImage")));
+            this.btnvoltaformulacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnvoltaformulacao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnvoltaformulacao.FlatAppearance.BorderSize = 0;
+            this.btnvoltaformulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnvoltaformulacao.Location = new System.Drawing.Point(15, 17);
+            this.btnvoltaformulacao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnvoltaformulacao.Name = "btnvoltaformulacao";
+            this.btnvoltaformulacao.Size = new System.Drawing.Size(50, 45);
+            this.btnvoltaformulacao.TabIndex = 35;
+            this.btnvoltaformulacao.UseVisualStyleBackColor = true;
+            this.btnvoltaformulacao.Click += new System.EventHandler(this.btnvoltaformulacao_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnsair.BackgroundImage = global::ProjetoNariz.Properties.Resources.exit;
-            this.btnsair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnsair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsair.FlatAppearance.BorderSize = 0;
-            this.btnsair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsair.Location = new System.Drawing.Point(-109, 617);
-            this.btnsair.Margin = new System.Windows.Forms.Padding(2);
-            this.btnsair.Name = "btnsair";
-            this.btnsair.Size = new System.Drawing.Size(280, 37);
-            this.btnsair.TabIndex = 4;
-            this.btnsair.Text = "                       Sair";
-            this.btnsair.UseVisualStyleBackColor = true;
-            this.btnsair.Click += new System.EventHandler(this.btnsair_Click);
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.lblrequerimentodietarecomendado, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbldietaatualrequerimento, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblalimentodietarequerimento, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(572, 148);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(390, 25);
+            this.tableLayoutPanel1.TabIndex = 33;
             // 
-            // btndietas
+            // lblrequerimentodietarecomendado
             // 
-            this.btndietas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblrequerimentodietarecomendado.AutoSize = true;
+            this.lblrequerimentodietarecomendado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblrequerimentodietarecomendado.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrequerimentodietarecomendado.Location = new System.Drawing.Point(314, 2);
+            this.lblrequerimentodietarecomendado.Name = "lblrequerimentodietarecomendado";
+            this.lblrequerimentodietarecomendado.Size = new System.Drawing.Size(71, 21);
+            this.lblrequerimentodietarecomendado.TabIndex = 34;
+            this.lblrequerimentodietarecomendado.Text = "Min.";
+            this.lblrequerimentodietarecomendado.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lbldietaatualrequerimento
+            // 
+            this.lbldietaatualrequerimento.AutoSize = true;
+            this.lbldietaatualrequerimento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbldietaatualrequerimento.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldietaatualrequerimento.Location = new System.Drawing.Point(236, 2);
+            this.lbldietaatualrequerimento.Name = "lbldietaatualrequerimento";
+            this.lbldietaatualrequerimento.Size = new System.Drawing.Size(70, 17);
+            this.lbldietaatualrequerimento.TabIndex = 34;
+            this.lbldietaatualrequerimento.Text = "Atual";
+            this.lbldietaatualrequerimento.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblalimentodietarequerimento
+            // 
+            this.lblalimentodietarequerimento.AutoSize = true;
+            this.lblalimentodietarequerimento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblalimentodietarequerimento.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblalimentodietarequerimento.Location = new System.Drawing.Point(5, 2);
+            this.lblalimentodietarequerimento.Name = "lblalimentodietarequerimento";
+            this.lblalimentodietarequerimento.Size = new System.Drawing.Size(223, 17);
+            this.lblalimentodietarequerimento.TabIndex = 0;
+            this.lblalimentodietarequerimento.Text = "Alimento";
+            this.lblalimentodietarequerimento.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // cbxrequerimentodieta
+            // 
+            this.cbxrequerimentodieta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btndietas.BackgroundImage = global::ProjetoNariz.Properties.Resources.calendar;
-            this.btndietas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btndietas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndietas.FlatAppearance.BorderSize = 0;
-            this.btndietas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndietas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndietas.Location = new System.Drawing.Point(-100, 188);
-            this.btndietas.Margin = new System.Windows.Forms.Padding(2);
-            this.btndietas.Name = "btndietas";
-            this.btndietas.Size = new System.Drawing.Size(266, 37);
-            this.btndietas.TabIndex = 4;
-            this.btndietas.Text = "                         Dietas";
-            this.btndietas.UseVisualStyleBackColor = true;
-            this.btndietas.Click += new System.EventHandler(this.btndietas_Click);
+            this.cbxrequerimentodieta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxrequerimentodieta.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxrequerimentodieta.FormattingEnabled = true;
+            this.cbxrequerimentodieta.Location = new System.Drawing.Point(672, 114);
+            this.cbxrequerimentodieta.Name = "cbxrequerimentodieta";
+            this.cbxrequerimentodieta.Size = new System.Drawing.Size(328, 25);
+            this.cbxrequerimentodieta.TabIndex = 20;
             // 
-            // btnavaliar
+            // lblrequerimentodieta
             // 
-            this.btnavaliar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblrequerimentodieta.AutoSize = true;
+            this.lblrequerimentodieta.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrequerimentodieta.Location = new System.Drawing.Point(569, 118);
+            this.lblrequerimentodieta.Name = "lblrequerimentodieta";
+            this.lblrequerimentodieta.Size = new System.Drawing.Size(93, 17);
+            this.lblrequerimentodieta.TabIndex = 19;
+            this.lblrequerimentodieta.Text = "Requerimento:";
+            // 
+            // pnldadoscomparacaodieta
+            // 
+            this.pnldadoscomparacaodieta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnavaliar.BackgroundImage = global::ProjetoNariz.Properties.Resources.Prancheta;
-            this.btnavaliar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnavaliar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnavaliar.FlatAppearance.BorderSize = 0;
-            this.btnavaliar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnavaliar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnavaliar.Location = new System.Drawing.Point(-106, 147);
-            this.btnavaliar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnavaliar.Name = "btnavaliar";
-            this.btnavaliar.Size = new System.Drawing.Size(270, 37);
-            this.btnavaliar.TabIndex = 3;
-            this.btnavaliar.Text = "                            Avaliar";
-            this.btnavaliar.UseVisualStyleBackColor = true;
-            this.btnavaliar.Click += new System.EventHandler(this.btnavaliar_Click);
+            this.pnldadoscomparacaodieta.AutoScroll = true;
+            this.pnldadoscomparacaodieta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnldadoscomparacaodieta.Controls.Add(this.tableLayoutPanel10);
+            this.pnldadoscomparacaodieta.Controls.Add(this.tableLayoutPanel11);
+            this.pnldadoscomparacaodieta.Controls.Add(this.tableLayoutPanel9);
+            this.pnldadoscomparacaodieta.Controls.Add(this.tableLayoutPanel7);
+            this.pnldadoscomparacaodieta.Controls.Add(this.tableLayoutPanel4);
+            this.pnldadoscomparacaodieta.Controls.Add(this.tableLayoutPanel2);
+            this.pnldadoscomparacaodieta.Controls.Add(this.tableLayoutPanel6);
+            this.pnldadoscomparacaodieta.Location = new System.Drawing.Point(569, 182);
+            this.pnldadoscomparacaodieta.Name = "pnldadoscomparacaodieta";
+            this.pnldadoscomparacaodieta.Size = new System.Drawing.Size(431, 133);
+            this.pnldadoscomparacaodieta.TabIndex = 28;
             // 
-            // btnformular
+            // tableLayoutPanel10
             // 
-            this.btnformular.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnformular.BackgroundImage = global::ProjetoNariz.Properties.Resources.calculator;
-            this.btnformular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnformular.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnformular.FlatAppearance.BorderSize = 0;
-            this.btnformular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnformular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnformular.Location = new System.Drawing.Point(-111, 106);
-            this.btnformular.Margin = new System.Windows.Forms.Padding(2);
-            this.btnformular.Name = "btnformular";
-            this.btnformular.Size = new System.Drawing.Size(280, 37);
-            this.btnformular.TabIndex = 2;
-            this.btnformular.Text = "                                Formular";
-            this.btnformular.UseVisualStyleBackColor = true;
-            this.btnformular.Click += new System.EventHandler(this.btnformular_Click);
+            this.tableLayoutPanel10.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanel10.ColumnCount = 3;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel10.Controls.Add(this.txtreqennmin, 2, 6);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqmmmin, 2, 5);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqfbmin, 2, 4);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqeemin, 2, 3);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqpbmin, 2, 2);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqmsmin, 2, 1);
+            this.tableLayoutPanel10.Controls.Add(this.txtrequumidademin, 2, 0);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqennatual, 1, 6);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqmmatual, 1, 5);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqfbatual, 1, 4);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqeeatual, 1, 3);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqpbatual, 1, 2);
+            this.tableLayoutPanel10.Controls.Add(this.txtreqmsatual, 1, 1);
+            this.tableLayoutPanel10.Controls.Add(this.txtrequmidadeatual, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.lblreqenn, 0, 6);
+            this.tableLayoutPanel10.Controls.Add(this.lblreqmm, 0, 5);
+            this.tableLayoutPanel10.Controls.Add(this.lblreqfb, 0, 4);
+            this.tableLayoutPanel10.Controls.Add(this.lblreqee, 0, 3);
+            this.tableLayoutPanel10.Controls.Add(this.lblreqpb, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.lblreqms, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.lblrequmidade, 0, 0);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(2, 37);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 7;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(405, 171);
+            this.tableLayoutPanel10.TabIndex = 32;
             // 
-            // btnalimentos
+            // txtreqennmin
             // 
-            this.btnalimentos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtreqennmin.BackColor = System.Drawing.Color.White;
+            this.txtreqennmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqennmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqennmin.Enabled = false;
+            this.txtreqennmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqennmin.Location = new System.Drawing.Point(323, 146);
+            this.txtreqennmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqennmin.Multiline = true;
+            this.txtreqennmin.Name = "txtreqennmin";
+            this.txtreqennmin.Size = new System.Drawing.Size(80, 23);
+            this.txtreqennmin.TabIndex = 20;
+            this.txtreqennmin.Text = "100";
+            this.txtreqennmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmmmin
+            // 
+            this.txtreqmmmin.BackColor = System.Drawing.Color.White;
+            this.txtreqmmmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmmmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmmmin.Enabled = false;
+            this.txtreqmmmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmmmin.Location = new System.Drawing.Point(323, 122);
+            this.txtreqmmmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmmmin.Multiline = true;
+            this.txtreqmmmin.Name = "txtreqmmmin";
+            this.txtreqmmmin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqmmmin.TabIndex = 17;
+            this.txtreqmmmin.Text = "100";
+            this.txtreqmmmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfbmin
+            // 
+            this.txtreqfbmin.BackColor = System.Drawing.Color.White;
+            this.txtreqfbmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfbmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfbmin.Enabled = false;
+            this.txtreqfbmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfbmin.Location = new System.Drawing.Point(323, 98);
+            this.txtreqfbmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfbmin.Multiline = true;
+            this.txtreqfbmin.Name = "txtreqfbmin";
+            this.txtreqfbmin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqfbmin.TabIndex = 14;
+            this.txtreqfbmin.Text = "100";
+            this.txtreqfbmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqeemin
+            // 
+            this.txtreqeemin.BackColor = System.Drawing.Color.White;
+            this.txtreqeemin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqeemin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqeemin.Enabled = false;
+            this.txtreqeemin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqeemin.Location = new System.Drawing.Point(323, 74);
+            this.txtreqeemin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqeemin.Multiline = true;
+            this.txtreqeemin.Name = "txtreqeemin";
+            this.txtreqeemin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqeemin.TabIndex = 11;
+            this.txtreqeemin.Text = "100";
+            this.txtreqeemin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqpbmin
+            // 
+            this.txtreqpbmin.BackColor = System.Drawing.Color.White;
+            this.txtreqpbmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqpbmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqpbmin.Enabled = false;
+            this.txtreqpbmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqpbmin.Location = new System.Drawing.Point(323, 50);
+            this.txtreqpbmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqpbmin.Multiline = true;
+            this.txtreqpbmin.Name = "txtreqpbmin";
+            this.txtreqpbmin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqpbmin.TabIndex = 8;
+            this.txtreqpbmin.Text = "100";
+            this.txtreqpbmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmsmin
+            // 
+            this.txtreqmsmin.BackColor = System.Drawing.Color.White;
+            this.txtreqmsmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmsmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmsmin.Enabled = false;
+            this.txtreqmsmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmsmin.Location = new System.Drawing.Point(323, 26);
+            this.txtreqmsmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmsmin.Multiline = true;
+            this.txtreqmsmin.Name = "txtreqmsmin";
+            this.txtreqmsmin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqmsmin.TabIndex = 5;
+            this.txtreqmsmin.Text = "100";
+            this.txtreqmsmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtrequumidademin
+            // 
+            this.txtrequumidademin.BackColor = System.Drawing.Color.White;
+            this.txtrequumidademin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtrequumidademin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtrequumidademin.Enabled = false;
+            this.txtrequumidademin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtrequumidademin.Location = new System.Drawing.Point(323, 2);
+            this.txtrequumidademin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtrequumidademin.Multiline = true;
+            this.txtrequumidademin.Name = "txtrequumidademin";
+            this.txtrequumidademin.Size = new System.Drawing.Size(80, 22);
+            this.txtrequumidademin.TabIndex = 2;
+            this.txtrequumidademin.Text = "100";
+            this.txtrequumidademin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqennatual
+            // 
+            this.txtreqennatual.BackColor = System.Drawing.Color.White;
+            this.txtreqennatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqennatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqennatual.Enabled = false;
+            this.txtreqennatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqennatual.Location = new System.Drawing.Point(242, 146);
+            this.txtreqennatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqennatual.Multiline = true;
+            this.txtreqennatual.Name = "txtreqennatual";
+            this.txtreqennatual.Size = new System.Drawing.Size(79, 23);
+            this.txtreqennatual.TabIndex = 19;
+            this.txtreqennatual.Text = "100";
+            this.txtreqennatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmmatual
+            // 
+            this.txtreqmmatual.BackColor = System.Drawing.Color.White;
+            this.txtreqmmatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmmatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmmatual.Enabled = false;
+            this.txtreqmmatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmmatual.Location = new System.Drawing.Point(242, 122);
+            this.txtreqmmatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmmatual.Multiline = true;
+            this.txtreqmmatual.Name = "txtreqmmatual";
+            this.txtreqmmatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqmmatual.TabIndex = 16;
+            this.txtreqmmatual.Text = "100";
+            this.txtreqmmatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfbatual
+            // 
+            this.txtreqfbatual.BackColor = System.Drawing.Color.White;
+            this.txtreqfbatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfbatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfbatual.Enabled = false;
+            this.txtreqfbatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfbatual.Location = new System.Drawing.Point(242, 98);
+            this.txtreqfbatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfbatual.Multiline = true;
+            this.txtreqfbatual.Name = "txtreqfbatual";
+            this.txtreqfbatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqfbatual.TabIndex = 13;
+            this.txtreqfbatual.Text = "100";
+            this.txtreqfbatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqeeatual
+            // 
+            this.txtreqeeatual.BackColor = System.Drawing.Color.White;
+            this.txtreqeeatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqeeatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqeeatual.Enabled = false;
+            this.txtreqeeatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqeeatual.Location = new System.Drawing.Point(242, 74);
+            this.txtreqeeatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqeeatual.Multiline = true;
+            this.txtreqeeatual.Name = "txtreqeeatual";
+            this.txtreqeeatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqeeatual.TabIndex = 10;
+            this.txtreqeeatual.Text = "100";
+            this.txtreqeeatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqpbatual
+            // 
+            this.txtreqpbatual.BackColor = System.Drawing.Color.White;
+            this.txtreqpbatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqpbatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqpbatual.Enabled = false;
+            this.txtreqpbatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqpbatual.Location = new System.Drawing.Point(242, 50);
+            this.txtreqpbatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqpbatual.Multiline = true;
+            this.txtreqpbatual.Name = "txtreqpbatual";
+            this.txtreqpbatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqpbatual.TabIndex = 7;
+            this.txtreqpbatual.Text = "100";
+            this.txtreqpbatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmsatual
+            // 
+            this.txtreqmsatual.BackColor = System.Drawing.Color.White;
+            this.txtreqmsatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmsatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmsatual.Enabled = false;
+            this.txtreqmsatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmsatual.Location = new System.Drawing.Point(242, 26);
+            this.txtreqmsatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmsatual.Multiline = true;
+            this.txtreqmsatual.Name = "txtreqmsatual";
+            this.txtreqmsatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqmsatual.TabIndex = 4;
+            this.txtreqmsatual.Text = "100";
+            this.txtreqmsatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtrequmidadeatual
+            // 
+            this.txtrequmidadeatual.BackColor = System.Drawing.Color.White;
+            this.txtrequmidadeatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtrequmidadeatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtrequmidadeatual.Enabled = false;
+            this.txtrequmidadeatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtrequmidadeatual.Location = new System.Drawing.Point(242, 2);
+            this.txtrequmidadeatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtrequmidadeatual.Multiline = true;
+            this.txtrequmidadeatual.Name = "txtrequmidadeatual";
+            this.txtrequmidadeatual.Size = new System.Drawing.Size(79, 22);
+            this.txtrequmidadeatual.TabIndex = 1;
+            this.txtrequmidadeatual.Text = "100";
+            this.txtrequmidadeatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblreqenn
+            // 
+            this.lblreqenn.AutoSize = true;
+            this.lblreqenn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqenn.Location = new System.Drawing.Point(5, 146);
+            this.lblreqenn.Name = "lblreqenn";
+            this.lblreqenn.Size = new System.Drawing.Size(160, 17);
+            this.lblreqenn.TabIndex = 18;
+            this.lblreqenn.Text = "Extrativo não nitrogenado";
+            this.lblreqenn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqmm
+            // 
+            this.lblreqmm.AutoSize = true;
+            this.lblreqmm.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqmm.Location = new System.Drawing.Point(5, 122);
+            this.lblreqmm.Name = "lblreqmm";
+            this.lblreqmm.Size = new System.Drawing.Size(101, 17);
+            this.lblreqmm.TabIndex = 15;
+            this.lblreqmm.Text = "Matéria Mineral";
+            this.lblreqmm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqfb
+            // 
+            this.lblreqfb.AutoSize = true;
+            this.lblreqfb.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqfb.Location = new System.Drawing.Point(5, 98);
+            this.lblreqfb.Name = "lblreqfb";
+            this.lblreqfb.Size = new System.Drawing.Size(71, 17);
+            this.lblreqfb.TabIndex = 12;
+            this.lblreqfb.Text = "Friba Bruta";
+            this.lblreqfb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqee
+            // 
+            this.lblreqee.AutoSize = true;
+            this.lblreqee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqee.Location = new System.Drawing.Point(5, 74);
+            this.lblreqee.Name = "lblreqee";
+            this.lblreqee.Size = new System.Drawing.Size(91, 17);
+            this.lblreqee.TabIndex = 9;
+            this.lblreqee.Text = "Extrato Etéreo";
+            this.lblreqee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqpb
+            // 
+            this.lblreqpb.AutoSize = true;
+            this.lblreqpb.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqpb.Location = new System.Drawing.Point(5, 50);
+            this.lblreqpb.Name = "lblreqpb";
+            this.lblreqpb.Size = new System.Drawing.Size(90, 17);
+            this.lblreqpb.TabIndex = 6;
+            this.lblreqpb.Text = "Proteína Bruta";
+            this.lblreqpb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqms
+            // 
+            this.lblreqms.AutoSize = true;
+            this.lblreqms.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqms.Location = new System.Drawing.Point(5, 26);
+            this.lblreqms.Name = "lblreqms";
+            this.lblreqms.Size = new System.Drawing.Size(84, 17);
+            this.lblreqms.TabIndex = 3;
+            this.lblreqms.Text = "Materia Seca";
+            this.lblreqms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblrequmidade
+            // 
+            this.lblrequmidade.AutoSize = true;
+            this.lblrequmidade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrequmidade.Location = new System.Drawing.Point(5, 2);
+            this.lblrequmidade.Name = "lblrequmidade";
+            this.lblrequmidade.Size = new System.Drawing.Size(61, 17);
+            this.lblrequmidade.TabIndex = 0;
+            this.lblrequmidade.Text = "Umidade";
+            this.lblrequmidade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnalimentos.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
-            this.btnalimentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnalimentos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnalimentos.FlatAppearance.BorderSize = 0;
-            this.btnalimentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnalimentos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnalimentos.Location = new System.Drawing.Point(-103, 66);
-            this.btnalimentos.Margin = new System.Windows.Forms.Padding(2);
-            this.btnalimentos.Name = "btnalimentos";
-            this.btnalimentos.Size = new System.Drawing.Size(270, 37);
-            this.btnalimentos.TabIndex = 1;
-            this.btnalimentos.Text = "                                Alimentos";
-            this.btnalimentos.UseVisualStyleBackColor = true;
-            this.btnalimentos.Click += new System.EventHandler(this.btnalimentos_Click);
+            this.tableLayoutPanel11.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanel11.ColumnCount = 3;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.Controls.Add(this.txtreqenergiaatual, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.txtreqenergiamin, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.lblreqenergia, 0, 0);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(2, 3);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 1;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(405, 25);
+            this.tableLayoutPanel11.TabIndex = 31;
+            // 
+            // txtreqenergiaatual
+            // 
+            this.txtreqenergiaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqenergiaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqenergiaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqenergiaatual.Enabled = false;
+            this.txtreqenergiaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqenergiaatual.Location = new System.Drawing.Point(242, 2);
+            this.txtreqenergiaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqenergiaatual.Multiline = true;
+            this.txtreqenergiaatual.Name = "txtreqenergiaatual";
+            this.txtreqenergiaatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqenergiaatual.TabIndex = 1;
+            this.txtreqenergiaatual.Text = "100";
+            this.txtreqenergiaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqenergiamin
+            // 
+            this.txtreqenergiamin.BackColor = System.Drawing.Color.White;
+            this.txtreqenergiamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqenergiamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqenergiamin.Enabled = false;
+            this.txtreqenergiamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqenergiamin.Location = new System.Drawing.Point(323, 2);
+            this.txtreqenergiamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqenergiamin.Multiline = true;
+            this.txtreqenergiamin.Name = "txtreqenergiamin";
+            this.txtreqenergiamin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqenergiamin.TabIndex = 2;
+            this.txtreqenergiamin.Text = "100";
+            this.txtreqenergiamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblreqenergia
+            // 
+            this.lblreqenergia.AutoSize = true;
+            this.lblreqenergia.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqenergia.Location = new System.Drawing.Point(5, 2);
+            this.lblreqenergia.Name = "lblreqenergia";
+            this.lblreqenergia.Size = new System.Drawing.Size(52, 17);
+            this.lblreqenergia.TabIndex = 0;
+            this.lblreqenergia.Text = "Energia";
+            this.lblreqenergia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanel9.ColumnCount = 3;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel9.Controls.Add(this.txtreqepadhamin, 2, 3);
+            this.tableLayoutPanel9.Controls.Add(this.txtreqacaraqmin, 2, 2);
+            this.tableLayoutPanel9.Controls.Add(this.txtreqaclinon6min, 2, 1);
+            this.tableLayoutPanel9.Controls.Add(this.txtreqepadhaatual, 1, 3);
+            this.tableLayoutPanel9.Controls.Add(this.txtreqaclinon3min, 2, 0);
+            this.tableLayoutPanel9.Controls.Add(this.txtreqacaraqatual, 1, 2);
+            this.tableLayoutPanel9.Controls.Add(this.txtreqaclinon6atual, 1, 1);
+            this.tableLayoutPanel9.Controls.Add(this.txtreqaclinon3atual, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.lblreqepadha, 0, 3);
+            this.tableLayoutPanel9.Controls.Add(this.lblreqacaraq, 0, 2);
+            this.tableLayoutPanel9.Controls.Add(this.lblreqaclinon6, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.lblreqaclinon3, 0, 0);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(2, 1262);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 4;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(405, 100);
+            this.tableLayoutPanel9.TabIndex = 34;
+            // 
+            // txtreqepadhamin
+            // 
+            this.txtreqepadhamin.BackColor = System.Drawing.Color.White;
+            this.txtreqepadhamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqepadhamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqepadhamin.Enabled = false;
+            this.txtreqepadhamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqepadhamin.Location = new System.Drawing.Point(323, 74);
+            this.txtreqepadhamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqepadhamin.Multiline = true;
+            this.txtreqepadhamin.Name = "txtreqepadhamin";
+            this.txtreqepadhamin.Size = new System.Drawing.Size(80, 24);
+            this.txtreqepadhamin.TabIndex = 11;
+            this.txtreqepadhamin.Text = "100";
+            this.txtreqepadhamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqacaraqmin
+            // 
+            this.txtreqacaraqmin.BackColor = System.Drawing.Color.White;
+            this.txtreqacaraqmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqacaraqmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqacaraqmin.Enabled = false;
+            this.txtreqacaraqmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqacaraqmin.Location = new System.Drawing.Point(323, 50);
+            this.txtreqacaraqmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqacaraqmin.Multiline = true;
+            this.txtreqacaraqmin.Name = "txtreqacaraqmin";
+            this.txtreqacaraqmin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqacaraqmin.TabIndex = 8;
+            this.txtreqacaraqmin.Text = "100";
+            this.txtreqacaraqmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqaclinon6min
+            // 
+            this.txtreqaclinon6min.BackColor = System.Drawing.Color.White;
+            this.txtreqaclinon6min.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqaclinon6min.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqaclinon6min.Enabled = false;
+            this.txtreqaclinon6min.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqaclinon6min.Location = new System.Drawing.Point(323, 26);
+            this.txtreqaclinon6min.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqaclinon6min.Multiline = true;
+            this.txtreqaclinon6min.Name = "txtreqaclinon6min";
+            this.txtreqaclinon6min.Size = new System.Drawing.Size(80, 22);
+            this.txtreqaclinon6min.TabIndex = 5;
+            this.txtreqaclinon6min.Text = "100";
+            this.txtreqaclinon6min.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqepadhaatual
+            // 
+            this.txtreqepadhaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqepadhaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqepadhaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqepadhaatual.Enabled = false;
+            this.txtreqepadhaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqepadhaatual.Location = new System.Drawing.Point(242, 74);
+            this.txtreqepadhaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqepadhaatual.Multiline = true;
+            this.txtreqepadhaatual.Name = "txtreqepadhaatual";
+            this.txtreqepadhaatual.Size = new System.Drawing.Size(79, 24);
+            this.txtreqepadhaatual.TabIndex = 10;
+            this.txtreqepadhaatual.Text = "100";
+            this.txtreqepadhaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqaclinon3min
+            // 
+            this.txtreqaclinon3min.BackColor = System.Drawing.Color.White;
+            this.txtreqaclinon3min.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqaclinon3min.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqaclinon3min.Enabled = false;
+            this.txtreqaclinon3min.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqaclinon3min.Location = new System.Drawing.Point(323, 2);
+            this.txtreqaclinon3min.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqaclinon3min.Multiline = true;
+            this.txtreqaclinon3min.Name = "txtreqaclinon3min";
+            this.txtreqaclinon3min.Size = new System.Drawing.Size(80, 22);
+            this.txtreqaclinon3min.TabIndex = 2;
+            this.txtreqaclinon3min.Text = "100";
+            this.txtreqaclinon3min.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqacaraqatual
+            // 
+            this.txtreqacaraqatual.BackColor = System.Drawing.Color.White;
+            this.txtreqacaraqatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqacaraqatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqacaraqatual.Enabled = false;
+            this.txtreqacaraqatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqacaraqatual.Location = new System.Drawing.Point(242, 50);
+            this.txtreqacaraqatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqacaraqatual.Multiline = true;
+            this.txtreqacaraqatual.Name = "txtreqacaraqatual";
+            this.txtreqacaraqatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqacaraqatual.TabIndex = 7;
+            this.txtreqacaraqatual.Text = "100";
+            this.txtreqacaraqatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqaclinon6atual
+            // 
+            this.txtreqaclinon6atual.BackColor = System.Drawing.Color.White;
+            this.txtreqaclinon6atual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqaclinon6atual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqaclinon6atual.Enabled = false;
+            this.txtreqaclinon6atual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqaclinon6atual.Location = new System.Drawing.Point(242, 26);
+            this.txtreqaclinon6atual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqaclinon6atual.Multiline = true;
+            this.txtreqaclinon6atual.Name = "txtreqaclinon6atual";
+            this.txtreqaclinon6atual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqaclinon6atual.TabIndex = 4;
+            this.txtreqaclinon6atual.Text = "100";
+            this.txtreqaclinon6atual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqaclinon3atual
+            // 
+            this.txtreqaclinon3atual.BackColor = System.Drawing.Color.White;
+            this.txtreqaclinon3atual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqaclinon3atual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqaclinon3atual.Enabled = false;
+            this.txtreqaclinon3atual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqaclinon3atual.Location = new System.Drawing.Point(242, 2);
+            this.txtreqaclinon3atual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqaclinon3atual.Multiline = true;
+            this.txtreqaclinon3atual.Name = "txtreqaclinon3atual";
+            this.txtreqaclinon3atual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqaclinon3atual.TabIndex = 1;
+            this.txtreqaclinon3atual.Text = "100";
+            this.txtreqaclinon3atual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblreqepadha
+            // 
+            this.lblreqepadha.AutoSize = true;
+            this.lblreqepadha.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqepadha.Location = new System.Drawing.Point(5, 74);
+            this.lblreqepadha.Name = "lblreqepadha";
+            this.lblreqepadha.Size = new System.Drawing.Size(72, 17);
+            this.lblreqepadha.TabIndex = 9;
+            this.lblreqepadha.Text = "EPA + DHA";
+            this.lblreqepadha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqacaraq
+            // 
+            this.lblreqacaraq.AutoSize = true;
+            this.lblreqacaraq.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqacaraq.Location = new System.Drawing.Point(5, 50);
+            this.lblreqacaraq.Name = "lblreqacaraq";
+            this.lblreqacaraq.Size = new System.Drawing.Size(107, 17);
+            this.lblreqacaraq.TabIndex = 6;
+            this.lblreqacaraq.Text = "Ac. Araquidonico";
+            this.lblreqacaraq.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqaclinon6
+            // 
+            this.lblreqaclinon6.AutoSize = true;
+            this.lblreqaclinon6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqaclinon6.Location = new System.Drawing.Point(5, 26);
+            this.lblreqaclinon6.Name = "lblreqaclinon6";
+            this.lblreqaclinon6.Size = new System.Drawing.Size(103, 17);
+            this.lblreqaclinon6.TabIndex = 3;
+            this.lblreqaclinon6.Text = "Ac. Linoleico n-6";
+            this.lblreqaclinon6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqaclinon3
+            // 
+            this.lblreqaclinon3.AutoSize = true;
+            this.lblreqaclinon3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqaclinon3.Location = new System.Drawing.Point(5, 2);
+            this.lblreqaclinon3.Name = "lblreqaclinon3";
+            this.lblreqaclinon3.Size = new System.Drawing.Size(103, 17);
+            this.lblreqaclinon3.TabIndex = 0;
+            this.lblreqaclinon3.Text = "Ac. Linoleico n-3";
+            this.lblreqaclinon3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel7.Controls.Add(this.txtreqfdnmin, 2, 2);
+            this.tableLayoutPanel7.Controls.Add(this.txtreqfdamin, 2, 1);
+            this.tableLayoutPanel7.Controls.Add(this.txtreqcnfmin, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.txtreqfdnatual, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.txtreqfdaatual, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.txtreqcnfatual, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.lblreqfdn, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.lblreqfda, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.lblreqcnf, 0, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(2, 1180);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 3;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(405, 75);
+            this.tableLayoutPanel7.TabIndex = 35;
+            // 
+            // txtreqfdnmin
+            // 
+            this.txtreqfdnmin.BackColor = System.Drawing.Color.White;
+            this.txtreqfdnmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfdnmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfdnmin.Enabled = false;
+            this.txtreqfdnmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfdnmin.Location = new System.Drawing.Point(323, 50);
+            this.txtreqfdnmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfdnmin.Multiline = true;
+            this.txtreqfdnmin.Name = "txtreqfdnmin";
+            this.txtreqfdnmin.Size = new System.Drawing.Size(80, 23);
+            this.txtreqfdnmin.TabIndex = 8;
+            this.txtreqfdnmin.Text = "100";
+            this.txtreqfdnmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfdamin
+            // 
+            this.txtreqfdamin.BackColor = System.Drawing.Color.White;
+            this.txtreqfdamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfdamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfdamin.Enabled = false;
+            this.txtreqfdamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfdamin.Location = new System.Drawing.Point(323, 26);
+            this.txtreqfdamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfdamin.Multiline = true;
+            this.txtreqfdamin.Name = "txtreqfdamin";
+            this.txtreqfdamin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqfdamin.TabIndex = 5;
+            this.txtreqfdamin.Text = "100";
+            this.txtreqfdamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqcnfmin
+            // 
+            this.txtreqcnfmin.BackColor = System.Drawing.Color.White;
+            this.txtreqcnfmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqcnfmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqcnfmin.Enabled = false;
+            this.txtreqcnfmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqcnfmin.Location = new System.Drawing.Point(323, 2);
+            this.txtreqcnfmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqcnfmin.Multiline = true;
+            this.txtreqcnfmin.Name = "txtreqcnfmin";
+            this.txtreqcnfmin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqcnfmin.TabIndex = 2;
+            this.txtreqcnfmin.Text = "100";
+            this.txtreqcnfmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfdnatual
+            // 
+            this.txtreqfdnatual.BackColor = System.Drawing.Color.White;
+            this.txtreqfdnatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfdnatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfdnatual.Enabled = false;
+            this.txtreqfdnatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfdnatual.Location = new System.Drawing.Point(242, 50);
+            this.txtreqfdnatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfdnatual.Multiline = true;
+            this.txtreqfdnatual.Name = "txtreqfdnatual";
+            this.txtreqfdnatual.Size = new System.Drawing.Size(79, 23);
+            this.txtreqfdnatual.TabIndex = 7;
+            this.txtreqfdnatual.Text = "100";
+            this.txtreqfdnatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfdaatual
+            // 
+            this.txtreqfdaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqfdaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfdaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfdaatual.Enabled = false;
+            this.txtreqfdaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfdaatual.Location = new System.Drawing.Point(242, 26);
+            this.txtreqfdaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfdaatual.Multiline = true;
+            this.txtreqfdaatual.Name = "txtreqfdaatual";
+            this.txtreqfdaatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqfdaatual.TabIndex = 4;
+            this.txtreqfdaatual.Text = "100";
+            this.txtreqfdaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqcnfatual
+            // 
+            this.txtreqcnfatual.BackColor = System.Drawing.Color.White;
+            this.txtreqcnfatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqcnfatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqcnfatual.Enabled = false;
+            this.txtreqcnfatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqcnfatual.Location = new System.Drawing.Point(242, 2);
+            this.txtreqcnfatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqcnfatual.Multiline = true;
+            this.txtreqcnfatual.Name = "txtreqcnfatual";
+            this.txtreqcnfatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqcnfatual.TabIndex = 1;
+            this.txtreqcnfatual.Text = "100";
+            this.txtreqcnfatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblreqfdn
+            // 
+            this.lblreqfdn.AutoSize = true;
+            this.lblreqfdn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqfdn.Location = new System.Drawing.Point(5, 50);
+            this.lblreqfdn.Name = "lblreqfdn";
+            this.lblreqfdn.Size = new System.Drawing.Size(33, 17);
+            this.lblreqfdn.TabIndex = 6;
+            this.lblreqfdn.Text = "FDN";
+            this.lblreqfdn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqfda
+            // 
+            this.lblreqfda.AutoSize = true;
+            this.lblreqfda.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqfda.Location = new System.Drawing.Point(5, 26);
+            this.lblreqfda.Name = "lblreqfda";
+            this.lblreqfda.Size = new System.Drawing.Size(31, 17);
+            this.lblreqfda.TabIndex = 3;
+            this.lblreqfda.Text = "FDA";
+            this.lblreqfda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqcnf
+            // 
+            this.lblreqcnf.AutoSize = true;
+            this.lblreqcnf.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqcnf.Location = new System.Drawing.Point(5, 2);
+            this.lblreqcnf.Name = "lblreqcnf";
+            this.lblreqcnf.Size = new System.Drawing.Size(32, 17);
+            this.lblreqcnf.TabIndex = 0;
+            this.lblreqcnf.Text = "CNF";
+            this.lblreqcnf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.Controls.Add(this.txtreqsmin, 2, 12);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqznmin, 2, 11);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqsemin, 2, 10);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqmnmin, 2, 9);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqfemin, 2, 8);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqimin, 2, 7);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqcumin, 2, 6);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqmgmin, 2, 5);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqclmin, 2, 4);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqnamin, 2, 3);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqkmin, 2, 2);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqpmin, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqcamin, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqsatual, 1, 12);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqznatual, 1, 11);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqseatual, 1, 10);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqmnatual, 1, 9);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqfeatual, 1, 8);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqiatual, 1, 7);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqcuatual, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqmgatual, 1, 5);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqclatual, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqnaatual, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqkatual, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqpatual, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.txtreqcaatual, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqs, 0, 12);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqzn, 0, 11);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqse, 0, 10);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqmn, 0, 9);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqfe, 0, 8);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqi, 0, 7);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqmg, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqcl, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqcu, 0, 6);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqna, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqk, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqp, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblreqca, 0, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 869);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 13;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690533F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.69284F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(405, 305);
+            this.tableLayoutPanel4.TabIndex = 39;
+            // 
+            // txtreqsmin
+            // 
+            this.txtreqsmin.BackColor = System.Drawing.Color.White;
+            this.txtreqsmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqsmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqsmin.Enabled = false;
+            this.txtreqsmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqsmin.Location = new System.Drawing.Point(323, 278);
+            this.txtreqsmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqsmin.Multiline = true;
+            this.txtreqsmin.Name = "txtreqsmin";
+            this.txtreqsmin.Size = new System.Drawing.Size(80, 25);
+            this.txtreqsmin.TabIndex = 38;
+            this.txtreqsmin.Text = "100";
+            this.txtreqsmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqznmin
+            // 
+            this.txtreqznmin.BackColor = System.Drawing.Color.White;
+            this.txtreqznmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqznmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqznmin.Enabled = false;
+            this.txtreqznmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqznmin.Location = new System.Drawing.Point(323, 255);
+            this.txtreqznmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqznmin.Multiline = true;
+            this.txtreqznmin.Name = "txtreqznmin";
+            this.txtreqznmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqznmin.TabIndex = 35;
+            this.txtreqznmin.Text = "100";
+            this.txtreqznmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqsemin
+            // 
+            this.txtreqsemin.BackColor = System.Drawing.Color.White;
+            this.txtreqsemin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqsemin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqsemin.Enabled = false;
+            this.txtreqsemin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqsemin.Location = new System.Drawing.Point(323, 232);
+            this.txtreqsemin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqsemin.Multiline = true;
+            this.txtreqsemin.Name = "txtreqsemin";
+            this.txtreqsemin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqsemin.TabIndex = 32;
+            this.txtreqsemin.Text = "100";
+            this.txtreqsemin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmnmin
+            // 
+            this.txtreqmnmin.BackColor = System.Drawing.Color.White;
+            this.txtreqmnmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmnmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmnmin.Enabled = false;
+            this.txtreqmnmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmnmin.Location = new System.Drawing.Point(323, 209);
+            this.txtreqmnmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmnmin.Multiline = true;
+            this.txtreqmnmin.Name = "txtreqmnmin";
+            this.txtreqmnmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqmnmin.TabIndex = 29;
+            this.txtreqmnmin.Text = "100";
+            this.txtreqmnmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfemin
+            // 
+            this.txtreqfemin.BackColor = System.Drawing.Color.White;
+            this.txtreqfemin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfemin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfemin.Enabled = false;
+            this.txtreqfemin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfemin.Location = new System.Drawing.Point(323, 186);
+            this.txtreqfemin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfemin.Multiline = true;
+            this.txtreqfemin.Name = "txtreqfemin";
+            this.txtreqfemin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqfemin.TabIndex = 26;
+            this.txtreqfemin.Text = "100";
+            this.txtreqfemin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqimin
+            // 
+            this.txtreqimin.BackColor = System.Drawing.Color.White;
+            this.txtreqimin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqimin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqimin.Enabled = false;
+            this.txtreqimin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqimin.Location = new System.Drawing.Point(323, 163);
+            this.txtreqimin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqimin.Multiline = true;
+            this.txtreqimin.Name = "txtreqimin";
+            this.txtreqimin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqimin.TabIndex = 23;
+            this.txtreqimin.Text = "100";
+            this.txtreqimin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqcumin
+            // 
+            this.txtreqcumin.BackColor = System.Drawing.Color.White;
+            this.txtreqcumin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqcumin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqcumin.Enabled = false;
+            this.txtreqcumin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqcumin.Location = new System.Drawing.Point(323, 140);
+            this.txtreqcumin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqcumin.Multiline = true;
+            this.txtreqcumin.Name = "txtreqcumin";
+            this.txtreqcumin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqcumin.TabIndex = 20;
+            this.txtreqcumin.Text = "100";
+            this.txtreqcumin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmgmin
+            // 
+            this.txtreqmgmin.BackColor = System.Drawing.Color.White;
+            this.txtreqmgmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmgmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmgmin.Enabled = false;
+            this.txtreqmgmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmgmin.Location = new System.Drawing.Point(323, 117);
+            this.txtreqmgmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmgmin.Multiline = true;
+            this.txtreqmgmin.Name = "txtreqmgmin";
+            this.txtreqmgmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqmgmin.TabIndex = 17;
+            this.txtreqmgmin.Text = "100";
+            this.txtreqmgmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqclmin
+            // 
+            this.txtreqclmin.BackColor = System.Drawing.Color.White;
+            this.txtreqclmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqclmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqclmin.Enabled = false;
+            this.txtreqclmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqclmin.Location = new System.Drawing.Point(323, 94);
+            this.txtreqclmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqclmin.Multiline = true;
+            this.txtreqclmin.Name = "txtreqclmin";
+            this.txtreqclmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqclmin.TabIndex = 14;
+            this.txtreqclmin.Text = "100";
+            this.txtreqclmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqnamin
+            // 
+            this.txtreqnamin.BackColor = System.Drawing.Color.White;
+            this.txtreqnamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqnamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqnamin.Enabled = false;
+            this.txtreqnamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqnamin.Location = new System.Drawing.Point(323, 71);
+            this.txtreqnamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqnamin.Multiline = true;
+            this.txtreqnamin.Name = "txtreqnamin";
+            this.txtreqnamin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqnamin.TabIndex = 11;
+            this.txtreqnamin.Text = "100";
+            this.txtreqnamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqkmin
+            // 
+            this.txtreqkmin.BackColor = System.Drawing.Color.White;
+            this.txtreqkmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqkmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqkmin.Enabled = false;
+            this.txtreqkmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqkmin.Location = new System.Drawing.Point(323, 48);
+            this.txtreqkmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqkmin.Multiline = true;
+            this.txtreqkmin.Name = "txtreqkmin";
+            this.txtreqkmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqkmin.TabIndex = 8;
+            this.txtreqkmin.Text = "100";
+            this.txtreqkmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqpmin
+            // 
+            this.txtreqpmin.BackColor = System.Drawing.Color.White;
+            this.txtreqpmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqpmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqpmin.Enabled = false;
+            this.txtreqpmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqpmin.Location = new System.Drawing.Point(323, 25);
+            this.txtreqpmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqpmin.Multiline = true;
+            this.txtreqpmin.Name = "txtreqpmin";
+            this.txtreqpmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqpmin.TabIndex = 5;
+            this.txtreqpmin.Text = "100";
+            this.txtreqpmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqcamin
+            // 
+            this.txtreqcamin.BackColor = System.Drawing.Color.White;
+            this.txtreqcamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqcamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqcamin.Enabled = false;
+            this.txtreqcamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqcamin.Location = new System.Drawing.Point(323, 2);
+            this.txtreqcamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqcamin.Multiline = true;
+            this.txtreqcamin.Name = "txtreqcamin";
+            this.txtreqcamin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqcamin.TabIndex = 2;
+            this.txtreqcamin.Text = "100";
+            this.txtreqcamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqsatual
+            // 
+            this.txtreqsatual.BackColor = System.Drawing.Color.White;
+            this.txtreqsatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqsatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqsatual.Enabled = false;
+            this.txtreqsatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqsatual.Location = new System.Drawing.Point(242, 278);
+            this.txtreqsatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqsatual.Multiline = true;
+            this.txtreqsatual.Name = "txtreqsatual";
+            this.txtreqsatual.Size = new System.Drawing.Size(79, 25);
+            this.txtreqsatual.TabIndex = 37;
+            this.txtreqsatual.Text = "100";
+            this.txtreqsatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqznatual
+            // 
+            this.txtreqznatual.BackColor = System.Drawing.Color.White;
+            this.txtreqznatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqznatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqznatual.Enabled = false;
+            this.txtreqznatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqznatual.Location = new System.Drawing.Point(242, 255);
+            this.txtreqznatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqznatual.Multiline = true;
+            this.txtreqznatual.Name = "txtreqznatual";
+            this.txtreqznatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqznatual.TabIndex = 34;
+            this.txtreqznatual.Text = "100";
+            this.txtreqznatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqseatual
+            // 
+            this.txtreqseatual.BackColor = System.Drawing.Color.White;
+            this.txtreqseatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqseatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqseatual.Enabled = false;
+            this.txtreqseatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqseatual.Location = new System.Drawing.Point(242, 232);
+            this.txtreqseatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqseatual.Multiline = true;
+            this.txtreqseatual.Name = "txtreqseatual";
+            this.txtreqseatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqseatual.TabIndex = 31;
+            this.txtreqseatual.Text = "100";
+            this.txtreqseatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmnatual
+            // 
+            this.txtreqmnatual.BackColor = System.Drawing.Color.White;
+            this.txtreqmnatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmnatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmnatual.Enabled = false;
+            this.txtreqmnatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmnatual.Location = new System.Drawing.Point(242, 209);
+            this.txtreqmnatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmnatual.Multiline = true;
+            this.txtreqmnatual.Name = "txtreqmnatual";
+            this.txtreqmnatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqmnatual.TabIndex = 28;
+            this.txtreqmnatual.Text = "100";
+            this.txtreqmnatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfeatual
+            // 
+            this.txtreqfeatual.BackColor = System.Drawing.Color.White;
+            this.txtreqfeatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfeatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfeatual.Enabled = false;
+            this.txtreqfeatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfeatual.Location = new System.Drawing.Point(242, 186);
+            this.txtreqfeatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfeatual.Multiline = true;
+            this.txtreqfeatual.Name = "txtreqfeatual";
+            this.txtreqfeatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqfeatual.TabIndex = 25;
+            this.txtreqfeatual.Text = "100";
+            this.txtreqfeatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqiatual
+            // 
+            this.txtreqiatual.BackColor = System.Drawing.Color.White;
+            this.txtreqiatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqiatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqiatual.Enabled = false;
+            this.txtreqiatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqiatual.Location = new System.Drawing.Point(242, 163);
+            this.txtreqiatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqiatual.Multiline = true;
+            this.txtreqiatual.Name = "txtreqiatual";
+            this.txtreqiatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqiatual.TabIndex = 22;
+            this.txtreqiatual.Text = "100";
+            this.txtreqiatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqcuatual
+            // 
+            this.txtreqcuatual.BackColor = System.Drawing.Color.White;
+            this.txtreqcuatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqcuatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqcuatual.Enabled = false;
+            this.txtreqcuatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqcuatual.Location = new System.Drawing.Point(242, 140);
+            this.txtreqcuatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqcuatual.Multiline = true;
+            this.txtreqcuatual.Name = "txtreqcuatual";
+            this.txtreqcuatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqcuatual.TabIndex = 19;
+            this.txtreqcuatual.Text = "100";
+            this.txtreqcuatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmgatual
+            // 
+            this.txtreqmgatual.BackColor = System.Drawing.Color.White;
+            this.txtreqmgatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmgatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmgatual.Enabled = false;
+            this.txtreqmgatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmgatual.Location = new System.Drawing.Point(242, 117);
+            this.txtreqmgatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmgatual.Multiline = true;
+            this.txtreqmgatual.Name = "txtreqmgatual";
+            this.txtreqmgatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqmgatual.TabIndex = 16;
+            this.txtreqmgatual.Text = "100";
+            this.txtreqmgatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqclatual
+            // 
+            this.txtreqclatual.BackColor = System.Drawing.Color.White;
+            this.txtreqclatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqclatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqclatual.Enabled = false;
+            this.txtreqclatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqclatual.Location = new System.Drawing.Point(242, 94);
+            this.txtreqclatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqclatual.Multiline = true;
+            this.txtreqclatual.Name = "txtreqclatual";
+            this.txtreqclatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqclatual.TabIndex = 13;
+            this.txtreqclatual.Text = "100";
+            this.txtreqclatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqnaatual
+            // 
+            this.txtreqnaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqnaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqnaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqnaatual.Enabled = false;
+            this.txtreqnaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqnaatual.Location = new System.Drawing.Point(242, 71);
+            this.txtreqnaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqnaatual.Multiline = true;
+            this.txtreqnaatual.Name = "txtreqnaatual";
+            this.txtreqnaatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqnaatual.TabIndex = 10;
+            this.txtreqnaatual.Text = "100";
+            this.txtreqnaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqkatual
+            // 
+            this.txtreqkatual.BackColor = System.Drawing.Color.White;
+            this.txtreqkatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqkatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqkatual.Enabled = false;
+            this.txtreqkatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqkatual.Location = new System.Drawing.Point(242, 48);
+            this.txtreqkatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqkatual.Multiline = true;
+            this.txtreqkatual.Name = "txtreqkatual";
+            this.txtreqkatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqkatual.TabIndex = 7;
+            this.txtreqkatual.Text = "100";
+            this.txtreqkatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqpatual
+            // 
+            this.txtreqpatual.BackColor = System.Drawing.Color.White;
+            this.txtreqpatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqpatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqpatual.Enabled = false;
+            this.txtreqpatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqpatual.Location = new System.Drawing.Point(242, 25);
+            this.txtreqpatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqpatual.Multiline = true;
+            this.txtreqpatual.Name = "txtreqpatual";
+            this.txtreqpatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqpatual.TabIndex = 4;
+            this.txtreqpatual.Text = "100";
+            this.txtreqpatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqcaatual
+            // 
+            this.txtreqcaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqcaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqcaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqcaatual.Enabled = false;
+            this.txtreqcaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqcaatual.Location = new System.Drawing.Point(242, 2);
+            this.txtreqcaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqcaatual.Multiline = true;
+            this.txtreqcaatual.Name = "txtreqcaatual";
+            this.txtreqcaatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqcaatual.TabIndex = 1;
+            this.txtreqcaatual.Text = "100";
+            this.txtreqcaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblreqs
+            // 
+            this.lblreqs.AutoSize = true;
+            this.lblreqs.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqs.Location = new System.Drawing.Point(5, 278);
+            this.lblreqs.Name = "lblreqs";
+            this.lblreqs.Size = new System.Drawing.Size(15, 17);
+            this.lblreqs.TabIndex = 36;
+            this.lblreqs.Text = "S";
+            this.lblreqs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqzn
+            // 
+            this.lblreqzn.AutoSize = true;
+            this.lblreqzn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqzn.Location = new System.Drawing.Point(5, 255);
+            this.lblreqzn.Name = "lblreqzn";
+            this.lblreqzn.Size = new System.Drawing.Size(22, 17);
+            this.lblreqzn.TabIndex = 33;
+            this.lblreqzn.Text = "Zn";
+            this.lblreqzn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqse
+            // 
+            this.lblreqse.AutoSize = true;
+            this.lblreqse.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqse.Location = new System.Drawing.Point(5, 232);
+            this.lblreqse.Name = "lblreqse";
+            this.lblreqse.Size = new System.Drawing.Size(22, 17);
+            this.lblreqse.TabIndex = 30;
+            this.lblreqse.Text = "Se";
+            this.lblreqse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqmn
+            // 
+            this.lblreqmn.AutoSize = true;
+            this.lblreqmn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqmn.Location = new System.Drawing.Point(5, 209);
+            this.lblreqmn.Name = "lblreqmn";
+            this.lblreqmn.Size = new System.Drawing.Size(27, 17);
+            this.lblreqmn.TabIndex = 27;
+            this.lblreqmn.Text = "Mn";
+            this.lblreqmn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqfe
+            // 
+            this.lblreqfe.AutoSize = true;
+            this.lblreqfe.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqfe.Location = new System.Drawing.Point(5, 186);
+            this.lblreqfe.Name = "lblreqfe";
+            this.lblreqfe.Size = new System.Drawing.Size(21, 17);
+            this.lblreqfe.TabIndex = 24;
+            this.lblreqfe.Text = "Fe";
+            this.lblreqfe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqi
+            // 
+            this.lblreqi.AutoSize = true;
+            this.lblreqi.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqi.Location = new System.Drawing.Point(5, 163);
+            this.lblreqi.Name = "lblreqi";
+            this.lblreqi.Size = new System.Drawing.Size(11, 17);
+            this.lblreqi.TabIndex = 21;
+            this.lblreqi.Text = "I";
+            this.lblreqi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqmg
+            // 
+            this.lblreqmg.AutoSize = true;
+            this.lblreqmg.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqmg.Location = new System.Drawing.Point(5, 117);
+            this.lblreqmg.Name = "lblreqmg";
+            this.lblreqmg.Size = new System.Drawing.Size(28, 17);
+            this.lblreqmg.TabIndex = 15;
+            this.lblreqmg.Text = "Mg";
+            this.lblreqmg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqcl
+            // 
+            this.lblreqcl.AutoSize = true;
+            this.lblreqcl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqcl.Location = new System.Drawing.Point(5, 94);
+            this.lblreqcl.Name = "lblreqcl";
+            this.lblreqcl.Size = new System.Drawing.Size(19, 17);
+            this.lblreqcl.TabIndex = 12;
+            this.lblreqcl.Text = "Cl";
+            this.lblreqcl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqcu
+            // 
+            this.lblreqcu.AutoSize = true;
+            this.lblreqcu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqcu.Location = new System.Drawing.Point(5, 140);
+            this.lblreqcu.Name = "lblreqcu";
+            this.lblreqcu.Size = new System.Drawing.Size(23, 17);
+            this.lblreqcu.TabIndex = 18;
+            this.lblreqcu.Text = "Cu";
+            this.lblreqcu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqna
+            // 
+            this.lblreqna.AutoSize = true;
+            this.lblreqna.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqna.Location = new System.Drawing.Point(5, 71);
+            this.lblreqna.Name = "lblreqna";
+            this.lblreqna.Size = new System.Drawing.Size(25, 17);
+            this.lblreqna.TabIndex = 9;
+            this.lblreqna.Text = "Na";
+            this.lblreqna.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqk
+            // 
+            this.lblreqk.AutoSize = true;
+            this.lblreqk.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqk.Location = new System.Drawing.Point(5, 48);
+            this.lblreqk.Name = "lblreqk";
+            this.lblreqk.Size = new System.Drawing.Size(16, 17);
+            this.lblreqk.TabIndex = 6;
+            this.lblreqk.Text = "K";
+            this.lblreqk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqp
+            // 
+            this.lblreqp.AutoSize = true;
+            this.lblreqp.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqp.Location = new System.Drawing.Point(5, 25);
+            this.lblreqp.Name = "lblreqp";
+            this.lblreqp.Size = new System.Drawing.Size(15, 17);
+            this.lblreqp.TabIndex = 3;
+            this.lblreqp.Text = "P";
+            this.lblreqp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqca
+            // 
+            this.lblreqca.AutoSize = true;
+            this.lblreqca.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqca.Location = new System.Drawing.Point(5, 2);
+            this.lblreqca.Name = "lblreqca";
+            this.lblreqca.Size = new System.Drawing.Size(23, 17);
+            this.lblreqca.TabIndex = 0;
+            this.lblreqca.Text = "Ca";
+            this.lblreqca.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitcmin, 2, 13);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitkmin, 2, 12);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqcolinamin, 2, 11);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqbiotinamin, 2, 10);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqacfolicomin, 2, 9);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqniacinamin, 2, 8);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitb12min, 2, 7);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitb6min, 2, 6);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqacpantomin, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqribomin, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqtiaminamin, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitemin, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitdmin, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitamin, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitcatual, 1, 13);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitkatual, 1, 12);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqcolinaatual, 1, 11);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqbiotinaatual, 1, 10);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqacfolicoatual, 1, 9);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqniacinaatual, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitb12atual, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitb6atual, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqacpantoatual, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqriboatual, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqtiaminaatual, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqviteatual, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitdatual, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtreqvitaatual, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqvitc, 0, 13);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqvitk, 0, 12);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqcolina, 0, 11);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqbiotina, 0, 10);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqacfolico, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqniacina, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqvitb12, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqacpanto, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqribo, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqvitb6, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqtiamina, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqvite, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqvitd, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblreqvita, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 524);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 14;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.1424F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142399F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.145604F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.145604F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(405, 340);
+            this.tableLayoutPanel2.TabIndex = 41;
+            // 
+            // txtreqvitcmin
+            // 
+            this.txtreqvitcmin.BackColor = System.Drawing.Color.White;
+            this.txtreqvitcmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitcmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitcmin.Enabled = false;
+            this.txtreqvitcmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitcmin.Location = new System.Drawing.Point(323, 314);
+            this.txtreqvitcmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitcmin.Multiline = true;
+            this.txtreqvitcmin.Name = "txtreqvitcmin";
+            this.txtreqvitcmin.Size = new System.Drawing.Size(80, 24);
+            this.txtreqvitcmin.TabIndex = 41;
+            this.txtreqvitcmin.Text = "100";
+            this.txtreqvitcmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitkmin
+            // 
+            this.txtreqvitkmin.BackColor = System.Drawing.Color.White;
+            this.txtreqvitkmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitkmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitkmin.Enabled = false;
+            this.txtreqvitkmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitkmin.Location = new System.Drawing.Point(323, 290);
+            this.txtreqvitkmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitkmin.Multiline = true;
+            this.txtreqvitkmin.Name = "txtreqvitkmin";
+            this.txtreqvitkmin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqvitkmin.TabIndex = 38;
+            this.txtreqvitkmin.Text = "100";
+            this.txtreqvitkmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqcolinamin
+            // 
+            this.txtreqcolinamin.BackColor = System.Drawing.Color.White;
+            this.txtreqcolinamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqcolinamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqcolinamin.Enabled = false;
+            this.txtreqcolinamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqcolinamin.Location = new System.Drawing.Point(323, 266);
+            this.txtreqcolinamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqcolinamin.Multiline = true;
+            this.txtreqcolinamin.Name = "txtreqcolinamin";
+            this.txtreqcolinamin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqcolinamin.TabIndex = 35;
+            this.txtreqcolinamin.Text = "100";
+            this.txtreqcolinamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqbiotinamin
+            // 
+            this.txtreqbiotinamin.BackColor = System.Drawing.Color.White;
+            this.txtreqbiotinamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqbiotinamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqbiotinamin.Enabled = false;
+            this.txtreqbiotinamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqbiotinamin.Location = new System.Drawing.Point(323, 242);
+            this.txtreqbiotinamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqbiotinamin.Multiline = true;
+            this.txtreqbiotinamin.Name = "txtreqbiotinamin";
+            this.txtreqbiotinamin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqbiotinamin.TabIndex = 32;
+            this.txtreqbiotinamin.Text = "100";
+            this.txtreqbiotinamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqacfolicomin
+            // 
+            this.txtreqacfolicomin.BackColor = System.Drawing.Color.White;
+            this.txtreqacfolicomin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqacfolicomin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqacfolicomin.Enabled = false;
+            this.txtreqacfolicomin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqacfolicomin.Location = new System.Drawing.Point(323, 218);
+            this.txtreqacfolicomin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqacfolicomin.Multiline = true;
+            this.txtreqacfolicomin.Name = "txtreqacfolicomin";
+            this.txtreqacfolicomin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqacfolicomin.TabIndex = 29;
+            this.txtreqacfolicomin.Text = "100";
+            this.txtreqacfolicomin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqniacinamin
+            // 
+            this.txtreqniacinamin.BackColor = System.Drawing.Color.White;
+            this.txtreqniacinamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqniacinamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqniacinamin.Enabled = false;
+            this.txtreqniacinamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqniacinamin.Location = new System.Drawing.Point(323, 194);
+            this.txtreqniacinamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqniacinamin.Multiline = true;
+            this.txtreqniacinamin.Name = "txtreqniacinamin";
+            this.txtreqniacinamin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqniacinamin.TabIndex = 26;
+            this.txtreqniacinamin.Text = "100";
+            this.txtreqniacinamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitb12min
+            // 
+            this.txtreqvitb12min.BackColor = System.Drawing.Color.White;
+            this.txtreqvitb12min.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitb12min.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitb12min.Enabled = false;
+            this.txtreqvitb12min.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitb12min.Location = new System.Drawing.Point(323, 170);
+            this.txtreqvitb12min.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitb12min.Multiline = true;
+            this.txtreqvitb12min.Name = "txtreqvitb12min";
+            this.txtreqvitb12min.Size = new System.Drawing.Size(80, 22);
+            this.txtreqvitb12min.TabIndex = 23;
+            this.txtreqvitb12min.Text = "100";
+            this.txtreqvitb12min.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitb6min
+            // 
+            this.txtreqvitb6min.BackColor = System.Drawing.Color.White;
+            this.txtreqvitb6min.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitb6min.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitb6min.Enabled = false;
+            this.txtreqvitb6min.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitb6min.Location = new System.Drawing.Point(323, 146);
+            this.txtreqvitb6min.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitb6min.Multiline = true;
+            this.txtreqvitb6min.Name = "txtreqvitb6min";
+            this.txtreqvitb6min.Size = new System.Drawing.Size(80, 22);
+            this.txtreqvitb6min.TabIndex = 20;
+            this.txtreqvitb6min.Text = "100";
+            this.txtreqvitb6min.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqacpantomin
+            // 
+            this.txtreqacpantomin.BackColor = System.Drawing.Color.White;
+            this.txtreqacpantomin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqacpantomin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqacpantomin.Enabled = false;
+            this.txtreqacpantomin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqacpantomin.Location = new System.Drawing.Point(323, 122);
+            this.txtreqacpantomin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqacpantomin.Multiline = true;
+            this.txtreqacpantomin.Name = "txtreqacpantomin";
+            this.txtreqacpantomin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqacpantomin.TabIndex = 17;
+            this.txtreqacpantomin.Text = "100";
+            this.txtreqacpantomin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqribomin
+            // 
+            this.txtreqribomin.BackColor = System.Drawing.Color.White;
+            this.txtreqribomin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqribomin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqribomin.Enabled = false;
+            this.txtreqribomin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqribomin.Location = new System.Drawing.Point(323, 98);
+            this.txtreqribomin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqribomin.Multiline = true;
+            this.txtreqribomin.Name = "txtreqribomin";
+            this.txtreqribomin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqribomin.TabIndex = 14;
+            this.txtreqribomin.Text = "100";
+            this.txtreqribomin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqtiaminamin
+            // 
+            this.txtreqtiaminamin.BackColor = System.Drawing.Color.White;
+            this.txtreqtiaminamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqtiaminamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqtiaminamin.Enabled = false;
+            this.txtreqtiaminamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqtiaminamin.Location = new System.Drawing.Point(323, 74);
+            this.txtreqtiaminamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqtiaminamin.Multiline = true;
+            this.txtreqtiaminamin.Name = "txtreqtiaminamin";
+            this.txtreqtiaminamin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqtiaminamin.TabIndex = 11;
+            this.txtreqtiaminamin.Text = "100";
+            this.txtreqtiaminamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitemin
+            // 
+            this.txtreqvitemin.BackColor = System.Drawing.Color.White;
+            this.txtreqvitemin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitemin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitemin.Enabled = false;
+            this.txtreqvitemin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitemin.Location = new System.Drawing.Point(323, 50);
+            this.txtreqvitemin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitemin.Multiline = true;
+            this.txtreqvitemin.Name = "txtreqvitemin";
+            this.txtreqvitemin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqvitemin.TabIndex = 8;
+            this.txtreqvitemin.Text = "100";
+            this.txtreqvitemin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitdmin
+            // 
+            this.txtreqvitdmin.BackColor = System.Drawing.Color.White;
+            this.txtreqvitdmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitdmin.Enabled = false;
+            this.txtreqvitdmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitdmin.Location = new System.Drawing.Point(323, 26);
+            this.txtreqvitdmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitdmin.Multiline = true;
+            this.txtreqvitdmin.Name = "txtreqvitdmin";
+            this.txtreqvitdmin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqvitdmin.TabIndex = 5;
+            this.txtreqvitdmin.Text = "100";
+            this.txtreqvitdmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitamin
+            // 
+            this.txtreqvitamin.BackColor = System.Drawing.Color.White;
+            this.txtreqvitamin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitamin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitamin.Enabled = false;
+            this.txtreqvitamin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitamin.Location = new System.Drawing.Point(323, 2);
+            this.txtreqvitamin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitamin.Multiline = true;
+            this.txtreqvitamin.Name = "txtreqvitamin";
+            this.txtreqvitamin.Size = new System.Drawing.Size(80, 22);
+            this.txtreqvitamin.TabIndex = 2;
+            this.txtreqvitamin.Text = "100";
+            this.txtreqvitamin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitcatual
+            // 
+            this.txtreqvitcatual.BackColor = System.Drawing.Color.White;
+            this.txtreqvitcatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitcatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitcatual.Enabled = false;
+            this.txtreqvitcatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitcatual.Location = new System.Drawing.Point(242, 314);
+            this.txtreqvitcatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitcatual.Multiline = true;
+            this.txtreqvitcatual.Name = "txtreqvitcatual";
+            this.txtreqvitcatual.Size = new System.Drawing.Size(79, 24);
+            this.txtreqvitcatual.TabIndex = 40;
+            this.txtreqvitcatual.Text = "100";
+            this.txtreqvitcatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitkatual
+            // 
+            this.txtreqvitkatual.BackColor = System.Drawing.Color.White;
+            this.txtreqvitkatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitkatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitkatual.Enabled = false;
+            this.txtreqvitkatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitkatual.Location = new System.Drawing.Point(242, 290);
+            this.txtreqvitkatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitkatual.Multiline = true;
+            this.txtreqvitkatual.Name = "txtreqvitkatual";
+            this.txtreqvitkatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqvitkatual.TabIndex = 37;
+            this.txtreqvitkatual.Text = "100";
+            this.txtreqvitkatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqcolinaatual
+            // 
+            this.txtreqcolinaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqcolinaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqcolinaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqcolinaatual.Enabled = false;
+            this.txtreqcolinaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqcolinaatual.Location = new System.Drawing.Point(242, 266);
+            this.txtreqcolinaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqcolinaatual.Multiline = true;
+            this.txtreqcolinaatual.Name = "txtreqcolinaatual";
+            this.txtreqcolinaatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqcolinaatual.TabIndex = 34;
+            this.txtreqcolinaatual.Text = "100";
+            this.txtreqcolinaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqbiotinaatual
+            // 
+            this.txtreqbiotinaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqbiotinaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqbiotinaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqbiotinaatual.Enabled = false;
+            this.txtreqbiotinaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqbiotinaatual.Location = new System.Drawing.Point(242, 242);
+            this.txtreqbiotinaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqbiotinaatual.Multiline = true;
+            this.txtreqbiotinaatual.Name = "txtreqbiotinaatual";
+            this.txtreqbiotinaatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqbiotinaatual.TabIndex = 31;
+            this.txtreqbiotinaatual.Text = "100";
+            this.txtreqbiotinaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqacfolicoatual
+            // 
+            this.txtreqacfolicoatual.BackColor = System.Drawing.Color.White;
+            this.txtreqacfolicoatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqacfolicoatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqacfolicoatual.Enabled = false;
+            this.txtreqacfolicoatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqacfolicoatual.Location = new System.Drawing.Point(242, 218);
+            this.txtreqacfolicoatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqacfolicoatual.Multiline = true;
+            this.txtreqacfolicoatual.Name = "txtreqacfolicoatual";
+            this.txtreqacfolicoatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqacfolicoatual.TabIndex = 28;
+            this.txtreqacfolicoatual.Text = "100";
+            this.txtreqacfolicoatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqniacinaatual
+            // 
+            this.txtreqniacinaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqniacinaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqniacinaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqniacinaatual.Enabled = false;
+            this.txtreqniacinaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqniacinaatual.Location = new System.Drawing.Point(242, 194);
+            this.txtreqniacinaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqniacinaatual.Multiline = true;
+            this.txtreqniacinaatual.Name = "txtreqniacinaatual";
+            this.txtreqniacinaatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqniacinaatual.TabIndex = 25;
+            this.txtreqniacinaatual.Text = "100";
+            this.txtreqniacinaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitb12atual
+            // 
+            this.txtreqvitb12atual.BackColor = System.Drawing.Color.White;
+            this.txtreqvitb12atual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitb12atual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitb12atual.Enabled = false;
+            this.txtreqvitb12atual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitb12atual.Location = new System.Drawing.Point(242, 170);
+            this.txtreqvitb12atual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitb12atual.Multiline = true;
+            this.txtreqvitb12atual.Name = "txtreqvitb12atual";
+            this.txtreqvitb12atual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqvitb12atual.TabIndex = 22;
+            this.txtreqvitb12atual.Text = "100";
+            this.txtreqvitb12atual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitb6atual
+            // 
+            this.txtreqvitb6atual.BackColor = System.Drawing.Color.White;
+            this.txtreqvitb6atual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitb6atual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitb6atual.Enabled = false;
+            this.txtreqvitb6atual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitb6atual.Location = new System.Drawing.Point(242, 146);
+            this.txtreqvitb6atual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitb6atual.Multiline = true;
+            this.txtreqvitb6atual.Name = "txtreqvitb6atual";
+            this.txtreqvitb6atual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqvitb6atual.TabIndex = 19;
+            this.txtreqvitb6atual.Text = "100";
+            this.txtreqvitb6atual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqacpantoatual
+            // 
+            this.txtreqacpantoatual.BackColor = System.Drawing.Color.White;
+            this.txtreqacpantoatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqacpantoatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqacpantoatual.Enabled = false;
+            this.txtreqacpantoatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqacpantoatual.Location = new System.Drawing.Point(242, 122);
+            this.txtreqacpantoatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqacpantoatual.Multiline = true;
+            this.txtreqacpantoatual.Name = "txtreqacpantoatual";
+            this.txtreqacpantoatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqacpantoatual.TabIndex = 16;
+            this.txtreqacpantoatual.Text = "100";
+            this.txtreqacpantoatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqriboatual
+            // 
+            this.txtreqriboatual.BackColor = System.Drawing.Color.White;
+            this.txtreqriboatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqriboatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqriboatual.Enabled = false;
+            this.txtreqriboatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqriboatual.Location = new System.Drawing.Point(242, 98);
+            this.txtreqriboatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqriboatual.Multiline = true;
+            this.txtreqriboatual.Name = "txtreqriboatual";
+            this.txtreqriboatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqriboatual.TabIndex = 13;
+            this.txtreqriboatual.Text = "100";
+            this.txtreqriboatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqtiaminaatual
+            // 
+            this.txtreqtiaminaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqtiaminaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqtiaminaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqtiaminaatual.Enabled = false;
+            this.txtreqtiaminaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqtiaminaatual.Location = new System.Drawing.Point(242, 74);
+            this.txtreqtiaminaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqtiaminaatual.Multiline = true;
+            this.txtreqtiaminaatual.Name = "txtreqtiaminaatual";
+            this.txtreqtiaminaatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqtiaminaatual.TabIndex = 10;
+            this.txtreqtiaminaatual.Text = "100";
+            this.txtreqtiaminaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqviteatual
+            // 
+            this.txtreqviteatual.BackColor = System.Drawing.Color.White;
+            this.txtreqviteatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqviteatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqviteatual.Enabled = false;
+            this.txtreqviteatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqviteatual.Location = new System.Drawing.Point(242, 50);
+            this.txtreqviteatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqviteatual.Multiline = true;
+            this.txtreqviteatual.Name = "txtreqviteatual";
+            this.txtreqviteatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqviteatual.TabIndex = 7;
+            this.txtreqviteatual.Text = "100";
+            this.txtreqviteatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitdatual
+            // 
+            this.txtreqvitdatual.BackColor = System.Drawing.Color.White;
+            this.txtreqvitdatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitdatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitdatual.Enabled = false;
+            this.txtreqvitdatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitdatual.Location = new System.Drawing.Point(242, 26);
+            this.txtreqvitdatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitdatual.Multiline = true;
+            this.txtreqvitdatual.Name = "txtreqvitdatual";
+            this.txtreqvitdatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqvitdatual.TabIndex = 4;
+            this.txtreqvitdatual.Text = "100";
+            this.txtreqvitdatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvitaatual
+            // 
+            this.txtreqvitaatual.BackColor = System.Drawing.Color.White;
+            this.txtreqvitaatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvitaatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvitaatual.Enabled = false;
+            this.txtreqvitaatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvitaatual.Location = new System.Drawing.Point(242, 2);
+            this.txtreqvitaatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvitaatual.Multiline = true;
+            this.txtreqvitaatual.Name = "txtreqvitaatual";
+            this.txtreqvitaatual.Size = new System.Drawing.Size(79, 22);
+            this.txtreqvitaatual.TabIndex = 1;
+            this.txtreqvitaatual.Text = "100";
+            this.txtreqvitaatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblreqvitc
+            // 
+            this.lblreqvitc.AutoSize = true;
+            this.lblreqvitc.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqvitc.Location = new System.Drawing.Point(5, 314);
+            this.lblreqvitc.Name = "lblreqvitc";
+            this.lblreqvitc.Size = new System.Drawing.Size(38, 17);
+            this.lblreqvitc.TabIndex = 39;
+            this.lblreqvitc.Text = "Vit. C";
+            this.lblreqvitc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqvitk
+            // 
+            this.lblreqvitk.AutoSize = true;
+            this.lblreqvitk.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqvitk.Location = new System.Drawing.Point(5, 290);
+            this.lblreqvitk.Name = "lblreqvitk";
+            this.lblreqvitk.Size = new System.Drawing.Size(38, 17);
+            this.lblreqvitk.TabIndex = 36;
+            this.lblreqvitk.Text = "Vit. K";
+            this.lblreqvitk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqcolina
+            // 
+            this.lblreqcolina.AutoSize = true;
+            this.lblreqcolina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqcolina.Location = new System.Drawing.Point(5, 266);
+            this.lblreqcolina.Name = "lblreqcolina";
+            this.lblreqcolina.Size = new System.Drawing.Size(44, 17);
+            this.lblreqcolina.TabIndex = 33;
+            this.lblreqcolina.Text = "Colina";
+            this.lblreqcolina.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqbiotina
+            // 
+            this.lblreqbiotina.AutoSize = true;
+            this.lblreqbiotina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqbiotina.Location = new System.Drawing.Point(5, 242);
+            this.lblreqbiotina.Name = "lblreqbiotina";
+            this.lblreqbiotina.Size = new System.Drawing.Size(47, 17);
+            this.lblreqbiotina.TabIndex = 30;
+            this.lblreqbiotina.Text = "Biotina";
+            this.lblreqbiotina.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqacfolico
+            // 
+            this.lblreqacfolico.AutoSize = true;
+            this.lblreqacfolico.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqacfolico.Location = new System.Drawing.Point(5, 218);
+            this.lblreqacfolico.Name = "lblreqacfolico";
+            this.lblreqacfolico.Size = new System.Drawing.Size(63, 17);
+            this.lblreqacfolico.TabIndex = 27;
+            this.lblreqacfolico.Text = "Ac. Fólico";
+            this.lblreqacfolico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqniacina
+            // 
+            this.lblreqniacina.AutoSize = true;
+            this.lblreqniacina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqniacina.Location = new System.Drawing.Point(5, 194);
+            this.lblreqniacina.Name = "lblreqniacina";
+            this.lblreqniacina.Size = new System.Drawing.Size(51, 17);
+            this.lblreqniacina.TabIndex = 24;
+            this.lblreqniacina.Text = "Niacina";
+            this.lblreqniacina.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqvitb12
+            // 
+            this.lblreqvitb12.AutoSize = true;
+            this.lblreqvitb12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqvitb12.Location = new System.Drawing.Point(5, 170);
+            this.lblreqvitb12.Name = "lblreqvitb12";
+            this.lblreqvitb12.Size = new System.Drawing.Size(48, 17);
+            this.lblreqvitb12.TabIndex = 21;
+            this.lblreqvitb12.Text = "Vit B12";
+            this.lblreqvitb12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqacpanto
+            // 
+            this.lblreqacpanto.AutoSize = true;
+            this.lblreqacpanto.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqacpanto.Location = new System.Drawing.Point(5, 122);
+            this.lblreqacpanto.Name = "lblreqacpanto";
+            this.lblreqacpanto.Size = new System.Drawing.Size(97, 17);
+            this.lblreqacpanto.TabIndex = 15;
+            this.lblreqacpanto.Text = "Ac. Pantotênico";
+            this.lblreqacpanto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqribo
+            // 
+            this.lblreqribo.AutoSize = true;
+            this.lblreqribo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqribo.Location = new System.Drawing.Point(5, 98);
+            this.lblreqribo.Name = "lblreqribo";
+            this.lblreqribo.Size = new System.Drawing.Size(72, 17);
+            this.lblreqribo.TabIndex = 12;
+            this.lblreqribo.Text = "Riboflavina";
+            this.lblreqribo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqvitb6
+            // 
+            this.lblreqvitb6.AutoSize = true;
+            this.lblreqvitb6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqvitb6.Location = new System.Drawing.Point(5, 146);
+            this.lblreqvitb6.Name = "lblreqvitb6";
+            this.lblreqvitb6.Size = new System.Drawing.Size(41, 17);
+            this.lblreqvitb6.TabIndex = 18;
+            this.lblreqvitb6.Text = "Vit B6";
+            this.lblreqvitb6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqtiamina
+            // 
+            this.lblreqtiamina.AutoSize = true;
+            this.lblreqtiamina.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqtiamina.Location = new System.Drawing.Point(5, 74);
+            this.lblreqtiamina.Name = "lblreqtiamina";
+            this.lblreqtiamina.Size = new System.Drawing.Size(53, 17);
+            this.lblreqtiamina.TabIndex = 9;
+            this.lblreqtiamina.Text = "Tiamina";
+            this.lblreqtiamina.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqvite
+            // 
+            this.lblreqvite.AutoSize = true;
+            this.lblreqvite.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqvite.Location = new System.Drawing.Point(5, 50);
+            this.lblreqvite.Name = "lblreqvite";
+            this.lblreqvite.Size = new System.Drawing.Size(34, 17);
+            this.lblreqvite.TabIndex = 6;
+            this.lblreqvite.Text = "Vit E";
+            this.lblreqvite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqvitd
+            // 
+            this.lblreqvitd.AutoSize = true;
+            this.lblreqvitd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqvitd.Location = new System.Drawing.Point(5, 26);
+            this.lblreqvitd.Name = "lblreqvitd";
+            this.lblreqvitd.Size = new System.Drawing.Size(36, 17);
+            this.lblreqvitd.TabIndex = 3;
+            this.lblreqvitd.Text = "Vit D";
+            this.lblreqvitd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqvita
+            // 
+            this.lblreqvita.AutoSize = true;
+            this.lblreqvita.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqvita.Location = new System.Drawing.Point(5, 2);
+            this.lblreqvita.Name = "lblreqvita";
+            this.lblreqvita.Size = new System.Drawing.Size(35, 17);
+            this.lblreqvita.TabIndex = 0;
+            this.lblreqvita.Text = "Vit A";
+            this.lblreqvita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.tableLayoutPanel6.ColumnCount = 3;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel6.Controls.Add(this.txtreqtaumin, 2, 12);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqvalmin, 2, 11);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqtrimin, 2, 10);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqtreomin, 2, 9);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqfentirmin, 2, 8);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqfenmin, 2, 7);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqmetcismin, 2, 6);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqmetmin, 2, 5);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqlismin, 2, 4);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqleumin, 2, 3);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqisomin, 2, 2);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqhismin, 2, 1);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqargmin, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqtauatual, 1, 12);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqvalatual, 1, 11);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqtriatual, 1, 10);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqtreoatual, 1, 9);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqfentiratual, 1, 8);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqfenatual, 1, 7);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqmetcisatual, 1, 6);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqmetatual, 1, 5);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqlisatual, 1, 4);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqleuatual, 1, 3);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqisoatual, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqhisatual, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.txtreqargatual, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqtau, 0, 12);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqval, 0, 11);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqtri, 0, 10);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqtreo, 0, 9);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqfentir, 0, 8);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqfen, 0, 7);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqmet, 0, 5);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqlis, 0, 4);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqmetcis, 0, 6);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqleu, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqiso, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqhis, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lblreqarg, 0, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 213);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 13;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.692662F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.690355F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(405, 305);
+            this.tableLayoutPanel6.TabIndex = 37;
+            // 
+            // txtreqtaumin
+            // 
+            this.txtreqtaumin.BackColor = System.Drawing.Color.White;
+            this.txtreqtaumin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqtaumin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqtaumin.Enabled = false;
+            this.txtreqtaumin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqtaumin.Location = new System.Drawing.Point(323, 278);
+            this.txtreqtaumin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqtaumin.Multiline = true;
+            this.txtreqtaumin.Name = "txtreqtaumin";
+            this.txtreqtaumin.Size = new System.Drawing.Size(80, 25);
+            this.txtreqtaumin.TabIndex = 38;
+            this.txtreqtaumin.Text = "100";
+            this.txtreqtaumin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvalmin
+            // 
+            this.txtreqvalmin.BackColor = System.Drawing.Color.White;
+            this.txtreqvalmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvalmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvalmin.Enabled = false;
+            this.txtreqvalmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvalmin.Location = new System.Drawing.Point(323, 255);
+            this.txtreqvalmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvalmin.Multiline = true;
+            this.txtreqvalmin.Name = "txtreqvalmin";
+            this.txtreqvalmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqvalmin.TabIndex = 35;
+            this.txtreqvalmin.Text = "100";
+            this.txtreqvalmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqtrimin
+            // 
+            this.txtreqtrimin.BackColor = System.Drawing.Color.White;
+            this.txtreqtrimin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqtrimin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqtrimin.Enabled = false;
+            this.txtreqtrimin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqtrimin.Location = new System.Drawing.Point(323, 232);
+            this.txtreqtrimin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqtrimin.Multiline = true;
+            this.txtreqtrimin.Name = "txtreqtrimin";
+            this.txtreqtrimin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqtrimin.TabIndex = 32;
+            this.txtreqtrimin.Text = "100";
+            this.txtreqtrimin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqtreomin
+            // 
+            this.txtreqtreomin.BackColor = System.Drawing.Color.White;
+            this.txtreqtreomin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqtreomin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqtreomin.Enabled = false;
+            this.txtreqtreomin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqtreomin.Location = new System.Drawing.Point(323, 209);
+            this.txtreqtreomin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqtreomin.Multiline = true;
+            this.txtreqtreomin.Name = "txtreqtreomin";
+            this.txtreqtreomin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqtreomin.TabIndex = 29;
+            this.txtreqtreomin.Text = "100";
+            this.txtreqtreomin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfentirmin
+            // 
+            this.txtreqfentirmin.BackColor = System.Drawing.Color.White;
+            this.txtreqfentirmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfentirmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfentirmin.Enabled = false;
+            this.txtreqfentirmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfentirmin.Location = new System.Drawing.Point(323, 186);
+            this.txtreqfentirmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfentirmin.Multiline = true;
+            this.txtreqfentirmin.Name = "txtreqfentirmin";
+            this.txtreqfentirmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqfentirmin.TabIndex = 26;
+            this.txtreqfentirmin.Text = "100";
+            this.txtreqfentirmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfenmin
+            // 
+            this.txtreqfenmin.BackColor = System.Drawing.Color.White;
+            this.txtreqfenmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfenmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfenmin.Enabled = false;
+            this.txtreqfenmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfenmin.Location = new System.Drawing.Point(323, 163);
+            this.txtreqfenmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfenmin.Multiline = true;
+            this.txtreqfenmin.Name = "txtreqfenmin";
+            this.txtreqfenmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqfenmin.TabIndex = 23;
+            this.txtreqfenmin.Text = "100";
+            this.txtreqfenmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmetcismin
+            // 
+            this.txtreqmetcismin.BackColor = System.Drawing.Color.White;
+            this.txtreqmetcismin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmetcismin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmetcismin.Enabled = false;
+            this.txtreqmetcismin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmetcismin.Location = new System.Drawing.Point(323, 140);
+            this.txtreqmetcismin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmetcismin.Multiline = true;
+            this.txtreqmetcismin.Name = "txtreqmetcismin";
+            this.txtreqmetcismin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqmetcismin.TabIndex = 20;
+            this.txtreqmetcismin.Text = "100";
+            this.txtreqmetcismin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmetmin
+            // 
+            this.txtreqmetmin.BackColor = System.Drawing.Color.White;
+            this.txtreqmetmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmetmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmetmin.Enabled = false;
+            this.txtreqmetmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmetmin.Location = new System.Drawing.Point(323, 117);
+            this.txtreqmetmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmetmin.Multiline = true;
+            this.txtreqmetmin.Name = "txtreqmetmin";
+            this.txtreqmetmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqmetmin.TabIndex = 17;
+            this.txtreqmetmin.Text = "100";
+            this.txtreqmetmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqlismin
+            // 
+            this.txtreqlismin.BackColor = System.Drawing.Color.White;
+            this.txtreqlismin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqlismin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqlismin.Enabled = false;
+            this.txtreqlismin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqlismin.Location = new System.Drawing.Point(323, 94);
+            this.txtreqlismin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqlismin.Multiline = true;
+            this.txtreqlismin.Name = "txtreqlismin";
+            this.txtreqlismin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqlismin.TabIndex = 14;
+            this.txtreqlismin.Text = "100";
+            this.txtreqlismin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqleumin
+            // 
+            this.txtreqleumin.BackColor = System.Drawing.Color.White;
+            this.txtreqleumin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqleumin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqleumin.Enabled = false;
+            this.txtreqleumin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqleumin.Location = new System.Drawing.Point(323, 71);
+            this.txtreqleumin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqleumin.Multiline = true;
+            this.txtreqleumin.Name = "txtreqleumin";
+            this.txtreqleumin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqleumin.TabIndex = 11;
+            this.txtreqleumin.Text = "100";
+            this.txtreqleumin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqisomin
+            // 
+            this.txtreqisomin.BackColor = System.Drawing.Color.White;
+            this.txtreqisomin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqisomin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqisomin.Enabled = false;
+            this.txtreqisomin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqisomin.Location = new System.Drawing.Point(323, 48);
+            this.txtreqisomin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqisomin.Multiline = true;
+            this.txtreqisomin.Name = "txtreqisomin";
+            this.txtreqisomin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqisomin.TabIndex = 8;
+            this.txtreqisomin.Text = "100";
+            this.txtreqisomin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqhismin
+            // 
+            this.txtreqhismin.BackColor = System.Drawing.Color.White;
+            this.txtreqhismin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqhismin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqhismin.Enabled = false;
+            this.txtreqhismin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqhismin.Location = new System.Drawing.Point(323, 25);
+            this.txtreqhismin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqhismin.Multiline = true;
+            this.txtreqhismin.Name = "txtreqhismin";
+            this.txtreqhismin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqhismin.TabIndex = 5;
+            this.txtreqhismin.Text = "100";
+            this.txtreqhismin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqargmin
+            // 
+            this.txtreqargmin.BackColor = System.Drawing.Color.White;
+            this.txtreqargmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqargmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqargmin.Enabled = false;
+            this.txtreqargmin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqargmin.Location = new System.Drawing.Point(323, 2);
+            this.txtreqargmin.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqargmin.Multiline = true;
+            this.txtreqargmin.Name = "txtreqargmin";
+            this.txtreqargmin.Size = new System.Drawing.Size(80, 21);
+            this.txtreqargmin.TabIndex = 2;
+            this.txtreqargmin.Text = "100";
+            this.txtreqargmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqtauatual
+            // 
+            this.txtreqtauatual.BackColor = System.Drawing.Color.White;
+            this.txtreqtauatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqtauatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqtauatual.Enabled = false;
+            this.txtreqtauatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqtauatual.Location = new System.Drawing.Point(242, 278);
+            this.txtreqtauatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqtauatual.Multiline = true;
+            this.txtreqtauatual.Name = "txtreqtauatual";
+            this.txtreqtauatual.Size = new System.Drawing.Size(79, 25);
+            this.txtreqtauatual.TabIndex = 37;
+            this.txtreqtauatual.Text = "100";
+            this.txtreqtauatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqvalatual
+            // 
+            this.txtreqvalatual.BackColor = System.Drawing.Color.White;
+            this.txtreqvalatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqvalatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqvalatual.Enabled = false;
+            this.txtreqvalatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqvalatual.Location = new System.Drawing.Point(242, 255);
+            this.txtreqvalatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqvalatual.Multiline = true;
+            this.txtreqvalatual.Name = "txtreqvalatual";
+            this.txtreqvalatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqvalatual.TabIndex = 34;
+            this.txtreqvalatual.Text = "100";
+            this.txtreqvalatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqtriatual
+            // 
+            this.txtreqtriatual.BackColor = System.Drawing.Color.White;
+            this.txtreqtriatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqtriatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqtriatual.Enabled = false;
+            this.txtreqtriatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqtriatual.Location = new System.Drawing.Point(242, 232);
+            this.txtreqtriatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqtriatual.Multiline = true;
+            this.txtreqtriatual.Name = "txtreqtriatual";
+            this.txtreqtriatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqtriatual.TabIndex = 31;
+            this.txtreqtriatual.Text = "100";
+            this.txtreqtriatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqtreoatual
+            // 
+            this.txtreqtreoatual.BackColor = System.Drawing.Color.White;
+            this.txtreqtreoatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqtreoatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqtreoatual.Enabled = false;
+            this.txtreqtreoatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqtreoatual.Location = new System.Drawing.Point(242, 209);
+            this.txtreqtreoatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqtreoatual.Multiline = true;
+            this.txtreqtreoatual.Name = "txtreqtreoatual";
+            this.txtreqtreoatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqtreoatual.TabIndex = 28;
+            this.txtreqtreoatual.Text = "100";
+            this.txtreqtreoatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfentiratual
+            // 
+            this.txtreqfentiratual.BackColor = System.Drawing.Color.White;
+            this.txtreqfentiratual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfentiratual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfentiratual.Enabled = false;
+            this.txtreqfentiratual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfentiratual.Location = new System.Drawing.Point(242, 186);
+            this.txtreqfentiratual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfentiratual.Multiline = true;
+            this.txtreqfentiratual.Name = "txtreqfentiratual";
+            this.txtreqfentiratual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqfentiratual.TabIndex = 25;
+            this.txtreqfentiratual.Text = "100";
+            this.txtreqfentiratual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqfenatual
+            // 
+            this.txtreqfenatual.BackColor = System.Drawing.Color.White;
+            this.txtreqfenatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqfenatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqfenatual.Enabled = false;
+            this.txtreqfenatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqfenatual.Location = new System.Drawing.Point(242, 163);
+            this.txtreqfenatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqfenatual.Multiline = true;
+            this.txtreqfenatual.Name = "txtreqfenatual";
+            this.txtreqfenatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqfenatual.TabIndex = 22;
+            this.txtreqfenatual.Text = "100";
+            this.txtreqfenatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmetcisatual
+            // 
+            this.txtreqmetcisatual.BackColor = System.Drawing.Color.White;
+            this.txtreqmetcisatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmetcisatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmetcisatual.Enabled = false;
+            this.txtreqmetcisatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmetcisatual.Location = new System.Drawing.Point(242, 140);
+            this.txtreqmetcisatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmetcisatual.Multiline = true;
+            this.txtreqmetcisatual.Name = "txtreqmetcisatual";
+            this.txtreqmetcisatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqmetcisatual.TabIndex = 19;
+            this.txtreqmetcisatual.Text = "100";
+            this.txtreqmetcisatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqmetatual
+            // 
+            this.txtreqmetatual.BackColor = System.Drawing.Color.White;
+            this.txtreqmetatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqmetatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqmetatual.Enabled = false;
+            this.txtreqmetatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqmetatual.Location = new System.Drawing.Point(242, 117);
+            this.txtreqmetatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqmetatual.Multiline = true;
+            this.txtreqmetatual.Name = "txtreqmetatual";
+            this.txtreqmetatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqmetatual.TabIndex = 16;
+            this.txtreqmetatual.Text = "100";
+            this.txtreqmetatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqlisatual
+            // 
+            this.txtreqlisatual.BackColor = System.Drawing.Color.White;
+            this.txtreqlisatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqlisatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqlisatual.Enabled = false;
+            this.txtreqlisatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqlisatual.Location = new System.Drawing.Point(242, 94);
+            this.txtreqlisatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqlisatual.Multiline = true;
+            this.txtreqlisatual.Name = "txtreqlisatual";
+            this.txtreqlisatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqlisatual.TabIndex = 13;
+            this.txtreqlisatual.Text = "100";
+            this.txtreqlisatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqleuatual
+            // 
+            this.txtreqleuatual.BackColor = System.Drawing.Color.White;
+            this.txtreqleuatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqleuatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqleuatual.Enabled = false;
+            this.txtreqleuatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqleuatual.Location = new System.Drawing.Point(242, 71);
+            this.txtreqleuatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqleuatual.Multiline = true;
+            this.txtreqleuatual.Name = "txtreqleuatual";
+            this.txtreqleuatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqleuatual.TabIndex = 10;
+            this.txtreqleuatual.Text = "100";
+            this.txtreqleuatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqisoatual
+            // 
+            this.txtreqisoatual.BackColor = System.Drawing.Color.White;
+            this.txtreqisoatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqisoatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqisoatual.Enabled = false;
+            this.txtreqisoatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqisoatual.Location = new System.Drawing.Point(242, 48);
+            this.txtreqisoatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqisoatual.Multiline = true;
+            this.txtreqisoatual.Name = "txtreqisoatual";
+            this.txtreqisoatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqisoatual.TabIndex = 7;
+            this.txtreqisoatual.Text = "100";
+            this.txtreqisoatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqhisatual
+            // 
+            this.txtreqhisatual.BackColor = System.Drawing.Color.White;
+            this.txtreqhisatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqhisatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqhisatual.Enabled = false;
+            this.txtreqhisatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqhisatual.Location = new System.Drawing.Point(242, 25);
+            this.txtreqhisatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqhisatual.Multiline = true;
+            this.txtreqhisatual.Name = "txtreqhisatual";
+            this.txtreqhisatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqhisatual.TabIndex = 4;
+            this.txtreqhisatual.Text = "100";
+            this.txtreqhisatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtreqargatual
+            // 
+            this.txtreqargatual.BackColor = System.Drawing.Color.White;
+            this.txtreqargatual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtreqargatual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtreqargatual.Enabled = false;
+            this.txtreqargatual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtreqargatual.Location = new System.Drawing.Point(242, 2);
+            this.txtreqargatual.Margin = new System.Windows.Forms.Padding(0);
+            this.txtreqargatual.Multiline = true;
+            this.txtreqargatual.Name = "txtreqargatual";
+            this.txtreqargatual.Size = new System.Drawing.Size(79, 21);
+            this.txtreqargatual.TabIndex = 1;
+            this.txtreqargatual.Text = "100";
+            this.txtreqargatual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblreqtau
+            // 
+            this.lblreqtau.AutoSize = true;
+            this.lblreqtau.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqtau.Location = new System.Drawing.Point(5, 278);
+            this.lblreqtau.Name = "lblreqtau";
+            this.lblreqtau.Size = new System.Drawing.Size(28, 17);
+            this.lblreqtau.TabIndex = 36;
+            this.lblreqtau.Text = "Tau";
+            this.lblreqtau.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqval
+            // 
+            this.lblreqval.AutoSize = true;
+            this.lblreqval.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqval.Location = new System.Drawing.Point(5, 255);
+            this.lblreqval.Name = "lblreqval";
+            this.lblreqval.Size = new System.Drawing.Size(25, 17);
+            this.lblreqval.TabIndex = 33;
+            this.lblreqval.Text = "Val";
+            this.lblreqval.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqtri
+            // 
+            this.lblreqtri.AutoSize = true;
+            this.lblreqtri.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqtri.Location = new System.Drawing.Point(5, 232);
+            this.lblreqtri.Name = "lblreqtri";
+            this.lblreqtri.Size = new System.Drawing.Size(22, 17);
+            this.lblreqtri.TabIndex = 30;
+            this.lblreqtri.Text = "Tri";
+            this.lblreqtri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqtreo
+            // 
+            this.lblreqtreo.AutoSize = true;
+            this.lblreqtreo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqtreo.Location = new System.Drawing.Point(5, 209);
+            this.lblreqtreo.Name = "lblreqtreo";
+            this.lblreqtreo.Size = new System.Drawing.Size(34, 17);
+            this.lblreqtreo.TabIndex = 27;
+            this.lblreqtreo.Text = "Treo";
+            this.lblreqtreo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqfentir
+            // 
+            this.lblreqfentir.AutoSize = true;
+            this.lblreqfentir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqfentir.Location = new System.Drawing.Point(5, 186);
+            this.lblreqfentir.Name = "lblreqfentir";
+            this.lblreqfentir.Size = new System.Drawing.Size(60, 17);
+            this.lblreqfentir.TabIndex = 24;
+            this.lblreqfentir.Text = "Fen + Tir";
+            this.lblreqfentir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqfen
+            // 
+            this.lblreqfen.AutoSize = true;
+            this.lblreqfen.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqfen.Location = new System.Drawing.Point(5, 163);
+            this.lblreqfen.Name = "lblreqfen";
+            this.lblreqfen.Size = new System.Drawing.Size(28, 17);
+            this.lblreqfen.TabIndex = 21;
+            this.lblreqfen.Text = "Fen";
+            this.lblreqfen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqmet
+            // 
+            this.lblreqmet.AutoSize = true;
+            this.lblreqmet.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqmet.Location = new System.Drawing.Point(5, 117);
+            this.lblreqmet.Name = "lblreqmet";
+            this.lblreqmet.Size = new System.Drawing.Size(31, 17);
+            this.lblreqmet.TabIndex = 15;
+            this.lblreqmet.Text = "Met";
+            this.lblreqmet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqlis
+            // 
+            this.lblreqlis.AutoSize = true;
+            this.lblreqlis.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqlis.Location = new System.Drawing.Point(5, 94);
+            this.lblreqlis.Name = "lblreqlis";
+            this.lblreqlis.Size = new System.Drawing.Size(23, 17);
+            this.lblreqlis.TabIndex = 12;
+            this.lblreqlis.Text = "Lis";
+            this.lblreqlis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqmetcis
+            // 
+            this.lblreqmetcis.AutoSize = true;
+            this.lblreqmetcis.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqmetcis.Location = new System.Drawing.Point(5, 140);
+            this.lblreqmetcis.Name = "lblreqmetcis";
+            this.lblreqmetcis.Size = new System.Drawing.Size(65, 17);
+            this.lblreqmetcis.TabIndex = 18;
+            this.lblreqmetcis.Text = "Met + Cis";
+            this.lblreqmetcis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqleu
+            // 
+            this.lblreqleu.AutoSize = true;
+            this.lblreqleu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqleu.Location = new System.Drawing.Point(5, 71);
+            this.lblreqleu.Name = "lblreqleu";
+            this.lblreqleu.Size = new System.Drawing.Size(28, 17);
+            this.lblreqleu.TabIndex = 9;
+            this.lblreqleu.Text = "Leu";
+            this.lblreqleu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqiso
+            // 
+            this.lblreqiso.AutoSize = true;
+            this.lblreqiso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqiso.Location = new System.Drawing.Point(5, 48);
+            this.lblreqiso.Name = "lblreqiso";
+            this.lblreqiso.Size = new System.Drawing.Size(25, 17);
+            this.lblreqiso.TabIndex = 6;
+            this.lblreqiso.Text = "Iso";
+            this.lblreqiso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqhis
+            // 
+            this.lblreqhis.AutoSize = true;
+            this.lblreqhis.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqhis.Location = new System.Drawing.Point(5, 25);
+            this.lblreqhis.Name = "lblreqhis";
+            this.lblreqhis.Size = new System.Drawing.Size(26, 17);
+            this.lblreqhis.TabIndex = 3;
+            this.lblreqhis.Text = "His";
+            this.lblreqhis.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblreqarg
+            // 
+            this.lblreqarg.AutoSize = true;
+            this.lblreqarg.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreqarg.Location = new System.Drawing.Point(5, 2);
+            this.lblreqarg.Name = "lblreqarg";
+            this.lblreqarg.Size = new System.Drawing.Size(29, 17);
+            this.lblreqarg.TabIndex = 0;
+            this.lblreqarg.Text = "Arg";
+            this.lblreqarg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pnladdalimentoformulacao
+            // 
+            this.pnladdalimentoformulacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnladdalimentoformulacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnladdalimentoformulacao.Controls.Add(this.txttotalinclusao);
+            this.pnladdalimentoformulacao.Controls.Add(this.lbltotal);
+            this.pnladdalimentoformulacao.Controls.Add(this.lblalimentodieta);
+            this.pnladdalimentoformulacao.Controls.Add(this.btnpesquisaalimentosdieta);
+            this.pnladdalimentoformulacao.Controls.Add(this.btnpesquisadietadieta);
+            this.pnladdalimentoformulacao.Controls.Add(this.dgvformuladieta);
+            this.pnladdalimentoformulacao.Controls.Add(this.txtpesquisadietadieta);
+            this.pnladdalimentoformulacao.Controls.Add(this.txtpesquisaalimentodieta);
+            this.pnladdalimentoformulacao.Controls.Add(this.dgvaddalimentosms);
+            this.pnladdalimentoformulacao.Controls.Add(this.txtalimentoselecionado);
+            this.pnladdalimentoformulacao.Controls.Add(this.txtpercentagemteste);
+            this.pnladdalimentoformulacao.Controls.Add(this.lblpercentagemdeinclusao);
+            this.pnladdalimentoformulacao.Controls.Add(this.btninserealimento);
+            this.pnladdalimentoformulacao.Controls.Add(this.btnreiniciardieta);
+            this.pnladdalimentoformulacao.Controls.Add(this.btnremovealimento);
+            this.pnladdalimentoformulacao.Location = new System.Drawing.Point(31, 363);
+            this.pnladdalimentoformulacao.Name = "pnladdalimentoformulacao";
+            this.pnladdalimentoformulacao.Size = new System.Drawing.Size(946, 260);
+            this.pnladdalimentoformulacao.TabIndex = 27;
+            this.pnladdalimentoformulacao.Visible = false;
+            // 
+            // txttotalinclusao
+            // 
+            this.txttotalinclusao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txttotalinclusao.Enabled = false;
+            this.txttotalinclusao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttotalinclusao.Location = new System.Drawing.Point(614, 220);
+            this.txttotalinclusao.Name = "txttotalinclusao";
+            this.txttotalinclusao.Size = new System.Drawing.Size(322, 25);
+            this.txttotalinclusao.TabIndex = 14;
+            this.txttotalinclusao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotal.Location = new System.Drawing.Point(566, 224);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(39, 17);
+            this.lbltotal.TabIndex = 13;
+            this.lbltotal.Text = "Total:";
+            // 
+            // lblalimentodieta
+            // 
+            this.lblalimentodieta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblalimentodieta.AutoSize = true;
+            this.lblalimentodieta.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblalimentodieta.Location = new System.Drawing.Point(365, 23);
+            this.lblalimentodieta.Name = "lblalimentodieta";
+            this.lblalimentodieta.Size = new System.Drawing.Size(137, 17);
+            this.lblalimentodieta.TabIndex = 3;
+            this.lblalimentodieta.Text = "Alimento Selecionado:";
+            // 
+            // btnpesquisaalimentosdieta
+            // 
+            this.btnpesquisaalimentosdieta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnpesquisaalimentosdieta.BackgroundImage = global::ProjetoNariz.Properties.Resources.loupe;
+            this.btnpesquisaalimentosdieta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnpesquisaalimentosdieta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnpesquisaalimentosdieta.FlatAppearance.BorderSize = 0;
+            this.btnpesquisaalimentosdieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpesquisaalimentosdieta.Location = new System.Drawing.Point(278, 14);
+            this.btnpesquisaalimentosdieta.Margin = new System.Windows.Forms.Padding(2);
+            this.btnpesquisaalimentosdieta.Name = "btnpesquisaalimentosdieta";
+            this.btnpesquisaalimentosdieta.Size = new System.Drawing.Size(20, 20);
+            this.btnpesquisaalimentosdieta.TabIndex = 2;
+            this.btnpesquisaalimentosdieta.UseVisualStyleBackColor = true;
+            this.btnpesquisaalimentosdieta.Click += new System.EventHandler(this.btnpesquisaalimentosdieta_Click);
+            // 
+            // btnpesquisadietadieta
+            // 
+            this.btnpesquisadietadieta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnpesquisadietadieta.BackgroundImage = global::ProjetoNariz.Properties.Resources.loupe;
+            this.btnpesquisadietadieta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnpesquisadietadieta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnpesquisadietadieta.FlatAppearance.BorderSize = 0;
+            this.btnpesquisadietadieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpesquisadietadieta.Location = new System.Drawing.Point(916, 14);
+            this.btnpesquisadietadieta.Margin = new System.Windows.Forms.Padding(2);
+            this.btnpesquisadietadieta.Name = "btnpesquisadietadieta";
+            this.btnpesquisadietadieta.Size = new System.Drawing.Size(20, 20);
+            this.btnpesquisadietadieta.TabIndex = 11;
+            this.btnpesquisadietadieta.UseVisualStyleBackColor = true;
+            this.btnpesquisadietadieta.Click += new System.EventHandler(this.btnpesquisadietadieta_Click);
+            // 
+            // dgvformuladieta
+            // 
+            this.dgvformuladieta.AllowUserToAddRows = false;
+            this.dgvformuladieta.AllowUserToDeleteRows = false;
+            this.dgvformuladieta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvformuladieta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            this.dgvformuladieta.BackgroundColor = System.Drawing.Color.White;
+            this.dgvformuladieta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvformuladieta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvformuladieta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvformuladieta.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvformuladieta.GridColor = System.Drawing.Color.White;
+            this.dgvformuladieta.Location = new System.Drawing.Point(566, 44);
+            this.dgvformuladieta.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvformuladieta.MultiSelect = false;
+            this.dgvformuladieta.Name = "dgvformuladieta";
+            this.dgvformuladieta.ReadOnly = true;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvformuladieta.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvformuladieta.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvformuladieta.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dgvformuladieta.RowTemplate.Height = 24;
+            this.dgvformuladieta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvformuladieta.Size = new System.Drawing.Size(370, 162);
+            this.dgvformuladieta.TabIndex = 12;
+            this.dgvformuladieta.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvformuladieta_CellDoubleClick);
+            // 
+            // txtpesquisadietadieta
+            // 
+            this.txtpesquisadietadieta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtpesquisadietadieta.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpesquisadietadieta.ForeColor = System.Drawing.Color.Silver;
+            this.txtpesquisadietadieta.Location = new System.Drawing.Point(566, 14);
+            this.txtpesquisadietadieta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpesquisadietadieta.Name = "txtpesquisadietadieta";
+            this.txtpesquisadietadieta.Size = new System.Drawing.Size(342, 21);
+            this.txtpesquisadietadieta.TabIndex = 10;
+            this.txtpesquisadietadieta.Text = "Alimento";
+            this.txtpesquisadietadieta.Enter += new System.EventHandler(this.txtpesquisadietadieta_Enter);
+            this.txtpesquisadietadieta.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtpesquisadietadieta_KeyUp);
+            this.txtpesquisadietadieta.Leave += new System.EventHandler(this.txtpesquisadietadieta_Leave);
+            // 
+            // txtpesquisaalimentodieta
+            // 
+            this.txtpesquisaalimentodieta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtpesquisaalimentodieta.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpesquisaalimentodieta.ForeColor = System.Drawing.Color.Silver;
+            this.txtpesquisaalimentodieta.Location = new System.Drawing.Point(8, 14);
+            this.txtpesquisaalimentodieta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtpesquisaalimentodieta.Name = "txtpesquisaalimentodieta";
+            this.txtpesquisaalimentodieta.Size = new System.Drawing.Size(263, 21);
+            this.txtpesquisaalimentodieta.TabIndex = 0;
+            this.txtpesquisaalimentodieta.Text = "Alimento";
+            this.txtpesquisaalimentodieta.Enter += new System.EventHandler(this.txtpesquisaalimentodieta_Enter);
+            this.txtpesquisaalimentodieta.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtpesquisaalimentodieta_KeyUp);
+            this.txtpesquisaalimentodieta.Leave += new System.EventHandler(this.txtpesquisaalimentodieta_Leave);
+            // 
+            // dgvaddalimentosms
+            // 
+            this.dgvaddalimentosms.AllowUserToAddRows = false;
+            this.dgvaddalimentosms.AllowUserToDeleteRows = false;
+            this.dgvaddalimentosms.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvaddalimentosms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            this.dgvaddalimentosms.BackgroundColor = System.Drawing.Color.White;
+            this.dgvaddalimentosms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvaddalimentosms.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvaddalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvaddalimentosms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvaddalimentosms.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvaddalimentosms.GridColor = System.Drawing.Color.White;
+            this.dgvaddalimentosms.Location = new System.Drawing.Point(8, 44);
+            this.dgvaddalimentosms.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvaddalimentosms.MultiSelect = false;
+            this.dgvaddalimentosms.Name = "dgvaddalimentosms";
+            this.dgvaddalimentosms.ReadOnly = true;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvaddalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvaddalimentosms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvaddalimentosms.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dgvaddalimentosms.RowTemplate.Height = 24;
+            this.dgvaddalimentosms.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvaddalimentosms.Size = new System.Drawing.Size(290, 212);
+            this.dgvaddalimentosms.TabIndex = 1;
+            this.dgvaddalimentosms.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvaddalimentosms_CellDoubleClick);
+            // 
+            // txtalimentoselecionado
+            // 
+            this.txtalimentoselecionado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtalimentoselecionado.Enabled = false;
+            this.txtalimentoselecionado.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtalimentoselecionado.Location = new System.Drawing.Point(332, 48);
+            this.txtalimentoselecionado.Name = "txtalimentoselecionado";
+            this.txtalimentoselecionado.Size = new System.Drawing.Size(204, 25);
+            this.txtalimentoselecionado.TabIndex = 4;
+            this.txtalimentoselecionado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtpercentagemteste
+            // 
+            this.txtpercentagemteste.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtpercentagemteste.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpercentagemteste.Location = new System.Drawing.Point(394, 106);
+            this.txtpercentagemteste.Name = "txtpercentagemteste";
+            this.txtpercentagemteste.Size = new System.Drawing.Size(80, 25);
+            this.txtpercentagemteste.TabIndex = 6;
+            this.txtpercentagemteste.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblpercentagemdeinclusao
+            // 
+            this.lblpercentagemdeinclusao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblpercentagemdeinclusao.AutoSize = true;
+            this.lblpercentagemdeinclusao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpercentagemdeinclusao.Location = new System.Drawing.Point(398, 81);
+            this.lblpercentagemdeinclusao.Name = "lblpercentagemdeinclusao";
+            this.lblpercentagemdeinclusao.Size = new System.Drawing.Size(73, 17);
+            this.lblpercentagemdeinclusao.TabIndex = 5;
+            this.lblpercentagemdeinclusao.Text = "% Inclusão:";
+            // 
+            // btninserealimento
+            // 
+            this.btninserealimento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btninserealimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btninserealimento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btninserealimento.Enabled = false;
+            this.btninserealimento.FlatAppearance.BorderSize = 0;
+            this.btninserealimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninserealimento.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btninserealimento.ForeColor = System.Drawing.Color.White;
+            this.btninserealimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btninserealimento.Location = new System.Drawing.Point(409, 139);
+            this.btninserealimento.Margin = new System.Windows.Forms.Padding(2);
+            this.btninserealimento.Name = "btninserealimento";
+            this.btninserealimento.Size = new System.Drawing.Size(50, 30);
+            this.btninserealimento.TabIndex = 7;
+            this.btninserealimento.Text = ">";
+            this.btninserealimento.UseVisualStyleBackColor = false;
+            this.btninserealimento.Visible = false;
+            this.btninserealimento.Click += new System.EventHandler(this.btninserealimento_Click);
+            // 
+            // btnreiniciardieta
+            // 
+            this.btnreiniciardieta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnreiniciardieta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btnreiniciardieta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnreiniciardieta.Enabled = false;
+            this.btnreiniciardieta.FlatAppearance.BorderSize = 0;
+            this.btnreiniciardieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreiniciardieta.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnreiniciardieta.ForeColor = System.Drawing.Color.White;
+            this.btnreiniciardieta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnreiniciardieta.Location = new System.Drawing.Point(409, 215);
+            this.btnreiniciardieta.Margin = new System.Windows.Forms.Padding(2);
+            this.btnreiniciardieta.Name = "btnreiniciardieta";
+            this.btnreiniciardieta.Size = new System.Drawing.Size(50, 30);
+            this.btnreiniciardieta.TabIndex = 9;
+            this.btnreiniciardieta.Text = "<<";
+            this.btnreiniciardieta.UseVisualStyleBackColor = false;
+            this.btnreiniciardieta.Visible = false;
+            this.btnreiniciardieta.Click += new System.EventHandler(this.btnreiniciardieta_Click);
+            // 
+            // btnremovealimento
+            // 
+            this.btnremovealimento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnremovealimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
+            this.btnremovealimento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnremovealimento.Enabled = false;
+            this.btnremovealimento.FlatAppearance.BorderSize = 0;
+            this.btnremovealimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnremovealimento.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnremovealimento.ForeColor = System.Drawing.Color.White;
+            this.btnremovealimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnremovealimento.Location = new System.Drawing.Point(409, 177);
+            this.btnremovealimento.Margin = new System.Windows.Forms.Padding(2);
+            this.btnremovealimento.Name = "btnremovealimento";
+            this.btnremovealimento.Size = new System.Drawing.Size(50, 30);
+            this.btnremovealimento.TabIndex = 8;
+            this.btnremovealimento.Text = "<";
+            this.btnremovealimento.UseVisualStyleBackColor = false;
+            this.btnremovealimento.Visible = false;
+            this.btnremovealimento.Click += new System.EventHandler(this.btnremovealimento_Click);
+            // 
+            // barraformulacao
+            // 
+            this.barraformulacao.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.barraformulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.barraformulacao.Location = new System.Drawing.Point(302, 78);
+            this.barraformulacao.Name = "barraformulacao";
+            this.barraformulacao.Size = new System.Drawing.Size(510, 2);
+            this.barraformulacao.TabIndex = 1;
+            this.barraformulacao.Text = "2";
+            this.barraformulacao.UseVisualStyleBackColor = true;
+            // 
+            // btnetapa2formulacao
+            // 
+            this.btnetapa2formulacao.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnetapa2formulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnetapa2formulacao.Location = new System.Drawing.Point(827, 65);
+            this.btnetapa2formulacao.Name = "btnetapa2formulacao";
+            this.btnetapa2formulacao.Size = new System.Drawing.Size(25, 25);
+            this.btnetapa2formulacao.TabIndex = 2;
+            this.btnetapa2formulacao.Text = "2";
+            this.btnetapa2formulacao.UseVisualStyleBackColor = true;
+            // 
+            // btnetapa1formulacao
+            // 
+            this.btnetapa1formulacao.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnetapa1formulacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btnetapa1formulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnetapa1formulacao.Location = new System.Drawing.Point(267, 65);
+            this.btnetapa1formulacao.Name = "btnetapa1formulacao";
+            this.btnetapa1formulacao.Size = new System.Drawing.Size(25, 25);
+            this.btnetapa1formulacao.TabIndex = 0;
+            this.btnetapa1formulacao.Text = "1";
+            this.btnetapa1formulacao.UseVisualStyleBackColor = false;
+            // 
+            // btnformulardieta
+            // 
+            this.btnformulardieta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnformulardieta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btnformulardieta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnformulardieta.FlatAppearance.BorderSize = 0;
+            this.btnformulardieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnformulardieta.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnformulardieta.ForeColor = System.Drawing.Color.White;
+            this.btnformulardieta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnformulardieta.Location = new System.Drawing.Point(31, 320);
+            this.btnformulardieta.Margin = new System.Windows.Forms.Padding(2);
+            this.btnformulardieta.Name = "btnformulardieta";
+            this.btnformulardieta.Size = new System.Drawing.Size(946, 35);
+            this.btnformulardieta.TabIndex = 21;
+            this.btnformulardieta.Text = "Formular Nova Dieta";
+            this.btnformulardieta.UseVisualStyleBackColor = false;
+            this.btnformulardieta.Click += new System.EventHandler(this.btnformulardieta_Click);
+            // 
+            // txtespecie
+            // 
+            this.txtespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtespecie.Location = new System.Drawing.Point(184, 217);
+            this.txtespecie.Name = "txtespecie";
+            this.txtespecie.Size = new System.Drawing.Size(379, 25);
+            this.txtespecie.TabIndex = 10;
+            // 
+            // lblespecie
+            // 
+            this.lblespecie.AutoSize = true;
+            this.lblespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblespecie.Location = new System.Drawing.Point(123, 221);
+            this.lblespecie.Name = "lblespecie";
+            this.lblespecie.Size = new System.Drawing.Size(55, 17);
+            this.lblespecie.TabIndex = 9;
+            this.lblespecie.Text = "Espécie:";
+            // 
+            // btnp2formulacao
+            // 
+            this.btnp2formulacao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnp2formulacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
+            this.btnp2formulacao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnp2formulacao.FlatAppearance.BorderSize = 0;
+            this.btnp2formulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnp2formulacao.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnp2formulacao.ForeColor = System.Drawing.Color.White;
+            this.btnp2formulacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnp2formulacao.Location = new System.Drawing.Point(1001, 555);
+            this.btnp2formulacao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnp2formulacao.Name = "btnp2formulacao";
+            this.btnp2formulacao.Size = new System.Drawing.Size(90, 35);
+            this.btnp2formulacao.TabIndex = 22;
+            this.btnp2formulacao.Text = "Próximo";
+            this.btnp2formulacao.UseVisualStyleBackColor = false;
+            this.btnp2formulacao.Click += new System.EventHandler(this.btnp2formulacao_Click);
+            // 
+            // pnlsuperiorformulacao
+            // 
+            this.pnlsuperiorformulacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlsuperiorformulacao.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlsuperiorformulacao.Controls.Add(this.lblcabecalhoformular);
+            this.pnlsuperiorformulacao.Controls.Add(this.pbxcabecalhoformular);
+            this.pnlsuperiorformulacao.Location = new System.Drawing.Point(1, 1);
+            this.pnlsuperiorformulacao.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlsuperiorformulacao.Name = "pnlsuperiorformulacao";
+            this.pnlsuperiorformulacao.Size = new System.Drawing.Size(1119, 50);
+            this.pnlsuperiorformulacao.TabIndex = 15;
+            // 
+            // lblcabecalhoformular
+            // 
+            this.lblcabecalhoformular.AutoSize = true;
+            this.lblcabecalhoformular.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblcabecalhoformular.Location = new System.Drawing.Point(72, 14);
+            this.lblcabecalhoformular.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblcabecalhoformular.Name = "lblcabecalhoformular";
+            this.lblcabecalhoformular.Size = new System.Drawing.Size(204, 21);
+            this.lblcabecalhoformular.TabIndex = 0;
+            this.lblcabecalhoformular.Text = "Formulação e Fornecimento";
+            // 
+            // pbxcabecalhoformular
+            // 
+            this.pbxcabecalhoformular.BackgroundImage = global::ProjetoNariz.Properties.Resources.calculator;
+            this.pbxcabecalhoformular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxcabecalhoformular.Location = new System.Drawing.Point(11, 5);
+            this.pbxcabecalhoformular.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxcabecalhoformular.Name = "pbxcabecalhoformular";
+            this.pbxcabecalhoformular.Size = new System.Drawing.Size(45, 41);
+            this.pbxcabecalhoformular.TabIndex = 0;
+            this.pbxcabecalhoformular.TabStop = false;
+            // 
+            // cbxsexo
+            // 
+            this.cbxsexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxsexo.FormattingEnabled = true;
+            this.cbxsexo.Items.AddRange(new object[] {
+            "Macho",
+            "Fêmea",
+            "Indefinido"});
+            this.cbxsexo.Location = new System.Drawing.Point(443, 285);
+            this.cbxsexo.Name = "cbxsexo";
+            this.cbxsexo.Size = new System.Drawing.Size(120, 25);
+            this.cbxsexo.TabIndex = 18;
+            // 
+            // lblsexo
+            // 
+            this.lblsexo.AutoSize = true;
+            this.lblsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsexo.Location = new System.Drawing.Point(397, 290);
+            this.lblsexo.Name = "lblsexo";
+            this.lblsexo.Size = new System.Drawing.Size(39, 17);
+            this.lblsexo.TabIndex = 17;
+            this.lblsexo.Text = "Sexo:";
+            // 
+            // txtnumidade
+            // 
+            this.txtnumidade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnumidade.Location = new System.Drawing.Point(443, 251);
+            this.txtnumidade.Name = "txtnumidade";
+            this.txtnumidade.Size = new System.Drawing.Size(120, 25);
+            this.txtnumidade.TabIndex = 16;
+            // 
+            // lblidade
+            // 
+            this.lblidade.AutoSize = true;
+            this.lblidade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblidade.Location = new System.Drawing.Point(392, 255);
+            this.lblidade.Name = "lblidade";
+            this.lblidade.Size = new System.Drawing.Size(44, 17);
+            this.lblidade.TabIndex = 15;
+            this.lblidade.Text = "Idade:";
+            // 
+            // txtnumescore
+            // 
+            this.txtnumescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnumescore.Location = new System.Drawing.Point(184, 285);
+            this.txtnumescore.Name = "txtnumescore";
+            this.txtnumescore.Size = new System.Drawing.Size(120, 25);
+            this.txtnumescore.TabIndex = 14;
+            // 
+            // lblescore
+            // 
+            this.lblescore.AutoSize = true;
+            this.lblescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblescore.Location = new System.Drawing.Point(72, 289);
+            this.lblescore.Name = "lblescore";
+            this.lblescore.Size = new System.Drawing.Size(106, 17);
+            this.lblescore.TabIndex = 13;
+            this.lblescore.Text = "Escore Corporal:";
+            // 
+            // txtnumpeso
+            // 
+            this.txtnumpeso.DecimalPlaces = 3;
+            this.txtnumpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnumpeso.Location = new System.Drawing.Point(184, 251);
+            this.txtnumpeso.Name = "txtnumpeso";
+            this.txtnumpeso.Size = new System.Drawing.Size(120, 25);
+            this.txtnumpeso.TabIndex = 12;
+            // 
+            // lblpeso
+            // 
+            this.lblpeso.AutoSize = true;
+            this.lblpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpeso.Location = new System.Drawing.Point(113, 255);
+            this.lblpeso.Name = "lblpeso";
+            this.lblpeso.Size = new System.Drawing.Size(65, 17);
+            this.lblpeso.TabIndex = 11;
+            this.lblpeso.Text = "Peso (kg):";
+            // 
+            // cbxnemformulacao
+            // 
+            this.cbxnemformulacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxnemformulacao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxnemformulacao.FormattingEnabled = true;
+            this.cbxnemformulacao.Location = new System.Drawing.Point(184, 182);
+            this.cbxnemformulacao.Name = "cbxnemformulacao";
+            this.cbxnemformulacao.Size = new System.Drawing.Size(379, 25);
+            this.cbxnemformulacao.TabIndex = 8;
+            // 
+            // lblnemformulacao
+            // 
+            this.lblnemformulacao.AutoSize = true;
+            this.lblnemformulacao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnemformulacao.Location = new System.Drawing.Point(138, 186);
+            this.lblnemformulacao.Name = "lblnemformulacao";
+            this.lblnemformulacao.Size = new System.Drawing.Size(40, 17);
+            this.lblnemformulacao.TabIndex = 7;
+            this.lblnemformulacao.Text = "NEM:";
+            // 
+            // txtnomedoanimal
+            // 
+            this.txtnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnomedoanimal.Location = new System.Drawing.Point(184, 148);
+            this.txtnomedoanimal.Name = "txtnomedoanimal";
+            this.txtnomedoanimal.Size = new System.Drawing.Size(379, 25);
+            this.txtnomedoanimal.TabIndex = 6;
+            // 
+            // lblnomedoanimal
+            // 
+            this.lblnomedoanimal.AutoSize = true;
+            this.lblnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnomedoanimal.Location = new System.Drawing.Point(68, 152);
+            this.lblnomedoanimal.Name = "lblnomedoanimal";
+            this.lblnomedoanimal.Size = new System.Drawing.Size(110, 17);
+            this.lblnomedoanimal.TabIndex = 5;
+            this.lblnomedoanimal.Text = "Nome do Animal:";
+            // 
+            // txtnometutor
+            // 
+            this.txtnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnometutor.Location = new System.Drawing.Point(184, 114);
+            this.txtnometutor.Name = "txtnometutor";
+            this.txtnometutor.Size = new System.Drawing.Size(379, 25);
+            this.txtnometutor.TabIndex = 4;
+            // 
+            // lblnometutor
+            // 
+            this.lblnometutor.AutoSize = true;
+            this.lblnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnometutor.Location = new System.Drawing.Point(13, 118);
+            this.lblnometutor.Name = "lblnometutor";
+            this.lblnometutor.Size = new System.Drawing.Size(165, 17);
+            this.lblnometutor.TabIndex = 3;
+            this.lblnometutor.Text = "Nome do Tutor/Instituição:";
+            // 
+            // lblformulacaoescondido
+            // 
+            this.lblformulacaoescondido.AutoSize = true;
+            this.lblformulacaoescondido.Location = new System.Drawing.Point(51, 19);
+            this.lblformulacaoescondido.Name = "lblformulacaoescondido";
+            this.lblformulacaoescondido.Size = new System.Drawing.Size(62, 13);
+            this.lblformulacaoescondido.TabIndex = 9;
+            this.lblformulacaoescondido.Text = "Formulação";
+            this.lblformulacaoescondido.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblpaineisdietasescondido
+            // 
+            this.lblpaineisdietasescondido.AutoSize = true;
+            this.lblpaineisdietasescondido.Location = new System.Drawing.Point(428, 52);
+            this.lblpaineisdietasescondido.Name = "lblpaineisdietasescondido";
+            this.lblpaineisdietasescondido.Size = new System.Drawing.Size(37, 13);
+            this.lblpaineisdietasescondido.TabIndex = 4;
+            this.lblpaineisdietasescondido.Text = "Dietas";
+            this.lblpaineisdietasescondido.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnlescondidoalimentos
+            // 
+            this.pnlescondidoalimentos.Controls.Add(this.lblalimentomnescondido);
+            this.pnlescondidoalimentos.Controls.Add(this.pnlescondidoalimentomn);
+            this.pnlescondidoalimentos.Controls.Add(this.lblalimentomsescondido);
+            this.pnlescondidoalimentos.Controls.Add(this.pnlalimentoescondidoms);
+            this.pnlescondidoalimentos.Controls.Add(this.lblescolhealimentoescondido);
+            this.pnlescondidoalimentos.Controls.Add(this.pnlescolhepainelescondido);
+            this.pnlescondidoalimentos.Location = new System.Drawing.Point(189, 68);
+            this.pnlescondidoalimentos.Name = "pnlescondidoalimentos";
+            this.pnlescondidoalimentos.Size = new System.Drawing.Size(157, 322);
+            this.pnlescondidoalimentos.TabIndex = 3;
+            // 
+            // lblalimentomnescondido
+            // 
+            this.lblalimentomnescondido.AutoSize = true;
+            this.lblalimentomnescondido.Location = new System.Drawing.Point(40, 186);
+            this.lblalimentomnescondido.Name = "lblalimentomnescondido";
+            this.lblalimentomnescondido.Size = new System.Drawing.Size(66, 13);
+            this.lblalimentomnescondido.TabIndex = 7;
+            this.lblalimentomnescondido.Text = "Alimento MS";
+            this.lblalimentomnescondido.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnlescondidoalimentomn
+            // 
+            this.pnlescondidoalimentomn.Controls.Add(this.pnlalimentosms);
+            this.pnlescondidoalimentomn.Location = new System.Drawing.Point(29, 207);
+            this.pnlescondidoalimentomn.Name = "pnlescondidoalimentomn";
+            this.pnlescondidoalimentomn.Size = new System.Drawing.Size(105, 57);
+            this.pnlescondidoalimentomn.TabIndex = 6;
             // 
             // pnlalimentosms
             // 
@@ -1553,7 +5440,7 @@
             this.pnlalimentosms.Controls.Add(this.btnpesquisaalimentoms);
             this.pnlalimentosms.Controls.Add(this.btnnovoalimentoms);
             this.pnlalimentosms.Controls.Add(this.btnvisalimentoms);
-            this.pnlalimentosms.Location = new System.Drawing.Point(165, 80);
+            this.pnlalimentosms.Location = new System.Drawing.Point(50, 8);
             this.pnlalimentosms.Margin = new System.Windows.Forms.Padding(2);
             this.pnlalimentosms.Name = "pnlalimentosms";
             this.pnlalimentosms.Size = new System.Drawing.Size(1120, 630);
@@ -4201,6 +8088,41 @@
             this.btnvoltavisualimentoms.UseVisualStyleBackColor = true;
             this.btnvoltavisualimentoms.Click += new System.EventHandler(this.btnvoltavisualimentoms_Click);
             // 
+            // pnlsuperioralimentosms
+            // 
+            this.pnlsuperioralimentosms.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlsuperioralimentosms.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlsuperioralimentosms.Controls.Add(this.lblalimentosms);
+            this.pnlsuperioralimentosms.Controls.Add(this.pbxalimentosms);
+            this.pnlsuperioralimentosms.Location = new System.Drawing.Point(1, 1);
+            this.pnlsuperioralimentosms.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlsuperioralimentosms.Name = "pnlsuperioralimentosms";
+            this.pnlsuperioralimentosms.Size = new System.Drawing.Size(1119, 50);
+            this.pnlsuperioralimentosms.TabIndex = 8;
+            // 
+            // lblalimentosms
+            // 
+            this.lblalimentosms.AutoSize = true;
+            this.lblalimentosms.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblalimentosms.Location = new System.Drawing.Point(72, 14);
+            this.lblalimentosms.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblalimentosms.Name = "lblalimentosms";
+            this.lblalimentosms.Size = new System.Drawing.Size(194, 21);
+            this.lblalimentosms.TabIndex = 1;
+            this.lblalimentosms.Text = "Alimentos na Matéria Seca";
+            // 
+            // pbxalimentosms
+            // 
+            this.pbxalimentosms.BackgroundImage = global::ProjetoNariz.Properties.Resources.wheat;
+            this.pbxalimentosms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxalimentosms.Location = new System.Drawing.Point(11, 5);
+            this.pbxalimentosms.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxalimentosms.Name = "pbxalimentosms";
+            this.pbxalimentosms.Size = new System.Drawing.Size(45, 41);
+            this.pbxalimentosms.TabIndex = 0;
+            this.pbxalimentosms.TabStop = false;
+            // 
             // cbxfiltroalimentoms
             // 
             this.cbxfiltroalimentoms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -4324,37 +8246,37 @@
             this.dgvalimentosms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosms.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvalimentosms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosms.DefaultCellStyle = dataGridViewCellStyle14;
             this.dgvalimentosms.GridColor = System.Drawing.Color.White;
             this.dgvalimentosms.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosms.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosms.MultiSelect = false;
             this.dgvalimentosms.Name = "dgvalimentosms";
             this.dgvalimentosms.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvalimentosms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosms.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosms.RowTemplate.Height = 24;
@@ -4429,6 +8351,44 @@
             this.btnvisalimentoms.Text = "Visualizar Alimento";
             this.btnvisalimentoms.UseVisualStyleBackColor = false;
             this.btnvisalimentoms.Click += new System.EventHandler(this.btnvisalimentoms_Click);
+            // 
+            // lblalimentomsescondido
+            // 
+            this.lblalimentomsescondido.AutoSize = true;
+            this.lblalimentomsescondido.Location = new System.Drawing.Point(40, 97);
+            this.lblalimentomsescondido.Name = "lblalimentomsescondido";
+            this.lblalimentomsescondido.Size = new System.Drawing.Size(67, 13);
+            this.lblalimentomsescondido.TabIndex = 5;
+            this.lblalimentomsescondido.Text = "Alimento MN";
+            this.lblalimentomsescondido.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnlalimentoescondidoms
+            // 
+            this.pnlalimentoescondidoms.Controls.Add(this.pnlalimentosmn);
+            this.pnlalimentoescondidoms.Location = new System.Drawing.Point(29, 118);
+            this.pnlalimentoescondidoms.Name = "pnlalimentoescondidoms";
+            this.pnlalimentoescondidoms.Size = new System.Drawing.Size(105, 57);
+            this.pnlalimentoescondidoms.TabIndex = 4;
+            // 
+            // pnlalimentosmn
+            // 
+            this.pnlalimentosmn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlalimentosmn.BackColor = System.Drawing.Color.White;
+            this.pnlalimentosmn.Controls.Add(this.pnlvisualizaalimentosmn);
+            this.pnlalimentosmn.Controls.Add(this.dgvalimentosmn);
+            this.pnlalimentosmn.Controls.Add(this.cbxfiltroalimentomn);
+            this.pnlalimentosmn.Controls.Add(this.pnlsuperioralimentosmn);
+            this.pnlalimentosmn.Controls.Add(this.txtbuscaalimentomn);
+            this.pnlalimentosmn.Controls.Add(this.btnpesquisaalimentomn);
+            this.pnlalimentosmn.Controls.Add(this.btnnovoalimentomn);
+            this.pnlalimentosmn.Controls.Add(this.btnvisalimentomn);
+            this.pnlalimentosmn.Location = new System.Drawing.Point(39, 8);
+            this.pnlalimentosmn.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlalimentosmn.Name = "pnlalimentosmn";
+            this.pnlalimentosmn.Size = new System.Drawing.Size(1120, 630);
+            this.pnlalimentosmn.TabIndex = 2;
             // 
             // pnlvisualizaalimentosmn
             // 
@@ -7072,26 +11032,6 @@
             this.btnvoltavisualizaalimentomn.UseVisualStyleBackColor = true;
             this.btnvoltavisualizaalimentomn.Click += new System.EventHandler(this.btnvoltavisualizaalimentomn_Click);
             // 
-            // pnlalimentosmn
-            // 
-            this.pnlalimentosmn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlalimentosmn.BackColor = System.Drawing.Color.White;
-            this.pnlalimentosmn.Controls.Add(this.pnlvisualizaalimentosmn);
-            this.pnlalimentosmn.Controls.Add(this.dgvalimentosmn);
-            this.pnlalimentosmn.Controls.Add(this.cbxfiltroalimentomn);
-            this.pnlalimentosmn.Controls.Add(this.pnlsuperioralimentosmn);
-            this.pnlalimentosmn.Controls.Add(this.txtbuscaalimentomn);
-            this.pnlalimentosmn.Controls.Add(this.btnpesquisaalimentomn);
-            this.pnlalimentosmn.Controls.Add(this.btnnovoalimentomn);
-            this.pnlalimentosmn.Controls.Add(this.btnvisalimentomn);
-            this.pnlalimentosmn.Location = new System.Drawing.Point(165, 80);
-            this.pnlalimentosmn.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlalimentosmn.Name = "pnlalimentosmn";
-            this.pnlalimentosmn.Size = new System.Drawing.Size(1120, 630);
-            this.pnlalimentosmn.TabIndex = 2;
-            // 
             // dgvalimentosmn
             // 
             this.dgvalimentosmn.AllowUserToAddRows = false;
@@ -7102,37 +11042,37 @@
             this.dgvalimentosmn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvalimentosmn.BackgroundColor = System.Drawing.Color.White;
             this.dgvalimentosmn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvalimentosmn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvalimentosmn.DefaultCellStyle = dataGridViewCellStyle17;
             this.dgvalimentosmn.GridColor = System.Drawing.Color.White;
             this.dgvalimentosmn.Location = new System.Drawing.Point(11, 115);
             this.dgvalimentosmn.Margin = new System.Windows.Forms.Padding(2);
             this.dgvalimentosmn.MultiSelect = false;
             this.dgvalimentosmn.Name = "dgvalimentosmn";
             this.dgvalimentosmn.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalimentosmn.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dgvalimentosmn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvalimentosmn.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dgvalimentosmn.RowTemplate.Height = 24;
@@ -7253,6 +11193,41 @@
             this.cbxfiltroalimentomn.Size = new System.Drawing.Size(110, 20);
             this.cbxfiltroalimentomn.TabIndex = 5;
             // 
+            // pnlsuperioralimentosmn
+            // 
+            this.pnlsuperioralimentosmn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlsuperioralimentosmn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlsuperioralimentosmn.Controls.Add(this.lblalimentosmn);
+            this.pnlsuperioralimentosmn.Controls.Add(this.pbxalimentosmn);
+            this.pnlsuperioralimentosmn.Location = new System.Drawing.Point(1, 1);
+            this.pnlsuperioralimentosmn.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlsuperioralimentosmn.Name = "pnlsuperioralimentosmn";
+            this.pnlsuperioralimentosmn.Size = new System.Drawing.Size(1119, 50);
+            this.pnlsuperioralimentosmn.TabIndex = 0;
+            // 
+            // lblalimentosmn
+            // 
+            this.lblalimentosmn.AutoSize = true;
+            this.lblalimentosmn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblalimentosmn.Location = new System.Drawing.Point(72, 14);
+            this.lblalimentosmn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblalimentosmn.Name = "lblalimentosmn";
+            this.lblalimentosmn.Size = new System.Drawing.Size(214, 21);
+            this.lblalimentosmn.TabIndex = 0;
+            this.lblalimentosmn.Text = "Alimentos na Matéria Natural";
+            // 
+            // pbxalimentosmn
+            // 
+            this.pbxalimentosmn.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
+            this.pbxalimentosmn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxalimentosmn.Location = new System.Drawing.Point(11, 5);
+            this.pbxalimentosmn.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxalimentosmn.Name = "pbxalimentosmn";
+            this.pbxalimentosmn.Size = new System.Drawing.Size(45, 41);
+            this.pbxalimentosmn.TabIndex = 0;
+            this.pbxalimentosmn.TabStop = false;
+            // 
             // txtbuscaalimentomn
             // 
             this.txtbuscaalimentomn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -7321,498 +11296,377 @@
             this.btnvisalimentomn.UseVisualStyleBackColor = false;
             this.btnvisalimentomn.Click += new System.EventHandler(this.btnvisalimentomn_Click);
             // 
-            // pnlformulacao
+            // lblescolhealimentoescondido
             // 
-            this.pnlformulacao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblescolhealimentoescondido.AutoSize = true;
+            this.lblescolhealimentoescondido.Location = new System.Drawing.Point(40, 10);
+            this.lblescolhealimentoescondido.Name = "lblescolhealimentoescondido";
+            this.lblescolhealimentoescondido.Size = new System.Drawing.Size(85, 13);
+            this.lblescolhealimentoescondido.TabIndex = 3;
+            this.lblescolhealimentoescondido.Text = "EscolheAlimento";
+            this.lblescolhealimentoescondido.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnlescolhepainelescondido
+            // 
+            this.pnlescolhepainelescondido.Controls.Add(this.pnlselecionaalimento);
+            this.pnlescolhepainelescondido.Location = new System.Drawing.Point(29, 31);
+            this.pnlescolhepainelescondido.Name = "pnlescolhepainelescondido";
+            this.pnlescolhepainelescondido.Size = new System.Drawing.Size(105, 57);
+            this.pnlescolhepainelescondido.TabIndex = 0;
+            // 
+            // lblpaineisalimentos
+            // 
+            this.lblpaineisalimentos.AutoSize = true;
+            this.lblpaineisalimentos.Location = new System.Drawing.Point(240, 52);
+            this.lblpaineisalimentos.Name = "lblpaineisalimentos";
+            this.lblpaineisalimentos.Size = new System.Drawing.Size(52, 13);
+            this.lblpaineisalimentos.TabIndex = 2;
+            this.lblpaineisalimentos.Text = "Alimentos";
+            this.lblpaineisalimentos.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnlescondidoinicio
+            // 
+            this.pnlescondidoinicio.Controls.Add(this.pnlinicio);
+            this.pnlescondidoinicio.Location = new System.Drawing.Point(12, 68);
+            this.pnlescondidoinicio.Name = "pnlescondidoinicio";
+            this.pnlescondidoinicio.Size = new System.Drawing.Size(157, 322);
+            this.pnlescondidoinicio.TabIndex = 1;
+            // 
+            // pnlinicio
+            // 
+            this.pnlinicio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlformulacao.BackColor = System.Drawing.Color.White;
-            this.pnlformulacao.Controls.Add(this.pnladdalimentoformulacao);
-            this.pnlformulacao.Controls.Add(this.barraformulacao);
-            this.pnlformulacao.Controls.Add(this.btnetapa2formulacao);
-            this.pnlformulacao.Controls.Add(this.btnetapa1formulacao);
-            this.pnlformulacao.Controls.Add(this.btnformulardieta);
-            this.pnlformulacao.Controls.Add(this.txtespecie);
-            this.pnlformulacao.Controls.Add(this.lblespecie);
-            this.pnlformulacao.Controls.Add(this.btnp2formulacao);
-            this.pnlformulacao.Controls.Add(this.pnlsuperiorformulacao);
-            this.pnlformulacao.Controls.Add(this.cbxsexo);
-            this.pnlformulacao.Controls.Add(this.lblsexo);
-            this.pnlformulacao.Controls.Add(this.txtnumidade);
-            this.pnlformulacao.Controls.Add(this.lblidade);
-            this.pnlformulacao.Controls.Add(this.txtnumescore);
-            this.pnlformulacao.Controls.Add(this.lblescore);
-            this.pnlformulacao.Controls.Add(this.txtnumpeso);
-            this.pnlformulacao.Controls.Add(this.lblpeso);
-            this.pnlformulacao.Controls.Add(this.cbxnemformulacao);
-            this.pnlformulacao.Controls.Add(this.lblnemformulacao);
-            this.pnlformulacao.Controls.Add(this.txtnomedoanimal);
-            this.pnlformulacao.Controls.Add(this.lblnomedoanimal);
-            this.pnlformulacao.Controls.Add(this.txtnometutor);
-            this.pnlformulacao.Controls.Add(this.lblnometutor);
-            this.pnlformulacao.Location = new System.Drawing.Point(165, 80);
-            this.pnlformulacao.Name = "pnlformulacao";
-            this.pnlformulacao.Size = new System.Drawing.Size(1119, 630);
-            this.pnlformulacao.TabIndex = 10;
+            this.pnlinicio.BackColor = System.Drawing.Color.White;
+            this.pnlinicio.Location = new System.Drawing.Point(56, 37);
+            this.pnlinicio.Name = "pnlinicio";
+            this.pnlinicio.Size = new System.Drawing.Size(1120, 630);
+            this.pnlinicio.TabIndex = 35;
             // 
-            // txtespecie
+            // lblpaineisinicio
             // 
-            this.txtespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtespecie.Location = new System.Drawing.Point(184, 217);
-            this.txtespecie.Name = "txtespecie";
-            this.txtespecie.Size = new System.Drawing.Size(379, 25);
-            this.txtespecie.TabIndex = 19;
+            this.lblpaineisinicio.AutoSize = true;
+            this.lblpaineisinicio.Location = new System.Drawing.Point(63, 52);
+            this.lblpaineisinicio.Name = "lblpaineisinicio";
+            this.lblpaineisinicio.Size = new System.Drawing.Size(32, 13);
+            this.lblpaineisinicio.TabIndex = 0;
+            this.lblpaineisinicio.Text = "Inicio";
             // 
-            // lblespecie
+            // pnllateral
             // 
-            this.lblespecie.AutoSize = true;
-            this.lblespecie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblespecie.Location = new System.Drawing.Point(123, 221);
-            this.lblespecie.Name = "lblespecie";
-            this.lblespecie.Size = new System.Drawing.Size(55, 17);
-            this.lblespecie.TabIndex = 18;
-            this.lblespecie.Text = "Espécie:";
-            // 
-            // btnp2formulacao
-            // 
-            this.btnp2formulacao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnp2formulacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.btnp2formulacao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnp2formulacao.FlatAppearance.BorderSize = 0;
-            this.btnp2formulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnp2formulacao.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnp2formulacao.ForeColor = System.Drawing.Color.White;
-            this.btnp2formulacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnp2formulacao.Location = new System.Drawing.Point(983, 566);
-            this.btnp2formulacao.Margin = new System.Windows.Forms.Padding(2);
-            this.btnp2formulacao.Name = "btnp2formulacao";
-            this.btnp2formulacao.Size = new System.Drawing.Size(90, 35);
-            this.btnp2formulacao.TabIndex = 17;
-            this.btnp2formulacao.Text = "Próximo";
-            this.btnp2formulacao.UseVisualStyleBackColor = false;
-            // 
-            // dgvformuladieta
-            // 
-            this.dgvformuladieta.AllowUserToAddRows = false;
-            this.dgvformuladieta.AllowUserToDeleteRows = false;
-            this.dgvformuladieta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnllateral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgvformuladieta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgvformuladieta.BackgroundColor = System.Drawing.Color.White;
-            this.dgvformuladieta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvformuladieta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.dgvformuladieta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvformuladieta.DefaultCellStyle = dataGridViewCellStyle14;
-            this.dgvformuladieta.GridColor = System.Drawing.Color.White;
-            this.dgvformuladieta.Location = new System.Drawing.Point(318, 35);
-            this.dgvformuladieta.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvformuladieta.MultiSelect = false;
-            this.dgvformuladieta.Name = "dgvformuladieta";
-            this.dgvformuladieta.ReadOnly = true;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvformuladieta.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            this.dgvformuladieta.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dgvformuladieta.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
-            this.dgvformuladieta.RowTemplate.Height = 24;
-            this.dgvformuladieta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvformuladieta.Size = new System.Drawing.Size(204, 216);
-            this.dgvformuladieta.TabIndex = 16;
-            this.dgvformuladieta.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvformuladieta_CellDoubleClick);
+            this.pnllateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(214)))), ((int)(((byte)(129)))));
+            this.pnllateral.Controls.Add(this.btnespecies);
+            this.pnllateral.Controls.Add(this.btnhome);
+            this.pnllateral.Controls.Add(this.btnconfig);
+            this.pnllateral.Controls.Add(this.btnsair);
+            this.pnllateral.Controls.Add(this.btndietas);
+            this.pnllateral.Controls.Add(this.btnavaliar);
+            this.pnllateral.Controls.Add(this.btnformular);
+            this.pnllateral.Controls.Add(this.btnalimentos);
+            this.pnllateral.Location = new System.Drawing.Point(-1, 57);
+            this.pnllateral.Margin = new System.Windows.Forms.Padding(2);
+            this.pnllateral.Name = "pnllateral";
+            this.pnllateral.Size = new System.Drawing.Size(160, 659);
+            this.pnllateral.TabIndex = 2;
             // 
-            // pnlsuperiorformulacao
+            // btnespecies
             // 
-            this.pnlsuperiorformulacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnespecies.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlsuperiorformulacao.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnlsuperiorformulacao.Controls.Add(this.lblcabecalhoformular);
-            this.pnlsuperiorformulacao.Controls.Add(this.pbxcabecalhoformular);
-            this.pnlsuperiorformulacao.Location = new System.Drawing.Point(1, 1);
-            this.pnlsuperiorformulacao.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlsuperiorformulacao.Name = "pnlsuperiorformulacao";
-            this.pnlsuperiorformulacao.Size = new System.Drawing.Size(1119, 50);
-            this.pnlsuperiorformulacao.TabIndex = 15;
+            this.btnespecies.BackgroundImage = global::ProjetoNariz.Properties.Resources.horse;
+            this.btnespecies.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnespecies.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnespecies.FlatAppearance.BorderSize = 0;
+            this.btnespecies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnespecies.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnespecies.Location = new System.Drawing.Point(-99, 151);
+            this.btnespecies.Margin = new System.Windows.Forms.Padding(2);
+            this.btnespecies.Name = "btnespecies";
+            this.btnespecies.Size = new System.Drawing.Size(266, 37);
+            this.btnespecies.TabIndex = 6;
+            this.btnespecies.Text = "                           Espécies";
+            this.btnespecies.UseVisualStyleBackColor = true;
+            this.btnespecies.Click += new System.EventHandler(this.btnespecies_Click);
             // 
-            // lblcabecalhoformular
+            // btnhome
             // 
-            this.lblcabecalhoformular.AutoSize = true;
-            this.lblcabecalhoformular.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblcabecalhoformular.Location = new System.Drawing.Point(72, 14);
-            this.lblcabecalhoformular.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblcabecalhoformular.Name = "lblcabecalhoformular";
-            this.lblcabecalhoformular.Size = new System.Drawing.Size(204, 21);
-            this.lblcabecalhoformular.TabIndex = 0;
-            this.lblcabecalhoformular.Text = "Formulação e Fornecimento";
+            this.btnhome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnhome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
+            this.btnhome.BackgroundImage = global::ProjetoNariz.Properties.Resources.home;
+            this.btnhome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnhome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnhome.FlatAppearance.BorderSize = 0;
+            this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhome.Location = new System.Drawing.Point(-136, 25);
+            this.btnhome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Size = new System.Drawing.Size(336, 37);
+            this.btnhome.TabIndex = 0;
+            this.btnhome.Text = "                         Inicio";
+            this.btnhome.UseVisualStyleBackColor = false;
+            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
-            // pbxcabecalhoformular
+            // btnconfig
             // 
-            this.pbxcabecalhoformular.BackgroundImage = global::ProjetoNariz.Properties.Resources.calculator;
-            this.pbxcabecalhoformular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxcabecalhoformular.Location = new System.Drawing.Point(11, 5);
-            this.pbxcabecalhoformular.Margin = new System.Windows.Forms.Padding(2);
-            this.pbxcabecalhoformular.Name = "pbxcabecalhoformular";
-            this.pbxcabecalhoformular.Size = new System.Drawing.Size(45, 41);
-            this.pbxcabecalhoformular.TabIndex = 0;
-            this.pbxcabecalhoformular.TabStop = false;
+            this.btnconfig.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnconfig.BackgroundImage = global::ProjetoNariz.Properties.Resources.engrenagem;
+            this.btnconfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnconfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnconfig.FlatAppearance.BorderSize = 0;
+            this.btnconfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnconfig.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnconfig.Location = new System.Drawing.Point(-136, 576);
+            this.btnconfig.Margin = new System.Windows.Forms.Padding(2);
+            this.btnconfig.Name = "btnconfig";
+            this.btnconfig.Size = new System.Drawing.Size(336, 37);
+            this.btnconfig.TabIndex = 5;
+            this.btnconfig.Text = "                                        Configurações";
+            this.btnconfig.UseVisualStyleBackColor = false;
+            this.btnconfig.Click += new System.EventHandler(this.btnconfig_Click);
             // 
-            // cbxsexo
+            // btnsair
             // 
-            this.cbxsexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxsexo.FormattingEnabled = true;
-            this.cbxsexo.Items.AddRange(new object[] {
-            "Macho",
-            "Fêmea",
-            "Indefinido"});
-            this.cbxsexo.Location = new System.Drawing.Point(443, 285);
-            this.cbxsexo.Name = "cbxsexo";
-            this.cbxsexo.Size = new System.Drawing.Size(120, 25);
-            this.cbxsexo.TabIndex = 14;
+            this.btnsair.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnsair.BackgroundImage = global::ProjetoNariz.Properties.Resources.exit;
+            this.btnsair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnsair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsair.FlatAppearance.BorderSize = 0;
+            this.btnsair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsair.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsair.Location = new System.Drawing.Point(-109, 617);
+            this.btnsair.Margin = new System.Windows.Forms.Padding(2);
+            this.btnsair.Name = "btnsair";
+            this.btnsair.Size = new System.Drawing.Size(280, 37);
+            this.btnsair.TabIndex = 4;
+            this.btnsair.Text = "                       Sair";
+            this.btnsair.UseVisualStyleBackColor = true;
+            this.btnsair.Click += new System.EventHandler(this.btnsair_Click);
             // 
-            // lblsexo
+            // btndietas
             // 
-            this.lblsexo.AutoSize = true;
-            this.lblsexo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsexo.Location = new System.Drawing.Point(397, 290);
-            this.lblsexo.Name = "lblsexo";
-            this.lblsexo.Size = new System.Drawing.Size(39, 17);
-            this.lblsexo.TabIndex = 13;
-            this.lblsexo.Text = "Sexo:";
+            this.btndietas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btndietas.BackgroundImage = global::ProjetoNariz.Properties.Resources.calendar;
+            this.btndietas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btndietas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndietas.FlatAppearance.BorderSize = 0;
+            this.btndietas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndietas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndietas.Location = new System.Drawing.Point(-99, 107);
+            this.btndietas.Margin = new System.Windows.Forms.Padding(2);
+            this.btndietas.Name = "btndietas";
+            this.btndietas.Size = new System.Drawing.Size(266, 37);
+            this.btndietas.TabIndex = 4;
+            this.btndietas.Text = "                         Dietas";
+            this.btndietas.UseVisualStyleBackColor = true;
+            this.btndietas.Click += new System.EventHandler(this.btndietas_Click);
             // 
-            // txtnumidade
+            // btnavaliar
             // 
-            this.txtnumidade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumidade.Location = new System.Drawing.Point(443, 251);
-            this.txtnumidade.Name = "txtnumidade";
-            this.txtnumidade.Size = new System.Drawing.Size(120, 25);
-            this.txtnumidade.TabIndex = 12;
+            this.btnavaliar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnavaliar.BackgroundImage = global::ProjetoNariz.Properties.Resources.Prancheta;
+            this.btnavaliar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnavaliar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnavaliar.FlatAppearance.BorderSize = 0;
+            this.btnavaliar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnavaliar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnavaliar.Location = new System.Drawing.Point(-101, 192);
+            this.btnavaliar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnavaliar.Name = "btnavaliar";
+            this.btnavaliar.Size = new System.Drawing.Size(270, 37);
+            this.btnavaliar.TabIndex = 3;
+            this.btnavaliar.Text = "                         Avaliar";
+            this.btnavaliar.UseVisualStyleBackColor = true;
+            this.btnavaliar.Click += new System.EventHandler(this.btnavaliar_Click);
             // 
-            // lblidade
+            // btnformular
             // 
-            this.lblidade.AutoSize = true;
-            this.lblidade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblidade.Location = new System.Drawing.Point(392, 255);
-            this.lblidade.Name = "lblidade";
-            this.lblidade.Size = new System.Drawing.Size(44, 17);
-            this.lblidade.TabIndex = 11;
-            this.lblidade.Text = "Idade:";
+            this.btnformular.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnformular.BackgroundImage = global::ProjetoNariz.Properties.Resources.calculator;
+            this.btnformular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnformular.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnformular.Enabled = false;
+            this.btnformular.FlatAppearance.BorderSize = 0;
+            this.btnformular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnformular.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnformular.Location = new System.Drawing.Point(-90, 472);
+            this.btnformular.Margin = new System.Windows.Forms.Padding(2);
+            this.btnformular.Name = "btnformular";
+            this.btnformular.Size = new System.Drawing.Size(280, 37);
+            this.btnformular.TabIndex = 2;
+            this.btnformular.Text = "                                Formular";
+            this.btnformular.UseVisualStyleBackColor = true;
+            this.btnformular.Visible = false;
+            this.btnformular.Click += new System.EventHandler(this.btnformular_Click);
             // 
-            // txtnumescore
+            // btnalimentos
             // 
-            this.txtnumescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumescore.Location = new System.Drawing.Point(184, 285);
-            this.txtnumescore.Name = "txtnumescore";
-            this.txtnumescore.Size = new System.Drawing.Size(120, 25);
-            this.txtnumescore.TabIndex = 10;
+            this.btnalimentos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnalimentos.BackgroundImage = global::ProjetoNariz.Properties.Resources.fruit;
+            this.btnalimentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnalimentos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnalimentos.FlatAppearance.BorderSize = 0;
+            this.btnalimentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnalimentos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnalimentos.Location = new System.Drawing.Point(-103, 66);
+            this.btnalimentos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnalimentos.Name = "btnalimentos";
+            this.btnalimentos.Size = new System.Drawing.Size(270, 37);
+            this.btnalimentos.TabIndex = 1;
+            this.btnalimentos.Text = "                                Alimentos";
+            this.btnalimentos.UseVisualStyleBackColor = true;
+            this.btnalimentos.Click += new System.EventHandler(this.btnalimentos_Click);
             // 
-            // lblescore
+            // pnlselecionemoureq
             // 
-            this.lblescore.AutoSize = true;
-            this.lblescore.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblescore.Location = new System.Drawing.Point(72, 289);
-            this.lblescore.Name = "lblescore";
-            this.lblescore.Size = new System.Drawing.Size(106, 17);
-            this.lblescore.TabIndex = 9;
-            this.lblescore.Text = "Escore Corporal:";
+            this.pnlselecionemoureq.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlselecionemoureq.BackColor = System.Drawing.Color.White;
+            this.pnlselecionemoureq.Controls.Add(this.tableLayoutPanel3);
+            this.pnlselecionemoureq.Location = new System.Drawing.Point(165, 80);
+            this.pnlselecionemoureq.Name = "pnlselecionemoureq";
+            this.pnlselecionemoureq.Size = new System.Drawing.Size(1119, 630);
+            this.pnlselecionemoureq.TabIndex = 35;
             // 
-            // txtnumpeso
+            // tableLayoutPanel3
             // 
-            this.txtnumpeso.DecimalPlaces = 3;
-            this.txtnumpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnumpeso.Location = new System.Drawing.Point(184, 251);
-            this.txtnumpeso.Name = "txtnumpeso";
-            this.txtnumpeso.Size = new System.Drawing.Size(120, 25);
-            this.txtnumpeso.TabIndex = 8;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.btnnecessidadenergeticamanutencao, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lblnecessidadenergeticamanutencao, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lblrequerimentoenergetico, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnrequerimentoenergetico, 1, 1);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 39);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1116, 591);
+            this.tableLayoutPanel3.TabIndex = 4;
             // 
-            // lblpeso
+            // btnnecessidadenergeticamanutencao
             // 
-            this.lblpeso.AutoSize = true;
-            this.lblpeso.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpeso.Location = new System.Drawing.Point(113, 255);
-            this.lblpeso.Name = "lblpeso";
-            this.lblpeso.Size = new System.Drawing.Size(65, 17);
-            this.lblpeso.TabIndex = 7;
-            this.lblpeso.Text = "Peso (kg):";
+            this.btnnecessidadenergeticamanutencao.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnnecessidadenergeticamanutencao.BackgroundImage = global::ProjetoNariz.Properties.Resources.horse;
+            this.btnnecessidadenergeticamanutencao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnnecessidadenergeticamanutencao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnnecessidadenergeticamanutencao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnnecessidadenergeticamanutencao.FlatAppearance.BorderSize = 0;
+            this.btnnecessidadenergeticamanutencao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnnecessidadenergeticamanutencao.Location = new System.Drawing.Point(3, 32);
+            this.btnnecessidadenergeticamanutencao.Name = "btnnecessidadenergeticamanutencao";
+            this.btnnecessidadenergeticamanutencao.Size = new System.Drawing.Size(552, 556);
+            this.btnnecessidadenergeticamanutencao.TabIndex = 3;
+            this.btnnecessidadenergeticamanutencao.UseVisualStyleBackColor = false;
+            this.btnnecessidadenergeticamanutencao.Click += new System.EventHandler(this.btnnecessidadenergeticamanutencao_Click);
             // 
-            // cbxnemformulacao
+            // lblnecessidadenergeticamanutencao
             // 
-            this.cbxnemformulacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxnemformulacao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxnemformulacao.FormattingEnabled = true;
-            this.cbxnemformulacao.Location = new System.Drawing.Point(184, 182);
-            this.cbxnemformulacao.Name = "cbxnemformulacao";
-            this.cbxnemformulacao.Size = new System.Drawing.Size(379, 25);
-            this.cbxnemformulacao.TabIndex = 6;
+            this.lblnecessidadenergeticamanutencao.AutoSize = true;
+            this.lblnecessidadenergeticamanutencao.BackColor = System.Drawing.Color.SandyBrown;
+            this.lblnecessidadenergeticamanutencao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblnecessidadenergeticamanutencao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblnecessidadenergeticamanutencao.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnecessidadenergeticamanutencao.Location = new System.Drawing.Point(3, 0);
+            this.lblnecessidadenergeticamanutencao.Name = "lblnecessidadenergeticamanutencao";
+            this.lblnecessidadenergeticamanutencao.Size = new System.Drawing.Size(552, 29);
+            this.lblnecessidadenergeticamanutencao.TabIndex = 2;
+            this.lblnecessidadenergeticamanutencao.Text = "Necessidade Energética de Manuteção";
+            this.lblnecessidadenergeticamanutencao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblnecessidadenergeticamanutencao.Click += new System.EventHandler(this.lblnecessidadenergeticamanutencao_Click);
             // 
-            // lblnemformulacao
+            // lblrequerimentoenergetico
             // 
-            this.lblnemformulacao.AutoSize = true;
-            this.lblnemformulacao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnemformulacao.Location = new System.Drawing.Point(138, 186);
-            this.lblnemformulacao.Name = "lblnemformulacao";
-            this.lblnemformulacao.Size = new System.Drawing.Size(40, 17);
-            this.lblnemformulacao.TabIndex = 5;
-            this.lblnemformulacao.Text = "NEM:";
+            this.lblrequerimentoenergetico.AutoSize = true;
+            this.lblrequerimentoenergetico.BackColor = System.Drawing.Color.PeachPuff;
+            this.lblrequerimentoenergetico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblrequerimentoenergetico.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblrequerimentoenergetico.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrequerimentoenergetico.Location = new System.Drawing.Point(561, 0);
+            this.lblrequerimentoenergetico.Name = "lblrequerimentoenergetico";
+            this.lblrequerimentoenergetico.Size = new System.Drawing.Size(552, 29);
+            this.lblrequerimentoenergetico.TabIndex = 3;
+            this.lblrequerimentoenergetico.Text = "Requerimento Energético por Animal";
+            this.lblrequerimentoenergetico.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblrequerimentoenergetico.Click += new System.EventHandler(this.lblrequerimentoenergetico_Click);
             // 
-            // txtnomedoanimal
+            // btnrequerimentoenergetico
             // 
-            this.txtnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnomedoanimal.Location = new System.Drawing.Point(184, 148);
-            this.txtnomedoanimal.Name = "txtnomedoanimal";
-            this.txtnomedoanimal.Size = new System.Drawing.Size(379, 25);
-            this.txtnomedoanimal.TabIndex = 4;
+            this.btnrequerimentoenergetico.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnrequerimentoenergetico.BackgroundImage = global::ProjetoNariz.Properties.Resources.leaflet;
+            this.btnrequerimentoenergetico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnrequerimentoenergetico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrequerimentoenergetico.FlatAppearance.BorderSize = 0;
+            this.btnrequerimentoenergetico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrequerimentoenergetico.Location = new System.Drawing.Point(561, 32);
+            this.btnrequerimentoenergetico.Name = "btnrequerimentoenergetico";
+            this.btnrequerimentoenergetico.Size = new System.Drawing.Size(493, 542);
+            this.btnrequerimentoenergetico.TabIndex = 1;
+            this.btnrequerimentoenergetico.UseVisualStyleBackColor = false;
+            this.btnrequerimentoenergetico.Click += new System.EventHandler(this.btnrequerimentoenergetico_Click);
             // 
-            // lblnomedoanimal
+            // pnlselecionanemoureq
             // 
-            this.lblnomedoanimal.AutoSize = true;
-            this.lblnomedoanimal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnomedoanimal.Location = new System.Drawing.Point(68, 152);
-            this.lblnomedoanimal.Name = "lblnomedoanimal";
-            this.lblnomedoanimal.Size = new System.Drawing.Size(110, 17);
-            this.lblnomedoanimal.TabIndex = 3;
-            this.lblnomedoanimal.Text = "Nome do Animal:";
+            this.pnlselecionanemoureq.Location = new System.Drawing.Point(11, 27);
+            this.pnlselecionanemoureq.Name = "pnlselecionanemoureq";
+            this.pnlselecionanemoureq.Size = new System.Drawing.Size(141, 53);
+            this.pnlselecionanemoureq.TabIndex = 9;
             // 
-            // txtnometutor
+            // lblselecionanemoureq
             // 
-            this.txtnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnometutor.Location = new System.Drawing.Point(184, 114);
-            this.txtnometutor.Name = "txtnometutor";
-            this.txtnometutor.Size = new System.Drawing.Size(379, 25);
-            this.txtnometutor.TabIndex = 2;
+            this.lblselecionanemoureq.AutoSize = true;
+            this.lblselecionanemoureq.Location = new System.Drawing.Point(23, 10);
+            this.lblselecionanemoureq.Name = "lblselecionanemoureq";
+            this.lblselecionanemoureq.Size = new System.Drawing.Size(119, 13);
+            this.lblselecionanemoureq.TabIndex = 12;
+            this.lblselecionanemoureq.Text = "Seleciona NEM ou Req";
+            this.lblselecionanemoureq.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // lblnometutor
+            // lblespecies
             // 
-            this.lblnometutor.AutoSize = true;
-            this.lblnometutor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnometutor.Location = new System.Drawing.Point(13, 118);
-            this.lblnometutor.Name = "lblnometutor";
-            this.lblnometutor.Size = new System.Drawing.Size(165, 17);
-            this.lblnometutor.TabIndex = 1;
-            this.lblnometutor.Text = "Nome do Tutor/Instituição:";
+            this.lblespecies.AutoSize = true;
+            this.lblespecies.Location = new System.Drawing.Point(70, 93);
+            this.lblespecies.Name = "lblespecies";
+            this.lblespecies.Size = new System.Drawing.Size(31, 13);
+            this.lblespecies.TabIndex = 14;
+            this.lblespecies.Text = "NEM";
+            this.lblespecies.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // btnformulardieta
+            // pnlnemescondido
             // 
-            this.btnformulardieta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.btnformulardieta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnformulardieta.FlatAppearance.BorderSize = 0;
-            this.btnformulardieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnformulardieta.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnformulardieta.ForeColor = System.Drawing.Color.White;
-            this.btnformulardieta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnformulardieta.Location = new System.Drawing.Point(31, 320);
-            this.btnformulardieta.Margin = new System.Windows.Forms.Padding(2);
-            this.btnformulardieta.Name = "btnformulardieta";
-            this.btnformulardieta.Size = new System.Drawing.Size(532, 35);
-            this.btnformulardieta.TabIndex = 20;
-            this.btnformulardieta.Text = "Formular Nova Dieta";
-            this.btnformulardieta.UseVisualStyleBackColor = false;
-            this.btnformulardieta.Click += new System.EventHandler(this.btnformulardieta_Click);
+            this.pnlnemescondido.Controls.Add(this.pnlespecies);
+            this.pnlnemescondido.Location = new System.Drawing.Point(11, 109);
+            this.pnlnemescondido.Name = "pnlnemescondido";
+            this.pnlnemescondido.Size = new System.Drawing.Size(141, 51);
+            this.pnlnemescondido.TabIndex = 13;
             // 
-            // btnetapa1formulacao
+            // lblrequerimentoescondido
             // 
-            this.btnetapa1formulacao.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnetapa1formulacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.btnetapa1formulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnetapa1formulacao.Location = new System.Drawing.Point(267, 65);
-            this.btnetapa1formulacao.Name = "btnetapa1formulacao";
-            this.btnetapa1formulacao.Size = new System.Drawing.Size(25, 25);
-            this.btnetapa1formulacao.TabIndex = 21;
-            this.btnetapa1formulacao.Text = "1";
-            this.btnetapa1formulacao.UseVisualStyleBackColor = false;
+            this.lblrequerimentoescondido.AutoSize = true;
+            this.lblrequerimentoescondido.Location = new System.Drawing.Point(24, 171);
+            this.lblrequerimentoescondido.Name = "lblrequerimentoescondido";
+            this.lblrequerimentoescondido.Size = new System.Drawing.Size(73, 13);
+            this.lblrequerimentoescondido.TabIndex = 16;
+            this.lblrequerimentoescondido.Text = "Requerimento";
+            this.lblrequerimentoescondido.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // btnetapa2formulacao
+            // pnlrequerimentoescondid
             // 
-            this.btnetapa2formulacao.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnetapa2formulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnetapa2formulacao.Location = new System.Drawing.Point(827, 65);
-            this.btnetapa2formulacao.Name = "btnetapa2formulacao";
-            this.btnetapa2formulacao.Size = new System.Drawing.Size(25, 25);
-            this.btnetapa2formulacao.TabIndex = 22;
-            this.btnetapa2formulacao.Text = "2";
-            this.btnetapa2formulacao.UseVisualStyleBackColor = true;
-            // 
-            // barraformulacao
-            // 
-            this.barraformulacao.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.barraformulacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.barraformulacao.Location = new System.Drawing.Point(302, 78);
-            this.barraformulacao.Name = "barraformulacao";
-            this.barraformulacao.Size = new System.Drawing.Size(510, 2);
-            this.barraformulacao.TabIndex = 23;
-            this.barraformulacao.Text = "2";
-            this.barraformulacao.UseVisualStyleBackColor = true;
-            // 
-            // btninserealimento
-            // 
-            this.btninserealimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
-            this.btninserealimento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btninserealimento.Enabled = false;
-            this.btninserealimento.FlatAppearance.BorderSize = 0;
-            this.btninserealimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninserealimento.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btninserealimento.ForeColor = System.Drawing.Color.White;
-            this.btninserealimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btninserealimento.Location = new System.Drawing.Point(240, 35);
-            this.btninserealimento.Margin = new System.Windows.Forms.Padding(2);
-            this.btninserealimento.Name = "btninserealimento";
-            this.btninserealimento.Size = new System.Drawing.Size(50, 30);
-            this.btninserealimento.TabIndex = 24;
-            this.btninserealimento.Text = ">";
-            this.btninserealimento.UseVisualStyleBackColor = false;
-            this.btninserealimento.Visible = false;
-            this.btninserealimento.Click += new System.EventHandler(this.btninserealimento_Click);
-            // 
-            // btnremovealimento
-            // 
-            this.btnremovealimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
-            this.btnremovealimento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnremovealimento.Enabled = false;
-            this.btnremovealimento.FlatAppearance.BorderSize = 0;
-            this.btnremovealimento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnremovealimento.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnremovealimento.ForeColor = System.Drawing.Color.White;
-            this.btnremovealimento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnremovealimento.Location = new System.Drawing.Point(240, 149);
-            this.btnremovealimento.Margin = new System.Windows.Forms.Padding(2);
-            this.btnremovealimento.Name = "btnremovealimento";
-            this.btnremovealimento.Size = new System.Drawing.Size(50, 30);
-            this.btnremovealimento.TabIndex = 25;
-            this.btnremovealimento.Text = "<";
-            this.btnremovealimento.UseVisualStyleBackColor = false;
-            this.btnremovealimento.Visible = false;
-            this.btnremovealimento.Click += new System.EventHandler(this.btnremovealimento_Click);
-            // 
-            // btnreiniciardieta
-            // 
-            this.btnreiniciardieta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(61)))), ((int)(((byte)(0)))));
-            this.btnreiniciardieta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnreiniciardieta.Enabled = false;
-            this.btnreiniciardieta.FlatAppearance.BorderSize = 0;
-            this.btnreiniciardieta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnreiniciardieta.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnreiniciardieta.ForeColor = System.Drawing.Color.White;
-            this.btnreiniciardieta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnreiniciardieta.Location = new System.Drawing.Point(240, 193);
-            this.btnreiniciardieta.Margin = new System.Windows.Forms.Padding(2);
-            this.btnreiniciardieta.Name = "btnreiniciardieta";
-            this.btnreiniciardieta.Size = new System.Drawing.Size(50, 30);
-            this.btnreiniciardieta.TabIndex = 26;
-            this.btnreiniciardieta.Text = "<<";
-            this.btnreiniciardieta.UseVisualStyleBackColor = false;
-            this.btnreiniciardieta.Visible = false;
-            this.btnreiniciardieta.Click += new System.EventHandler(this.btnreiniciardieta_Click);
-            // 
-            // pnladdalimentoformulacao
-            // 
-            this.pnladdalimentoformulacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pnladdalimentoformulacao.Controls.Add(this.txtalimentoselecionado);
-            this.pnladdalimentoformulacao.Controls.Add(this.lblpercentagemdeinclusao);
-            this.pnladdalimentoformulacao.Controls.Add(this.btnreiniciardieta);
-            this.pnladdalimentoformulacao.Controls.Add(this.txtpercentagemteste);
-            this.pnladdalimentoformulacao.Controls.Add(this.btnremovealimento);
-            this.pnladdalimentoformulacao.Controls.Add(this.dgvaddalimentosms);
-            this.pnladdalimentoformulacao.Controls.Add(this.btninserealimento);
-            this.pnladdalimentoformulacao.Controls.Add(this.dgvformuladieta);
-            this.pnladdalimentoformulacao.Location = new System.Drawing.Point(31, 363);
-            this.pnladdalimentoformulacao.Name = "pnladdalimentoformulacao";
-            this.pnladdalimentoformulacao.Size = new System.Drawing.Size(532, 260);
-            this.pnladdalimentoformulacao.TabIndex = 27;
-            this.pnladdalimentoformulacao.Visible = false;
-            // 
-            // dgvaddalimentosms
-            // 
-            this.dgvaddalimentosms.AllowUserToAddRows = false;
-            this.dgvaddalimentosms.AllowUserToDeleteRows = false;
-            this.dgvaddalimentosms.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgvaddalimentosms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgvaddalimentosms.BackgroundColor = System.Drawing.Color.White;
-            this.dgvaddalimentosms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvaddalimentosms.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvaddalimentosms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvaddalimentosms.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dgvaddalimentosms.GridColor = System.Drawing.Color.White;
-            this.dgvaddalimentosms.Location = new System.Drawing.Point(8, 35);
-            this.dgvaddalimentosms.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvaddalimentosms.MultiSelect = false;
-            this.dgvaddalimentosms.Name = "dgvaddalimentosms";
-            this.dgvaddalimentosms.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(164)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvaddalimentosms.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.dgvaddalimentosms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dgvaddalimentosms.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
-            this.dgvaddalimentosms.RowTemplate.Height = 24;
-            this.dgvaddalimentosms.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvaddalimentosms.Size = new System.Drawing.Size(204, 216);
-            this.dgvaddalimentosms.TabIndex = 28;
-            this.dgvaddalimentosms.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvaddalimentosms_CellDoubleClick);
-            // 
-            // txtpercentagemteste
-            // 
-            this.txtpercentagemteste.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpercentagemteste.Location = new System.Drawing.Point(225, 104);
-            this.txtpercentagemteste.Name = "txtpercentagemteste";
-            this.txtpercentagemteste.Size = new System.Drawing.Size(80, 25);
-            this.txtpercentagemteste.TabIndex = 28;
-            // 
-            // lblpercentagemdeinclusao
-            // 
-            this.lblpercentagemdeinclusao.AutoSize = true;
-            this.lblpercentagemdeinclusao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpercentagemdeinclusao.Location = new System.Drawing.Point(230, 81);
-            this.lblpercentagemdeinclusao.Name = "lblpercentagemdeinclusao";
-            this.lblpercentagemdeinclusao.Size = new System.Drawing.Size(70, 17);
-            this.lblpercentagemdeinclusao.TabIndex = 28;
-            this.lblpercentagemdeinclusao.Text = "% Inclusão";
-            // 
-            // txtalimentoselecionado
-            // 
-            this.txtalimentoselecionado.Enabled = false;
-            this.txtalimentoselecionado.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtalimentoselecionado.Location = new System.Drawing.Point(168, 4);
-            this.txtalimentoselecionado.Name = "txtalimentoselecionado";
-            this.txtalimentoselecionado.Size = new System.Drawing.Size(204, 25);
-            this.txtalimentoselecionado.TabIndex = 29;
+            this.pnlrequerimentoescondid.Location = new System.Drawing.Point(12, 188);
+            this.pnlrequerimentoescondid.Name = "pnlrequerimentoescondid";
+            this.pnlrequerimentoescondid.Size = new System.Drawing.Size(141, 51);
+            this.pnlrequerimentoescondid.TabIndex = 15;
             // 
             // Principal
             // 
@@ -7820,10 +11674,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(177)))));
             this.ClientSize = new System.Drawing.Size(1305, 715);
-            this.Controls.Add(this.pnlformulacao);
-            this.Controls.Add(this.pnlselecionaalimento);
-            this.Controls.Add(this.pnlalimentosmn);
-            this.Controls.Add(this.pnlalimentosms);
+            this.Controls.Add(this.pnlescondido);
+            this.Controls.Add(this.pnlselecionemoureq);
             this.Controls.Add(this.pnlsuperior);
             this.Controls.Add(this.pnllateral);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -7834,22 +11686,63 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Principal_Load);
             this.pnlsuperior.ResumeLayout(false);
+            this.pnlselecionaalimento.ResumeLayout(false);
+            this.tblselecionaaliento.ResumeLayout(false);
+            this.tblselecionaaliento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).EndInit();
             this.pnlespecies.ResumeLayout(false);
             this.pnlespecies.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvespecie)).EndInit();
             this.pnlcalcnem.ResumeLayout(false);
             this.pnlcalcnem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxusuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxlogo)).EndInit();
-            this.pnlselecionaalimento.ResumeLayout(false);
-            this.pnlselecionaalimento.PerformLayout();
-            this.pnlsuperioralimentosms.ResumeLayout(false);
-            this.pnlsuperioralimentosms.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).EndInit();
-            this.pnlsuperioralimentosmn.ResumeLayout(false);
-            this.pnlsuperioralimentosmn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosmn)).EndInit();
-            this.pnllateral.ResumeLayout(false);
+            this.pnlescondido.ResumeLayout(false);
+            this.pnlescondido.PerformLayout();
+            this.pnlespeciesescondido.ResumeLayout(false);
+            this.pnlespeciesescondido.PerformLayout();
+            this.pnldietasescondido.ResumeLayout(false);
+            this.pnldietasescondido.PerformLayout();
+            this.pnldietasescondidointerr.ResumeLayout(false);
+            this.pnldietas.ResumeLayout(false);
+            this.pnldietas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdietas)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxdietassuperior)).EndInit();
+            this.pnlformlacaoescodid.ResumeLayout(false);
+            this.pnlformulacao.ResumeLayout(false);
+            this.pnlformulacao.PerformLayout();
+            this.pnlresultadosformulacao.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.pnldadoscomparacaodieta.ResumeLayout(false);
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel11.PerformLayout();
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.pnladdalimentoformulacao.ResumeLayout(false);
+            this.pnladdalimentoformulacao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvformuladieta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvaddalimentosms)).EndInit();
+            this.pnlsuperiorformulacao.ResumeLayout(false);
+            this.pnlsuperiorformulacao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxcabecalhoformular)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumidade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumescore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnumpeso)).EndInit();
+            this.pnlescondidoalimentos.ResumeLayout(false);
+            this.pnlescondidoalimentos.PerformLayout();
+            this.pnlescondidoalimentomn.ResumeLayout(false);
             this.pnlalimentosms.ResumeLayout(false);
             this.pnlalimentosms.PerformLayout();
             this.pnlvisualizaalimentosms.ResumeLayout(false);
@@ -7873,7 +11766,13 @@
             this.tableenergiams.ResumeLayout(false);
             this.tableenergiams.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxtooltipalimentoms)).EndInit();
+            this.pnlsuperioralimentosms.ResumeLayout(false);
+            this.pnlsuperioralimentosms.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosms)).EndInit();
+            this.pnlalimentoescondidoms.ResumeLayout(false);
+            this.pnlalimentosmn.ResumeLayout(false);
+            this.pnlalimentosmn.PerformLayout();
             this.pnlvisualizaalimentosmn.ResumeLayout(false);
             this.pnlvisualizaalimentosmn.PerformLayout();
             this.tabletitulovitaminas.ResumeLayout(false);
@@ -7895,21 +11794,17 @@
             this.tableenergia.ResumeLayout(false);
             this.tableenergia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxhelpalimentomn)).EndInit();
-            this.pnlalimentosmn.ResumeLayout(false);
-            this.pnlalimentosmn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvalimentosmn)).EndInit();
-            this.pnlformulacao.ResumeLayout(false);
-            this.pnlformulacao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvformuladieta)).EndInit();
-            this.pnlsuperiorformulacao.ResumeLayout(false);
-            this.pnlsuperiorformulacao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxcabecalhoformular)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumidade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumescore)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtnumpeso)).EndInit();
-            this.pnladdalimentoformulacao.ResumeLayout(false);
-            this.pnladdalimentoformulacao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvaddalimentosms)).EndInit();
+            this.pnlsuperioralimentosmn.ResumeLayout(false);
+            this.pnlsuperioralimentosmn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxalimentosmn)).EndInit();
+            this.pnlescolhepainelescondido.ResumeLayout(false);
+            this.pnlescondidoinicio.ResumeLayout(false);
+            this.pnllateral.ResumeLayout(false);
+            this.pnlselecionemoureq.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.pnlnemescondido.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -8409,5 +12304,237 @@
         private System.Windows.Forms.Label lblpercentagemdeinclusao;
         private System.Windows.Forms.TextBox txtpercentagemteste;
         private System.Windows.Forms.TextBox txtalimentoselecionado;
+        private System.Windows.Forms.TextBox txtpesquisadietadieta;
+        private System.Windows.Forms.TextBox txtpesquisaalimentodieta;
+        private System.Windows.Forms.Button btnpesquisaalimentosdieta;
+        private System.Windows.Forms.Button btnpesquisadietadieta;
+        private System.Windows.Forms.Label lblalimentodieta;
+        private System.Windows.Forms.ComboBox cbxrequerimentodieta;
+        private System.Windows.Forms.Label lblrequerimentodieta;
+        private System.Windows.Forms.Panel pnldadoscomparacaodieta;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label lblrequerimentodietarecomendado;
+        private System.Windows.Forms.Label lbldietaatualrequerimento;
+        private System.Windows.Forms.Label lblalimentodietarequerimento;
+        private System.Windows.Forms.TextBox txtreqaclinon3min;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TextBox txtreqvitcatual;
+        private System.Windows.Forms.TextBox txtreqvitkatual;
+        private System.Windows.Forms.TextBox txtreqcolinaatual;
+        private System.Windows.Forms.TextBox txtreqbiotinaatual;
+        private System.Windows.Forms.TextBox txtreqacfolicoatual;
+        private System.Windows.Forms.TextBox txtreqniacinaatual;
+        private System.Windows.Forms.TextBox txtreqvitb12atual;
+        private System.Windows.Forms.TextBox txtreqvitb6atual;
+        private System.Windows.Forms.TextBox txtreqacpantoatual;
+        private System.Windows.Forms.TextBox txtreqriboatual;
+        private System.Windows.Forms.TextBox txtreqtiaminaatual;
+        private System.Windows.Forms.TextBox txtreqviteatual;
+        private System.Windows.Forms.TextBox txtreqvitdatual;
+        private System.Windows.Forms.TextBox txtreqvitaatual;
+        private System.Windows.Forms.Label lblreqvitc;
+        private System.Windows.Forms.Label lblreqvitk;
+        private System.Windows.Forms.Label lblreqcolina;
+        private System.Windows.Forms.Label lblreqbiotina;
+        private System.Windows.Forms.Label lblreqacfolico;
+        private System.Windows.Forms.Label lblreqniacina;
+        private System.Windows.Forms.Label lblreqvitb12;
+        private System.Windows.Forms.Label lblreqacpanto;
+        private System.Windows.Forms.Label lblreqribo;
+        private System.Windows.Forms.Label lblreqvitb6;
+        private System.Windows.Forms.Label lblreqtiamina;
+        private System.Windows.Forms.Label lblreqvite;
+        private System.Windows.Forms.Label lblreqvitd;
+        private System.Windows.Forms.Label lblreqvita;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TextBox txtreqsatual;
+        private System.Windows.Forms.TextBox txtreqznatual;
+        private System.Windows.Forms.TextBox txtreqseatual;
+        private System.Windows.Forms.TextBox txtreqmnatual;
+        private System.Windows.Forms.TextBox txtreqfeatual;
+        private System.Windows.Forms.TextBox txtreqiatual;
+        private System.Windows.Forms.TextBox txtreqcuatual;
+        private System.Windows.Forms.TextBox txtreqmgatual;
+        private System.Windows.Forms.TextBox txtreqclatual;
+        private System.Windows.Forms.TextBox txtreqnaatual;
+        private System.Windows.Forms.TextBox txtreqkatual;
+        private System.Windows.Forms.TextBox txtreqpatual;
+        private System.Windows.Forms.TextBox txtreqcaatual;
+        private System.Windows.Forms.Label lblreqs;
+        private System.Windows.Forms.Label lblreqzn;
+        private System.Windows.Forms.Label lblreqse;
+        private System.Windows.Forms.Label lblreqmn;
+        private System.Windows.Forms.Label lblreqfe;
+        private System.Windows.Forms.Label lblreqi;
+        private System.Windows.Forms.Label lblreqmg;
+        private System.Windows.Forms.Label lblreqcl;
+        private System.Windows.Forms.Label lblreqcu;
+        private System.Windows.Forms.Label lblreqna;
+        private System.Windows.Forms.Label lblreqk;
+        private System.Windows.Forms.Label lblreqp;
+        private System.Windows.Forms.Label lblreqca;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TextBox txtreqtauatual;
+        private System.Windows.Forms.TextBox txtreqvalatual;
+        private System.Windows.Forms.TextBox txtreqtriatual;
+        private System.Windows.Forms.TextBox txtreqtreoatual;
+        private System.Windows.Forms.TextBox txtreqfentiratual;
+        private System.Windows.Forms.TextBox txtreqfenatual;
+        private System.Windows.Forms.TextBox txtreqmetcisatual;
+        private System.Windows.Forms.TextBox txtreqmetatual;
+        private System.Windows.Forms.TextBox txtreqlisatual;
+        private System.Windows.Forms.TextBox txtreqleuatual;
+        private System.Windows.Forms.TextBox txtreqisoatual;
+        private System.Windows.Forms.TextBox txtreqhisatual;
+        private System.Windows.Forms.TextBox txtreqargatual;
+        private System.Windows.Forms.Label lblreqtau;
+        private System.Windows.Forms.Label lblreqval;
+        private System.Windows.Forms.Label lblreqtri;
+        private System.Windows.Forms.Label lblreqtreo;
+        private System.Windows.Forms.Label lblreqfentir;
+        private System.Windows.Forms.Label lblreqfen;
+        private System.Windows.Forms.Label lblreqmet;
+        private System.Windows.Forms.Label lblreqlis;
+        private System.Windows.Forms.Label lblreqmetcis;
+        private System.Windows.Forms.Label lblreqleu;
+        private System.Windows.Forms.Label lblreqiso;
+        private System.Windows.Forms.Label lblreqhis;
+        private System.Windows.Forms.Label lblreqarg;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.TextBox txtreqfdnatual;
+        private System.Windows.Forms.TextBox txtreqfdaatual;
+        private System.Windows.Forms.TextBox txtreqcnfatual;
+        private System.Windows.Forms.Label lblreqfdn;
+        private System.Windows.Forms.Label lblreqfda;
+        private System.Windows.Forms.Label lblreqcnf;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.TextBox txtreqepadhaatual;
+        private System.Windows.Forms.TextBox txtreqacaraqatual;
+        private System.Windows.Forms.TextBox txtreqaclinon6atual;
+        private System.Windows.Forms.TextBox txtreqaclinon3atual;
+        private System.Windows.Forms.Label lblreqepadha;
+        private System.Windows.Forms.Label lblreqacaraq;
+        private System.Windows.Forms.Label lblreqaclinon6;
+        private System.Windows.Forms.Label lblreqaclinon3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.TextBox txtreqennmin;
+        private System.Windows.Forms.TextBox txtreqmmmin;
+        private System.Windows.Forms.TextBox txtreqfbmin;
+        private System.Windows.Forms.TextBox txtreqeemin;
+        private System.Windows.Forms.TextBox txtreqpbmin;
+        private System.Windows.Forms.TextBox txtreqmsmin;
+        private System.Windows.Forms.TextBox txtrequumidademin;
+        private System.Windows.Forms.TextBox txtreqennatual;
+        private System.Windows.Forms.TextBox txtreqmmatual;
+        private System.Windows.Forms.TextBox txtreqfbatual;
+        private System.Windows.Forms.TextBox txtreqeeatual;
+        private System.Windows.Forms.TextBox txtreqpbatual;
+        private System.Windows.Forms.TextBox txtreqmsatual;
+        private System.Windows.Forms.TextBox txtrequmidadeatual;
+        private System.Windows.Forms.Label lblreqenn;
+        private System.Windows.Forms.Label lblreqmm;
+        private System.Windows.Forms.Label lblreqfb;
+        private System.Windows.Forms.Label lblreqee;
+        private System.Windows.Forms.Label lblreqpb;
+        private System.Windows.Forms.Label lblreqms;
+        private System.Windows.Forms.Label lblrequmidade;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.TextBox txtreqenergiaatual;
+        private System.Windows.Forms.TextBox txtreqenergiamin;
+        private System.Windows.Forms.Label lblreqenergia;
+        private System.Windows.Forms.TextBox txtreqepadhamin;
+        private System.Windows.Forms.TextBox txtreqacaraqmin;
+        private System.Windows.Forms.TextBox txtreqaclinon6min;
+        private System.Windows.Forms.TextBox txtreqfdnmin;
+        private System.Windows.Forms.TextBox txtreqfdamin;
+        private System.Windows.Forms.TextBox txtreqcnfmin;
+        private System.Windows.Forms.TextBox txtreqsmin;
+        private System.Windows.Forms.TextBox txtreqznmin;
+        private System.Windows.Forms.TextBox txtreqsemin;
+        private System.Windows.Forms.TextBox txtreqmnmin;
+        private System.Windows.Forms.TextBox txtreqfemin;
+        private System.Windows.Forms.TextBox txtreqimin;
+        private System.Windows.Forms.TextBox txtreqcumin;
+        private System.Windows.Forms.TextBox txtreqmgmin;
+        private System.Windows.Forms.TextBox txtreqclmin;
+        private System.Windows.Forms.TextBox txtreqnamin;
+        private System.Windows.Forms.TextBox txtreqkmin;
+        private System.Windows.Forms.TextBox txtreqpmin;
+        private System.Windows.Forms.TextBox txtreqcamin;
+        private System.Windows.Forms.TextBox txtreqvitcmin;
+        private System.Windows.Forms.TextBox txtreqvitkmin;
+        private System.Windows.Forms.TextBox txtreqcolinamin;
+        private System.Windows.Forms.TextBox txtreqbiotinamin;
+        private System.Windows.Forms.TextBox txtreqacfolicomin;
+        private System.Windows.Forms.TextBox txtreqniacinamin;
+        private System.Windows.Forms.TextBox txtreqvitb12min;
+        private System.Windows.Forms.TextBox txtreqvitb6min;
+        private System.Windows.Forms.TextBox txtreqacpantomin;
+        private System.Windows.Forms.TextBox txtreqribomin;
+        private System.Windows.Forms.TextBox txtreqtiaminamin;
+        private System.Windows.Forms.TextBox txtreqvitemin;
+        private System.Windows.Forms.TextBox txtreqvitdmin;
+        private System.Windows.Forms.TextBox txtreqvitamin;
+        private System.Windows.Forms.TextBox txtreqtaumin;
+        private System.Windows.Forms.TextBox txtreqvalmin;
+        private System.Windows.Forms.TextBox txtreqtrimin;
+        private System.Windows.Forms.TextBox txtreqtreomin;
+        private System.Windows.Forms.TextBox txtreqfentirmin;
+        private System.Windows.Forms.TextBox txtreqfenmin;
+        private System.Windows.Forms.TextBox txtreqmetcismin;
+        private System.Windows.Forms.TextBox txtreqmetmin;
+        private System.Windows.Forms.TextBox txtreqlismin;
+        private System.Windows.Forms.TextBox txtreqleumin;
+        private System.Windows.Forms.TextBox txtreqisomin;
+        private System.Windows.Forms.TextBox txtreqhismin;
+        private System.Windows.Forms.TextBox txtreqargmin;
+        private System.Windows.Forms.Panel pnlescondido;
+        private System.Windows.Forms.Panel pnlespeciesescondido;
+        private System.Windows.Forms.Label lblpaineisespeciesescondido;
+        private System.Windows.Forms.Panel pnldietasescondido;
+        private System.Windows.Forms.Label lblpaineisdietasescondido;
+        private System.Windows.Forms.Panel pnlescondidoalimentos;
+        private System.Windows.Forms.Label lblpaineisalimentos;
+        private System.Windows.Forms.Panel pnlescondidoinicio;
+        private System.Windows.Forms.Label lblpaineisinicio;
+        private System.Windows.Forms.Label lblalimentomnescondido;
+        private System.Windows.Forms.Panel pnlescondidoalimentomn;
+        private System.Windows.Forms.Label lblalimentomsescondido;
+        private System.Windows.Forms.Panel pnlalimentoescondidoms;
+        private System.Windows.Forms.Label lblescolhealimentoescondido;
+        private System.Windows.Forms.Panel pnlescolhepainelescondido;
+        private System.Windows.Forms.Panel pnlinicio;
+        private System.Windows.Forms.Panel pnldietas;
+        private System.Windows.Forms.DataGridView dgvdietas;
+        private System.Windows.Forms.ComboBox cbxfiltropesquisadietas;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label lbldietassuperior;
+        private System.Windows.Forms.PictureBox pbxdietassuperior;
+        private System.Windows.Forms.TextBox txtpesquisadietas;
+        private System.Windows.Forms.Button btnpesquisadietas;
+        private System.Windows.Forms.Button btnadicionardieta;
+        private System.Windows.Forms.Button btnvisualizadieta;
+        private System.Windows.Forms.Panel pnlutilitarioescondido;
+        private System.Windows.Forms.Label lbldietasescondido;
+        private System.Windows.Forms.Panel pnldietasescondidointerr;
+        private System.Windows.Forms.Panel pnlformlacaoescodid;
+        private System.Windows.Forms.Label lblformulacaoescondido;
+        private System.Windows.Forms.Panel pnlresultadosformulacao;
+        private System.Windows.Forms.Button btnvoltaformulacao;
+        private System.Windows.Forms.TextBox txttotalinclusao;
+        private System.Windows.Forms.Label lbltotal;
+        private System.Windows.Forms.TableLayoutPanel tblselecionaaliento;
+        private System.Windows.Forms.Panel pnlselecionemoureq;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Button btnnecessidadenergeticamanutencao;
+        private System.Windows.Forms.Label lblnecessidadenergeticamanutencao;
+        private System.Windows.Forms.Label lblrequerimentoenergetico;
+        private System.Windows.Forms.Button btnrequerimentoenergetico;
+        private System.Windows.Forms.Label lblrequerimentoescondido;
+        private System.Windows.Forms.Panel pnlrequerimentoescondid;
+        private System.Windows.Forms.Label lblespecies;
+        private System.Windows.Forms.Panel pnlnemescondido;
+        private System.Windows.Forms.Label lblselecionanemoureq;
+        private System.Windows.Forms.Panel pnlselecionanemoureq;
     }
 }

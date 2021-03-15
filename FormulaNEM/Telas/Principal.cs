@@ -30,7 +30,7 @@ namespace ProjetoNariz.Telas
         Tradutor t = new Tradutor();
         List<TextBox> ControleTxtMN = new List<TextBox>();
         List<String> ControleObjMN = new List<String>();
-        private static bool Salva = false, Cancela=false;
+        private static bool Salva = false, Cancela = false;
         private int contaparenteses = 0;
         #endregion
 
@@ -106,9 +106,9 @@ namespace ProjetoNariz.Telas
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
 
-            cbxnemformulacao.DataSource = f.AtualizaComboEspecie();
+            //cbxnemformulacao.DataSource = f.AtualizaComboEspecie();
 
-            //PaineisPrincipais(pnlali);
+            PaineisPrincipais(pnldietas);
         }
         private void ClicaFormular()
         {
@@ -125,6 +125,7 @@ namespace ProjetoNariz.Telas
             cbxnemformulacao.DataSource = f.AtualizaComboEspecie();
 
             PaineisPrincipais(pnlformulacao);
+            LimpaCampos(4);
         }
         private void ClicaConfiguracoes()
         {
@@ -167,6 +168,11 @@ namespace ProjetoNariz.Telas
             pnlsuperioralimentosmn.Visible = false;
             pnlsuperioralimentosms.Visible = false;
             pnlselecionaalimento.Visible = false;
+            pnlformulacao.Visible = false;
+            pnlespecies.Visible = false;
+            pnldietas.Visible = false;
+            pnlresultadosformulacao.Visible = false;
+            pnlselecionemoureq.Visible = false;
 
             panel1.Visible = true;
             panel2.Visible = true;
@@ -181,6 +187,11 @@ namespace ProjetoNariz.Telas
             pnlsuperioralimentosmn.Visible = false;
             pnlsuperioralimentosms.Visible = false;
             pnlselecionaalimento.Visible = false;
+            pnlformulacao.Visible = false;
+            pnlespecies.Visible = false;
+            pnldietas.Visible = false;
+            pnlresultadosformulacao.Visible = false;
+            pnlselecionemoureq.Visible = false;
 
             panel1.Visible = true;
             panel2.Visible = true;
@@ -196,6 +207,9 @@ namespace ProjetoNariz.Telas
             pnlselecionaalimento.Visible = false;
             pnlformulacao.Visible = false;
             pnlespecies.Visible = false;
+            pnldietas.Visible = false;
+            pnlresultadosformulacao.Visible = false;
+            pnlselecionemoureq.Visible = false;
 
             panel.Visible = true;
         }
@@ -421,6 +435,11 @@ namespace ProjetoNariz.Telas
                 btnetapa1formulacao.BackColor = Color.FromArgb(255, 179, 0);
                 btnetapa2formulacao.BackColor = Color.White;
 
+                btnformulardieta.BackColor = Color.FromArgb(255, 179, 0);
+                btnformulardieta.Text = "Formular Nova Dieta";
+                btnformulardieta.ForeColor = Color.White;
+
+                txttotalinclusao.Text = string.Empty;
                 txtnometutor.Text = string.Empty;
                 txtnomedoanimal.Text = string.Empty;
                 txtespecie.Text = string.Empty;
@@ -430,6 +449,118 @@ namespace ProjetoNariz.Telas
                 txtnumpeso.Value = 0;
                 cbxnemformulacao.Text = string.Empty;
                 cbxnemformulacao.SelectedIndex = -1;
+
+                txtreqacaraqatual.Text = string.Empty;
+                txtreqacaraqmin.Text = string.Empty;
+                txtreqacfolicoatual.Text = string.Empty;
+                txtreqacfolicomin.Text = string.Empty;
+                txtreqaclinon3atual.Text = string.Empty;
+                txtreqaclinon3atual.Text = string.Empty;
+                txtreqaclinon3min.Text = string.Empty;
+                txtreqaclinon6atual.Text = string.Empty;
+                txtreqaclinon6min.Text = string.Empty;
+                txtreqacpantoatual.Text = string.Empty;
+                txtreqacpantomin.Text = string.Empty;
+                txtreqargatual.Text = string.Empty;
+                txtreqargmin.Text = string.Empty;
+                txtreqbiotinaatual.Text = string.Empty;
+                txtreqbiotinamin.Text = string.Empty;
+                txtreqcaatual.Text = string.Empty;
+                txtreqcamin.Text = string.Empty;
+                txtreqclatual.Text = string.Empty;
+                txtreqclmin.Text = string.Empty;
+                txtreqcnfatual.Text = string.Empty;
+                txtreqcnfmin.Text = string.Empty;
+                txtreqcolinaatual.Text = string.Empty;
+                txtreqcolinamin.Text = string.Empty;
+                txtreqcuatual.Text = string.Empty;
+                txtreqcumin.Text = string.Empty;
+                txtreqeeatual.Text = string.Empty;
+                txtreqeemin.Text = string.Empty;
+                txtreqenergiaatual.Text = string.Empty;
+                txtreqenergiamin.Text = string.Empty;
+                txtreqennatual.Text = string.Empty;
+                txtreqennmin.Text = string.Empty;
+                txtreqepadhaatual.Text = string.Empty;
+                txtreqepadhamin.Text = string.Empty;
+                txtreqfbatual.Text = string.Empty;
+                txtreqfbmin.Text = string.Empty;
+                txtreqfdaatual.Text = string.Empty;
+                txtreqfdamin.Text = string.Empty;
+                txtreqfdnatual.Text = string.Empty;
+                txtreqfdnmin.Text = string.Empty;
+                txtreqfeatual.Text = string.Empty;
+                txtreqfemin.Text = string.Empty;
+                txtreqfenatual.Text = string.Empty;
+                txtreqfenmin.Text = string.Empty;
+                txtreqfentiratual.Text = string.Empty;
+                txtreqfentirmin.Text = string.Empty;
+                txtreqhisatual.Text = string.Empty;
+                txtreqhismin.Text = string.Empty;
+                txtreqiatual.Text = string.Empty;
+                txtreqimin.Text = string.Empty;
+                txtreqisoatual.Text = string.Empty;
+                txtreqisomin.Text = string.Empty;
+                txtreqkatual.Text = string.Empty;
+                txtreqkmin.Text = string.Empty;
+                txtreqleuatual.Text = string.Empty;
+                txtreqleumin.Text = string.Empty;
+                txtreqlisatual.Text = string.Empty;
+                txtreqlismin.Text = string.Empty;
+                txtreqmetatual.Text = string.Empty;
+                txtreqmetcisatual.Text = string.Empty;
+                txtreqmetcismin.Text = string.Empty;
+                txtreqmetmin.Text = string.Empty;
+                txtreqmgatual.Text = string.Empty;
+                txtreqmgmin.Text = string.Empty;
+                txtreqmmatual.Text = string.Empty;
+                txtreqmmmin.Text = string.Empty;
+                txtreqmnatual.Text = string.Empty;
+                txtreqmnmin.Text = string.Empty;
+                txtreqmsatual.Text = string.Empty;
+                txtreqmsmin.Text = string.Empty;
+                txtreqnaatual.Text = string.Empty;
+                txtreqnamin.Text = string.Empty;
+                txtreqniacinaatual.Text = string.Empty;
+                txtreqniacinamin.Text = string.Empty;
+                txtreqpatual.Text = string.Empty;
+                txtreqpbatual.Text = string.Empty;
+                txtreqpbmin.Text = string.Empty;
+                txtreqpmin.Text = string.Empty;
+                txtreqriboatual.Text = string.Empty;
+                txtreqribomin.Text = string.Empty;
+                txtreqsatual.Text = string.Empty;
+                txtreqseatual.Text = string.Empty;
+                txtreqsemin.Text = string.Empty;
+                txtreqsmin.Text = string.Empty;
+                txtreqtauatual.Text = string.Empty;
+                txtreqtaumin.Text = string.Empty;
+                txtreqtiaminaatual.Text = string.Empty;
+                txtreqtiaminamin.Text = string.Empty;
+                txtreqtreoatual.Text = string.Empty;
+                txtreqtreomin.Text = string.Empty;
+                txtreqtriatual.Text = string.Empty;
+                txtreqtrimin.Text = string.Empty;
+                txtrequmidadeatual.Text = string.Empty;
+                txtrequumidademin.Text = string.Empty;
+                txtreqvalatual.Text = string.Empty;
+                txtreqvalmin.Text = string.Empty;
+                txtreqvitaatual.Text = string.Empty;
+                txtreqvitamin.Text = string.Empty;
+                txtreqvitb12atual.Text = string.Empty;
+                txtreqvitb12min.Text = string.Empty;
+                txtreqvitb6atual.Text = string.Empty;
+                txtreqvitb6min.Text = string.Empty;
+                txtreqvitcatual.Text = string.Empty;
+                txtreqvitcmin.Text = string.Empty;
+                txtreqvitdatual.Text = string.Empty;
+                txtreqvitdmin.Text = string.Empty;
+                txtreqviteatual.Text = string.Empty;
+                txtreqvitemin.Text = string.Empty;
+                txtreqvitkatual.Text = string.Empty;
+                txtreqvitkmin.Text = string.Empty;
+                txtreqznatual.Text = string.Empty;
+                txtreqznmin.Text = string.Empty;
             }
             #endregion
         }
@@ -862,9 +993,9 @@ namespace ProjetoNariz.Telas
                     ch[x] = c;
                     x++;
                 }
-                for (int i=0; i < Formula.Length; i++)
+                for (int i = 0; i < Formula.Length; i++)
                 {
-                    if(ch[i] != '+' || ch[i] != '-' || ch[i] != '*' || ch[i] != '/' || ch[i] != '√' || ch[i] != '(' || ch[i] != ')' || ch[i] != ',')
+                    if (ch[i] != '+' || ch[i] != '-' || ch[i] != '*' || ch[i] != '/' || ch[i] != '√' || ch[i] != '(' || ch[i] != ')' || ch[i] != ',')
                     {
                         formula.Append(string.Concat(ch[i]));
                     }
@@ -872,7 +1003,7 @@ namespace ProjetoNariz.Telas
                     {
                         formula.Clear();
                     }
-                    if(ch[i] == '^')
+                    if (ch[i] == '^')
                     {
                         aux = formula.ToString();
                         formula.Clear();
@@ -892,6 +1023,56 @@ namespace ProjetoNariz.Telas
                     Math.Sqrt(1);
                     Math.Pow(2, 2);
                 }
+            }
+        }
+        private void TxtPesquisaPadrao (TextBox textBox, bool limpa = true)
+        {
+                if (limpa)
+                {
+                    if (textBox.Text == "O que você procura?")
+                    {
+                        textBox.Text = "";
+                    }
+                    textBox.ForeColor = Color.Black;
+                }
+                else
+                {
+                    if (textBox.Text == "")
+                    {
+                        textBox.Text = "O que você procura?";
+                    }
+                    textBox.ForeColor = Color.Silver;
+                }
+        }
+        private void CbxPesquisaPadrao (ComboBox comboBox, DataGridView dataGridView)
+        {
+            if (comboBox.Text == "Filtro")
+            {
+                dataGridView.DataSource = f.AtualizaAlimentosMN();
+            }
+            else
+            {
+                string aux = t.TraduzCombobox(comboBox.Text);
+                dataGridView.DataSource = f.PesquisaAlimentosMN(txtbuscaalimentomn.Text, aux);
+            }
+        }
+        private void TxtPesquisaDieta(TextBox textBox, bool limpa = true)
+        {
+            if (limpa)
+            {
+                if (textBox.Text == "Alimento")
+                {
+                    textBox.Text = "";
+                }
+                textBox.ForeColor = Color.Black;
+            }
+            else
+            {
+                if (textBox.Text == "")
+                {
+                    textBox.Text = "Alimento";
+                }
+                textBox.ForeColor = Color.Silver;
             }
         }
         #endregion
@@ -931,7 +1112,7 @@ namespace ProjetoNariz.Telas
         }
         #endregion
 
-        #region Painel para escolher com qual seção de alimentos trabalhar
+        #region Painel Alimentos
         private void btnescolhealimentoms_Click(object sender, EventArgs e)
         {
             PaineisPrincipais(pnlalimentosms, pnlsuperioralimentosms);
@@ -942,52 +1123,36 @@ namespace ProjetoNariz.Telas
             PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn);
             dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
         }
-        #endregion
+        private void lblescolhealimentomn_Click(object sender, EventArgs e)
+        {
+            PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn);
+            dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
+        }
+        private void lblescolhealimentoms_Click(object sender, EventArgs e)
+        {
+            PaineisPrincipais(pnlalimentosms, pnlsuperioralimentosms);
+            dgvalimentosms.DataSource = f.AtualizaAlimentosMS();
+        }
 
         #region Painel Alimentos MN
         private void txtbuscaalimentomn_Enter(object sender, EventArgs e)
         {
-            if (txtbuscaalimentomn.Text == "O que você procura?")
-            {
-                txtbuscaalimentomn.Text = "";
-            }
-            txtbuscaalimentomn.ForeColor = Color.Black;
+            TxtPesquisaPadrao(txtbuscaalimentomn);
         }
         private void txtbuscaalimentomn_Leave(object sender, EventArgs e)
         {
-            if (txtbuscaalimentomn.Text == "")
-            {
-                txtbuscaalimentomn.Text = "O que você procura?";
-            }
-
-            txtbuscaalimentomn.ForeColor = Color.Silver;
+            TxtPesquisaPadrao(txtbuscaalimentomn, false);
         }
         private void txtbuscaalimentomn_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (cbxfiltroalimentomn.Text == "Filtro")
-                {
-                    dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
-                }
-                else
-                {
-                    string aux = t.TraduzCombobox(cbxfiltroalimentomn.Text);
-                    dgvalimentosmn.DataSource = f.PesquisaAlimentosMN(txtbuscaalimentomn.Text, aux);
-                }
+                CbxPesquisaPadrao(cbxfiltroalimentomn, dgvalimentosmn);
             }
         }
         private void btnpesquisaalimentomn_Click(object sender, EventArgs e)
         {
-            if (cbxfiltroalimentomn.Text == "Filtro")
-            {
-                dgvalimentosmn.DataSource = f.AtualizaAlimentosMN();
-            }
-            else
-            {
-                string aux = t.TraduzCombobox(cbxfiltroalimentomn.Text);
-                dgvalimentosmn.DataSource = f.PesquisaAlimentosMN(txtbuscaalimentomn.Text, aux);
-            }
+            CbxPesquisaPadrao(cbxfiltroalimentomn, dgvalimentosmn);
         }
         private void btnvisalimentomn_Click(object sender, EventArgs e)
         {
@@ -1374,47 +1539,22 @@ namespace ProjetoNariz.Telas
         #region Painel Alimentos MS
         private void txtbuscaalimentoms_Enter(object sender, EventArgs e)
         {
-            if (txtbuscaalimentoms.Text == "O que você procura?")
-            {
-                txtbuscaalimentoms.Text = "";
-            }
-            txtbuscaalimentoms.ForeColor = Color.Black;
+            TxtPesquisaPadrao(txtbuscaalimentoms);
         }
         private void txtbuscaalimentoms_Leave(object sender, EventArgs e)
         {
-            if (txtbuscaalimentoms.Text == "")
-            {
-                txtbuscaalimentoms.Text = "O que você procura?";
-            }
-
-            txtbuscaalimentoms.ForeColor = Color.Silver;
+            TxtPesquisaPadrao(txtbuscaalimentoms, false);
         }
         private void txtbuscaalimentoms_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (cbxfiltroalimentoms.Text == "Filtro")
-                {
-                    dgvalimentosms.DataSource = f.AtualizaAlimentosMS();
-                }
-                else
-                {
-                    string aux = t.TraduzCombobox(cbxfiltroalimentoms.Text);
-                    dgvalimentosms.DataSource = f.PesquisaAlimentosMS(txtbuscaalimentoms.Text, aux);
-                }
+                CbxPesquisaPadrao(cbxfiltroalimentoms, dgvalimentosms);
             }
         }
         private void btnpesquisaalimentoms_Click(object sender, EventArgs e)
         {
-            if (cbxfiltroalimentoms.Text == "Filtro")
-            {
-                dgvalimentosms.DataSource = f.AtualizaAlimentosMS();
-            }
-            else
-            {
-                string aux = t.TraduzCombobox(cbxfiltroalimentoms.Text);
-                dgvalimentosms.DataSource = f.PesquisaAlimentosMS(txtbuscaalimentoms.Text, aux);
-            }
+            CbxPesquisaPadrao(cbxfiltroalimentoms, dgvalimentosms);
         }
         private void btnvisalimentoms_Click(object sender, EventArgs e)
         {
@@ -1720,113 +1860,188 @@ namespace ProjetoNariz.Telas
             Salva = true;
         }
         #endregion
-
-        #region Painel Formulacao
-        private void btnformulardieta_Click(object sender, EventArgs e)
-        {
-            if (!Cancela)
-            {
-                btninserealimento.Enabled = true;
-                btninserealimento.Visible = true;
-                btnremovealimento.Enabled = true;
-                btnremovealimento.Visible = true;
-                btnreiniciardieta.Enabled = true;
-                btnreiniciardieta.Visible = true;
-                //btnformulardieta.Enabled = false;
-                //btnformulardieta.Visible = false;
-                pnladdalimentoformulacao.Visible = true;
-                btnformulardieta.BackColor = Color.FromArgb(181, 61, 0);
-                btnformulardieta.Text = "Cancelar";
-                btnformulardieta.ForeColor = Color.White;
-
-                f.CriaDieta();
-                dgvaddalimentosms.DataSource = f.AtualizaAlimentosMS();
-                dgvformuladieta.DataSource = f.AtualizaDieta();
-                Cancela = true;
-            }
-            else
-            {
-                btninserealimento.Enabled = false;
-                btninserealimento.Visible = false;
-                btnremovealimento.Enabled = false;
-                btnremovealimento.Visible = false;
-                btnreiniciardieta.Enabled = false;
-                btnreiniciardieta.Visible = false;
-                pnladdalimentoformulacao.Visible = false;
-
-                btnformulardieta.BackColor = Color.FromArgb(255, 179, 0);
-                btnformulardieta.Text = "Formular Nova Dieta";
-                btnformulardieta.ForeColor = Color.White;
-
-                f.ExcluiDieta();
-                dgvformuladieta.DataSource = null;
-                f.Desconstrutor();
-
-                Cancela = false;
-            }
-
-        }
-        private void btninserealimento_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (txtpercentagemteste.Text != string.Empty  && txtalimentoselecionado.Text != string.Empty)
-                {
-                    f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
-                    f.Percentagem = Convert.ToDouble(txtpercentagemteste.Text);
-                    f.InsereDieta();
-                    f.AtualizaDieta();
-                    txtalimentoselecionado.Text = string.Empty;
-                }
-                else
-                {
-                    MessageBox.Show("Informe um valor de Percentagem de inclusão", "Atenção");
-                }
-            }
-            catch (Exception) { }
-        }
-        private void btnremovealimento_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (txtalimentoselecionado.Text != string.Empty)
-                {
-                    f.id = dgvformuladieta.CurrentRow.Cells[0].Value.ToString();
-                    f.DeletaDieta();
-                    f.AtualizaDieta();
-                    txtalimentoselecionado.Text = string.Empty;
-                }
-                
-            }
-            catch (Exception) { }
-        }
-        private void btnreiniciardieta_Click(object sender, EventArgs e)
-        {
-            DialogResult resultado = MessageBox.Show("Tem certeza que deseja abortar a formulação?", "Atenção", MessageBoxButtons.YesNo);
-            if (resultado == DialogResult.Yes)
-            {
-                f.ExcluiDieta();
-                dgvformuladieta.DataSource = null;
-                f.Desconstrutor();
-                LimpaCampos(4);
-            }
-        }
-        private void dgvaddalimentosms_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
-            f.SelecionaDieta();
-            txtalimentoselecionado.Text = f.Alimento;
-        }
-        private void dgvformuladieta_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
-            f.SelecionaDieta();
-            txtalimentoselecionado.Text = f.Alimento;
-            txtpercentagemteste.Text = f.Percentagem.ToString();
-        }
         #endregion
 
         #region Painel Especies
+
+        #region Selecona NEM ou Requerimento
+        private void lblnecessidadenergeticamanutencao_Click(object sender, EventArgs e)
+        {
+            dgvespecie.DataSource = f.AtualizaEspecie();
+            PaineisPrincipais(pnlespecies);
+        }
+        private void btnnecessidadenergeticamanutencao_Click(object sender, EventArgs e)
+        {
+            dgvespecie.DataSource = f.AtualizaEspecie();
+            PaineisPrincipais(pnlespecies);
+        }
+        private void lblrequerimentoenergetico_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnrequerimentoenergetico_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
+        private void txtbuscanomeespecie_Enter(object sender, EventArgs e)
+        {
+            TxtPesquisaPadrao(txtbuscanomeespecie);
+        }
+        private void txtbuscanomeespecie_Leave(object sender, EventArgs e)
+        {
+            TxtPesquisaPadrao(txtbuscanomeespecie,false);
+        }
+        private void txtbuscanomeespecie_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                dgvespecie.DataSource = f.PesquisaEspecie(txtbuscanomeespecie.Text);
+            }
+        }
+        private void btnbuscanomeespecie_Click(object sender, EventArgs e)
+        {
+            if (txtbuscanomeespecie.Text != "Nome")
+            {
+                dgvespecie.DataSource = f.PesquisaEspecie(txtbuscanomeespecie.Text);
+            }
+        }
+        private void btnvisualizarespecie_Click(object sender, EventArgs e)
+        {
+            LimpaCampos(3);
+            try
+            {
+                f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
+                f.SelecionaEspecie();
+
+                txtcadastronomeespecie.Enabled = false;
+                txtcadastronem.Enabled = false;
+                txtcadastronomeespecie.Visible = true;
+                txtcadastronem.Visible = true;
+
+                lblnomeespecie.Visible = true;
+                lblnem.Visible = true;
+
+                txtcadastronomeespecie.Text = f.Nome;
+                txtcadastronem.Text = f.Formula;
+
+                btnexcluirespecie.Visible = true;
+                btnexcluirespecie.Enabled = true;
+                btneditarespecie.Visible = true;
+                btneditarespecie.Enabled = true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Favor Selecionar uma espécie na tabela ao lado", "Atenção");
+            }
+
+        }
+        private void btneditarespecie_Click(object sender, EventArgs e)
+        {
+            btnadicionarespecie.Enabled = false;
+            btnadicionarespecie.Text = "Editando...";
+            btnadicionarespecie.ForeColor = Color.White;
+
+            txtcadastronomeespecie.Enabled = true;
+            txtcadastronem.Enabled = false;
+
+            btnsalvacadastroespecie.Visible = true;
+            btncancelacadastroespecie.Visible = true;
+            btnsalvacadastroespecie.Enabled = true;
+            btncancelacadastroespecie.Enabled = true;
+
+            pnlcalcnem.Visible = true;
+
+            Salva = false;
+        }
+        private void btnsalvacadastroespecie_Click(object sender, EventArgs e)
+        {
+            f.Nome = txtcadastronomeespecie.Text;
+            f.Formula = txtcadastronem.Text;
+            if (Salva)
+            {
+                f.InsereEspecie();
+            }
+            else
+            {
+                f.AlteraEspecie();
+            }
+
+            LimpaCampos(3);
+
+            dgvespecie.DataSource = f.AtualizaEspecie();
+        }
+        private void btnexcluirespecie_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Tem certeza que deseja excluir a especie?", "Atenção", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                f.DeletaEspecie();
+                f.Desconstrutor();
+                LimpaCampos(3);
+                dgvespecie.DataSource = f.AtualizaEspecie();
+            }
+        }
+        private void btncancelacadastroespecie_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja interromper o processo?", "Atenção", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                LimpaCampos(3);
+            }
+        }
+        private void btnadicionarespecie_Click(object sender, EventArgs e)
+        {
+            txtcadastronomeespecie.Enabled = true;
+            txtcadastronem.Enabled = false;
+            pnlcalcnem.Visible = true;
+            txtcadastronomeespecie.Visible = true;
+            txtcadastronem.Visible = true;
+
+            lblnomeespecie.Visible = true;
+            lblnem.Visible = true;
+
+            btnexcluirespecie.Visible = true;
+            btnexcluirespecie.Enabled = false;
+            btneditarespecie.Visible = true;
+            btneditarespecie.Enabled = false;
+            btneditarespecie.Text = "Criando...";
+            btneditarespecie.ForeColor = Color.White;
+
+            btnsalvacadastroespecie.Visible = true;
+            btncancelacadastroespecie.Visible = true;
+            btnsalvacadastroespecie.Enabled = true;
+            btncancelacadastroespecie.Enabled = true;
+
+            Salva = true;
+        }
+        private void dgvespecie_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            LimpaCampos(3);
+            try
+            {
+                f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
+                f.SelecionaEspecie();
+
+                txtcadastronomeespecie.Enabled = false;
+                txtcadastronem.Enabled = false;
+                txtcadastronomeespecie.Visible = true;
+                txtcadastronem.Visible = true;
+
+                lblnomeespecie.Visible = true;
+                lblnem.Visible = true;
+
+                txtcadastronomeespecie.Text = f.Nome;
+                txtcadastronem.Text = f.Formula;
+
+                btnexcluirespecie.Visible = true;
+                btnexcluirespecie.Enabled = true;
+                btneditarespecie.Visible = true;
+                btneditarespecie.Enabled = true;
+            }
+            catch (Exception) { }
+        }
 
         #region Calculadora para Formulação
         private void btncalcnem0_Click(object sender, EventArgs e)
@@ -1986,181 +2201,242 @@ namespace ProjetoNariz.Telas
                 }*/
             }
         }
+
+        
         #endregion
 
-        private void btnvisualizarespecie_Click(object sender, EventArgs e)
+        #endregion
+
+        #region Painel de Dietas
+        private void txtpesquisadietas_Enter(object sender, EventArgs e)
         {
-            LimpaCampos(3);
-            try
-            {
-                f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
-                f.SelecionaEspecie();
-
-                txtcadastronomeespecie.Enabled = false;
-                txtcadastronem.Enabled = false;
-                txtcadastronomeespecie.Visible = true;
-                txtcadastronem.Visible = true;
-
-                lblnomeespecie.Visible = true;
-                lblnem.Visible = true;
-
-                txtcadastronomeespecie.Text = f.Nome;
-                txtcadastronem.Text = f.Formula;
-
-                btnexcluirespecie.Visible = true;
-                btnexcluirespecie.Enabled = true;
-                btneditarespecie.Visible = true;
-                btneditarespecie.Enabled = true;
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Favor Selecionar uma espécie na tabela ao lado", "Atenção");
-            }
-           
+            TxtPesquisaPadrao(txtpesquisadietas);
         }
-        private void btnadicionarespecie_Click(object sender, EventArgs e)
+        private void txtpesquisadietas_Leave(object sender, EventArgs e)
         {
-            txtcadastronomeespecie.Enabled = true;
-            txtcadastronem.Enabled = false;
-            pnlcalcnem.Visible = true;
-            txtcadastronomeespecie.Visible = true;
-            txtcadastronem.Visible = true;
-
-            lblnomeespecie.Visible = true;
-            lblnem.Visible = true;
-
-            btnexcluirespecie.Visible = true;
-            btnexcluirespecie.Enabled = false;
-            btneditarespecie.Visible = true;
-            btneditarespecie.Enabled = false;
-            btneditarespecie.Text = "Criando...";
-            btneditarespecie.ForeColor = Color.White;
-
-            btnsalvacadastroespecie.Visible = true;
-            btncancelacadastroespecie.Visible = true;
-            btnsalvacadastroespecie.Enabled = true;
-            btncancelacadastroespecie.Enabled = true;
-
-            Salva = true;
+            TxtPesquisaPadrao(txtpesquisadietas, false);
         }
-        private void btncancelacadastroespecie_Click(object sender, EventArgs e)
-        {
-            DialogResult resultado = MessageBox.Show("Deseja interromper o processo?", "Atenção", MessageBoxButtons.YesNo);
-            if (resultado == DialogResult.Yes)
-            {
-                LimpaCampos(3);
-            }
-        }
-        private void btnsalvacadastroespecie_Click(object sender, EventArgs e)
-        {
-            f.Nome = txtcadastronomeespecie.Text;
-            f.Formula = txtcadastronem.Text;
-            if (Salva)
-            {
-                f.InsereEspecie();
-            }
-            else
-            {
-                f.AlteraEspecie();
-            }
-
-            LimpaCampos(3);
-
-            dgvespecie.DataSource = f.AtualizaEspecie();
-        }
-        private void btneditarespecie_Click(object sender, EventArgs e)
-        {
-            btnadicionarespecie.Enabled = false;
-            btnadicionarespecie.Text = "Editando...";
-            btnadicionarespecie.ForeColor = Color.White;
-
-            txtcadastronomeespecie.Enabled = true;
-            txtcadastronem.Enabled = false;
-
-            btnsalvacadastroespecie.Visible = true;
-            btncancelacadastroespecie.Visible = true;
-            btnsalvacadastroespecie.Enabled = true;
-            btncancelacadastroespecie.Enabled = true;
-
-            pnlcalcnem.Visible = true;
-
-            Salva = false;
-        }
-        private void btnexcluirespecie_Click(object sender, EventArgs e)
-        {
-            DialogResult resultado = MessageBox.Show("Tem certeza que deseja excluir a especie?", "Atenção", MessageBoxButtons.YesNo);
-            if (resultado == DialogResult.Yes)
-            {
-                f.DeletaEspecie();
-                f.Desconstrutor();
-                LimpaCampos(3);
-                dgvespecie.DataSource = f.AtualizaEspecie();
-            }
-        }
-        private void btnbuscanomeespecie_Click(object sender, EventArgs e)
-        {
-            if (txtbuscanomeespecie.Text != "Nome")
-            {
-                dgvespecie.DataSource = f.PesquisaEspecie(txtbuscanomeespecie.Text);
-            }
-        }
-        private void txtbuscanomeespecie_Enter(object sender, EventArgs e)
-        {
-            if (txtbuscanomeespecie.Text == "Nome")
-            {
-                txtbuscanomeespecie.Text = "";
-            }
-            txtbuscanomeespecie.ForeColor = Color.Black;
-        }
-        private void txtbuscanomeespecie_Leave(object sender, EventArgs e)
-        {
-            if (txtbuscanomeespecie.Text == "")
-            {
-                txtbuscanomeespecie.Text = "Nome";
-            }
-
-            txtbuscanomeespecie.ForeColor = Color.Silver;
-        }
-        private void txtbuscanomeespecie_KeyUp(object sender, KeyEventArgs e)
+        private void txtpesquisadietas_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                dgvespecie.DataSource = f.PesquisaEspecie(txtbuscanomeespecie.Text);
+                CbxPesquisaPadrao(cbxfiltropesquisadietas, dgvdietas);
             }
         }
-        private void dgvespecie_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void btnpesquisadietas_Click(object sender, EventArgs e)
         {
-            LimpaCampos(3);
+            CbxPesquisaPadrao(cbxfiltropesquisadietas, dgvdietas);
+        }
+        private void btnvisualizadieta_Click(object sender, EventArgs e)
+        {
+            //PaineisPrincipais(pnlalimentosmn, pnlsuperioralimentosmn, pnlvisualizaalimentosmn);
+        }
+        private void btnvoltaformulacao_Click(object sender, EventArgs e)
+        {
+            LimpaCampos(4);
+            PaineisPrincipais(pnlformulacao, pnlsuperiorformulacao);
+        }
+        private void btnadicionardieta_Click(object sender, EventArgs e)
+        {
+            cbxnemformulacao.DataSource = f.AtualizaComboEspecie();
+
+            PaineisPrincipais(pnlformulacao, pnlsuperiorformulacao);
+        }
+
+        #region Painel Formulacao
+        private void btnformulardieta_Click(object sender, EventArgs e)
+        {
+            if (!Cancela)
+            {
+                btninserealimento.Enabled = true;
+                btninserealimento.Visible = true;
+                btnremovealimento.Enabled = true;
+                btnremovealimento.Visible = true;
+                btnreiniciardieta.Enabled = true;
+                btnreiniciardieta.Visible = true;
+                //btnformulardieta.Enabled = false;
+                //btnformulardieta.Visible = false;
+                pnladdalimentoformulacao.Visible = true;
+                btnformulardieta.BackColor = Color.FromArgb(181, 61, 0);
+                btnformulardieta.Text = "Cancelar";
+                btnformulardieta.ForeColor = Color.White;
+
+                f.CriaDieta();
+                if (dgvaddalimentosms.DataSource == null)
+                {
+                    dgvaddalimentosms.DataSource = f.AtualizaAlimentosMS();
+                }
+                dgvformuladieta.DataSource = f.AtualizaDieta();
+                try
+                {
+                    double aux = f.TotalFormulado();
+                    txttotalinclusao.Text = aux.ToString() + "%";
+                } catch (Exception) { }
+                Cancela = true;
+            }
+            else
+            {
+                btninserealimento.Enabled = false;
+                btninserealimento.Visible = false;
+                btnremovealimento.Enabled = false;
+                btnremovealimento.Visible = false;
+                btnreiniciardieta.Enabled = false;
+                btnreiniciardieta.Visible = false;
+                pnladdalimentoformulacao.Visible = false;
+                txttotalinclusao.Text = string.Empty;
+
+                btnformulardieta.BackColor = Color.FromArgb(255, 179, 0);
+                btnformulardieta.Text = "Formular Nova Dieta";
+                btnformulardieta.ForeColor = Color.White;
+
+                f.ExcluiDieta();
+                f.Desconstrutor();
+                f.CriaDieta();
+                dgvformuladieta.DataSource = f.AtualizaDieta();
+
+                Cancela = false;
+            }
+
+        }
+        private void btninserealimento_Click(object sender, EventArgs e)
+        {
             try
             {
-                f.id = dgvespecie.CurrentRow.Cells[0].Value.ToString();
-                f.SelecionaEspecie();
-
-                txtcadastronomeespecie.Enabled = false;
-                txtcadastronem.Enabled = false;
-                txtcadastronomeespecie.Visible = true;
-                txtcadastronem.Visible = true;
-
-                lblnomeespecie.Visible = true;
-                lblnem.Visible = true;
-
-                txtcadastronomeespecie.Text = f.Nome;
-                txtcadastronem.Text = f.Formula;
-
-                btnexcluirespecie.Visible = true;
-                btnexcluirespecie.Enabled = true;
-                btneditarespecie.Visible = true;
-                btneditarespecie.Enabled = true;
+                if (txtpercentagemteste.Text == string.Empty)
+                {
+                    MessageBox.Show("Informe um valor de Percentagem de inclusão", "Atenção");
+                }
+                else if (txtalimentoselecionado.Text == string.Empty)
+                {
+                    MessageBox.Show("Selecione um Alimento!", "Atenção");
+                }
+                else
+                {
+                    StringBuilder converte = new StringBuilder();
+                    foreach (char c in txtpercentagemteste.Text)
+                    {
+                        if (c == ',')
+                        {
+                            converte.Append(string.Concat('.'));
+                        }
+                        else
+                        {
+                            converte.Append(string.Concat(c));
+                        }
+                    }
+                    f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
+                    f.Percentagem = converte.ToString();
+                    f.InsereDieta();
+                    dgvformuladieta.DataSource = f.AtualizaDieta();
+                    txtalimentoselecionado.Text = string.Empty;
+                    txtpercentagemteste.Text = string.Empty;
+                    double aux = f.TotalFormulado();
+                    txttotalinclusao.Text = aux.ToString() + "%";
+                }
             }
             catch (Exception) { }
         }
+        private void btnremovealimento_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtalimentoselecionado.Text != string.Empty)
+                {
+                    f.id = dgvformuladieta.CurrentRow.Cells[0].Value.ToString();
+                    f.DeletaDieta();
+                    dgvformuladieta.DataSource = f.AtualizaDieta();
+                    txtalimentoselecionado.Text = string.Empty;
+                    txtpercentagemteste.Text = string.Empty;
+                    double aux = f.TotalFormulado();
+                    txttotalinclusao.Text = aux.ToString() + "%";
+                }
 
-
-
-
+            }
+            catch (Exception) { }
+        }
+        private void btnreiniciardieta_Click(object sender, EventArgs e)
+        {
+            f.ExcluiDieta();
+            f.Desconstrutor();
+            f.CriaDieta();
+            dgvformuladieta.DataSource = f.AtualizaDieta();
+            txtalimentoselecionado.Text = string.Empty;
+            txtpercentagemteste.Text = string.Empty;
+            txttotalinclusao.Text = string.Empty;
+        }
+        private void dgvaddalimentosms_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
+            f.SelecionaAlimentoMS();
+            txtalimentoselecionado.Text = f.Alimento;
+        }
+        private void dgvformuladieta_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
+            f.SelecionaDieta();
+            txtalimentoselecionado.Text = f.Alimento;
+            txtpercentagemteste.Text = f.Percentagem.ToString();
+        }
+        private void btnp2formulacao_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double aux = Convert.ToDouble(txttotalinclusao.Text);
+                if (Convert.ToDouble(txttotalinclusao.Text) > 100.00 || Convert.ToDouble(txttotalinclusao.Text) < 0.00)
+                {
+                    MessageBox.Show("Favor ajustar sua dieta para que tenha uma Percentagem (%) de inclusão igual a 100%", "Atenção");
+                }
+                else
+                {
+                    PaineisPrincipais(pnlformulacao, pnlsuperiorformulacao, pnlresultadosformulacao);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Favor incluir alimentos na tabela de formulação de dietas", "Atenção");
+            }
+        }
+        private void txtpesquisaalimentodieta_Leave(object sender, EventArgs e)
+        {
+            TxtPesquisaDieta(txtpesquisaalimentodieta, false);
+        }
+        private void txtpesquisaalimentodieta_Enter(object sender, EventArgs e)
+        {
+            TxtPesquisaDieta(txtpesquisaalimentodieta);
+        }
+        private void txtpesquisadietadieta_Enter(object sender, EventArgs e)
+        {
+            TxtPesquisaDieta(txtpesquisadietadieta);
+        }
+        private void txtpesquisadietadieta_Leave(object sender, EventArgs e)
+        {
+            TxtPesquisaDieta(txtpesquisadietadieta, false);
+        }
+        private void txtpesquisadietadieta_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                dgvformuladieta.DataSource = f.AtualizaDieta();
+            }
+        }
+        private void btnpesquisadietadieta_Click(object sender, EventArgs e)
+        {
+            dgvformuladieta.DataSource = f.AtualizaDieta();
+        }
+        private void txtpesquisaalimentodieta_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                dgvaddalimentosms.DataSource = f.AtualizaAlimentosMS();
+            }
+        }
+        private void btnpesquisaalimentosdieta_Click(object sender, EventArgs e)
+        {
+            dgvaddalimentosms.DataSource = f.AtualizaAlimentosMS();
+        }
         #endregion
 
-
+        #endregion
     }
 }
 

@@ -131,9 +131,10 @@ namespace ProjetoNariz
         #endregion
 
         #region Variaveis da criação de Dietas
-        public double Percentagem { get; set; }
+        public string Percentagem { get; set; }
         public double Maximo { get; set; }
         public double Minimo { get; set; }
+        public double TotalPercentagem { get; set; }
         #endregion
         //Vit_D
         #endregion
@@ -241,7 +242,7 @@ namespace ProjetoNariz
             Pitada = string.Empty;
             Nome = string.Empty;
             Formula = string.Empty;
-            Percentagem = 0.00;
+            Percentagem = string.Empty;
             Maximo = 0.00;
             Minimo = 0.00;
         }
@@ -728,8 +729,8 @@ namespace ProjetoNariz
         {
             string SQL;
 
-            SQL = "CREATE TABLE Dieta (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY," +
-                "Alimento VARCHAR(250) NOT NULL, Percentagem DOUBLE(3,2),Minimo DOUBLE(3,2)," +
+            SQL = "CREATE TABLE IF NOT EXISTS Dieta (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY," +
+                "Alimento VARCHAR(250) NOT NULL, Percentagem DOUBLE(100,2),Minimo DOUBLE(3,2)," +
                 "Maximo DOUBLE(3,2));";
 
             conectaMySQL.ExecutaComando(SQL);
@@ -798,11 +799,26 @@ namespace ProjetoNariz
             if (dados.Read())
             {
                 Alimento = dados["Alimento"].ToString();
-                Percentagem = Convert.ToDouble(dados["Percentagem"].ToString());
+                Percentagem = dados["Percentagem"].ToString();
                 Minimo = Convert.ToDouble(dados["Minimo"].ToString());
                 Maximo = Convert.ToDouble(dados["Maximo"].ToString());
             }
             conectaMySQL.FechaMySQL();
+        }
+        public double TotalFormulado()
+        {
+            string SQL;
+            SQL = "SELECT SUM(Percentagem) Total FROM dieta";
+
+            MySqlDataReader dados = conectaMySQL.ExecutaConsulta(SQL);
+
+            if (dados.Read())
+            {
+                TotalPercentagem = Math.Round(Convert.ToDouble(dados["Total"].ToString()),2);
+
+            }
+            conectaMySQL.FechaMySQL();
+            return TotalPercentagem;
         }
         #endregion
 

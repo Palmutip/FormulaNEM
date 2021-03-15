@@ -145,5 +145,8 @@
   <ItemGroup>
     <None Include="Resources\backspace.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaflet.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
