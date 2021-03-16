@@ -47,7 +47,7 @@ namespace ProjetoNariz.Telas
             this.btnconfig.BackColor = Color.FromArgb(174, 214, 129);
             this.btnsair.BackColor = Color.FromArgb(174, 214, 129);
 
-            //PaineisPrincipais(pnlali);
+            PaineisPrincipais(pnlinicio);
         }
         private void ClicaAlimentos()
         {
@@ -157,7 +157,7 @@ namespace ProjetoNariz.Telas
 
             dgvespecie.DataSource = f.AtualizaEspecie();
 
-            PaineisPrincipais(pnlespecies);
+            PaineisPrincipais(pnlselecionemoureq);
         }
         private void PaineisPrincipais(Panel panel1, Panel panel2, Panel panel3)
         {
@@ -173,6 +173,8 @@ namespace ProjetoNariz.Telas
             pnldietas.Visible = false;
             pnlresultadosformulacao.Visible = false;
             pnlselecionemoureq.Visible = false;
+            pnlinicio.Visible = false;
+            pnlrequerimento.Visible = false;
 
             panel1.Visible = true;
             panel2.Visible = true;
@@ -192,6 +194,8 @@ namespace ProjetoNariz.Telas
             pnldietas.Visible = false;
             pnlresultadosformulacao.Visible = false;
             pnlselecionemoureq.Visible = false;
+            pnlinicio.Visible = false;
+            pnlrequerimento.Visible = false;
 
             panel1.Visible = true;
             panel2.Visible = true;
@@ -210,6 +214,8 @@ namespace ProjetoNariz.Telas
             pnldietas.Visible = false;
             pnlresultadosformulacao.Visible = false;
             pnlselecionemoureq.Visible = false;
+            pnlinicio.Visible = false;
+            pnlrequerimento.Visible = false;
 
             panel.Visible = true;
         }
@@ -1877,11 +1883,11 @@ namespace ProjetoNariz.Telas
         }
         private void lblrequerimentoenergetico_Click(object sender, EventArgs e)
         {
-
+            PaineisPrincipais(pnlrequerimento);
         }
         private void btnrequerimentoenergetico_Click(object sender, EventArgs e)
         {
-
+            PaineisPrincipais(pnlrequerimento);
         }
         #endregion
 
@@ -2372,7 +2378,7 @@ namespace ProjetoNariz.Telas
         }
         private void dgvformuladieta_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            f.id = dgvaddalimentosms.CurrentRow.Cells[0].Value.ToString();
+            f.id = dgvformuladieta.CurrentRow.Cells[0].Value.ToString();
             f.SelecionaDieta();
             txtalimentoselecionado.Text = f.Alimento;
             txtpercentagemteste.Text = f.Percentagem.ToString();
